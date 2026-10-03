@@ -23,6 +23,7 @@ textarea.hl{font:20px/1.2 Anton,Impact,sans-serif;text-transform:uppercase}
 .hc{border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin-top:8px;cursor:pointer;background:transparent}
 .hc.on{border-color:var(--ac);box-shadow:inset 0 0 0 1px var(--ac)}
 .hc b{display:block;font-size:15px;line-height:1.3}.hc span{display:block;font-size:12px;color:var(--mut);margin-top:3px}
+.tabs{display:flex;gap:6px;margin-bottom:6px}.tabs button{flex:1;font:600 14px system-ui;padding:9px 6px;border-radius:10px;border:1px solid var(--bd);background:transparent;color:var(--mut);cursor:pointer}.tabs button.on{background:var(--ac);border-color:var(--ac);color:#fff}
 .btn.sm{padding:8px 12px;font-size:14px}
 .row{display:flex;flex-wrap:wrap;gap:8px}.row .btn{width:auto;flex:1 1 40%;margin-top:0}
 .tip{font-size:13px;color:var(--mut);margin:6px 0 0}
@@ -32,9 +33,11 @@ canvas{max-width:100%;height:auto;display:block}
 #fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
 </style></head><body>
 <h1>POST BUILDER</h1>
-<p class="tip" style="margin:-6px 0 10px">Build 10-02-c</p>
+<p class="tip" style="margin:-6px 0 10px">Build 10-03-a</p>
 
-<div class="card"><h2><span class="n">1</span>Find news</h2>
+<div class="card"><h2><span class="n">1</span>Pick a topic</h2>
+<div class="tabs"><button class="on" data-m="news">News</button><button data-m="facts">Fun facts</button><button data-m="history">History</button></div>
+<div id="newsBox">
 <p class="tip" id="hs" style="margin:0">Loading top headlines...</p>
 <div id="hdl"></div>
 <button class="btn blue sm" id="rf" style="margin-top:10px">Refresh headlines</button>
@@ -48,6 +51,12 @@ canvas{max-width:100%;height:auto;display:block}
 <a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.nbcmiami.com/">NBC 6</a>
 <a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://wsvn.com/">7News</a>
 <a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.axios.com/local/miami">Axios Miami</a>
+</div>
+</div>
+<div id="libBox" style="display:none">
+<p class="tip" id="ls" style="margin:0"></p>
+<div id="lib"></div>
+<button class="btn blue sm" id="rnd" style="margin-top:10px">Surprise me</button>
 </div>
 <div id="stories"></div>
 <button class="btn ghost sm" id="add">+ Add another story</button>
@@ -96,25 +105,27 @@ const stories=()=>[...document.querySelectorAll('.st')].map(t=>t.value.trim()).f
 $('add').onclick=()=>addStory();addStory();
 
 /* 2 + 3: handoffs */
-function chatPrompt(st){return `You write posts for @miamidader, an Instagram news account covering Miami-Dade County, Florida.
+let MODE='news';
+const POSTTYPE={news:'news post',facts:'"Did you know?" fun-fact post',history:'Miami-Dade history post'};
+function chatPrompt(st){const n=MODE==='news';return `You write posts for @miamidader, an Instagram account covering Miami-Dade County, Florida.
 
-Using only the facts in the ${st.length>1?'stories':'story'} below, write one post:
-1. A headline: punchy, specific, 8 to 12 words, no emojis. If there is a strong quote, it can follow a colon.
-2. A short article for the caption: 60 to 90 words, plain and conversational, short sentences, lead with the most newsworthy fact. No hashtags, no emojis.${st.length>1?'\nIf the stories are related, combine them into one post. If not, focus on the most newsworthy one.':''}
-Do not invent facts, quotes, or numbers. If something is unclear, leave it out.
+Using only the ${n?(st.length>1?'stories':'story'):(st.length>1?'facts':'fact')} below, write one ${POSTTYPE[MODE]}:
+1. A headline: punchy, specific, 8 to 12 words, no emojis.${n?' If there is a strong quote, it can follow a colon.':MODE==='facts'?' Lead with the most surprising detail.':' Include the year if it fits.'}
+2. A short article for the caption: 60 to 90 words, plain and conversational, short sentences, ${n?'lead with the most newsworthy fact':MODE==='facts'?'open with the surprising fact':'tell it like a short story, oldest event first'}. No hashtags, no emojis.${st.length>1?'\nIf the items are related, combine them into one post. If not, focus on the most interesting one.':''}
+Do not invent or add facts, dates, quotes, or numbers beyond what is given. If something is unclear, leave it out.
 
 Reply in exactly this format:
 HEADLINE: ...
 ARTICLE: ...
 
-STORIES:
+${n?'STORIES':'FACTS'}:
 `+st.map((s,i)=>`[${i+1}] ${s}`).join('\n\n')}
-const imgPrompt=(h,a)=>`Create a realistic news-style photo in a 3:4 vertical portrait for an Instagram news post in Miami-Dade, Florida.
+const imgPrompt=(h,a)=>`Create ${MODE==='history'?'a vintage, archival-style editorial image':'a realistic editorial photo'} in a 3:4 vertical portrait for an Instagram post about Miami-Dade, Florida.
 
 Headline: ${h}
 Story: ${a}
 
-Show the key scene with the main subject in the upper two-thirds. Keep the bottom third simple and darker with nothing important in it, because a headline will be placed there. No text, letters, logos, or watermarks in the image.`;
+Show the key scene with the main subject in the upper two-thirds. Keep the bottom third simple and darker with nothing important in it, because a headline will be placed there. ${MODE==='history'?'Do not depict real identifiable people. ':''}No text, letters, logos, or watermarks in the image.`;
 function handoff(text,url,status,box){copy(text).then(ok=>{say(status,ok?'Prompt copied. Paste it in the app.':'Copy was blocked. Select the prompt below and copy it.');if(!ok){$(box).value=text;$(box).style.display='block'}});window.open(url,'_blank')}
 $('gpt').onclick=()=>{const st=stories();if(!st.length){say('gs','Add at least one story in step 1.');return}handoff(chatPrompt(st),'https://chatgpt.com/','gs','gp')};
 $('gem').onclick=()=>{const h=$('hl').value.trim(),a=$('ar').value.trim();if(!h||!a){say('ms','Fill in the headline and article in step 2 first.');return}handoff(imgPrompt(fix(h),a),'https://gemini.google.com/app','ms','mp')};
@@ -182,6 +193,21 @@ async function loadLive(){
   if(!all.length)return false;const now=new Date().toISOString();
   showHeadlines(all.map((h,i)=>({id:'live'+i,data:()=>({...h,fetchedAt:now})})),true);return true}
  catch(e){return false}}
+
+/* fun facts + history library */
+const LIB=[{"k": "facts", "t": "Miami is the only major U.S. city founded by a woman", "d": "Miami was founded by Julia Tuttle and officially incorporated on July 28, 1896, with a population of just over 300. She is called the mother of Miami."}, {"k": "facts", "t": "Miami-Dade is the only U.S. county with a hyphenated name", "d": "Dade County was renamed Miami-Dade County on November 13, 1997, making it the only county in the United States whose name is hyphenated."}, {"k": "facts", "t": "Most Hispanic county in America", "d": "In 2020, 68.73% of Miami-Dade residents were Hispanic, making it the most populous majority-Hispanic county in the country. About 66.5% of residents speak Spanish at home, and 54% were born outside the U.S."}, {"k": "facts", "t": "PortMiami is the busiest cruise port in the world", "d": "PortMiami is the world's busiest cruise port by passenger traffic. It handled 5,340,559 cruise passengers in 2017."}, {"k": "facts", "t": "Brickell Avenue has the most international banks in the U.S.", "d": "Brickell Avenue has the largest concentration of international banks in the United States."}, {"k": "facts", "t": "Miami has the third-largest skyline in the U.S.", "d": "Miami has more than 300 high-rises, and about 70 of them are taller than 492 feet, giving it the third-largest skyline in the country."}, {"k": "facts", "t": "Nearly a quarter of Miami-Dade is water", "d": "Miami-Dade County covers 2,431 square miles, and 532 of those square miles, or 21.9%, are water."}, {"k": "facts", "t": "The highest point in Miami-Dade is only about 20 to 26 feet up", "d": "The county's highest point is only 20 to 26 feet above sea level. Its lowest point is sea level at the Atlantic Ocean."}, {"k": "facts", "t": "Over half of Miami-Dade residents live outside any city", "d": "Miami-Dade has 34 incorporated cities, yet about 52% of residents lived in unincorporated areas as of 2013."}, {"k": "facts", "t": "Miami's name comes from Lake Okeechobee", "d": "The name Miami comes from the Miami River, which is ultimately derived from Mayaimi, the historic name for Lake Okeechobee."}, {"k": "facts", "t": "Miami has 5 nicknames", "d": "Miami is known as The 305, the Magic City, the Gateway to the Americas, the Gateway to Latin America, and the Capital of Latin America."}, {"k": "facts", "t": "Miami Dade College is one of the biggest in America", "d": "Miami Dade College has the second largest undergraduate enrollment of any U.S. college, with over 100,000 students. Florida International University was the fifth largest university in the country by enrollment as of 2020."}, {"k": "facts", "t": "Miami-Dade's economy is the biggest in Florida", "d": "Miami-Dade County's GDP was $239.652 billion in 2023, the largest of any county in Florida."}, {"k": "facts", "t": "MIA moves more international cargo than any U.S. airport", "d": "Miami International Airport is the largest U.S. airport for international cargo and the third largest for international passengers."}, {"k": "facts", "t": "Miami-Dade schools are the 4th largest district in the U.S.", "d": "Miami-Dade County Public Schools is the fourth-largest public school district in the nation, with about 360,000 students as of 2014."}, {"k": "history", "t": "The Tequesta lived here for about 2,000 years", "d": "The Tequesta people occupied the Miami area for around 2,000 years before European contact. The earliest evidence of Native American settlement in the region goes back about 10,000 years."}, {"k": "history", "t": "1513: Ponce de Leon sails into Biscayne Bay", "d": "In 1513, Juan Ponce de Leon became the first European to visit the Miami area, sailing into Biscayne Bay. In 1566, Pedro Menendez de Aviles made the first recorded European landing at a Tequesta settlement, and the Spanish set up a mission there in 1567."}, {"k": "history", "t": "1825: Cape Florida Lighthouse", "d": "The Cape Florida Lighthouse was built on Key Biscayne in 1825 to warn passing ships."}, {"k": "history", "t": "1836: Dade County is created", "d": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War."}, {"k": "history", "t": "1891: Julia Tuttle buys 640 acres on the Miami River", "d": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River."}, {"k": "history", "t": "The freeze that made Miami", "d": "A freeze in December 1894 and a second one on February 7, 1895 destroyed crops across northern Florida. Miami's crops survived, and Julia Tuttle used that to convince railroad tycoon Henry Flagler to extend his Florida East Coast Railway south."}, {"k": "history", "t": "April 13, 1896: the first train arrives", "d": "The first train arrived in Miami on April 13, 1896, with Henry Flagler aboard. Miami was officially incorporated as a city on July 28, 1896."}, {"k": "history", "t": "1906: canals begin draining the Everglades", "d": "In 1906, canals were begun to remove water from the Florida Everglades."}, {"k": "history", "t": "1913: a two-mile wooden bridge opens Miami Beach", "d": "Miami Beach was developed after a two-mile wooden bridge built by John Collins was completed in 1913."}, {"k": "history", "t": "1926: the Great Miami Hurricane", "d": "In September 1926, the Great Miami Hurricane struck as a Category 4 storm. It caused about 373 deaths and left 25,000 to 50,000 people homeless."}, {"k": "history", "t": "1940: Miami reaches 172,172 people", "d": "By 1940, 172,172 people lived in the City of Miami."}, {"k": "history", "t": "1972: Miami hosts both national conventions", "d": "Miami hosted both the Democratic and Republican National Conventions in 1972."}, {"k": "history", "t": "1992: Hurricane Andrew", "d": "Hurricane Andrew hit on August 24, 1992, and caused more than $25 billion in damage in Miami-Dade County."}, {"k": "history", "t": "1997: Dade becomes Miami-Dade", "d": "On November 13, 1997, Dade County was renamed Miami-Dade County, the only county in the United States with a hyphenated name."}];
+function renderLib(){const box=$('lib');box.innerHTML='';const items=LIB.map((x,i)=>({x,i})).filter(o=>o.x.k===MODE);
+ say('ls',MODE==='facts'?'Tap up to 4 fun facts. Each one is built from facts I checked against Wikipedia.':'Tap up to 4 history items. Each one is built from facts I checked against Wikipedia.');
+ items.forEach(({x,i})=>{const c=document.createElement('div');c.className='hc';c.dataset.id='lib'+i;
+  const b=document.createElement('b');b.textContent=x.t;c.append(b);
+  c.onclick=()=>{if(c.classList.contains('on')){c.classList.remove('on');dropStory('lib'+i);return}
+   if(!addStory(x.t+'\n'+x.d,'lib'+i)){say('ls','You can pick up to 4. Tap one to remove it.');return}c.classList.add('on')};
+  box.appendChild(c)})}
+function setMode(m){MODE=m;document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
+ document.querySelectorAll('.st[data-hid]').forEach(t=>t.remove());document.querySelectorAll('.hc.on').forEach(e=>e.classList.remove('on'));$('add').style.display='';
+ $('newsBox').style.display=m==='news'?'':'none';$('libBox').style.display=m==='news'?'none':'';if(m!=='news')renderLib()}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>setMode(b.dataset.m));
+$('rnd').onclick=()=>{const free=[...document.querySelectorAll('#lib .hc:not(.on)')];if(!free.length)return;const c=free[Math.floor(Math.random()*free.length)];c.click();c.scrollIntoView({block:'center',behavior:'smooth'})};
 
 /* top headlines (kept in the page's shared data; refreshed by asking Claude) */
 function showHeadlines(docs,isLive){const box=$('hdl');box.innerHTML='';let latest='';
