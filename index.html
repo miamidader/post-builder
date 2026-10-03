@@ -32,6 +32,7 @@ canvas{max-width:100%;height:auto;display:block}
 #fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
 </style></head><body>
 <h1>POST BUILDER</h1>
+<p class="tip" style="margin:-6px 0 10px">Build 10-02-c</p>
 
 <div class="card"><h2><span class="n">1</span>Find news</h2>
 <p class="tip" id="hs" style="margin:0">Loading top headlines...</p>
@@ -162,15 +163,21 @@ async function askClaude(){const t='Refresh the headlines in my Post Builder art
  const ok=await copy(t);say('rs',ok?'Copied. Paste it to Claude in your Miami Dader chat, then reopen this page.':'Copy was blocked. Select and copy the request below.');if(!ok){$('rq').value=t;$('rq').style.display='block'}}
 
 const FEEDS=[['Miami when:1d','',10]];
+let lastErr=[];
+const parseRss=(txt,topic,n)=>{const d=new DOMParser().parseFromString(txt,'text/xml');return [...d.querySelectorAll('item')].slice(0,n).map(it=>{const g=t=>(it.querySelector(t)||{}).textContent||'';const raw=g('title').trim();const m=raw.match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:raw,source:(g('source')||(m?m[2]:'')).trim(),topic,url:g('link').trim(),summary:'',t:Date.parse(g('pubDate'))||0}})};
 async function oneFeed([q,topic,n]){
- const u='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=en-US&gl=US&ceid=US:en');
- for(let tries=0;tries<2;tries++){
-  try{const r=await fetch(u);if(!r.ok)throw 0;const j=await r.json();if(j.status!=='ok')throw 0;
-   return (j.items||[]).slice(0,n).map(it=>{const m=String(it.title||'').match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:it.title,source:m?m[2].trim():'',topic,url:it.link,summary:'',t:Date.parse(String(it.pubDate||'').replace(' ','T')+'Z')||0}})}
-  catch(e){await new Promise(r=>setTimeout(r,600))}}
+ const rss='https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=en-US&gl=US&ceid=US:en';
+ const routes=[
+  ['rss2json',async()=>{const r=await fetch('https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent(rss));if(!r.ok)throw new Error('HTTP '+r.status);const j=await r.json();if(j.status!=='ok')throw new Error(j.message||'bad reply');
+    return (j.items||[]).slice(0,n).map(it=>{const m=String(it.title||'').match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:it.title,source:m?m[2].trim():'',topic,url:it.link,summary:'',t:Date.parse(String(it.pubDate||'').replace(' ','T')+'Z')||0}})}],
+  ['allorigins',async()=>{const r=await fetch('https://api.allorigins.win/raw?url='+encodeURIComponent(rss));if(!r.ok)throw new Error('HTTP '+r.status);return parseRss(await r.text(),topic,n)}],
+  ['corsproxy',async()=>{const r=await fetch('https://corsproxy.io/?'+encodeURIComponent(rss));if(!r.ok)throw new Error('HTTP '+r.status);return parseRss(await r.text(),topic,n)}]];
+ for(const [name,run] of routes){
+  try{const out=await run();if(out.length)return out;lastErr.push(name+': no stories')}
+  catch(e){lastErr.push(name+': '+((e&&e.message)||'blocked'))}}
  return []}
 async function loadLive(){
- try{const res=await Promise.all(FEEDS.map(oneFeed));
+ lastErr=[];try{const res=await Promise.all(FEEDS.map(oneFeed));
   const seen=new Set(),all=[].concat(...res).filter(h=>h.title&&!seen.has(h.title.toLowerCase())&&seen.add(h.title.toLowerCase())).sort((a,b)=>b.t-a.t);
   if(!all.length)return false;const now=new Date().toISOString();
   showHeadlines(all.map((h,i)=>({id:'live'+i,data:()=>({...h,fetchedAt:now})})),true);return true}
@@ -187,7 +194,7 @@ function showHeadlines(docs,isLive){const box=$('hdl');box.innerHTML='';let late
    if(!addStory(txt,d.id)){say('hs','You can pick up to 4 stories. Tap one to remove it.');return}c.classList.add('on');say('hs','Picked '+document.querySelectorAll('.st[data-hid]').length+' of 4.')};
   box.appendChild(c)});
  say('hs',docs.length?('Updated '+(latest?new Date(latest).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'}):'recently')+'. Tap to pick up to 4.'+(isLive?'':' To refresh, ask Claude to update the headlines.')):'No headlines yet. Ask Claude to fetch them, or use the sources below.')}
-(async()=>{if(await loadLive())return;try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs','Could not load headlines. Tap Refresh headlines, or use the sources below.');return}
+(async()=>{if(await loadLive())return;try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs',''+'Could not load headlines ('+lastErr.join('; ')+'). Tap Refresh headlines, or use the sources below.');return}
  db.collection('headlines').orderBy('rank','asc').onSnapshot(snap=>showHeadlines(snap.docs),()=>say('hs','Could not load headlines. Use the sources below.'))}
  catch(e){say('hs','Could not load headlines. Use the sources below.')}})();
 
