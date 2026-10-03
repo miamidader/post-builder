@@ -161,7 +161,7 @@ $('new').onclick=()=>{$('stories').innerHTML='';addStory();document.querySelecto
 async function askClaude(){const t='Refresh the headlines in my Post Builder artifact ('+location.href.split('#')[0]+'). Pull today\'s top Miami-Dade news, sports, entertainment and weird-news headlines from WSVN, NBC 6 and other local outlets. Replace the documents in its "headlines" collection (h01 to h12) with fields title, source, topic, summary (one sentence in your own words), url, rank (1 is top) and fetchedAt (current time, ISO).';
  const ok=await copy(t);say('rs',ok?'Copied. Paste it to Claude in your Miami Dader chat, then reopen this page.':'Copy was blocked. Select and copy the request below.');if(!ok){$('rq').value=t;$('rq').style.display='block'}}
 
-const FEEDS=[['Miami-Dade when:1d','Local',8],['Miami Dolphins when:1d','Sports',3],['Miami Heat when:1d','Sports',3],['Miami Hurricanes football when:1d','Sports',3]];
+const FEEDS=[['Miami when:1d','',10]];
 async function oneFeed([q,topic,n]){
  const u='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=en-US&gl=US&ceid=US:en');
  for(let tries=0;tries<2;tries++){
