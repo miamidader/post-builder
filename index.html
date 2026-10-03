@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Post Builder</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f4f4f1;--fg:#111;--card:#fff;--mut:#666;--bd:#d9d9d4;--ac:#16a34a;--bl:#2563eb}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1116;--fg:#f2f2f2;--card:#171b22;--mut:#9aa3af;--bd:#2a313b}}
+:root[data-theme="dark"]{--bg:#0e1116;--fg:#f2f2f2;--card:#171b22;--mut:#9aa3af;--bd:#2a313b}
+*{box-sizing:border-box}
+body{margin:0 auto;background:var(--bg);color:var(--fg);font:16px/1.4 -apple-system,system-ui,sans-serif;padding:16px;max-width:560px}
+h1{font:28px Anton,Impact,sans-serif;letter-spacing:.5px;margin:4px 0 12px}
+h2{font:600 17px system-ui;margin:0 0 10px;display:flex;align-items:center;gap:10px}
+.n{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--ac);color:#fff;font-size:14px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}
+textarea,select{width:100%;font:16px/1.35 system-ui;background:transparent;color:var(--fg);border:1px solid var(--bd);border-radius:8px;padding:10px;margin-top:8px}
+select{width:auto;background:var(--card);padding:6px}
+textarea.hl{font:20px/1.2 Anton,Impact,sans-serif;text-transform:uppercase}
+.btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 16px system-ui;border:0;border-radius:10px;padding:13px 16px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
+.btn.blue{background:var(--bl)}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--bd)}
+.hc{border:1px solid var(--bd);border-radius:10px;padding:10px 12px;margin-top:8px;cursor:pointer;background:transparent}
+.hc.on{border-color:var(--ac);box-shadow:inset 0 0 0 1px var(--ac)}
+.hc b{display:block;font-size:15px;line-height:1.3}.hc span{display:block;font-size:12px;color:var(--mut);margin-top:3px}
+.btn.sm{padding:8px 12px;font-size:14px}
+.row{display:flex;flex-wrap:wrap;gap:8px}.row .btn{width:auto;flex:1 1 40%;margin-top:0}
+.tip{font-size:13px;color:var(--mut);margin:6px 0 0}
+label.f{display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--mut);margin-top:10px;gap:10px}
+#stage{border-radius:8px;padding:12px;background:#1a1f27;display:flex;justify-content:center;margin-top:8px}
+canvas{max-width:100%;height:auto;display:block}
+#fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
+</style></head><body>
+<h1>POST BUILDER</h1>
+
+<div class="card"><h2><span class="n">1</span>Find news</h2>
+<p class="tip" id="hs" style="margin:0">Loading top headlines...</p>
+<div id="hdl"></div>
+<button class="btn blue sm" id="rf" style="margin-top:10px">Refresh headlines</button>
+<p class="tip" id="rs"></p>
+<textarea id="rq" rows="5" readonly style="display:none"></textarea>
+<p class="tip" style="margin-top:12px">More sources:</p>
+<div class="row">
+<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://news.google.com/search?q=Miami-Dade">Google News</a>
+<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.miamiherald.com/">Miami Herald</a>
+<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.local10.com/">Local 10</a>
+<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.nbcmiami.com/">NBC 6</a>
+<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://wsvn.com/">7News</a>
+<a class="btn ghost sm" target="_blank" rel="noopener noreferrer" href="https://www.axios.com/local/miami">Axios Miami</a>
+</div>
+<div id="stories"></div>
+<button class="btn ghost sm" id="add">+ Add another story</button>
+<p class="tip">Tap headlines above to pick up to 4, or paste a link or article text for your own. Several stories become one combined post.</p></div>
+
+<div class="card"><h2><span class="n">2</span>ChatGPT: headline + article</h2>
+<button class="btn blue" id="gpt">Copy prompt &amp; open ChatGPT</button>
+<p class="tip" id="gs"></p>
+<textarea id="gp" rows="6" readonly style="display:none"></textarea>
+<textarea id="reply" rows="4" placeholder="Paste ChatGPT's reply here"></textarea>
+<button class="btn ghost sm" id="pr">Paste from clipboard</button>
+<textarea id="hl" class="hl" rows="2" placeholder="Headline"></textarea>
+<textarea id="ar" rows="5" placeholder="Article"></textarea></div>
+
+<div class="card"><h2><span class="n">3</span>Gemini: image (3:4)</h2>
+<button class="btn blue" id="gem">Copy prompt &amp; open Gemini</button>
+<p class="tip" id="ms"></p>
+<textarea id="mp" rows="6" readonly style="display:none"></textarea>
+<p class="tip">Save the image to Photos when it's ready.</p></div>
+
+<div class="card"><h2><span class="n">4</span>Headline</h2>
+<div id="stage"><canvas id="cv"></canvas></div>
+<label class="f">Auto-split into lines <select id="n"><option value="0">Off (my own lines)</option><option value="2">2</option><option value="3" selected>3</option><option value="4">4</option></select></label>
+<label class="f">Font <input type="file" id="ff" style="max-width:62%;font-size:13px"></label>
+<p class="tip" id="fs">Using Anton (stand-in). Upload your font to switch.</p>
+<button class="btn" id="cp">Copy image</button>
+<p class="tip" id="cs"></p>
+<a class="btn ghost" id="bz" href="bazaart://" target="_blank" rel="noopener noreferrer">Open Bazaart</a>
+<div id="fb">Press and hold the image to save it.<img id="im" alt="Headline"></div></div>
+
+<div class="card"><h2><span class="n">5</span>Post it</h2>
+<button class="btn" id="ca">Copy article</button>
+<p class="tip" id="as"></p>
+<a class="btn ghost" id="ig" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Open Instagram</a>
+<button class="btn ghost sm" id="new" style="margin-top:16px">Start a new post</button></div>
+
+<script>
+const $=id=>document.getElementById(id),cv=$('cv'),ctx=cv.getContext('2d');
+const say=(id,t)=>$(id).textContent=t;
+async function copy(t){try{await navigator.clipboard.writeText(t);return true}catch(e){try{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();const ok=document.execCommand('copy');a.remove();return ok}catch(_){return false}}}
+
+/* 1: stories */
+function addStory(val,hid){const all=document.querySelectorAll('.st');if(all.length>=4)return false;const t=document.createElement('textarea');t.className='st';t.rows=3;if(hid)t.dataset.hid=hid;t.placeholder='Story '+(all.length+1)+': paste link or text';if(val)t.value=val;$('stories').appendChild(t);$('add').style.display=document.querySelectorAll('.st').length>=4?'none':'';return true}
+function dropStory(hid){const t=document.querySelector('.st[data-hid="'+hid+'"]');if(t)t.remove();$('add').style.display=''}
+const stories=()=>[...document.querySelectorAll('.st')].map(t=>t.value.trim()).filter(Boolean);
+$('add').onclick=()=>addStory();addStory();
+
+/* 2 + 3: handoffs */
+function chatPrompt(st){return `You write posts for @miamidader, an Instagram news account covering Miami-Dade County, Florida.
+
+Using only the facts in the ${st.length>1?'stories':'story'} below, write one post:
+1. A headline: punchy, specific, 8 to 12 words, no emojis. If there is a strong quote, it can follow a colon.
+2. A short article for the caption: 60 to 90 words, plain and conversational, short sentences, lead with the most newsworthy fact. No hashtags, no emojis.${st.length>1?'\nIf the stories are related, combine them into one post. If not, focus on the most newsworthy one.':''}
+Do not invent facts, quotes, or numbers. If something is unclear, leave it out.
+
+Reply in exactly this format:
+HEADLINE: ...
+ARTICLE: ...
+
+STORIES:
+`+st.map((s,i)=>`[${i+1}] ${s}`).join('\n\n')}
+const imgPrompt=(h,a)=>`Create a realistic news-style photo in a 3:4 vertical portrait for an Instagram news post in Miami-Dade, Florida.
+
+Headline: ${h}
+Story: ${a}
+
+Show the key scene with the main subject in the upper two-thirds. Keep the bottom third simple and darker with nothing important in it, because a headline will be placed there. No text, letters, logos, or watermarks in the image.`;
+function handoff(text,url,status,box){copy(text).then(ok=>{say(status,ok?'Prompt copied. Paste it in the app.':'Copy was blocked. Select the prompt below and copy it.');if(!ok){$(box).value=text;$(box).style.display='block'}});window.open(url,'_blank')}
+$('gpt').onclick=()=>{const st=stories();if(!st.length){say('gs','Add at least one story in step 1.');return}handoff(chatPrompt(st),'https://chatgpt.com/','gs','gp')};
+$('gem').onclick=()=>{const h=$('hl').value.trim(),a=$('ar').value.trim();if(!h||!a){say('ms','Fill in the headline and article in step 2 first.');return}handoff(imgPrompt(fix(h),a),'https://gemini.google.com/app','ms','mp')};
+function parse(){const r=$('reply').value.replace(/\*\*/g,''),m=r.match(/HEADLINE:\s*([\s\S]*?)\s*ARTICLE:\s*([\s\S]*)/i);if(m){$('hl').value=m[1].trim().replace(/^["“]|["”]$/g,'');$('ar').value=m[2].trim();draw()}}
+$('reply').addEventListener('input',parse);
+$('pr').onclick=async()=>{try{$('reply').value=await navigator.clipboard.readText();parse()}catch(e){}};
+$('hl').addEventListener('input',draw);
+
+/* 4: headline stacker */
+let PRIMARY='Anton';
+const fix=s=>s.toUpperCase().replace(/(^|[\s(\[])'/g,'$1\u2018').replace(/'/g,'\u2019').replace(/(^|[\s(\[])"/g,'$1\u201C').replace(/"/g,'\u201D');
+function split(words,n){const m=words.length;n=Math.min(n,m);if(n<=1)return[words.join(' ')];
+ const L=(i,j)=>words.slice(i,j).join(' ').length,t=L(0,m)/n;
+ const best=Array.from({length:n+1},()=>Array(m+1).fill(Infinity)),prev=Array.from({length:n+1},()=>Array(m+1).fill(0));best[0][0]=0;
+ for(let k=1;k<=n;k++)for(let j=k;j<=m;j++)for(let i=k-1;i<j;i++){const c=best[k-1][i]+(L(i,j)-t)**2;if(c<best[k][j]){best[k][j]=c;prev[k][j]=i}}
+ const out=[];let j=m;for(let k=n;k>0;k--){const i=prev[k][j];out.unshift(words.slice(i,j).join(' '));j=i}return out}
+function lines(){const raw=fix($('hl').value.trim());if(!raw)return[];const n=+$('n').value;return n>0?split(raw.split(/\s+/),n):raw.split('\n').map(s=>s.trim()).filter(Boolean)}
+const capOf=f=>{ctx.font='100px "'+f+'"';return ctx.measureText('H').actualBoundingBoxAscent/100||.72};
+function draw(){
+ const W=1080,M=40,G=12,MX=260,tw=W-2*M,NW=1.08,NB=0.02;
+ const P='"'+PRIMARY+'", Impact, sans-serif',A='Anton, Impact, sans-serif',ls=lines();
+ const capR=capOf(PRIMARY),k=capR/capOf('Anton');
+ const runs=t=>t.split(/([0-9$%#&@+]+)/).filter(Boolean).map(q=>({t:q,d:/^[0-9$%#&@+]+$/.test(q)}));
+ const wd=(r,size)=>{if(r.d){ctx.font=size*k+'px '+A;return ctx.measureText(r.t).width*NW}ctx.font=size+'px '+P;return ctx.measureText(r.t).width};
+ const rows=ls.map(t=>{const rs=runs(t);let size=100*tw/rs.reduce((a,r)=>a+wd(r,100),0),h=capR*size;if(h>MX){size=MX/capR;h=MX}
+  const w=rs.reduce((a,r)=>a+wd(r,size),0);return{rs,size,h,x:M+(tw-w)/2}});
+ const pad=8,H=Math.max(40,Math.ceil(rows.reduce((a,r)=>a+r.h,0)+G*Math.max(0,rows.length-1)+pad*2));
+ cv.width=W;cv.height=H;ctx.clearRect(0,0,W,H);ctx.fillStyle='#ffffff';ctx.textBaseline='alphabetic';
+ let y=pad;rows.forEach(r=>{let x=r.x;r.rs.forEach(q=>{const w=wd(q,r.size);
+  if(q.d){ctx.save();ctx.translate(x,y+r.h);ctx.scale(NW,1);ctx.font=r.size*k+'px '+A;ctx.fillText(q.t,0,0);
+   if(NB>0){ctx.lineWidth=r.size*NB;ctx.lineJoin='round';ctx.strokeStyle=ctx.fillStyle;ctx.strokeText(q.t,0,0)}ctx.restore()}
+  else{ctx.font=r.size+'px '+P;ctx.fillText(q.t,x,y+r.h)}
+  x+=w});y+=r.h+G});
+}
+$('n').addEventListener('input',draw);
+async function useFont(face,label){await face.load();document.fonts.add(face);PRIMARY=face.family;say('fs','Using '+label+'.');await document.fonts.load('100px "'+PRIMARY+'"','HAI');draw()}
+$('ff').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;
+ try{await useFont(new FontFace('UserFont'+Date.now(),await f.arrayBuffer()),f.name)}catch(x){say('fs','Could not read that font file.')}});
+$('cp').onclick=async()=>{try{await navigator.clipboard.write([new ClipboardItem({'image/png':new Promise(r=>cv.toBlob(r,'image/png'))})]);say('cs','Copied. Now paste it in Bazaart.')}catch(e){say('cs','Copy was blocked here.');$('im').src=cv.toDataURL('image/png');$('fb').style.display='block'}};
+
+/* 5: post it */
+$('ca').onclick=async()=>{const a=$('ar').value.trim();if(!a){say('as','No article yet. Fill it in at step 2.');return}say('as',(await copy(a))?'Article copied.':'Copy was blocked.')};
+$('new').onclick=()=>{$('stories').innerHTML='';addStory();document.querySelectorAll('.hc.on').forEach(e=>e.classList.remove('on'));['reply','hl','ar','gp','mp'].forEach(i=>$(i).value='');['gp','mp'].forEach(i=>$(i).style.display='none');['gs','ms','cs','as'].forEach(i=>say(i,''));$('fb').style.display='none';draw();scrollTo(0,0)};
+
+async function askClaude(){const t='Refresh the headlines in my Post Builder artifact ('+location.href.split('#')[0]+'). Pull today\'s top Miami-Dade news, sports, entertainment and weird-news headlines from WSVN, NBC 6 and other local outlets. Replace the documents in its "headlines" collection (h01 to h12) with fields title, source, topic, summary (one sentence in your own words), url, rank (1 is top) and fetchedAt (current time, ISO).';
+ const ok=await copy(t);say('rs',ok?'Copied. Paste it to Claude in your Miami Dader chat, then reopen this page.':'Copy was blocked. Select and copy the request below.');if(!ok){$('rq').value=t;$('rq').style.display='block'}}
+
+const FEEDS=[['Miami-Dade when:1d','Local',9],['(Heat OR Dolphins OR Hurricanes OR Panthers OR "Inter Miami") Miami when:1d','Sports',6]];
+async function loadLive(){
+ try{const res=await Promise.all(FEEDS.map(async([q,topic,n])=>{
+   const u='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=en-US&gl=US&ceid=US:en');
+   const r=await fetch(u);if(!r.ok)throw 0;const j=await r.json();if(j.status!=='ok')throw 0;
+   return (j.items||[]).slice(0,n).map(it=>{const m=String(it.title||'').match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:it.title,source:m?m[2].trim():'',topic,url:it.link,summary:'',t:Date.parse((it.pubDate||'').replace(' ','T')+'Z')||0}})}));
+  const seen=new Set(),all=[].concat(...res).filter(h=>h.title&&!seen.has(h.title.toLowerCase())&&seen.add(h.title.toLowerCase())).sort((a,b)=>b.t-a.t);
+  if(!all.length)throw 0;const now=new Date().toISOString();
+  showHeadlines(all.map((h,i)=>({id:'live'+i,data:()=>({...h,fetchedAt:now})})),true);return true}
+ catch(e){return false}}
+
+$('rf').onclick=async()=>{say('rs','Refreshing...');if(await loadLive()){say('rs','');return}say('rs','Could not reach the live feed here. ');askClaude()};
+/* top headlines (kept in the page's shared data; refreshed by asking Claude) */
+function showHeadlines(docs,isLive){const box=$('hdl');box.innerHTML='';let latest='';
+ docs.forEach(d=>{const h=d.data();if(!h||!h.title)return;if(h.fetchedAt&&h.fetchedAt>latest)latest=h.fetchedAt;
+  const c=document.createElement('div');c.className='hc';c.dataset.id=d.id;
+  const b=document.createElement('b');b.textContent=h.title;const sp=document.createElement('span');sp.textContent=(h.source||'')+(h.topic?' \u00b7 '+h.topic:'');
+  c.append(b,sp);
+  c.onclick=()=>{if(c.classList.contains('on')){c.classList.remove('on');dropStory(d.id);return}
+   const txt=h.title+' ('+(h.source||'source')+')\n'+(h.summary||'')+'\n'+(h.url||'');
+   if(!addStory(txt,d.id)){say('hs','You can pick up to 4 stories. Tap one to remove it.');return}c.classList.add('on');say('hs','Picked '+document.querySelectorAll('.st[data-hid]').length+' of 4.')};
+  box.appendChild(c)});
+ say('hs',docs.length?('Updated '+(latest?new Date(latest).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'}):'recently')+'. Tap to pick up to 4.'+(isLive?'':' To refresh, ask Claude to update the headlines.')):'No headlines yet. Ask Claude to fetch them, or use the sources below.')}
+(async()=>{if(await loadLive())return;try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs','Headlines are not available here. Use the sources below.');return}
+ db.collection('headlines').orderBy('rank','asc').onSnapshot(snap=>showHeadlines(snap.docs),()=>say('hs','Could not load headlines. Use the sources below.'))}
+ catch(e){say('hs','Could not load headlines. Use the sources below.')}})();
+
+draw();document.fonts.load('100px Anton','HAI').then(draw);document.fonts.ready.then(draw);
+(async()=>{try{await useFont(new FontFace('TGCH','local("Tablet Gothic Condensed Heavy"),local("TabletGothic-CondensedHeavy")'),'Tablet Gothic Condensed Heavy (installed)')}catch(x){}})();
+</script></body></html>
