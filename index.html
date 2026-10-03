@@ -161,18 +161,21 @@ $('new').onclick=()=>{$('stories').innerHTML='';addStory();document.querySelecto
 async function askClaude(){const t='Refresh the headlines in my Post Builder artifact ('+location.href.split('#')[0]+'). Pull today\'s top Miami-Dade news, sports, entertainment and weird-news headlines from WSVN, NBC 6 and other local outlets. Replace the documents in its "headlines" collection (h01 to h12) with fields title, source, topic, summary (one sentence in your own words), url, rank (1 is top) and fetchedAt (current time, ISO).';
  const ok=await copy(t);say('rs',ok?'Copied. Paste it to Claude in your Miami Dader chat, then reopen this page.':'Copy was blocked. Select and copy the request below.');if(!ok){$('rq').value=t;$('rq').style.display='block'}}
 
-const FEEDS=[['Miami-Dade when:1d','Local',9],['(Heat OR Dolphins OR Hurricanes OR Panthers OR "Inter Miami") Miami when:1d','Sports',6]];
+const FEEDS=[['Miami-Dade when:1d','Local',8],['Miami Dolphins when:1d','Sports',3],['Miami Heat when:1d','Sports',3],['Miami Hurricanes football when:1d','Sports',3]];
+async function oneFeed([q,topic,n]){
+ const u='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=en-US&gl=US&ceid=US:en');
+ for(let tries=0;tries<2;tries++){
+  try{const r=await fetch(u);if(!r.ok)throw 0;const j=await r.json();if(j.status!=='ok')throw 0;
+   return (j.items||[]).slice(0,n).map(it=>{const m=String(it.title||'').match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:it.title,source:m?m[2].trim():'',topic,url:it.link,summary:'',t:Date.parse(String(it.pubDate||'').replace(' ','T')+'Z')||0}})}
+  catch(e){await new Promise(r=>setTimeout(r,600))}}
+ return []}
 async function loadLive(){
- try{const res=await Promise.all(FEEDS.map(async([q,topic,n])=>{
-   const u='https://api.rss2json.com/v1/api.json?rss_url='+encodeURIComponent('https://news.google.com/rss/search?q='+encodeURIComponent(q)+'&hl=en-US&gl=US&ceid=US:en');
-   const r=await fetch(u);if(!r.ok)throw 0;const j=await r.json();if(j.status!=='ok')throw 0;
-   return (j.items||[]).slice(0,n).map(it=>{const m=String(it.title||'').match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:it.title,source:m?m[2].trim():'',topic,url:it.link,summary:'',t:Date.parse((it.pubDate||'').replace(' ','T')+'Z')||0}})}));
+ try{const res=await Promise.all(FEEDS.map(oneFeed));
   const seen=new Set(),all=[].concat(...res).filter(h=>h.title&&!seen.has(h.title.toLowerCase())&&seen.add(h.title.toLowerCase())).sort((a,b)=>b.t-a.t);
-  if(!all.length)throw 0;const now=new Date().toISOString();
+  if(!all.length)return false;const now=new Date().toISOString();
   showHeadlines(all.map((h,i)=>({id:'live'+i,data:()=>({...h,fetchedAt:now})})),true);return true}
  catch(e){return false}}
 
-$('rf').onclick=async()=>{say('rs','Refreshing...');if(await loadLive()){say('rs','');return}say('rs','Could not reach the live feed here. ');askClaude()};
 /* top headlines (kept in the page's shared data; refreshed by asking Claude) */
 function showHeadlines(docs,isLive){const box=$('hdl');box.innerHTML='';let latest='';
  docs.forEach(d=>{const h=d.data();if(!h||!h.title)return;if(h.fetchedAt&&h.fetchedAt>latest)latest=h.fetchedAt;
@@ -184,7 +187,7 @@ function showHeadlines(docs,isLive){const box=$('hdl');box.innerHTML='';let late
    if(!addStory(txt,d.id)){say('hs','You can pick up to 4 stories. Tap one to remove it.');return}c.classList.add('on');say('hs','Picked '+document.querySelectorAll('.st[data-hid]').length+' of 4.')};
   box.appendChild(c)});
  say('hs',docs.length?('Updated '+(latest?new Date(latest).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'}):'recently')+'. Tap to pick up to 4.'+(isLive?'':' To refresh, ask Claude to update the headlines.')):'No headlines yet. Ask Claude to fetch them, or use the sources below.')}
-(async()=>{if(await loadLive())return;try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs','Headlines are not available here. Use the sources below.');return}
+(async()=>{if(await loadLive())return;try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs','Could not load headlines. Tap Refresh headlines, or use the sources below.');return}
  db.collection('headlines').orderBy('rank','asc').onSnapshot(snap=>showHeadlines(snap.docs),()=>say('hs','Could not load headlines. Use the sources below.'))}
  catch(e){say('hs','Could not load headlines. Use the sources below.')}})();
 
