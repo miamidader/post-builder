@@ -33,7 +33,7 @@ canvas{max-width:100%;height:auto;display:block}
 #fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
 </style></head><body>
 <h1>POST BUILDER</h1>
-<p class="tip" style="margin:-6px 0 10px">Build 10-03-e</p>
+<p class="tip" style="margin:-6px 0 10px">Build 10-03-f</p>
 
 <div class="card"><h2><span class="n">1</span>Pick a topic</h2>
 <div class="tabs"><button class="on" data-m="news">News</button><button data-m="sports">Sports</button><button data-m="facts">Fun facts</button><button data-m="history">History</button></div>
@@ -65,7 +65,7 @@ canvas{max-width:100%;height:auto;display:block}
 <p class="tip">Tap headlines above to pick up to 4, or paste a link or article text for your own. Several stories become one combined post.</p></div>
 
 <div class="card"><h2><span class="n">2</span>ChatGPT: headline + article</h2>
-<button class="btn blue" id="gpt">Copy prompt &amp; open ChatGPT</button>
+<a class="btn blue" id="gpt" href="https://chatgpt.com/" target="_blank" rel="noopener">Copy prompt &amp; open ChatGPT</a>
 <p class="tip" id="gs"></p>
 <textarea id="gp" rows="6" readonly style="display:none"></textarea>
 <textarea id="reply" rows="4" placeholder="Paste ChatGPT's reply here"></textarea>
@@ -74,7 +74,7 @@ canvas{max-width:100%;height:auto;display:block}
 <textarea id="ar" rows="5" placeholder="Article"></textarea></div>
 
 <div class="card"><h2><span class="n">3</span>Gemini: image (3:4)</h2>
-<button class="btn blue" id="gem">Copy prompt &amp; open Gemini</button>
+<a class="btn blue" id="gem" href="https://gemini.google.com/app" target="_blank" rel="noopener">Copy prompt &amp; open Gemini</a>
 <p class="tip" id="ms"></p>
 <textarea id="mp" rows="6" readonly style="display:none"></textarea>
 <p class="tip">Save the image to Photos when it's ready.</p></div>
@@ -123,9 +123,9 @@ Headline: ${h}
 Story: ${a}
 
 Show the key scene with the main subject in the upper two-thirds. Keep the bottom third simple and darker with nothing important in it, because a headline will be placed there. ${MODE==='history'?'Do not depict real identifiable people. ':''}No text, letters, logos, or watermarks in the image.`;
-function handoff(text,url,status,box){copy(text).then(ok=>{say(status,ok?'Prompt copied. Paste it in the app.':'Copy was blocked. Select the prompt below and copy it.');if(!ok){$(box).value=text;$(box).style.display='block'}});window.open(url,'_blank')}
-$('gpt').onclick=()=>{const st=stories();if(!st.length){say('gs','Pick or add a story in step 1.');return}handoff(chatPrompt(st),'https://chatgpt.com/','gs','gp')};
-$('gem').onclick=()=>{const h=$('hl').value.trim(),a=$('ar').value.trim();if(!h||!a){say('ms','Fill in the headline and article in step 2 first.');return}handoff(imgPrompt(fix(h),a),'https://gemini.google.com/app','ms','mp')};
+function handoff(text,status,box){copy(text).then(ok=>{say(status,ok?'Prompt copied. Paste it in the app.':'Copy was blocked. Select the prompt below and copy it.');if(!ok){$(box).value=text;$(box).style.display='block'}})}
+$('gpt').addEventListener('click',e=>{const st=stories();if(!st.length){e.preventDefault();say('gs','Pick or add a story in step 1.');return}handoff(chatPrompt(st),'gs','gp')});
+$('gem').addEventListener('click',e=>{const h=$('hl').value.trim(),a=$('ar').value.trim();if(!h||!a){e.preventDefault();say('ms','Fill in the headline and article in step 2 first.');return}handoff(imgPrompt(fix(h),a),'ms','mp')});
 function parse(){const clean=t=>t.replace(/\s*[—–]\s*/g,', ').trim();
  const r=$('reply').value.replace(/\*\*/g,'').trim();if(!r)return;
  const m=r.match(/HEADLINE:\s*([\s\S]*?)\s*ARTICLE:\s*([\s\S]*)/i);
