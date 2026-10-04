@@ -33,7 +33,7 @@ canvas{max-width:100%;height:auto;display:block}
 #fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
 </style></head><body>
 <h1>POST BUILDER</h1>
-<p class="tip" style="margin:-6px 0 10px">Build 10-03-a</p>
+<p class="tip" style="margin:-6px 0 10px">Build 10-03-b</p>
 
 <div class="card"><h2><span class="n">1</span>Pick a topic</h2>
 <div class="tabs"><button class="on" data-m="news">News</button><button data-m="facts">Fun facts</button><button data-m="history">History</button></div>
@@ -106,19 +106,14 @@ $('add').onclick=()=>addStory();addStory();
 
 /* 2 + 3: handoffs */
 let MODE='news';
-const POSTTYPE={news:'news post',facts:'"Did you know?" fun-fact post',history:'Miami-Dade history post'};
-function chatPrompt(st){const n=MODE==='news';return `You write posts for @miamidader, an Instagram account covering Miami-Dade County, Florida.
-
-Using only the ${n?(st.length>1?'stories':'story'):(st.length>1?'facts':'fact')} below, write one ${POSTTYPE[MODE]}:
-1. A headline: punchy, specific, 8 to 12 words, no emojis.${n?' If there is a strong quote, it can follow a colon.':MODE==='facts'?' Lead with the most surprising detail.':' Include the year if it fits.'}
-2. A short article for the caption: 60 to 90 words, plain and conversational, short sentences, ${n?'lead with the most newsworthy fact':MODE==='facts'?'open with the surprising fact':'tell it like a short story, oldest event first'}. No hashtags, no emojis.${st.length>1?'\nIf the items are related, combine them into one post. If not, focus on the most interesting one.':''}
-Do not invent or add facts, dates, quotes, or numbers beyond what is given. If something is unclear, leave it out.
-
+function chatPrompt(st){const n=MODE==='news';
+return `Create an all caps instagram headline for my Miami area based news account and use this data to write an article that does not link to any news source affiliation (give it a Miami area-centric point of view). No em dashes. No emojis. The article does not need to be all caps:
+${n?'':'\nOnly use the facts in the data. Do not add any other facts, dates, or numbers.\n'}
 Reply in exactly this format:
 HEADLINE: ...
 ARTICLE: ...
 
-${n?'STORIES':'FACTS'}:
+DATA:
 `+st.map((s,i)=>`[${i+1}] ${s}`).join('\n\n')}
 const imgPrompt=(h,a)=>`Create ${MODE==='history'?'a vintage, archival-style editorial image':'a realistic editorial photo'} in a 3:4 vertical portrait for an Instagram post about Miami-Dade, Florida.
 
@@ -129,7 +124,11 @@ Show the key scene with the main subject in the upper two-thirds. Keep the botto
 function handoff(text,url,status,box){copy(text).then(ok=>{say(status,ok?'Prompt copied. Paste it in the app.':'Copy was blocked. Select the prompt below and copy it.');if(!ok){$(box).value=text;$(box).style.display='block'}});window.open(url,'_blank')}
 $('gpt').onclick=()=>{const st=stories();if(!st.length){say('gs','Add at least one story in step 1.');return}handoff(chatPrompt(st),'https://chatgpt.com/','gs','gp')};
 $('gem').onclick=()=>{const h=$('hl').value.trim(),a=$('ar').value.trim();if(!h||!a){say('ms','Fill in the headline and article in step 2 first.');return}handoff(imgPrompt(fix(h),a),'https://gemini.google.com/app','ms','mp')};
-function parse(){const r=$('reply').value.replace(/\*\*/g,''),m=r.match(/HEADLINE:\s*([\s\S]*?)\s*ARTICLE:\s*([\s\S]*)/i);if(m){$('hl').value=m[1].trim().replace(/^["“]|["”]$/g,'');$('ar').value=m[2].trim();draw()}}
+function parse(){const clean=t=>t.replace(/\s*[—–]\s*/g,', ').trim();
+ const r=$('reply').value.replace(/\*\*/g,'').trim();if(!r)return;
+ const m=r.match(/HEADLINE:\s*([\s\S]*?)\s*ARTICLE:\s*([\s\S]*)/i);
+ let h,a;if(m){h=m[1];a=m[2]}else{const parts=r.split(/\n+/).map(x=>x.trim()).filter(Boolean);if(parts.length<2)return;h=parts[0];a=parts.slice(1).join('\n\n')}
+ $('hl').value=clean(h).replace(/^["“]|["”]$/g,'');$('ar').value=clean(a);draw()}
 $('reply').addEventListener('input',parse);
 $('pr').onclick=async()=>{try{$('reply').value=await navigator.clipboard.readText();parse()}catch(e){}};
 $('hl').addEventListener('input',draw);
