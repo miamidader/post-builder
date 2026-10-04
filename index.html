@@ -33,7 +33,7 @@ canvas{max-width:100%;height:auto;display:block}
 #fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
 </style></head><body>
 <h1>POST BUILDER</h1>
-<p class="tip" style="margin:-6px 0 10px">Build 10-03-c</p>
+<p class="tip" style="margin:-6px 0 10px">Build 10-03-e</p>
 
 <div class="card"><h2><span class="n">1</span>Pick a topic</h2>
 <div class="tabs"><button class="on" data-m="news">News</button><button data-m="sports">Sports</button><button data-m="facts">Fun facts</button><button data-m="history">History</button></div>
@@ -57,6 +57,8 @@ canvas{max-width:100%;height:auto;display:block}
 <p class="tip" id="ls" style="margin:0"></p>
 <div id="lib"></div>
 <button class="btn blue sm" id="rnd" style="margin-top:10px">Surprise me</button>
+<button class="btn ghost sm" id="usedBtn" style="margin-top:8px"></button>
+<button class="btn ghost sm" id="resetUsed" style="margin-top:8px;display:none">Make all unused again</button>
 </div>
 <div id="stories"></div>
 <button class="btn ghost sm" id="add">+ Add another story</button>
@@ -102,7 +104,7 @@ async function copy(t){try{await navigator.clipboard.writeText(t);return true}ca
 function addStory(val,hid){const all=document.querySelectorAll('.st');if(all.length>=4)return false;const t=document.createElement('textarea');t.className='st';t.rows=3;if(hid)t.dataset.hid=hid;t.placeholder='Story '+(all.length+1)+': paste link or text';if(val)t.value=val;$('stories').appendChild(t);$('add').style.display=document.querySelectorAll('.st').length>=4?'none':'';return true}
 function dropStory(hid){const t=document.querySelector('.st[data-hid="'+hid+'"]');if(t)t.remove();$('add').style.display=''}
 const stories=()=>[...document.querySelectorAll('.st')].map(t=>t.value.trim()).filter(Boolean);
-$('add').onclick=()=>addStory();addStory();
+$('add').onclick=()=>addStory();
 
 /* 2 + 3: handoffs */
 let MODE='news';
@@ -122,7 +124,7 @@ Story: ${a}
 
 Show the key scene with the main subject in the upper two-thirds. Keep the bottom third simple and darker with nothing important in it, because a headline will be placed there. ${MODE==='history'?'Do not depict real identifiable people. ':''}No text, letters, logos, or watermarks in the image.`;
 function handoff(text,url,status,box){copy(text).then(ok=>{say(status,ok?'Prompt copied. Paste it in the app.':'Copy was blocked. Select the prompt below and copy it.');if(!ok){$(box).value=text;$(box).style.display='block'}});window.open(url,'_blank')}
-$('gpt').onclick=()=>{const st=stories();if(!st.length){say('gs','Add at least one story in step 1.');return}handoff(chatPrompt(st),'https://chatgpt.com/','gs','gp')};
+$('gpt').onclick=()=>{const st=stories();if(!st.length){say('gs','Pick or add a story in step 1.');return}handoff(chatPrompt(st),'https://chatgpt.com/','gs','gp')};
 $('gem').onclick=()=>{const h=$('hl').value.trim(),a=$('ar').value.trim();if(!h||!a){say('ms','Fill in the headline and article in step 2 first.');return}handoff(imgPrompt(fix(h),a),'https://gemini.google.com/app','ms','mp')};
 function parse(){const clean=t=>t.replace(/\s*[—–]\s*/g,', ').trim();
  const r=$('reply').value.replace(/\*\*/g,'').trim();if(!r)return;
@@ -166,8 +168,8 @@ $('ff').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)retu
 $('cp').onclick=async()=>{try{await navigator.clipboard.write([new ClipboardItem({'image/png':new Promise(r=>cv.toBlob(r,'image/png'))})]);say('cs','Copied. Now paste it in Bazaart.')}catch(e){say('cs','Copy was blocked here.');$('im').src=cv.toDataURL('image/png');$('fb').style.display='block'}};
 
 /* 5: post it */
-$('ca').onclick=async()=>{const a=$('ar').value.trim();if(!a){say('as','No article yet. Fill it in at step 2.');return}say('as',(await copy(a))?'Article copied.':'Copy was blocked.')};
-$('new').onclick=()=>{$('stories').innerHTML='';addStory();document.querySelectorAll('.hc.on').forEach(e=>e.classList.remove('on'));['reply','hl','ar','gp','mp'].forEach(i=>$(i).value='');['gp','mp'].forEach(i=>$(i).style.display='none');['gs','ms','cs','as'].forEach(i=>say(i,''));$('fb').style.display='none';draw();scrollTo(0,0)};
+$('ca').onclick=async()=>{const a=$('ar').value.trim();if(!a){say('as','No article yet. Fill it in at step 2.');return}const ok=await copy(a);let note=ok?'Article copied.':'Copy was blocked.';if(ok&&markPickedUsed())note+=' Marked as used.';say('as',note)};
+$('new').onclick=()=>{SHOWUSED=false;$('stories').innerHTML='';document.querySelectorAll('.hc.on').forEach(e=>e.classList.remove('on'));['reply','hl','ar','gp','mp'].forEach(i=>$(i).value='');['gp','mp'].forEach(i=>$(i).style.display='none');['gs','ms','cs','as'].forEach(i=>say(i,''));$('fb').style.display='none';draw();if(MODE==='facts'||MODE==='history')renderLib();scrollTo(0,0)};
 
 async function askClaude(){const t='Refresh the headlines in my Post Builder artifact ('+location.href.split('#')[0]+'). Pull today\'s top Miami-Dade news, sports, entertainment and weird-news headlines from WSVN, NBC 6 and other local outlets. Replace the documents in its "headlines" collection (h01 to h12) with fields title, source, topic, summary (one sentence in your own words), url, rank (1 is top) and fetchedAt (current time, ISO).';
  const ok=await copy(t);say('rs',ok?'Copied. Paste it to Claude in your Miami Dader chat, then reopen this page.':'Copy was blocked. Select and copy the request below.');if(!ok){$('rq').value=t;$('rq').style.display='block'}}
@@ -202,13 +204,23 @@ async function loadLive(m){m=m||MODE;if(m!=='news'&&m!=='sports')return false;
 
 /* fun facts + history library */
 const LIB=[{"k": "facts", "t": "Miami is the only major U.S. city founded by a woman", "d": "Miami was founded by Julia Tuttle and officially incorporated on July 28, 1896, with a population of just over 300. She is called the mother of Miami."}, {"k": "facts", "t": "Miami-Dade is the only U.S. county with a hyphenated name", "d": "Dade County was renamed Miami-Dade County on November 13, 1997, making it the only county in the United States whose name is hyphenated."}, {"k": "facts", "t": "Most Hispanic county in America", "d": "In 2020, 68.73% of Miami-Dade residents were Hispanic, making it the most populous majority-Hispanic county in the country. About 66.5% of residents speak Spanish at home, and 54% were born outside the U.S."}, {"k": "facts", "t": "PortMiami is the busiest cruise port in the world", "d": "PortMiami is the world's busiest cruise port by passenger traffic. It handled 5,340,559 cruise passengers in 2017."}, {"k": "facts", "t": "Brickell Avenue has the most international banks in the U.S.", "d": "Brickell Avenue has the largest concentration of international banks in the United States."}, {"k": "facts", "t": "Miami has the third-largest skyline in the U.S.", "d": "Miami has more than 300 high-rises, and about 70 of them are taller than 492 feet, giving it the third-largest skyline in the country."}, {"k": "facts", "t": "Nearly a quarter of Miami-Dade is water", "d": "Miami-Dade County covers 2,431 square miles, and 532 of those square miles, or 21.9%, are water."}, {"k": "facts", "t": "The highest point in Miami-Dade is only about 20 to 26 feet up", "d": "The county's highest point is only 20 to 26 feet above sea level. Its lowest point is sea level at the Atlantic Ocean."}, {"k": "facts", "t": "Over half of Miami-Dade residents live outside any city", "d": "Miami-Dade has 34 incorporated cities, yet about 52% of residents lived in unincorporated areas as of 2013."}, {"k": "facts", "t": "Miami's name comes from Lake Okeechobee", "d": "The name Miami comes from the Miami River, which is ultimately derived from Mayaimi, the historic name for Lake Okeechobee."}, {"k": "facts", "t": "Miami has 5 nicknames", "d": "Miami is known as The 305, the Magic City, the Gateway to the Americas, the Gateway to Latin America, and the Capital of Latin America."}, {"k": "facts", "t": "Miami Dade College is one of the biggest in America", "d": "Miami Dade College has the second largest undergraduate enrollment of any U.S. college, with over 100,000 students. Florida International University was the fifth largest university in the country by enrollment as of 2020."}, {"k": "facts", "t": "Miami-Dade's economy is the biggest in Florida", "d": "Miami-Dade County's GDP was $239.652 billion in 2023, the largest of any county in Florida."}, {"k": "facts", "t": "MIA moves more international cargo than any U.S. airport", "d": "Miami International Airport is the largest U.S. airport for international cargo and the third largest for international passengers."}, {"k": "facts", "t": "Miami-Dade schools are the 4th largest district in the U.S.", "d": "Miami-Dade County Public Schools is the fourth-largest public school district in the nation, with about 360,000 students as of 2014."}, {"k": "history", "t": "The Tequesta lived here for about 2,000 years", "d": "The Tequesta people occupied the Miami area for around 2,000 years before European contact. The earliest evidence of Native American settlement in the region goes back about 10,000 years."}, {"k": "history", "t": "1513: Ponce de Leon sails into Biscayne Bay", "d": "In 1513, Juan Ponce de Leon became the first European to visit the Miami area, sailing into Biscayne Bay. In 1566, Pedro Menendez de Aviles made the first recorded European landing at a Tequesta settlement, and the Spanish set up a mission there in 1567."}, {"k": "history", "t": "1825: Cape Florida Lighthouse", "d": "The Cape Florida Lighthouse was built on Key Biscayne in 1825 to warn passing ships."}, {"k": "history", "t": "1836: Dade County is created", "d": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War."}, {"k": "history", "t": "1891: Julia Tuttle buys 640 acres on the Miami River", "d": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River."}, {"k": "history", "t": "The freeze that made Miami", "d": "A freeze in December 1894 and a second one on February 7, 1895 destroyed crops across northern Florida. Miami's crops survived, and Julia Tuttle used that to convince railroad tycoon Henry Flagler to extend his Florida East Coast Railway south."}, {"k": "history", "t": "April 13, 1896: the first train arrives", "d": "The first train arrived in Miami on April 13, 1896, with Henry Flagler aboard. Miami was officially incorporated as a city on July 28, 1896."}, {"k": "history", "t": "1906: canals begin draining the Everglades", "d": "In 1906, canals were begun to remove water from the Florida Everglades."}, {"k": "history", "t": "1913: a two-mile wooden bridge opens Miami Beach", "d": "Miami Beach was developed after a two-mile wooden bridge built by John Collins was completed in 1913."}, {"k": "history", "t": "1926: the Great Miami Hurricane", "d": "In September 1926, the Great Miami Hurricane struck as a Category 4 storm. It caused about 373 deaths and left 25,000 to 50,000 people homeless."}, {"k": "history", "t": "1940: Miami reaches 172,172 people", "d": "By 1940, 172,172 people lived in the City of Miami."}, {"k": "history", "t": "1972: Miami hosts both national conventions", "d": "Miami hosted both the Democratic and Republican National Conventions in 1972."}, {"k": "history", "t": "1992: Hurricane Andrew", "d": "Hurricane Andrew hit on August 24, 1992, and caused more than $25 billion in damage in Miami-Dade County."}, {"k": "history", "t": "1997: Dade becomes Miami-Dade", "d": "On November 13, 1997, Dade County was renamed Miami-Dade County, the only county in the United States with a hyphenated name."}];
-function renderLib(){const box=$('lib');box.innerHTML='';const items=LIB.map((x,i)=>({x,i})).filter(o=>o.x.k===MODE);
- say('ls',MODE==='facts'?'Tap up to 4 fun facts. Each one is built from facts I checked against Wikipedia.':'Tap up to 4 history items. Each one is built from facts I checked against Wikipedia.');
+let USED=[];try{USED=JSON.parse(localStorage.getItem('pbUsed')||'[]')}catch(e){}
+let SHOWUSED=false;
+const saveUsed=()=>{try{localStorage.setItem('pbUsed',JSON.stringify(USED))}catch(e){}};
+function renderLib(){const box=$('lib');box.innerHTML='';const all=LIB.map((x,i)=>({x,i})).filter(o=>o.x.k===MODE);
+ const left=all.filter(o=>!USED.includes(o.x.t)),usedN=all.length-left.length,items=SHOWUSED?all:left;
+ say('ls',(MODE==='facts'?'Tap up to 4 fun facts. ':'Tap up to 4 history items. ')+left.length+' of '+all.length+' unused. Facts checked against Wikipedia.');
+ $('usedBtn').style.display=usedN?'':'none';$('usedBtn').textContent=SHOWUSED?'Hide used ('+usedN+')':'Show used ('+usedN+')';$('resetUsed').style.display=SHOWUSED&&usedN?'':'none';
+ if(!items.length){const e=document.createElement('p');e.className='tip';e.textContent='All used. Ask Claude for more, or tap Show used.';box.append(e)}
  items.forEach(({x,i})=>{const c=document.createElement('div');c.className='hc';c.dataset.id='lib'+i;
   const b=document.createElement('b');b.textContent=x.t;c.append(b);
+  if(USED.includes(x.t)){c.style.opacity='.5';const sp=document.createElement('span');sp.textContent='Used';c.append(sp)}
   c.onclick=()=>{if(c.classList.contains('on')){c.classList.remove('on');dropStory('lib'+i);return}
    if(!addStory(x.t+'\n'+x.d,'lib'+i)){say('ls','You can pick up to 4. Tap one to remove it.');return}c.classList.add('on')};
   box.appendChild(c)})}
+$('usedBtn').onclick=()=>{SHOWUSED=!SHOWUSED;renderLib()};
+$('resetUsed').onclick=()=>{USED=USED.filter(t=>!LIB.some(x=>x.k===MODE&&x.t===t));saveUsed();renderLib()};
+function markPickedUsed(){const ids=[...document.querySelectorAll('.st[data-hid^="lib"]')].map(t=>+t.dataset.hid.slice(3));let ch=false;ids.forEach(i=>{const t=LIB[i]&&LIB[i].t;if(t&&!USED.includes(t)){USED.push(t);ch=true}});if(ch){saveUsed();return true}return false}
 function setMode(m){MODE=m;document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
  document.querySelectorAll('.st[data-hid]').forEach(t=>t.remove());document.querySelectorAll('.hc.on').forEach(e=>e.classList.remove('on'));$('add').style.display='';
  const nw=m==='news'||m==='sports';$('newsBox').style.display=nw?'':'none';$('libBox').style.display=nw?'none':'';
