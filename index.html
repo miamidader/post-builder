@@ -33,10 +33,10 @@ canvas{max-width:100%;height:auto;display:block}
 #fb{display:none;margin-top:10px;font-size:14px;color:var(--mut)}#fb img{width:100%;border-radius:8px;background:#1a1f27}
 </style></head><body>
 <h1>POST BUILDER</h1>
-<p class="tip" style="margin:-6px 0 10px">Build 10-03-b</p>
+<p class="tip" style="margin:-6px 0 10px">Build 10-03-c</p>
 
 <div class="card"><h2><span class="n">1</span>Pick a topic</h2>
-<div class="tabs"><button class="on" data-m="news">News</button><button data-m="facts">Fun facts</button><button data-m="history">History</button></div>
+<div class="tabs"><button class="on" data-m="news">News</button><button data-m="sports">Sports</button><button data-m="facts">Fun facts</button><button data-m="history">History</button></div>
 <div id="newsBox">
 <p class="tip" id="hs" style="margin:0">Loading top headlines...</p>
 <div id="hdl"></div>
@@ -106,7 +106,7 @@ $('add').onclick=()=>addStory();addStory();
 
 /* 2 + 3: handoffs */
 let MODE='news';
-function chatPrompt(st){const n=MODE==='news';
+function chatPrompt(st){const n=MODE==='news'||MODE==='sports';
 return `Create an all caps instagram headline for my Miami area based news account and use this data to write an article that does not link to any news source affiliation (give it a Miami area-centric point of view). No em dashes. No emojis. The article does not need to be all caps:
 ${n?'':'\nOnly use the facts in the data. Do not add any other facts, dates, or numbers.\n'}
 Reply in exactly this format:
@@ -172,7 +172,11 @@ $('new').onclick=()=>{$('stories').innerHTML='';addStory();document.querySelecto
 async function askClaude(){const t='Refresh the headlines in my Post Builder artifact ('+location.href.split('#')[0]+'). Pull today\'s top Miami-Dade news, sports, entertainment and weird-news headlines from WSVN, NBC 6 and other local outlets. Replace the documents in its "headlines" collection (h01 to h12) with fields title, source, topic, summary (one sentence in your own words), url, rank (1 is top) and fetchedAt (current time, ISO).';
  const ok=await copy(t);say('rs',ok?'Copied. Paste it to Claude in your Miami Dader chat, then reopen this page.':'Copy was blocked. Select and copy the request below.');if(!ok){$('rq').value=t;$('rq').style.display='block'}}
 
-const FEEDS=[['Miami when:1d','',10]];
+const FEEDS={
+ news:[['Miami-Dade when:1d','',6],['Miami-Dade police when:1d','',4],['Miami Beach when:1d','',4],['Hialeah when:1d','',3]],
+ sports:[['Miami Dolphins when:1d','',4],['Miami Heat when:1d','',4],['Miami Hurricanes football when:1d','',4],['Inter Miami when:1d','',3]]};
+const SPORTS_RE=/miami heat|dolphins|miami hurricanes|\bcanes\b|panthers|marlins|inter miami|\bnfl\b|\bnba\b|\bncaa\b|\bmls\b|football|basketball|quarterback|touchdown|playoff|coach |super bowl/i;
+const LIVE={};
 let lastErr=[];
 const parseRss=(txt,topic,n)=>{const d=new DOMParser().parseFromString(txt,'text/xml');return [...d.querySelectorAll('item')].slice(0,n).map(it=>{const g=t=>(it.querySelector(t)||{}).textContent||'';const raw=g('title').trim();const m=raw.match(/^(.*)\s+-\s+([^-]+)$/);return{title:m?m[1]:raw,source:(g('source')||(m?m[2]:'')).trim(),topic,url:g('link').trim(),summary:'',t:Date.parse(g('pubDate'))||0}})};
 async function oneFeed([q,topic,n]){
@@ -186,11 +190,14 @@ async function oneFeed([q,topic,n]){
   try{const out=await run();if(out.length)return out;lastErr.push(name+': no stories')}
   catch(e){lastErr.push(name+': '+((e&&e.message)||'blocked'))}}
  return []}
-async function loadLive(){
- lastErr=[];try{const res=await Promise.all(FEEDS.map(oneFeed));
-  const seen=new Set(),all=[].concat(...res).filter(h=>h.title&&!seen.has(h.title.toLowerCase())&&seen.add(h.title.toLowerCase())).sort((a,b)=>b.t-a.t);
+async function loadLive(m){m=m||MODE;if(m!=='news'&&m!=='sports')return false;
+ lastErr=[];try{const res=await Promise.all(FEEDS[m].map(oneFeed));
+  const seen=new Set();let all=[].concat(...res).filter(h=>h.title&&!seen.has(h.title.toLowerCase())&&seen.add(h.title.toLowerCase())).sort((a,b)=>b.t-a.t);
+  if(m==='news')all=all.filter(h=>!SPORTS_RE.test(h.title));
+  all=all.slice(0,m==='news'?14:12);
   if(!all.length)return false;const now=new Date().toISOString();
-  showHeadlines(all.map((h,i)=>({id:'live'+i,data:()=>({...h,fetchedAt:now})})),true);return true}
+  LIVE[m]=all.map((h,i)=>({id:m+'live'+i,data:()=>({...h,fetchedAt:now})}));
+  if(MODE===m)showHeadlines(LIVE[m],true);return true}
  catch(e){return false}}
 
 /* fun facts + history library */
@@ -204,7 +211,8 @@ function renderLib(){const box=$('lib');box.innerHTML='';const items=LIB.map((x,
   box.appendChild(c)})}
 function setMode(m){MODE=m;document.querySelectorAll('.tabs button').forEach(b=>b.classList.toggle('on',b.dataset.m===m));
  document.querySelectorAll('.st[data-hid]').forEach(t=>t.remove());document.querySelectorAll('.hc.on').forEach(e=>e.classList.remove('on'));$('add').style.display='';
- $('newsBox').style.display=m==='news'?'':'none';$('libBox').style.display=m==='news'?'none':'';if(m!=='news')renderLib()}
+ const nw=m==='news'||m==='sports';$('newsBox').style.display=nw?'':'none';$('libBox').style.display=nw?'none':'';
+ if(nw){if(LIVE[m])showHeadlines(LIVE[m],true);else{say('hs','Loading top headlines...');$('hdl').innerHTML='';loadLive(m).then(ok=>{if(!ok)tryDb(m)})}}else renderLib()}
 document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>setMode(b.dataset.m));
 $('rnd').onclick=()=>{const free=[...document.querySelectorAll('#lib .hc:not(.on)')];if(!free.length)return;const c=free[Math.floor(Math.random()*free.length)];c.click();c.scrollIntoView({block:'center',behavior:'smooth'})};
 
@@ -219,9 +227,13 @@ function showHeadlines(docs,isLive){const box=$('hdl');box.innerHTML='';let late
    if(!addStory(txt,d.id)){say('hs','You can pick up to 4 stories. Tap one to remove it.');return}c.classList.add('on');say('hs','Picked '+document.querySelectorAll('.st[data-hid]').length+' of 4.')};
   box.appendChild(c)});
  say('hs',docs.length?('Updated '+(latest?new Date(latest).toLocaleString([], {weekday:'short',hour:'numeric',minute:'2-digit'}):'recently')+'. Tap to pick up to 4.'+(isLive?'':' To refresh, ask Claude to update the headlines.')):'No headlines yet. Ask Claude to fetch them, or use the sources below.')}
-(async()=>{if(await loadLive())return;try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs',''+'Could not load headlines ('+lastErr.join('; ')+'). Tap Refresh headlines, or use the sources below.');return}
- db.collection('headlines').orderBy('rank','asc').onSnapshot(snap=>showHeadlines(snap.docs),()=>say('hs','Could not load headlines. Use the sources below.'))}
- catch(e){say('hs','Could not load headlines. Use the sources below.')}})();
+let DBDOCS=null;
+function showDb(m){if(!DBDOCS)return;const docs=DBDOCS.filter(d=>{const h=d.data()||{};return m==='sports'?h.topic==='Sports':h.topic!=='Sports'});showHeadlines(docs,false)}
+async function tryDb(m){try{const db=typeof claude!=='undefined'&&await claude.use('db');if(!db){say('hs','Could not load headlines ('+lastErr.join('; ')+'). Tap Refresh headlines, or use the sources below.');return}
+ if(DBDOCS){showDb(m);return}
+ db.collection('headlines').orderBy('rank','asc').onSnapshot(snap=>{DBDOCS=snap.docs;if(MODE==='news'||MODE==='sports')showDb(MODE)},()=>say('hs','Could not load headlines. Use the sources below.'))}
+ catch(e){say('hs','Could not load headlines. Use the sources below.')}}
+(async()=>{if(await loadLive('news'))return;tryDb('news')})();
 
 draw();document.fonts.load('100px Anton','HAI').then(draw);document.fonts.ready.then(draw);
 (async()=>{try{await useFont(new FontFace('TGCH','local("Tablet Gothic Condensed Heavy"),local("TabletGothic-CondensedHeavy")'),'Tablet Gothic Condensed Heavy (installed)')}catch(x){}})();
