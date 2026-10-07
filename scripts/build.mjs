@@ -87,10 +87,27 @@ async function candidates(kind, seen) {
 }
 
 /* ---------- Gemini ---------- */
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+const FALLBACK_MODEL = process.env.GEMINI_FALLBACK_MODEL || 'gemini-flash-lite-latest';
+async function gemOnce(model, body) {
+  let last;
+  for (let a = 0; a < 5; a++) {
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': KEY }, body: JSON.stringify(body) });
+    if (r.ok) return r.json();
+    last = `Gemini ${model} HTTP ${r.status}: ${(await r.text()).slice(0, 200)}`;
+    if (![429, 500, 502, 503, 504].includes(r.status)) break; // real error, retrying will not help
+    log('busy, retrying in', 5 * (a + 1) * 2, 'seconds');
+    await sleep(5000 * (a + 1) * 2);
+  }
+  throw new Error(last);
+}
 async function gem(model, body) {
-  const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': KEY }, body: JSON.stringify(body) });
-  if (!r.ok) throw new Error(`Gemini ${model} HTTP ${r.status}: ${(await r.text()).slice(0, 300)}`);
-  return r.json();
+  try { return await gemOnce(model, body); }
+  catch (e) {
+    if (model === FALLBACK_MODEL || model === IMG_MODEL) throw e;
+    log('Switching to', FALLBACK_MODEL, 'because:', e.message.slice(0, 120));
+    return gemOnce(FALLBACK_MODEL, body);
+  }
 }
 const clean = t => String(t || '').replace(/\*\*/g, '').replace(/\s*[—–]\s*/g, ', ').trim();
 async function write(kind, dataText) {
