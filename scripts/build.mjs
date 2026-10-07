@@ -7,7 +7,8 @@ const OUT = path.join(ROOT, 'today');
 const KEY = process.env.GEMINI_API_KEY;
 const DRY = process.env.DRY_RUN === '1';
 const TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-flash-latest';
-const IMG_MODEL = process.env.GEMINI_IMAGE_MODEL || ''; // empty = no AI photos (free)
+const IMG_RAW = process.env.GEMINI_IMAGE_MODEL || 'gemini-3.1-flash-lite-image';
+const IMG_MODEL = /^(off|none|no)$/i.test(IMG_RAW) ? '' : IMG_RAW; // set the variable to "off" for free posts with no AI photos
 const NUM = +(process.env.NUM_POSTS || 4);
 const log = (...a) => console.log(...a);
 
@@ -104,7 +105,7 @@ async function gemOnce(model, body) {
 async function gem(model, body) {
   try { return await gemOnce(model, body); }
   catch (e) {
-    if (model === FALLBACK_MODEL || model === IMG_MODEL) throw e;
+    if (model === FALLBACK_MODEL) throw e;
     log('Switching to', FALLBACK_MODEL, 'because:', e.message.slice(0, 120));
     return gemOnce(FALLBACK_MODEL, body);
   }
@@ -132,13 +133,37 @@ async function pickBest(list, n) {
     return picks.length ? picks : list.slice(0, n);
   } catch (e) { log('pickBest fallback', e.message); return list.slice(0, n); }
 }
+function findImage(o, depth = 0) { // walk any JSON reply and return the first base64 image
+  if (!o || depth > 12) return null;
+  if (typeof o === 'object') {
+    const d = o.data || (o.inlineData && o.inlineData.data) || (o.inline_data && o.inline_data.data);
+    if (typeof d === 'string' && d.length > 2000) return d;
+    for (const k of Object.keys(o)) { const r = findImage(o[k], depth + 1); if (r) return r; }
+  }
+  return null;
+}
 async function photo(prompt) {
   if (!IMG_MODEL || DRY) return null;
-  try {
-    const j = await gem(IMG_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: '3:4' } } });
-    const part = (j.candidates?.[0]?.content?.parts || []).find(p => p.inlineData);
-    return part ? Buffer.from(part.inlineData.data, 'base64') : null;
-  } catch (e) { log('Image failed (post will use the plain background):', e.message); return null; }
+  const post = async (url, body) => {
+    for (let a = 0; a < 4; a++) {
+      const r = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': KEY }, body: JSON.stringify(body) });
+      if (r.ok) return r.json();
+      const t = (await r.text()).slice(0, 200);
+      if (![429, 500, 502, 503, 504].includes(r.status)) throw new Error(`HTTP ${r.status} ${t}`);
+      await sleep(8000 * (a + 1));
+    }
+    throw new Error('Google stayed busy');
+  };
+  const tries = [
+    ['interactions', () => post('https://generativelanguage.googleapis.com/v1beta/interactions', { model: IMG_MODEL, input: prompt, response_format: { type: 'image', aspect_ratio: '3:4' } })],
+    ['generateContent', () => post(`https://generativelanguage.googleapis.com/v1beta/models/${IMG_MODEL}:generateContent`, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: '3:4' } } })],
+  ];
+  for (const [name, run] of tries) {
+    try { const b64 = findImage(await run()); if (b64) return Buffer.from(b64, 'base64'); log('Image route', name, 'returned no picture'); }
+    catch (e) { log('Image route', name, 'failed:', e.message); }
+  }
+  log('No photo for this post, using the plain background.');
+  return null;
 }
 
 /* ---------- compose ---------- */
@@ -159,13 +184,14 @@ async function compose(headline, photoBuf) {
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 function page(posts, dateLabel) {
   const cards = posts.map((p, i) => `
-<section class="card" id="p${i}">
+<section class="slide" id="p${i}">
+<div class="card">
  <div class="lab">${esc(p.label)}</div>
- <img class="pimg" src="p${i + 1}.png" alt="Post ${i + 1}" loading="lazy">
+ <img class="pimg" src="p${i + 1}.png" alt="Post ${i + 1}"${i ? ' loading="lazy"' : ''}>
  <h2>${esc(p.headline)}</h2>
  <p class="art">${esc(p.article).replace(/\n+/g, '<br><br>')}</p>
  <div class="row">
-  <button class="btn" data-copy="art" data-i="${i}">Copy article</button>
+  <button class="btn" data-copy="article" data-i="${i}">Copy article</button>
   <a class="btn ghost" href="p${i + 1}.png" download="miamidader-${i + 1}.png">Save image</a>
  </div>
  <div class="row">
@@ -175,32 +201,51 @@ function page(posts, dateLabel) {
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
  <p class="src">${p.url ? `Source: <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.source || 'link')}</a>. Check the facts before you post.` : 'From your fact library.'}</p>
  <p class="tip" data-s="${i}"></p>
+</div>
 </section>`).join('\n');
+  const dots = posts.map((_, i) => `<button class="dot" aria-label="Post ${i + 1}" data-go="${i}"></button>`).join('');
   const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt })));
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F3F5F2;--fg:#101316;--card:#fff;--mut:#5E6870;--bd:#DADFD9;--ac:#2FB457;--edge:#101316;--orange:#FF8A1F}
 @media (prefers-color-scheme:dark){:root{--bg:#0B0D0F;--fg:#F2F4F1;--card:#161A1E;--mut:#97A1A9;--bd:#2B3238;--edge:#F2F4F1}}
-*{box-sizing:border-box}body{margin:0 auto;background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 16px 40px;max-width:560px}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 0 28px;overflow-x:hidden}
+.top{padding:0 16px;max-width:560px;margin:0 auto}
 .logo{font:400 15px Anton,Impact,sans-serif;letter-spacing:.04em}.logo em{font-style:normal;color:var(--orange)}
-h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 16px;font-size:13px}
-.card{background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;margin-bottom:20px;box-shadow:0 4px 0 var(--ac)}
+h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 12px;font-size:13px}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto 10px;padding:0 16px}
+.dots{display:flex;gap:8px}.dot{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--bd);cursor:pointer;transition:all .2s}.dot.on{background:var(--ac);width:26px;border-radius:6px}
+.arrow{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--edge);background:var(--card);color:var(--fg);font:700 18px Poppins;cursor:pointer;display:grid;place-items:center}.arrow:disabled{opacity:.3}
+.count{font:600 13px Poppins;color:var(--mut)}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;align-items:flex-start}.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
+.card{width:100%;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px;margin-bottom:10px}
-.pimg{width:100%;border-radius:16px;display:block;background:#222}
-h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;color:var(--fg)}
+.pimg{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;display:block;background:#222}
+h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
 .src,.tip{font-size:12px;color:var(--mut);margin:8px 0 0}.src a{color:var(--mut)}
+@media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
 </style></head><body>
-<div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(dateLabel)}. Pick the ones you like.</p>
+<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(dateLabel)}. Swipe to see each one.</p></div>
+<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots">${dots}</div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
+<div class="track" id="track">
 ${cards}
+</div>
 <script>
-const D=${data};
-const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
+const D=${data},T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length;
+let cur=0;const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
+function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
+function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
+T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
+dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
+document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);
+mark(0);
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
-document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.card').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
+document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
 </script></body></html>`;
 }
 
