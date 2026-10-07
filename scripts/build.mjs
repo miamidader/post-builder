@@ -142,7 +142,7 @@ function findImage(o, depth = 0) { // walk any JSON reply and return the first b
   }
   return null;
 }
-async function photo(prompt) {
+async function photoOnce(prompt) {
   if (!IMG_MODEL || DRY) return null;
   const post = async (url, body) => {
     for (let a = 0; a < 4; a++) {
@@ -150,7 +150,8 @@ async function photo(prompt) {
       if (r.ok) return r.json();
       const t = (await r.text()).slice(0, 200);
       if (![429, 500, 502, 503, 504].includes(r.status)) throw new Error(`HTTP ${r.status} ${t}`);
-      await sleep(8000 * (a + 1));
+      log('image: Google busy or rate limited, waiting');
+      await sleep(10000 * (a + 1));
     }
     throw new Error('Google stayed busy');
   };
@@ -159,11 +160,31 @@ async function photo(prompt) {
     ['generateContent', () => post(`https://generativelanguage.googleapis.com/v1beta/models/${IMG_MODEL}:generateContent`, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: '3:4' } } })],
   ];
   for (const [name, run] of tries) {
-    try { const b64 = findImage(await run()); if (b64) return Buffer.from(b64, 'base64'); log('Image route', name, 'returned no picture'); }
-    catch (e) { log('Image route', name, 'failed:', e.message); }
+    try {
+      const j = await run(), b64 = findImage(j);
+      if (b64) return Buffer.from(b64, 'base64');
+      log('Image route', name, 'returned no picture. Google said:', JSON.stringify(j).slice(0, 400));
+    } catch (e) { log('Image route', name, 'failed:', e.message); }
   }
-  log('No photo for this post, using the plain background.');
   return null;
+}
+async function saferPrompt(headline, label) {
+  try {
+    const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: `Write one image prompt for a realistic 3:4 vertical editorial photo that fits this Miami-Dade story: "${headline}". Rules: no real people or names, no faces, no police arrests, injuries, crashes, blood, or dead animals, no brands, no text. Show a calm, recognizable Miami-Dade setting or object related to the topic, with the main subject in the upper two-thirds and a simple darker bottom third. Reply as JSON {"prompt": "..."}.` }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { prompt: { type: 'STRING' } }, required: ['prompt'] } } });
+    return JSON.parse(j.candidates[0].content.parts[0].text).prompt;
+  } catch (e) { return null; }
+}
+async function photo(prompt, headline, label) {
+  if (!IMG_MODEL || DRY) return null;
+  let buf = await photoOnce(prompt);
+  if (buf) return buf;
+  log('Retrying with a safer prompt.');
+  const safe = await saferPrompt(headline, label);
+  if (safe) { buf = await photoOnce(safe); if (buf) return buf; }
+  log('Retrying with a generic Miami photo.');
+  buf = await photoOnce('A realistic editorial photo in a 3:4 vertical portrait of the Miami skyline across Biscayne Bay in soft evening light. Main subject in the upper two-thirds, bottom third simple and darker. No text, letters, logos, or watermarks.');
+  if (!buf) log('No photo for this post, using the plain background.');
+  return buf;
 }
 
 /* ---------- compose ---------- */
@@ -283,7 +304,7 @@ const posts = [];
 for (const j of jobs) {
   try {
     const w = DRY ? { headline: j.h ? j.h.title : j.lib.t, article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' } : await write(j.kind, j.data);
-    const buf = await photo(w.imagePrompt);
+    const buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
     const n = posts.length + 1, { post, headline } = await compose(w.headline, buf);
     fs.writeFileSync(path.join(OUT, `p${n}.png`), post); fs.writeFileSync(path.join(OUT, `h${n}.png`), headline);
     posts.push({ ...w, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source });
