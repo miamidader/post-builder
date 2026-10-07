@@ -3,27 +3,38 @@
 <style>
 :root{--bg:#F3F5F2;--fg:#101316;--card:#fff;--mut:#5E6870;--bd:#DADFD9;--ac:#2FB457;--edge:#101316;--orange:#FF8A1F}
 @media (prefers-color-scheme:dark){:root{--bg:#0B0D0F;--fg:#F2F4F1;--card:#161A1E;--mut:#97A1A9;--bd:#2B3238;--edge:#F2F4F1}}
-*{box-sizing:border-box}body{margin:0 auto;background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 16px 40px;max-width:560px}
+*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 0 28px;overflow-x:hidden}
+.top{padding:0 16px;max-width:560px;margin:0 auto}
 .logo{font:400 15px Anton,Impact,sans-serif;letter-spacing:.04em}.logo em{font-style:normal;color:var(--orange)}
-h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 16px;font-size:13px}
-.card{background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;margin-bottom:20px;box-shadow:0 4px 0 var(--ac)}
+h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 12px;font-size:13px}
+.nav{display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto 10px;padding:0 16px}
+.dots{display:flex;gap:8px}.dot{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--bd);cursor:pointer;transition:all .2s}.dot.on{background:var(--ac);width:26px;border-radius:6px}
+.arrow{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--edge);background:var(--card);color:var(--fg);font:700 18px Poppins;cursor:pointer;display:grid;place-items:center}.arrow:disabled{opacity:.3}
+.count{font:600 13px Poppins;color:var(--mut)}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;align-items:flex-start}.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
+.card{width:100%;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px;margin-bottom:10px}
-.pimg{width:100%;border-radius:16px;display:block;background:#222}
-h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;color:var(--fg)}
+.pimg{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;display:block;background:#222}
+h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
 .src,.tip{font-size:12px;color:var(--mut);margin:8px 0 0}.src a{color:var(--mut)}
+@media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
 </style></head><body>
-<div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Wednesday, October 7. Pick the ones you like.</p>
+<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Wednesday, October 7. Swipe to see each one.</p></div>
+<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots"><button class="dot" aria-label="Post 1" data-go="0"></button><button class="dot" aria-label="Post 2" data-go="1"></button><button class="dot" aria-label="Post 3" data-go="2"></button><button class="dot" aria-label="Post 4" data-go="3"></button></div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
+<div class="track" id="track">
 
-<section class="card" id="p0">
+<section class="slide" id="p0">
+<div class="card">
  <div class="lab">News</div>
- <img class="pimg" src="p1.png" alt="Post 1" loading="lazy">
- <h2>FLORIDA CROCODILE DIES OF APPARENT LEAD POISONING IN FIRST-KNOWN CASE</h2>
- <p class="art">A crocodile has died of apparent lead poisoning in Florida, marking the first-known case of its kind in the state. The tragic death represents an unprecedented occurrence for Florida wildlife. Prior to this incident, there had been no known cases of a crocodile dying from apparent lead poisoning anywhere across the state. This reported fatality stands as Florida's first-known case of a crocodile death linked to apparent lead poisoning.</p>
+ <img class="pimg" src="p1.png" alt="Post 1">
+ <h2>MIAMI-DADE SECURES FEDERAL FUNDING BOOST TO SUPPORT LOCAL UNHOUSED COMMUNITY</h2>
+ <p class="art">Miami-Dade is receiving a federal funding boost dedicated to assisting the county's unhoused community. The incoming support brings federal assistance directly to the area to help address the needs of local unhoused individuals.<br><br>This federal backing provides an injection of vital resources for countywide efforts focused on aiding those without housing across local neighborhoods. The targeted support marks an important federal effort to assist Miami-Dade with care and resources for vulnerable members of the community.</p>
  <div class="row">
-  <button class="btn" data-copy="art" data-i="0">Copy article</button>
+  <button class="btn" data-copy="article" data-i="0">Copy article</button>
   <a class="btn ghost" href="p1.png" download="miamidader-1.png">Save image</a>
  </div>
  <div class="row">
@@ -31,17 +42,19 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;color:var(--
   <button class="btn ghost" data-copy="prompt" data-i="0">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMiwAFBVV95cUxNSnBCUk9qaFkwTkR5SGJrTlFUM2xBdFNsOUZhWGdqeWVQVVQ1Z2hmNUMzT2tiRzNKLXppSHdFOHdJTEdLeERSLXpZb1Z6VEluQWJKN3lhSXhiOWhqUDNDbE5PUXlzc1JkX2lrS2h6UjVyNERjU0V2TjhSeXkyUkQzVHpLUWFZM1c4ZTlqN3poa0xOd2pRdjlFcFZseVB0eG0yN182MlEzbEJwZVlvaHI5T1ktRzdZRGJLRmVSbTc4LUw?oc=5" target="_blank" rel="noopener">USA Today</a>. Check the facts before you post.</p>
+ <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQU3NBQjNIYTl1RFpCenlrSGI3U28wWkhvRjNYWlFrTXNPQVhQQTdXMWxTU3UzQzhDTHlzVThZNkMwamdZU1Q4LVZ4SGxaTXZ1YUhTT0tzNUNGV05IODBaZTgwUmE3ZzVUWWJVSHQtSFU5cVN4ZjRpMWcyQ0cxZFJkWjhjVU80Z0Y3ZFd6aTdRRG9fTHBTYUFBYWszdU1Sek5HRDVnN2Rwd2V0QQ?oc=5" target="_blank" rel="noopener">Key Biscayne Independent</a>. Check the facts before you post.</p>
  <p class="tip" data-s="0"></p>
+</div>
 </section>
 
-<section class="card" id="p1">
+<section class="slide" id="p1">
+<div class="card">
  <div class="lab">News</div>
  <img class="pimg" src="p2.png" alt="Post 2" loading="lazy">
- <h2>WOMAN ARRESTED FOR ALLEGEDLY HELPING TAXI DRIVER TARGET MIAMI BEACH CLUBGOERS</h2>
- <p class="art">A woman has been arrested after allegedly helping a taxi driver target intoxicated clubgoers for thefts in Miami Beach. According to the accusations, the suspect worked alongside a taxi driver to single out drunk patrons who were leaving local nightlife spots. Instead of safe transit home from Miami Beach venues, vulnerable passengers were targeted for thefts during their rides. The woman is now in custody following her alleged involvement in assisting the driver with targeting intoxicated people heading home from area clubs.</p>
+ <h2>DRIVER CRASHES INTO NORTHWEST MIAMI-DADE STORE AFTER MISTAKING PEDALS, DEPUTIES SAY</h2>
+ <p class="art">A driver crashed directly into a store in Northwest Miami-Dade after mistaking pedals, according to deputies. Deputies confirmed that the driver confused the vehicle pedals, causing the vehicle to drive straight into the storefront. Law enforcement officials responded to the scene at the Northwest Miami-Dade business location following the crash. Deputies reported that the entire collision occurred because the driver was mistaking the pedals inside the car while operating the vehicle.</p>
  <div class="row">
-  <button class="btn" data-copy="art" data-i="1">Copy article</button>
+  <button class="btn" data-copy="article" data-i="1">Copy article</button>
   <a class="btn ghost" href="p2.png" download="miamidader-2.png">Save image</a>
  </div>
  <div class="row">
@@ -49,17 +62,19 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;color:var(--
   <button class="btn ghost" data-copy="prompt" data-i="1">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi0AFBVV95cUxPbVFPaS1hZVJkdWFIWEY1QzlBWVd0V1hxdzN6VmM4OV9CWlQ1TnNKUHVTOGRiSlRJWE15Rjg5TnhTOTZkOGY4R1ZXemJKUy0teWE3TG1ZLW8yRlBKVUxZUWdtS1U1d1NidTNKZGxPVXFTYWN3cFpIejhVVGMzUmFqY1VyQXhMOEZjaFUtZEg3VmJiX1VwN09pMU5NcmVLUjRCcVhrc24ySW8za1NnMkRNY2NLOTh1ZlU3eV82RHhDRFlVVFRBTlMya0RIMFdia1R30gHYAUFVX3lxTFBNdk1DT0Y1cUhib2lENDBJSGNBR21KeDFvZ2wzMTBwMXh6a1FnTGhrUlIzaTBMRy1GQ2lEeDExMjdON191a3paQW12bEl2b1JpNGFRQ3RyU1lISmRpY2FvM1MwXzRaLUwzQkgtNjBaRTNQZWVqSW5XLWlQOFY4M2ItVkZkNDZPc2dQcXlaUnQ0b29qVGlCOEluU3Job3ZLMld4TlJNOUg2d2xhdTVYVVJoc19UX055Y21fTHlObzVEMWtiNl9Ca2hjaUFjamlvNVpFb1NONmhnQQ?oc=5" target="_blank" rel="noopener">NBC 6 South Florida</a>. Check the facts before you post.</p>
+ <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMixAFBVV95cUxNWWVvcGlZRTViVmVXMFg1bFdKOXFLdWd6THg4VDI5cDR5S1JONXdHT2txRVpvV3llVElHV1ZoT1ZvVVR5TVI2VGs1RlFuUUxRMHR2dVZuYlYyQW56eEl6cG81SE1pLTNjaE5GZFJ0NjZxT3NtUVZROEhCN1JFb3BOenUwQzFUVjZmaXoxY0VuOTM4MU1ZOE1kVU5TaUxvbW1tMWtRZ2ZQeS0wckw5NnAwbnhYVVJBcXlKNXcyZGRGQjJFOW1t?oc=5" target="_blank" rel="noopener">NBC 6 South Florida</a>. Check the facts before you post.</p>
  <p class="tip" data-s="1"></p>
+</div>
 </section>
 
-<section class="card" id="p2">
+<section class="slide" id="p2">
+<div class="card">
  <div class="lab">Sports</div>
  <img class="pimg" src="p3.png" alt="Post 3" loading="lazy">
- <h2>MIAMI HEAT ROOKIE RYAN CONWELL CALLS SCRIMMAGE A SPECIAL CAREER MOMENT</h2>
- <p class="art">Miami basketball fans are following the latest developments with the Heat. Rookie Ryan Conwell recently took part in a team scrimmage. Following the on-court session, Conwell took time to reflect on the experience. The Miami Heat rookie called the scrimmage one of the most special moments of his life. Supporters in South Florida are keeping a close watch on Conwell as he shares his thoughts on this memorable early milestone with the Heat.</p>
+ <h2>SPOELSTRA PLANS CONTINUED PRESEASON EXPOSURE FOR MIAMI HEAT ROTATION</h2>
+ <p class="art">Miami Heat head coach Erik Spoelstra is planning continued preseason exposure for the team's rotation components as preparations continue in South Florida. The plan keeps regular rotation pieces on the court for extended preseason work. Spoelstra remains focused on providing valuable playing time to Heat rotation components throughout the preseason schedule. For Miami supporters following the team, this means seeing key rotation members gain ongoing game action during the current preseason phase.</p>
  <div class="row">
-  <button class="btn" data-copy="art" data-i="2">Copy article</button>
+  <button class="btn" data-copy="article" data-i="2">Copy article</button>
   <a class="btn ghost" href="p3.png" download="miamidader-3.png">Save image</a>
  </div>
  <div class="row">
@@ -67,17 +82,19 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;color:var(--
   <button class="btn ghost" data-copy="prompt" data-i="2">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE9VRVA5LVZCS0IxeWlwaGxBUEN2TmlLNFN2OHF0UGMtVVhVTEFzMkUtaTNsb0VkbXRLWkRReEE2UmczZEpxUkxkZi1lWWdSTXNLaG9BVzh4MFg3T0JRdVZDY3czYmZtalVaR0VCMzZZRU9lLUF3amhlR0pyONIBe0FVX3lxTE1GZ2pyR0JTZmpOei1Ndjh6eUI3NHB1V3RwZXlqM2FPamVma3cyWVRfZnZEV3BwdTZqNEdRXzRsQWpPbDBmamdKTjYweGk0RU92c181cDZ3TTFrTHltUXJSUFhJbEN3NER5c2lUUF9PVGdkOEttV1d3Z2dLSQ?oc=5" target="_blank" rel="noopener">Miami Herald</a>. Check the facts before you post.</p>
+ <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOYTVEeVRPcFRiWWtwbm80NTEtX3dGbVJFZUxUV1plYU9PNmx2TGgzZXoxcnd2SUUzLVExX29pRUhkUVVTLVlCUW85YWx6emVZTWJ2c2s2YkhHV0wwcHEzdDgwWVVWVlB3WVFMYzg3SVJ1bWNuMm91VzZvUGxHSWdfNVY1bU5aVUxybEFKUWlDMGhIYnR3ak1WcUxpZTRod3hhdV94Q0p3Rk8tSWVvcHdqQ0wzQ20zSDlR?oc=5" target="_blank" rel="noopener">Sun Sentinel</a>. Check the facts before you post.</p>
  <p class="tip" data-s="2"></p>
+</div>
 </section>
 
-<section class="card" id="p3">
+<section class="slide" id="p3">
+<div class="card">
  <div class="lab">Fun fact</div>
  <img class="pimg" src="p4.png" alt="Post 4" loading="lazy">
- <h2>MIAMI-DADE RANKS AS FOURTH LARGEST SCHOOL DISTRICT IN THE NATION</h2>
- <p class="art">Miami-Dade County Public Schools holds a major position across the entire country. In our community, the local district stands as the fourth-largest public school district in the United States.<br><br>The scale of the local system is reflected in its student population. As of 2014, Miami-Dade County Public Schools included about 360,000 students.<br><br>With about 360,000 students recorded as of 2014, Miami-Dade schools remain officially recognized as the fourth-largest district in the nation.</p>
+ <h2>THE SURPRISING ORIGIN STORY BEHIND MIAMI'S NAME</h2>
+ <p class="art">Here in our area, the name Miami defines who we are. However, the name Miami comes from the Miami River. Tracing the origins back even more reveals another layer to the story. The name is ultimately derived from Mayaimi, which serves as the historic name for Lake Okeechobee. Because of this lineage, Miami's name comes from Lake Okeechobee. From Mayaimi, the historic name for Lake Okeechobee, to the Miami River, these water origins are where the name Miami ultimately comes from.</p>
  <div class="row">
-  <button class="btn" data-copy="art" data-i="3">Copy article</button>
+  <button class="btn" data-copy="article" data-i="3">Copy article</button>
   <a class="btn ghost" href="p4.png" download="miamidader-4.png">Save image</a>
  </div>
  <div class="row">
@@ -87,10 +104,18 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;color:var(--
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
  <p class="src">From your fact library.</p>
  <p class="tip" data-s="3"></p>
+</div>
 </section>
+</div>
 <script>
-const D=[{"article":"A crocodile has died of apparent lead poisoning in Florida, marking the first-known case of its kind in the state. The tragic death represents an unprecedented occurrence for Florida wildlife. Prior to this incident, there had been no known cases of a crocodile dying from apparent lead poisoning anywhere across the state. This reported fatality stands as Florida's first-known case of a crocodile death linked to apparent lead poisoning.","prompt":"A realistic vertical 3:4 editorial documentary photo of a Florida crocodile resting at the edge of quiet wetlands. The upper two-thirds of the frame shows the crocodile with detailed textured scales, natural skin patterns, and focused eyes under soft overcast daylight. The bottom third consists of simple, darker, shadowed murky swamp water. Authentic photojournalistic style, natural muted color palette, no text, no logos, no watermarks."},{"article":"A woman has been arrested after allegedly helping a taxi driver target intoxicated clubgoers for thefts in Miami Beach. According to the accusations, the suspect worked alongside a taxi driver to single out drunk patrons who were leaving local nightlife spots. Instead of safe transit home from Miami Beach venues, vulnerable passengers were targeted for thefts during their rides. The woman is now in custody following her alleged involvement in assisting the driver with targeting intoxicated people heading home from area clubs.","prompt":"A realistic editorial photo in a 3:4 vertical aspect ratio showing the interior of a vehicle on a Miami street at night. The upper two-thirds features the passenger compartment and a silhouette visible through the rear window against blurred neon city lights. The bottom third is composed of simple, dark textures and shadow. Realistic cinematic lighting, no text, no letters, no logos, no watermarks."},{"article":"Miami basketball fans are following the latest developments with the Heat. Rookie Ryan Conwell recently took part in a team scrimmage. Following the on-court session, Conwell took time to reflect on the experience. The Miami Heat rookie called the scrimmage one of the most special moments of his life. Supporters in South Florida are keeping a close watch on Conwell as he shares his thoughts on this memorable early milestone with the Heat.","prompt":"Editorial portrait in 3:4 vertical format of a focused young basketball rookie sitting thoughtfully on the team bench under indoor arena lights. The athlete occupies the upper two-thirds of the frame with a reflective expression, resting between drills. The bottom third consists of a simple, dark court floor with deep shadows. Natural stadium lighting, realistic photography style, no text, no letters, no logos, no watermarks."},{"article":"Miami-Dade County Public Schools holds a major position across the entire country. In our community, the local district stands as the fourth-largest public school district in the United States.\n\nThe scale of the local system is reflected in its student population. As of 2014, Miami-Dade County Public Schools included about 360,000 students.\n\nWith about 360,000 students recorded as of 2014, Miami-Dade schools remain officially recognized as the fourth-largest district in the nation.","prompt":"A realistic editorial vertical 3:4 portrait photo of a modern school campus courtyard under bright South Florida sunlight. In the upper two-thirds of the frame, diverse students carrying backpacks walk toward a sunlit school entrance framed by palm trees. The bottom third consists of a simple, darker shadowed walkway providing clean negative space. Natural documentary style, authentic daylight, sharp focus, no text, no letters, no logos, no watermarks."}];
-const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
+const D=[{"article":"Miami-Dade is receiving a federal funding boost dedicated to assisting the county's unhoused community. The incoming support brings federal assistance directly to the area to help address the needs of local unhoused individuals.\n\nThis federal backing provides an injection of vital resources for countywide efforts focused on aiding those without housing across local neighborhoods. The targeted support marks an important federal effort to assist Miami-Dade with care and resources for vulnerable members of the community.","prompt":"A realistic editorial vertical 3:4 portrait capturing an urban streetscape in Miami under warm, diffused morning sunlight. The upper two-thirds features a quiet city avenue lined with palm trees and modern residential buildings softly out of focus. The bottom third is composed of simple, darker pavement in deep shadow. Natural lighting, photojournalistic style, authentic atmosphere, no text, no logos, no watermarks."},{"article":"A driver crashed directly into a store in Northwest Miami-Dade after mistaking pedals, according to deputies. Deputies confirmed that the driver confused the vehicle pedals, causing the vehicle to drive straight into the storefront. Law enforcement officials responded to the scene at the Northwest Miami-Dade business location following the crash. Deputies reported that the entire collision occurred because the driver was mistaking the pedals inside the car while operating the vehicle.","prompt":"A realistic editorial documentary photo in a 3:4 vertical portrait aspect ratio depicting a vehicle that has crashed into the glass entrance of a suburban storefront in Northwest Miami-Dade. Broken glass and store framing are visible around the front of the vehicle. The damaged storefront and vehicle occupy the upper two-thirds of the image. The lower third features simple, dark empty pavement in shadow. Realistic photojournalism style, natural overcast lighting, no text, no logos, no watermarks."},{"article":"Miami Heat head coach Erik Spoelstra is planning continued preseason exposure for the team's rotation components as preparations continue in South Florida. The plan keeps regular rotation pieces on the court for extended preseason work. Spoelstra remains focused on providing valuable playing time to Heat rotation components throughout the preseason schedule. For Miami supporters following the team, this means seeing key rotation members gain ongoing game action during the current preseason phase.","prompt":"A realistic editorial vertical portrait of a professional basketball head coach standing attentively near the sideline of a brightly lit indoor arena. The coach is positioned thoughtfully in the upper two-thirds of the frame, captured with a serious expression under stadium lights. The bottom third of the image is simple, dark, and minimally detailed, showing the shadowed edge of the court floor. 3:4 aspect ratio, no text, no letters, no logos, no watermarks."},{"article":"Here in our area, the name Miami defines who we are. However, the name Miami comes from the Miami River. Tracing the origins back even more reveals another layer to the story. The name is ultimately derived from Mayaimi, which serves as the historic name for Lake Okeechobee. Because of this lineage, Miami's name comes from Lake Okeechobee. From Mayaimi, the historic name for Lake Okeechobee, to the Miami River, these water origins are where the name Miami ultimately comes from.","prompt":"A realistic editorial photo in a 3:4 vertical portrait of the tranquil Miami River at dusk. The flowing natural waterway and subtle shoreline foliage occupy the upper two-thirds of the frame under soft ambient light. The bottom third is composed of simple, deep, and darker rippling water shadows providing clean negative space. No text, letters, logos, or watermarks."}],T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length;
+let cur=0;const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
+function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
+function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
+T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
+dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
+document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);
+mark(0);
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
-document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.card').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
+document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
 </script></body></html>
