@@ -196,8 +196,14 @@ async function compose(headline, photoBuf) {
   } else {
     const g = x.createLinearGradient(0, 0, W * .4, H); g.addColorStop(0, '#6B7C8A'); g.addColorStop(.5, '#232A31'); g.addColorStop(1, '#0B0D0F'); x.fillStyle = g; x.fillRect(0, 0, W, H);
   }
-  const g2 = x.createLinearGradient(0, H * .5, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,0,0,.78)'); x.fillStyle = g2; x.fillRect(0, H * .5, W, H * .5);
-  const hl = headlineCanvas(headline); x.drawImage(hl, 0, H - hl.height - 70);
+  const g2 = x.createLinearGradient(0, H * .4, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,0,0,.82)'); x.fillStyle = g2; x.fillRect(0, H * .4, W, H * .6);
+  const hl = headlineCanvas(headline), hy = H - hl.height - 70;
+  x.drawImage(hl, 0, hy);
+  const logoPath = path.join(ROOT, 'assets/logo.png');
+  if (fs.existsSync(logoPath)) { // logo sits centered just above the headline, like your regular posts
+    const lg = await loadImage(fs.readFileSync(logoPath)), lw = 300, lh = lw * lg.height / lg.width;
+    x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh);
+  }
   return { post: c.toBuffer('image/png'), headline: hl.toBuffer('image/png') };
 }
 
