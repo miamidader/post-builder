@@ -1,0 +1,1 @@
+Put your Heading Now .ttf file in this folder. If it's empty, headlines use Anton.
