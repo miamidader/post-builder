@@ -199,11 +199,13 @@ async function compose(headline, photoBuf) {
   const g2 = x.createLinearGradient(0, H * .4, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,0,0,.82)'); x.fillStyle = g2; x.fillRect(0, H * .4, W, H * .6);
   const hl = headlineCanvas(headline), hy = H - hl.height - 70;
   x.drawImage(hl, 0, hy);
-  const logoPath = path.join(ROOT, 'assets/logo.png');
-  if (fs.existsSync(logoPath)) { // logo sits centered just above the headline, like your regular posts
-    const lg = await loadImage(fs.readFileSync(logoPath)), lw = 300, lh = lw * lg.height / lg.width;
+  const adir = path.join(ROOT, 'assets');
+  const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
+  if (lf) { // logo sits centered just above the headline, like your regular posts
+    const lg = await loadImage(fs.readFileSync(path.join(adir, lf))), lw = 300, lh = lw * lg.height / lg.width;
     x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh);
-  }
+    if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; }
+  } else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
   return { post: c.toBuffer('image/png'), headline: hl.toBuffer('image/png') };
 }
 
