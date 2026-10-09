@@ -10,6 +10,8 @@ const TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-flash-latest';
 const IMG_RAW = process.env.GEMINI_IMAGE_MODEL || 'gemini-3.1-flash-lite-image';
 const IMG_MODEL = /^(off|none|no)$/i.test(IMG_RAW) ? '' : IMG_RAW; // set the variable to "off" for free posts with no AI photos
 const NUM = +(process.env.NUM_POSTS || 4);
+const CIRCLE_ON = !/^(off|none|no)$/i.test(process.env.CIRCLE_PHOTOS || ''); // set the variable CIRCLE_PHOTOS to "off" to skip the round inset photo (it costs one extra image per post)
+const RING = process.env.CIRCLE_RING || '#FFFFFF'; // ring color around the round photo
 const log = (...a) => console.log(...a);
 
 /* ---------- fonts ---------- */
@@ -117,12 +119,13 @@ async function write(kind, dataText) {
 Only use facts that appear in the data below. Do not invent details, quotes, names, dates, or numbers. If the data is thin, keep the article short rather than guessing.
 Headline: 12 words or fewer. Article: about 80 to 120 words, short paragraphs.
 Also write "imagePrompt": a prompt for a ${kind === 'history' ? 'vintage, archival-style editorial image' : 'realistic editorial photo'} in a 3:4 vertical portrait about this story. Main subject in the upper two-thirds, bottom third simple and darker. ${kind === 'history' ? 'No real identifiable people. ' : ''}No text, letters, logos, or watermarks.
+Also write "circlePrompt": a prompt for a realistic square 1:1 photo that shows a second, closely related view of the story (a close-up detail, the place, or the object involved), different from the main photo, with the subject centered. No people's faces, no text, letters, logos, or watermarks.
 
 DATA:
 ${dataText}`;
-  const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { headline: { type: 'STRING' }, article: { type: 'STRING' }, imagePrompt: { type: 'STRING' } }, required: ['headline', 'article', 'imagePrompt'] } } });
+  const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { headline: { type: 'STRING' }, article: { type: 'STRING' }, imagePrompt: { type: 'STRING' }, circlePrompt: { type: 'STRING' } }, required: ['headline', 'article', 'imagePrompt'] } } });
   const o = JSON.parse(j.candidates[0].content.parts[0].text);
-  return { headline: clean(o.headline).replace(/^["“]|["”]$/g, ''), article: clean(o.article), imagePrompt: clean(o.imagePrompt) };
+  return { headline: clean(o.headline).replace(/^["“]|["”]$/g, ''), article: clean(o.article), imagePrompt: clean(o.imagePrompt), circlePrompt: clean(o.circlePrompt) };
 }
 async function pickBest(list, n) {
   if (DRY || list.length <= n) return list.slice(0, n);
@@ -142,7 +145,7 @@ function findImage(o, depth = 0) { // walk any JSON reply and return the first b
   }
   return null;
 }
-async function photoOnce(prompt) {
+async function photoOnce(prompt, ratio = '3:4') {
   if (!IMG_MODEL || DRY) return null;
   const post = async (url, body) => {
     for (let a = 0; a < 4; a++) {
@@ -156,8 +159,8 @@ async function photoOnce(prompt) {
     throw new Error('Google stayed busy');
   };
   const tries = [
-    ['interactions', () => post('https://generativelanguage.googleapis.com/v1beta/interactions', { model: IMG_MODEL, input: prompt, response_format: { type: 'image', aspect_ratio: '3:4' } })],
-    ['generateContent', () => post(`https://generativelanguage.googleapis.com/v1beta/models/${IMG_MODEL}:generateContent`, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: '3:4' } } })],
+    ['interactions', () => post('https://generativelanguage.googleapis.com/v1beta/interactions', { model: IMG_MODEL, input: prompt, response_format: { type: 'image', aspect_ratio: ratio } })],
+    ['generateContent', () => post(`https://generativelanguage.googleapis.com/v1beta/models/${IMG_MODEL}:generateContent`, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: ratio } } })],
   ];
   for (const [name, run] of tries) {
     try {
@@ -187,8 +190,20 @@ async function photo(prompt, headline, label) {
   return buf;
 }
 
+async function circlePhoto(prompt) {
+  if (!CIRCLE_ON || !prompt) return null;
+  if (DRY) { // placeholder so the layout can be tested without spending anything
+    const c = createCanvas(512, 512), x = c.getContext('2d'), g = x.createLinearGradient(0, 0, 512, 512);
+    g.addColorStop(0, '#FFC54D'); g.addColorStop(1, '#FF6B8B'); x.fillStyle = g; x.fillRect(0, 0, 512, 512); return c.toBuffer('image/png');
+  }
+  if (!IMG_MODEL) return null;
+  const buf = await photoOnce(prompt, '1:1');
+  if (!buf) log('No circle photo for this post.');
+  return buf;
+}
+
 /* ---------- compose ---------- */
-async function compose(headline, photoBuf) {
+async function compose(headline, photoBuf, circleBuf) {
   const W = 1080, H = 1440, c = createCanvas(W, H), x = c.getContext('2d');
   if (photoBuf) {
     const im = await loadImage(photoBuf), s = Math.max(W / im.width, H / im.height), w = im.width * s, h = im.height * s;
@@ -197,12 +212,18 @@ async function compose(headline, photoBuf) {
     const g = x.createLinearGradient(0, 0, W * .4, H); g.addColorStop(0, '#6B7C8A'); g.addColorStop(.5, '#232A31'); g.addColorStop(1, '#0B0D0F'); x.fillStyle = g; x.fillRect(0, 0, W, H);
   }
   const g2 = x.createLinearGradient(0, H * .4, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,0,0,.82)'); x.fillStyle = g2; x.fillRect(0, H * .4, W, H * .6);
+  if (circleBuf) { // round inset photo in the top right corner, like Real Vegas Locals and Socals posts
+    const im = await loadImage(circleBuf), D = 460, R = D / 2, cx = W - 56 - R, cy = 64 + R, ring = 14, ri = R - ring;
+    x.save(); x.shadowColor = 'rgba(0,0,0,.4)'; x.shadowBlur = 36; x.shadowOffsetY = 8; x.beginPath(); x.arc(cx, cy, R, 0, Math.PI * 2); x.fillStyle = RING; x.fill(); x.restore();
+    x.save(); x.beginPath(); x.arc(cx, cy, ri, 0, Math.PI * 2); x.clip();
+    const s = Math.max(2 * ri / im.width, 2 * ri / im.height), w = im.width * s, h = im.height * s; x.drawImage(im, cx - w / 2, cy - h / 2, w, h); x.restore();
+  }
   const hl = headlineCanvas(headline), hy = H - hl.height - 32; // text bottom edge sits 40px from the bottom, same as the 40px side margins
   x.drawImage(hl, 0, hy);
   const adir = path.join(ROOT, 'assets');
   const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
   if (lf) { // logo sits centered just above the headline, like your regular posts
-    const lg = await loadImage(fs.readFileSync(path.join(adir, lf))), lw = 240, lh = lw * lg.height / lg.width;
+    const lg = await loadImage(fs.readFileSync(path.join(adir, lf))), lw = 190, lh = lw * lg.height / lg.width;
     x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh);
     if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; }
   } else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
@@ -313,7 +334,8 @@ for (const j of jobs) {
   try {
     const w = DRY ? { headline: j.h ? j.h.title : j.lib.t, article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' } : await write(j.kind, j.data);
     const buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
-    const n = posts.length + 1, { post, headline } = await compose(w.headline, buf);
+    const cbuf = await circlePhoto(DRY ? 'dry' : w.circlePrompt); if (cbuf && !DRY) await sleep(3000);
+    const n = posts.length + 1, { post, headline } = await compose(w.headline, buf, cbuf);
     fs.writeFileSync(path.join(OUT, `p${n}.png`), post); fs.writeFileSync(path.join(OUT, `h${n}.png`), headline);
     posts.push({ ...w, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source });
     if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
