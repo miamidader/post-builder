@@ -118,17 +118,19 @@ async function gem(model, body) {
 const clean = t => String(t || '').replace(/\*\*/g, '').replace(/\s*[—–]\s*/g, ', ').trim();
 async function write(kind, dataText) {
   const factual = kind === 'facts' || kind === 'history';
-  const prompt = `Create an all caps instagram headline for my Miami area based news account and use this data to write an article that does not link to any news source affiliation (give it a Miami area-centric point of view). No em dashes. No emojis. The article does not need to be all caps.
+  const prompt = `Create three different all caps instagram headline options for my Miami area based news account and use this data to write one article that does not link to any news source affiliation (give it a Miami area-centric point of view). No em dashes. No emojis. The article does not need to be all caps.
 Only use facts that appear in the data below. Do not invent details, quotes, names, dates, or numbers. If the data is thin, keep the article short rather than guessing.
-Headline: 12 words or fewer. Article: about 80 to 120 words, short paragraphs.
+Headlines: exactly 3 options, each 12 words or fewer, each with a clearly different angle (1: the straight facts, 2: short and punchy, 3: a local-pride or curiosity hook), all using only facts from the data. Article: about 80 to 120 words, short paragraphs.
 Also write "imagePrompt": a prompt for a ${kind === 'history' ? 'vintage, archival-style editorial image' : 'realistic editorial photo'} in a 3:4 vertical portrait about this story. Main subject in the upper two-thirds, bottom third simple and darker. ${kind === 'history' ? 'No real identifiable people. ' : ''}No text, letters, logos, or watermarks.
 Also write "circlePrompt": a prompt for a realistic square 1:1 photo that shows a second, closely related view of the story (a close-up detail, the place, or the object involved), different from the main photo, with the subject centered. No people's faces, no text, letters, logos, or watermarks.
 
 DATA:
 ${dataText}`;
-  const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { headline: { type: 'STRING' }, article: { type: 'STRING' }, imagePrompt: { type: 'STRING' }, circlePrompt: { type: 'STRING' } }, required: ['headline', 'article', 'imagePrompt'] } } });
+  const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { headlines: { type: 'ARRAY', items: { type: 'STRING' } }, article: { type: 'STRING' }, imagePrompt: { type: 'STRING' }, circlePrompt: { type: 'STRING' } }, required: ['headlines', 'article', 'imagePrompt'] } } });
   const o = JSON.parse(j.candidates[0].content.parts[0].text);
-  return { headline: clean(o.headline).replace(/^["“]|["”]$/g, ''), article: clean(o.article), imagePrompt: clean(o.imagePrompt), circlePrompt: clean(o.circlePrompt) };
+  const hs = [...new Set((o.headlines || []).map(h => clean(h).replace(/^["“]|["”]$/g, '')).filter(Boolean))].slice(0, 3);
+  if (!hs.length) throw new Error('Gemini returned no headlines');
+  return { headlines: hs, headline: hs[0], article: clean(o.article), imagePrompt: clean(o.imagePrompt), circlePrompt: clean(o.circlePrompt) };
 }
 async function pickBest(list, n) {
   if (DRY || list.length <= n) return list.slice(0, n);
@@ -219,7 +221,7 @@ async function subjectCutout(photoBuf) { // the main subject with a transparent 
 }
 
 /* ---------- compose ---------- */
-async function compose(headline, photoBuf, circleBuf, style) {
+async function compose(headlines, photoBuf, circleBuf, style) {
   const W = 1080, H = 1440, c = createCanvas(W, H), x = c.getContext('2d');
   let rect = [0, 0, W, H]; // where the main photo sits, so a cutout of it lines up exactly
   if (photoBuf) {
@@ -248,19 +250,23 @@ async function compose(headline, photoBuf, circleBuf, style) {
     const s = Math.max(2 * ri / im.width, 2 * ri / im.height), w = im.width * s, h = im.height * s; x.drawImage(im, ccx - w / 2, cy - h / 2, w, h); x.restore();
     if (cutImg) x.drawImage(cutImg, ...rect); // main subject drawn back on top of the circle
   }
-  const hl = headlineCanvas(headline), hy = H - hl.height - 32; // text bottom edge sits 40px from the bottom, same as the 40px side margins
   const adir = path.join(ROOT, 'assets');
   const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
   let lg = null, lw = 190, lh = 0;
   if (lf) { lg = await loadImage(fs.readFileSync(path.join(adir, lf))); lh = lw * lg.height / lg.width; }
-  const fy = Math.max(0, hy - (lg ? lh + 6 : 0)); // the black fade is exactly as tall as the headline block (the logo sits on top of it), so it grows and shrinks with the headline
-  const g2 = x.createLinearGradient(0, fy, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(.45, 'rgba(0,0,0,.72)'); g2.addColorStop(1, 'rgba(0,0,0,.9)'); x.fillStyle = g2; x.fillRect(0, fy, W, H - fy);
-  x.drawImage(hl, 0, hy);
-  if (lg) { // logo sits centered just above the headline, like your regular posts
-    x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh);
-    if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; }
-  } else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
-  return { post: c.toBuffer('image/png'), headline: hl.toBuffer('image/png') };
+  if (lg) { if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; } }
+  else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
+  const outs = [];
+  for (const headline of headlines) { // same photo and circle every time, only the headline (and its fade) changes
+    const c2 = createCanvas(W, H), x = c2.getContext('2d'); x.drawImage(c, 0, 0);
+    const hl = headlineCanvas(headline), hy = H - hl.height - 32; // text bottom edge sits 40px from the bottom, same as the 40px side margins
+    const fy = Math.max(0, hy - (lg ? lh + 6 : 0)); // the black fade is exactly as tall as the headline block (the logo sits on top of it), so it grows and shrinks with the headline
+    const g2 = x.createLinearGradient(0, fy, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(.45, 'rgba(0,0,0,.72)'); g2.addColorStop(1, 'rgba(0,0,0,.9)'); x.fillStyle = g2; x.fillRect(0, fy, W, H - fy);
+    x.drawImage(hl, 0, hy);
+    if (lg) x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh); // logo sits centered just above the headline, like your regular posts
+    outs.push({ post: c2.toBuffer('image/jpeg', 92), headline: hl.toBuffer('image/png') });
+  }
+  return outs;
 }
 
 /* ---------- page ---------- */
@@ -270,15 +276,16 @@ function page(posts, dateLabel) {
 <section class="slide" id="p${i}">
 <div class="card">
  <div class="lab">${esc(p.label)}</div>
- <img class="pimg" src="p${i + 1}.png" alt="Post ${i + 1}"${i ? ' loading="lazy"' : ''}>
- <h2>${esc(p.headline)}</h2>
+ <div class="pwrap">${p.headlines.map((h, k) => `<img class="pimg${k ? '' : ' on'}" src="p${i + 1}_${k + 1}.jpg" alt="Post ${i + 1}, headline ${k + 1}"${i || k ? ' loading="lazy"' : ''}>`).join('')}</div>
+ ${p.headlines.length > 1 ? `<div class="seg" role="group" aria-label="Headline options" data-i="${i}">${p.headlines.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>` : ''}
+ <h2 data-h="${i}">${esc(p.headlines[0])}</h2>
  <p class="art">${esc(p.article).replace(/\n+/g, '<br><br>')}</p>
  <div class="row">
   <button class="btn" data-copy="article" data-i="${i}">Copy article</button>
-  <a class="btn ghost" href="p${i + 1}.png" download="miamidader-${i + 1}.png">Save image</a>
+  <a class="btn ghost" data-save="${i}" href="p${i + 1}_1.jpg" download="miamidader-${i + 1}.jpg">Save image</a>
  </div>
  <div class="row">
-  <button class="btn ghost" data-img="h${i + 1}.png">Copy headline PNG</button>
+  <button class="btn ghost" data-img="h${i + 1}_1.png" data-hbtn="${i}">Copy headline PNG</button>
   <button class="btn ghost" data-copy="prompt" data-i="${i}">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
@@ -287,7 +294,7 @@ function page(posts, dateLabel) {
 </div>
 </section>`).join('\n');
   const dots = posts.map((_, i) => `<button class="dot" aria-label="Post ${i + 1}" data-go="${i}"></button>`).join('');
-  const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt })));
+  const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt, h: p.headlines })));
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -305,13 +312,17 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
 .card{width:100%;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px;margin-bottom:10px}
-.pimg{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;display:block;background:#222}
+.pwrap{position:relative;width:100%;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#222}
+.pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .12s ease}.pimg.on{opacity:1}
+.seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
+.seg button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 13px Poppins,system-ui,sans-serif;cursor:pointer}
+.seg button.on{background:var(--edge);color:var(--card)}
 h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
 .src,.tip{font-size:12px;color:var(--mut);margin:8px 0 0}.src a{color:var(--mut)}
-@media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
 <div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(dateLabel)}. Swipe to see each one.</p></div>
 <div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots">${dots}</div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
@@ -327,6 +338,13 @@ T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);
 dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
 document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);
 mark(0);
+document.querySelectorAll('.seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+g.dataset.i,v=+b.dataset.v,sl=document.getElementById('p'+i);
+ g.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
+ sl.querySelectorAll('.pimg').forEach((im,k)=>im.classList.toggle('on',k===v));
+ sl.querySelector('[data-h]').textContent=D[i].h[v];
+ const sv=sl.querySelector('[data-save]');sv.href='p'+(i+1)+'_'+(v+1)+'.jpg';
+ sl.querySelector('[data-hbtn]').dataset.img='h'+(i+1)+'_'+(v+1)+'.png';say(i,'')}));
+(window.requestIdleCallback||setTimeout)(()=>document.querySelectorAll('.pimg').forEach(im=>{im.loading='eager'}));
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
 document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
 </script></body></html>`;
@@ -339,8 +357,8 @@ const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'ut
 
 let newsC, sportsC;
 if (DRY) {
-  newsC = [{ title: 'County approves new housing plan for 4,000 families', source: 'Local 10', url: 'https://example.com/1' }, { title: 'Hialeah crash closes lanes on the Palmetto', source: 'WSVN', url: 'https://example.com/2' }, { title: 'Karol G brings Tropitour to Miami for two nights', source: 'NBC 6', url: 'https://example.com/3' }];
-  sportsC = [{ title: 'Dolphins now 0-3 as Hurricanes crack the top 5', source: 'ESPN', url: 'https://example.com/4' }];
+  newsC = [{ title: 'County approves new housing plan for 4,000 families', source: 'Local 10', url: 'https://example.com/1', alts: ['4,000 Miami-Dade families get a housing win', 'County just approved 4,000 new homes'] }, { title: 'Hialeah crash closes lanes on the Palmetto', source: 'WSVN', url: 'https://example.com/2', alts: ['Palmetto lanes shut down after Hialeah crash', 'Avoid the Palmetto: crash blocks lanes'] }, { title: 'Karol G brings Tropitour to Miami for two nights', source: 'NBC 6', url: 'https://example.com/3', alts: ['Karol G is bringing Tropitour to Miami', 'Two nights of Karol G are coming to Miami'] }];
+  sportsC = [{ title: 'Dolphins now 0-3 as Hurricanes crack the top 5', source: 'ESPN', url: 'https://example.com/4', alts: ['Dolphins fall to 0-3 while the Canes climb', 'Miami football: Canes up, Dolphins down'] }];
 } else {
   if (!KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
   [newsC, sportsC] = await Promise.all([candidates('news', state.titles), candidates('sports', state.titles)]);
@@ -365,16 +383,17 @@ fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive:
 const posts = [];
 for (const j of jobs) {
   try {
-    const w = DRY ? { headline: j.h ? j.h.title : j.lib.t, article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' } : await write(j.kind, j.data);
+    const w = DRY ? (() => { const t = j.h ? j.h.title : j.lib.t; return { headlines: [t, ...(j.h && j.h.alts ? j.h.alts : ['Did you know? ' + t, 'Miami fact: ' + t])], article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' }; })() : await write(j.kind, j.data);
+    w.headline = w.headlines[0];
     const buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
     const style = pickStyle(); // random per post: no circle, left or right, flat or depth
     const cbuf = style ? await circlePhoto(DRY ? 'dry' : w.circlePrompt) : null; if (cbuf && !DRY) await sleep(3000);
     log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
-    const n = posts.length + 1, { post, headline } = await compose(w.headline, buf, cbuf, style);
-    fs.writeFileSync(path.join(OUT, `p${n}.png`), post); fs.writeFileSync(path.join(OUT, `h${n}.png`), headline);
+    const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style);
+    outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}.png`), o.headline); });
     posts.push({ ...w, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source });
     if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
-    log('made', n, w.headline);
+    log('made', n, w.headlines.length + ' headlines:', w.headlines.join(' | '));
   } catch (e) { log('Skipped one post:', e.message); }
 }
 if (!posts.length) { console.error('No posts were made.'); process.exit(1); }
