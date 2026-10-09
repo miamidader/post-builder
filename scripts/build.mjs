@@ -229,7 +229,7 @@ async function compose(headline, photoBuf, circleBuf, style) {
     const g = x.createLinearGradient(0, 0, W * .4, H); g.addColorStop(0, '#6B7C8A'); g.addColorStop(.5, '#232A31'); g.addColorStop(1, '#0B0D0F'); x.fillStyle = g; x.fillRect(0, 0, W, H);
   }
   if (circleBuf && style) { // round inset photo, like Real Vegas Locals and Socals posts. Side and depth are random per post.
-    const im = await loadImage(circleBuf), D = 460, R = D / 2, ring = 20, ri = R - ring, cy = 64 + R;
+    const im = await loadImage(circleBuf), D = 460, R = D / 2, ring = 17, ri = R - ring, cy = 64 + R;
     let cut = null;
     if (style.depth) cut = await subjectCutout(photoBuf);
     const shift = cut ? 120 : 0, cx = style.side === 'left' ? 56 + R + shift : W - 56 - R - shift; // depth circles sit further in so the subject overlaps them
@@ -243,18 +243,20 @@ async function compose(headline, photoBuf, circleBuf, style) {
       if (f < .06 || f > .6) cutImg = null;
     }
     const ccx = cutImg ? cx : (style.side === 'left' ? 56 + R : W - 56 - R); // flat circles sit in the corner
-    x.save(); x.shadowColor = 'rgba(0,0,0,.35)'; x.shadowBlur = 30; x.shadowOffsetY = 10; x.beginPath(); x.arc(ccx, cy, R, 0, Math.PI * 2); x.fillStyle = RING; x.fill(); x.restore();
+    x.save(); x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 38; x.shadowOffsetX = 0; x.shadowOffsetY = 12; x.beginPath(); x.arc(ccx, cy, R, 0, Math.PI * 2); x.fillStyle = RING; x.fill(); x.restore();
     x.save(); x.beginPath(); x.arc(ccx, cy, ri, 0, Math.PI * 2); x.clip();
     const s = Math.max(2 * ri / im.width, 2 * ri / im.height), w = im.width * s, h = im.height * s; x.drawImage(im, ccx - w / 2, cy - h / 2, w, h); x.restore();
     if (cutImg) x.drawImage(cutImg, ...rect); // main subject drawn back on top of the circle
   }
-  const g2 = x.createLinearGradient(0, H * .4, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(1, 'rgba(0,0,0,.82)'); x.fillStyle = g2; x.fillRect(0, H * .4, W, H * .6);
   const hl = headlineCanvas(headline), hy = H - hl.height - 32; // text bottom edge sits 40px from the bottom, same as the 40px side margins
-  x.drawImage(hl, 0, hy);
   const adir = path.join(ROOT, 'assets');
   const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
-  if (lf) { // logo sits centered just above the headline, like your regular posts
-    const lg = await loadImage(fs.readFileSync(path.join(adir, lf))), lw = 190, lh = lw * lg.height / lg.width;
+  let lg = null, lw = 190, lh = 0;
+  if (lf) { lg = await loadImage(fs.readFileSync(path.join(adir, lf))); lh = lw * lg.height / lg.width; }
+  const fy = Math.max(0, hy - (lg ? lh + 6 : 0)); // the black fade is exactly as tall as the headline block (the logo sits on top of it), so it grows and shrinks with the headline
+  const g2 = x.createLinearGradient(0, fy, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(.45, 'rgba(0,0,0,.72)'); g2.addColorStop(1, 'rgba(0,0,0,.9)'); x.fillStyle = g2; x.fillRect(0, fy, W, H - fy);
+  x.drawImage(hl, 0, hy);
+  if (lg) { // logo sits centered just above the headline, like your regular posts
     x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh);
     if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; }
   } else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
