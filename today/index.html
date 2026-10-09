@@ -15,13 +15,17 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
 .card{width:100%;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px;margin-bottom:10px}
-.pimg{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:16px;display:block;background:#222}
+.pwrap{position:relative;width:100%;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#222}
+.pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .12s ease}.pimg.on{opacity:1}
+.seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
+.seg button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 13px Poppins,system-ui,sans-serif;cursor:pointer}
+.seg button.on{background:var(--edge);color:var(--card)}
 h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
 .src,.tip{font-size:12px;color:var(--mut);margin:8px 0 0}.src a{color:var(--mut)}
-@media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}
+@media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
 <div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Friday, October 9. Swipe to see each one.</p></div>
 <div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots"><button class="dot" aria-label="Post 1" data-go="0"></button><button class="dot" aria-label="Post 2" data-go="1"></button><button class="dot" aria-label="Post 3" data-go="2"></button><button class="dot" aria-label="Post 4" data-go="3"></button></div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
@@ -30,19 +34,20 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 <section class="slide" id="p0">
 <div class="card">
  <div class="lab">News</div>
- <img class="pimg" src="p1.png" alt="Post 1">
- <h2>MIAMI STRIP CLUB KING LEROY GRIFFITH DIES AT AGE 94</h2>
- <p class="art">The Miami nightlife scene has lost one of its most prominent figures. Leroy Griffith, widely known as the Miami strip club king, has died at the age of 94. Griffith built a significant presence across the local entertainment world, where burlesque was famously in his blood. His passing marks the close of a long and defining era for adult entertainment in the Miami area, leaving behind a lasting legacy in the city.</p>
+ <div class="pwrap"><img class="pimg on" src="p1_1.jpg" alt="Post 1, headline 1"><img class="pimg" src="p1_2.jpg" alt="Post 1, headline 2" loading="lazy"><img class="pimg" src="p1_3.jpg" alt="Post 1, headline 3" loading="lazy"></div>
+ <div class="seg" role="group" aria-label="Headline options" data-i="0"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
+ <h2 data-h="0">MAN INJURED IN SHOOTING NEAR MIAMI HIGH SCHOOL AND METRORAIL TRAIN</h2>
+ <p class="art">A man has been injured following a reported shooting in Miami, according to officials.<br><br>The incident took place near a Miami high school and an elevated Metrorail train, prompting a response from local authorities.<br><br>Officials confirmed the man sustained injuries during the reported shooting in the vicinity of both the school and the transit line. Further details remain limited as officials address the situation near the school and the train.</p>
  <div class="row">
   <button class="btn" data-copy="article" data-i="0">Copy article</button>
-  <a class="btn ghost" href="p1.png" download="miamidader-1.png">Save image</a>
+  <a class="btn ghost" data-save="0" href="p1_1.jpg" download="miamidader-1.jpg">Save image</a>
  </div>
  <div class="row">
-  <button class="btn ghost" data-img="h1.png">Copy headline PNG</button>
+  <button class="btn ghost" data-img="h1_1.png" data-hbtn="0">Copy headline PNG</button>
   <button class="btn ghost" data-copy="prompt" data-i="0">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTE1ocG95MVlCeTJEQy1TTkpCd3cyOG9ndFotUW9LcnUwN2N1bTJRTTVSNjNfNjVmWklTNXRqWURqTkhKRlZEWGZOTlYxVzdJLU8xOWxTa2RYcGd6YnJtNlZIbm1NVm0zcGdZNDRvSnNLanF3R3lKMlNSbDJnWdIBe0FVX3lxTE9RSGtfRFpybFlNak9LVnlvaklLcWdXcFVqVUdjb0Y2aGZhcXU0cnFYNDgzWlVTMmZ1ckQ3SzJ5VFJ6cUJ2bTdOZHhpX3pyWk03SWV1eHpUTG9jaHdTR2dmS2tid2Q1RW1IdUF1dkdhdTNVRUJJNEZWRHA3Yw?oc=5" target="_blank" rel="noopener">Miami Herald</a>. Check the facts before you post.</p>
+ <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMimwFBVV95cUxPSmZIcURvbHBjQk9fWGJmY2JEU0dMR1h2a2liRmM5R2x2QW1Zb0NoYlZ1ZVB1UFVPRThVVUVzZFpMSm1JbjFXRWpRVThkUEpHX2xzOW1EV2ZraTZ5blZJOHNwY2Z3UGhqMGJjWExsM09wX1BuSG9ud29TNl9Scm5oT0g4VERZMS1CN3RFanE5MHBzY2FRSGNtQUF6Yw?oc=5" target="_blank" rel="noopener">CBS News</a>. Check the facts before you post.</p>
  <p class="tip" data-s="0"></p>
 </div>
 </section>
@@ -50,19 +55,20 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 <section class="slide" id="p1">
 <div class="card">
  <div class="lab">News</div>
- <img class="pimg" src="p2.png" alt="Post 2" loading="lazy">
- <h2>MIAMI-DADE PROPOSES NEW MARINA AT OLD SEAQUARIUM SITE AS VOTER DEBATE EMERGES</h2>
- <p class="art">Miami-Dade is looking to bring a new marina to the site of the former Seaquarium, sparking discussions across the local community about the future of the waterfront property.<br><br>As plans for a marina move forward under Miami-Dade, questions are now being raised regarding whether voters should have a direct say in the decision.<br><br>The proposal centers on redeveloping the old Seaquarium location into a new marina. With the site in focus, questions remain over whether public input and a voter decision should be required before final plans for the property proceed.</p>
+ <div class="pwrap"><img class="pimg on" src="p2_1.jpg" alt="Post 2, headline 1" loading="lazy"><img class="pimg" src="p2_2.jpg" alt="Post 2, headline 2" loading="lazy"><img class="pimg" src="p2_3.jpg" alt="Post 2, headline 3" loading="lazy"></div>
+ <div class="seg" role="group" aria-label="Headline options" data-i="1"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
+ <h2 data-h="1">SAFE HARBOR TO REOPEN RENOVATED TIDES HOTEL IN SOUTH BEACH</h2>
+ <p class="art">Safe Harbor is reopening the renovated Tides Hotel in South Beach after nearly a decade. The Art Deco hotel has remained closed for almost ten years, but it is now set to return to the South Beach community following its renovation. Safe Harbor will reopen the property after this nearly decade-long closure. The reopening brings the renovated Art Deco hotel back to South Beach, ending years of vacancy for the Tides Hotel as it prepares to open its doors to guests once again.</p>
  <div class="row">
   <button class="btn" data-copy="article" data-i="1">Copy article</button>
-  <a class="btn ghost" href="p2.png" download="miamidader-2.png">Save image</a>
+  <a class="btn ghost" data-save="1" href="p2_1.jpg" download="miamidader-2.jpg">Save image</a>
  </div>
  <div class="row">
-  <button class="btn ghost" data-img="h2.png">Copy headline PNG</button>
+  <button class="btn ghost" data-img="h2_1.png" data-hbtn="1">Copy headline PNG</button>
   <button class="btn ghost" data-copy="prompt" data-i="1">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMifEFVX3lxTE1CZEhvQnktNDZTb0hYOFotTHlwOEl4azFIT2FaQXhTekNEQUI4UElBOG1Xa1prTmxzQ196cG1zajhUYU43S3pxZU5ta3pGb1ZqQWlUR3ZxWUhXdHRVNTAwbWRibHhpcTE4TE9lc0ZRUkhBaFUyX2hYbHhwZDE?oc=5" target="_blank" rel="noopener">WLRN</a>. Check the facts before you post.</p>
+ <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMingFBVV95cUxOWldHWTRYalFnRGZMUUFZVjREZzQtMkhjV3c5TFJXQ2NaZG5RNUwtZ2FadHlLUXRTT05kMWJWdWZMNHZ1emxQS3kzcC1QSWVfNXg4NGdyRUJLdmE2YzhiWDdkcmlBQzVMVVVGb0ZzNnFvN2g2cExfZXR2MXZZY0g5TlVoTGQ5SjV1V3FGc1pJb0VjMUppZkhVNVpISzFaZw?oc=5" target="_blank" rel="noopener">The Real Deal</a>. Check the facts before you post.</p>
  <p class="tip" data-s="1"></p>
 </div>
 </section>
@@ -70,19 +76,20 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 <section class="slide" id="p2">
 <div class="card">
  <div class="lab">Sports</div>
- <img class="pimg" src="p3.png" alt="Post 3" loading="lazy">
- <h2>AERIAL FOOTAGE REVEALS ROSE BOWL AHEAD OF COLLEGE FOOTBALL PLAYOFFS</h2>
- <p class="art">Miami sports fans keeping an eye on the national championship race can now view aerial footage highlighting the Rose Bowl. The venue is showcased ahead of College Football Playoffs action, giving viewers an overhead perspective of the setting. South Florida football followers regularly track major postseason venues across the country. The video displays the expansive stadium grounds prepared for the playoff matchups. Football enthusiasts across the Miami area can examine the iconic site from above as postseason competition unfolds.</p>
+ <div class="pwrap"><img class="pimg on" src="p3_1.jpg" alt="Post 3, headline 1" loading="lazy"><img class="pimg" src="p3_2.jpg" alt="Post 3, headline 2" loading="lazy"><img class="pimg" src="p3_3.jpg" alt="Post 3, headline 3" loading="lazy"></div>
+ <div class="seg" role="group" aria-label="Headline options" data-i="2"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
+ <h2 data-h="2">MIAMI DOLPHINS CLAIM FORMER WASHINGTON COMMANDERS RUNNING BACK OFF WAIVERS</h2>
+ <p class="art">The Miami Dolphins are making moves to bolster their roster. Miami has officially claimed a former Washington Commanders running back off waivers, bringing a new addition into the Dolphins organization. Waiver claims allow teams to adjust depth during the season cycle, and Miami took advantage of the opportunity by securing the former Washington back. Local football fans can look forward to seeing how the latest waiver acquisition fits into the Miami Dolphins offensive backfield. Further details regarding the roster spot and corresponding adjustments remain part of the Dolphins ongoing roster management.</p>
  <div class="row">
   <button class="btn" data-copy="article" data-i="2">Copy article</button>
-  <a class="btn ghost" href="p3.png" download="miamidader-3.png">Save image</a>
+  <a class="btn ghost" data-save="2" href="p3_1.jpg" download="miamidader-3.jpg">Save image</a>
  </div>
  <div class="row">
-  <button class="btn ghost" data-img="h3.png">Copy headline PNG</button>
+  <button class="btn ghost" data-img="h3_1.png" data-hbtn="2">Copy headline PNG</button>
   <button class="btn ghost" data-copy="prompt" data-i="2">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMi9wFBVV95cUxNUmc1Ymo0c1NvRlFKSWVMZXc1RThHNmVoMndIS2lwVUpjQTdGbDJfUnJSbHV2MTN4M2RTM1laaV9PS285bGNmWjBzcmk4TmxwVzhWSFdnYUNRVlBPN1BXZm1OOUdsUW5kU01mRnI0dXdrTjRweDZwUVpfd1BZOWpLWl8zQ015RU1HMjRTLUl4cUszQXR5cUNLdGlLY0dlTEFITDJvRVVqQ2ZXVTZpR3cxMGNGUHhWcjVMc3d5cTRjdERWaTFKOFVIZm9ON25LN1hSdUlJaUUtNklXenVIRUp5Szh0Mmt4TGtsWTFzUnBzOTVZQXVMcGlR?oc=5" target="_blank" rel="noopener">247Sports</a>. Check the facts before you post.</p>
+ <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMivwFBVV95cUxOZDVTdjVld3lTNllJV0pRMVBQQlZGMVNzWGZOYlIyZXE1YXhnRVV3ZmhKenJBNzBpaXBRbm1hbHJlQWhKVjJabjVraTdBWEFtRDJQZkNNSjNCUDdBQXo1OFg4YjVrQWxvMWxST002V25oZGNLLTBBdGJCUnFzYUd1MWJqcllqRDROVFE5YVZCclR0Q3lwMmRwSlhKOURycmxBS2Vld2pGM3ZlSTN2SVFlaUZYUTZKYnE4cnJWU0NISQ?oc=5" target="_blank" rel="noopener">The Phinsider</a>. Check the facts before you post.</p>
  <p class="tip" data-s="2"></p>
 </div>
 </section>
@@ -90,15 +97,16 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 <section class="slide" id="p3">
 <div class="card">
  <div class="lab">Fun fact</div>
- <img class="pimg" src="p4.png" alt="Post 4" loading="lazy">
- <h2>MIAMI-DADE LEADS FLORIDA WITH THE STATE'S BIGGEST ECONOMY</h2>
- <p class="art">Miami-Dade County officially holds the biggest economy in Florida.<br><br>Economic data highlights the sheer scale of the county, showing that Miami-Dade County reached a GDP of $239.652 billion in 2023. This total was the largest gross domestic product recorded by any county across the entire state of Florida.<br><br>With a $239.652 billion GDP, Miami-Dade stands at the very top of Florida. The local economy is the largest in the state, surpassing every other Florida county in overall economic size for 2023.</p>
+ <div class="pwrap"><img class="pimg on" src="p4_1.jpg" alt="Post 4, headline 1" loading="lazy"><img class="pimg" src="p4_2.jpg" alt="Post 4, headline 2" loading="lazy"><img class="pimg" src="p4_3.jpg" alt="Post 4, headline 3" loading="lazy"></div>
+ <div class="seg" role="group" aria-label="Headline options" data-i="3"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
+ <h2 data-h="3">THE HIGHEST POINT IN MIAMI-DADE IS ONLY 20 TO 26 FEET</h2>
+ <p class="art">Here in Miami-Dade, the local landscape is defined by its low elevation. The county's highest point reaches only about 20 to 26 feet up from the ground. This means the highest point across all of Miami-Dade sits just 20 to 26 feet above sea level. On the opposite end, the lowest point in the county is at sea level along the Atlantic Ocean. Between the waters of the Atlantic Ocean and the highest point in Miami-Dade, the entire county spans an elevation change of only 20 to 26 feet.</p>
  <div class="row">
   <button class="btn" data-copy="article" data-i="3">Copy article</button>
-  <a class="btn ghost" href="p4.png" download="miamidader-4.png">Save image</a>
+  <a class="btn ghost" data-save="3" href="p4_1.jpg" download="miamidader-4.jpg">Save image</a>
  </div>
  <div class="row">
-  <button class="btn ghost" data-img="h4.png">Copy headline PNG</button>
+  <button class="btn ghost" data-img="h4_1.png" data-hbtn="3">Copy headline PNG</button>
   <button class="btn ghost" data-copy="prompt" data-i="3">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
@@ -108,7 +116,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
 </section>
 </div>
 <script>
-const D=[{"article":"The Miami nightlife scene has lost one of its most prominent figures. Leroy Griffith, widely known as the Miami strip club king, has died at the age of 94. Griffith built a significant presence across the local entertainment world, where burlesque was famously in his blood. His passing marks the close of a long and defining era for adult entertainment in the Miami area, leaving behind a lasting legacy in the city.","prompt":"Realistic editorial 3:4 vertical portrait of a distinguished elderly gentleman in a classic dark suit standing under soft ambient evening lights in Miami, looking dignified. The subject is framed in the upper two-thirds of the image, while the bottom third fades into simple, darker shadows and muted textures. Atmospheric cinematic lighting, authentic photography, no text, no letters, no logos, no watermarks."},{"article":"Miami-Dade is looking to bring a new marina to the site of the former Seaquarium, sparking discussions across the local community about the future of the waterfront property.\n\nAs plans for a marina move forward under Miami-Dade, questions are now being raised regarding whether voters should have a direct say in the decision.\n\nThe proposal centers on redeveloping the old Seaquarium location into a new marina. With the site in focus, questions remain over whether public input and a voter decision should be required before final plans for the property proceed.","prompt":"Vertical 3:4 editorial photo showing the scenic coastal waterfront along Biscayne Bay in Miami near a dormant marine park site. The upper two-thirds features open tropical blue-green water, distant shoreline foliage, and bright daytime sky. The bottom third consists of deep, dark, shadowed water and a clean, simple dark lower frame. Authentic documentary style, crisp lighting, no people, no text, no logos."},{"article":"Miami sports fans keeping an eye on the national championship race can now view aerial footage highlighting the Rose Bowl. The venue is showcased ahead of College Football Playoffs action, giving viewers an overhead perspective of the setting. South Florida football followers regularly track major postseason venues across the country. The video displays the expansive stadium grounds prepared for the playoff matchups. Football enthusiasts across the Miami area can examine the iconic site from above as postseason competition unfolds.","prompt":"A high-altitude aerial view of a massive illuminated outdoor bowl stadium nestled in a valley during dusk. The brightly lit stadium bowl and field dominate the upper two-thirds of the vertical frame, while the bottom third consists of simple, deep shadow and dark landscape. Realistic editorial photography style, 3:4 vertical orientation, no text, no logos, no watermarks."},{"article":"Miami-Dade County officially holds the biggest economy in Florida.\n\nEconomic data highlights the sheer scale of the county, showing that Miami-Dade County reached a GDP of $239.652 billion in 2023. This total was the largest gross domestic product recorded by any county across the entire state of Florida.\n\nWith a $239.652 billion GDP, Miami-Dade stands at the very top of Florida. The local economy is the largest in the state, surpassing every other Florida county in overall economic size for 2023.","prompt":"A realistic editorial vertical 3:4 portrait photo showing the soaring modern glass high-rises and commercial towers of the Miami skyline on a bright clear day. The dynamic urban architecture fills the upper two-thirds of the frame, while the bottom third is a simple, deep-toned, darker street-level shadow. Professional architectural photography, rich natural lighting, no text, no letters, no logos, no watermarks."}],T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length;
+const D=[{"article":"A man has been injured following a reported shooting in Miami, according to officials.\n\nThe incident took place near a Miami high school and an elevated Metrorail train, prompting a response from local authorities.\n\nOfficials confirmed the man sustained injuries during the reported shooting in the vicinity of both the school and the transit line. Further details remain limited as officials address the situation near the school and the train.","prompt":"A realistic editorial photo in a 3:4 vertical portrait format capturing an elevated concrete transit track and the exterior facade of a contemporary high school building in Miami beneath an overcast sky. The elevated infrastructure and school structures occupy the upper two-thirds of the frame, while the bottom third is composed of a simple, dark asphalt roadway bathed in deep shadow. No people, no text, no letters, no logos, no watermarks.","h":["MAN INJURED IN SHOOTING NEAR MIAMI HIGH SCHOOL AND METRORAIL TRAIN","REPORTED SHOOTING NEAR MIAMI HIGH SCHOOL LEAVES MAN INJURED","WHAT OFFICIALS ARE SAYING ABOUT A REPORTED SHOOTING NEAR MIAMI METRORAIL"]},{"article":"Safe Harbor is reopening the renovated Tides Hotel in South Beach after nearly a decade. The Art Deco hotel has remained closed for almost ten years, but it is now set to return to the South Beach community following its renovation. Safe Harbor will reopen the property after this nearly decade-long closure. The reopening brings the renovated Art Deco hotel back to South Beach, ending years of vacancy for the Tides Hotel as it prepares to open its doors to guests once again.","prompt":"A realistic vertical 3:4 editorial photo of the exterior of an Art Deco hotel facade in South Beach under bright coastal sunlight. The upper two-thirds captures the restored historic architectural lines, pastel walls, and classic symmetry against a clear sky with palm fronds. The lower third shows a simple, darker paved street and sidewalk area in shadow. No text, letters, logos, or watermarks.","h":["SAFE HARBOR TO REOPEN RENOVATED TIDES HOTEL IN SOUTH BEACH","ART DECO TIDES HOTEL REOPENING IN SOUTH BEACH","SOUTH BEACH ART DECO ICON RETURNS AFTER NEARLY A DECADE"]},{"article":"The Miami Dolphins are making moves to bolster their roster. Miami has officially claimed a former Washington Commanders running back off waivers, bringing a new addition into the Dolphins organization. Waiver claims allow teams to adjust depth during the season cycle, and Miami took advantage of the opportunity by securing the former Washington back. Local football fans can look forward to seeing how the latest waiver acquisition fits into the Miami Dolphins offensive backfield. Further details regarding the roster spot and corresponding adjustments remain part of the Dolphins ongoing roster management.","prompt":"A realistic editorial vertical photo capturing an American football running back in an aqua and white uniform from behind, standing on a sunny football field in South Florida. The upper two-thirds features the athlete looking toward the sunlit grass, while the bottom third is filled with smooth, dark shadows on the turf. Clear sky overhead, bright daytime lighting, no text, no letters, no team logos, no watermarks.","h":["MIAMI DOLPHINS CLAIM FORMER WASHINGTON COMMANDERS RUNNING BACK OFF WAIVERS","DOLPHINS ADD FORMER COMMANDERS RUNNING BACK VIA WAIVERS","MIAMI ADDS NEW RUNNING BACK DEPTH FROM WAIVERS"]},{"article":"Here in Miami-Dade, the local landscape is defined by its low elevation. The county's highest point reaches only about 20 to 26 feet up from the ground. This means the highest point across all of Miami-Dade sits just 20 to 26 feet above sea level. On the opposite end, the lowest point in the county is at sea level along the Atlantic Ocean. Between the waters of the Atlantic Ocean and the highest point in Miami-Dade, the entire county spans an elevation change of only 20 to 26 feet.","prompt":"A realistic vertical 3:4 editorial photograph capturing the flat coastal elevation of Miami-Dade. In the upper two-thirds, a very flat shoreline landscape meets the Atlantic Ocean under a clear open sky, showing the minimal elevation above the sea. The bottom third is composed of simple, darker wet sand and shadowed coastal terrain. Clean composition, natural daylight, no text, letters, logos, or watermarks.","h":["THE HIGHEST POINT IN MIAMI-DADE IS ONLY 20 TO 26 FEET","MIAMI-DADE PEAKS AT JUST 20 TO 26 FEET ABOVE SEA LEVEL","MIAMI-DADE HIGHEST SPOT RISES BARELY 26 FEET ABOVE THE ATLANTIC OCEAN"]}],T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length;
 let cur=0;const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
 function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
 function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
@@ -116,6 +124,13 @@ T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);
 dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
 document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);
 mark(0);
+document.querySelectorAll('.seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+g.dataset.i,v=+b.dataset.v,sl=document.getElementById('p'+i);
+ g.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
+ sl.querySelectorAll('.pimg').forEach((im,k)=>im.classList.toggle('on',k===v));
+ sl.querySelector('[data-h]').textContent=D[i].h[v];
+ const sv=sl.querySelector('[data-save]');sv.href='p'+(i+1)+'_'+(v+1)+'.jpg';
+ sl.querySelector('[data-hbtn]').dataset.img='h'+(i+1)+'_'+(v+1)+'.png';say(i,'')}));
+(window.requestIdleCallback||setTimeout)(()=>document.querySelectorAll('.pimg').forEach(im=>{im.loading='eager'}));
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
 document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
 </script></body></html>
