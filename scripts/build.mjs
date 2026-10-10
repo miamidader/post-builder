@@ -235,20 +235,31 @@ async function compose(headlines, photoBuf, circleBuf, style) {
     let cut = null;
     if (style.depth) cut = await subjectCutout(photoBuf);
     const shift = cut ? 120 : 0, cx = style.side === 'left' ? 56 + R + shift : W - 56 - R - shift; // depth circles sit further in so the subject overlaps them
-    let cutImg = null;
-    if (cut) { // only use the depth effect when the subject overlaps a sensible part of the circle
-      cutImg = await loadImage(cut);
-      const t = createCanvas(W, H), tx = t.getContext('2d'); tx.drawImage(cutImg, ...rect);
-      const d = tx.getImageData(Math.round(cx - R), Math.round(cy - R), D, D).data; let tot = 0, cov = 0;
-      for (let py = 0; py < D; py++) for (let px = 0; px < D; px++) if ((px - R) ** 2 + (py - R) ** 2 <= ri * ri) { tot++; if (d[(py * D + px) * 4 + 3] > 128) cov++; }
-      const f = cov / tot; log('depth overlap', Math.round(f * 100) + '%');
-      if (f < .06 || f > .6) cutImg = null;
+    let cutLayer = null;
+    if (cut) { // only use the depth effect when the subject cuts out cleanly: a compact subject that overlaps part of the circle
+      const cutImg = await loadImage(cut), t = createCanvas(W, H), tx = t.getContext('2d'); tx.drawImage(cutImg, ...rect);
+      const full = tx.getImageData(0, 0, W, H), px = full.data, A = new Uint8Array(W * H);
+      for (let i = 0; i < A.length; i++) A[i] = px[i * 4 + 3];
+      const x0 = Math.round(cx - R), y0 = Math.round(cy - R); let tot = 0, cov = 0, fuzz = 0, edges = 0;
+      for (let qy = 0; qy < D; qy++) for (let qx = 0; qx < D; qx++) {
+        if ((qx - R) ** 2 + (qy - R) ** 2 > ri * ri) continue;
+        const X = x0 + qx, Y = y0 + qy; if (X < 0 || Y < 0 || X >= W - 1 || Y >= H - 1) continue;
+        const a = A[Y * W + X]; tot++; if (a > 127) cov++; if (a > 30 && a < 225) fuzz++;
+        if ((a > 127) !== (A[Y * W + X + 1] > 127) || (a > 127) !== (A[(Y + 1) * W + X] > 127)) edges++;
+      }
+      const f = cov / tot, fz = fuzz / tot;
+      const ok = f >= .08 && f <= .5 && fz < .04 && edges < 2.2 * D; // busy cutouts (railings, trees, crowds) look ghosted, so they get a plain circle
+      log('depth check: overlap', Math.round(f * 100) + '%, fuzzy edge', (fz * 100).toFixed(1) + '%, edge length', edges, ok ? '-> depth effect' : '-> plain circle');
+      if (ok) { // snap half-transparent pixels to solid or clear so nothing looks see-through
+        for (let i = 0; i < A.length; i++) { const v = A[i]; px[i * 4 + 3] = v <= 96 ? 0 : v >= 176 ? 255 : Math.round((v - 96) * 255 / 80); }
+        tx.putImageData(full, 0, 0); cutLayer = t;
+      }
     }
-    const ccx = cutImg ? cx : (style.side === 'left' ? 56 + R : W - 56 - R); // flat circles sit in the corner
+    const ccx = cutLayer ? cx : (style.side === 'left' ? 56 + R : W - 56 - R); // flat circles sit in the corner
     x.save(); x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 38; x.shadowOffsetX = 0; x.shadowOffsetY = 12; x.beginPath(); x.arc(ccx, cy, R, 0, Math.PI * 2); x.fillStyle = RING; x.fill(); x.restore();
     x.save(); x.beginPath(); x.arc(ccx, cy, ri, 0, Math.PI * 2); x.clip();
     const s = Math.max(2 * ri / im.width, 2 * ri / im.height), w = im.width * s, h = im.height * s; x.drawImage(im, ccx - w / 2, cy - h / 2, w, h); x.restore();
-    if (cutImg) x.drawImage(cutImg, ...rect); // main subject drawn back on top of the circle
+    if (cutLayer) x.drawImage(cutLayer, 0, 0); // main subject drawn back on top of the circle
   }
   const adir = path.join(ROOT, 'assets');
   const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
