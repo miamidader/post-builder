@@ -12,6 +12,7 @@ const IMG_MODEL = /^(off|none|no)$/i.test(IMG_RAW) ? '' : IMG_RAW; // set the va
 const NUM = +(process.env.NUM_POSTS || 4);
 const CIRCLE_ON = !/^(off|none|no)$/i.test(process.env.CIRCLE_PHOTOS || ''); // set the variable CIRCLE_PHOTOS to "off" to skip the round inset photo (it costs one extra image per post)
 const RING = process.env.CIRCLE_RING || '#FFFFFF'; // ring color around the round photo
+const LOGO_H = +(process.env.LOGO_HEIGHT || 132); // height of the logo above the headline, in pixels (the post is 1440 tall)
 const CIRCLE_NONE = +(process.env.CIRCLE_NONE_CHANCE || .25); // chance a post gets no circle at all (no circle also means no extra image cost)
 const CIRCLE_DEPTH = +(process.env.CIRCLE_DEPTH_CHANCE || .4); // chance a post with a circle gets the depth effect (main subject in front of the circle)
 const pickStyle = () => (!CIRCLE_ON || Math.random() < CIRCLE_NONE) ? null : { side: Math.random() < .5 ? 'left' : 'right', depth: Math.random() < CIRCLE_DEPTH };
@@ -263,16 +264,19 @@ async function compose(headlines, photoBuf, circleBuf, style) {
   }
   const adir = path.join(ROOT, 'assets');
   const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
-  let lg = null, lw = 190, lh = 0;
-  if (lf) { lg = await loadImage(fs.readFileSync(path.join(adir, lf))); lh = lw * lg.height / lg.width; }
+  let lg = null, lw = 0, lh = 0;
+  if (lf) { lg = await loadImage(fs.readFileSync(path.join(adir, lf))); lh = LOGO_H; lw = Math.min(300, lh * lg.width / lg.height); lh = lw * lg.height / lg.width; } // sized by height so any logo shape fits
   if (lg) { if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; } }
   else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
   const outs = [];
   for (const headline of headlines) { // same photo and circle every time, only the headline (and its fade) changes
     const c2 = createCanvas(W, H), x = c2.getContext('2d'); x.drawImage(c, 0, 0);
     const hl = headlineCanvas(headline), hy = H - hl.height - 32; // text bottom edge sits 40px from the bottom, same as the 40px side margins
-    const fy = Math.max(0, hy - (lg ? lh + 6 : 0)); // the black fade is exactly as tall as the headline block (the logo sits on top of it), so it grows and shrinks with the headline
-    const g2 = x.createLinearGradient(0, fy, 0, H); g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(.45, 'rgba(0,0,0,.72)'); g2.addColorStop(1, 'rgba(0,0,0,.9)'); x.fillStyle = g2; x.fillRect(0, fy, W, H - fy);
+    const fy = Math.max(0, hy - ((lg ? lh + 6 : 0) + 130)); // the fade covers the headline block plus a long, soft ramp above it (logo included), so it grows and shrinks with the headline and is on every post
+    const pH = (hy - fy) / (H - fy); // where the headline starts inside the fade
+    const g2 = x.createLinearGradient(0, fy, 0, H); // gradual S-curve from photo to black, then solid black from the top of the headline down, like the posts you make by hand
+    g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(pH * .25, 'rgba(0,0,0,.1)'); g2.addColorStop(pH * .5, 'rgba(0,0,0,.34)'); g2.addColorStop(pH * .75, 'rgba(0,0,0,.7)'); g2.addColorStop(pH, 'rgba(0,0,0,.97)'); g2.addColorStop(1, 'rgba(0,0,0,1)');
+    x.fillStyle = g2; x.fillRect(0, fy, W, H - fy);
     x.drawImage(hl, 0, hy);
     if (lg) x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh); // logo sits centered just above the headline, like your regular posts
     outs.push({ post: c2.toBuffer('image/jpeg', 92), headline: hl.toBuffer('image/png') });
