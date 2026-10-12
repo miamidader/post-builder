@@ -14,7 +14,7 @@ const CIRCLE_ON = !/^(off|none|no)$/i.test(process.env.CIRCLE_PHOTOS || ''); // 
 const RING = process.env.CIRCLE_RING || '#FFFFFF'; // ring color around the round photo
 const LOGO_H = +(process.env.LOGO_HEIGHT || 132); // height of the logo above the headline, in pixels (the post is 1440 tall)
 const CIRCLE_NONE = +(process.env.CIRCLE_NONE_CHANCE || .25); // chance a post gets no circle at all (no circle also means no extra image cost)
-const CIRCLE_DEPTH = +(process.env.CIRCLE_DEPTH_CHANCE || .4); // chance a post with a circle gets the depth effect (main subject in front of the circle)
+const CIRCLE_DEPTH = +(process.env.CIRCLE_DEPTH_CHANCE || .5); // chance a post with a circle gets the depth effect (main subject in front of the circle)
 const pickStyle = () => (!CIRCLE_ON || Math.random() < CIRCLE_NONE) ? null : { side: Math.random() < .5 ? 'left' : 'right', depth: Math.random() < CIRCLE_DEPTH };
 const log = (...a) => console.log(...a);
 
@@ -177,6 +177,49 @@ async function photoOnce(prompt, ratio = '3:4') {
   }
   return null;
 }
+
+/* ---------- sports: real reference photo from Wikimedia Commons -> new-angle recreation ---------- */
+const UA = { 'User-Agent': 'MiamiDaderBot/1.0 (https://github.com/miamidader/post-builder)' };
+const stripHtml = t => String(t || '').replace(/<[^>]*>/g, '').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/\s+/g, ' ').trim();
+async function refSubject(headline) { // who or what the story is about, as a search phrase
+  try {
+    const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: `Sports headline: "${headline}". Reply as JSON: "player" = the one main athlete named (full name) or empty string, "team" = the main team (for example "Miami Heat", "Miami Dolphins", "Miami Hurricanes football", "Inter Miami"), "sport" = the sport.` }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { player: { type: 'STRING' }, team: { type: 'STRING' }, sport: { type: 'STRING' } }, required: ['team'] } } });
+    return JSON.parse(j.candidates[0].content.parts[0].text);
+  } catch (e) { log('Sports subject lookup failed:', e.message.slice(0, 120)); return null; }
+}
+async function commonsRef(subj) { // best freely licensed photo; tries the player first, then the team
+  const queries = [subj.player && `${subj.player} ${subj.team || ''}`, subj.player, subj.team && `${subj.team} ${subj.sport || ''} game`, subj.team].filter(Boolean);
+  for (const q of queries) {
+    try {
+      const u = 'https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrnamespace=6&gsrlimit=12&gsrsearch=' + encodeURIComponent('filetype:bitmap ' + q) + '&prop=imageinfo&iiprop=url|size|extmetadata&iiurlwidth=1280';
+      const r = await fetch(u, { headers: UA }); if (!r.ok) { log('Commons search HTTP', r.status); continue; }
+      const pages = Object.values((await r.json()).query?.pages || {}).sort((a, b) => a.index - b.index);
+      for (const pg of pages) {
+        const ii = pg.imageinfo?.[0]; if (!ii || !ii.thumburl) continue;
+        const m = ii.extmetadata || {}, lic = stripHtml(m.LicenseShortName?.value), ok = /^(CC BY|CC BY-SA|CC0|Public domain|PD)/i.test(lic) && !/NC|ND/i.test(lic);
+        const title = pg.title.toLowerCase();
+        if (!ok || ii.width < 900 || /logo|crest|badge|map|\.svg|signature|jersey display/.test(title)) continue;
+        if (q === subj.player || (subj.player && q.startsWith(subj.player))) { const nm = subj.player.toLowerCase().split(' ').pop(); if (!(title + ' ' + stripHtml(m.ImageDescription?.value).toLowerCase()).includes(nm)) continue; }
+        const img = await fetch(ii.thumburl, { headers: UA }); if (!img.ok) continue;
+        const artist = stripHtml(m.Artist?.value) || 'unknown photographer';
+        log('Commons reference:', pg.title, '|', lic, '|', artist);
+        return { buf: Buffer.from(await img.arrayBuffer()), mime: img.headers.get('content-type') || 'image/jpeg', credit: `Image: AI recreation based on a photo by ${artist} (${lic}), via Wikimedia Commons: ${ii.descriptionurl}` };
+      }
+    } catch (e) { log('Commons lookup failed:', e.message.slice(0, 120)); }
+  }
+  log('No freely licensed reference photo found.'); return null;
+}
+async function photoFromRef(headline, subj, ref) {
+  if (!IMG_MODEL || DRY) return null;
+  const prompt = `Create a new realistic editorial sports photograph, 3:4 vertical, for this story: "${headline}". Use the attached reference photo to match the real team's uniform colors and design and the subject's real appearance${subj.player ? ' (' + subj.player + ')' : ''}. Do not copy the reference: show a different moment from a different camera angle, with natural sports-photography lighting and depth of field. Main subject in the upper two-thirds, bottom third simple and darker. No text, captions, or watermarks.`;
+  try {
+    const r = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${IMG_MODEL}:generateContent`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'x-goog-api-key': KEY }, body: JSON.stringify({ contents: [{ parts: [{ text: prompt }, { inlineData: { mimeType: ref.mime.split(';')[0], data: ref.buf.toString('base64') } }] }], generationConfig: { responseModalities: ['IMAGE'], imageConfig: { aspectRatio: '3:4' } } }) });
+    if (!r.ok) { log('Reference recreation HTTP', r.status, (await r.text()).slice(0, 200)); return null; }
+    const j = await r.json(), b64 = findImage(j);
+    if (!b64) log('Reference recreation returned no picture. Google said:', JSON.stringify(j).slice(0, 300));
+    return b64 ? Buffer.from(b64, 'base64') : null;
+  } catch (e) { log('Reference recreation failed:', e.message.slice(0, 120)); return null; }
+}
 async function saferPrompt(headline, label) {
   try {
     const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: `Write one image prompt for a realistic 3:4 vertical editorial photo that fits this Miami-Dade story: "${headline}". Rules: no real people or names, no faces, no police arrests, injuries, crashes, blood, or dead animals, no brands, no text. Show a calm, recognizable Miami-Dade setting or object related to the topic, with the main subject in the upper two-thirds and a simple darker bottom third. Reply as JSON {"prompt": "..."}.` }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { prompt: { type: 'STRING' } }, required: ['prompt'] } } });
@@ -232,31 +275,38 @@ async function compose(headlines, photoBuf, circleBuf, style) {
     const g = x.createLinearGradient(0, 0, W * .4, H); g.addColorStop(0, '#6B7C8A'); g.addColorStop(.5, '#232A31'); g.addColorStop(1, '#0B0D0F'); x.fillStyle = g; x.fillRect(0, 0, W, H);
   }
   if (circleBuf && style) { // round inset photo, like Real Vegas Locals and Socals posts. Side and depth are random per post.
-    const im = await loadImage(circleBuf), D = 460, R = D / 2, ring = 17, ri = R - ring, cy = 64 + R;
+    const im = await loadImage(circleBuf), D = 480, R = D / 2, ring = 18, ri = R - ring, cy = 64 + R;
     let cut = null;
     if (style.depth) cut = await subjectCutout(photoBuf);
-    const shift = cut ? 120 : 0, cx = style.side === 'left' ? 56 + R + shift : W - 56 - R - shift; // depth circles sit further in so the subject overlaps them
-    let cutLayer = null;
-    if (cut) { // only use the depth effect when the subject cuts out cleanly: a compact subject that overlaps part of the circle
+    let cx = style.side === 'left' ? 56 + R : W - 56 - R, cutLayer = null; // flat circles sit in the corner
+    if (cut) { // depth effect: try a few spots on both sides and keep the one where the subject overlaps the circle cleanly
       const cutImg = await loadImage(cut), t = createCanvas(W, H), tx = t.getContext('2d'); tx.drawImage(cutImg, ...rect);
       const full = tx.getImageData(0, 0, W, H), px = full.data, A = new Uint8Array(W * H);
       for (let i = 0; i < A.length; i++) A[i] = px[i * 4 + 3];
-      const x0 = Math.round(cx - R), y0 = Math.round(cy - R); let tot = 0, cov = 0, fuzz = 0, edges = 0;
-      for (let qy = 0; qy < D; qy++) for (let qx = 0; qx < D; qx++) {
-        if ((qx - R) ** 2 + (qy - R) ** 2 > ri * ri) continue;
-        const X = x0 + qx, Y = y0 + qy; if (X < 0 || Y < 0 || X >= W - 1 || Y >= H - 1) continue;
-        const a = A[Y * W + X]; tot++; if (a > 127) cov++; if (a > 30 && a < 225) fuzz++;
-        if ((a > 127) !== (A[Y * W + X + 1] > 127) || (a > 127) !== (A[(Y + 1) * W + X] > 127)) edges++;
+      const test = ccx => {
+        const x0 = Math.round(ccx - R), y0 = Math.round(cy - R); let tot = 0, cov = 0, fuzz = 0, edges = 0;
+        for (let qy = 0; qy < D; qy++) for (let qx = 0; qx < D; qx++) {
+          if ((qx - R) ** 2 + (qy - R) ** 2 > ri * ri) continue;
+          const X = x0 + qx, Y = y0 + qy; if (X < 0 || Y < 0 || X >= W - 1 || Y >= H - 1) continue;
+          const a = A[Y * W + X]; tot++; if (a > 127) cov++; if (a > 30 && a < 225) fuzz++;
+          if ((a > 127) !== (A[Y * W + X + 1] > 127) || (a > 127) !== (A[(Y + 1) * W + X] > 127)) edges++;
+        }
+        const f = cov / tot, fz = fuzz / tot;
+        return { f, fz, edges, ok: f >= .06 && f <= .55 && fz < .08 && edges < 3 * D, score: Math.abs(f - .22) + fz };
+      };
+      let best = null;
+      for (const side of [style.side, style.side === 'left' ? 'right' : 'left']) for (const sh of [60, 120, 180, 240]) {
+        const ccx = side === 'left' ? 56 + R + sh : W - 56 - R - sh, r = test(ccx);
+        if (r.ok && (!best || r.score < best.score)) best = { ...r, ccx };
       }
-      const f = cov / tot, fz = fuzz / tot;
-      const ok = f >= .08 && f <= .5 && fz < .04 && edges < 2.2 * D; // busy cutouts (railings, trees, crowds) look ghosted, so they get a plain circle
-      log('depth check: overlap', Math.round(f * 100) + '%, fuzzy edge', (fz * 100).toFixed(1) + '%, edge length', edges, ok ? '-> depth effect' : '-> plain circle');
-      if (ok) { // snap half-transparent pixels to solid or clear so nothing looks see-through
+      if (best) { cx = best.ccx; log('depth check: overlap', Math.round(best.f * 100) + '%, fuzzy', (best.fz * 100).toFixed(1) + '% -> DEPTH EFFECT used'); }
+      else log('depth check: no clean spot found -> plain circle');
+      if (best) { // snap half-transparent pixels to solid or clear so nothing looks see-through
         for (let i = 0; i < A.length; i++) { const v = A[i]; px[i * 4 + 3] = v <= 96 ? 0 : v >= 176 ? 255 : Math.round((v - 96) * 255 / 80); }
         tx.putImageData(full, 0, 0); cutLayer = t;
       }
     }
-    const ccx = cutLayer ? cx : (style.side === 'left' ? 56 + R : W - 56 - R); // flat circles sit in the corner
+    const ccx = cx;
     x.save(); x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 38; x.shadowOffsetX = 0; x.shadowOffsetY = 12; x.beginPath(); x.arc(ccx, cy, R, 0, Math.PI * 2); x.fillStyle = RING; x.fill(); x.restore();
     x.save(); x.beginPath(); x.arc(ccx, cy, ri, 0, Math.PI * 2); x.clip();
     const s = Math.max(2 * ri / im.width, 2 * ri / im.height), w = im.width * s, h = im.height * s; x.drawImage(im, ccx - w / 2, cy - h / 2, w, h); x.restore();
@@ -400,7 +450,13 @@ for (const j of jobs) {
   try {
     const w = DRY ? (() => { const t = j.h ? j.h.title : j.lib.t; return { headlines: [t, ...(j.h && j.h.alts ? j.h.alts : ['Did you know? ' + t, 'Miami fact: ' + t])], article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' }; })() : await write(j.kind, j.data);
     w.headline = w.headlines[0];
-    const buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
+    let buf = null;
+    if (j.kind === 'sports' && !DRY) { // real reference photo (freely licensed) -> new-angle recreation, with a caption credit
+      const subj = await refSubject(w.headline), ref = subj && await commonsRef(subj);
+      if (ref) { buf = await photoFromRef(w.headline, subj, ref); if (buf) { w.article += '\n\n' + ref.credit; log('Sports photo: recreated from a Commons reference'); } }
+      if (!buf) log('Sports photo: no reference recreation, using the standard photo');
+    }
+    if (!buf) buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
     const style = pickStyle(); // random per post: no circle, left or right, flat or depth
     const cbuf = style ? await circlePhoto(DRY ? 'dry' : w.circlePrompt) : null; if (cbuf && !DRY) await sleep(3000);
     log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
