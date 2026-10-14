@@ -360,7 +360,7 @@ function page(posts, dateLabel) {
 </section>`).join('\n');
   const dots = posts.map((_, i) => `<button class="dot" aria-label="Post ${i + 1}" data-go="${i}"></button>`).join('');
   const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt, h: p.headlines })));
-  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title><link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png"><meta name="theme-color" content="#FF6B00">
+  return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title><link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png"><meta name="theme-color" content="#EA742E">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F3F5F2;--fg:#101316;--card:#fff;--mut:#5E6870;--bd:#DADFD9;--ac:#2FB457;--edge:#101316;--orange:#FF8A1F}
