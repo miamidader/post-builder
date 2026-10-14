@@ -13,9 +13,8 @@ const NUM = +(process.env.NUM_POSTS || 4);
 const CIRCLE_ON = !/^(off|none|no)$/i.test(process.env.CIRCLE_PHOTOS || ''); // set the variable CIRCLE_PHOTOS to "off" to skip the round inset photo (it costs one extra image per post)
 const RING = process.env.CIRCLE_RING || '#FFFFFF'; // ring color around the round photo
 const LOGO_H = +(process.env.LOGO_HEIGHT || 132); // height of the logo above the headline, in pixels (the post is 1440 tall)
-const CIRCLE_NONE = +(process.env.CIRCLE_NONE_CHANCE || .25); // chance a post gets no circle at all (no circle also means no extra image cost)
 const CIRCLE_DEPTH = +(process.env.CIRCLE_DEPTH_CHANCE || .5); // chance a post with a circle gets the depth effect (main subject in front of the circle)
-const pickStyle = () => (!CIRCLE_ON || Math.random() < CIRCLE_NONE) ? null : { side: Math.random() < .5 ? 'left' : 'right', depth: Math.random() < CIRCLE_DEPTH };
+const pickStyle = () => !CIRCLE_ON ? null : { side: Math.random() < .5 ? 'left' : 'right', depth: Math.random() < CIRCLE_DEPTH };
 const log = (...a) => console.log(...a);
 
 /* ---------- fonts ---------- */
@@ -340,8 +339,8 @@ function page(posts, dateLabel) {
   const cards = posts.map((p, i) => `
 <section class="slide" id="p${i}">
 <div class="card">
- <div class="lab">${esc(p.label)}</div>
- <div class="pwrap">${p.headlines.map((h, k) => `<img class="pimg${k ? '' : ' on'}" src="p${i + 1}_${k + 1}.jpg" alt="Post ${i + 1}, headline ${k + 1}"${i || k ? ' loading="lazy"' : ''}>`).join('')}</div>
+ <div class="cardtop"><div class="lab">${esc(p.label)}</div>${p.hasCircle ? `<button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-ctog="${i}">Circle<i></i></button>` : ''}</div>
+ <div class="pwrap">${p.headlines.map((h, k) => `<img class="pimg${k ? '' : ' on'}" data-k="${k}" data-c="1" src="p${i + 1}_${k + 1}.jpg" alt="Post ${i + 1}, headline ${k + 1}"${i || k ? ' loading="lazy"' : ''}>`).join('')}${p.hasCircle ? p.headlines.map((h, k) => `<img class="pimg" data-k="${k}" data-c="0" src="p${i + 1}_${k + 1}_nc.jpg" alt="Post ${i + 1}, headline ${k + 1}, no circle" loading="lazy">`).join('') : ''}</div>
  ${p.headlines.length > 1 ? `<div class="seg" role="group" aria-label="Headline options" data-i="${i}">${p.headlines.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>` : ''}
  <h2 data-h="${i}">${esc(p.headlines[0])}</h2>
  <p class="art">${esc(p.article).replace(/\n+/g, '<br><br>')}</p>
@@ -376,7 +375,11 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;align-items:flex-start}.track::-webkit-scrollbar{display:none}
 .slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
 .card{width:100%;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
-.lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px;margin-bottom:10px}
+.cardtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;min-height:30px}
+.lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px}
+.ctog{display:flex;align-items:center;gap:8px;border:1.5px solid var(--edge);background:transparent;color:var(--fg);border-radius:99px;padding:3px 4px 3px 12px;font:600 12px Poppins,system-ui,sans-serif;cursor:pointer}
+.ctog i{width:34px;height:20px;border-radius:99px;background:var(--bd);position:relative;transition:background .15s}.ctog i:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .15s}
+.ctog[aria-checked=true] i{background:var(--ac)}.ctog[aria-checked=true] i:after{transform:translateX(14px)}
 .pwrap{position:relative;width:100%;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#222}
 .pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .12s ease}.pimg.on{opacity:1}
 .seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
@@ -405,10 +408,12 @@ document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('n
 mark(0);
 document.querySelectorAll('.seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+g.dataset.i,v=+b.dataset.v,sl=document.getElementById('p'+i);
  g.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
- sl.querySelectorAll('.pimg').forEach((im,k)=>im.classList.toggle('on',k===v));
- sl.querySelector('[data-h]').textContent=D[i].h[v];
- const sv=sl.querySelector('[data-save]');sv.href='p'+(i+1)+'_'+(v+1)+'.jpg';
- sl.querySelector('[data-hbtn]').dataset.img='h'+(i+1)+'_'+(v+1)+'.png';say(i,'')}));
+ sl.dataset.v=v;sl.querySelector('[data-h]').textContent=D[i].h[v];
+ sl.querySelector('[data-hbtn]').dataset.img='h'+(i+1)+'_'+(v+1)+'.png';refresh(sl);say(i,'')}));
+function refresh(sl){const i=+sl.id.slice(1),v=+(sl.dataset.v||0),c=sl.dataset.c||'1';
+ sl.querySelectorAll('.pimg').forEach(im=>im.classList.toggle('on',+im.dataset.k===v&&im.dataset.c===c));
+ sl.querySelector('[data-save]').href='p'+(i+1)+'_'+(v+1)+(c==='0'?'_nc':'')+'.jpg'}
+document.querySelectorAll('[data-ctog]').forEach(b=>b.onclick=()=>{const sl=b.closest('.slide'),on=b.getAttribute('aria-checked')!=='true';b.setAttribute('aria-checked',on);sl.dataset.c=on?'1':'0';refresh(sl)});
 (window.requestIdleCallback||setTimeout)(()=>document.querySelectorAll('.pimg').forEach(im=>{im.loading='eager'}));
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
 document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
@@ -460,9 +465,10 @@ for (const j of jobs) {
     const style = pickStyle(); // random per post: no circle, left or right, flat or depth
     const cbuf = style ? await circlePhoto(DRY ? 'dry' : w.circlePrompt) : null; if (cbuf && !DRY) await sleep(3000);
     log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
-    const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style);
+    const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style), hasCircle = !!(cbuf && style);
     outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}.png`), o.headline); });
-    posts.push({ ...w, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source });
+    if (hasCircle) (await compose(w.headlines, buf, null, null)).forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_nc.jpg`), o.post)); // same post without the round photo, for the toggle
+    posts.push({ ...w, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source, hasCircle });
     if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
     log('made', n, w.headlines.length + ' headlines:', w.headlines.join(' | '));
   } catch (e) { log('Skipped one post:', e.message); }
