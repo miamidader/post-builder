@@ -13,7 +13,7 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .count{font:600 13px Poppins;color:var(--mut)}
 .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;align-items:flex-start}.track::-webkit-scrollbar{display:none}
 .slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
-.card{width:100%;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
+.card{width:100%;min-width:0;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .cardtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;min-height:30px}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px}
 .ctog{display:flex;align-items:center;gap:8px;border:1.5px solid var(--edge);background:transparent;color:var(--fg);border-radius:99px;padding:3px 4px 3px 12px;font:600 12px Poppins,system-ui,sans-serif;cursor:pointer}
@@ -24,7 +24,7 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
 .seg button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 13px Poppins,system-ui,sans-serif;cursor:pointer}
 .seg button.on{background:var(--edge);color:var(--card)}
-h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px}
+h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wrap:anywhere}.slide{min-width:0}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
