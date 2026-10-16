@@ -1,0 +1,42 @@
+candidates 13 news, 14 sports
+Switching to gemini-flash-lite-latest because: Gemini gemini-flash-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are deplete
+pickBest fallback Gemini gemini-flash-lite-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.
+Switching to gemini-flash-lite-latest because: Gemini gemini-flash-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are deplete
+Skipped one post: Gemini gemini-flash-lite-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.
+Switching to gemini-flash-lite-latest because: Gemini gemini-flash-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are deplete
+Skipped one post: Gemini gemini-flash-lite-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.
+Switching to gemini-flash-lite-latest because: Gemini gemini-flash-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are deplete
+Skipped one post: Gemini gemini-flash-lite-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.
+Switching to gemini-flash-lite-latest because: Gemini gemini-flash-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are deplete
+Skipped one post: Gemini gemini-flash-lite-latest HTTP 402: {
+  "error": {
+    "code": 402,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.
+No posts were made.
