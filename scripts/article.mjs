@@ -4,9 +4,9 @@ const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (
 
 async function get(url, o = {}, ms = 15000) {
   const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), ms);
-  try {
-    return await fetch(url, { redirect: 'follow', signal: ctl.signal, method: o.method, body: o.body, headers: { 'User-Agent': UA, 'Accept-Language': 'en-US,en;q=0.9', Accept: 'text/html,application/xhtml+xml,*/*;q=0.8', ...(o.headers || {}) } });
-  } finally { clearTimeout(t); }
+  const headers = o.raw ? o.headers : { 'User-Agent': UA, 'Accept-Language': 'en-US,en;q=0.9', Accept: 'text/html,application/xhtml+xml,*/*;q=0.8', ...(o.headers || {}) };
+  try { return await fetch(url, { redirect: 'follow', signal: ctl.signal, method: o.method, body: o.body, headers }); }
+  finally { clearTimeout(t); }
 }
 
 export async function resolveGoogleNews(link) {
@@ -69,17 +69,27 @@ export function extract(html) {
   let text = paras.join('\n');
   const ldText = strip(ld);
   if (ldText.length > text.length) text = ldText;
-  return { title, desc, text: text.slice(0, 3500) };
+  return { title, desc: strip(desc), text: text.slice(0, 3500) };
 }
 
+// Different sites accept different kinds of visitors, so try a few and keep whichever gave the most text.
+const IPHONE = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.5 Mobile/15E148 Safari/604.1';
+const STYLES = [{ 'User-Agent': IPHONE }, { 'User-Agent': 'curl/8.5.0', Accept: '*/*' }, { 'User-Agent': UA, Accept: '*/*' }];
 export async function getArticle(link) {
   const url = await resolveGoogleNews(link);
-  const r = await get(url);
-  if (!r.ok) throw new Error('HTTP ' + r.status + ' from ' + new URL(url).hostname);
-  const type = r.headers.get('content-type') || '';
-  if (!/html|xml/i.test(type)) throw new Error('Not a web page: ' + type);
-  const html = (await r.text()).slice(0, 2_000_000);
-  const a = extract(html);
-  const text = [a.desc, a.text].filter(Boolean).join('\n\n').slice(0, 3500);
-  return { url: r.url || url, host: new URL(r.url || url).hostname.replace(/^www\./, ''), title: a.title, desc: a.desc, text, thin: text.length < 250 };
+  let best = null, lastErr;
+  for (const headers of STYLES) {
+    try {
+      const r = await get(url, { raw: true, headers }, 9000);
+      if (!r.ok) throw new Error('HTTP ' + r.status + ' from ' + new URL(url).hostname);
+      if (!/html|xml/i.test(r.headers.get('content-type') || '')) throw new Error('Not a web page');
+      const a = extract((await r.text()).slice(0, 2_000_000));
+      const text = (a.desc && a.text.includes(a.desc.slice(0, 60)) ? a.text : [a.desc, a.text].filter(Boolean).join('\n\n')).slice(0, 3500);
+      const res = { url: r.url || url, host: new URL(r.url || url).hostname.replace(/^www\./, ''), title: a.title, desc: a.desc, text, thin: text.length < 250 };
+      if (!best || text.length > best.text.length) best = res;
+      if (text.length >= 600) break;
+    } catch (e) { lastErr = e; }
+  }
+  if (!best) throw lastErr;
+  return best;
 }

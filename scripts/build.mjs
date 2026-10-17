@@ -1,6 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { createCanvas, GlobalFonts, loadImage } from '@napi-rs/canvas';
+import { getArticle } from './article.mjs';
 
 const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'today');
@@ -65,6 +66,7 @@ const FEEDS = {
 };
 const SPORTS_RE = /miami heat|dolphins|miami hurricanes|\bcanes\b|panthers|marlins|inter miami|\bnfl\b|\bnba\b|\bncaa\b|\bmls\b|football|basketball|quarterback|touchdown|playoff|coach |super bowl/i;
 const JUNK_SRC = /realtor\.com|zillow|redfin|trulia|apartments\.com|loopnet|tripadvisor|expedia|booking\.com|cond[eé] nast traveler|travel \+ leisure/i;
+const SPAM_RE = /\bTV!?\]|kick.?off time|live ?stream|watch .{0,40} live online|\bfree stream\b/i;
 const ADDRESS_RE = /^\d{2,6}\s+[\w .']+\b(st|street|ave|avenue|rd|road|blvd|dr|drive|ln|lane|ct|court|way|apt|unit)\b/i;
 const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").trim();
 async function feed([q, n]) {
@@ -89,7 +91,7 @@ async function candidates(kind, seen) {
   const res = await Promise.all(FEEDS[kind].map(feed));
   let all = [].concat(...res).filter(h => h.title).sort((a, b) => b.t - a.t);
   if (kind === 'news') all = all.filter(h => !SPORTS_RE.test(h.title));
-  all = all.filter(h => !JUNK_SRC.test(h.source) && !ADDRESS_RE.test(h.title)); // real estate listings and travel pages are not news
+  all = all.filter(h => !JUNK_SRC.test(h.source) && !ADDRESS_RE.test(h.title) && !SPAM_RE.test(h.title)); // real estate listings and travel pages are not news
   const out = [];
   for (const h of all) if (![...seen, ...out.map(o => o.title)].some(t => similar(t, h.title))) out.push(h);
   return out;
@@ -123,6 +125,7 @@ async function write(kind, dataText) {
   const factual = kind === 'facts' || kind === 'history';
   const prompt = `Create three different all caps instagram headline options for my Miami area based news account and use this data to write one article that does not link to any news source affiliation (give it a Miami area-centric point of view). No em dashes. No emojis. The article does not need to be all caps.
 Only use facts that appear in the data below. Do not invent details, quotes, names, dates, or numbers. If the data is thin, keep the article short rather than guessing.
+Do use the specific details that ARE in the data: names of businesses, people, agencies, streets and neighborhoods, times, dates, ages, and numbers, with the who, what, where and when up front. Write in your own words and never copy sentences from the article text. Never mention that you were given article text or a source.
 Headlines: exactly 3 options, each 12 words or fewer, each with a clearly different angle (1: the straight facts, 2: short and punchy, 3: a local-pride or curiosity hook), all using only facts from the data. Article: about 80 to 120 words, short paragraphs.
 Also write "imagePrompt": a prompt for a ${kind === 'history' ? 'vintage, archival-style editorial image' : 'realistic editorial photo'} in a 3:4 vertical portrait about this story. Main subject in the upper two-thirds, bottom third simple and darker. ${kind === 'history' ? 'No real identifiable people. ' : ''}No text, letters, logos, or watermarks.
 Also write "circlePrompt": a prompt for a realistic square 1:1 photo that shows a second, closely related view of the story (a close-up detail, the place, or the object involved), different from the main photo, with the subject centered. No people's faces, no text, letters, logos, or watermarks.
@@ -357,7 +360,7 @@ function page(posts, cands, dateLabel) {
   <button class="btn ghost" data-copy="prompt" data-i="${i}">Copy photo prompt</button>
  </div>
  <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">${p.url ? `Source: <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.source || 'link')}</a>. Check the facts before you post.` : 'From your fact library.'}</p>
+ <p class="src">${p.url ? `Source: <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.source || 'link')}</a>. Check the facts before you post.${p.details === false ? ' Only the headline or a short summary was available, so this has few details. Open the source and add them before posting.' : ''}` : 'From your fact library.'}</p>
  <p class="tip" data-s="${i}"></p>
 </div>
 </section>`).join('\n');
@@ -367,7 +370,7 @@ function page(posts, cands, dateLabel) {
     const made = posts.some(p => p.cid === c.id);
     return `
 <div class="story${made ? ' made' : ''}" data-id="${c.id}">
- <label class="srow"><input type="checkbox" class="pick" value="${c.id}"${made ? ' disabled' : ''}><span class="box"></span><span class="sbody"><span class="chip">${esc(c.label)}</span>${made ? '<span class="chip done">Made</span>' : ''}<span class="stitle">${esc(c.title)}</span>${c.desc ? `<span class="sdesc">${esc(c.desc)}</span>` : ''}<span class="smeta">${c.url ? `${esc(c.source || '')} &middot; <span data-ago="${c.t || 0}"></span> &middot; <a href="${esc(c.url)}" target="_blank" rel="noopener">Read</a>` : 'From your fact library'}</span></span></label>
+ <label class="srow"><input type="checkbox" class="pick" value="${c.id}"${made ? ' disabled' : ''}><span class="box"></span><span class="sbody"><span class="chip">${esc(c.label)}</span>${made ? '<span class="chip done">Made</span>' : ''}${c.url && c.thin ? '<span class="chip warn">Few details</span>' : ''}<span class="stitle">${esc(c.title)}</span>${c.desc ? `<span class="sdesc">${esc(c.desc)}</span>` : ''}<span class="smeta">${c.url ? `${esc(c.source || '')} &middot; <span data-ago="${c.t || 0}"></span> &middot; <a href="${esc(c.link || c.url)}" target="_blank" rel="noopener">Read</a>` : 'From your fact library'}</span></span></label>
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="${c.id}">Circle<i></i></button>
 </div>`;
   }).join('\n');
@@ -413,7 +416,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .srow input:focus-visible+.box{outline:3px solid var(--orange);outline-offset:2px}
 .srow input:disabled+.box{opacity:.4}
 .sbody{min-width:0;display:block}
-.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}
+.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.warn{background:var(--orange);color:#101316}
 .stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
 .sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
 .smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
@@ -511,11 +514,31 @@ gen.onclick=run;sel();
 }
 
 /* ---------- main ---------- */
-const MODE = process.argv[2] === 'generate' ? 'generate' : 'pick'; // pick = free morning list of stories; generate = write and illustrate only the stories you chose
+const MODE = ['generate', 'test-write'].includes(process.argv[2]) ? process.argv[2] : 'pick'; // pick = free morning list of stories; generate = write and illustrate only the stories you chose
 const seenFile = path.join(ROOT, 'data/seen.json');
 const state = JSON.parse(fs.readFileSync(seenFile, 'utf8'));
 const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'utf8'));
 const dateLabel = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/New_York' });
+
+const storyData = c => c.text
+  ? `${c.title} (${c.source})\n${c.thin ? 'ONLY A SHORT SUMMARY IS AVAILABLE. Do not guess any other details:' : 'ARTICLE TEXT FROM THE PUBLISHER (use its facts, write in your own words):'}\n${c.text}`
+  : `${c.title} (${c.source})\n(Only the headline is available. Do not guess any details.)`;
+
+async function enrich(items) { // read each story's real article so the writer has names and details, not just a headline
+  const queue = items.filter(x => x.url); let k = 0;
+  const worker = async () => {
+    while (k < queue.length) {
+      const x = queue[k++];
+      try {
+        const a = await getArticle(x.url); x.link = a.url; x.text = a.text; x.thin = a.thin;
+        const d = a.desc && !similar(a.desc, x.title) ? a.desc : '';
+        x.desc = d.length > 220 ? d.slice(0, 220).replace(/\s+\S*$/, '') + '…' : d;
+        log('article', x.id, a.host, a.text.length, 'chars' + (a.thin ? ' (thin)' : ''));
+      } catch (e) { x.thin = true; log('article failed', x.id, String(e.message).slice(0, 90)); }
+    }
+  };
+  await Promise.all([worker(), worker(), worker()]);
+}
 
 if (MODE === 'pick') {
   let newsC, sportsC;
@@ -535,20 +558,26 @@ if (MODE === 'pick') {
   }
   items.forEach((x, i) => { x.id = i + 1; });
   if (!items.length) { console.error('No stories found.'); process.exit(1); }
+  if (DRY) items.forEach((x, i) => { if (x.url) { x.text = i % 3 === 2 ? '' : 'Sample article text with names and details.'; x.thin = !x.text; x.desc = x.thin ? '' : 'Sample snippet from the article so you can judge the story before generating it.'; } });
+  else await enrich(items);
   fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
   fs.writeFileSync(path.join(OUT, 'candidates.json'), JSON.stringify({ date: dateLabel, items }, null, 1));
   fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, posts: [] }));
   fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, dateLabel));
   log('done:', items.length, 'stories to pick from');
-} else {
+} else if (MODE === 'generate') {
   if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
   const cands = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).items;
   const posts = JSON.parse(fs.readFileSync(path.join(OUT, 'posts.json'), 'utf8')).posts;
   const ids = [...new Set((process.env.PICKS || '').split(',').map(s => +s.trim()).filter(Boolean))];
   const circleIds = new Set((process.env.CIRCLES || '').split(',').map(s => +s.trim()).filter(Boolean));
+  for (const id of ids) { // the story list may predate article reading, so fetch any missing article text now
+    const c = cands.find(x => x.id === id);
+    if (c && c.url && !c.text && !DRY) { try { const a = await getArticle(c.url); c.link = a.url; c.text = a.text; c.thin = a.thin; log('article', id, a.host, a.text.length, 'chars'); } catch (e) { c.thin = true; log('article failed', id, String(e.message).slice(0, 90)); } }
+  }
   const jobs = ids.map(id => cands.find(c => c.id === id)).filter(c => c && !posts.some(p => p.cid === c.id)).slice(0, 4).map(c => (c.kind === 'facts' || c.kind === 'history')
     ? { cid: c.id, kind: c.kind, label: c.label, lib: { t: c.title, d: c.desc }, data: `${c.title}\n${c.desc}` }
-    : { cid: c.id, kind: c.kind, label: c.label, h: { title: c.title, source: c.source, url: c.url, alts: c.alts }, data: `${c.title} (${c.source})\n${c.url}` });
+    : { cid: c.id, kind: c.kind, label: c.label, details: !!c.text && !c.thin, h: { title: c.title, source: c.source, url: c.link || c.url, alts: c.alts }, data: storyData(c) });
   if (!jobs.length) { console.error('Nothing new to make. Picks were:', process.env.PICKS); process.exit(1); }
   let made = 0;
   for (const j of jobs) {
@@ -568,7 +597,7 @@ if (MODE === 'pick') {
       const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style), hasCircle = !!(cbuf && style);
       outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}.png`), o.headline); });
       if (hasCircle) (await compose(w.headlines, buf, null, null)).forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_nc.jpg`), o.post)); // same post without the round photo, for the toggle
-      posts.push({ ...w, cid: j.cid, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source, hasCircle });
+      posts.push({ ...w, cid: j.cid, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source, hasCircle, details: j.details });
       if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
       made++;
       log('made', n, w.headlines.length + ' headlines:', w.headlines.join(' | '));
@@ -579,4 +608,11 @@ if (MODE === 'pick') {
   fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, dateLabel));
   state.titles = state.titles.slice(-300); fs.writeFileSync(seenFile, JSON.stringify(state, null, 1));
   log('done:', made, 'new posts,', posts.length, 'total');
+}
+else { // test-write: one text-only call to check what the writer produces from the real article. Nothing is published.
+  const c = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).items.find(x => x.id === +process.env.PICKS);
+  const a = await getArticle(c.url); c.text = a.text; c.thin = a.thin;
+  const data = storyData(c), w = await write(c.kind, data);
+  const rep = `STORY: ${c.title}\nARTICLE CHARS: ${a.text.length}\n\nHEADLINES:\n${w.headlines.join('\n')}\n\nARTICLE:\n${w.article}\n`;
+  fs.writeFileSync(path.join(ROOT, 'data/probe.log'), rep); console.log(rep);
 }
