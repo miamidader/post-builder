@@ -1,24 +1,16 @@
-#1 More Than Pink Walk gets started at Miami-Dade County Fair and Expo Center
-  https://www.cbsnews.com/miami/video/more-than-pink-walk-gets-started-at-miami-dade-county-fair-and-expo-center/
-  [browser] HTTP 200 final=https://www.cbsnews.com/miami/video/more-than-pink-walk-gets-started-at-miami-dade-county- html=813325 p=18 desc=79 text=0 :: 
-  [iphone] HTTP 406 final=https://www.cbsnews.com/miami/video/more-than-pink-walk-gets-started-at-miami-dade-county- html=0 p=0 desc=0 text=0 :: 
-  [curl] HTTP 200 final=https://www.cbsnews.com/miami/video/more-than-pink-walk-gets-started-at-miami-dade-county- html=813325 p=18 desc=79 text=0 :: 
-  [none] HTTP 200 final=https://www.cbsnews.com/miami/video/more-than-pink-walk-gets-started-at-miami-dade-county- html=813325 p=18 desc=79 text=0 :: 
-#3 Large police investigation in Dania Beach
-  https://www.cbsnews.com/miami/video/large-police-investigation-in-dania-beach/
-  [browser] HTTP 406 final=https://www.cbsnews.com/miami/video/large-police-investigation-in-dania-beach/ html=0 p=0 desc=0 text=0 :: 
-  [iphone] HTTP 406 final=https://www.cbsnews.com/miami/video/large-police-investigation-in-dania-beach/ html=0 p=0 desc=0 text=0 :: 
-  [curl] HTTP 200 final=https://www.cbsnews.com/miami/video/large-police-investigation-in-dania-beach/ html=812214 p=18 desc=80 text=0 :: 
-  [none] HTTP 200 final=https://www.cbsnews.com/miami/video/large-police-investigation-in-dania-beach/ html=812214 p=18 desc=80 text=0 :: 
-#8 Heat makes roster cuts ahead of opening night. Where things stand
-  https://www.miamiherald.com/sports/nba/miami-heat/article317652164.html
-  [browser] ERR This operation was aborted
-  [iphone] HTTP 200 final=https://www.miamiherald.com/sports/nba/miami-heat/article317652164.html html=137811 p=24 desc=47 text=3500 :: After closing the preseason on Friday night, the Miami Heat made moves to set its roster for the start of the regular season. | The Heat waived forward Ezra Ausar
-  [curl] ERR This operation was aborted
-  [none] ERR This operation was aborted
-#9 The Miami Heat have waived Ezra Ausar, Kylor Kelley, …
-  https://sports.yahoo.com/articles/miami-heat-waived-ezra-ausar-154057142.html
-  [browser] HTTP 200 final=https://sports.yahoo.com/articles/miami-heat-waived-ezra-ausar-154057142.html html=709229 p=4 desc=54 text=0 :: 
-  [iphone] HTTP 200 final=https://sports.yahoo.com/articles/miami-heat-waived-ezra-ausar-154057142.html html=708243 p=4 desc=54 text=0 :: 
-  [curl] HTTP 200 final=https://sports.yahoo.com/articles/miami-heat-waived-ezra-ausar-154057142.html html=524966 p=4 desc=54 text=0 :: 
-  [none] HTTP 200 final=https://sports.yahoo.com/articles/miami-heat-waived-ezra-ausar-154057142.html html=524966 p=4 desc=54 text=0 :: 
+STORY: Burglar smashes into Miami Beach restaurant, steals cash register drawer, surveillance video shows
+ARTICLE CHARS: 2276
+
+HEADLINES:
+BURGLAR SMASHES MIAMI BEACH RESTAURANT DOOR AND STEALS CASH REGISTER DRAWER
+CASH DRAWER STOLEN IN MIAMI BEACH RESTAURANT BREAK IN
+TEN YEAR NORMANDY DRIVE RESTAURANT TARGETED IN EARLY MORNING BREAK IN
+
+ARTICLE:
+A burglar smashed through the front glass door of 7tyone Restaurant & Coffee Bar on Normandy Drive in Miami Beach around 1 a.m. Friday, stealing the entire cash register drawer.
+
+Owner Liliana Arguinzones, who moved from Venezuela and has operated the Normandy Isle business for ten years, learned of the crime hours later from a neighboring business. Upon arriving, she discovered heaps of shattered glass and a brick left near the entrance.
+
+Surveillance cameras captured the burglar wearing a hat and using a rag to cover his face before ripping the drawer from the front counter.
+
+Miami Beach Police are investigating the burglary. Tipsters can call Crime Stoppers at 305-471-TIPS.
