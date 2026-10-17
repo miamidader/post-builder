@@ -24,7 +24,7 @@ jobs:
           git config user.email "daily-bot@users.noreply.github.com"
           git add -A today
           git diff --cached --quiet || git commit -m "Daily story picks"
-          git checkout -- node_modules || true  # npm install touches these tracked files, which would block the pull
+          git reset --hard -q  # drop npm's changes to tracked files (node_modules, lockfile) so the pull can run
           git pull --rebase origin main
           git push
       - name: Save error log
@@ -35,6 +35,6 @@ jobs:
           tail -c 6000 build.log > data/last-error.log
           git add data/last-error.log
           git commit -m "Daily build error log" || true
-          git checkout -- node_modules || true  # npm install touches these tracked files, which would block the pull
+          git reset --hard -q  # drop npm's changes to tracked files (node_modules, lockfile) so the pull can run
           git pull --rebase origin main
           git push
