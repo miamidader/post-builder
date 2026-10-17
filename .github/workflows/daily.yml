@@ -1,5 +1,5 @@
 name: Daily posts
-# Every morning: collect today's stories (free, no AI). You pick which ones to turn into posts on the page.
+# Every morning: collect today's stories, read the articles, and pre-write the headlines and article text (cheap text only, no photos). You pick which ones to turn into posts on the page.
 on:
   schedule:
     - cron: '0 13 * * *'
@@ -15,9 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+        with: { node-version: 20, cache: npm }
       - run: npm install
       - run: node scripts/build.mjs pick > build.log 2>&1; code=$?; cat build.log; exit $code
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       - name: Save results
         run: |
           git config user.name "daily-bot"

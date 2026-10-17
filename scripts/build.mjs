@@ -340,40 +340,21 @@ async function compose(headlines, photoBuf, circleBuf, style) {
 }
 
 /* ---------- page ---------- */
+// The page shell and story list are written here. Everything interactive (tabs, Generate button, post cards, live updates) lives in assets/app.js.
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const REPO = process.env.GITHUB_REPOSITORY || 'miamidader/post-builder';
-function page(posts, cands, dateLabel) {
-  const cards = posts.map((p, i) => `
-<section class="slide" id="p${i}">
-<div class="card">
- <div class="cardtop"><div class="lab">${esc(p.label)}</div>${p.hasCircle ? `<button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-ctog="${i}">Circle<i></i></button>` : ''}</div>
- <div class="pwrap">${p.headlines.map((h, k) => `<img class="pimg${k ? '' : ' on'}" data-k="${k}" data-c="1" src="p${i + 1}_${k + 1}.jpg" alt="Post ${i + 1}, headline ${k + 1}"${i || k ? ' loading="lazy"' : ''}>`).join('')}${p.hasCircle ? p.headlines.map((h, k) => `<img class="pimg" data-k="${k}" data-c="0" src="p${i + 1}_${k + 1}_nc.jpg" alt="Post ${i + 1}, headline ${k + 1}, no circle" loading="lazy">`).join('') : ''}</div>
- ${p.headlines.length > 1 ? `<div class="seg" role="group" aria-label="Headline options" data-i="${i}">${p.headlines.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>` : ''}
- <h2 data-h="${i}">${esc(p.headlines[0])}</h2>
- <p class="art">${esc(p.article).replace(/\n+/g, '<br><br>')}</p>
- <div class="row">
-  <button class="btn" data-copy="article" data-i="${i}">Copy article</button>
-  <a class="btn ghost" data-save="${i}" href="p${i + 1}_1.jpg" download="miamidader-${i + 1}.jpg">Save image</a>
- </div>
- <div class="row">
-  <button class="btn ghost" data-img="h${i + 1}_1.png" data-hbtn="${i}">Copy headline PNG</button>
-  <button class="btn ghost" data-copy="prompt" data-i="${i}">Copy photo prompt</button>
- </div>
- <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">${p.url ? `Source: <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.source || 'link')}</a>. Check the facts before you post.${p.details === false ? ' Only the headline or a short summary was available, so this has few details. Open the source and add them before posting.' : ''}` : 'From your fact library.'}</p>
- <p class="tip" data-s="${i}"></p>
-</div>
-</section>`).join('\n');
-  const dots = posts.map((_, i) => `<button class="dot" aria-label="Post ${i + 1}" data-go="${i}"></button>`).join('');
-  const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt, h: p.headlines }))).replace(/</g, '\\u003c');
+const IMG_BASE = process.env.IMG_BASE ?? `https://raw.githubusercontent.com/${REPO}/main/today/`; // images load straight from GitHub, so a new post shows up without waiting for the site to rebuild
+function page(posts, cands, meta) {
   const stories = cands.map(c => {
-    const made = posts.some(p => p.cid === c.id);
+    const made = posts.some(p => p.cid === c.id), d = c.draft;
     return `
 <div class="story${made ? ' made' : ''}" data-id="${c.id}">
  <label class="srow"><input type="checkbox" class="pick" value="${c.id}"${made ? ' disabled' : ''}><span class="box"></span><span class="sbody"><span class="chip">${esc(c.label)}</span>${made ? '<span class="chip done">Made</span>' : ''}${c.url && c.thin ? '<span class="chip warn">Few details</span>' : ''}<span class="stitle">${esc(c.title)}</span>${c.desc ? `<span class="sdesc">${esc(c.desc)}</span>` : ''}<span class="smeta">${c.url ? `${esc(c.source || '')} &middot; <span data-ago="${c.t || 0}"></span> &middot; <a href="${esc(c.link || c.url)}" target="_blank" rel="noopener">Read</a>` : 'From your fact library'}</span></span></label>
+ ${d ? `<details class="prev"><summary>Preview the write-up</summary><ol>${d.headlines.map(h => `<li>${esc(h)}</li>`).join('')}</ol><p>${esc(d.article).replace(/\n+/g, '<br><br>')}</p></details>` : ''}
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="${c.id}">Circle<i></i></button>
 </div>`;
   }).join('\n');
+  const data = JSON.stringify({ repo: REPO, base: IMG_BASE, date: meta.date, pick: meta.pick, posts }).replace(/</g, '\\u003c');
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title><link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png"><meta name="theme-color" content="#EA742E">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -385,6 +366,7 @@ function page(posts, cands, dateLabel) {
 h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 12px;font-size:13px}
 .tabs{display:flex;gap:4px;padding:3px;border:1.5px solid var(--edge);border-radius:99px;margin-bottom:12px}
 .tabs button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 14px Poppins,system-ui,sans-serif;cursor:pointer}.tabs button.on{background:var(--edge);color:var(--card)}
+.banner{background:var(--orange);color:#101316;border-radius:14px;padding:10px 14px;margin-bottom:12px;font-size:13px;font-weight:600;display:flex;gap:10px;align-items:center;justify-content:space-between}.banner button{border:0;border-radius:99px;background:#101316;color:#fff;font:600 12px Poppins;padding:6px 12px;cursor:pointer}
 .nav{display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto 10px;padding:0 16px}
 .dots{display:flex;gap:8px}.dot{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--bd);cursor:pointer;transition:all .2s}.dot.on{background:var(--ac);width:26px;border-radius:6px}
 .arrow{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--edge);background:var(--card);color:var(--fg);font:700 18px Poppins;cursor:pointer;display:grid;place-items:center}.arrow:disabled{opacity:.3}
@@ -420,6 +402,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
 .sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
 .smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
+.prev{margin:8px 0 0 38px;font-size:13px}.prev summary{cursor:pointer;color:var(--mut);font-weight:600}.prev ol{padding-left:18px;margin:8px 0 6px;font-weight:600}.prev p{margin:6px 0 0;overflow-wrap:anywhere}
 .story .ctog{display:none;width:max-content;margin:10px 0 0 auto}.story.sel .ctog{display:flex}
 .gbar{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 72%,transparent);padding:16px 0 calc(10px + env(safe-area-inset-bottom,0px))}
 .gmsg{font-size:13px;color:var(--mut);margin:0 0 8px;min-height:18px;text-align:center}
@@ -431,113 +414,60 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .empty{text-align:center;color:var(--mut);padding:40px 16px}
 @media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
-<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(dateLabel)}. Pick the stories you want, then tap Generate.</p></div>
-<div class="wrap"><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (${cands.length})</button><button type="button" role="tab" id="tabP">Posts (${posts.length})</button></div></div>
+<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(meta.date)}. Pick the stories you want, then tap Generate.</p></div>
+<div class="wrap"><div class="banner" id="banner" hidden><span>There is a newer story list.</span><button type="button" id="reload">Reload</button></div><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (${cands.length})</button><button type="button" role="tab" id="tabP">Posts (<span id="pc">${posts.length}</span>)</button></div></div>
 <div id="vs"><div class="wrap">
 ${stories}
 <details class="setup" id="setup"><summary>One-time setup: connect GitHub</summary>
 <p id="tokst"></p>
 <p>This lets the Generate button start the build. The token stays on this phone only.</p>
-<ol><li>On github.com go to Settings, Developer settings, Personal access tokens, Fine-grained tokens, Generate new token.</li><li>Repository access: Only select repositories, then pick post-builder.</li><li>Under Repository permissions, set Actions to Read and write.</li><li>Create the token, copy it, and paste it here.</li></ol>
+<ol><li>On github.com open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">this token page</a> in your browser.</li><li>Repository access: Only select repositories, then pick post-builder.</li><li>Under Repository permissions, set Actions to Read and write.</li><li>Create the token, copy it, and paste it here.</li></ol>
 <input type="password" id="tok" placeholder="Paste token" autocomplete="off" autocapitalize="off" spellcheck="false">
 <div class="row"><button type="button" class="btn ghost" id="savetok">Save token</button><button type="button" class="btn ghost" id="forget" hidden>Forget token</button></div>
 </details>
 <div class="gbar"><p class="gmsg" id="gmsg">Pick 1 to 4 stories.</p><button type="button" class="btn" id="gen" disabled>Generate</button></div>
 </div></div>
-<div id="vp" hidden>
-${posts.length ? `<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots">${dots}</div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
-<div class="track" id="track">
-${cards}
-</div>` : '<p class="empty">Nothing generated yet. Pick stories on the Stories tab.</p>'}
-</div>
-<script>
-const D=${data},P=D.length,T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length,REPO='${REPO}';
-let cur=0;const say=(i,t)=>{const e=document.querySelector('[data-s="'+i+'"]');if(e)e.textContent=t};
-function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
-function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
-if(N){T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
-dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
-document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);mark(0)}
-const vs=document.getElementById('vs'),vp=document.getElementById('vp'),tS=document.getElementById('tabS'),tP=document.getElementById('tabP');
-function show(w){const p=w==='p';vs.hidden=p;vp.hidden=!p;tS.classList.toggle('on',!p);tP.classList.toggle('on',p);tS.setAttribute('aria-selected',!p);tP.setAttribute('aria-selected',p);if(p&&N){T.scrollTo({left:cur*T.clientWidth});mark(cur)}try{history.replaceState(null,'',p?'#posts':'#stories')}catch(e){}}
-tS.onclick=()=>show('s');tP.onclick=()=>show('p');
-show(location.hash==='#posts'||(P&&location.hash!=='#stories')?'p':'s');
-document.querySelectorAll('.seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+g.dataset.i,v=+b.dataset.v,sl=document.getElementById('p'+i);
- g.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
- sl.dataset.v=v;sl.querySelector('[data-h]').textContent=D[i].h[v];
- sl.querySelector('[data-hbtn]').dataset.img='h'+(i+1)+'_'+(v+1)+'.png';refresh(sl);say(i,'')}));
-function refresh(sl){const i=+sl.id.slice(1),v=+(sl.dataset.v||0),c=sl.dataset.c||'1';
- sl.querySelectorAll('.pimg').forEach(im=>im.classList.toggle('on',+im.dataset.k===v&&im.dataset.c===c));
- sl.querySelector('[data-save]').href='p'+(i+1)+'_'+(v+1)+(c==='0'?'_nc':'')+'.jpg'}
-document.querySelectorAll('[data-ctog]').forEach(b=>b.onclick=()=>{const sl=b.closest('.slide'),on=b.getAttribute('aria-checked')!=='true';b.setAttribute('aria-checked',on);sl.dataset.c=on?'1':'0';refresh(sl)});
-(window.requestIdleCallback||setTimeout)(()=>document.querySelectorAll('.pimg').forEach(im=>{im.loading='eager'}));
-document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
-document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
-/* stories */
-function ago(t){if(!t)return'';const m=Math.max(1,Math.round((Date.now()-t)/60000));if(m<60)return m+' min ago';const h=Math.round(m/60);return h<24?h+' hr ago':Math.round(h/24)+' d ago'}
-document.querySelectorAll('[data-ago]').forEach(e=>e.textContent=ago(+e.dataset.ago));
-const picks=[...document.querySelectorAll('.pick')],gen=document.getElementById('gen'),gm=document.getElementById('gmsg'),MAX=4;let busy=false;
-function sel(){const on=picks.filter(c=>c.checked);picks.forEach(c=>{const s=c.closest('.story');if(!c.checked&&!s.classList.contains('made'))c.disabled=on.length>=MAX;s.classList.toggle('sel',c.checked)});
- gen.disabled=!on.length||busy;gen.textContent=on.length?'Generate '+on.length+' post'+(on.length>1?'s':''):'Generate';
- if(!busy)gm.textContent=on.length>=MAX?'That is the max of 4.':(on.length?'Each post uses AI credits.':'Pick 1 to 4 stories.')}
-picks.forEach(c=>c.onchange=sel);
-document.querySelectorAll('[data-cid]').forEach(b=>b.onclick=()=>b.setAttribute('aria-checked',b.getAttribute('aria-checked')!=='true'));
-const tokEl=document.getElementById('tok'),setup=document.getElementById('setup');
-const getTok=()=>{try{return localStorage.getItem('pbtok')||''}catch(e){return ''}};
-function tokUI(){const t=getTok();document.getElementById('tokst').textContent=t?'Connected on this device.':'Not connected yet.';document.getElementById('forget').hidden=!t}
-document.getElementById('savetok').onclick=()=>{const v=tokEl.value.trim();if(!v)return;try{localStorage.setItem('pbtok',v)}catch(e){gm.textContent='Could not save the token in this browser.';return}tokEl.value='';tokUI();setup.open=false;gm.textContent='Token saved. Pick stories and tap Generate.'};
-document.getElementById('forget').onclick=()=>{try{localStorage.removeItem('pbtok')}catch(e){}tokUI()};
-tokUI();
-const API='https://api.github.com/repos/'+REPO+'/actions/workflows/generate.yml/';
-const GH=t=>({Authorization:'Bearer '+t,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'});
-const wait=ms=>new Promise(r=>setTimeout(r,ms));
-async function run(){
- const t=getTok();if(!t){setup.open=true;gm.textContent='Connect GitHub first (one time).';setup.scrollIntoView({block:'center'});return}
- const ids=picks.filter(c=>c.checked).map(c=>+c.value),cir=ids.filter(i=>document.querySelector('[data-cid="'+i+'"]').getAttribute('aria-checked')==='true');
- busy=true;gen.disabled=true;gm.textContent='Sending to GitHub...';const t0=Date.now();
- try{
-  const r=await fetch(API+'dispatches',{method:'POST',headers:Object.assign({'Content-Type':'application/json'},GH(t)),body:JSON.stringify({ref:'main',inputs:{picks:ids.join(','),circles:cir.join(',')}})});
-  if(r.status!==204){busy=false;sel();gm.textContent=r.status===401?'GitHub says the token is wrong or expired. Make a new one.':(r.status===403||r.status===404)?'The token cannot start the build. It needs Actions: Read and write on this repo.':'GitHub said no ('+r.status+').';return}
- }catch(e){busy=false;sel();gm.textContent='Could not reach GitHub. Check your connection.';return}
- for(let k=0;k<90;k++){
-  await wait(8000);
-  let st='';
-  try{const j=await (await fetch(API+'runs?event=workflow_dispatch&per_page=5',{headers:GH(t)})).json();const x=(j.workflow_runs||[]).find(y=>Date.parse(y.created_at)>t0-120000);if(x)st=x.status==='completed'?x.conclusion:x.status}catch(e){}
-  if(st==='success'){gm.textContent='Done. Loading your posts...';for(let q=0;q<30;q++){try{const pj=await (await fetch('posts.json?v='+Date.now(),{cache:'no-store'})).json();if(pj.posts.length>P)break}catch(e){}await wait(6000)}location.replace(location.pathname+'?v='+Date.now()+'#posts');return}
-  if(st==='failure'||st==='cancelled'||st==='timed_out'){busy=false;sel();gm.textContent='The build failed. Most likely Gemini is out of credits (ai.studio/projects).';return}
-  gm.textContent='Generating... usually 2 to 3 minutes.';
- }
- busy=false;sel();gm.textContent='Taking longer than expected. Check the Posts tab in a few minutes.';
-}
-gen.onclick=run;sel();
-</script></body></html>`;
+<div id="vp" hidden><div id="postsroot"></div></div>
+<script type="application/json" id="data">${data}</script>
+<script src="../assets/app.js?v=${meta.pick}"></script>
+</body></html>`;
 }
 
 /* ---------- main ---------- */
-const MODE = process.argv[2] === 'generate' ? 'generate' : 'pick'; // pick = free morning list of stories; generate = write and illustrate only the stories you chose
+const MODE = process.argv[2] === 'generate' ? 'generate' : 'pick'; // pick = morning list of stories (articles read and drafted, no photos); generate = photos and layout for only the stories you chose
 const seenFile = path.join(ROOT, 'data/seen.json');
 const state = JSON.parse(fs.readFileSync(seenFile, 'utf8'));
 const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'utf8'));
 const dateLabel = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/New_York' });
-
-const storyData = c => c.text
+const isLib = c => c.kind === 'facts' || c.kind === 'history';
+const storyData = c => isLib(c) ? `${c.title}\n${c.desc}` : c.text
   ? `${c.title} (${c.source})\n${c.thin ? 'ONLY A SHORT SUMMARY IS AVAILABLE. Do not guess any other details:' : 'ARTICLE TEXT FROM THE PUBLISHER (use its facts, write in your own words):'}\n${c.text}`
   : `${c.title} (${c.source})\n(Only the headline is available. Do not guess any details.)`;
+const dryWrite = c => ({ headlines: [c.title, ...(c.alts || ['Did you know? ' + c.title, 'Miami fact: ' + c.title])], article: 'Sample article text for the layout test. It has a couple of sentences so you can see how a real write-up reads in the preview.', imagePrompt: 'Sample image prompt.', circlePrompt: 'Sample circle prompt.' });
 
+async function pool(items, size, fn) { // run fn over items, a few at a time
+  let k = 0;
+  await Promise.all(Array.from({ length: Math.min(size, items.length) }, async () => { while (k < items.length) { const i = k++; await fn(items[i], i); } }));
+}
 async function enrich(items) { // read each story's real article so the writer has names and details, not just a headline
-  const queue = items.filter(x => x.url); let k = 0;
-  const worker = async () => {
-    while (k < queue.length) {
-      const x = queue[k++];
-      try {
-        const a = await getArticle(x.url); x.link = a.url; x.text = a.text; x.thin = a.thin;
-        const d = a.desc && !similar(a.desc, x.title) ? a.desc : '';
-        x.desc = d.length > 220 ? d.slice(0, 220).replace(/\s+\S*$/, '') + '…' : d;
-        log('article', x.id, a.host, a.text.length, 'chars' + (a.thin ? ' (thin)' : ''));
-      } catch (e) { x.thin = true; log('article failed', x.id, String(e.message).slice(0, 90)); }
-    }
-  };
-  await Promise.all([worker(), worker(), worker()]);
+  await pool(items.filter(x => x.url), 3, async x => {
+    try {
+      const a = await getArticle(x.url); x.link = a.url; x.text = a.text; x.thin = a.thin;
+      const d = a.desc && !similar(a.desc, x.title) ? a.desc : '';
+      x.desc = d.length > 220 ? d.slice(0, 220).replace(/\s+\S*$/, '') + '…' : d;
+      log('article', x.id, a.host, a.text.length, 'chars' + (a.thin ? ' (thin)' : ''));
+    } catch (e) { x.thin = true; log('article failed', x.id, String(e.message).slice(0, 90)); }
+  });
+}
+async function draftAll(items) { // write headlines and the article now (text is cheap), so you can read them before choosing and photos are the only cost left
+  await pool(items, 4, async c => {
+    try {
+      const w = DRY ? dryWrite(c) : await write(c.kind, storyData(c));
+      c.draft = { headlines: w.headlines, article: w.article, imagePrompt: w.imagePrompt, circlePrompt: w.circlePrompt };
+      if (!isLib(c)) delete c.text; // keep the publisher's text out of the repo once it has been used
+      log('drafted', c.id, w.headlines[0]);
+    } catch (e) { log('draft failed', c.id, String(e.message).slice(0, 90)); }
+  });
 }
 
 if (MODE === 'pick') {
@@ -560,52 +490,66 @@ if (MODE === 'pick') {
   if (!items.length) { console.error('No stories found.'); process.exit(1); }
   if (DRY) items.forEach((x, i) => { if (x.url) { x.text = i % 3 === 2 ? '' : 'Sample article text with names and details.'; x.thin = !x.text; x.desc = x.thin ? '' : 'Sample snippet from the article so you can judge the story before generating it.'; } });
   else await enrich(items);
+  if (DRY || KEY) await draftAll(items); else log('No GEMINI_API_KEY, so no drafts. Articles will be written when you tap Generate.');
+  const pick = Date.now().toString(36);
   fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
-  fs.writeFileSync(path.join(OUT, 'candidates.json'), JSON.stringify({ date: dateLabel, items }, null, 1));
-  fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, posts: [] }));
-  fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, dateLabel));
-  log('done:', items.length, 'stories to pick from');
-} else if (MODE === 'generate') {
+  fs.writeFileSync(path.join(OUT, 'candidates.json'), JSON.stringify({ date: dateLabel, pick, items }, null, 1));
+  fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, pick, posts: [] }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, { date: dateLabel, pick }));
+  log('done:', items.length, 'stories to pick from,', items.filter(x => x.draft).length, 'drafted');
+} else {
   if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
-  const cands = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).items;
+  const cf = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')), cands = cf.items;
   const posts = JSON.parse(fs.readFileSync(path.join(OUT, 'posts.json'), 'utf8')).posts;
   const ids = [...new Set((process.env.PICKS || '').split(',').map(s => +s.trim()).filter(Boolean))];
   const circleIds = new Set((process.env.CIRCLES || '').split(',').map(s => +s.trim()).filter(Boolean));
-  for (const id of ids) { // the story list may predate article reading, so fetch any missing article text now
-    const c = cands.find(x => x.id === id);
-    if (c && c.url && !c.text && !DRY) { try { const a = await getArticle(c.url); c.link = a.url; c.text = a.text; c.thin = a.thin; log('article', id, a.host, a.text.length, 'chars'); } catch (e) { c.thin = true; log('article failed', id, String(e.message).slice(0, 90)); } }
-  }
-  const jobs = ids.map(id => cands.find(c => c.id === id)).filter(c => c && !posts.some(p => p.cid === c.id)).slice(0, 4).map(c => (c.kind === 'facts' || c.kind === 'history')
-    ? { cid: c.id, kind: c.kind, label: c.label, lib: { t: c.title, d: c.desc }, data: `${c.title}\n${c.desc}` }
-    : { cid: c.id, kind: c.kind, label: c.label, details: !!c.text && !c.thin, h: { title: c.title, source: c.source, url: c.link || c.url, alts: c.alts }, data: storyData(c) });
-  if (!jobs.length) { console.error('Nothing new to make. Picks were:', process.env.PICKS); process.exit(1); }
-  let made = 0;
-  for (const j of jobs) {
+  const picked = ids.map(id => cands.find(c => c.id === id)).filter(c => c && !posts.some(p => p.cid === c.id)).slice(0, 4);
+  if (!picked.length) { console.error('Nothing new to make. Picks were:', process.env.PICKS); process.exit(1); }
+  const t0 = Date.now();
+
+  async function makePost(c) { // one story: text (if not drafted yet), photos, layout. Several of these run at the same time.
+    const tp = Date.now();
     try {
-      const w = DRY ? (() => { const t = j.h ? j.h.title : j.lib.t; return { headlines: [t, ...(j.h && j.h.alts ? j.h.alts : ['Did you know? ' + t, 'Miami fact: ' + t])], article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' }; })() : await write(j.kind, j.data);
-      w.headline = w.headlines[0];
-      let buf = null;
-      if (j.kind === 'sports' && !DRY) { // real reference photo (freely licensed) -> new-angle recreation, with a caption credit
-        const subj = await refSubject(w.headline), ref = subj && await commonsRef(subj);
-        if (ref) { buf = await photoFromRef(w.headline, subj, ref); if (buf) { w.article += '\n\n' + ref.credit; log('Sports photo: recreated from a Commons reference'); } }
-        if (!buf) log('Sports photo: no reference recreation, using the standard photo');
+      if (!c.draft && !isLib(c) && c.url && !c.text && !DRY) { // an older story list without article text: read it now
+        try { const a = await getArticle(c.url); c.link = a.url; c.text = a.text; c.thin = a.thin; log('article', c.id, a.host, a.text.length, 'chars'); } catch (e) { c.thin = true; log('article failed', c.id, String(e.message).slice(0, 90)); }
       }
-      if (!buf) buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
-      const style = circleIds.has(j.cid) ? pickStyle() : null; // circle only for the stories you ticked it on
-      const cbuf = style ? await circlePhoto(DRY ? 'dry' : w.circlePrompt) : null; if (cbuf && !DRY) await sleep(3000);
+      const w = { ...(c.draft || (DRY ? dryWrite(c) : await write(c.kind, storyData(c)))) };
+      w.headline = w.headlines[0];
+      const style = circleIds.has(c.id) ? pickStyle() : null; // circle only for the stories you ticked it on
+      const mainP = (async () => {
+        let buf = null;
+        if (c.kind === 'sports' && !DRY) { // real reference photo (freely licensed) -> new-angle recreation, with a caption credit
+          const subj = await refSubject(w.headline), ref = subj && await commonsRef(subj);
+          if (ref) { buf = await photoFromRef(w.headline, subj, ref); if (buf) { w.article += '\n\n' + ref.credit; log('Sports photo: recreated from a Commons reference'); } }
+          if (!buf) log('Sports photo: no reference recreation, using the standard photo');
+        }
+        return buf || await photo(w.imagePrompt, w.headline, c.label);
+      })();
+      const circleP = style ? circlePhoto(DRY ? 'dry' : w.circlePrompt) : Promise.resolve(null);
+      const [buf, cbuf] = await Promise.all([mainP, circleP]); // the main photo and the circle photo are made at the same time
+      const hasCircle = !!(cbuf && style);
       log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
-      const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style), hasCircle = !!(cbuf && style);
-      outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}.png`), o.headline); });
-      if (hasCircle) (await compose(w.headlines, buf, null, null)).forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_nc.jpg`), o.post)); // same post without the round photo, for the toggle
-      posts.push({ ...w, cid: j.cid, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source, hasCircle, details: j.details });
-      if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
-      made++;
-      log('made', n, w.headlines.length + ' headlines:', w.headlines.join(' | '));
-    } catch (e) { log('Skipped one post:', e.message); }
+      const [outs, ncOuts] = await Promise.all([compose(w.headlines, buf, cbuf, style), hasCircle ? compose(w.headlines, buf, null, null) : []]); // with-circle and without-circle versions for the toggle
+      log('made', c.id, Math.round((Date.now() - tp) / 1000) + 's:', w.headlines[0]);
+      return { c, w, outs, ncOuts, hasCircle };
+    } catch (e) { log('Skipped one post:', e.message); return null; }
+  }
+
+  const results = await Promise.all(picked.map(async (c, i) => { await sleep(i * 1200); return makePost(c); })); // starts staggered a little so the AI service is not hit all at once
+  const stamp = Date.now().toString(36); // new file names every time, so a phone never shows an old cached photo
+  let made = 0;
+  for (const r of results) {
+    if (!r) continue;
+    const n = posts.length + 1, { c, w, outs, ncOuts, hasCircle } = r;
+    outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_${stamp}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}_${stamp}.png`), o.headline); });
+    ncOuts.forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_${stamp}_nc.jpg`), o.post));
+    posts.push({ ...w, n, stamp, cid: c.id, kind: c.kind, label: c.label, url: c.link || c.url, source: c.source, hasCircle, details: isLib(c) ? undefined : !!(c.draft ? !c.thin : c.text && !c.thin) });
+    if (isLib(c)) state.used.push(c.title); else state.titles.push(c.title);
+    made++;
   }
   if (!made) { console.error('No posts were made.'); process.exit(1); }
-  fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, posts }));
-  fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, dateLabel));
+  fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: cf.date, pick: cf.pick, posts }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, { date: cf.date, pick: cf.pick }));
   state.titles = state.titles.slice(-300); fs.writeFileSync(seenFile, JSON.stringify(state, null, 1));
-  log('done:', made, 'new posts,', posts.length, 'total');
+  log('done:', made, 'new posts,', posts.length, 'total, in', Math.round((Date.now() - t0) / 1000) + 's');
 }
