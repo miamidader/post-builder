@@ -1,6 +1,51 @@
 {
  "date": "Saturday, October 17",
+ "pick": "mvcxcu8u",
  "items": [
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami vs FSU live updates: Start time, predictions, injury news",
+   "source": "Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0zZjhFT21LZmo0MnBzd2RpeEUwN3R5TENZOGNDb3hNaVE3anpuRmxpck1NZzA4TUZaa0VUeEFqaG9ScWEwMEdncjlJY3FOVXEzRmpYVlRvelplYWZ5OHVoVWZhQVJvQm45VjRybUM0WnBELW1YdDVkMzFCMDhWMVU?oc=5",
+   "t": 1792267244000,
+   "id": 1,
+   "link": "https://sports.yahoo.com/articles/miami-vs-fsu-live-updates-200044133.html",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MIAMI HURRICANES FACE FLORIDA STATE SEMINOLES IN WEEK SEVEN MATCHUP",
+     "HURRICANES AND SEMINOLES CLASH IN WEEK SEVEN FOOTBALL ACTION",
+     "MIAMI SET TO BATTLE FLORIDA STATE IN MAJOR WEEK SEVEN GAME"
+    ],
+    "article": "The Miami Hurricanes are set to play against the Florida State Seminoles in an exciting Week 7 college football game. Miami followers have their eyes on the Hurricanes as the team prepares to compete on the gridiron.\n\nBefore the action begins, important information centers on the official game start time, matchup predictions, and breaking injury news.\n\nAs the contest progresses, fans can keep up with live score updates and instant analysis to see every development from this Week 7 football game.",
+    "imagePrompt": "A realistic editorial photo of an American college football player in uniform holding a football on an outdoor stadium field under bright stadium lights. The athlete stands focused in the upper two-thirds of the frame, with the turf and a simple, darker shadowy foreground filling the lower third. Dramatic evening lighting, atmospheric sports photography, 3:4 vertical portrait orientation, with no visible text, letters, numbers, or logos.",
+    "circlePrompt": "A detailed close-up shot of an authentic leather football resting on crisp green stadium turf, centered in the frame. The textured pebbled leather and white laces of the ball are sharp and prominent, with soft stadium lighting blurring the background into a clean bokeh. 1:1 square aspect ratio, with no people, faces, text, letters, or logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Thousands clad in pink walk in solidarity to raise breast cancer awareness",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWUNWeF9WQ2pWaEt3ZTRjUHc5dC1MREhsb2t3ZDF1YjRiLTJpWUF4dF9qeFhqVU13RDNFR2FONnN3SkJSOFdtdy01anFIcjdRNXVPallCQ2lib2JjQ0RXZjVCSHc5UTBvTmYyNFJiU0Jaak9xOHdTbXhlek1MTGF0X3ZzWVNCdV9K0gGIAUFVX3lxTE1WeU1sbkZ5aVVCbVBhbVdkNl9vaWF4ZlQ0NWo3MlZLclJlN0t6SDNmbjVlVE0zUVpCSWo0ZkVGWllwVDJjTXZ3WTU3Z1BnNi1CellFUnkzcnpDbDdOU0k5dFNQZWk5OEVpcGxLaUhuQjJueWFKZlVsSTd0YjNLSEtBOUpSM043aVc?oc=5",
+   "t": 1792265220000,
+   "id": 2,
+   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317666767.html",
+   "thin": false,
+   "desc": "This year’s Susan G. Komen’s More than Pink Walk drew thousands of participants and raised over $100,000.",
+   "draft": {
+    "headlines": [
+     "THOUSANDS RAISE OVER $100,000 AT MIAMI-DADE BREAST CANCER WALK",
+     "SWEETWATER FLOODED IN PINK FOR BREAST CANCER FIGHT",
+     "MIAMI LOCALS GATHER IN SWEETWATER TO RAISE THOUSANDS AGAINST BREAST CANCER"
+    ],
+    "article": "Thousands of South Florida community members gathered Saturday at the Miami-Dade Fair & Exposition grounds in Sweetwater for the annual Susan G. Komen More than Pink Walk. The event, held at 10901 Coral Way, has taken place every year since 2018 to support the fight against breast cancer. Participants dressed in pink to show solidarity, helping to collect more than $100,000 through individual and corporate contributions. The massive crowd included breast cancer survivors like Florida International University volleyball head coach Lauren DeTurk, who attended the walk with her four-month-old daughter, Chizara, alongside thousands of supportive neighbors.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation showing a woman dressed in pink holding an infant in her arms during an outdoor daytime community walk. The subject is placed in the upper two-thirds of the frame against a softly blurred background of participants walking outside under bright Florida sunlight. The bottom third consists of simple, darker pavement. Authentic photojournalistic style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 editorial photograph showing a low-angle close-up of participants' athletic shoes walking forward on dark asphalt scattered with fallen pink ribbon confetti. Subject centered, shallow depth of field, bright outdoor daylight, no faces visible, no text, no letters, no logos, no watermarks."
+   }
+  },
   {
    "kind": "news",
    "label": "News",
@@ -8,16 +53,42 @@
    "source": "CBS News",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNdm1CdHdGTDc1bERqVk81Z3FFVGVQNmtSWWJqODZ4NkE2R2I4d0lXa085dUx5N29kbk5JM19WUHBsNVNmZXEtT1JwRmo0bmRZUG5NYUZjcGViZE9lX2JBbzN4YmRmcUpDMFphLVhqMU1FZkhvVUstYmpvbmlUX1FjX3FfeEVlT2FQYXpvazhVbktaR3lKNHp5Z2MwRExKOFhiRVh5bUswZjlTbG1PX21sUw?oc=5",
    "t": 1792248780000,
-   "id": 1
+   "id": 3,
+   "link": "https://www.cbsnews.com/miami/video/more-than-pink-walk-gets-started-at-miami-dade-county-fair-and-expo-center/",
+   "thin": true,
+   "desc": "One person walking shared with CBS News Miami she's honoring her friend's life.",
+   "draft": {
+    "headlines": [
+     "MORE THAN PINK WALK BEGINS AT MIAMI-DADE FAIR AND EXPO CENTER",
+     "MORE THAN PINK WALK UNDERWAY IN MIAMI-DADE",
+     "WALKER HONORS FRIEND AS MORE THAN PINK EVENT GETS STARTED"
+    ],
+    "article": "The More Than Pink Walk has officially started at the Miami-Dade County Fair and Expo Center. People in our Miami-Dade community are gathering at the site to participate in the walk. For attendees, the walk carries strong personal meaning. One person participating in the walk shared that she is walking to honor the life of her friend. The walk continues on the grounds of the Miami-Dade County Fair and Expo Center as people come together for the event to walk and reflect.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait showing a person from behind walking down an open paved pathway during an outdoor morning community walk. The subject is positioned in the upper two-thirds of the frame under bright South Florida morning sunlight, with palm trees and open skies blurred in the background. The lower third of the composition is a simple, darker shaded pavement. Documentary realism, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 detail photo taken from a low ground-level angle showing athletic walking shoes stepping across asphalt pavement during an outdoor walk event. The sneakers are centered in the frame with softly blurred morning sunlight reflecting off the ground. No faces visible, no text, no letters, no logos, no watermarks."
+   }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade innovation model expands across US cities",
-   "source": "Cities Today",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPM0NkeE5KcHhwRjhsU0hUV3B5RTVOR2c0SFhQb3ZGVWpJUEl0eF90R0FMTnVqY1RaQ0s3RllURTdpWjRKRUQ1cXQ1M0Q5NkJXSGZWZEd0S3NWM3EwbmZGbEI5c2xWN01PclMycnlrX3hKaE1ieGpmdUJyYmhvWjdoOGVLc0w?oc=5",
-   "t": 1792245139000,
-   "id": 2
+   "title": "Man shot in the groin in Florida City, police report",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBVQ3JwTklHcEl0TGhrdlJiQ0xsc0RKamxwRUJMakx0QkRtWG55Mm8tSHQwSnZYLUZIVTN6dWJ3YjRyUkNOMENMSGtoRVpLNGtoRE0xQ3RhQkdaNm00dXpBNEJkTjhfNjJjQnNKSWt3b2V5cFU3NGM2d3hvNTJDN0E?oc=5",
+   "t": 1792246980000,
+   "id": 4,
+   "link": "https://www.cbsnews.com/miami/news/florida-city-man-groin-shot-10-17-2026/",
+   "thin": false,
+   "desc": "Police said the person who is allegedly responsible for the shooting remained at the scene and was taken into custody.",
+   "draft": {
+    "headlines": [
+     "MAN AIRLIFTED AFTER SATURDAY MORNING SHOOTING IN FLORIDA CITY",
+     "FLORIDA CITY SHOOTING LEAVES MAN HOSPITALIZED, SUSPECT IN CUSTODY",
+     "OVERNIGHT GUNFIRE ON NORTHWEST 16TH STREET SENDS ONE TO TRAUMA HOSPITAL"
+    ],
+    "article": "Florida City police are investigating an early morning shooting that sent a man to the hospital on Saturday. Officers responded just before 2 a.m. to the 500 block of Northwest 16th Street, where they found a man suffering from a gunshot wound to the groin. First responders on the scene administered emergency care until Miami-Dade Fire Rescue arrived. Crews then airlifted the victim to a nearby trauma hospital, where officials reported him to be in stable condition. Authorities said the person allegedly responsible for the shooting stayed at the location and was taken into custody. The police investigation remains ongoing.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing a South Florida street at night. The upper two-thirds shows emergency response vehicles with red and blue lights glowing against nearby palm trees and residential streetlights under a dark night sky. The bottom third is composed of simple, dark, empty asphalt roadway reflecting soft ambient light. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on a spool of yellow police barrier tape wrapped around a roadside post at night, with blurred red and blue emergency vehicle lights glowing in the soft background. No people's faces, text, letters, logos, or watermarks."
+   }
   },
   {
    "kind": "news",
@@ -26,16 +97,20 @@
    "source": "CBS News",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNSmdqZ2hSaXNKZ0NrTU9adnFsVHFNOWJXX1RTc1FkeUFHZ21NNGVET2FJZnR2YVlwbFNybEhYaVlSZGlPZ1JvMFBaSjF4NmczZV9OUkJaZDJvLXh0ZjdST0JzaHhBdHBPVi1QekNfSXFDTzJMbElqNmlEVWN3VmxVMjgtMlY?oc=5",
    "t": 1792242900000,
-   "id": 3
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami-Dade Funeral Home Flower Dispute Ends In Arrest",
-   "source": "Hoodline",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaGc4SVFNMU1oRXhuLTlyLXU4Y3hlamNYNV9fT0pGampkNDVNc3lFNkJiVGhDNWN5LXh3RVhoYTU0Xy1ROFJyZ1JySFNmMXBMQmktNWZCMzNiTHNIUl9RYkIyeHlydHNjUGRWNFBoMDVNZVdmVjYzVW1RbmswZ0pwRDlTZkEyQzBjOUtrTEtuY1lDVTFaOWY2dWVlYlBzZE1MZzlKbEg1b1hQaVE?oc=5",
-   "t": 1792240575000,
-   "id": 4
+   "id": 5,
+   "link": "https://www.cbsnews.com/miami/video/large-police-investigation-in-dania-beach/",
+   "thin": true,
+   "desc": "Steve Maugeri shares the latest as CBS News Miami works to get more information.",
+   "draft": {
+    "headlines": [
+     "LARGE POLICE INVESTIGATION UNDERWAY IN DANIA BEACH",
+     "MAJOR POLICE SCENE IN DANIA BEACH",
+     "WHAT WE KNOW ABOUT THE LARGE DANIA BEACH POLICE INVESTIGATION"
+    ],
+    "article": "A large police investigation is currently underway in Dania Beach, bringing significant law enforcement activity to the South Florida community.\n\nOfficers and investigators have converged on the area as part of the major police presence.\n\nSteve Maugeri is sharing the latest developments from the scene as inquiries continue and teams work to gather more details regarding the incident.\n\nFurther information about what prompted the Dania Beach response has not yet been released, but updates are expected as authorities provide more findings.",
+    "imagePrompt": "Editorial vertical 3:4 portrait photo of a Dania Beach street blocked off with caution tape, with blurred police cruiser emergency lights visible in the upper two-thirds of the frame under daylight. The lower third features dark, clean asphalt with soft ambient reflections. Realistic photojournalism style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "Realistic square 1:1 close-up photo centered on the emergency light bar on top of a modern law enforcement vehicle, with a softly blurred outdoor daytime street in the background. Sharp focus on the textured transparent plastic and internal reflectors of the lights, no people, no faces, no text, no letters, no logos, no watermarks."
+   }
   },
   {
    "kind": "news",
@@ -44,50 +119,103 @@
    "source": "Florida YIMBY",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNTFc0cHhzcVFHN19qdXh6TmpOV3BqR192bVV3V1J0b3JiMXpxZFVJdGtpUzVZV2ptMDlmSzZBMFVWMFAwcURXTWFFRExQb0NVVXhvT3B3Q0dtdW95V1NKeC1ubUJQSURmMlRrMl9KUHJIZTI0MkVuVDJMcGg2M0lRNzh6ZUNLYXJtZ1pTem92bVl1eWk5WFdEQ0stUXRFanBqRmRPTVBaY0lyTnJ6aENwMV94UVBoTG5iYVVNeUp1M0xVWHQyYURhbWlyeEE?oc=5",
    "t": 1792234843000,
-   "id": 5
+   "id": 6,
+   "link": "https://floridayimby.com/2026/10/acre-communities-plans-workforce-affordable-housing-venture-for-25-nw-6th-street-miami-florida.html",
+   "thin": false,
+   "desc": "Florida YIMBY says \"Yes In My Backyard\" to positive new development in Florida.",
+   "draft": {
+    "headlines": [
+     "ACRE COMMUNITIES PLANS 391 UNIT HOUSING TOWER IN MIAMI",
+     "NEW AFFORDABLE HOUSING HIGH RISE PROPOSED FOR MIAMI",
+     "COULD A NEW MIAMI HIGH RISE HOUSE A LOCAL FIRE STATION"
+    ],
+    "article": "ACRE Communities is proposing a new 391-unit residential high-rise for Miami at 25 NW 6th Street and 604 NW 1st Avenue. Planned across 0.8 acres, the development could break ground in 2028 and finish by summer 2030. The project dedicates 156 residences to affordable housing for households earning up to 60 percent of the area median income, alongside 47 workforce units for those making up to 120 percent. Miami-Dade County recorded the median income at $87,200 as of 2025. Rather than retail shops, the ground floor could house a 13,000-square-foot fire station. The structure will also include 432 parking spaces for residential and public use.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photograph showing an urban development site in downtown Miami on a bright day, with surrounding high-rise structures rising against the sky in the upper two-thirds of the frame. The lower third features clean, dark street pavement in deep shadow. Natural sunlight, documentary architectural photography, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered view of modern architectural concrete and metal building materials set outdoors on a sunlit city sidewalk. Sharp texture details, bright natural daylight, no people, no faces, no text, no letters, no logos, no watermarks."
+   }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Burglar smashes into Miami Beach restaurant, steals cash register drawer, surveillance video shows",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5NWGhXWXVYaXk5Vkg3QzdUTXdXRDBSZHk3dFdybTN2NlphQ2FIM0YyTXN0UVV3OXpqVkVUaGRfbFBfWkl3NGtBa0MyQndjYkFqdUlDdkFsUHlpZEJQMDA1eEEzVWNmWHJfTHpfcUNqbTh4UWtvdHp5X1Rtaw?oc=5",
-   "t": 1792204131000,
-   "id": 6
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "[NFHS Network]TV!] Hialeah Gardens vs Edison LIVE Kick off time TV 16 October 2026",
-   "source": "Universidad de Córdoba (UCO)",
-   "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxPNmR2eFBoWWs2WVh5TXEyRmFpUzcyU2xLbGZhVEVxR3pkbUhJLW1UTjlhM29NRFo0TzQ1VTEtN21CWVVlbzM5UjhINkIxeks2cUNJN1dDNWtEMXJfbVg2NkxaX0xmTkFOYVhocGRkbnZ4TEJXaGstVUhsdVFOMFRlc0pOUDRmcDQxYnZsYmVVQ2ZGd0hkbW9TMi1vUU9TdVJ1bi15eHd3RUhFU2tSNkpNNFF0UlVYMnA5d24wS2w4SWctdTlSeTlJZjlnWE8xNUp5QWplbTFzR2RXUnpIRmU2ZVBGaXFqdDFXTkE0OTdrbFVjVDNZNFZLUzFqOW1rdGVYR1otd25abkl0aHhzSjdrblNUQnNpZ1E3SG50aUxXNXlpak8yU1NkNWpiZXJTaDBwdVBlNGpkQQ?oc=5",
-   "t": 1792200936000,
-   "id": 7
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Heat makes roster cuts ahead of opening night. Where things stand",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBJcG81ejN3ZXRwRDdMTXR0WWtDSDJfaE9md29kdm9LMURSMVZkbFpoVXF1a1R3VmhRM2dTMDNvZHlGbGU5Q1lyRk10RllZbnM4Z3ZMMmp5R05vNWhQZUxjRTk3LUFzMG1jOVJRYW84U2R2cmJSX0J2c21lb9IBe0FVX3lxTE1wZGwtck1tajRtcUczY1JNSy0tbEtSYll4eWl0Yk95SXU4dTI0cmZ1NGlOazBsTXZZYm5hUEhpb2RreW9GSzBVZWI4U3dBNVRuNVlVTTVISVY3MUZfUWlfWXJmd1ZhdHlROTlsMDhhSFRCLXpjX1BfbUNJNA?oc=5",
-   "t": 1792252293000,
-   "id": 8
+   "title": "Miami Beach restaurant owner speaks out after overnight burglary",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNcmRtdUlfUWZCT0psQnlwYjB3d28zSElGNkxZZ295b1ZRV0pRSXE3a0pTamwzVjQzd1RwS2dJUlBGOFdwQzJKeUkyV3dXSzRlejB2VEhoTmZnbDk0bkZiWjQxSkZIdkY1Q2p3UVB4YmlSYU5BUjYwWU1PNlVJNXVzcHNQWXNUZF9KU2J5M2ljanVlNElMbmlQUzJKdE56eVNSQkI4YndYN0VQMGVQelJxbQ?oc=5",
+   "t": 1792204019000,
+   "id": 7,
+   "link": "https://www.local10.com/news/local/2026/10/16/miami-beach-restaurant-owner-speaks-out-after-overnight-burglary/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "CASH REGISTER AND 600 DOLLARS STOLEN FROM MIAMI BEACH RESTAURANT",
+     "OVERNIGHT BURGLARY AT NORMANDY DRIVE RESTAURANT SHATTERS PEACE",
+     "MIAMI BEACH OWNER DEMANDS ACTION AFTER BREAK-IN AT 7TYONE RESTAURANT"
+    ],
+    "article": "Miami Beach police are investigating an overnight burglary after a man broke into 7tyone Restaurant on Normandy Drive. The crime took place just before 1 a.m. Friday, when a burglar smashed through the front door and took a cash register containing $600. Surveillance video captured a man wearing a hat, a backpack, and a towel over his face stepping behind the counter to grab the register. Owner Liliana Arguinzonesa arrived to find the shattered door, feeling frightened to step inside. Beyond replacing the door and lost cash, Arguinzonesa shared that the crime broke her peace. She is calling on city officials to enhance security and address dark night conditions along Normandy Drive.",
+    "imagePrompt": "A realistic editorial portrait of a Latina restaurant owner standing outside her storefront at dawn in Miami Beach, looking concerned. The subject is positioned in the upper two-thirds of the vertical 3:4 frame under soft morning light. The bottom third features simple, dark sidewalk pavement in deep shadow. Documentary style photography, authentic textures, completely free of any text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on the shattered lower glass panel of a commercial storefront door at night, with fractured glass shards resting on the pavement under street lighting. Documentary crime scene aesthetic, centered composition, no human faces, and completely free of any text, letters, logos, or watermarks."
+   }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "The Miami Heat have waived Ezra Ausar, Kylor Kelley, …",
+   "title": "Miami Dolphins and New York Jets Roster-Moves Roundup",
    "source": "Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSElZNE1FUnZBX0xrTnVxeGVCNWFUbHVkV1I5MlktR0hNaXRDdUpzU2VoQTMxUUkzZHJjNzYtSDJXazZUN25QaVJXenBQakMyeG1KVFJaRGpwb1dWWUk5TDBXaFJBZExJRWVrSnVaTkw3VnBNTC1QRExBX2ZGdEJOVE9VQQ?oc=5",
-   "t": 1792251657000,
-   "id": 9
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOOHkyLW5hZHNVWjRaVmxoWUVTMFdmMGdYWUctd1U2ZGFyY1VnekRKNVBBYWVXWVZGRFBGcUNOR2ZRWmpzeGJiNy01Q0JRNVZVTmNlMGF6WmtpUlRGLVVXMW1BUmVUWHJIdVA4MjJWUzZCZ3FINURTMzRTQzQ5LXBXYnF3ZTZxQWM?oc=5",
+   "t": 1792272810000,
+   "id": 8,
+   "link": "https://sports.yahoo.com/articles/miami-dolphins-york-jets-roster-181451231.html",
+   "thin": true,
+   "desc": "Miami and New York used the week to adjust the edges of their rosters.",
+   "draft": {
+    "headlines": [
+     "MIAMI DOLPHINS ADJUST ROSTER EDGES ALONGSIDE NEW YORK THIS WEEK",
+     "DOLPHINS MAKE ROSTER ADJUSTMENTS THIS WEEK",
+     "MIAMI TWEAKS SQUAD DEPTH WHILE NEW YORK ALSO MAKES MOVES"
+    ],
+    "article": "Miami spent time this week making adjustments to the outer edges of its roster. The local squad used these recent days to handle peripheral changes across the lineup. Meanwhile, New York also took advantage of the week to adjust the edges of its own roster. Both Miami and New York actively worked through these minor personnel tweaks over the course of the week, refining the outer boundaries of their team depth without making broader sweeping changes.",
+    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of an unbranded football helmet resting on an empty team bench under bright Florida sunlight. The helmet occupies the upper two-thirds of the frame with fine detail and subtle practice wear. The bottom third consists of deep, simple shadowed grass with clear negative space. No text, letters, numbers, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo centered on an unbranded leather football resting on freshly cut green field turf under clear afternoon lighting. The textured pebbled leather and laces are sharply in focus in the dead center of the frame, surrounded by softly blurred turf. No human faces, text, letters, numbers, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Miami vs. Florida State prediction, pick, odds, spread: Red-hot Hurricanes take on floundering Seminoles",
+   "source": "CBS Sports",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPWTlPWS1JT3JaYTNZQ3BwTExlZHB1S0tSNXdyS2s3Z2ZHWDNLbWZqUGFJR21lNXV2bElwcERWTVRKSm5SYkNHNnBDbEJsY1NQeEZldWhKSkc4WjdUdV9QUHkyeUdlcnZuM1FsbTJLdnBUQV9fbEpyazhHYUd5R1ptVkRPR2wyNDNtdHQ2ZWE3Z1BmSzdSRkJ5T1hUaV9nYUVGRW55UVpDRGRrQllVSHlSM3JUVXhpUkhX?oc=5",
+   "t": 1792270800000,
+   "id": 9,
+   "link": "https://www.cbssports.com/college-football/news/miami-florida-state-prediction-picks-odds-spread-where-to-watch-live/",
+   "thin": false,
+   "desc": "One of college football's great rivalries takes center stage on Saturday night when No. 3 Miami welcomes Florida State for their traditional October clash",
+   "draft": {
+    "headlines": [
+     "NO. 3 MIAMI HOSTS FLORIDA STATE SATURDAY NIGHT AT HARD ROCK STADIUM",
+     "HURRICANES CHASE THIRD STRAIGHT RIVALRY WIN OVER FLORIDA STATE",
+     "CAN MIAMI PROTECT ITS DOMINANT 15-1 HOME RECORD ON SATURDAY?"
+    ],
+    "article": "No. 3 Miami hosts Florida State on Saturday night at Hard Rock Stadium in Miami Gardens for their traditional October rivalry clash. Head coach Mario Cristobal has the opportunity to lead the Hurricanes to a third consecutive victory over the Seminoles, building on Miami victories from 2024 and 2025. The Hurricanes have established a formidable home-field advantage, going 15-1 at Hard Rock Stadium since the start of the 2024 season. Miami quarterback Darian Mensah leads the FBS with an 84.2 percent completion rate and a 212.2 passer rating, totaling over 15 touchdowns without an interception. Florida State enters the contest risking a 3-4 record while trying to snap an eight-game skid against top-three opponents.",
+    "imagePrompt": "A vertical 3:4 editorial sports photograph of a focused college football quarterback in an orange and green uniform preparing to release a pass under glowing stadium lights at night. The player occupies the upper two-thirds of the composition against the backdrop of a packed, illuminated outdoor arena. The bottom third of the frame is simple and dominated by the dark green shadows of the grass field. Authentic athletic photography, crisp details, dramatic lighting, no text, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 close-up photograph centered on an American football resting upright on textured green turf under bright evening stadium illumination. The laces and pebble grain of the football are sharply in focus in the center of the frame, with a softly blurred dark grass background. No human faces, no text, no letters, no logos, no watermarks."
+   }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1913: a two-mile wooden bridge opens Miami Beach",
-   "desc": "Miami Beach was developed after a two-mile wooden bridge built by John Collins was completed in 1913.",
-   "id": 10
+   "title": "1997: Dade becomes Miami-Dade",
+   "desc": "On November 13, 1997, Dade County was renamed Miami-Dade County, the only county in the United States with a hyphenated name.",
+   "id": 10,
+   "draft": {
+    "headlines": [
+     "DADE COUNTY OFFICIALLY BECAME MIAMI-DADE COUNTY ON NOVEMBER 13, 1997",
+     "DADE ADDED MIAMI TO ITS OFFICIAL NAME",
+     "THE ONLY COUNTY IN THE UNITED STATES WITH A HYPHENATED NAME"
+    ],
+    "article": "On November 13, 1997, Dade County officially changed its name to Miami-Dade County. This decision gave the region a permanent new designation and established a unique civic milestone.\n\nFollowing that adjustment on November 13, 1997, Miami-Dade County earned a singular distinction across the entire nation. It is the only county in the United States with a hyphenated name. The addition of the hyphen created an official county title that remains completely unmatched anywhere else in the United States.",
+    "imagePrompt": "Vintage archival editorial photograph from the late 1990s showing an imposing municipal government hall exterior in bright daylight. The civic architecture, stone columns, and upper entryway occupy the upper two-thirds of the frame. The bottom third consists of deep cast shadows across concrete steps. Muted film tones, authentic grain, 35mm aesthetic, vertical 3:4 portrait composition. No readable text, no letters, no logos, no watermarks, no identifiable people.",
+    "circlePrompt": "Realistic square 1:1 photograph centered on an architectural detail of a civic government plaza, featuring weathered light-colored stone and classical architectural lines under clear sunlight. Symmetrical framing, textured surface, sharp focus, no people's faces, no text, no letters, no logos, no watermarks."
+   }
   }
  ]
 }
