@@ -3,16 +3,18 @@
 <style>
 :root{--bg:#F3F5F2;--fg:#101316;--card:#fff;--mut:#5E6870;--bd:#DADFD9;--ac:#2FB457;--edge:#101316;--orange:#FF8A1F}
 @media (prefers-color-scheme:dark){:root{--bg:#0B0D0F;--fg:#F2F4F1;--card:#161A1E;--mut:#97A1A9;--bd:#2B3238;--edge:#F2F4F1}}
-*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 0 28px;overflow-x:hidden}
-.top{padding:0 16px;max-width:560px;margin:0 auto}
+*{box-sizing:border-box}html,body{margin:0}[hidden]{display:none!important}body{background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 0 28px;overflow-x:hidden}
+.top,.wrap{padding:0 16px;max-width:560px;margin:0 auto}
 .logo{font:400 15px Anton,Impact,sans-serif;letter-spacing:.04em}.logo em{font-style:normal;color:var(--orange)}
 h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 12px;font-size:13px}
+.tabs{display:flex;gap:4px;padding:3px;border:1.5px solid var(--edge);border-radius:99px;margin-bottom:12px}
+.tabs button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 14px Poppins,system-ui,sans-serif;cursor:pointer}.tabs button.on{background:var(--edge);color:var(--card)}
 .nav{display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto 10px;padding:0 16px}
 .dots{display:flex;gap:8px}.dot{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--bd);cursor:pointer;transition:all .2s}.dot.on{background:var(--ac);width:26px;border-radius:6px}
 .arrow{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--edge);background:var(--card);color:var(--fg);font:700 18px Poppins;cursor:pointer;display:grid;place-items:center}.arrow:disabled{opacity:.3}
 .count{font:600 13px Poppins;color:var(--mut)}
 .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;align-items:flex-start}.track::-webkit-scrollbar{display:none}
-.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center;min-width:0}
 .card{width:100%;min-width:0;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .cardtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;min-height:30px}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px}
@@ -24,89 +26,107 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
 .seg button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 13px Poppins,system-ui,sans-serif;cursor:pointer}
 .seg button.on{background:var(--edge);color:var(--card)}
-h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wrap:anywhere}.slide{min-width:0}
+h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wrap:anywhere}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
 .src,.tip{font-size:12px;color:var(--mut);margin:8px 0 0}.src a{color:var(--mut)}
+.story{background:var(--card);border:1.5px solid var(--edge);border-radius:18px;padding:12px;margin-bottom:10px}.story.made{opacity:.5}
+.srow{display:flex;gap:12px;cursor:pointer;min-width:0;position:relative}
+.srow input{position:absolute;opacity:0;pointer-events:none}
+.box{flex:0 0 auto;width:26px;height:26px;border-radius:9px;border:2px solid var(--edge);display:grid;place-items:center;margin-top:1px}
+.srow input:checked+.box{background:var(--ac);border-color:var(--ac)}
+.srow input:checked+.box:after{content:"";width:6px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.srow input:focus-visible+.box{outline:3px solid var(--orange);outline-offset:2px}
+.srow input:disabled+.box{opacity:.4}
+.sbody{min-width:0;display:block}
+.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}
+.stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
+.sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
+.smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
+.story .ctog{display:none;width:max-content;margin:10px 0 0 auto}.story.sel .ctog{display:flex}
+.gbar{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 72%,transparent);padding:16px 0 calc(10px + env(safe-area-inset-bottom,0px))}
+.gmsg{font-size:13px;color:var(--mut);margin:0 0 8px;min-height:18px;text-align:center}
+#gen{margin-top:0}#gen:disabled{opacity:.4;cursor:default}
+.setup{border:1.5px solid var(--edge);border-radius:16px;padding:12px 14px;margin:4px 0 12px;background:var(--card);font-size:13px}
+.setup summary{font-weight:600;cursor:pointer}.setup ol{padding-left:18px;margin:8px 0}.setup li{margin:4px 0}
+.setup input{width:100%;padding:10px;border:1.5px solid var(--edge);border-radius:12px;background:var(--bg);color:var(--fg);font:14px Poppins,system-ui,sans-serif;margin:8px 0}
+.setup .row .btn{margin-top:0}
+.empty{text-align:center;color:var(--mut);padding:40px 16px}
 @media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
-<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Saturday, October 17. Swipe to see each one.</p></div>
-<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots"><button class="dot" aria-label="Post 1" data-go="0"></button><button class="dot" aria-label="Post 2" data-go="1"></button><button class="dot" aria-label="Post 3" data-go="2"></button></div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
-<div class="track" id="track">
+<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Saturday, October 17. Pick the stories you want, then tap Generate.</p></div>
+<div class="wrap"><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (9)</button><button type="button" role="tab" id="tabP">Posts (0)</button></div></div>
+<div id="vs"><div class="wrap">
 
-<section class="slide" id="p0">
-<div class="card">
- <div class="cardtop"><div class="lab">News</div><button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-ctog="0">Circle<i></i></button></div>
- <div class="pwrap"><img class="pimg on" data-k="0" data-c="1" src="p1_1.jpg" alt="Post 1, headline 1"><img class="pimg" data-k="1" data-c="1" src="p1_2.jpg" alt="Post 1, headline 2" loading="lazy"><img class="pimg" data-k="2" data-c="1" src="p1_3.jpg" alt="Post 1, headline 3" loading="lazy"><img class="pimg" data-k="0" data-c="0" src="p1_1_nc.jpg" alt="Post 1, headline 1, no circle" loading="lazy"><img class="pimg" data-k="1" data-c="0" src="p1_2_nc.jpg" alt="Post 1, headline 2, no circle" loading="lazy"><img class="pimg" data-k="2" data-c="0" src="p1_3_nc.jpg" alt="Post 1, headline 3, no circle" loading="lazy"></div>
- <div class="seg" role="group" aria-label="Headline options" data-i="0"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
- <h2 data-h="0">SOUTH FLORIDA UNDER WEATHER ALERT FOR HEAVY RAIN THIS SATURDAY EVENING</h2>
- <p class="art">South Florida is officially under a weather alert heading into Saturday evening due to anticipated heavy rain across the region. The alert is focused on conditions developing later in the day, with heavy rain expected to impact South Florida during the evening hours. Local residents across South Florida should remain alert to these changing weather conditions on Saturday evening. Heavy rain remains the primary concern for the area through the night. As the weather alert remains active for South Florida on Saturday evening, heavy rain will be the dominant factor for the entire region.</p>
- <div class="row">
-  <button class="btn" data-copy="article" data-i="0">Copy article</button>
-  <a class="btn ghost" data-save="0" href="p1_1.jpg" download="miamidader-1.jpg">Save image</a>
- </div>
- <div class="row">
-  <button class="btn ghost" data-img="h1_1.png" data-hbtn="0">Copy headline PNG</button>
-  <button class="btn ghost" data-copy="prompt" data-i="0">Copy photo prompt</button>
- </div>
- <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMijAFBVV95cUxQNU1uT0FibGtNazVFTUpsckY2SEUtMzBQenlqN01rUjJ2djdOSXVHMnROY3laRG5zTlJ2WlgyeHZWR2hFRXVjNVhQM1NWbGoyZnF5RFBMY3ZrODBBVzBHeTZlLTRHZzNOUVZwUHdMdENCdjhxa0l6ZkhGdWZCems4d1Uwa2ZhMXoyWFM5Vw?oc=5" target="_blank" rel="noopener">CBS News</a>. Check the facts before you post.</p>
- <p class="tip" data-s="0"></p>
+<div class="story" data-id="1">
+ <label class="srow"><input type="checkbox" class="pick" value="1"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">1055 W 77th St Apt 308, Hialeah, FL 33014</span><span class="smeta">Realtor.com &middot; <span data-ago="1792250688000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMilwFBVV95cUxNeVRRdEhua3JmSXpSc1JDM2hmazlrcFIzV0hsOVNlN29SMk94VXFMb2RGWTdQR1FFMzkyUXJpQXVKNEhxaGJCTWpISld5OU1CbG9MOXNzTjJWSHhZZVFaY3VKSnRxTGc3X296X0kxNm5lQkpBeFpuTFJ0bUlJZnVxVUd1ZVd3WmlhYnNMbHdJanUxcFVmMElv?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="1">Circle<i></i></button>
 </div>
-</section>
 
-<section class="slide" id="p1">
-<div class="card">
- <div class="cardtop"><div class="lab">News</div><button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-ctog="1">Circle<i></i></button></div>
- <div class="pwrap"><img class="pimg on" data-k="0" data-c="1" src="p2_1.jpg" alt="Post 2, headline 1" loading="lazy"><img class="pimg" data-k="1" data-c="1" src="p2_2.jpg" alt="Post 2, headline 2" loading="lazy"><img class="pimg" data-k="2" data-c="1" src="p2_3.jpg" alt="Post 2, headline 3" loading="lazy"><img class="pimg" data-k="0" data-c="0" src="p2_1_nc.jpg" alt="Post 2, headline 1, no circle" loading="lazy"><img class="pimg" data-k="1" data-c="0" src="p2_2_nc.jpg" alt="Post 2, headline 2, no circle" loading="lazy"><img class="pimg" data-k="2" data-c="0" src="p2_3_nc.jpg" alt="Post 2, headline 3, no circle" loading="lazy"></div>
- <div class="seg" role="group" aria-label="Headline options" data-i="1"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
- <h2 data-h="1">MIAMI FACES THE FLORIDA STATE SEMINOLES IN UPCOMING FOOTBALL MATCHUP</h2>
- <p class="art">Miami is set to take on the Florida State Seminoles as game day approaches for local sports fans. The rivalry matchup between Miami and Florida State brings intense focus across the region, with spectators reviewing the latest team previews and game predictions ahead of kickoff. Supporters preparing for the contest are actively following official guidance on how to watch the broadcast live. Along with viewing options, betting odds, predictions, and detailed previews are circulating as excitement surrounds this major showdown featuring Miami and the Seminoles.</p>
- <div class="row">
-  <button class="btn" data-copy="article" data-i="1">Copy article</button>
-  <a class="btn ghost" data-save="1" href="p2_1.jpg" download="miamidader-2.jpg">Save image</a>
- </div>
- <div class="row">
-  <button class="btn ghost" data-img="h2_1.png" data-hbtn="1">Copy headline PNG</button>
-  <button class="btn ghost" data-copy="prompt" data-i="1">Copy photo prompt</button>
- </div>
- <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxNZ2dDcUpFN0pZa3NVRVhvbGUzQ2dxci14RkpTcnZMSHhQekZzQV9FMEU1RFo0bnJtVWE1amhDa3dKaUUtOVl6M0c2TUs0TmhWYXRnbzBCeTdDb1Nlc3UyRDhBb28xUlF6MHRYcUVwNFh2ZzNmRXVSM0xWUFVXbU41VDR0eHNUcDZZX1AtN1llOEw2Zw?oc=5" target="_blank" rel="noopener">Yahoo Sports</a>. Check the facts before you post.</p>
- <p class="tip" data-s="1"></p>
+<div class="story" data-id="2">
+ <label class="srow"><input type="checkbox" class="pick" value="2"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">More Than Pink Walk gets started at Miami-Dade County Fair and Expo Center</span><span class="smeta">CBS News &middot; <span data-ago="1792248780000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMisAFBVV95cUxNdm1CdHdGTDc1bERqVk81Z3FFVGVQNmtSWWJqODZ4NkE2R2I4d0lXa085dUx5N29kbk5JM19WUHBsNVNmZXEtT1JwRmo0bmRZUG5NYUZjcGViZE9lX2JBbzN4YmRmcUpDMFphLVhqMU1FZkhvVUstYmpvbmlUX1FjX3FfeEVlT2FQYXpvazhVbktaR3lKNHp5Z2MwRExKOFhiRVh5bUswZjlTbG1PX21sUw?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="2">Circle<i></i></button>
 </div>
-</section>
 
-<section class="slide" id="p2">
-<div class="card">
- <div class="cardtop"><div class="lab">Sports</div><button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-ctog="2">Circle<i></i></button></div>
- <div class="pwrap"><img class="pimg on" data-k="0" data-c="1" src="p3_1.jpg" alt="Post 3, headline 1" loading="lazy"><img class="pimg" data-k="1" data-c="1" src="p3_2.jpg" alt="Post 3, headline 2" loading="lazy"><img class="pimg" data-k="2" data-c="1" src="p3_3.jpg" alt="Post 3, headline 3" loading="lazy"><img class="pimg" data-k="0" data-c="0" src="p3_1_nc.jpg" alt="Post 3, headline 1, no circle" loading="lazy"><img class="pimg" data-k="1" data-c="0" src="p3_2_nc.jpg" alt="Post 3, headline 2, no circle" loading="lazy"><img class="pimg" data-k="2" data-c="0" src="p3_3_nc.jpg" alt="Post 3, headline 3, no circle" loading="lazy"></div>
- <div class="seg" role="group" aria-label="Headline options" data-i="2"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
- <h2 data-h="2">INTER MIAMI SQUARES OFF AGAINST ATLANTA UNITED IN UPCOMING MATCH</h2>
- <p class="art">Inter Miami is set to face Atlanta United as supporters across South Florida turn their attention to the matchup. Information regarding how to watch and follow the game is now available for soccer fans tracking the club. Followers of Inter Miami can stay tuned to the upcoming game as the team prepares to challenge Atlanta United on the field. Soccer enthusiasts are getting ready to watch how this matchup unfolds between the two sides.<br><br>Image: AI recreation based on a photo by CubanoBoi (CC BY-SA 4.0), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:MIA-NSH_US_Open_Cup_57_goal_celebration.jpg</p>
- <div class="row">
-  <button class="btn" data-copy="article" data-i="2">Copy article</button>
-  <a class="btn ghost" data-save="2" href="p3_1.jpg" download="miamidader-3.jpg">Save image</a>
- </div>
- <div class="row">
-  <button class="btn ghost" data-img="h3_1.png" data-hbtn="2">Copy headline PNG</button>
-  <button class="btn ghost" data-copy="prompt" data-i="2">Copy photo prompt</button>
- </div>
- <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
- <p class="src">Source: <a href="https://news.google.com/rss/articles/CBMipAFBVV95cUxPc2VuaDRneExOenh3NUpyWE01Sk5EVllHSGJGakFpVWdQSmx5RmpKeElPNXQ1ZFk1cWtsRWlydzM4Zl9kT29KQmhSTmpGUmRRZzloZ3pUR0pNUExldnQ2ZF9CaE5HeDFZSmlnbUx3bE9lWnhXS1I5Q3lkd3JiWEpyVm8tUWl5MHBlS29QNEVUMzlndmZsM1pVV0RhRUVZaW10QW9hbg?oc=5" target="_blank" rel="noopener">Scarves and Spikes</a>. Check the facts before you post.</p>
- <p class="tip" data-s="2"></p>
+<div class="story" data-id="3">
+ <label class="srow"><input type="checkbox" class="pick" value="3"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Miami-Dade innovation model expands across US cities</span><span class="smeta">Cities Today &middot; <span data-ago="1792245139000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxPM0NkeE5KcHhwRjhsU0hUV3B5RTVOR2c0SFhQb3ZGVWpJUEl0eF90R0FMTnVqY1RaQ0s3RllURTdpWjRKRUQ1cXQ1M0Q5NkJXSGZWZEd0S3NWM3EwbmZGbEI5c2xWN01PclMycnlrX3hKaE1ieGpmdUJyYmhvWjdoOGVLc0w?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="3">Circle<i></i></button>
 </div>
-</section>
+
+<div class="story" data-id="4">
+ <label class="srow"><input type="checkbox" class="pick" value="4"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Royal Palm South Beach Miami, a Tribute Portfolio Resort: First In</span><span class="smeta">Condé Nast Traveler &middot; <span data-ago="1792244993000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE9wNUItcDJnYzN4WU9pNVAyei1lbTIzX0o0dnpLc1piR1Fjd0pFZnI4RHlIaWZjSFFDTE1FQnkyU1ROSnZKV0VIR3IyNng3WFdXalhJbU1UMU5idWd0RWFpT3UtTm1COFZ6NGdodzNGSDlYRXlzTHpXRzNsUEVya3M?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="4">Circle<i></i></button>
+</div>
+
+<div class="story" data-id="5">
+ <label class="srow"><input type="checkbox" class="pick" value="5"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Large police investigation in Dania Beach</span><span class="smeta">CBS News &middot; <span data-ago="1792242900000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMihAFBVV95cUxNSmdqZ2hSaXNKZ0NrTU9adnFsVHFNOWJXX1RTc1FkeUFHZ21NNGVET2FJZnR2YVlwbFNybEhYaVlSZGlPZ1JvMFBaSjF4NmczZV9OUkJaZDJvLXh0ZjdST0JzaHhBdHBPVi1QekNfSXFDTzJMbElqNmlEVWN3VmxVMjgtMlY?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="5">Circle<i></i></button>
+</div>
+
+<div class="story" data-id="6">
+ <label class="srow"><input type="checkbox" class="pick" value="6"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Miami-Dade Funeral Home Flower Dispute Ends In Arrest</span><span class="smeta">Hoodline &middot; <span data-ago="1792240575000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaGc4SVFNMU1oRXhuLTlyLXU4Y3hlamNYNV9fT0pGampkNDVNc3lFNkJiVGhDNWN5LXh3RVhoYTU0Xy1ROFJyZ1JySFNmMXBMQmktNWZCMzNiTHNIUl9RYkIyeHlydHNjUGRWNFBoMDVNZVdmVjYzVW1RbmswZ0pwRDlTZkEyQzBjOUtrTEtuY1lDVTFaOWY2dWVlYlBzZE1MZzlKbEg1b1hQaVE?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="6">Circle<i></i></button>
+</div>
+
+<div class="story" data-id="7">
+ <label class="srow"><input type="checkbox" class="pick" value="7"><span class="box"></span><span class="sbody"><span class="chip">Sports</span><span class="stitle">Heat makes roster cuts ahead of opening night. Where things stand</span><span class="smeta">Miami Herald &middot; <span data-ago="1792252293000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMie0FVX3lxTFBJcG81ejN3ZXRwRDdMTXR0WWtDSDJfaE9md29kdm9LMURSMVZkbFpoVXF1a1R3VmhRM2dTMDNvZHlGbGU5Q1lyRk10RllZbnM4Z3ZMMmp5R05vNWhQZUxjRTk3LUFzMG1jOVJRYW84U2R2cmJSX0J2c21lb9IBe0FVX3lxTE1wZGwtck1tajRtcUczY1JNSy0tbEtSYll4eWl0Yk95SXU4dTI0cmZ1NGlOazBsTXZZYm5hUEhpb2RreW9GSzBVZWI4U3dBNVRuNVlVTTVISVY3MUZfUWlfWXJmd1ZhdHlROTlsMDhhSFRCLXpjX1BfbUNJNA?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="7">Circle<i></i></button>
+</div>
+
+<div class="story" data-id="8">
+ <label class="srow"><input type="checkbox" class="pick" value="8"><span class="box"></span><span class="sbody"><span class="chip">Sports</span><span class="stitle">The Miami Heat have waived Ezra Ausar, Kylor Kelley, …</span><span class="smeta">Yahoo Sports &middot; <span data-ago="1792251657000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMigwFBVV95cUxNSElZNE1FUnZBX0xrTnVxeGVCNWFUbHVkV1I5MlktR0hNaXRDdUpzU2VoQTMxUUkzZHJjNzYtSDJXazZUN25QaVJXenBQakMyeG1KVFJaRGpwb1dWWUk5TDBXaFJBZExJRWVrSnVaTkw3VnBNTC1QRExBX2ZGdEJOVE9VQQ?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="8">Circle<i></i></button>
+</div>
+
+<div class="story" data-id="9">
+ <label class="srow"><input type="checkbox" class="pick" value="9"><span class="box"></span><span class="sbody"><span class="chip">History</span><span class="stitle">1997: Dade becomes Miami-Dade</span><span class="sdesc">On November 13, 1997, Dade County was renamed Miami-Dade County, the only county in the United States with a hyphenated name.</span><span class="smeta">From your fact library</span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="9">Circle<i></i></button>
+</div>
+<details class="setup" id="setup"><summary>One-time setup: connect GitHub</summary>
+<p id="tokst"></p>
+<p>This lets the Generate button start the build. The token stays on this phone only.</p>
+<ol><li>On github.com go to Settings, Developer settings, Personal access tokens, Fine-grained tokens, Generate new token.</li><li>Repository access: Only select repositories, then pick post-builder.</li><li>Under Repository permissions, set Actions to Read and write.</li><li>Create the token, copy it, and paste it here.</li></ol>
+<input type="password" id="tok" placeholder="Paste token" autocomplete="off" autocapitalize="off" spellcheck="false">
+<div class="row"><button type="button" class="btn ghost" id="savetok">Save token</button><button type="button" class="btn ghost" id="forget" hidden>Forget token</button></div>
+</details>
+<div class="gbar"><p class="gmsg" id="gmsg">Pick 1 to 4 stories.</p><button type="button" class="btn" id="gen" disabled>Generate</button></div>
+</div></div>
+<div id="vp" hidden>
+<p class="empty">Nothing generated yet. Pick stories on the Stories tab.</p>
 </div>
 <script>
-const D=[{"article":"South Florida is officially under a weather alert heading into Saturday evening due to anticipated heavy rain across the region. The alert is focused on conditions developing later in the day, with heavy rain expected to impact South Florida during the evening hours. Local residents across South Florida should remain alert to these changing weather conditions on Saturday evening. Heavy rain remains the primary concern for the area through the night. As the weather alert remains active for South Florida on Saturday evening, heavy rain will be the dominant factor for the entire region.","prompt":"A realistic editorial vertical 3:4 portrait photo of a South Florida street under dramatic, dark storm clouds during twilight. Heavy rain streams downward, soaking towering palm trees that occupy the upper two-thirds of the image. The bottom third consists of a dark, simple, glistening wet road reflecting subtle ambient evening lights. Moody atmosphere, natural lighting, no text, no watermarks, no logos.","h":["SOUTH FLORIDA UNDER WEATHER ALERT FOR HEAVY RAIN THIS SATURDAY EVENING","HEAVY RAIN WEATHER ALERT ISSUED ACROSS SOUTH FLORIDA SATURDAY EVENING","WHAT SOUTH FLORIDA NEEDS TO KNOW ABOUT SATURDAY EVENING HEAVY RAIN"]},{"article":"Miami is set to take on the Florida State Seminoles as game day approaches for local sports fans. The rivalry matchup between Miami and Florida State brings intense focus across the region, with spectators reviewing the latest team previews and game predictions ahead of kickoff. Supporters preparing for the contest are actively following official guidance on how to watch the broadcast live. Along with viewing options, betting odds, predictions, and detailed previews are circulating as excitement surrounds this major showdown featuring Miami and the Seminoles.","prompt":"A realistic editorial vertical 3:4 portrait photo of a collegiate football player in an unbranded orange and green athletic uniform standing on a stadium field under intense evening lights. The athlete is positioned in the upper two-thirds of the frame, captured with a focused and determined expression. The bottom third consists of a simple, darkened stadium turf surface with subtle shadows. High-detail sports photography, dramatic lighting, no text, letters, team logos, or watermarks.","h":["MIAMI FACES THE FLORIDA STATE SEMINOLES IN UPCOMING FOOTBALL MATCHUP","MIAMI VERSUS FLORIDA STATE: GAMEDAY ARRIVES","CAN MIAMI TOP FLORIDA STATE AS PREDICTIONS AND ODDS DROP"]},{"article":"Inter Miami is set to face Atlanta United as supporters across South Florida turn their attention to the matchup. Information regarding how to watch and follow the game is now available for soccer fans tracking the club. Followers of Inter Miami can stay tuned to the upcoming game as the team prepares to challenge Atlanta United on the field. Soccer enthusiasts are getting ready to watch how this matchup unfolds between the two sides.\n\nImage: AI recreation based on a photo by CubanoBoi (CC BY-SA 4.0), via Wikimedia Commons: https://commons.wikimedia.org/wiki/File:MIA-NSH_US_Open_Cup_57_goal_celebration.jpg","prompt":"A realistic editorial portrait photograph in 3:4 vertical orientation of a soccer player standing on a professional pitch under stadium floodlights at dusk. The player is positioned in the upper two-thirds of the frame, looking focused ahead. The bottom third features dark green, softly blurred grass in deep shadow. Natural athletic lighting, dramatic evening atmosphere, no text, no logos, no letters, no watermarks.","h":["INTER MIAMI SQUARES OFF AGAINST ATLANTA UNITED IN UPCOMING MATCH","INTER MIAMI VERSUS ATLANTA UNITED","CAN OUR SQUAD TAKE DOWN ATLANTA UNITED IN THIS MATCHUP"]}],T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length;
-let cur=0;const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
+const D=[],P=D.length,T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length,REPO='miamidader/post-builder';
+let cur=0;const say=(i,t)=>{const e=document.querySelector('[data-s="'+i+'"]');if(e)e.textContent=t};
 function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
 function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
-T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
+if(N){T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
 dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
-document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);
-mark(0);
+document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);mark(0)}
+const vs=document.getElementById('vs'),vp=document.getElementById('vp'),tS=document.getElementById('tabS'),tP=document.getElementById('tabP');
+function show(w){const p=w==='p';vs.hidden=p;vp.hidden=!p;tS.classList.toggle('on',!p);tP.classList.toggle('on',p);tS.setAttribute('aria-selected',!p);tP.setAttribute('aria-selected',p);if(p&&N){T.scrollTo({left:cur*T.clientWidth});mark(cur)}try{history.replaceState(null,'',p?'#posts':'#stories')}catch(e){}}
+tS.onclick=()=>show('s');tP.onclick=()=>show('p');
+show(location.hash==='#posts'||(P&&location.hash!=='#stories')?'p':'s');
 document.querySelectorAll('.seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+g.dataset.i,v=+b.dataset.v,sl=document.getElementById('p'+i);
  g.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
  sl.dataset.v=v;sl.querySelector('[data-h]').textContent=D[i].h[v];
@@ -118,4 +138,41 @@ document.querySelectorAll('[data-ctog]').forEach(b=>b.onclick=()=>{const sl=b.cl
 (window.requestIdleCallback||setTimeout)(()=>document.querySelectorAll('.pimg').forEach(im=>{im.loading='eager'}));
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
 document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
+/* stories */
+function ago(t){if(!t)return'';const m=Math.max(1,Math.round((Date.now()-t)/60000));if(m<60)return m+' min ago';const h=Math.round(m/60);return h<24?h+' hr ago':Math.round(h/24)+' d ago'}
+document.querySelectorAll('[data-ago]').forEach(e=>e.textContent=ago(+e.dataset.ago));
+const picks=[...document.querySelectorAll('.pick')],gen=document.getElementById('gen'),gm=document.getElementById('gmsg'),MAX=4;let busy=false;
+function sel(){const on=picks.filter(c=>c.checked);picks.forEach(c=>{const s=c.closest('.story');if(!c.checked&&!s.classList.contains('made'))c.disabled=on.length>=MAX;s.classList.toggle('sel',c.checked)});
+ gen.disabled=!on.length||busy;gen.textContent=on.length?'Generate '+on.length+' post'+(on.length>1?'s':''):'Generate';
+ if(!busy)gm.textContent=on.length>=MAX?'That is the max of 4.':(on.length?'Each post uses AI credits.':'Pick 1 to 4 stories.')}
+picks.forEach(c=>c.onchange=sel);
+document.querySelectorAll('[data-cid]').forEach(b=>b.onclick=()=>b.setAttribute('aria-checked',b.getAttribute('aria-checked')!=='true'));
+const tokEl=document.getElementById('tok'),setup=document.getElementById('setup');
+const getTok=()=>{try{return localStorage.getItem('pbtok')||''}catch(e){return ''}};
+function tokUI(){const t=getTok();document.getElementById('tokst').textContent=t?'Connected on this device.':'Not connected yet.';document.getElementById('forget').hidden=!t}
+document.getElementById('savetok').onclick=()=>{const v=tokEl.value.trim();if(!v)return;try{localStorage.setItem('pbtok',v)}catch(e){gm.textContent='Could not save the token in this browser.';return}tokEl.value='';tokUI();setup.open=false;gm.textContent='Token saved. Pick stories and tap Generate.'};
+document.getElementById('forget').onclick=()=>{try{localStorage.removeItem('pbtok')}catch(e){}tokUI()};
+tokUI();
+const API='https://api.github.com/repos/'+REPO+'/actions/workflows/generate.yml/';
+const GH=t=>({Authorization:'Bearer '+t,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'});
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function run(){
+ const t=getTok();if(!t){setup.open=true;gm.textContent='Connect GitHub first (one time).';setup.scrollIntoView({block:'center'});return}
+ const ids=picks.filter(c=>c.checked).map(c=>+c.value),cir=ids.filter(i=>document.querySelector('[data-cid="'+i+'"]').getAttribute('aria-checked')==='true');
+ busy=true;gen.disabled=true;gm.textContent='Sending to GitHub...';const t0=Date.now();
+ try{
+  const r=await fetch(API+'dispatches',{method:'POST',headers:Object.assign({'Content-Type':'application/json'},GH(t)),body:JSON.stringify({ref:'main',inputs:{picks:ids.join(','),circles:cir.join(',')}})});
+  if(r.status!==204){busy=false;sel();gm.textContent=r.status===401?'GitHub says the token is wrong or expired. Make a new one.':(r.status===403||r.status===404)?'The token cannot start the build. It needs Actions: Read and write on this repo.':'GitHub said no ('+r.status+').';return}
+ }catch(e){busy=false;sel();gm.textContent='Could not reach GitHub. Check your connection.';return}
+ for(let k=0;k<90;k++){
+  await wait(8000);
+  let st='';
+  try{const j=await (await fetch(API+'runs?event=workflow_dispatch&per_page=5',{headers:GH(t)})).json();const x=(j.workflow_runs||[]).find(y=>Date.parse(y.created_at)>t0-120000);if(x)st=x.status==='completed'?x.conclusion:x.status}catch(e){}
+  if(st==='success'){gm.textContent='Done. Loading your posts...';for(let q=0;q<30;q++){try{const pj=await (await fetch('posts.json?v='+Date.now(),{cache:'no-store'})).json();if(pj.posts.length>P)break}catch(e){}await wait(6000)}location.replace(location.pathname+'?v='+Date.now()+'#posts');return}
+  if(st==='failure'||st==='cancelled'||st==='timed_out'){busy=false;sel();gm.textContent='The build failed. Most likely Gemini is out of credits (ai.studio/projects).';return}
+  gm.textContent='Generating... usually 2 to 3 minutes.';
+ }
+ busy=false;sel();gm.textContent='Taking longer than expected. Check the Posts tab in a few minutes.';
+}
+gen.onclick=run;sel();
 </script></body></html>
