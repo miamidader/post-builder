@@ -64,6 +64,8 @@ const FEEDS = {
   sports: [['Miami Dolphins when:1d', 4], ['Miami Heat when:1d', 4], ['Miami Hurricanes football when:1d', 4], ['Inter Miami when:1d', 3]],
 };
 const SPORTS_RE = /miami heat|dolphins|miami hurricanes|\bcanes\b|panthers|marlins|inter miami|\bnfl\b|\bnba\b|\bncaa\b|\bmls\b|football|basketball|quarterback|touchdown|playoff|coach |super bowl/i;
+const JUNK_SRC = /realtor\.com|zillow|redfin|trulia|apartments\.com|loopnet|tripadvisor|expedia|booking\.com|cond[eé] nast traveler|travel \+ leisure/i;
+const ADDRESS_RE = /^\d{2,6}\s+[\w .']+\b(st|street|ave|avenue|rd|road|blvd|dr|drive|ln|lane|ct|court|way|apt|unit)\b/i;
 const decode = s => s.replace(/<!\[CDATA\[|\]\]>/g, '').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").trim();
 async function feed([q, n]) {
   const url = 'https://news.google.com/rss/search?q=' + encodeURIComponent(q) + '&hl=en-US&gl=US&ceid=US:en';
@@ -87,6 +89,7 @@ async function candidates(kind, seen) {
   const res = await Promise.all(FEEDS[kind].map(feed));
   let all = [].concat(...res).filter(h => h.title).sort((a, b) => b.t - a.t);
   if (kind === 'news') all = all.filter(h => !SPORTS_RE.test(h.title));
+  all = all.filter(h => !JUNK_SRC.test(h.source) && !ADDRESS_RE.test(h.title)); // real estate listings and travel pages are not news
   const out = [];
   for (const h of all) if (![...seen, ...out.map(o => o.title)].some(t => similar(t, h.title))) out.push(h);
   return out;
@@ -524,7 +527,7 @@ if (MODE === 'pick') {
   }
   log('candidates', newsC.length, 'news,', sportsC.length, 'sports');
   const items = [];
-  newsC.slice(0, 6).forEach(h => items.push({ kind: 'news', label: 'News', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
+  newsC.slice(0, 7).forEach(h => items.push({ kind: 'news', label: 'News', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
   sportsC.slice(0, 2).forEach(h => items.push({ kind: 'sports', label: 'Sports', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
   for (const k of ['facts', 'history']) { // one fact and one history item from your library, a different pair each day
     const left = lib.filter(x => x.k === k && !state.used.includes(x.t));
