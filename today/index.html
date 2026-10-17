@@ -56,7 +56,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 @media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
 <div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Saturday, October 17. Pick the stories you want, then tap Generate.</p></div>
-<div class="wrap"><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (10)</button><button type="button" role="tab" id="tabP">Posts (0)</button></div></div>
+<div class="wrap"><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (10)</button><button type="button" role="tab" id="tabP">Posts (1)</button></div></div>
 <div id="vs"><div class="wrap">
 
 <div class="story" data-id="1">
@@ -74,8 +74,8 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="3">Circle<i></i></button>
 </div>
 
-<div class="story" data-id="4">
- <label class="srow"><input type="checkbox" class="pick" value="4"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Miami-Dade Funeral Home Flower Dispute Ends In Arrest</span><span class="smeta">Hoodline &middot; <span data-ago="1792240575000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxPaGc4SVFNMU1oRXhuLTlyLXU4Y3hlamNYNV9fT0pGampkNDVNc3lFNkJiVGhDNWN5LXh3RVhoYTU0Xy1ROFJyZ1JySFNmMXBMQmktNWZCMzNiTHNIUl9RYkIyeHlydHNjUGRWNFBoMDVNZVdmVjYzVW1RbmswZ0pwRDlTZkEyQzBjOUtrTEtuY1lDVTFaOWY2dWVlYlBzZE1MZzlKbEg1b1hQaVE?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+<div class="story made" data-id="4">
+ <label class="srow"><input type="checkbox" class="pick" value="4" disabled><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="chip done">Made</span><span class="stitle">Miami-Dade Funeral Home Flower Dispute Ends In Arrest</span><span class="smeta">Hoodline &middot; <span data-ago="1792240575000"></span> &middot; <a href="https://hoodline.com/2026/10/flower-delivery-spat-at-miami-dade-funeral-home-ends-in-felony-battery-arrest/" target="_blank" rel="noopener">Read</a></span></span></label>
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="4">Circle<i></i></button>
 </div>
 
@@ -118,10 +118,33 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 <div class="gbar"><p class="gmsg" id="gmsg">Pick 1 to 4 stories.</p><button type="button" class="btn" id="gen" disabled>Generate</button></div>
 </div></div>
 <div id="vp" hidden>
-<p class="empty">Nothing generated yet. Pick stories on the Stories tab.</p>
+<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots"><button class="dot" aria-label="Post 1" data-go="0"></button></div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
+<div class="track" id="track">
+
+<section class="slide" id="p0">
+<div class="card">
+ <div class="cardtop"><div class="lab">News</div><button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-ctog="0">Circle<i></i></button></div>
+ <div class="pwrap"><img class="pimg on" data-k="0" data-c="1" src="p1_1.jpg" alt="Post 1, headline 1"><img class="pimg" data-k="1" data-c="1" src="p1_2.jpg" alt="Post 1, headline 2" loading="lazy"><img class="pimg" data-k="2" data-c="1" src="p1_3.jpg" alt="Post 1, headline 3" loading="lazy"><img class="pimg" data-k="0" data-c="0" src="p1_1_nc.jpg" alt="Post 1, headline 1, no circle" loading="lazy"><img class="pimg" data-k="1" data-c="0" src="p1_2_nc.jpg" alt="Post 1, headline 2, no circle" loading="lazy"><img class="pimg" data-k="2" data-c="0" src="p1_3_nc.jpg" alt="Post 1, headline 3, no circle" loading="lazy"></div>
+ <div class="seg" role="group" aria-label="Headline options" data-i="0"><button type="button" class="on" data-v="0" aria-pressed="true">Headline 1</button><button type="button" data-v="1" aria-pressed="false">Headline 2</button><button type="button" data-v="2" aria-pressed="false">Headline 3</button></div>
+ <h2 data-h="0">MAN ARRESTED AFTER FLOWER DELIVERY DISPUTE TURNS VIOLENT AT MIAMI-DADE FUNERAL HOME</h2>
+ <p class="art">A flower delivery turned violent Thursday afternoon outside Mitchell Funeral Home at 8080 Northwest 22nd Avenue in northwest Miami-Dade.<br><br>Authorities arrested 51-year-old Hollywood resident Michael Keith Koehler after an argument erupted when a 73-year-old employee explained the business no longer accepts floral arrangements.<br><br>Surveillance footage showed Koehler advancing onto the property, ramming his shoulder into the senior staff member, and hitting another person in the face with a phone. A victim restrained Koehler in a headlock until Miami-Dade deputies arrived.<br><br>After receiving treatment at North Shore Hospital for cuts and scrapes, Koehler was booked into the Turner Guilford Knight Correctional Center on battery charges, including battery on someone 65 or older.</p>
+ <div class="row">
+  <button class="btn" data-copy="article" data-i="0">Copy article</button>
+  <a class="btn ghost" data-save="0" href="p1_1.jpg" download="miamidader-1.jpg">Save image</a>
+ </div>
+ <div class="row">
+  <button class="btn ghost" data-img="h1_1.png" data-hbtn="0">Copy headline PNG</button>
+  <button class="btn ghost" data-copy="prompt" data-i="0">Copy photo prompt</button>
+ </div>
+ <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
+ <p class="src">Source: <a href="https://hoodline.com/2026/10/flower-delivery-spat-at-miami-dade-funeral-home-ends-in-felony-battery-arrest/" target="_blank" rel="noopener">Hoodline</a>. Check the facts before you post.</p>
+ <p class="tip" data-s="0"></p>
+</div>
+</section>
+</div>
 </div>
 <script>
-const D=[],P=D.length,T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length,REPO='miamidader/post-builder';
+const D=[{"article":"A flower delivery turned violent Thursday afternoon outside Mitchell Funeral Home at 8080 Northwest 22nd Avenue in northwest Miami-Dade.\n\nAuthorities arrested 51-year-old Hollywood resident Michael Keith Koehler after an argument erupted when a 73-year-old employee explained the business no longer accepts floral arrangements.\n\nSurveillance footage showed Koehler advancing onto the property, ramming his shoulder into the senior staff member, and hitting another person in the face with a phone. A victim restrained Koehler in a headlock until Miami-Dade deputies arrived.\n\nAfter receiving treatment at North Shore Hospital for cuts and scrapes, Koehler was booked into the Turner Guilford Knight Correctional Center on battery charges, including battery on someone 65 or older.","prompt":"An editorial eye-level realistic vertical 3:4 portrait of a law enforcement deputy standing outdoors in northwest Miami-Dade in afternoon daylight, occupying the upper two-thirds of the frame. In the soft-focus background, the exterior entrance of a Florida funeral home and a parked delivery vehicle are faintly visible under bright tropical sunlight. The lower third of the composition consists of dark, clean asphalt in deep shadow. Realistic photojournalistic lighting, documentary depth of field, strictly without text, letters, or logos.","h":["MAN ARRESTED AFTER FLOWER DELIVERY DISPUTE TURNS VIOLENT AT MIAMI-DADE FUNERAL HOME","FLOWER DELIVERY FIGHT AT MIAMI-DADE FUNERAL HOME LEADS TO CHARGES","SURVEILLANCE VIDEO REVEALS BIZARRE BRAWL AT NORTHWEST MIAMI-DADE FUNERAL HOME"]}],P=D.length,T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length,REPO='miamidader/post-builder';
 let cur=0;const say=(i,t)=>{const e=document.querySelector('[data-s="'+i+'"]');if(e)e.textContent=t};
 function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
 function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
