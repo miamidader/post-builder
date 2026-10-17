@@ -1,0 +1,52 @@
+name: Generate posts
+# Started by the Generate button on the page. Writes and illustrates only the stories you picked.
+on:
+  workflow_dispatch:
+    inputs:
+      picks:
+        description: 'Story numbers, for example 1,4,7'
+        required: true
+      circles:
+        description: 'Which of those get a circle photo, for example 1,7'
+        required: false
+        default: ''
+permissions:
+  contents: write
+concurrency:
+  group: site
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - run: npm install
+      - run: node scripts/build.mjs generate > build.log 2>&1; code=$?; cat build.log; exit $code
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
+          PICKS: ${{ inputs.picks }}
+          CIRCLES: ${{ inputs.circles }}
+      - name: Save results
+        run: |
+          git config user.name "daily-bot"
+          git config user.email "daily-bot@users.noreply.github.com"
+          git add -A today data/seen.json
+          git diff --cached --quiet || git commit -m "Generated posts"
+          git pull --rebase origin main
+          git push
+      - name: Save error log
+        if: failure()
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          git config user.name "daily-bot"
+          git config user.email "daily-bot@users.noreply.github.com"
+          tail -c 6000 build.log > data/last-error.log
+          [ -n "$GEMINI_API_KEY" ] && sed -i "s|$GEMINI_API_KEY|[redacted]|g" data/last-error.log || true
+          git add data/last-error.log
+          git commit -m "Generate error log" || true
+          git pull --rebase origin main
+          git push

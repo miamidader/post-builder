@@ -1,10 +1,14 @@
 name: Daily posts
+# Every morning: collect today's stories (free, no AI). You pick which ones to turn into posts on the page.
 on:
   schedule:
     - cron: '0 13 * * *'
   workflow_dispatch:
 permissions:
   contents: write
+concurrency:
+  group: site
+  cancel-in-progress: false
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,26 +17,22 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - run: npm install
-      - run: node scripts/build.mjs > build.log 2>&1; code=$?; cat build.log; exit $code
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
+      - run: node scripts/build.mjs pick > build.log 2>&1; code=$?; cat build.log; exit $code
       - name: Save results
         run: |
           git config user.name "daily-bot"
           git config user.email "daily-bot@users.noreply.github.com"
-          git add today data/seen.json
-          git diff --cached --quiet || git commit -m "Daily posts"
+          git add -A today
+          git diff --cached --quiet || git commit -m "Daily story picks"
+          git pull --rebase origin main
           git push
       - name: Save error log
         if: failure()
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           git config user.name "daily-bot"
           git config user.email "daily-bot@users.noreply.github.com"
           tail -c 6000 build.log > data/last-error.log
-          [ -n "$GEMINI_API_KEY" ] && sed -i "s|$GEMINI_API_KEY|[redacted]|g" data/last-error.log || true
           git add data/last-error.log
           git commit -m "Daily build error log" || true
+          git pull --rebase origin main
           git push

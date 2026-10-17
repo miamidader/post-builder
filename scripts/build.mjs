@@ -335,7 +335,8 @@ async function compose(headlines, photoBuf, circleBuf, style) {
 
 /* ---------- page ---------- */
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-function page(posts, dateLabel) {
+const REPO = process.env.GITHUB_REPOSITORY || 'miamidader/post-builder';
+function page(posts, cands, dateLabel) {
   const cards = posts.map((p, i) => `
 <section class="slide" id="p${i}">
 <div class="card">
@@ -358,22 +359,32 @@ function page(posts, dateLabel) {
 </div>
 </section>`).join('\n');
   const dots = posts.map((_, i) => `<button class="dot" aria-label="Post ${i + 1}" data-go="${i}"></button>`).join('');
-  const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt, h: p.headlines })));
+  const data = JSON.stringify(posts.map(p => ({ article: p.article, prompt: p.imagePrompt, h: p.headlines }))).replace(/</g, '\\u003c');
+  const stories = cands.map(c => {
+    const made = posts.some(p => p.cid === c.id);
+    return `
+<div class="story${made ? ' made' : ''}" data-id="${c.id}">
+ <label class="srow"><input type="checkbox" class="pick" value="${c.id}"${made ? ' disabled' : ''}><span class="box"></span><span class="sbody"><span class="chip">${esc(c.label)}</span>${made ? '<span class="chip done">Made</span>' : ''}<span class="stitle">${esc(c.title)}</span>${c.desc ? `<span class="sdesc">${esc(c.desc)}</span>` : ''}<span class="smeta">${c.url ? `${esc(c.source || '')} &middot; <span data-ago="${c.t || 0}"></span> &middot; <a href="${esc(c.url)}" target="_blank" rel="noopener">Read</a>` : 'From your fact library'}</span></span></label>
+ <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="${c.id}">Circle<i></i></button>
+</div>`;
+  }).join('\n');
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title><link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png"><meta name="theme-color" content="#EA742E">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#F3F5F2;--fg:#101316;--card:#fff;--mut:#5E6870;--bd:#DADFD9;--ac:#2FB457;--edge:#101316;--orange:#FF8A1F}
 @media (prefers-color-scheme:dark){:root{--bg:#0B0D0F;--fg:#F2F4F1;--card:#161A1E;--mut:#97A1A9;--bd:#2B3238;--edge:#F2F4F1}}
-*{box-sizing:border-box}html,body{margin:0}body{background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 0 28px;overflow-x:hidden}
-.top{padding:0 16px;max-width:560px;margin:0 auto}
+*{box-sizing:border-box}html,body{margin:0}[hidden]{display:none!important}body{background:var(--bg);color:var(--fg);font:400 15px/1.45 Poppins,system-ui,sans-serif;padding:16px 0 28px;overflow-x:hidden}
+.top,.wrap{padding:0 16px;max-width:560px;margin:0 auto}
 .logo{font:400 15px Anton,Impact,sans-serif;letter-spacing:.04em}.logo em{font-style:normal;color:var(--orange)}
 h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);margin:0 0 12px;font-size:13px}
+.tabs{display:flex;gap:4px;padding:3px;border:1.5px solid var(--edge);border-radius:99px;margin-bottom:12px}
+.tabs button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 14px Poppins,system-ui,sans-serif;cursor:pointer}.tabs button.on{background:var(--edge);color:var(--card)}
 .nav{display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto 10px;padding:0 16px}
 .dots{display:flex;gap:8px}.dot{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:var(--bd);cursor:pointer;transition:all .2s}.dot.on{background:var(--ac);width:26px;border-radius:6px}
 .arrow{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--edge);background:var(--card);color:var(--fg);font:700 18px Poppins;cursor:pointer;display:grid;place-items:center}.arrow:disabled{opacity:.3}
 .count{font:600 13px Poppins;color:var(--mut)}
 .track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;align-items:flex-start}.track::-webkit-scrollbar{display:none}
-.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center}
+.slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;padding:0 16px 8px;display:flex;justify-content:center;min-width:0}
 .card{width:100%;min-width:0;max-width:520px;background:var(--card);border:1.5px solid var(--edge);border-radius:22px;padding:16px;box-shadow:0 4px 0 var(--ac)}
 .cardtop{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;min-height:30px}
 .lab{display:inline-block;font:600 12px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:4px 12px}
@@ -385,27 +396,66 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
 .seg button{flex:1;min-height:40px;border:0;border-radius:99px;background:transparent;color:var(--fg);font:600 13px Poppins,system-ui,sans-serif;cursor:pointer}
 .seg button.on{background:var(--edge);color:var(--card)}
-h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wrap:anywhere}.slide{min-width:0}
+h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wrap:anywhere}
 .row{display:flex;gap:8px;margin-top:10px}.row .btn{flex:1;margin-top:0}
 .btn{display:block;width:100%;text-align:center;text-decoration:none;font:600 14px Poppins;border:0;border-radius:16px;padding:12px 10px;margin-top:10px;cursor:pointer;color:#fff;background:var(--ac)}
 .btn.ghost{background:transparent;color:var(--fg);border:1.5px solid var(--edge)}.btn.dark{background:var(--edge);color:var(--card);box-shadow:0 4px 0 var(--ac)}
 .src,.tip{font-size:12px;color:var(--mut);margin:8px 0 0}.src a{color:var(--mut)}
+.story{background:var(--card);border:1.5px solid var(--edge);border-radius:18px;padding:12px;margin-bottom:10px}.story.made{opacity:.5}
+.srow{display:flex;gap:12px;cursor:pointer;min-width:0;position:relative}
+.srow input{position:absolute;opacity:0;pointer-events:none}
+.box{flex:0 0 auto;width:26px;height:26px;border-radius:9px;border:2px solid var(--edge);display:grid;place-items:center;margin-top:1px}
+.srow input:checked+.box{background:var(--ac);border-color:var(--ac)}
+.srow input:checked+.box:after{content:"";width:6px;height:12px;border:solid #fff;border-width:0 3px 3px 0;transform:rotate(45deg) translate(-1px,-1px)}
+.srow input:focus-visible+.box{outline:3px solid var(--orange);outline-offset:2px}
+.srow input:disabled+.box{opacity:.4}
+.sbody{min-width:0;display:block}
+.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}
+.stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
+.sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
+.smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
+.story .ctog{display:none;width:max-content;margin:10px 0 0 auto}.story.sel .ctog{display:flex}
+.gbar{position:sticky;bottom:0;background:linear-gradient(to top,var(--bg) 72%,transparent);padding:16px 0 calc(10px + env(safe-area-inset-bottom,0px))}
+.gmsg{font-size:13px;color:var(--mut);margin:0 0 8px;min-height:18px;text-align:center}
+#gen{margin-top:0}#gen:disabled{opacity:.4;cursor:default}
+.setup{border:1.5px solid var(--edge);border-radius:16px;padding:12px 14px;margin:4px 0 12px;background:var(--card);font-size:13px}
+.setup summary{font-weight:600;cursor:pointer}.setup ol{padding-left:18px;margin:8px 0}.setup li{margin:4px 0}
+.setup input{width:100%;padding:10px;border:1.5px solid var(--edge);border-radius:12px;background:var(--bg);color:var(--fg);font:14px Poppins,system-ui,sans-serif;margin:8px 0}
+.setup .row .btn{margin-top:0}
+.empty{text-align:center;color:var(--mut);padding:40px 16px}
 @media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
-<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(dateLabel)}. Swipe to see each one.</p></div>
-<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots">${dots}</div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
+<div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(dateLabel)}. Pick the stories you want, then tap Generate.</p></div>
+<div class="wrap"><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (${cands.length})</button><button type="button" role="tab" id="tabP">Posts (${posts.length})</button></div></div>
+<div id="vs"><div class="wrap">
+${stories}
+<details class="setup" id="setup"><summary>One-time setup: connect GitHub</summary>
+<p id="tokst"></p>
+<p>This lets the Generate button start the build. The token stays on this phone only.</p>
+<ol><li>On github.com go to Settings, Developer settings, Personal access tokens, Fine-grained tokens, Generate new token.</li><li>Repository access: Only select repositories, then pick post-builder.</li><li>Under Repository permissions, set Actions to Read and write.</li><li>Create the token, copy it, and paste it here.</li></ol>
+<input type="password" id="tok" placeholder="Paste token" autocomplete="off" autocapitalize="off" spellcheck="false">
+<div class="row"><button type="button" class="btn ghost" id="savetok">Save token</button><button type="button" class="btn ghost" id="forget" hidden>Forget token</button></div>
+</details>
+<div class="gbar"><p class="gmsg" id="gmsg">Pick 1 to 4 stories.</p><button type="button" class="btn" id="gen" disabled>Generate</button></div>
+</div></div>
+<div id="vp" hidden>
+${posts.length ? `<div class="nav"><button class="arrow" id="prev" aria-label="Previous">&larr;</button><div style="text-align:center"><div class="dots">${dots}</div><div class="count" id="cnt"></div></div><button class="arrow" id="next" aria-label="Next">&rarr;</button></div>
 <div class="track" id="track">
 ${cards}
+</div>` : '<p class="empty">Nothing generated yet. Pick stories on the Stories tab.</p>'}
 </div>
 <script>
-const D=${data},T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length;
-let cur=0;const say=(i,t)=>document.querySelector('[data-s="'+i+'"]').textContent=t;
+const D=${data},P=D.length,T=document.getElementById('track'),dots=[...document.querySelectorAll('.dot')],N=dots.length,REPO='${REPO}';
+let cur=0;const say=(i,t)=>{const e=document.querySelector('[data-s="'+i+'"]');if(e)e.textContent=t};
 function mark(i){cur=i;dots.forEach((d,k)=>d.classList.toggle('on',k===i));document.getElementById('cnt').textContent=(i+1)+' of '+N;document.getElementById('prev').disabled=i===0;document.getElementById('next').disabled=i===N-1}
 function go(i){i=Math.max(0,Math.min(N-1,i));T.scrollTo({left:i*T.clientWidth,behavior:'smooth'});mark(i)}
-T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
+if(N){T.addEventListener('scroll',()=>{const i=Math.round(T.scrollLeft/T.clientWidth);if(i!==cur)mark(i)},{passive:true});
 dots.forEach(d=>d.onclick=()=>go(+d.dataset.go));
-document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);
-mark(0);
+document.getElementById('prev').onclick=()=>go(cur-1);document.getElementById('next').onclick=()=>go(cur+1);mark(0)}
+const vs=document.getElementById('vs'),vp=document.getElementById('vp'),tS=document.getElementById('tabS'),tP=document.getElementById('tabP');
+function show(w){const p=w==='p';vs.hidden=p;vp.hidden=!p;tS.classList.toggle('on',!p);tP.classList.toggle('on',p);tS.setAttribute('aria-selected',!p);tP.setAttribute('aria-selected',p);if(p&&N){T.scrollTo({left:cur*T.clientWidth});mark(cur)}try{history.replaceState(null,'',p?'#posts':'#stories')}catch(e){}}
+tS.onclick=()=>show('s');tP.onclick=()=>show('p');
+show(location.hash==='#posts'||(P&&location.hash!=='#stories')?'p':'s');
 document.querySelectorAll('.seg').forEach(g=>g.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const i=+g.dataset.i,v=+b.dataset.v,sl=document.getElementById('p'+i);
  g.querySelectorAll('button').forEach(x=>{const on=x===b;x.classList.toggle('on',on);x.setAttribute('aria-pressed',on)});
  sl.dataset.v=v;sl.querySelector('[data-h]').textContent=D[i].h[v];
@@ -417,64 +467,113 @@ document.querySelectorAll('[data-ctog]').forEach(b=>b.onclick=()=>{const sl=b.cl
 (window.requestIdleCallback||setTimeout)(()=>document.querySelectorAll('.pimg').forEach(im=>{im.loading='eager'}));
 document.querySelectorAll('[data-copy]').forEach(b=>b.onclick=async()=>{const i=+b.dataset.i,t=D[i][b.dataset.copy];try{await navigator.clipboard.writeText(t);say(i,'Copied.')}catch(e){say(i,'Copy was blocked.')}});
 document.querySelectorAll('[data-img]').forEach(b=>b.onclick=async()=>{const i=b.closest('.slide').id.slice(1);try{const blob=await (await fetch(b.dataset.img)).blob();await navigator.clipboard.write([new ClipboardItem({'image/png':blob})]);say(i,'Headline copied. Paste it in Bazaart.')}catch(e){say(i,'Copy was blocked. Use Save image instead.')}});
+/* stories */
+function ago(t){if(!t)return'';const m=Math.max(1,Math.round((Date.now()-t)/60000));if(m<60)return m+' min ago';const h=Math.round(m/60);return h<24?h+' hr ago':Math.round(h/24)+' d ago'}
+document.querySelectorAll('[data-ago]').forEach(e=>e.textContent=ago(+e.dataset.ago));
+const picks=[...document.querySelectorAll('.pick')],gen=document.getElementById('gen'),gm=document.getElementById('gmsg'),MAX=4;let busy=false;
+function sel(){const on=picks.filter(c=>c.checked);picks.forEach(c=>{const s=c.closest('.story');if(!c.checked&&!s.classList.contains('made'))c.disabled=on.length>=MAX;s.classList.toggle('sel',c.checked)});
+ gen.disabled=!on.length||busy;gen.textContent=on.length?'Generate '+on.length+' post'+(on.length>1?'s':''):'Generate';
+ if(!busy)gm.textContent=on.length>=MAX?'That is the max of 4.':(on.length?'Each post uses AI credits.':'Pick 1 to 4 stories.')}
+picks.forEach(c=>c.onchange=sel);
+document.querySelectorAll('[data-cid]').forEach(b=>b.onclick=()=>b.setAttribute('aria-checked',b.getAttribute('aria-checked')!=='true'));
+const tokEl=document.getElementById('tok'),setup=document.getElementById('setup');
+const getTok=()=>{try{return localStorage.getItem('pbtok')||''}catch(e){return ''}};
+function tokUI(){const t=getTok();document.getElementById('tokst').textContent=t?'Connected on this device.':'Not connected yet.';document.getElementById('forget').hidden=!t}
+document.getElementById('savetok').onclick=()=>{const v=tokEl.value.trim();if(!v)return;try{localStorage.setItem('pbtok',v)}catch(e){gm.textContent='Could not save the token in this browser.';return}tokEl.value='';tokUI();setup.open=false;gm.textContent='Token saved. Pick stories and tap Generate.'};
+document.getElementById('forget').onclick=()=>{try{localStorage.removeItem('pbtok')}catch(e){}tokUI()};
+tokUI();
+const API='https://api.github.com/repos/'+REPO+'/actions/workflows/generate.yml/';
+const GH=t=>({Authorization:'Bearer '+t,Accept:'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'});
+const wait=ms=>new Promise(r=>setTimeout(r,ms));
+async function run(){
+ const t=getTok();if(!t){setup.open=true;gm.textContent='Connect GitHub first (one time).';setup.scrollIntoView({block:'center'});return}
+ const ids=picks.filter(c=>c.checked).map(c=>+c.value),cir=ids.filter(i=>document.querySelector('[data-cid="'+i+'"]').getAttribute('aria-checked')==='true');
+ busy=true;gen.disabled=true;gm.textContent='Sending to GitHub...';const t0=Date.now();
+ try{
+  const r=await fetch(API+'dispatches',{method:'POST',headers:Object.assign({'Content-Type':'application/json'},GH(t)),body:JSON.stringify({ref:'main',inputs:{picks:ids.join(','),circles:cir.join(',')}})});
+  if(r.status!==204){busy=false;sel();gm.textContent=r.status===401?'GitHub says the token is wrong or expired. Make a new one.':(r.status===403||r.status===404)?'The token cannot start the build. It needs Actions: Read and write on this repo.':'GitHub said no ('+r.status+').';return}
+ }catch(e){busy=false;sel();gm.textContent='Could not reach GitHub. Check your connection.';return}
+ for(let k=0;k<90;k++){
+  await wait(8000);
+  let st='';
+  try{const j=await (await fetch(API+'runs?event=workflow_dispatch&per_page=5',{headers:GH(t)})).json();const x=(j.workflow_runs||[]).find(y=>Date.parse(y.created_at)>t0-120000);if(x)st=x.status==='completed'?x.conclusion:x.status}catch(e){}
+  if(st==='success'){gm.textContent='Done. Loading your posts...';for(let q=0;q<30;q++){try{const pj=await (await fetch('posts.json?v='+Date.now(),{cache:'no-store'})).json();if(pj.posts.length>P)break}catch(e){}await wait(6000)}location.replace(location.pathname+'?v='+Date.now()+'#posts');return}
+  if(st==='failure'||st==='cancelled'||st==='timed_out'){busy=false;sel();gm.textContent='The build failed. Most likely Gemini is out of credits (ai.studio/projects).';return}
+  gm.textContent='Generating... usually 2 to 3 minutes.';
+ }
+ busy=false;sel();gm.textContent='Taking longer than expected. Check the Posts tab in a few minutes.';
+}
+gen.onclick=run;sel();
 </script></body></html>`;
 }
 
 /* ---------- main ---------- */
+const MODE = process.argv[2] === 'generate' ? 'generate' : 'pick'; // pick = free morning list of stories; generate = write and illustrate only the stories you chose
 const seenFile = path.join(ROOT, 'data/seen.json');
 const state = JSON.parse(fs.readFileSync(seenFile, 'utf8'));
 const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'utf8'));
-
-let newsC, sportsC;
-if (DRY) {
-  newsC = [{ title: 'County approves new housing plan for 4,000 families', source: 'Local 10', url: 'https://example.com/1', alts: ['4,000 Miami-Dade families get a housing win', 'County just approved 4,000 new homes'] }, { title: 'Hialeah crash closes lanes on the Palmetto', source: 'WSVN', url: 'https://example.com/2', alts: ['Palmetto lanes shut down after Hialeah crash', 'Avoid the Palmetto: crash blocks lanes'] }, { title: 'Karol G brings Tropitour to Miami for two nights', source: 'NBC 6', url: 'https://example.com/3', alts: ['Karol G is bringing Tropitour to Miami', 'Two nights of Karol G are coming to Miami'] }];
-  sportsC = [{ title: 'Dolphins now 0-3 as Hurricanes crack the top 5', source: 'ESPN', url: 'https://example.com/4', alts: ['Dolphins fall to 0-3 while the Canes climb', 'Miami football: Canes up, Dolphins down'] }];
-} else {
-  if (!KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
-  [newsC, sportsC] = await Promise.all([candidates('news', state.titles), candidates('sports', state.titles)]);
-}
-log('candidates', newsC.length, 'news,', sportsC.length, 'sports');
-
-const wantSports = Math.min(1, sportsC.length), wantLib = NUM >= 4 ? 1 : 0;
-const wantNews = Math.min(newsC.length, NUM - wantSports - wantLib);
-const newsPick = await pickBest(newsC, wantNews);
-const sportsPick = sportsC.slice(0, wantSports);
-const libKind = new Date().getDate() % 2 ? 'facts' : 'history';
-const libLeft = lib.filter(x => x.k === libKind && !state.used.includes(x.t));
-const libPick = wantLib && libLeft.length ? [libLeft[Math.floor(Math.random() * libLeft.length)]] : [];
-
-const jobs = [
-  ...newsPick.map(h => ({ kind: 'news', label: 'News', h, data: `${h.title} (${h.source})\n${h.url}` })),
-  ...sportsPick.map(h => ({ kind: 'sports', label: 'Sports', h, data: `${h.title} (${h.source})\n${h.url}` })),
-  ...libPick.map(x => ({ kind: libKind, label: libKind === 'facts' ? 'Fun fact' : 'History', lib: x, data: `${x.t}\n${x.d}` })),
-];
-
-fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
-const posts = [];
-for (const j of jobs) {
-  try {
-    const w = DRY ? (() => { const t = j.h ? j.h.title : j.lib.t; return { headlines: [t, ...(j.h && j.h.alts ? j.h.alts : ['Did you know? ' + t, 'Miami fact: ' + t])], article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' }; })() : await write(j.kind, j.data);
-    w.headline = w.headlines[0];
-    let buf = null;
-    if (j.kind === 'sports' && !DRY) { // real reference photo (freely licensed) -> new-angle recreation, with a caption credit
-      const subj = await refSubject(w.headline), ref = subj && await commonsRef(subj);
-      if (ref) { buf = await photoFromRef(w.headline, subj, ref); if (buf) { w.article += '\n\n' + ref.credit; log('Sports photo: recreated from a Commons reference'); } }
-      if (!buf) log('Sports photo: no reference recreation, using the standard photo');
-    }
-    if (!buf) buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
-    const style = pickStyle(); // random per post: no circle, left or right, flat or depth
-    const cbuf = style ? await circlePhoto(DRY ? 'dry' : w.circlePrompt) : null; if (cbuf && !DRY) await sleep(3000);
-    log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
-    const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style), hasCircle = !!(cbuf && style);
-    outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}.png`), o.headline); });
-    if (hasCircle) (await compose(w.headlines, buf, null, null)).forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_nc.jpg`), o.post)); // same post without the round photo, for the toggle
-    posts.push({ ...w, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source, hasCircle });
-    if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
-    log('made', n, w.headlines.length + ' headlines:', w.headlines.join(' | '));
-  } catch (e) { log('Skipped one post:', e.message); }
-}
-if (!posts.length) { console.error('No posts were made.'); process.exit(1); }
 const dateLabel = new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/New_York' });
-fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, dateLabel));
-state.titles = state.titles.slice(-300); fs.writeFileSync(seenFile, JSON.stringify(state, null, 1));
-log('done:', posts.length, 'posts');
+
+if (MODE === 'pick') {
+  let newsC, sportsC;
+  if (DRY) {
+    newsC = [{ title: 'County approves new housing plan for 4,000 families', source: 'Local 10', url: 'https://example.com/1', t: Date.now() - 3600e3, alts: ['4,000 Miami-Dade families get a housing win', 'County just approved 4,000 new homes'] }, { title: 'Hialeah crash closes lanes on the Palmetto', source: 'WSVN', url: 'https://example.com/2', t: Date.now() - 7200e3, alts: ['Palmetto lanes shut down after Hialeah crash', 'Avoid the Palmetto: crash blocks lanes'] }, { title: 'Karol G brings Tropitour to Miami for two nights', source: 'NBC 6', url: 'https://example.com/3', t: Date.now() - 10800e3, alts: ['Karol G is bringing Tropitour to Miami', 'Two nights of Karol G are coming to Miami'] }, { title: 'Miami Beach approves a very long and detailed plan for new beachfront lighting rules', source: 'Miami Herald', url: 'https://example.com/4', t: Date.now() - 14400e3 }, { title: 'Coral Gables bans leaf blowers on weekends', source: 'CBS Miami', url: 'https://example.com/5', t: Date.now() - 18000e3 }, { title: 'Doral mall adds a new food hall', source: 'Local 10', url: 'https://example.com/6', t: Date.now() - 21600e3 }];
+    sportsC = [{ title: 'Dolphins now 0-3 as Hurricanes crack the top 5', source: 'ESPN', url: 'https://example.com/7', t: Date.now() - 5400e3, alts: ['Dolphins fall to 0-3 while the Canes climb', 'Miami football: Canes up, Dolphins down'] }, { title: 'Heat close the preseason with a win', source: 'NBC 6', url: 'https://example.com/8', t: Date.now() - 9000e3 }];
+  } else {
+    [newsC, sportsC] = await Promise.all([candidates('news', state.titles), candidates('sports', state.titles)]);
+  }
+  log('candidates', newsC.length, 'news,', sportsC.length, 'sports');
+  const items = [];
+  newsC.slice(0, 6).forEach(h => items.push({ kind: 'news', label: 'News', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
+  sportsC.slice(0, 2).forEach(h => items.push({ kind: 'sports', label: 'Sports', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
+  for (const k of ['facts', 'history']) { // one fact and one history item from your library, a different pair each day
+    const left = lib.filter(x => x.k === k && !state.used.includes(x.t));
+    if (left.length) { const x = left[Math.floor(Math.random() * left.length)]; items.push({ kind: k, label: k === 'facts' ? 'Fun fact' : 'History', title: x.t, desc: x.d }); }
+  }
+  items.forEach((x, i) => { x.id = i + 1; });
+  if (!items.length) { console.error('No stories found.'); process.exit(1); }
+  fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
+  fs.writeFileSync(path.join(OUT, 'candidates.json'), JSON.stringify({ date: dateLabel, items }, null, 1));
+  fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, posts: [] }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, dateLabel));
+  log('done:', items.length, 'stories to pick from');
+} else {
+  if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
+  const cands = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).items;
+  const posts = JSON.parse(fs.readFileSync(path.join(OUT, 'posts.json'), 'utf8')).posts;
+  const ids = [...new Set((process.env.PICKS || '').split(',').map(s => +s.trim()).filter(Boolean))];
+  const circleIds = new Set((process.env.CIRCLES || '').split(',').map(s => +s.trim()).filter(Boolean));
+  const jobs = ids.map(id => cands.find(c => c.id === id)).filter(c => c && !posts.some(p => p.cid === c.id)).slice(0, 4).map(c => (c.kind === 'facts' || c.kind === 'history')
+    ? { cid: c.id, kind: c.kind, label: c.label, lib: { t: c.title, d: c.desc }, data: `${c.title}\n${c.desc}` }
+    : { cid: c.id, kind: c.kind, label: c.label, h: { title: c.title, source: c.source, url: c.url, alts: c.alts }, data: `${c.title} (${c.source})\n${c.url}` });
+  if (!jobs.length) { console.error('Nothing new to make. Picks were:', process.env.PICKS); process.exit(1); }
+  let made = 0;
+  for (const j of jobs) {
+    try {
+      const w = DRY ? (() => { const t = j.h ? j.h.title : j.lib.t; return { headlines: [t, ...(j.h && j.h.alts ? j.h.alts : ['Did you know? ' + t, 'Miami fact: ' + t])], article: 'Sample article text for the layout test.', imagePrompt: 'Sample image prompt.' }; })() : await write(j.kind, j.data);
+      w.headline = w.headlines[0];
+      let buf = null;
+      if (j.kind === 'sports' && !DRY) { // real reference photo (freely licensed) -> new-angle recreation, with a caption credit
+        const subj = await refSubject(w.headline), ref = subj && await commonsRef(subj);
+        if (ref) { buf = await photoFromRef(w.headline, subj, ref); if (buf) { w.article += '\n\n' + ref.credit; log('Sports photo: recreated from a Commons reference'); } }
+        if (!buf) log('Sports photo: no reference recreation, using the standard photo');
+      }
+      if (!buf) buf = await photo(w.imagePrompt, w.headline, j.label); await sleep(3000);
+      const style = circleIds.has(j.cid) ? pickStyle() : null; // circle only for the stories you ticked it on
+      const cbuf = style ? await circlePhoto(DRY ? 'dry' : w.circlePrompt) : null; if (cbuf && !DRY) await sleep(3000);
+      log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
+      const n = posts.length + 1, outs = await compose(w.headlines, buf, cbuf, style), hasCircle = !!(cbuf && style);
+      outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}.png`), o.headline); });
+      if (hasCircle) (await compose(w.headlines, buf, null, null)).forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_nc.jpg`), o.post)); // same post without the round photo, for the toggle
+      posts.push({ ...w, cid: j.cid, label: j.label, url: j.h && j.h.url, source: j.h && j.h.source, hasCircle });
+      if (j.h) state.titles.push(j.h.title); if (j.lib) state.used.push(j.lib.t);
+      made++;
+      log('made', n, w.headlines.length + ' headlines:', w.headlines.join(' | '));
+    } catch (e) { log('Skipped one post:', e.message); }
+  }
+  if (!made) { console.error('No posts were made.'); process.exit(1); }
+  fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, posts }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, dateLabel));
+  state.titles = state.titles.slice(-300); fs.writeFileSync(seenFile, JSON.stringify(state, null, 1));
+  log('done:', made, 'new posts,', posts.length, 'total');
+}
