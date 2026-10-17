@@ -514,7 +514,7 @@ gen.onclick=run;sel();
 }
 
 /* ---------- main ---------- */
-const MODE = ['generate', 'test-write'].includes(process.argv[2]) ? process.argv[2] : 'pick'; // pick = free morning list of stories; generate = write and illustrate only the stories you chose
+const MODE = process.argv[2] === 'generate' ? 'generate' : 'pick'; // pick = free morning list of stories; generate = write and illustrate only the stories you chose
 const seenFile = path.join(ROOT, 'data/seen.json');
 const state = JSON.parse(fs.readFileSync(seenFile, 'utf8'));
 const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'utf8'));
@@ -608,11 +608,4 @@ if (MODE === 'pick') {
   fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, dateLabel));
   state.titles = state.titles.slice(-300); fs.writeFileSync(seenFile, JSON.stringify(state, null, 1));
   log('done:', made, 'new posts,', posts.length, 'total');
-}
-else { // test-write: one text-only call to check what the writer produces from the real article. Nothing is published.
-  const c = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).items.find(x => x.id === +process.env.PICKS);
-  const a = await getArticle(c.url); c.text = a.text; c.thin = a.thin;
-  const data = storyData(c), w = await write(c.kind, data);
-  const rep = `STORY: ${c.title}\nARTICLE CHARS: ${a.text.length}\n\nHEADLINES:\n${w.headlines.join('\n')}\n\nARTICLE:\n${w.article}\n`;
-  fs.writeFileSync(path.join(ROOT, 'data/probe.log'), rep); console.log(rep);
 }
