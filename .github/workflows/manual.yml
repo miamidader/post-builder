@@ -1,0 +1,37 @@
+name: Manual post
+# Started by the Manual tab on the page. Writes 3 headlines, an article and a photo prompt from your own topic. No photos, so it costs almost nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: 'Your topic, notes, or an article link'
+        required: true
+      mid:
+        description: 'Id so the page can find the result'
+        required: true
+permissions:
+  contents: write
+concurrency:
+  group: manual
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm install
+      - run: node scripts/build.mjs manual > build.log 2>&1; code=$?; cat build.log; exit $code
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TOPIC: ${{ inputs.topic }}
+          MID: ${{ inputs.mid }}
+      - name: Save results
+        run: |
+          git config user.name "daily-bot"
+          git config user.email "daily-bot@users.noreply.github.com"
+          git add -A today
+          git diff --cached --quiet || git commit -m "Manual post"
+          git reset --hard -q  # drop npm's changes to tracked files (node_modules, lockfile) so the pull can run
+          for i in 1 2 3 4; do git pull --rebase origin main && git push && break; sleep 4; done

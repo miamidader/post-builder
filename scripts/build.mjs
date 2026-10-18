@@ -411,11 +411,13 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .setup summary{font-weight:600;cursor:pointer}.setup ol{padding-left:18px;margin:8px 0}.setup li{margin:4px 0}
 .setup input{width:100%;padding:10px;border:1.5px solid var(--edge);border-radius:12px;background:var(--bg);color:var(--fg);font:14px Poppins,system-ui,sans-serif;margin:8px 0}
 .setup .row .btn{margin-top:0}
+#mtext{width:100%;padding:12px;border:1.5px solid var(--edge);border-radius:16px;background:var(--card);color:var(--fg);font:15px/1.45 Poppins,system-ui,sans-serif;resize:vertical;min-height:110px}
+.mitem{margin-top:14px}.mitem .topic{font-size:12px;color:var(--mut);margin:0 0 6px;overflow-wrap:anywhere}
 .empty{text-align:center;color:var(--mut);padding:40px 16px}
 @media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
 </style></head><body>
 <div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(meta.date)}. Pick the stories you want, then tap Generate.</p></div>
-<div class="wrap"><div class="banner" id="banner" hidden><span>There is a newer story list.</span><button type="button" id="reload">Reload</button></div><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (${cands.length})</button><button type="button" role="tab" id="tabP">Posts (<span id="pc">${posts.length}</span>)</button></div></div>
+<div class="wrap"><div class="banner" id="banner" hidden><span>There is a newer story list.</span><button type="button" id="reload">Reload</button></div><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (${cands.length})</button><button type="button" role="tab" id="tabP">Posts (<span id="pc">${posts.length}</span>)</button><button type="button" role="tab" id="tabM">Manual</button></div></div>
 <div id="vs"><div class="wrap">
 ${stories}
 <details class="setup" id="setup"><summary>One-time setup: connect GitHub</summary>
@@ -424,17 +426,25 @@ ${stories}
 <ol><li>On github.com open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">this token page</a> in your browser.</li><li>Repository access: Only select repositories, then pick post-builder.</li><li>Under Repository permissions, set Actions to Read and write.</li><li>Create the token, copy it, and paste it here.</li></ol>
 <input type="password" id="tok" placeholder="Paste token" autocomplete="off" autocapitalize="off" spellcheck="false">
 <div class="row"><button type="button" class="btn ghost" id="savetok">Save token</button><button type="button" class="btn ghost" id="forget" hidden>Forget token</button></div>
+<p class="tip">The token lives in this browser only. Opening the page somewhere else (Safari, the home screen icon, another phone) asks again. Tap below to copy a private link that reconnects any of them in one step. Keep that link to yourself.</p>
+<button type="button" class="btn ghost" id="copylink" hidden>Copy my reconnect link</button>
 </details>
 <div class="gbar"><p class="gmsg" id="gmsg">Pick 1 to 4 stories.</p><button type="button" class="btn" id="gen" disabled>Generate</button></div>
 </div></div>
 <div id="vp" hidden><div id="postsroot"></div></div>
+<div id="vm" hidden><div class="wrap">
+<p class="sub">Your own topic. Type what happened (names, places, times) or paste an article link, and get 3 headlines and an article. Then copy the photo prompt and open Gemini.</p>
+<textarea id="mtext" rows="5" placeholder="What happened? Or paste a link."></textarea>
+<button type="button" class="btn" id="mgen">Write it</button><p class="gmsg" id="mmsg"></p>
+<div id="mlist"></div>
+</div></div>
 <script type="application/json" id="data">${data}</script>
 <script src="../assets/app.js?v=${meta.pick}"></script>
 </body></html>`;
 }
 
 /* ---------- main ---------- */
-const MODE = process.argv[2] === 'generate' ? 'generate' : 'pick'; // pick = morning list of stories (articles read and drafted, no photos); generate = photos and layout for only the stories you chose
+const MODE = ['generate', 'manual', 'page'].includes(process.argv[2]) ? process.argv[2] : 'pick'; // pick = morning list of stories (articles read and drafted, no photos); generate = photos and layout for only the stories you chose
 const seenFile = path.join(ROOT, 'data/seen.json');
 const state = JSON.parse(fs.readFileSync(seenFile, 'utf8'));
 const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'utf8'));
@@ -497,6 +507,27 @@ if (MODE === 'pick') {
   fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, pick, posts: [] }));
   fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, { date: dateLabel, pick }));
   log('done:', items.length, 'stories to pick from,', items.filter(x => x.draft).length, 'drafted');
+} else if (MODE === 'page') { // rebuild the page from the saved story list and posts, without touching anything else
+  const cf = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')), pj = JSON.parse(fs.readFileSync(path.join(OUT, 'posts.json'), 'utf8'));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page(pj.posts, cf.items, { date: cf.date, pick: cf.pick }));
+  log('page rebuilt:', cf.items.length, 'stories,', pj.posts.length, 'posts');
+} else if (MODE === 'manual') { // your own topic (or article link) -> 3 headlines, an article and a photo prompt, no photo
+  if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing.'); process.exit(1); }
+  const topic = (process.env.TOPIC || '').trim().slice(0, 6000), mid = (process.env.MID || Date.now().toString(36)).replace(/[^a-z0-9]/gi, '').slice(0, 20) || Date.now().toString(36);
+  if (!topic) { console.error('No topic was given.'); process.exit(1); }
+  let data = 'NOTES FROM THE ACCOUNT OWNER (treat as facts):\n' + topic, src = '';
+  const link = topic.match(/https?:\/\/[^\s<>"]+/);
+  if (link && !DRY) {
+    try { const a = await getArticle(link[0]); src = a.url; if (a.text) data += '\n\nARTICLE TEXT FROM THE PUBLISHER (use its facts, write in your own words):\n' + a.text; log('article', a.host, a.text.length, 'chars'); } catch (e) { log('article failed', String(e.message).slice(0, 90)); }
+  }
+  const w = DRY ? dryWrite({ title: topic.slice(0, 80) }) : await write('news', data);
+  fs.mkdirSync(OUT, { recursive: true });
+  w.headlines.forEach((h, k) => fs.writeFileSync(path.join(OUT, `m_${mid}_${k + 1}.png`), headlineCanvas(h).toBuffer('image/png')));
+  const mf = path.join(OUT, 'manual.json');
+  const items = fs.existsSync(mf) ? JSON.parse(fs.readFileSync(mf, 'utf8')).items || [] : [];
+  items.unshift({ id: mid, topic: topic.slice(0, 300), headlines: w.headlines, article: w.article, imagePrompt: w.imagePrompt, src, t: Date.now() });
+  fs.writeFileSync(mf, JSON.stringify({ items: items.slice(0, 8) }));
+  log('manual done:', mid, w.headlines[0]);
 } else {
   if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
   const cf = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')), cands = cf.items;

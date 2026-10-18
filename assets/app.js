@@ -75,13 +75,15 @@
   });
 
   /* ---------- tabs ---------- */
+  const vm = $('vm'), tM = $('tabM');
   function show(w) {
-    const p = w === 'p'; vs.hidden = p; vp.hidden = !p; tS.classList.toggle('on', !p); tP.classList.toggle('on', p);
-    tS.setAttribute('aria-selected', !p); tP.setAttribute('aria-selected', p);
+    const p = w === 'p', m = w === 'm'; vs.hidden = p || m; vp.hidden = !p; vm.hidden = !m;
+    tS.classList.toggle('on', w === 's'); tP.classList.toggle('on', p); tM.classList.toggle('on', m);
+    tS.setAttribute('aria-selected', w === 's'); tP.setAttribute('aria-selected', p); tM.setAttribute('aria-selected', m);
     if (p && posts.length) { const T = track(); T.scrollTo({ left: cur * T.clientWidth }); mark(cur); }
-    try { history.replaceState(null, '', p ? '#posts' : '#stories'); } catch (e) { /* ignore */ }
+    try { history.replaceState(null, '', p ? '#posts' : m ? '#manual' : '#stories'); } catch (e) { /* ignore */ }
   }
-  tS.onclick = () => show('s'); tP.onclick = () => show('p');
+  tS.onclick = () => show('s'); tP.onclick = () => show('p'); tM.onclick = () => show('m');
 
   /* ---------- stories tab ---------- */
   function ago(t) { if (!t) return ''; const m = Math.max(1, Math.round((Date.now() - t) / 60000)); if (m < 60) return m + ' min ago'; const h = Math.round(m / 60); return h < 24 ? h + ' hr ago' : Math.round(h / 24) + ' d ago'; }
@@ -107,7 +109,12 @@
   /* ---------- GitHub token and Generate ---------- */
   const tokEl = $('tok'), setup = $('setup');
   const getTok = () => { try { return localStorage.getItem('pbtok') || ''; } catch (e) { return ''; } };
-  function tokUI() { const t = getTok(); $('tokst').textContent = t ? 'Connected on this device.' : 'Not connected yet.'; $('forget').hidden = !t; }
+  function tokUI() { const t = getTok(); $('tokst').textContent = t ? 'Connected on this device.' : 'Not connected yet.'; $('forget').hidden = !t; $('copylink').hidden = !t; }
+  { // a reconnect link looks like .../today/#k=TOKEN: save it, then clear it from the address bar
+    const m = location.hash.match(/[#&]k=([^&]+)/);
+    if (m) { try { localStorage.setItem('pbtok', decodeURIComponent(m[1])); } catch (e) { /* ignore */ } try { history.replaceState(null, '', location.pathname + '#stories'); } catch (e) { /* ignore */ } }
+  }
+  $('copylink').onclick = async () => { try { await navigator.clipboard.writeText(location.origin + location.pathname + '#k=' + encodeURIComponent(getTok())); gm.textContent = 'Reconnect link copied. Keep it private.'; } catch (e) { gm.textContent = 'Copy was blocked.'; } };
   $('savetok').onclick = () => {
     const v = tokEl.value.trim(); if (!v) return;
     try { localStorage.setItem('pbtok', v); } catch (e) { gm.textContent = 'Could not save the token in this browser.'; return; }
@@ -152,9 +159,70 @@
   }
   gen.onclick = run;
 
+  /* ---------- manual tab ---------- */
+  let manual = [];
+  const mmsg = $('mmsg'), mgen = $('mgen');
+  function mcard(m, i) {
+    return `<div class="card mitem" data-m="${i}">
+ <div class="cardtop"><div class="lab">Manual</div></div>
+ <p class="topic">${esc(m.topic)}</p>
+ <div class="seg" role="group" aria-label="Headline options">${m.headlines.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-act="mhead" data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>
+ <h2 data-h>${esc(m.headlines[0])}</h2>
+ <p class="art">${esc(m.article).replace(/\n+/g, '<br><br>')}</p>
+ <div class="row"><button type="button" class="btn" data-act="mcopyart">Copy article</button><button type="button" class="btn ghost" data-act="mcopyh">Copy headline</button></div>
+ <div class="row"><button type="button" class="btn ghost" data-act="mpng">Copy headline PNG</button></div>
+ <button type="button" class="btn dark" data-act="mgemini">Copy photo prompt and open Gemini</button>
+ ${m.src ? `<p class="src">Source: <a href="${esc(m.src)}" target="_blank" rel="noopener">link</a>. Check the facts before you post.</p>` : '<p class="src">Written only from what you typed. Check the facts before you post.</p>'}
+ <p class="tip" data-ms="${i}"></p>
+</div>`;
+  }
+  function renderManual() { $('mlist').innerHTML = manual.map(mcard).join(''); }
+  $('mlist').addEventListener('click', async e => {
+    const b = e.target.closest('[data-act]'); if (!b) return;
+    const c = b.closest('.mitem'), i = +c.dataset.m, m = manual[i], v = +(c.dataset.v || 0), act = b.dataset.act, tip = t => { c.querySelector('[data-ms]').textContent = t; };
+    if (act === 'mhead') {
+      c.dataset.v = b.dataset.v; b.parentNode.querySelectorAll('button').forEach(x => { const on = x === b; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
+      c.querySelector('[data-h]').textContent = m.headlines[+b.dataset.v]; tip('');
+    } else if (act === 'mgemini') { // copy first, open right away (phones block a new tab opened after a wait)
+      try { navigator.clipboard.writeText('Generate an image. ' + m.imagePrompt).catch(() => {}); } catch (x) { /* ignore */ }
+      window.open('https://gemini.google.com/app', '_blank'); tip('Prompt copied. Paste it into Gemini.');
+    } else if (act === 'mcopyart' || act === 'mcopyh') {
+      try { await navigator.clipboard.writeText(act === 'mcopyart' ? m.article : m.headlines[v]); tip('Copied.'); } catch (x) { tip('Copy was blocked.'); }
+    } else if (act === 'mpng') {
+      try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': blobOf(D.base + 'm_' + m.id + '_' + (v + 1) + '.png') })]); tip('Headline copied. Paste it in Bazaart.'); } catch (x) { tip('Copy was blocked.'); }
+    }
+  });
+  async function fetchManual() { const r = await fetch(D.base + 'manual.json?v=' + Date.now(), { cache: 'no-store' }); if (!r.ok) throw new Error('HTTP ' + r.status); return (await r.json()).items || []; }
+  const MAPI = 'https://api.github.com/repos/' + D.repo + '/actions/workflows/manual.yml/';
+  function mfail(msg) { mgen.disabled = false; mmsg.textContent = msg; }
+  mgen.onclick = async () => {
+    const topic = $('mtext').value.trim(), t = getTok();
+    if (!topic) { mmsg.textContent = 'Type a topic or paste a link first.'; return; }
+    if (!t) { show('s'); setup.open = true; gm.textContent = 'Connect GitHub first (one time).'; setup.scrollIntoView({ block: 'center' }); return; }
+    const id = Date.now().toString(36); mgen.disabled = true; mmsg.textContent = 'Sending to GitHub...'; const t0 = Date.now();
+    try {
+      const r = await fetch(MAPI + 'dispatches', { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, GH(t)), body: JSON.stringify({ ref: 'main', inputs: { topic, mid: id } }) });
+      if (r.status !== 204) return mfail(r.status === 401 ? 'GitHub says the token is wrong or expired. Make a new one.' : (r.status === 403 || r.status === 404) ? 'The token cannot start the build. It needs Actions: Read and write on this repo.' : 'GitHub said no (' + r.status + ').');
+    } catch (e) { return mfail('Could not reach GitHub. Check your connection.'); }
+    for (let k = 0; k < 90; k++) {
+      await wait(4000);
+      try { const items = await fetchManual(); if (items.some(x => x.id === id)) { manual = items; renderManual(); $('mtext').value = ''; mgen.disabled = false; mmsg.textContent = 'Done in ' + Math.round((Date.now() - t0) / 1000) + 's.'; return; } } catch (e) { /* try again */ }
+      if (k % 2 === 1) {
+        try {
+          const j = await (await fetch(MAPI + 'runs?event=workflow_dispatch&per_page=5', { headers: GH(t) })).json();
+          const x = (j.workflow_runs || []).find(y => Date.parse(y.created_at) > t0 - 120000);
+          if (x && x.status === 'completed' && x.conclusion !== 'success') return mfail('The build failed. Most likely Gemini is out of credits (ai.studio/projects).');
+        } catch (e) { /* ignore */ }
+      }
+      mmsg.textContent = 'Writing... ' + Math.round((Date.now() - t0) / 1000) + 's (usually under a minute)';
+    }
+    mfail('Taking longer than expected. Try again in a minute.');
+  };
+  fetchManual().then(items => { manual = items; renderManual(); }).catch(() => {});
+
   /* ---------- start ---------- */
   renderPosts(); sel();
-  show(location.hash === '#posts' || (posts.length && location.hash !== '#stories') ? 'p' : 's');
+  show(location.hash === '#manual' ? 'm' : location.hash === '#posts' || (posts.length && location.hash !== '#stories') ? 'p' : 's');
   $('reload').onclick = () => { location.href = location.pathname + '?v=' + Date.now() + '#stories'; };
   (async () => { // the copy of this page can be a few minutes behind GitHub, so check for newer posts or a new story list
     try {
