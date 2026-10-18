@@ -167,7 +167,7 @@
  <div class="cardtop"><div class="lab">Manual</div></div>
  <p class="topic">${esc(m.topic)}</p>
  <div class="seg" role="group" aria-label="Headline options">${m.headlines.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-act="mhead" data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>
- <h2 data-h>${esc(m.headlines[0])}</h2>
+ <div class="hprev"><img data-hp src="${D.base}m_${m.id}_1.png" alt="Stacked headline"></div>
  <p class="art">${esc(m.article).replace(/\n+/g, '<br><br>')}</p>
  <div class="row"><button type="button" class="btn" data-act="mcopyart">Copy article</button><button type="button" class="btn ghost" data-act="mcopyh">Copy headline</button></div>
  <div class="row"><button type="button" class="btn ghost" data-act="mpng">Copy headline PNG</button></div>
@@ -182,7 +182,7 @@
     const c = b.closest('.mitem'), i = +c.dataset.m, m = manual[i], v = +(c.dataset.v || 0), act = b.dataset.act, tip = t => { c.querySelector('[data-ms]').textContent = t; };
     if (act === 'mhead') {
       c.dataset.v = b.dataset.v; b.parentNode.querySelectorAll('button').forEach(x => { const on = x === b; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
-      c.querySelector('[data-h]').textContent = m.headlines[+b.dataset.v]; tip('');
+      c.querySelector('[data-hp]').src = D.base + 'm_' + m.id + '_' + (+b.dataset.v + 1) + '.png'; tip('');
     } else if (act === 'mgemini') { // copy first, open right away (phones block a new tab opened after a wait)
       try { navigator.clipboard.writeText('Generate an image. ' + m.imagePrompt).catch(() => {}); } catch (x) { /* ignore */ }
       window.open('https://gemini.google.com/app', '_blank'); tip('Prompt copied. Paste it into Gemini.');

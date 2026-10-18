@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { createHash } from 'crypto';
 import { createCanvas, GlobalFonts, loadImage } from '@napi-rs/canvas';
 import { getArticle } from './article.mjs';
 
@@ -342,6 +343,7 @@ async function compose(headlines, photoBuf, circleBuf, style) {
 /* ---------- page ---------- */
 // The page shell and story list are written here. Everything interactive (tabs, Generate button, post cards, live updates) lives in assets/app.js.
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+const APPV = createHash('md5').update(fs.readFileSync(path.join(ROOT, 'assets/app.js'))).digest('hex').slice(0, 8); // new script version = new link, so phones never run an old copy
 const REPO = process.env.GITHUB_REPOSITORY || 'miamidader/post-builder';
 const IMG_BASE = process.env.IMG_BASE ?? `https://raw.githubusercontent.com/${REPO}/main/today/`; // images load straight from GitHub, so a new post shows up without waiting for the site to rebuild
 function page(posts, cands, meta) {
@@ -412,6 +414,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .setup input{width:100%;padding:10px;border:1.5px solid var(--edge);border-radius:12px;background:var(--bg);color:var(--fg);font:14px Poppins,system-ui,sans-serif;margin:8px 0}
 .setup .row .btn{margin-top:0}
 #mtext{width:100%;padding:12px;border:1.5px solid var(--edge);border-radius:16px;background:var(--card);color:var(--fg);font:15px/1.45 Poppins,system-ui,sans-serif;resize:vertical;min-height:110px}
+.hprev{background:#0B0D0F;border-radius:16px;padding:16px 12px;margin:10px 0}.hprev img{display:block;width:100%;height:auto}
 .mitem{margin-top:14px}.mitem .topic{font-size:12px;color:var(--mut);margin:0 0 6px;overflow-wrap:anywhere}
 .empty{text-align:center;color:var(--mut);padding:40px 16px}
 @media (prefers-reduced-motion:reduce){.track{scroll-behavior:auto}.pimg{transition:none}}
@@ -439,7 +442,7 @@ ${stories}
 <div id="mlist"></div>
 </div></div>
 <script type="application/json" id="data">${data}</script>
-<script src="../assets/app.js?v=${meta.pick}"></script>
+<script src="../assets/app.js?v=${APPV}"></script>
 </body></html>`;
 }
 
