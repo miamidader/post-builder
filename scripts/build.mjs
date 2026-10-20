@@ -14,7 +14,16 @@ const IMG_MODEL = /^(off|none|no)$/i.test(IMG_RAW) ? '' : IMG_RAW; // set the va
 const NUM = +(process.env.NUM_POSTS || 4);
 const CIRCLE_ON = !/^(off|none|no)$/i.test(process.env.CIRCLE_PHOTOS || ''); // set the variable CIRCLE_PHOTOS to "off" to skip the round inset photo (it costs one extra image per post)
 const RING = process.env.CIRCLE_RING || '#FFFFFF'; // ring color around the round photo
-const LOGO_H = +(process.env.LOGO_HEIGHT || 132); // height of the logo above the headline, in pixels (the post is 1440 tall)
+// Headline look. Each can be changed with a repo variable of the same name, or here.
+const ST = {
+  M: +(process.env.HEAD_MARGIN || 14), // side margin of the headline, in pixels (smaller = bigger text)
+  G: +(process.env.HEAD_GAP || 8), // space between headline lines
+  MX: +(process.env.HEAD_MAX || 300), // tallest a line of text may get
+  W3: +(process.env.HEAD_WORDS3 || 10), // headlines longer than this many words use 4 lines instead of 3
+  BOT: +(process.env.HEAD_BOTTOM || 18), // space under the headline
+  FADE: process.env.HEAD_FADE ? +process.env.HEAD_FADE : 170, // how far above the headline the black fade starts, in pixels. 0 = the old long fade that also covered the logo
+  LOGO: +(process.env.LOGO_HEIGHT || 132), // height of the logo above the headline, in pixels (the post is 1440 tall)
+};
 const CIRCLE_DEPTH = +(process.env.CIRCLE_DEPTH_CHANCE || .5); // chance a post with a circle gets the depth effect (main subject in front of the circle)
 const pickStyle = () => !CIRCLE_ON ? null : { side: Math.random() < .5 ? 'left' : 'right', depth: Math.random() < CIRCLE_DEPTH };
 const log = (...a) => console.log(...a);
@@ -40,9 +49,9 @@ function split(words, n) {
   const out = []; let j = m; for (let k = n; k > 0; k--) { const i = prev[k][j]; out.unshift(words.slice(i, j).join(' ')); j = i; } return out;
 }
 function headlineCanvas(text) {
-  const W = 1080, M = 40, G = 12, MX = 260, tw = W - 2 * M, NW = 1.08, NB = 0.02, pad = 8;
+  const W = 1080, M = ST.M, G = ST.G, MX = ST.MX, tw = W - 2 * M, NW = 1.08, NB = 0.02, pad = 8;
   const words = fix(text.trim()).split(/\s+/);
-  const ls = split(words, words.length > 9 ? 4 : 3);
+  const ls = split(words, words.length > ST.W3 ? 4 : 3);
   const meas = createCanvas(10, 10).getContext('2d');
   const capOf = f => { meas.font = `100px "${f}"`; return meas.measureText('H').actualBoundingBoxAscent / 100 || .72; };
   const capR = capOf(PRIMARY), k = capR / capOf(ANTON);
@@ -127,7 +136,7 @@ async function write(kind, dataText) {
   const prompt = `Create three different all caps instagram headline options for my Miami area based news account and use this data to write one article that does not link to any news source affiliation (give it a Miami area-centric point of view). No em dashes. No emojis. The article does not need to be all caps.
 Only use facts that appear in the data below. Do not invent details, quotes, names, dates, or numbers. If the data is thin, keep the article short rather than guessing.
 Do use the specific details that ARE in the data: names of businesses, people, agencies, streets and neighborhoods, times, dates, ages, and numbers, with the who, what, where and when up front. Write in your own words and never copy sentences from the article text. Never mention that you were given article text or a source.
-Headlines: exactly 3 options, each 12 words or fewer, each with a clearly different angle (1: the straight facts, 2: short and punchy, 3: a local-pride or curiosity hook), all using only facts from the data. Article: about 80 to 120 words, short paragraphs.
+Headlines: exactly 3 options, each 10 words or fewer, each with a clearly different angle (1: the straight facts, 2: short and punchy, 3: a local-pride or curiosity hook), all using only facts from the data. Article: about 80 to 120 words, short paragraphs.
 Also write "imagePrompt": a prompt for a ${kind === 'history' ? 'vintage, archival-style editorial image' : 'realistic editorial photo'} in a 3:4 vertical portrait about this story. Main subject in the upper two-thirds, bottom third simple and darker. ${kind === 'history' ? 'No real identifiable people. ' : ''}No text, letters, logos, or watermarks.
 Also write "circlePrompt": a prompt for a realistic square 1:1 photo that shows a second, closely related view of the story (a close-up detail, the place, or the object involved), different from the main photo, with the subject centered. No people's faces, no text, letters, logos, or watermarks.
 
@@ -321,14 +330,14 @@ async function compose(headlines, photoBuf, circleBuf, style) {
   const adir = path.join(ROOT, 'assets');
   const lf = fs.existsSync(adir) ? fs.readdirSync(adir).find(f => /\.(png|webp)$/i.test(f)) : null;
   let lg = null, lw = 0, lh = 0;
-  if (lf) { lg = await loadImage(fs.readFileSync(path.join(adir, lf))); lh = LOGO_H; lw = Math.min(300, lh * lg.width / lg.height); lh = lw * lg.height / lg.width; } // sized by height so any logo shape fits
+  if (lf) { lg = await loadImage(fs.readFileSync(path.join(adir, lf))); lh = ST.LOGO; lw = Math.min(300, lh * lg.width / lg.height); lh = lw * lg.height / lg.width; } // sized by height so any logo shape fits
   if (lg) { if (!globalThis.__logoLogged) { log('Logo found:', lf); globalThis.__logoLogged = true; } }
   else if (!globalThis.__logoLogged) { log('NO LOGO FOUND. Put logo.png in a folder named assets at the top of the repo. Looked in', adir); globalThis.__logoLogged = true; }
   const outs = [];
   for (const headline of headlines) { // same photo and circle every time, only the headline (and its fade) changes
     const c2 = createCanvas(W, H), x = c2.getContext('2d'); x.drawImage(c, 0, 0);
-    const hl = headlineCanvas(headline), hy = H - hl.height - 32; // text bottom edge sits 40px from the bottom, same as the 40px side margins
-    const fy = Math.max(0, hy - ((lg ? lh + 6 : 0) + 130)); // the fade covers the headline block plus a long, soft ramp above it (logo included), so it grows and shrinks with the headline and is on every post
+    const hl = headlineCanvas(headline), hy = H - hl.height - ST.BOT; // text bottom edge sits 40px from the bottom, same as the 40px side margins
+    const fy = Math.max(0, hy - (ST.FADE || ((lg ? lh + 6 : 0) + 130))); // the fade covers the headline block plus a long, soft ramp above it (logo included), so it grows and shrinks with the headline and is on every post
     const pH = (hy - fy) / (H - fy); // where the headline starts inside the fade
     const g2 = x.createLinearGradient(0, fy, 0, H); // gradual S-curve from photo to black, then solid black from the top of the headline down, like the posts you make by hand
     g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(pH * .25, 'rgba(0,0,0,.1)'); g2.addColorStop(pH * .5, 'rgba(0,0,0,.34)'); g2.addColorStop(pH * .75, 'rgba(0,0,0,.7)'); g2.addColorStop(pH, 'rgba(0,0,0,.97)'); g2.addColorStop(1, 'rgba(0,0,0,1)');
