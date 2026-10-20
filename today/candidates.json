@@ -1,218 +1,220 @@
 {
- "date": "Monday, October 19",
- "pick": "mvfavkvp",
+ "date": "Tuesday, October 20",
+ "pick": "mvgq62i6",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "He Drove Straight Into a Sheriff's Cruiser—Then Tried to Ditch His Bottle in Front of the Deputy",
-   "source": "MotorBiscuit",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQX3JHYklDUzZadHJ3NGgzaDlENHVMeHpvV3VFN2g5cFdsNUFCZGFaUVFVMWladmVubzl1ckU1YnJYUlRDQTU2LXBwOWo1NGVmR013Rlk4SXpheGhZSDd1T0J6ODRPQlNwR0NDdEhsaHJBRHNRS2hkWERQNkZVU0FvdXJEU3RwWGRXWlVhMzVHRElodE1nOFFkanFXbDZwN0gwZng2T1dVX1B4R0NpZHpxR3pNa1BlYUxUTmZKMmhGeWlzdVE?oc=5",
-   "t": 1792415250000,
+   "title": "Hotel executive Michael Krieger finds buyer for $28M Miami Beach home",
+   "source": "The Real Deal",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxObUJHWWw5OGlUakxfM0Q5SWszTUZkeUhjcDZoQjJha3Y4Ym5hWWpLR2xkMkZIV0xOOGp5Rkt2c01oRlpGUngyX2piOVM2N0xtTkkzU3oxRUdIdUdoS1hwNkdhbllZSmlNdnp4QVoyM2pvY0k4RVh2RlowMXF6UDh1NDBmV0N0OEhZc1pEQ0czRjU5WjhwbjZFeEo3LXRpUXd6clE?oc=5",
+   "t": 1792501200000,
    "id": 1,
-   "link": "https://www.motorbiscuit.com/he-drove-straight-into-a-sheriffs-cruiser-then-tried-to-ditch-his-bottle-in-front-of-the-deputy/",
-   "thin": false,
-   "desc": "A 72-year-old driver was charged with DUI after dashcam video showed his van rolling into the back of a stopped Miami-Dade Sheriff's Office cruiser, and witnesses say he then tried to toss away a bottle during the…",
-   "draft": {
-    "headlines": [
-     "DRIVER CHARGED WITH DUI AFTER VAN HITS MIAMI-DADE SHERIFF CRUISER",
-     "VAN REAR-ENDS DEPUTY BEFORE SUSPECT TOSSES BOTTLE",
-     "MIAMI-DADE DEPUTY STRUCK FROM BEHIND IN SHOCKING DUI TRAFFIC STOP"
-    ],
-    "article": "A 72-year-old driver faces a DUI charge in Miami-Dade after colliding directly with local law enforcement. Dashcam video captured the incident as the man's van rolled into the back of a stopped Miami-Dade Sheriff's Office cruiser. The impact triggered an immediate traffic stop on the roadway. Witnesses reported that the elderly driver then attempted to get rid of evidence. While interacting with law enforcement, he tried to toss a bottle away during the encounter. Following the collision and the witness reports, deputies formally charged the driver with DUI.",
-    "imagePrompt": "A realistic editorial photo in vertical 3:4 aspect ratio showing a dark van stopped closely behind an unmarked law enforcement SUV on an asphalt road at dusk. The vehicles dominate the upper two-thirds of the frame, bathed in the soft glow of red taillights and distant streetlights. The lower third features clean, dark asphalt fading into shadow. No text, letters, logos, badges, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo focusing on an open glass bottle lying discarded on asphalt beside a vehicle tire, captured in sharp focus. The object is centered in the frame under dim evening illumination. No people, no faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Business Beyond the Beach: Rodrick T. Miller | President and CEO, Beacon Council",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQaWdDdmJUTHNqd2xHYjMxdkZESnB2WG04ckJ4bk5WODM1RWFJdFZFUzVxaW1YUDV2V285Tlo5NHlQaU5hU0xUYVF1bkZlMlNhNjVzTHBGdEdWYkJhMVVoRW1Td1pJWXQ3UHFqdWtXWlV6T1BzSXh3aFczRjA3Y3ZTODdQbHFUNEpIZlZnczRtcXNFWjMzVXNqZ2M1VEZYelBlX3NGT19EN21zNnpiWG1YdlVmbk1jMmtzTmtSUkpHOUl3TlU?oc=5",
-   "t": 1792414841000,
-   "id": 2,
-   "link": "https://communitynewspapers.com/miami-beach-news/business-beyond-the-beach-rodrick-t-miller-president-and-ceo-beacon-council/",
-   "thin": false,
-   "desc": "Getting your Trinity Audio player ready... 🎙 Welcome to the Business Beyond the Beach Talk Show! The Miami Beach Chamber of Commerce is proud to present Business Beyond the Beach, the exclusive Chamber talk show…",
-   "draft": {
-    "headlines": [
-     "BEACON COUNCIL CEO RODRICK T. MILLER DISCUSSES MIAMI-DADE ECONOMIC GROWTH",
-     "SHAPING THE FUTURE OF MIAMI-DADE BUSINESS",
-     "HOW LEADERS DRIVE ECONOMIC GROWTH BEYOND THE SHORES OF MIAMI BEACH"
-    ],
-    "article": "Miami-Dade Beacon Council President and CEO Rodrick T. Miller joined host Brittnie Bassant on Business Beyond the Beach to examine the region's expanding economy. Bassant, who serves as President and CEO of the Miami Beach Chamber of Commerce, welcomed Miller to analyze the local business landscape. The discussion focused on driving investment, supporting local companies, and fostering opportunities for entrepreneurs across Miami-Dade County. Miller shared key perspectives on strengthening regional economic foundations and sustaining broad commercial expansion beyond the coastline. The program continues to spotlight influential changemakers and business innovators working to advance economic development across the greater Miami area.",
-    "imagePrompt": "A realistic editorial portrait of a professional business executive in a tailored suit seated in a modern broadcast studio, speaking thoughtfully during an interview. Warm cinematic studio lighting highlights the subject in the upper two-thirds of the vertical frame. The background features blurred acoustic panels, while the lower third consists of a simple, dark polished desk surface in deep shadow. Authentic texture, documentary photography style, no text, no logos, no watermarks.",
-    "circlePrompt": "A crisp, detailed close-up shot of a professional broadcast studio microphone mounted on an adjustable boom arm over a polished dark tabletop. The microphone is perfectly centered with soft ambient studio lighting creating subtle metallic reflections. The background is smooth and softly out of focus. Photorealistic texture, symmetrical composition, no people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Motorcyclist airlifted after collision with vehicle in NW Miami-Dade; SB Red Road shut down at Miami Lakes Drive",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPaG9YLWNfbVh3bXNLd3FCdHNxU2I5eTZVNGtLRDdlX3JTYnhqbFZEeWh0LU1iQVJEYm1CamJYRWItWDJZTmU4Yktsb3hfRDEwRDZqTElqZEpyVEt5clkxTG5rcGtlZGF0RVZtbE9UY2FyZHRpNTA0dVg5SjlGOUc4ZS1n?oc=5",
-   "t": 1792414744000,
-   "id": 3,
-   "link": "https://wsvn.com/news/local/miami-dade/motorcycle-crash-miami-dade-critical/",
-   "thin": false,
-   "desc": "NORTHWEST MIAMI-DADE, FLA. (WSVN) - Rescue crews airlifted a motorcycle rider to the hospital following a crash in Northwest Miami-Dade that led to traffic closures Read More",
-   "draft": {
-    "headlines": [
-     "MOTORCYCLIST AIRLIFTED IN CRITICAL CONDITION AFTER EARLY MORNING NORTHWEST MIAMI-DADE CRASH",
-     "CRITICAL MOTORCYCLE WRECK SHUTS DOWN SOUTHBOUND RED ROAD",
-     "RUSH HOUR DELAYS HIT MIAMI LAKES DRIVE AFTER SEVERE VEHICLE COLLISION"
-    ],
-    "article": "A motorcyclist is in critical condition at Ryder Trauma Center at Jackson Memorial Hospital following an early Monday morning crash in Northwest Miami-Dade. Miami-Dade Sheriff's Office deputies responded near Red Road, also known as Northwest 57th Avenue, and Miami Lakes Drive just before 5:50 a.m. Miami-Dade Fire Rescue paramedics airlifted the injured rider, while the involved driver remained at the site. The incident has disrupted the local morning commute. Southbound Red Road is currently shut down with traffic diverted westbound onto Miami Lakes Drive. Drivers are also encountering delays on the westbound Palmetto Expressway and are advised to take alternate routes.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation capturing an early morning roadway intersection in Northwest Miami-Dade during dawn. Emergency vehicle lights glow red and blue against the dim morning sky. Police patrol cars and an ambulance are positioned near traffic cones diverting traffic, with the vehicles and emergency scene occupying the upper two-thirds of the frame. The bottom third consists of dark, clean asphalt with soft reflections from the emergency beacons. Photojournalistic style, natural ambient street lighting, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic 1:1 square editorial photo showing a close-up, street-level view of an orange traffic safety cone resting on dark road asphalt at dawn. Distant, blurred red and blue emergency vehicle lights provide a soft glow across the wet pavement. Centered composition, high detail on the asphalt texture, no people, no faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami-Dade skyline is sinking unevenly, new research finds",
-   "source": "Sun Sentinel",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUGlnaTQxZ0piREVHbzlvazUxQzh3d21kUUI4YTd6bndlS0tvNkhXVWdYUjI4T3JhYmppM2h3Wmt1TVhneG9teENja0R1OGRod0JnWDBRSzV0RUJQejd1aFNZaXdFVXVBUzJfekJXUjltWHRHVGxSbVlpUlhHZVpQTHRpSnJfNDNfdUdHTERGamxmdzdTc0d0T1kyUENxelE?oc=5",
-   "t": 1792408058000,
-   "id": 4,
-   "link": "https://www.sun-sentinel.com/2026/10/19/miami-dade-skyline-is-sinking-unevenly-new-research-finds/",
-   "thin": false,
-   "desc": "This so-called differential settlement, engineers say, can potentially create long-term structural damage and dramatically increase maintenance and insurance costs.",
-   "draft": {
-    "headlines": [
-     "STUDY FINDS AT LEAST 35 MIAMI BARRIER ISLAND HIGH-RISES ARE SINKING UNEVENLY",
-     "MIAMI LUXURY TOWERS ARE TILTING AND SINKING INTO THE GROUND",
-     "COULD LUXURY TOWERS ON OUR COAST BE FACING HIDDEN STRUCTURAL DAMAGE?"
-    ],
-    "article": "New research from University of Miami professor Falk Amelung reveals that at least 35 high-rises along our barrier islands are sinking unevenly into the earth. The 2024 study examined prominent properties, including the Porsche Design Tower, the Faena Hotel, and towers named after Donald Trump. While massive structures normally stop settling shortly after completion, these coastal buildings continue to sink years later into the underlying sand and porous limestone. Engineers warn that this uneven sinking, known as differential settlement, causes towers to tilt and internally deform. Over time, these shifts could bring severe structural damage along with surging insurance and maintenance expenses across Miami-Dade.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation showing modern luxury high-rise towers rising along the Miami coastline under a dramatic overcast sky. The upper two-thirds features the sleek glass and concrete architectural facades of coastal towers. The bottom third is composed of deep, shadowy, dark coastal sand and textured foundation line, keeping the lower area simple and dimly lit. Realistic lighting, architectural photography, no text, no watermarks, no logos.",
-    "circlePrompt": "A realistic close-up square 1:1 detail photo showing the ground base of a massive concrete building meeting porous limestone bedrock and coastal sand. Centered composition focusing on the textured contact point where the foundation rests on the uneven ground. Sharp architectural detail, natural daylight, no people, no faces, no text, no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Watch Live | WPLG Local 10 | Miami news, weather, traffic, streaming | Local10.com",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBXX3N6VS1kcUgtTV8tcWxCanBBSHM4YXNCR2pIMnlHMFFzNmNZdS00NmlWc09FV0xjSEI5aGVOYlJFNkU?oc=5",
-   "t": 1792406884000,
-   "id": 5,
-   "link": "https://www.local10.com/live/",
+   "link": "https://therealdeal.com/miami/2026/10/20/hotel-executive-michael-krieger-finds-buyer-for-miami-home/",
    "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "LIVE COVERAGE TRACKS NEWS WEATHER AND TRAFFIC ACROSS SOUTH FLORIDA REGION",
-     "STREAMING SOUTH FLORIDA BREAKING NEWS AND TRAFFIC",
-     "KEEPING WATCH ON MIAMI BROWARD AND THE FLORIDA KEYS"
+     "HOTEL EXECUTIVE MICHAEL KRIEGER FINDS BUYER FOR $28M MIAMI BEACH HOME",
+     "$28M MIAMI BEACH HOME SECURES BUYER",
+     "INSIDE THE $28M MIAMI BEACH DEAL TIED TO HOTEL EXEC MICHAEL KRIEGER"
     ],
-    "article": "South Florida residents can access continuous real-time reports covering breaking news, regional weather, and traffic conditions across the metropolitan area. This ongoing coverage focuses on communities spanning Miami, Fort Lauderdale, Broward County, and the Florida Keys. Local television station WPLG Channel 10, an ABC affiliate in South Florida, provides multiple video streams and webcams through Local10.com. These digital viewing options allow locals to observe traffic movement, shifting local weather conditions, and active breaking stories happening across South Florida neighborhoods as events develop throughout the day.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait format showing a professional television broadcast studio camera in the upper two-thirds of the frame, angled toward illuminated studio monitors displaying regional maps and weather radars. Atmospheric studio lighting with subtle warm and cool tones highlights the camera equipment, while the bottom third of the frame consists of a clean, simple, dark studio floor in shadow. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo featuring a centered close-up of a modern outdoor highway traffic monitoring camera mounted on an industrial steel mast arm, set against a soft daylight sky with gentle tropical foliage blurred in the distant background. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "Miami Beach has recorded another notable residential development. Hotel executive Michael Krieger has officially found a buyer for his Miami Beach home, which holds a valuation of $28 million.\n\nThe transaction represents a notable sale for Krieger within the local area. The hotel executive successfully agreed to terms with a buyer for the $28 million Miami Beach property.\n\nThis major sale underscores ongoing multimillion-dollar real estate activity in Miami Beach as Krieger prepares to part with the prime residence.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation capturing a luxurious modern waterfront mansion in Miami Beach under bright midday tropical sunlight. The grand architectural facade of the multi-million-dollar estate, featuring sleek white walls, expansive glass balconies, and lush palm trees, fills the upper two-thirds of the frame. The bottom third features a simple, darker foreground of calm, deep blue water with subtle ripples. Photorealistic, high architectural detail, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 detail photograph focusing on the luxurious exterior gate and manicured entryway of a Miami Beach estate. A modern limestone column, smooth dark wood accents, and vibrant tropical foliage are cleanly centered in the frame. Natural sunlight creates sharp architectural shadows. No people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Motorcyclist flown to hospital in critical condition after crash in Miami Lakes",
+   "title": "South Florida sees some showers Tuesday, but rain chances rise by end of week",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeTlpeFBrWHZwbnJqT3lZeVBWVVU0RmpjSjcyUTRCRS12TDVnT3FKczB6VDJ4REF4SzlpREI4STJ1MmljWjdQUWNMdGxxS1l2T29GMDVRQlBzanF3S3BVcVhDUnRydHo0RFN3RnlFbmc5UVRTZTBvNmlaWW8wRUx2U2p0aERxd0R0X0ljbkVOeEgwWWhXeW1iTTV0M3dZRVNGVlZBalZ3Y2FwVzhLTFg0eUlFb2wxTEJhYVVXdGVCeWo?oc=5",
+   "t": 1792501160000,
+   "id": 2,
+   "link": "https://www.cbsnews.com/miami/news/south-florida-weather-forecast-miami-fort-lauderdale-miami-dade-broward-october-20-2026/",
+   "thin": false,
+   "desc": "The strong onshore winds are also leading to a dangerous high risk of rip currents along our Atlantic beaches.",
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE FACES HIGH WINDS, BEACH HAZARDS, AND SCATTERED SHOWERS",
+     "COOLER MORNINGS AND GUSTY WINDS SWEEP INTO SOUTH FLORIDA",
+     "ENJOY MIAMI'S FALL CHILL BEFORE STORMY CONDITIONS ARRIVE THIS WEEKEND"
+    ],
+    "article": "Miami-Dade woke up to spotty showers blowing across the area on Tuesday morning, paired with a welcome taste of fall. Early morning temperatures dipped into the low to mid-70s before warming toward the mid-80s for the afternoon.\n\nBlustery winds building between 25 and 30 mph are creating hazardous coastal conditions. A dangerous high risk of rip currents is active along Atlantic beaches through Friday, alongside a small craft advisory for Atlantic and Keys waters.\n\nWednesday will bring even cooler inland morning lows in the upper 60s, while coastal areas stay in the low 70s. After low 80s daytime highs and lighter winds mid-week, rain chances surge late week with scattered thunderstorms arriving for the weekend.",
+    "imagePrompt": "Vertical 3:4 editorial portrait photograph of dramatic ocean swells breaking against an empty Atlantic shoreline in South Florida on a blustery overcast day. Tall palm trees bend under powerful wind gusts in the upper two-thirds of the frame against a turbulent grey and blue sky. The lower third features dark, wet sand and receding foam with minimal detail. Moody atmospheric lighting, realistic coastal storm weather, shot on 35mm lens, high detail, no text, no people, no logos.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph of churning, foamy Atlantic ocean surf and turbulent sea spray crashing over coastal rock barriers. Centered composition showing deep turquoise water colliding into violent white sea foam, captured with sharp water droplets suspended in mid-air. Natural overcast lighting, fine ocean texture, no people, no faces, no text, no logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Early voting is underway in Miami-Dade County. Dates, locations",
+   "source": "USA Today",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPWWcyR1lMdXdyX0s1VHBSUkFrVGtXeVVoeU9ya2RabU1OU3Y0Z1ZrWW5tMEJjTndBczJjV2NmUFpINndETVpzc2NTTHpENjNCd2JfOThacklWVnQ3SngzT1QzQU1JY0VWb21wR1RDNC14em1DRTdIZFQ4QUNnanFfVzg1ZkZFTFk1Y0U1RlZjMGpkSUlGdTBKaVFGekU2Q1BUSmxsMVRPWktnMl8zZFlqN29fQmU1NENJOU1oUGhKNG9ubHVJa19RSlpkUW8?oc=5",
+   "t": 1792501140000,
+   "id": 3,
+   "link": "https://www.usatoday.com/story/news/state/florida/miami/2026/10/20/miami-dade-county-early-voting-guide-dates-locations/92342356007/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "EARLY VOTING IS UNDERWAY ACROSS MIAMI-DADE COUNTY THROUGH NOVEMBER 1",
+     "CAST YOUR MIAMI-DADE BALLOT EARLY NOW",
+     "MIAMI-DADE VOTERS HEAD TO THE POLLS AS EARLY VOTING BEGINS"
+    ],
+    "article": "Miami-Dade County residents can now cast their ballots early. Early voting began on Monday, Oct. 19, and continues through Nov. 1. Voting runs daily from 7 a.m. to 7 p.m. at designated sites where voters can also drop off ballots. The statewide mandatory early voting window takes place from Oct. 24 to Oct. 31, leading up to Florida's general election on Tuesday, Nov. 3. Voter registration closed on Oct. 5. Anyone planning to vote, whether during the early voting window or on election day, must bring a valid photo ID featuring a signature.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation showing an early voting polling center in South Florida. In the upper two-thirds of the frame, a voter stands at an individual voting booth, focused on casting a ballot under clean indoor lighting. The bottom third is composed of a simple, dark, out-of-focus floor. Authentic photojournalistic style, natural colors, with no visible text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo centered on a person's hands holding a pen, poised above a paper ballot on a voting desk. The hands and voting surface are centered with shallow depth of field. No people's faces, no visible text, letters, symbols, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Trailer catches fire in northwest Miami-Dade, possibly caused by blown transformer",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOTmpNUWxTNjZYYWswNTl5aHNfckhRVElYVHF3ZTgwMW0za0NkbEZpbXZZWHRJTC1qU1phby1tZXVZamFmYnUzTTk4OHVxVUFIcWctbVEwRWxjVXZnQVFnWXcyQ1BYeURES21EWlFtaUNrRElZSEo4LUkwd0ItSm9vOGdqOFNmUGlXb0xMM2hXcU9Yb0l1WFlPYThQeDBkZ3JVd2h1bzRMN0dVeHM3Ty00Zjk5OS1WUVgyZnZHLV9qeUJqNndsSUU4?oc=5",
+   "t": 1792498172000,
+   "id": 4,
+   "link": "https://www.local10.com/news/local/2026/10/20/trailer-catches-fire-in-northwest-miami-dade-possibly-caused-by-blown-transformer/",
+   "thin": false,
+   "desc": "Firefighters responded to an early morning blaze Tuesday involving a converted trailer and a box truck in northwest Miami-Dade, officials said.",
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE FIREFIGHTERS TACKLE EARLY MORNING TRAILER AND TRUCK FIRE ON NW 79TH",
+     "MASSIVE FLAMES ENGULF TRAILER IN NORTHWEST MIAMI-DADE",
+     "HOW MIAMI-DADE CREWS STOPPED A 3 A.M. BLAZE FROM SPREADING"
+    ],
+    "article": "Miami-Dade Fire Rescue teams tackled a dangerous fire early Tuesday morning in northwest Miami-Dade. Crews were dispatched around 3:21 a.m. to the 1200 block of Northwest 79th Street, sending 10 units to the scene. First responders arrived to discover a converted trailer and a box truck completely covered in flames. Firefighters quickly rolled out hose lines to confront the blaze. Their fast action successfully kept the flames from catching onto other vehicles parked nearby. Once the main fire was extinguished, crews sprayed specialized firefighting foam across the site to keep hot spots from reigniting. Officials reported no injuries, and an investigation into the cause is ongoing.",
+    "imagePrompt": "Editorial documentary photo in a 3:4 vertical orientation showing a dramatic night scene of firefighters extinguishing a burning commercial vehicle and trailer on a Miami street. Flashing red and amber emergency vehicle lights illuminate thick smoke rising into the dark sky. The fire and emergency operation occupy the upper two-thirds of the frame. The bottom third is composed of dark, wet asphalt reflecting faint emergency lighting with deep shadows. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic close-up square 1:1 photograph showing thick white firefighting foam blanketing the charred, scorched metal surface and wheel of a burned vehicle after a fire. The texture of the dense foam and blackened metal is centered in the frame under pre-dawn street lighting. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Hialeah police warn of phone scammers pretending to be officers, demanding money",
    "source": "NBC 6 South Florida",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVzF1SXJfRnNaVC16bFVhM0dwTjg5QjNlbEgzVFhEU2Z2MzJ1VVd5YnA3REZWdzJMOUFPN0hXV01TaWRqSFNJUHdrWmp1V0FPb0d5cGNaV0tWUUEwSVpZeEJSbXBacE50WGNveFJRZ3JiV016dEZLU080cHVER0NFRHdPTkJmOG1UOFJIdXFFeEc1T1NmRW8xcdIBoAFBVV95cUxQank2U3JIb2lITHdJX005bTViSGk2ZFFDb3VpdHdBWUJMUWhsZlBYYnNzelZOVGdZdHZuRmNkS2R5RDBsRDJvUHIwMlBGLXlUNlBFOENSZWhkOGktdURYRlliQTlmVzlMa2ZETmhvMEhPTUF4ejJzNk9mSkdEWVZnbVFyM2dhZ3Q1MnloZWYwbWVQODFsdm1MbWJ0VE5qcUhv?oc=5",
-   "t": 1792405613000,
-   "id": 6,
-   "link": "https://www.nbcmiami.com/news/local/motorcyclist-critical-condition-crash-miami-dade/3874603/",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPdjJCS3Q4OWd6LXNPX2N3WVJZYXVROG9wbl9FR3BxWXpFT1JUc3llcFNCbzc0d25HWW1qR3QzdVpMNFNwaHFMYk5FMFNOVjE2Tm05cjBPODNIQmJ2cmFXc2hKVTN2RjhJSDV1bFdUdnVXUnZiREx6ZU4yZ1FQdnJxTG1uNVE0RjBWWjRhUmJIckpwSlh6cnk3OUNjdXJKUdIBpgFBVV95cUxQWVZ2TU41UUEtVEZoQlFPU0Q4bjloYWdGRk9DUkE4MkYzTzB4SnZzWEVnQm1mR3dnVGRQZXhKQ3h3aVNIQ0NHVk9oZnZfaGk5dFBQY3BqTFMtV1VzT3dNRktNRENaR09ILTJIUjlOeVRtdHBnQXpCeGFLRnJYMGpBVnBraVgzdGVzYjgwV2VPc0ViMWUtQmFyNnhXNkpsWUxQWE9ZeTNB?oc=5",
+   "t": 1792497934000,
+   "id": 5,
+   "link": "https://www.nbcmiami.com/news/local/hialeah-police-phone-scam-fake-officers-demand-money/3875024/",
    "thin": false,
-   "desc": "The Miami-Dade Sheriff’s Office responded to the crash at around 5:49 a.m. in the area of Northwest 57th Avenue and Miami Lakes Drive.",
+   "desc": "In some cases they’re even using real officer names, badge numbers, and fake caller ID information to appear legitimate, authorities said.",
    "draft": {
     "headlines": [
-     "MOTORCYCLIST AIRLIFTED IN CRITICAL CONDITION AFTER EARLY MORNING MIAMI LAKES CRASH",
-     "CRITICAL CRASH IN MIAMI LAKES SENDS MOTORCYCLIST TO RYDER TRAUMA",
-     "WHAT CAUSED THE EARLY MORNING MOTORCYCLE CRASH ON MIAMI LAKES DRIVE?"
+     "HIALEAH POLICE WARN OF SCAMMERS POSING AS OFFICERS TO DEMAND CASH",
+     "BEWARE OF FAKE POLICE PHONE CALLS TARGETING HIALEAH RESIDENTS",
+     "HIALEAH RESIDENTS URGED TO HANG UP ON SUSPICIOUS POLICE CALLS"
     ],
-    "article": "A motorcyclist was flown to the hospital in critical condition following an early Monday morning crash in Miami-Dade. The incident occurred at approximately 5:49 a.m. in the area of Northwest 57th Avenue and Miami Lakes Drive in Miami Lakes. First responders from Miami-Dade Fire Rescue arrived at the intersection and airlifted the injured motorcyclist directly to Jackson Memorial Hospital's Ryder Trauma Center. The Miami-Dade Sheriff's Office also responded to the scene. Authorities reported that it was not immediately known what may have caused the collision.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait format capturing an early morning roadway intersection at dawn in suburban Miami Lakes. In the upper two-thirds, emergency vehicle flashing lights cast red and blue glows on the roadway near palm trees under a dim morning sky, with a medical evacuation helicopter hovering in the distance. The bottom third consists of dark, shadowy road pavement with soft pavement reflections. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a single motorcycle helmet resting on the asphalt road shoulder near an orange traffic cone under soft morning street lighting. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "The Hialeah Police Department is alerting the community after scammers posing as law enforcement officers began targeting local residents over the phone. Fraudsters are telling people that they have outstanding warrants, pending cases, or unpaid bonds, and they are demanding payments. Authorities note that these callers sometimes use actual officer names, real badge numbers, and spoofed caller ID details to deceive targets. Officials emphasize that police will never contact anyone by phone to demand money to avoid an arrest. Anyone receiving such a call should hang up immediately and report the incident to Hialeah police at 305-687-2525.",
+    "imagePrompt": "Editorial style photograph in a 3:4 vertical orientation of a person holding a modern smartphone to their ear with a concerned expression, seated indoors in bright South Florida ambient light. The person and phone occupy the upper two-thirds of the frame. The bottom third is composed of a simple, dark, out-of-focus tabletop surface. Realistic documentary aesthetic, natural lighting, shallow depth of field, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up shot centered on a sleek smartphone resting flat on a dark wooden table beside a set of metal keys. Soft atmospheric lighting, sharp focus on the phone silhouette, shallow depth of field with blurry background, no people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Art Basel Las Vegas? The Fight Over Miami Beach’s Fair",
-   "source": "The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxONnFCbzVqaVNpMjd2LTVMbEd0R3FPSWhQWUtieW94alFFWUZTbWwxbUx2c0FjMGcxb0pYdWdRR3JmQzNKM3pWRk5YUkFxZ3A1VTVkUC1Ud1pmVUtsT0I3SW5SdzlZQ0tSMVAtaDAwYkZZLUtNX2lwYi1YY240ZGFEQmxKZ0UxLXQ2OGNlUnRaMDQtQQ?oc=5",
-   "t": 1792400637000,
-   "id": 7,
-   "thin": true,
-   "draft": {
-    "headlines": [
-     "A FIGHT EMERGES OVER MIAMI BEACH ART BASEL FAIR AND LAS VEGAS",
-     "FIGHT ERUPTS OVER MIAMI BEACH ART BASEL FAIR",
-     "COULD MIAMI BEACH REALLY LOSE ITS ART BASEL FAIR TO LAS VEGAS"
-    ],
-    "article": "A fight has surfaced over the future of Miami Beach's premier art fair, with Las Vegas entering the conversation around Art Basel. The dispute puts Miami Beach at the center of attention as debates swirl over the fair. For South Florida, the annual event is deeply woven into the local cultural fabric. Now, questions about Art Basel and Las Vegas have triggered a battle over the fair. The community is watching intently as the fight over the Miami Beach fair continues to unfold.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing the exterior of a bright modern exhibition center in Miami Beach beneath clear skies and palm trees. The striking geometric architecture occupies the upper two-thirds of the frame, while the bottom third is composed of a simple, darker shaded concrete plaza. Natural daylight, contemporary coastal atmosphere. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo presenting a centered close-up detail of contemporary art gallery walls and minimalist structural pedestals under soft indoor spotlighting. Polished smooth surfaces with elegant shadows create depth. No people's faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "The Miami Dolphins are one step closer to this year’s ultimate prize",
-   "source": "Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZnlJbjdUMVFQdlI0cHZOYzdIQXhGM2M3ZnZOZER4SjREZ1h0WlptYUdpcmF0M0VSQmJRd1ZDOFVjNE1RWS1OVEdkUUtqTndsLWNHcFVBMDdheU45Z3g3Y2s2a3dWLVFZLWpFMG1qX2pEbTNQWjFOanNGUTJXQk9kQ3pwdU9FUQ?oc=5",
-   "t": 1792416257000,
-   "id": 8,
-   "link": "https://sports.yahoo.com/articles/miami-dolphins-one-step-closer-132417279.html",
-   "thin": true,
-   "desc": "The Chargers might currently own the first overall pick, but the Dolphins have everything needed to finish the season sitting pretty at the bottom of the NFL.",
-   "draft": {
-    "headlines": [
-     "DOLPHINS POSITIONED TO FINISH AT THE BOTTOM OF THE NFL",
-     "EYEING THE FIRST OVERALL PICK",
-     "CAN MIAMI OVERTAKE THE CHARGERS FOR THE TOP DRAFT PICK"
-    ],
-    "article": "The Miami Dolphins are closing in on a unique position as the current football season unfolds. While the Chargers currently hold the first overall pick, Miami has everything required to conclude the year ranked at the very bottom of the NFL.\n\nLocal fans tracking the standings know that sliding to the base of the league can provide a clear path to that top spot. Even though the Chargers hold the advantage right now, the Dolphins are positioned to finish beneath every other team across the league by the time the season wraps up.",
-    "imagePrompt": "A vertical editorial shot of an empty professional football stadium under dramatic dusk lighting in South Florida. The vast upper seating bowl and vibrant emerald field occupy the upper two-thirds of the frame, bathed in moody evening floodlights. The bottom third features dark, shadowed grass and out-of-focus turf creating a clean, simple, dark gradient. Realistic sports photography, cinematic lighting, no text, no logos, no branding, no watermarks.",
-    "circlePrompt": "A centered close-up shot of a classic textured leather football resting on pristine green stadium turf under evening spotlights. Shallow depth of field with the football sharply focused in the dead center of the frame and a soft, blurred stadium background. Clean, realistic sports equipment photography, no people, no faces, no logos, no text, no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Miami Dolphins offense: How to solve a problem like Malik Willis?",
-   "source": "The Phinsider",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQbEV0S0syUjh1V0wwQm5DTmwxZE1CdUhtXzJ3Zl8xRFg5a0gtWENtbDBicGVKOHZ1eU8tMXZ1LU5WT0FWN044M0xlZHJaODVvbnRxeVpVdXNVU2VCT2xjV0JmRjNEaFA2ZURJRTdMbGFrZUQ1R0hWbjBJYVE4QThFZjlCX1ctbHNzWGZ1cWhOMjZJd1dZSFV4dEdhQWhuWnRPRU8wbGpaM2h2UGJkeFIxaFNRcUdId1ZaWUJ6cnpMU0E?oc=5",
-   "t": 1792414800000,
-   "id": 9,
-   "link": "https://www.thephinsider.com/miami-dolphins-analysis/123875/miami-dolphins-offense-how-to-solve-a-problem-like-malik-willis",
+   "title": "Fall mosquito tips from Miami-Dade County",
+   "source": "IslanderNews.com",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPX25YSnVybUVLNW40aEpUY1loR2I5QVgteW51aVVob3hESTZxUlgyNHRqTXF1elg0b2xFYVY0UUpqYXhRMmhCUnp0RU1OaFZfZEpNMlQxSWZSdFVaMHB6b29pcnpfYzd2RFVZa1l5VnBOUGZwRzZnN1c3N2tkSDJsSVc4RW5HZVZaUHpMNlQwSWxmQTM3VGJUWndkbHkyRTdOQ1dqTl9vVVlwWkF5MlZ4TC1xNENDenNOT2xYcWpZNzVqWGNGOHFvb1c0UUR2RTQyTGJN?oc=5",
+   "t": 1792496700000,
+   "id": 6,
+   "link": "https://www.islandernews.com/lifestyle/health/fall-mosquito-tips-from-miami-dade-county/article_713c2154-5379-4f02-bff5-aad11c9e75d4.html",
    "thin": false,
-   "desc": "The Dolphins passing game has struggled this season. How do you fix quarterback Malik Willis?",
+   "desc": "Mosquitoes remain active in Miami-Dade through fall. Learn how to reduce bites and breeding areas as the county responds to locally transmitted dengue cases.",
    "draft": {
     "headlines": [
-     "MIAMI DOLPHINS FACE OFFENSIVE STRUGGLES AS MALIK WILLIS WORKS TO DEVELOP",
-     "FIXING THE DOLPHINS PASSING ATTACK",
-     "CAN COACH MIKE MCDANIEL UNLOCK MALIK WILLIS IN MIAMI"
+     "MIAMI-DADE ISSUES MOSQUITO ALERT AFTER LOCAL DENGUE CASES CONFIRMED",
+     "DRAIN STANDING WATER AS MIAMI FIGHTS FALL MOSQUITOES",
+     "WHY MIAMI-DADE TEAMS NEVER STOP TARGETING BREEDING SITES THIS FALL"
     ],
-    "article": "The Miami Dolphins are confronting ongoing struggles in their passing game this season as questions surround quarterback Malik Willis and his progression. Head coach Mike McDaniel operates a timing and precision offense, which contrasts sharply with the deep-shot systems Willis ran in college at Auburn under Gus Malzahn and at Liberty under Hugh Freeze.\n\nLocal fans are watching closely to see if Willis can develop into an effective starter or secure a dependable role like former Miami backups Don Strock and Earl Morrall. With Mr. Sullivan now managing the draft selections following the previous regime under Grier, the Dolphins face a critical test in elevating their offensive talent and finding consistency on the field.",
-    "imagePrompt": "Editorial vertical 3:4 portrait photo of a professional football quarterback wearing a teal and white jersey on an open-air stadium field during a sunny afternoon, gripping a football in a throwing stance. The subject is positioned in the upper two-thirds of the frame, with the bottom third featuring simple, darker out-of-focus green turf. Crisp athletic photography, realistic lighting, with no text, letters, logos, or watermarks.",
-    "circlePrompt": "Realistic square 1:1 close-up photo centered on a leather American football sitting on sunny natural grass turf along a stadium sideline. Sharp focus on the pebbled brown surface and white laces, with a soft blurred background of the empty playing field. No people, no faces, and no text, letters, logos, or watermarks."
+    "article": "Miami-Dade County remains under a mosquito-borne illness alert following confirmed local dengue transmissions this fall. Even as rain decreases and temperatures cool, local mosquito activity continues across the area.\n\nIn response, the Mosquito Control Division of the Department of Solid Waste Management is deploying truck spray treatments using Bti larvicide alongside adult mosquito spraying. County technicians monitor more than 350 traps every week, while partnering with the Florida Department of Health, the University of Florida, and Florida International University on viral tracking and testing.\n\nOfficials urge residents to empty standing water, as species such as Aedes aegypti require only one ounce of water to breed. Property inspections can be requested by calling 311.",
+    "imagePrompt": "A vertical editorial photograph of a municipal mosquito control technician wearing protective gear and gloves while inspecting tropical foliage in a Miami residential setting at dusk. The technician is positioned in the upper two-thirds of the frame with soft evening light touching palm leaves. The bottom third is composed of dark, simple pavement and low garden shadows. High-resolution documentary style, no text, no logos, no watermarks.",
+    "circlePrompt": "A square macro photograph centered on a shallow pool of clear rainwater resting inside an outdoor container, revealing tiny mosquito larvae floating beneath the surface in crisp detail. Natural outdoor daylight, lush out-of-focus tropical greenery in the background, no people, no text, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "News | Luxury-led growth extends across Miami hotel market",
+   "source": "CoStar",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOczhNUXVGaUxtSnBRYnRkSDJrSEU4UVRBT2xHOWtRZGc4SGdSRDd1OEdwVkk3NWYyNFAybkd0U3lfTmJ4VVBNa2IwblR0Y1U0ZFdXbEp3ME8ybTZyVHZOdDYxOFZNSkRwMmNJLUxMdHlrS0h2LVkySHhUSWZGYWpUWjJZZjBLbHlmUlZNcFpZbk5vZndZekZv?oc=5",
+   "t": 1792494292000,
+   "id": 7,
+   "link": "https://www.costar.com/article/319346259/luxury-led-growth-extends-across-miami-hotel-market",
+   "thin": false,
+   "desc": "Surge in high-end travel, World Cup demand, major property upgrades fuel record year-over-year performance",
+   "draft": {
+    "headlines": [
+     "MIAMI HOTELS HIT RECORD PERFORMANCE BEHIND LUXURY TRAVEL AND WORLD CUP DEMAND",
+     "LUXURY TRAVEL SURGE DRIVES RECORD MIAMI HOTEL GROWTH",
+     "HOW HIGH-END PROPERTIES ARE PUSHING MIAMI HOTEL RATES TO RECORD HIGHS"
+    ],
+    "article": "Miami hotels are reaching record year-over-year performance as luxury tourism expands across the local market. High-end travel, preparations for World Cup demand, and extensive property upgrades are powering this surge. Throughout the area, a strong concentration of upscale destinations continues to push the rate ceiling higher. The local hospitality sector is setting new benchmarks as affluent visitors arrive in greater numbers. With prestigious accommodations upgrading their spaces and major global events drawing interest, Miami remains at the forefront of national luxury hospitality growth.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photograph showing the exterior of a modern, upscale Miami luxury resort. The upper two-thirds features striking architecture, towering palm trees, and sunbeds beside a sparkling infinity pool under bright coastal sunlight. The bottom third is composed of darker, shadowed poolside stone pavers. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic 1:1 square photograph showing a centered close-up detail of an opulent hotel lobby interior, highlighting a polished marble counter with a modern tropical floral arrangement and sleek architectural lighting. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "📸 2026 Miami Dolphins: Week 7 Practice",
+   "source": "Miami Dolphins",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBYdXRPbmRhdHBrbjRxOWt4OVBnUXZaZTFlYUNDd0c4LVZFTXFaVEp3cmcwd2tWYWZ1WXNGSTQxcDF2U0VJbjY3Q2s4REtCdUlJRHhlM1k3ejgtTFlaMHNFRU1XNXV4cGpOVjdOZVZrM2hwYUxDZVNSZWtaLTY?oc=5",
+   "t": 1792502566000,
+   "id": 8,
+   "link": "https://www.miamidolphins.com/photos/2026-miami-dolphins-week-7-practice",
+   "thin": false,
+   "desc": "Check out selects from the Dolphins practices ahead of their Week 7 game against the New York Jets.",
+   "draft": {
+    "headlines": [
+     "DOLPHINS HOLD WEEK 7 PRACTICE IN MIAMI GARDENS AHEAD OF JETS MATCHUP",
+     "DOLPHINS GEAR UP IN MIAMI GARDENS FOR WEEK 7",
+     "OUR DOLPHINS HIT THE MIAMI GARDENS TURF TO PREPARE FOR JETS"
+    ],
+    "article": "The Miami Dolphins returned to work in Miami Gardens on Monday, Oct. 19, 2026, holding team practice ahead of their Week 7 showdown against the New York Jets. Quarterback Malik Willis led the offense through passing drills under the South Florida sun. Receivers Jalen Tolbert, Caleb Douglas, Kevin Coleman Jr., and Malik Washington worked on route running and catches alongside center Andrew Meyer. On the defensive side, edge rusher Josh Uche and linebacker Willie Gay Jr. went through position reps, while cornerbacks Chris Johnson and Jason Marshall Jr. joined safeties Julius Wood, Michael Taaffe, and Dante Trader Jr. in secondary preparations.",
+    "imagePrompt": "A realistic editorial sports photo in a 3:4 vertical portrait orientation of an American football quarterback preparing to throw during a team practice session outdoors on a sunny green field in Miami Gardens. The athlete is positioned in the upper two-thirds of the frame, captured in crisp athletic motion with a dynamic posture. The bottom third of the frame consists of simple, darker, out-of-focus green grass creating negative space. Professional sports photography lighting, realistic athletic apparel, no visible text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo focusing on an American football resting upright on freshly cut green grass on an outdoor training field. The football is centered in the frame with sharp focus on the textured pebbled leather and white laces, with the sunny practice turf softly blurred in the background. No people, no faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "New look, fresh outlook, and all eyes on Heat’s Riley remix as season No. 39 looms",
+   "source": "Sun Sentinel",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMnpWcmw3T21wQXc0Wm5UdUZXX1dTNGtUdGtmY19Ka3FQaEJ0RjgycUJHMDZ6a25ncW5Kdjdodi1rYmFpY3ZOVUxBNzNfcHVKZDJUUl9UdzZIZjJBbnFwaDA5eTB1VnpwejY0TU5OZ2hLWk44UmVrVXcxanVjN0NMNEJ1U0R2bk1kSE1WZGdoNGRqcjBkb2w5TlNPSlN6a0VkWVRBMjRGaUtLaWhrcmlIZ1psYlFxWEJNbXl3?oc=5",
+   "t": 1792501235000,
+   "id": 9,
+   "link": "https://www.sun-sentinel.com/2026/10/20/new-look-fresh-outlook-and-all-eyes-on-heats-riley-remix-as-season-no-39-looms/",
+   "thin": false,
+   "desc": "The starting lineup says only a 40% adjustment year-to-year. But for the Miami Heat, it feels far more significant, practically a new era.",
+   "draft": {
+    "headlines": [
+     "HEAT HOST TIMBERWOLVES WEDNESDAY AT KASEYA CENTER TO OPEN SEASON 39",
+     "GIANNIS AND KLAY DEBUT IN MIAMI FOR SEASON OPENER",
+     "A POWERFUL NEW ERA BEGINS FOR BASKETBALL FANS IN DOWNTOWN MIAMI"
+    ],
+    "article": "The Miami Heat begin their 39th season Wednesday night at Kaseya Center against the Minnesota Timberwolves, presenting a revamped lineup to local fans. Head coach Erik Spoelstra is expected to start Bam Adebayo, Andrew Wiggins, Davion Mitchell, Klay Thompson, and Giannis Antetokounmpo.\n\nHeat President Pat Riley restructured the roster following Miami missing the playoffs for the first time in seven years. Offseason additions also include Bobby Portis Jr. and Tim Hardaway Jr.\n\nFollowing training camp sessions at Florida Atlantic University and final practices downtown, Spoelstra noted the team will emphasize court running pace and deep roster contributions throughout the 82 game campaign.",
+    "imagePrompt": "A realistic editorial portrait of a professional basketball head coach standing thoughtfully on a basketball court sideline under arena lighting. The coach wears athletic coaching apparel and looks out toward the hardwood during an evening practice session. The main subject occupies the upper two-thirds of the vertical frame, while the lower third recedes into soft, darker court floor shadows. No text, letters, logos, or watermarks, 3:4 vertical portrait.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph of a professional leather basketball resting cleanly on a polished hardwood arena floor under overhead stadium spotlights. The basketball is centered with gentle reflections glistening across the glossy floorboards around it. The background is softly blurred into stadium shadows. No people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1906: canals begin draining the Everglades",
-   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
+   "title": "1836: Dade County is created",
+   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
    "id": 10,
    "draft": {
     "headlines": [
-     "CANALS BEGAN DRAINING WATER FROM THE FLORIDA EVERGLADES IN 1906",
-     "1906: DRAINING THE EVERGLADES BEGAN WITH CANALS",
-     "HOW WORK TO REMOVE EVERGLADES WATER STARTED WITH 1906 CANALS"
+     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
+     "DADE COUNTY AND FORT DALLAS FOUNDED IN 1836",
+     "REMEMBERING THE 1836 CREATION OF DADE COUNTY AND FORT DALLAS"
     ],
-    "article": "A defining chapter in our South Florida regional history dates back to 1906, when canals were begun to remove water from the Florida Everglades. Right here by our area, this historic effort officially initiated the process of draining the Everglades. The year 1906 served as the starting point for the canal network. Canals were begun with the direct purpose to remove water from the Florida Everglades, launching the historic draining of the Everglades that border our community.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 editorial photograph from 1906 showing an early excavated canal cutting through the wild Florida Everglades wetlands. Sawgrass, dark shallow water, and earthen mounds along the canal banks under a humid Florida sky dominate the upper two-thirds. The bottom third is composed of deep, dark swamp water and muddy foreground reflections. Sepia and faded monochrome tones, authentic early twentieth-century camera grain, no people visible, no modern structures, no text, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centering on a historic early-1900s dredge shovel resting in thick Everglades peat and muddy wetland water. Weathered, rusted iron machinery texture in sharp focus, surrounded by swamp reeds and water. Centered composition, vintage muted natural lighting, no faces, no people, no text, no watermarks."
+    "article": "Our local area marked a major milestone on February 4, 1836, when Dade County was officially created. The newly formed county was named after Major Francis L. Dade and the Miami River. The year 1836 also marked the construction of Fort Dallas. Once built, Fort Dallas served as a military base during the Second Seminole War, making 1836 a defining year for the establishment of Dade County, the Miami River territory, and the military post.",
+    "imagePrompt": "A vintage, archival-style editorial vertical 3:4 portrait depicting an 1830s frontier military outpost along a subtropical riverbank. Rough-hewn wooden palisades, blockhouse structures, and tall native pine trees dominate the upper two-thirds of the image beneath hazy skies. The bottom third consists of a simple, darkened foreground of shaded soil and coastal brush. Sepia and muted historical tones, aged paper grain, and soft diffused sunlight. No text, letters, logos, watermarks, or identifiable people.",
+    "circlePrompt": "A realistic square 1:1 photograph closely centered on an authentic 1830s iron military encampment lantern resting on a rugged timber post outdoors. Detailed iron oxidation, rain weathering, and rough wood texture in sharp focus, with a soft-focus green subtropical background. No faces, text, letters, logos, or watermarks."
    }
   }
  ]
