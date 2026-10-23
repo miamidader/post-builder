@@ -1,218 +1,216 @@
 {
- "date": "Thursday, October 22",
- "pick": "mvjl5sn9",
+ "date": "Friday, October 23",
+ "pick": "mvl0gm2s",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "EXCLUSIVE: Tommy Bahama to take over popular Miami Beach bar this November",
-   "source": "Miami New Times",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbmNZMGJuXzhJSkRRNHUtSEdWY0x5WGtsdFoxS0RQbWxGa3ppcFU3bGZ4RVA4cDRqWEpCQlFrbmVjb1lzSU93SVE2QWZFaGZINjJ0YmZuSS1OcnI2T2toWkc2Y0hUcGpFTnB0Q2FfUTJudFhZcUFTQ0lRWGFLTnBNMmg3WXc5MXllTVAxVHdnb0NxMkpqcXFRNFJDRUo5cmdQc0ZENTNNX0RCa2t1dE44QQ?oc=5",
-   "t": 1792675800000,
-   "id": 1,
-   "link": "https://www.miaminewtimes.com/food-drink/tommy-bahama-to-take-over-rays-miami-beach-bar-this-november-40593338/",
-   "thin": false,
-   "desc": "Tommy Bahama and Ray's are teaming up for a weeklong Miami Beach takeover in November with exclusive merch and cocktails.",
-   "draft": {
-    "headlines": [
-     "TOMMY BAHAMA TAKES OVER RAYS HOMETOWN BAR IN MIAMI BEACH",
-     "TOMMY BAHAMA IS TAKING OVER MIAMI BEACH THIS NOVEMBER",
-     "TROPICAL POP-UP TAKEOVER HEADS TO MIAMI BEACH THIS NOVEMBER"
-    ],
-    "article": "Tommy Bahama is teaming up with Ray's Hometown Bar inside Freehand Miami for a weeklong Miami Beach takeover from November 9 through 15. The collaboration introduces a South Florida inspired capsule collection featuring teal and coral tones, alongside daily happy hours with specialty drinks like Tommy's Chong and Tommy Sands. On Thursday, November 12, from 6 to 9 p.m., the venue will host an Island Time launch party complete with a cigar-cutting station, prize wheel, and photo opportunities. Freehand Miami visitors can also enjoy complimentary access to branded beach chairs and umbrellas throughout the celebration.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of an open-air tropical bar patio in Miami Beach under warm golden afternoon sunlight. The upper two-thirds showcases lush green palm leaves framing a vibrant bar setup with crystal glassware and fresh tropical citrus accents. The bottom third consists of simple, darker shadows cast across a sleek dark wooden deck. Photographed with natural lighting, rich textures, and no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo capturing a centered, top-down close-up view of three colorful craft cocktails in condensation-beaded glasses garnished with watermelon and fresh herbs on a rustic outdoor wooden surface in dappled sunlight. No people, no faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "State restores $200 million, fully funding long-planned Miami-to-Aventura commuter train",
-   "source": "WLRN",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOV0Z1bnlPbmhJNThVNm82TDB5ZHFxTEwxbjFsN1pPeVRvRGRIZVFiM3JWTThhSjBPcWpKcHVuUjRKVFBra0t4QUV3dEQ5RjBmMm5MTXBRY1FkWExhaW9TUU9BT0JJNEg3bTJBd0o0UXJQdDRTaE1QU2gtaGtCOHFnRjZQcWNsQ1FSXzBvQUM3YlpXcS1TTGV3LWtzbw?oc=5",
-   "t": 1792675320000,
-   "id": 2,
-   "link": "https://www.wlrn.org/transportation/2026-10-22/northeast-corridor-miami-aventura-commuter-train",
-   "thin": false,
-   "desc": "The 'Northeast Corridor' train line has been promised to residents of North Dade for decades, but it has struggled to assemble the funding needed to make it happen.",
-   "draft": {
-    "headlines": [
-     "STATE RESTORES $200 MILLION TO FULLY FUND MIAMI-AVENTURA TRAIN",
-     "NORTHEAST CORRIDOR COMMUTER TRAIN SECURES FULL CONSTRUCTION FUNDING",
-     "FIVE MIAMI NEIGHBORHOODS TO GET NEW COMMUTER RAIL ACCESS"
-    ],
-    "article": "A long-awaited commuter rail connection between downtown Miami and Aventura has reached full funding after the Florida Department of Transportation restored $200 million to its five-year transit work plan. The restored state allocation fills the final gap for the $927.3 million Northeast Corridor project.\n\nMiami-Dade County has pledged $337.9 million toward the line, backed by $389 million in federal funding. Running from MiamiCentral along Florida East Coast Railway tracks, the public transit line plans to build five new stations serving Wynwood, the Miami Design District, Little Haiti, North Miami, and near Florida International University's Biscayne Bay campus.\n\nThe route will serve as the first leg of the planned 85-mile regional Coastal Link.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing a sleek commuter train traveling along railway tracks through an urban Miami neighborhood. The upper two-thirds of the image features the train, tropical palm trees, and modern buildings under bright coastal sunlight. The bottom third is composed of dark track bed ballast and cool road shadows, remaining simple and dark. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up, centered view of parallel steel railroad tracks running along modern concrete railroad ties. The tracks recede symmetrically toward the horizon, bordered by sunlit crushed gravel ballast and soft-focus tropical greenery. No people, faces, text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "The Restaurant at Harbour Club Miami Beach: Bachour, Danila & Dinner",
-   "source": "Haute Living",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN096VXJ5UDVMNjdiMjBHWlBXVnZfbjhQSGQ1QkVXRktOeloyMXIwQWJrQnhWdk5VYzREZG1NdUVnZ21kQ3lCcWxQTzdkcTg4Y3h2R3pJanpxYkpBYlhOcGRWQVJsNElsemQ3X1VfRE9nT2ZOb2c2YXY0RjBoQlAzVg?oc=5",
-   "t": 1792674553000,
-   "id": 3,
-   "thin": true,
-   "draft": {
-    "headlines": [
-     "THE RESTAURANT AT HARBOUR CLUB MIAMI BEACH FEATURES BACHOUR AND DANILA",
-     "DINNER AT HARBOUR CLUB MIAMI BEACH WITH BACHOUR AND DANILA",
-     "MIAMI BEACH DINNER SPOTLIGHTS BACHOUR AT HARBOUR CLUB"
-    ],
-    "article": "Miami Beach welcomes attention to The Restaurant at Harbour Club, where dinner features Bachour and Danila. This Miami Beach address serves dinner at Harbour Club, connecting Danila and Bachour at the establishment. Those following dining updates in Miami Beach can look to The Restaurant at Harbour Club for dinner service. Harbour Club in Miami Beach remains the destination for The Restaurant, with Bachour and Danila associated with dinner at the setting.",
-    "imagePrompt": "An elegant fine dining room inside an upscale coastal Miami Beach venue during evening dinner service, vertical portrait orientation. Warm ambient lighting, dressed dining tables, and modern luxury architecture occupy the upper two-thirds of the frame. The bottom third features dark, minimalist flooring receding into shadow. Realistic editorial photography style, no people, no text, no logos, no watermarks.",
-    "circlePrompt": "A centered close-up shot of an artfully plated gourmet dinner course presented on a designer ceramic plate atop a linen dining table in a soft ambient evening restaurant setting. Crisp focus on the culinary presentation, square 1:1 framing, no people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Girl Hospitalized After Pit Bull Attack in NW Miami-Dade",
-   "source": "Hoodline",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNTy02UGNDdmR3aE9fY2lYemF6LUY1RGJheEFqVHI4emFJR2xyV0FjOTY0d1h3ZEtWN0J0U1otSW4zNGZhTTFxYVI0Q0NKLVctbmtxeTE3UlhfR1RPcXVQTGxaeEVhSkk0ak0zOUVKRWFqMUlzVS1zOGlPekxFQnZpU0luZHlIUC0yNnJkNTRraVZqX25ZclU5R1htNjdNV2Ezc0IxM2Zn?oc=5",
-   "t": 1792673373000,
-   "id": 4,
-   "link": "https://hoodline.com/2026/10/family-pit-bull-mauls-girl-in-nw-miami-dade-deputies-taser-dog-it-escapes/",
-   "thin": false,
-   "desc": "A girl was rushed to Jackson Memorial after her family's pit bull bit her — then the dog fled before deputies could stop it.",
-   "draft": {
-    "headlines": [
-     "GIRL HOSPITALIZED AFTER PIT BULL ATTACK IN NORTHWEST MIAMI-DADE",
-     "FAMILY PIT BULL BITES CHILD THEN ESCAPES IN MIAMI-DADE",
-     "SEARCH UNDERWAY ACROSS NORTHWEST MIAMI-DADE AFTER CHILD ATTACKED AT HOME"
-    ],
-    "article": "A young girl was rushed to Jackson Memorial Hospital on Wednesday night after being bitten by her family's American pit bull inside a home in northwest Miami-Dade. Emergency crews and Miami-Dade Sheriff's Office deputies rushed to the 1700 block of Northwest 66th Street, where a neighbor reported seeing the child bleeding heavily from her arm.\n\nWhen deputies arrived at the property, the animal moved toward them. Deputies deployed a Taser to prevent another attack, but the dog was not struck and fled the scene.\n\nSecurity cameras later captured a dog matching its description roaming nearby streets. The girl's condition remains unknown, and the dog has not yet been located.",
-    "imagePrompt": "Editorial documentary photo of a residential street at night in Northwest Miami-Dade, with emergency vehicle light bars casting red and blue illumination across single-story homes and palm trees in the upper two-thirds of the frame. The bottom third features dark asphalt with soft wet reflections. Realistic journalism photography, 3:4 vertical aspect ratio, atmospheric evening lighting, no people, no text, no watermarks.",
-    "circlePrompt": "Centered square 1:1 realistic editorial photo focusing on an open suburban chain-link yard gate at night, illuminated by the distant glow of blue emergency lights on damp grass and pavement. Atmospheric crime scene texture, centered framing, no people, no faces, no text, no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "South Florida’s top deals: EastGroup Properties scoops up Hialeah industrial development site for $26M",
-   "source": "The Real Deal",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOMGFFVWFfMFVwUk4tV2xJSmpGM0RrUDROZklYZ0dmZS1BYmNpZ25uRDhWc1lubHhQVndJWTdQV0F5WUZVRmJuR2ZsZjFoQ3AxZ21LaDlQS0JPWW1zTF9kV1JZc0FyZEp4NDBEdGZwQjRNY0h1ZEpuN2VDVEhKNG10RHRkdExMaHA1SzhlOHdBT3NNSXJlNnZ6OXNXc1hDQlFYbnc?oc=5",
-   "t": 1792670400000,
-   "id": 5,
-   "link": "https://therealdeal.com/data/miami/2026/top-deals-eastgroup-properties-buys-hialeah-industrial-site/",
-   "thin": true,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "EASTGROUP PROPERTIES BUYS HIALEAH INDUSTRIAL SITE FOR 26 MILLION DOLLARS",
-     "MAJOR 26 MILLION DOLLAR INDUSTRIAL DEAL CLOSES IN HIALEAH",
-     "HIALEAH LAND SELLS FOR 26 MILLION IN TOP DEAL"
-    ],
-    "article": "Industrial investment is making waves in South Florida with a massive commercial transaction in Hialeah. EastGroup Properties has acquired an industrial development site in the city for $26 million. The high-profile purchase marks one of South Florida's top real estate deals. With this major acquisition, the company secures prime industrial development land in the bustling Hialeah area. Activity across South Florida continues to attract substantial commercial property investment. The $26 million sale highlights growing attention on Hialeah as a focal point for large-scale development sites and regional business expansion.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation showing an open industrial development parcel in a South Florida city. The upper two-thirds features wide cleared land and civil grading equipment beneath a sunlit sky. The lower third features dark, simple earth tones and clean shadows across the foreground ground. No people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo featuring a centered close-up shot of a heavy construction survey stake and graded dirt on an industrial development parcel. The ground texture is crisp under bright sunlight. No people, no faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Need a ride? How Freebee grew to fill gaps across South Florida",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxORlZydG1LTlR2OGR2OW1ISkt5RVQwSThMTUU1eGt4a2Z3LWd3b3hHenQ4aTMzdDZRRUk0XzA1M21hN3Q2MGowSXRHbXNNMHRGZ19ScWRuaVZ5blowZ3FCV1lwbzBQNDdCS2xDdi10UXhGY3VKQ0wyaTNSUlZNTTVUaUhFdG1VeW5p0gGIAUFVX3lxTFBkS3h6Um1OblVha1MwTmNYOTJSRUR1X3AwOXJZbXhRdnA0b1FJYlVfendySllzSUF5NnlxbUpFcU5vSWpudXZobkxWOFZlcFRTYVM4SGtGTjVVZFEwSklaRlFzNUk2amVKVzlpYjNycm5nM1d1bmdmY2F3d3l5OEZMei1Vc2FkZkY?oc=5",
-   "t": 1792667229000,
-   "id": 6,
-   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317728602.html",
-   "thin": false,
-   "desc": "“It’s in the name: free.”",
-   "draft": {
-    "headlines": [
-     "FREEBEE EXPANDS TO OVER TWO MILLION FREE RIDES ANNUALLY",
-     "MIAMI BEACH ELECTRIC SHUTTLE GROWS ACROSS FLORIDA",
-     "HOW TWO UM GRADS BUILT A FREE MIAMI TRANSIT NETWORK"
-    ],
-    "article": "What began nearly fifteen years ago in Miami Beach with just six electric carts has grown into a massive regional transit service. University of Miami graduates Jason Spiegel and Kris Kimball originally created Freebee as an ad-supported ride service, giving free trips around South Beach and Brickell before launching an on-demand app in 2015.\n\nA partnership with Key Biscayne in 2017 pivoted the company toward government contracts. Today, Freebee runs over 300 vehicles across more than 50 communities, providing over two million free neighborhood rides each year. Following a merger last month with autonomous vehicle company Beep, the combined operation will employ nearly 1,000 workers across more than 60 communities.",
-    "imagePrompt": "An editorial photograph in a 3:4 vertical portrait orientation of an open-air electric micro-transit shuttle driving along a sunny street in a Miami neighborhood. The upper two-thirds captures the electric vehicle on a road lined with palm trees and modern coastal architecture under bright daylight. The bottom third shows a simple, darker asphalt street surface in clear shadow. Realistic photojournalism, crisp details, natural lighting, no text, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up photograph centered on an electric vehicle charging station plugged into a small white neighborhood transit cart on a brick-paved sidewalk. Natural daylight, shallow depth of field with the mechanical charging connection in sharp focus and a soft tropical greenery background, no people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "2026 Florida early voting guide for Miami-Dade and Broward: Dates, hours, locations and requirements",
+   "title": "North Miami Beach restaurants offer multicourse experiences during \"NMB Bites\"",
    "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOY1dJTFd3UGFRNk15QXJwQTN3NzZqVm1UaTNRM3pXcWZQcUM2QTNST1g2SU14TVhESzh4RXNFem9RWk1DVk1RcW1lVmdoZ083T01DVkFKUXlXeXFNdXRJNmZhSDVXVUNUSFF1ODF4SXFkRm1rdDFNQlFjc2hpckxsVDU4SDFYU1Q1UF8xS3U4SW1PNTMycmlqYWd4clNkZlJEbXZNeW5ObHdYWVdTYVpF?oc=5",
-   "t": 1792663686000,
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWdKaS1OQnZxcDRvTFA1a0R4VDFEYkk5MnlqTGQxQ0U1OHBDc3U3SlRoSkxHcnRBQTlQMTJiazV5TU1VMHBqUGN2amVlNVpCOWVSdkxDMUZJTnc5SF9rclpZTXE1R05iUVRaNUdKVDAtcFc1QnVKZGhhMFlhS0VaNmQyLXBRZDdHYTh5dzFnQm5GdjJNWjdxcDhfR01hdTRYVkZMLVVoMi16WXlGaEF4YjFESQ?oc=5",
+   "t": 1792761180000,
+   "id": 1,
+   "link": "https://www.cbsnews.com/miami/video/north-miami-beach-restaurants-offer-multicourse-experiences-during-nmb-bites/",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "NORTH MIAMI BEACH RESTAURANTS OFFER SPECIAL MEALS THROUGH OCTOBER",
+     "NEW NMB BITES DINING DEALS LAUNCH",
+     "OVER TWENTY NORTH MIAMI BEACH RESTAURANTS JOIN NMB BITES"
+    ],
+    "article": "North Miami Beach is launching its new NMB Bites initiative, giving local diners a chance to explore neighborhood dining spots through the end of October. More than 20 restaurants across the city are taking part in the promotion. Throughout the event, participating North Miami Beach dining establishments are serving special multicourse menus at set prices. Guests can enjoy multicourse lunches priced at $25, while multicourse dinners are available for $45. This new program allows residents and visitors to sample different culinary offerings throughout North Miami Beach before October comes to a close.",
+    "imagePrompt": "A realistic editorial vertical 3:4 photo of an elegant restaurant dining table inside a North Miami Beach venue. In the upper two-thirds of the frame, several artfully plated multicourse dishes are arranged beside sparkling glassware under warm ambient lighting. The bottom third of the composition features a dark, unadorned polished wooden table surface fading into soft shadow. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo centered on a beautifully plated gourmet multicourse entree resting on a ceramic dish in a restaurant setting. Fine dining garnishes and sauce details are sharply in focus in the center, with a softly blurred background. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami-Dade pharmacy building sold for $20M to foreign investor firm",
+   "source": "The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQmZHWW1YdHVLcWlWSThyeEtyZXJCTEdzV3BYZ2d3b0hzYjhyR3dtLUs0UmpSczN1Sk1lenM0a2pMSUtsYnhmczFHNEpiQnhmdDlUVzNmNFZDUFdMOEVJcFl0UFNVakNyd2pfa29mTTRtMFdtWTVKMGNYWlRCOVVjTjYxMy0tZUVkOWNMZFQ4YkxjYWxqMldXYWVVNllXR0VwZmw3UjJ3?oc=5",
+   "t": 1792757580000,
+   "id": 2,
+   "thin": true,
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE PHARMACY BUILDING SELLS FOR $20M TO FOREIGN FIRM",
+     "$20M PHARMACY PROPERTY SALE IN MIAMI-DADE",
+     "FOREIGN INVESTOR BUYS MIAMI-DADE PHARMACY BUILDING FOR $20M"
+    ],
+    "article": "A major commercial real estate transaction has closed in Miami-Dade. A local pharmacy building was recently sold for $20 million, marking a substantial property deal in the county.\n\nThe buyer in the deal is a foreign investor firm. This acquisition brings international investment directly into Miami-Dade, with the overseas firm investing the full $20 million into the site.\n\nWith the deal completed at the $20M valuation, the foreign firm officially takes ownership of the Miami-Dade pharmacy property.",
+    "imagePrompt": "Realistic editorial photo in a 3:4 vertical portrait orientation of a modern commercial pharmacy building under bright South Florida sunlight. The upper two-thirds shows the exterior building facade, large glass storefront windows, and nearby palm trees under a sunny sky. The bottom third is simple and darker, featuring clean asphalt and street pavement. No text, letters, logos, or watermarks.",
+    "circlePrompt": "Realistic square 1:1 photo showing a close-up architectural detail of modern commercial building materials, featuring sleek glass paneling and white exterior walls reflecting bright daylight, centered in the frame. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "NBC 6. . You’re watching the NBC6 South Florida News YouTube channel. The latest news and weather from the South Florida area.",
+   "source": "Facebook",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYTVpdVJGVG9VcXNRM1FWWTROZ3hDd21ueUlXT0ViZF92QjlFRUJ2b3dIRGQyM1BEMHFob2tSdGNWTFRodUxqLTB4YWFRaVBBazFhUHlvaFhXV0UtZ3p5Z2tfdlpwRHhnQTF3ZzFoNEJxX3FwWjNGeS14TGJEaVpjQWlNemNIV0loLWlwLVpuZU1nTURLejF0RnhQQTdOU21YYXJRVTBR?oc=5",
+   "t": 1792753275000,
+   "id": 3,
+   "link": "https://www.facebook.com/NBC6SouthFlorida/videos/watch-live-nbc6-news-october-23-2026/3804575649707286/",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "SOUTH FLORIDA NEWS AND WEATHER UPDATES STREAMING ONLINE",
+     "LATEST SOUTH FLORIDA COVERAGE",
+     "STAY CONNECTED TO SOUTH FLORIDA NEWS AND WEATHER"
+    ],
+    "article": "Residents across South Florida have access to ongoing digital broadcasts covering regional news and weather conditions. Online video channels provide regular updates tailored specifically to the local area, offering continuous reporting on community developments and regional forecasts. Viewers throughout South Florida can track current weather patterns and stay informed on local happenings through digital platforms dedicated to the region. Keeping up with local coverage ensures communities remain up to date on weather changes and regional news events across South Florida.",
+    "imagePrompt": "A 3:4 vertical editorial portrait of a professional television news studio camera positioned in front of an illuminated South Florida weather map display. The broadcast equipment occupies the upper two-thirds of the frame, bathed in ambient studio lighting, while the bottom third consists of a simple, darker studio floor with soft shadows. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A square 1:1 close-up shot focused on a modern digital broadcast monitor displaying vibrant weather radar colors and heat maps, tightly centered in the frame. The background is softly blurred studio equipment. No people's faces, text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Developer Files Pre-Application for ‘Redland Crossing Senior Living’ in Miami-Dade County",
+   "source": "Florida YIMBY",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMm1GVFZZTk9uOTlIbWtCSlJSenpaOGVjeWdRQWJKMENfNlRyOGtvbHhDZHNGWTEzdWlHU1RodW1Ua0xXdUNlWTc2aXNCMFhDUW5jb0g2blRFOUNsT09MVm9XVF9lYkdZc2dvdWptajR5NW05c3FqN0NlakxJVU5FOXdPci1kMElYdU8tM0pPWHBTN19fZVl3X05OSG9xcm8zNUYybHFzOGtzQ1dOaW9IQWhSckRuZ0dpWEYySHRleDVDbWM?oc=5",
+   "t": 1792753254000,
+   "id": 4,
+   "link": "https://floridayimby.com/2026/10/developer-files-pre-application-for-redland-crossing-senior-living-in-miami-dade-county.html",
+   "thin": false,
+   "desc": "Florida YIMBY says \"Yes In My Backyard\" to positive new development in Florida.",
+   "draft": {
+    "headlines": [
+     "NEW SENIOR AFFORDABLE HOUSING PROPOSED IN MIAMI-DADE COUNTY",
+     "71 AFFORDABLE SENIOR APARTMENTS PLANNED FOR MIAMI-DADE",
+     "MIAMI LAKES DEVELOPER EYES NEW SEVEN-STORY SENIOR HOUSING VENTURE"
+    ],
+    "article": "Miami Lakes-based Centennial Management Corp., through affiliate LVS Naranja LLC, has filed a pre-application for Redland Crossing Senior Living in Miami-Dade County. The proposed 70,000-square-foot development will rise seven stories on a 0.79-acre site located west of the Redland Crossings apartment complex. Gallo Herbert Architecture designed the building, which will feature 71 affordable apartments offering one-bedroom and two-bedroom layouts. Planned amenities include a clubroom, a fitness center, and 41 parking spaces. Every unit will serve residents earning at or below 140 percent of the area median income, which stands at $87,200 as of 2025. The venture is currently gathering community feedback prior to formal application filing.",
+    "imagePrompt": "An eye-level architectural editorial photograph of a modern seven-story residential building exterior in South Florida under bright daylight. The building structure with clean balconies and contemporary facade details fills the upper two-thirds of the vertical 3:4 frame. The bottom third features dark asphalt street and minimal shaded landscaping, providing a clean, dark base. Natural sunny Miami lighting, realistic textures, no people, no text, no watermarks.",
+    "circlePrompt": "A square 1:1 close-up photograph centered on an architect drafting scale ruler resting beside a physical architectural model of a multi-story residential building. Warm daylight washes over the clean miniature facade and drafting tools, crisp focus, no people, no faces, no readable text, no logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Bazaar Meat Miami Beach: José Andrés' Live-Fire Steakhouse at the Andaz",
+   "source": "The Adventurist Magazine",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRXFIOHR6Z3BPWFg2R01aS3NHZk1BbFgtVXNMZ2FfaTRVZ1BZM3dWdHRBU3d4X2hsVi10WmxKcHJZeFZVcTBSY3daVFpqc1hmSldIUkpWTGc5TTlZODJTNjR0YnVMRzNsV21uYTRQdGRlYld1bjdHLXFBT1lHalVia3l1NTh4SUF4QllXRTVaX3RhbHJJRXZyVktZWnpiU0pRTHdJU2s1Y1hYZWRxeGh0Tks3dmtmRFJNbldJ?oc=5",
+   "t": 1792752780000,
+   "id": 5,
+   "link": "https://www.theadventuristmagazine.com/restaurant-news/the-south/florida/miami/bazaar-meat-miami-beach-from-jose-andres",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "JOSÉ ANDRÉS OPENS BAZAAR MEAT AT ANDAZ MIAMI BEACH",
+     "BAZAAR MEAT BRINGS LIVE FIRE TO COLLINS AVENUE",
+     "CHEF JOSÉ ANDRÉS RETURNS TO MID-BEACH WITH NEW STEAKHOUSE"
+    ],
+    "article": "Chef José Andrés has officially returned to our shores, opening Bazaar Meat on Collins Avenue on the ground floor of the Andaz Miami Beach in Mid-Beach.\n\nThe theatrical live-fire steakhouse marks an exciting comeback after his original Beach concept closed in 2023 following an 11-year run at the SLS South Beach. Culinary director Manuel Manny Echeverri leads the kitchen day to day.\n\nInside the maximalist dining room designed by Spain's Lázaro Rosa-Violán Studio, the kitchen showcases dry-aged meats grilled over an open flame. The menu features signature bites, including a Miami-exclusive Cubano airbread and a tableside martini cart, joining Andrés' other resort concepts, Aguasal and Bar Centro.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing an upscale restaurant grill station with steaks sizzling over intense, glowing open fire flames in the upper two-thirds of the frame. Sparks and warm amber light fill the kitchen scene. The bottom third features a simple, darker, shadowed foreground of a smooth dark counter. Rich, warm ambiance with no people, faces, text, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo of an elegant cocktail glass sitting atop a polished tableside bar cart, positioned directly over an intricate mosaic tile floor patterned with earth and sea creatures. Warm dramatic dining room lighting centered on the glassware. No people, no faces, and no text, letters, or logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Report: Miami-Dade train project gets state funding, but mayor not sold",
+   "source": "Axios",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTGxPQnFoVm9rdUFjblh3WjJvY24wQTMtZ29aTjdTLXpLdGh3WW45RHdfYmRsam5iYnVZRkpoUXptNzMwTWZObFczbV9XYlhoVENuVlZudUwyRDVXdzNyTlZYMWxpcjQyalVjM0tLZkhlRXRPaERtOEVkbGIxQkZjb1Ixa1JUdHFRYmo2bDdmS3dYUVFxWnlha2ExSmR1RmlacFdzYS1fa2tmRGEybEVN?oc=5",
+   "t": 1792750722000,
+   "id": 6,
+   "thin": true,
+   "draft": {
+    "headlines": [
+     "STATE FUNDS MIAMI-DADE TRAIN PROJECT BUT MAYOR NOT SOLD",
+     "MIAMI-DADE TRAIN SECURES STATE FUNDS DESPITE MAYORAL SKEPTICISM",
+     "STATE BACKS MIAMI-DADE TRAIN BUT WILL THE MAYOR AGREE"
+    ],
+    "article": "A proposed train project in Miami-Dade has secured funding from the state. However, the local mayor is not sold on the initiative. Even with state dollars designated for the transit effort, questions remain over whether the plan will move forward locally. Securing financial backing from the state marks a significant development for Miami-Dade transit planning. Still, without complete support from the mayor, the direction of this major train undertaking remains in question for county residents watching the project unfold.",
+    "imagePrompt": "A 3:4 vertical editorial portrait photograph showing elevated modern railway tracks extending across an urban Miami landscape under a bright daytime sky. The elevated transit infrastructure occupies the upper two-thirds of the frame, showing sleek concrete pillars and steel rail lines. The bottom third is composed of simple, darker pavement and deep shadows on the street below. No people, no text, no letters, no logos, and no watermarks.",
+    "circlePrompt": "A square 1:1 detailed photograph centered directly on heavy steel train tracks and concrete railroad ties in sunlight. The polished rails gleam slightly under clear daylight, with clean gravel ballast surrounding the ties. Crisp depth of field, strictly centered composition, with no people, no faces, no text, no letters, no logos, and no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "How a local nonprofit is boosting reading scores of Miami-Dade students",
+   "source": "WLRN",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVExfNGdEQkxxaVpFcE5jb1FHRVUzMVU0M3NQWG9JMjJPWDkxcGdLbE9DbHBjbXdJczZfb3JTRjFyc01JLTh0enVDQXgzWFNfblh0Qmhfb01GU1o0WUxmdFd6b3FCMEtMTTM5ZHVuNzdYNG5oVU5sb2lnUFMtTmJpZw?oc=5",
+   "t": 1792749600000,
    "id": 7,
-   "link": "https://www.cbsnews.com/miami/news/miami-broward-florida-early-voting-2026-dates-hours-locations-requirements/",
+   "link": "https://www.wlrn.org/education/2026-10-23/reading-school-miami-lucy-project",
    "thin": false,
-   "desc": "",
+   "desc": "The Lucy Project focuses on high-need schools. The share of 3rd graders who are \"proficient or above\" at the five schools with the new hubs is less than 55% at each school, according to state data from last school year.",
    "draft": {
     "headlines": [
-     "EARLY VOTING BEGINS OCTOBER 19 IN MIAMI-DADE AND BROWARD",
-     "SOUTH FLORIDA EARLY VOTING OPENS FOR MIDTERM ELECTIONS",
-     "MIAMI VOTERS GET FOURTEEN DAYS TO CAST EARLY BALLOTS"
+     "NONPROFIT EXPANDS TO NINE MIAMI SCHOOLS AFTER READING SURGE",
+     "MIAMI STUDENTS ARE BEATING THE ODDS IN READING",
+     "HOW MIAMI GARDENS KINDERGARTENERS HIT AN 88 PERCENT LITERACY RATE"
     ],
-    "article": "Early voting opens Monday, Oct. 19, for registered voters across Miami-Dade and Broward counties ahead of the Nov. 3 midterm elections.\n\nLocal residents have 14 consecutive days to cast their ballots, with polling stations remaining open through Nov. 1. Voters are not restricted to their precinct and can cast a ballot at any designated early voting site in their county of registration. Participating locations include area public libraries, government buildings, and community centers, operating between eight and 12 hours daily.\n\nVoters must present an accepted form of current photo identification featuring a signature, such as a Florida driver's license or U.S. passport.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait showing a person casting a ballot inside a spacious, sunlit polling facility in South Florida. The upper two-thirds features the voter standing near a private voting booth with natural light entering from tall windows. The bottom third consists of a simple, dark tiled floor and the lower shadow of the voting table. The scene is clean, documentary style, with authentic civic atmosphere. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a close-up view of hands holding a pen above a paper ballot resting on a dark voting booth shelf. The subject is perfectly centered with soft, blurred background tones of a civic hall interior. No faces visible, no text, letters, logos, or watermarks."
+    "article": "A major literacy initiative is rapidly growing across Miami-Dade County classrooms. The Lucy Project, led by founder Sandra Bermudez, is expanding into five additional elementary campuses this year after driving dramatic academic gains at Norwood Elementary in Miami Gardens. At Norwood, kindergarten reading proficiency surged from 52 percent to 88 percent in two years.\n\nBacked by a $500,000 donation from the Partnership for Miami, the program now reaches nine campuses, including Riverside, Broadmoor, Melrose, James H. Bright, and Laura C. Sanders elementary schools, plus Liberty Academy for pre-K.\n\nCosting approximately $1,500 per kindergartner, the organization uses evidence-based phonics instruction to assist local schools where third-grade proficiency rates sit under 55 percent.",
+    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical orientation capturing an elementary classroom learning moment. In the upper two-thirds, a teacher sits at a round wooden activity table guiding a small group of diverse young kindergarten students as they point at colorful lesson materials. Soft Florida sunlight streams through high windows. The bottom third of the frame shows the shadowed, simple classroom floor and muted chair legs, keeping it darker and minimal. High realism, authentic documentary style, no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photograph showing a stack of colorful children's reading materials and a wooden pencil lying neatly centered on a natural wood school desk. Gentle natural light highlights the paper texture and clean composition. No people, no faces, clean surface, and strictly no visible text, letters, words, numbers, logos, or watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Transcript: WR Caleb Douglas Press Conference - October 21",
-   "source": "Miami Dolphins",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOMUFuWnp6akFXb0p3QmhpcmFiWlJzWHliSWtQaTFmLUNUWG94cENlOFBWY0tHdXpjeE5tTDJicEV3YUFBVzh0dTA2Y3pfbEZsbFZhOHVUYWFRQmE2WGZUQVZJOExTaHdtOTE0VnJEQ2U0R2ZCSXY1MnhYeHo1M0FlcWhCb3VMUndfQmNDV0d3RHJrbS0z?oc=5",
-   "t": 1792675986000,
+   "title": "Miami's 2001 throwbacks lead best Week 8 uniforms in college football",
+   "source": "ABC7 Chicago",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSElJX3Fta1FrdVowRDFqNjNqN1lGWUc4dElFNG1HT0FIdTBtSEszQm9jejgtaWpKeFVMTFM1RGhNVEEwYko3VkY0SmQwN0ZJU2FJRkVqSnZHWDNLMmhWcGhZenpUY2h5eWtZS0dMZnBmcHo1WnBrXzAwdjltdndkbTFJYlZPOXFLbk9RTmY1RTRZUURXM0syN0Ewd1BZT0Y0dXgwa2p3WQ?oc=5",
+   "t": 1792761284000,
    "id": 8,
-   "link": "https://www.miamidolphins.com/news/transcript-wr-caleb-douglas-press-conference-october-21",
+   "link": "https://abc7chicago.com/post/miamis-2001-throwbacks-lead-best-week-8-uniforms-college-football/19972283/",
    "thin": false,
-   "desc": "",
+   "desc": "The Hurricanes are the No. 1 team in the country for the first time in over two decades, and they're honoring the early-2000s glory days with their Week 8 threads.",
    "draft": {
     "headlines": [
-     "DOLPHINS ROOKIE WR CALEB DOUGLAS SPEAKS AT OCTOBER PRESS CONFERENCE",
-     "CALEB DOUGLAS TALKS MENTAL REPS",
-     "INSIDE THE DOLPHINS OFFENSE WITH ROOKIE WIDE RECEIVER CALEB DOUGLAS"
+     "MIAMI HURRICANES UNVEIL 2001 CHAMPIONSHIP THROWBACK UNIFORMS FOR WEEK EIGHT",
+     "NO. 1 CANES BRING BACK 2001 THREADS",
+     "CHANNELING 2001 GLORY AS MIAMI RETURNS TO NUMBER ONE"
     ],
-    "article": "Miami Dolphins rookie wide receiver Caleb Douglas met with reporters on October 21, 2026, sharing his mindset on learning the offense and preparing for game action. While spending time on the sideline, Douglas emphasized the critical value of mental preparation. As a rookie, he stays locked in by tracking his position in real time, visualizing plays, and observing the action from a bird's eye view so he can give constructive feedback to his teammates. Douglas also discussed offensive strategy, noting that running and passing piggyback off each other. He plans to go full throttle whenever his number is called.",
-    "imagePrompt": "A realistic vertical editorial portrait in 3:4 aspect ratio of an athletic young male football wide receiver standing on a sunny South Florida training field. The subject is positioned in the upper two-thirds of the frame, looking forward with intense focus. The bottom third of the image is simple and darker, dominated by soft turf shadows. Realistic lighting, high detail, no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo of an American football resting on clean green stadium turf in bright sunlight. The pebbled leather and white stitching are sharply detailed with a shallow depth of field blurring the background. Centered composition, no people, no faces, no text, letters, logos, or watermarks."
+    "article": "The Miami Hurricanes are celebrating their return to the top of college football with a tribute to South Florida gridiron history. Ranked No. 1 in the nation for the first time in over twenty years, the Canes are wearing throwback uniforms for Week 8 to honor the 2001 national championship squad.\n\nThat historic 2001 roster featured future professional stars Ed Reed and Clinton Portis, finishing an undefeated 12-0 run with a 37-14 championship victory over Nebraska.\n\nThe tribute look showcases orange jerseys with green sleeve accents, matched with white helmets and white pants. A distinct five-stripe green, white, and orange pattern runs down the sides of the jersey and pants.",
+    "imagePrompt": "A dramatic editorial 3:4 vertical portrait of an athletic football player dressed in a vibrant orange jersey and white pants, standing under bright outdoor stadium lights. The player is captured from the waist up in the upper two-thirds of the frame, holding a football against his hip, while the bottom third dissolves into dark, simple turf shadows. Crisp sports photography lighting, atmospheric depth, with absolutely no text, letters, logos, or watermarks.",
+    "circlePrompt": "A centered square 1:1 macro photograph focusing on the detailed stitching and fabric of a football uniform, highlighting a distinct five-stripe pattern of green, white, and orange running down the seam where an orange jersey meets white pants. Rich textured athletic mesh, sharp focus, dramatic stadium side lighting, centered composition, with no people, faces, numbers, text, or logos."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Who has the edge? Dolphins at Jets, looking for first win after bye week",
-   "source": "Sun Sentinel",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOSm5tSm9xQUp0ZFFPWTkyZ2lKbk9sX0s1R2hYcm5wN0ZYYVVCdVBpYW5CLWR1Vl80SEdzblFxaWlnSDRZc0h5Unc0eVBjMDcyZnBoc3U1TjJMbEhOdy1oWWtPUmpqeVd0b1FyTkJ6bHV5QmlqcVQxY2tCam01Y0Z4RWo3eW5UbFB2enpTQUstaGEwdFR1d2Zsbkt0eTFXQV9kaEVqUTUtcWRQN01qT1I4eA?oc=5",
-   "t": 1792672004000,
+   "title": "Top Quotes: Refreshed Dolphins ready for divisional battle",
+   "source": "Miami Dolphins",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV0R6Um9QSktYZVhncXdabVcwTU14SDJYemFrREMwY1E5ZGFZbkxHZ3hmOGVlYmx5cDBKS2RLSVBkNjd0UmJKTEZxREw0M2ppNHhkRXc3Q2RYT2NCQjRvZTBJZl9QWjlRcHhHMXdzZ1phZlBDdFlzU0Y4S3kwY2xCbXJQSnVXdnNXd3pwekJfaTUya0R6UkRV?oc=5",
+   "t": 1792760574000,
    "id": 9,
-   "link": "https://www.sun-sentinel.com/2026/10/22/who-has-the-edge-dolphins-at-jets-looking-for-first-win-after-bye-week/",
+   "link": "https://www.miamidolphins.com/news/top-quotes-refreshed-dolphins-ready-for-divisional-battle",
    "thin": false,
-   "desc": "Breaking down the matchups in six key areas ahead of the Week 7 game between the Miami Dolphins and New York Jets at MetLife Stadium.",
+   "desc": "The first divisional matchup of 2026 pits the Dolphins vs. the Jets in the Meadowlands.",
    "draft": {
     "headlines": [
-     "DOLPHINS VISIT JETS SUNDAY AT METLIFE SEARCHING FOR WIN",
-     "DOLPHINS EYE FIRST WIN AFTER BYE WEEK",
-     "CAN MIAMI REBOUND AND FINALLY DEFEAT THE JETS"
+     "DOLPHINS TRAVEL TO MEADOWLANDS TO FACE JETS AFTER BYE WEEK",
+     "RIVALRY RENEWED IN THE MEADOWLANDS",
+     "MIAMI LOOKS TO EXTEND HISTORIC DIVISION RECORD OVER NEW YORK"
     ],
-    "article": "Miami goes on the road Sunday looking to secure its first victory of the season against the New York Jets at MetLife Stadium. The Dolphins enter Week 7 with an 0-5 record following their bye week.\n\nMiami leans heavily on its ninth-ranked ground attack, powered by 225-pound back Ollie Gordon II. Gordon has produced 229 rushing yards and three touchdowns over the last three games behind a strong left offensive line.\n\nDefensively, Miami ranks sixteenth against the run. Quarterback Malik Willis looks to lift Miami's thirty-first-ranked passing attack alongside top target Malik Washington, who leads the Dolphins with 23 receptions. Kickoff is set for 1 p.m.",
-    "imagePrompt": "Editorial sports photography, 3:4 vertical portrait. An athletic professional football player in an aqua and white football uniform rushing downfield during a game, clutching a football tight, cleats kicking up grass on a stadium field under bright outdoor lighting. The athlete dominates the upper two-thirds of the composition. The bottom third is composed of deep, darker field turf in soft focus. No text, letters, logos, or watermarks.",
-    "circlePrompt": "Realistic square 1:1 sports photo. Centered macro view of a pebbled leather football resting firmly on the white painted stripe of a green football field, highlighting the leather laces and detailed texture with a softly blurred background. No people's faces, no text, letters, logos, or watermarks."
+    "article": "The Miami Dolphins travel to the Meadowlands this Sunday to battle the New York Jets in their first AFC East contest of 2026. This marks the 122nd meeting in the long rivalry, with Miami holding a 63-57-1 series advantage. It is the first time since 2013 that Miami had to wait until Week 7 for its opening divisional matchup.\n\nComing off an early bye week, Miami now begins a demanding stretch of 12 straight games to close the campaign. Head Coach Jeff Hafley noted the squad returned locked in with exceptional energy. Quarterback Malik Willis emphasized using the rest to recharge while taking the season one step at a time.",
+    "imagePrompt": "A realistic vertical 3:4 editorial portrait of an athletic professional football head coach standing on an outdoor practice field under bright sunlight, arms crossed thoughtfully, wearing a plain teal athletic polo shirt and dark cap. The coach occupies the upper two-thirds of the frame against a softly blurred training facility backdrop. The bottom third features dark green turf in deep shadow with a simple, uncluttered composition. Natural daylight sports photography, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up shot centered on an American football resting upright on manicured green stadium turf near white painted yard lines. Low-angle perspective with sharp grass blades in the foreground and blurred stadium field lighting in the background. No people's faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1836: Dade County is created",
-   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
+   "title": "1906: canals begin draining the Everglades",
+   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
    "id": 10,
    "draft": {
     "headlines": [
-     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
-     "MIAMI ROOTS: THE 1836 CREATION OF DADE COUNTY",
-     "HOW OUR COUNTY AND FORT DALLAS BEGAN IN 1836"
+     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
+     "1906 MARKS THE START OF EVERGLADES CANAL DRAINING",
+     "HOW WATER REMOVAL FROM THE EVERGLADES BEGAN IN 1906"
     ],
-    "article": "Dade County officially came into existence on February 4, 1836. The county was founded and named in honor of Major Francis L. Dade and the Miami River.\n\nThat exact same year brought major foundational history to our local waterways. Fort Dallas was constructed in 1836 to function as a military base during the Second Seminole War.\n\nFrom the building of military posts like Fort Dallas to early community designations along the Miami River, 1836 remains a crucial year that marked the official beginnings of the county.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 editorial illustration of an 1830s wooden military outpost overlooking the Miami River, depicted in muted sepia and earthy tones. The weathered timber buildings of Fort Dallas sit prominently in the upper two-thirds of the frame under a hazy historical sky, while the lower third features deep, dark, simple reflections on calm river waters. Historical atmosphere, aged paper texture, no identifiable people, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered detail of historic aged limestone blocks and weathered timber framing from an early 19th-century Florida river military fort, capturing detailed rough textures and mossy crevices in bright natural sunlight, no people, no faces, no text, no logos."
+    "article": "In 1906, major excavation work began as canals were initiated to remove water from the Florida Everglades. This period marked the early groundwork that would reshape the landscape just west of the growing Miami area. The start of these canals in 1906 officially launched the process of draining the vast Everglades wetlands. As digging began that year, the removal of water altered the natural flow throughout the historic Everglades ecosystem.",
+    "imagePrompt": "An archival vintage photograph in 3:4 vertical orientation capturing early canal drainage operations in the Florida Everglades. The upper two-thirds features an early 1900s steam dredge and water cutting through open wetlands under a dusty, sepia-toned sky. The bottom third is dark and simple, showing deep muddy canal water and soft earthen shadows. Muted monochromatic tones, authentic antique film grain, historical documentary style, with no identifiable people, text, letters, or logos.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on an antique iron excavator shovel resting in dark marshland water beside tall sawgrass. Warm natural sunlight highlights the weathered metal texture and water reflections. Centered composition with no human faces, no text, and no logos."
    }
   }
  ]
