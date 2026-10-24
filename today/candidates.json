@@ -1,216 +1,218 @@
 {
- "date": "Friday, October 23",
- "pick": "mvl0gm2s",
+ "date": "Saturday, October 24",
+ "pick": "mvmflzmu",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "North Miami Beach restaurants offer multicourse experiences during \"NMB Bites\"",
+   "title": "Checking out the first weekend of early voting in South Florida",
    "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWdKaS1OQnZxcDRvTFA1a0R4VDFEYkk5MnlqTGQxQ0U1OHBDc3U3SlRoSkxHcnRBQTlQMTJiazV5TU1VMHBqUGN2amVlNVpCOWVSdkxDMUZJTnc5SF9rclpZTXE1R05iUVRaNUdKVDAtcFc1QnVKZGhhMFlhS0VaNmQyLXBRZDdHYTh5dzFnQm5GdjJNWjdxcDhfR01hdTRYVkZMLVVoMi16WXlGaEF4YjFESQ?oc=5",
-   "t": 1792761180000,
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQX1BHVXFpN2NxZm93ZlZpMXBNSDdjN0RONjJkTGptdXRTQm4xazFmZlZpVUR0UXkwMHIxenNsZU9Bb2dVcldxTDVVeWNxWlJhWlRUQXZiLXVlOHVMeEtaQlZHeDhkTklwa0MtS1gybWdTWkVJWWt6emdvZDBTdjNhMEtWMnVXT1BESE45bzhST3Q4cm9UMUZBRXY2TFQxdHBiNlE?oc=5",
+   "t": 1792847400000,
    "id": 1,
-   "link": "https://www.cbsnews.com/miami/video/north-miami-beach-restaurants-offer-multicourse-experiences-during-nmb-bites/",
+   "link": "https://www.cbsnews.com/miami/video/checking-out-the-first-weekend-of-early-voting-in-south-florida/",
    "thin": true,
-   "desc": "",
+   "desc": "Steve Maugeri shares a look at how many people are casting their ballots in the 2026 midterms early in Miami-Dade County, and what those looking to cast their ballots should know.",
    "draft": {
     "headlines": [
-     "NORTH MIAMI BEACH RESTAURANTS OFFER SPECIAL MEALS THROUGH OCTOBER",
-     "NEW NMB BITES DINING DEALS LAUNCH",
-     "OVER TWENTY NORTH MIAMI BEACH RESTAURANTS JOIN NMB BITES"
+     "EARLY VOTING BEGINS FOR 2026 MIDTERMS IN MIAMI-DADE COUNTY",
+     "MIAMI-DADE VOTERS HEAD TO THE POLLS EARLY",
+     "FIRST WEEKEND OF 2026 MIDTERM EARLY VOTING UNDERWAY LOCALLY"
     ],
-    "article": "North Miami Beach is launching its new NMB Bites initiative, giving local diners a chance to explore neighborhood dining spots through the end of October. More than 20 restaurants across the city are taking part in the promotion. Throughout the event, participating North Miami Beach dining establishments are serving special multicourse menus at set prices. Guests can enjoy multicourse lunches priced at $25, while multicourse dinners are available for $45. This new program allows residents and visitors to sample different culinary offerings throughout North Miami Beach before October comes to a close.",
-    "imagePrompt": "A realistic editorial vertical 3:4 photo of an elegant restaurant dining table inside a North Miami Beach venue. In the upper two-thirds of the frame, several artfully plated multicourse dishes are arranged beside sparkling glassware under warm ambient lighting. The bottom third of the composition features a dark, unadorned polished wooden table surface fading into soft shadow. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo centered on a beautifully plated gourmet multicourse entree resting on a ceramic dish in a restaurant setting. Fine dining garnishes and sauce details are sharply in focus in the center, with a softly blurred background. No people's faces, no text, letters, logos, or watermarks."
+    "article": "The first weekend of early voting is officially underway across South Florida as Miami-Dade County residents head out to cast their ballots for the 2026 midterms. Voters across the county are taking advantage of the early polling schedule to participate in the midterm elections. Steve Maugeri examined the initial voter turnout numbers throughout the area, alongside essential information that residents need before making their way to the polling booths. Local voters looking to make their voices heard early can cast their ballots throughout the county during this opening weekend of the 2026 midterm election cycle.",
+    "imagePrompt": "A realistic editorial photo of an adult voter standing in an indoor early voting polling site in South Florida, placing a paper ballot into an unmarked ballot box. The voter is positioned in the upper two-thirds of the vertical frame under soft indoor lighting. The bottom third of the frame is simple and darker, composed of the voting facility floor. Vertical 3:4 portrait orientation with realistic textures and natural depth of field, with no text, letters, numbers, or logos.",
+    "circlePrompt": "A realistic close-up square photo centered on a voter's hands holding a black pen over an unmarked voting card inside an election booth. The composition is tightly focused on the paper and hands under warm indoor lighting. Centered subject in a 1:1 square ratio with no people's faces visible and no text, letters, or logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade pharmacy building sold for $20M to foreign investor firm",
-   "source": "The Business Journals",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNQmZHWW1YdHVLcWlWSThyeEtyZXJCTEdzV3BYZ2d3b0hzYjhyR3dtLUs0UmpSczN1Sk1lenM0a2pMSUtsYnhmczFHNEpiQnhmdDlUVzNmNFZDUFdMOEVJcFl0UFNVakNyd2pfa29mTTRtMFdtWTVKMGNYWlRCOVVjTjYxMy0tZUVkOWNMZFQ4YkxjYWxqMldXYWVVNllXR0VwZmw3UjJ3?oc=5",
-   "t": 1792757580000,
+   "title": "What would Amendment 3’s property tax cut mean for Miami-Dade homeowners?",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZmJDbHlfa2JGUzVHQ0NmcFRTQW0zMXJnQ3dDSFhwZVZaSk9veWdoc2lWU2FGM1B1dkNob0kxNl84c0pnTHZKQVBEalFRdWtXWHV3YTEtNmlkY1RVajZtRng0d3hfdzByTkM5NldBSFh3d0pKemFwb29KVGVDM3VEZm40WDNkSXfSAYcBQVVfeXFMTmEzcmpvTUlXTXg3a2JyQ3lsNU9zQWs2MWFjc1VvTjktNW9naUQxNFVkQXdIdUxBcFJnc3NJUGtKd0dub1plZmRfQUw2SERiSXh1eEFkd2d2aGNnb2tLeHVQXzhaUGJ1VkpnY3VOeFB3T0t4QWZpcXBVelRralRNRlMwYXZXWXhz?oc=5",
+   "t": 1792832400000,
    "id": 2,
-   "thin": true,
+   "link": "https://www.miamiherald.com/news/business/real-estate-news/article317750036.html",
+   "thin": false,
+   "desc": "Florida voters are deciding whether to raise state’s homestead tax exemption, which would lower property taxes but may affect buyers.",
    "draft": {
     "headlines": [
-     "MIAMI-DADE PHARMACY BUILDING SELLS FOR $20M TO FOREIGN FIRM",
-     "$20M PHARMACY PROPERTY SALE IN MIAMI-DADE",
-     "FOREIGN INVESTOR BUYS MIAMI-DADE PHARMACY BUILDING FOR $20M"
+     "AMENDMENT 3 COULD SAVE MIAMI HOMEOWNERS THOUSANDS IN TAXES",
+     "BIG TAX CUTS COULD IMPACT MIAMI-DADE SERVICES",
+     "WILL MIAMI-DADE TRADE PUBLIC SERVICES FOR LOWER TAX BILLS?"
     ],
-    "article": "A major commercial real estate transaction has closed in Miami-Dade. A local pharmacy building was recently sold for $20 million, marking a substantial property deal in the county.\n\nThe buyer in the deal is a foreign investor firm. This acquisition brings international investment directly into Miami-Dade, with the overseas firm investing the full $20 million into the site.\n\nWith the deal completed at the $20M valuation, the foreign firm officially takes ownership of the Miami-Dade pharmacy property.",
-    "imagePrompt": "Realistic editorial photo in a 3:4 vertical portrait orientation of a modern commercial pharmacy building under bright South Florida sunlight. The upper two-thirds shows the exterior building facade, large glass storefront windows, and nearby palm trees under a sunny sky. The bottom third is simple and darker, featuring clean asphalt and street pavement. No text, letters, logos, or watermarks.",
-    "circlePrompt": "Realistic square 1:1 photo showing a close-up architectural detail of modern commercial building materials, featuring sleek glass paneling and white exterior walls reflecting bright daylight, centered in the frame. No people's faces, no text, letters, logos, or watermarks."
+    "article": "Miami-Dade voters will decide on Amendment 3 on the Nov. 3 ballot, a measure that would significantly increase Florida's homestead tax exemption for longtime residents.\n\nIf passed, the non-school exemption would jump from $50,000 to $150,000 in 2027, and reach $250,000 in 2028 for primary homeowners living in the state before the end of 2026. Florida TaxWatch estimates this change would save city of Miami homeowners $1,216 in 2027 and $2,448 in 2028.\n\nHowever, the Florida Policy Institute projects Miami-Dade County would lose $1.5 billion across fiscal years 2028 and 2029. Local transit, trash pickup, libraries, and Jackson Health System, which projects a $64 million funding loss, could face cutbacks.",
+    "imagePrompt": "An editorial 3:4 vertical portrait of a residential street in Miami lined with single-family stucco homes and royal palm trees under a bright daytime sky. The upper two-thirds captures the neighborhood homes, manicured tropical yards, and warm sunlight. The bottom third features the dark asphalt street in soft shade, remaining clean, simple, and uncluttered. Crisp documentary photography style, realistic lighting, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic 1:1 square photo showing a centered close-up of a residential mailbox and tropical garden foliage outside a South Florida home under direct sunlight. Neutral, sharp focus on the metallic post and green palm fronds, with no people, no faces, no text, no numbers, no letters, no logos, and no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "NBC 6. . You’re watching the NBC6 South Florida News YouTube channel. The latest news and weather from the South Florida area.",
-   "source": "Facebook",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYTVpdVJGVG9VcXNRM1FWWTROZ3hDd21ueUlXT0ViZF92QjlFRUJ2b3dIRGQyM1BEMHFob2tSdGNWTFRodUxqLTB4YWFRaVBBazFhUHlvaFhXV0UtZ3p5Z2tfdlpwRHhnQTF3ZzFoNEJxX3FwWjNGeS14TGJEaVpjQWlNemNIV0loLWlwLVpuZU1nTURLejF0RnhQQTdOU21YYXJRVTBR?oc=5",
-   "t": 1792753275000,
+   "title": "Mount Dora selects new police chief",
+   "source": "WESH",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5iU3lZeG00d3dsSjJ2ZmgySE43M3BRN3pIbTRKbHRGM05VVVU5YTd1RTZ3RVdoc216WkstVnJXZGt1OHJzSkpEQk1JbTJoaGxEVkF5TFdmQ2ZSOE12XzlvYTlqYVpCN0pPei1rbGo2N255YVkxMjdndXk0TzBsZw?oc=5",
+   "t": 1792811400000,
    "id": 3,
-   "link": "https://www.facebook.com/NBC6SouthFlorida/videos/watch-live-nbc6-news-october-23-2026/3804575649707286/",
-   "thin": true,
+   "link": "https://www.wesh.com/article/mount-dora-selects-new-police-chief/74235310",
+   "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "SOUTH FLORIDA NEWS AND WEATHER UPDATES STREAMING ONLINE",
-     "LATEST SOUTH FLORIDA COVERAGE",
-     "STAY CONNECTED TO SOUTH FLORIDA NEWS AND WEATHER"
+     "FORMER MIAMI-DADE POLICE VETERAN NAMED MOUNT DORA POLICE CHIEF",
+     "MIAMI-DADE VETERAN TAKES POLICE CHIEF ROLE",
+     "LONGTIME MIAMI-DADE OFFICER CHOSEN TO LEAD MOUNT DORA POLICE"
     ],
-    "article": "Residents across South Florida have access to ongoing digital broadcasts covering regional news and weather conditions. Online video channels provide regular updates tailored specifically to the local area, offering continuous reporting on community developments and regional forecasts. Viewers throughout South Florida can track current weather patterns and stay informed on local happenings through digital platforms dedicated to the region. Keeping up with local coverage ensures communities remain up to date on weather changes and regional news events across South Florida.",
-    "imagePrompt": "A 3:4 vertical editorial portrait of a professional television news studio camera positioned in front of an illuminated South Florida weather map display. The broadcast equipment occupies the upper two-thirds of the frame, bathed in ambient studio lighting, while the bottom third consists of a simple, darker studio floor with soft shadows. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A square 1:1 close-up shot focused on a modern digital broadcast monitor displaying vibrant weather radar colors and heat maps, tightly centered in the frame. The background is softly blurred studio equipment. No people's faces, text, letters, logos, or watermarks."
+    "article": "A veteran with nearly three decades in law enforcement, including 27 years at the Miami-Dade Police Department, is taking the helm in Central Florida. Dr. Michael G. Dieppa has been selected as the new police chief for the City of Mount Dora, City Manager Vince Sandersfeld announced. Dieppa previously served as chief of the Chamblee Police Department in Georgia and holds a doctorate in education in leadership and innovation. He replaces former chief Michael Gibson, who retired after a 36-year law enforcement career. Deputy Chief James Deleu has served as acting chief during the transition. Officials expect Dieppa to begin his new leadership duties in early December, with formal swearing-in details to follow.",
+    "imagePrompt": "A professional editorial portrait in vertical 3:4 orientation of a distinguished male law enforcement leader in formal navy uniform standing indoors. The subject is positioned in the upper two-thirds of the frame, looking forward with confident expression under dignified, soft studio lighting. The lower third of the composition remains simple, dark, and uncluttered. No text, letters, badges with readable words, logos, or watermarks.",
+    "circlePrompt": "A square 1:1 realistic macro shot focused on the shoulder epaulet and polished metallic buttons of a dark navy police dress uniform, sharply centered in the frame. The background is softly blurred with subtle indoor ambient lighting. No people faces, no readable text, lettering, insignias with words, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Developer Files Pre-Application for ‘Redland Crossing Senior Living’ in Miami-Dade County",
-   "source": "Florida YIMBY",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQMm1GVFZZTk9uOTlIbWtCSlJSenpaOGVjeWdRQWJKMENfNlRyOGtvbHhDZHNGWTEzdWlHU1RodW1Ua0xXdUNlWTc2aXNCMFhDUW5jb0g2blRFOUNsT09MVm9XVF9lYkdZc2dvdWptajR5NW05c3FqN0NlakxJVU5FOXdPci1kMElYdU8tM0pPWHBTN19fZVl3X05OSG9xcm8zNUYybHFzOGtzQ1dOaW9IQWhSckRuZ0dpWEYySHRleDVDbWM?oc=5",
-   "t": 1792753254000,
+   "title": "Hialeah Paid Mayor Calvo's Own Consultant $13K to Text About His Events",
+   "source": "Hoodline",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNT09BUlJsLTNmSkFfUFhLZTBlc240RS1KVzRZUm5FaGYzSWo3MWgyVjRVZUNhd1dxbUpjLUkxWl9FNDZOMW10RGxHdzNkUU8wZ2JPS2xSbV9hY2I5a1E2U2tsZTQwYThSYzBnamliZTNPLUdRZVZoNmRSQ2xiSkdSMzAwOXMwdS1hVzlkblVHNExLOEl5dEV6MDBLZ1R0c18zRUE?oc=5",
+   "t": 1792801468000,
    "id": 4,
-   "link": "https://floridayimby.com/2026/10/developer-files-pre-application-for-redland-crossing-senior-living-in-miami-dade-county.html",
-   "thin": false,
-   "desc": "Florida YIMBY says \"Yes In My Backyard\" to positive new development in Florida.",
-   "draft": {
-    "headlines": [
-     "NEW SENIOR AFFORDABLE HOUSING PROPOSED IN MIAMI-DADE COUNTY",
-     "71 AFFORDABLE SENIOR APARTMENTS PLANNED FOR MIAMI-DADE",
-     "MIAMI LAKES DEVELOPER EYES NEW SEVEN-STORY SENIOR HOUSING VENTURE"
-    ],
-    "article": "Miami Lakes-based Centennial Management Corp., through affiliate LVS Naranja LLC, has filed a pre-application for Redland Crossing Senior Living in Miami-Dade County. The proposed 70,000-square-foot development will rise seven stories on a 0.79-acre site located west of the Redland Crossings apartment complex. Gallo Herbert Architecture designed the building, which will feature 71 affordable apartments offering one-bedroom and two-bedroom layouts. Planned amenities include a clubroom, a fitness center, and 41 parking spaces. Every unit will serve residents earning at or below 140 percent of the area median income, which stands at $87,200 as of 2025. The venture is currently gathering community feedback prior to formal application filing.",
-    "imagePrompt": "An eye-level architectural editorial photograph of a modern seven-story residential building exterior in South Florida under bright daylight. The building structure with clean balconies and contemporary facade details fills the upper two-thirds of the vertical 3:4 frame. The bottom third features dark asphalt street and minimal shaded landscaping, providing a clean, dark base. Natural sunny Miami lighting, realistic textures, no people, no text, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up photograph centered on an architect drafting scale ruler resting beside a physical architectural model of a multi-story residential building. Warm daylight washes over the clean miniature facade and drafting tools, crisp focus, no people, no faces, no readable text, no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Bazaar Meat Miami Beach: José Andrés' Live-Fire Steakhouse at the Andaz",
-   "source": "The Adventurist Magazine",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQRXFIOHR6Z3BPWFg2R01aS3NHZk1BbFgtVXNMZ2FfaTRVZ1BZM3dWdHRBU3d4X2hsVi10WmxKcHJZeFZVcTBSY3daVFpqc1hmSldIUkpWTGc5TTlZODJTNjR0YnVMRzNsV21uYTRQdGRlYld1bjdHLXFBT1lHalVia3l1NTh4SUF4QllXRTVaX3RhbHJJRXZyVktZWnpiU0pRTHdJU2s1Y1hYZWRxeGh0Tks3dmtmRFJNbldJ?oc=5",
-   "t": 1792752780000,
-   "id": 5,
-   "link": "https://www.theadventuristmagazine.com/restaurant-news/the-south/florida/miami/bazaar-meat-miami-beach-from-jose-andres",
+   "link": "https://hoodline.com/2026/10/hialeah-paid-mayor-calvo-s-own-consultant-13k-to-text-about-his-events/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "JOSÉ ANDRÉS OPENS BAZAAR MEAT AT ANDAZ MIAMI BEACH",
-     "BAZAAR MEAT BRINGS LIVE FIRE TO COLLINS AVENUE",
-     "CHEF JOSÉ ANDRÉS RETURNS TO MID-BEACH WITH NEW STEAKHOUSE"
+     "HIALEAH PAID MAYOR CALVO'S CAMPAIGN STRATEGIST THOUSANDS FOR MASS TEXTS",
+     "THOUSANDS SPENT ON MAYOR TEXTS WITHOUT COUNCIL KNOWLEDGE",
+     "WHY ARE HIALEAH TAX DOLLARS FUNDING TEXTS PROMOTING MAYOR EVENTS?"
     ],
-    "article": "Chef José Andrés has officially returned to our shores, opening Bazaar Meat on Collins Avenue on the ground floor of the Andaz Miami Beach in Mid-Beach.\n\nThe theatrical live-fire steakhouse marks an exciting comeback after his original Beach concept closed in 2023 following an 11-year run at the SLS South Beach. Culinary director Manuel Manny Echeverri leads the kitchen day to day.\n\nInside the maximalist dining room designed by Spain's Lázaro Rosa-Violán Studio, the kitchen showcases dry-aged meats grilled over an open flame. The menu features signature bites, including a Miami-exclusive Cubano airbread and a tableside martini cart, joining Andrés' other resort concepts, Aguasal and Bar Centro.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing an upscale restaurant grill station with steaks sizzling over intense, glowing open fire flames in the upper two-thirds of the frame. Sparks and warm amber light fill the kitchen scene. The bottom third features a simple, darker, shadowed foreground of a smooth dark counter. Rich, warm ambiance with no people, faces, text, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo of an elegant cocktail glass sitting atop a polished tableside bar cart, positioned directly over an intricate mosaic tile floor patterned with earth and sea creatures. Warm dramatic dining room lighting centered on the glassware. No people, no faces, and no text, letters, or logos."
+    "article": "The City of Hialeah paid $13,050 to Dark Horse Strategies and Consulting Inc., a political consulting firm run by Mayor Bryan Calvo's former campaign strategist, Emiliano Antunez. Between April and July, the firm sent thousands of mass texts promoting Calvo's public appearances, starting just three months after he took office.\n\nThe text campaigns covered events such as an Earth Day cleanup, a town hall, a Fourth of July celebration, and the Mayor's Cup Fan Fest. Other texts promoted Cortaditos with the Mayor and the reopening of Bucky Dent Water Park.\n\nHialeah City Council members were unaware of the payments. However, the total stays beneath the city's $25,000 threshold that mandates council approval.",
+    "imagePrompt": "Editorial vertical 3:4 portrait photo of a municipal government building in South Florida under bright sunny skies, framed by tall palm trees and manicured tropical landscaping. The architectural facade and palm trees occupy the upper two-thirds of the image, while the bottom third consists of a simple, darker shadowed asphalt driveway. Realistic documentary photojournalism style, natural light, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph of a smartphone resting flat on a polished wooden desk next to a small white porcelain cup of dark espresso cortadito. The phone screen is turned off and blank. Centered composition, soft natural indoor lighting, shallow depth of field, no people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Report: Miami-Dade train project gets state funding, but mayor not sold",
-   "source": "Axios",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOTGxPQnFoVm9rdUFjblh3WjJvY24wQTMtZ29aTjdTLXpLdGh3WW45RHdfYmRsam5iYnVZRkpoUXptNzMwTWZObFczbV9XYlhoVENuVlZudUwyRDVXdzNyTlZYMWxpcjQyalVjM0tLZkhlRXRPaERtOEVkbGIxQkZjb1Ixa1JUdHFRYmo2bDdmS3dYUVFxWnlha2ExSmR1RmlacFdzYS1fa2tmRGEybEVN?oc=5",
-   "t": 1792750722000,
+   "title": "Man found dead in NW Miami-Dade field",
+   "source": "NBC 6 South Florida",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPY2JYelg2RlI2WnNhTVdlQllyN0V2cTd5bU8xTWkzZnIzbnZOTnNVVmRDZjE1OFA5aW5QQmlGTl8zOGVKbHY3NlZId1NTRUdZY0ZSbHZhMHJTaDBZREN6YTBzalVLc25mODdDMC1ZRjFzMXBWcmtpcXdQcy1DZWp5V01RWGZJZ0tDVVVKOU1rWlJXd9IBmgFBVV95cUxNb09xWnJBSXVkYm5jTUlrUWY3Q1V0eWtoVS04Ql9ya1JVeVBVNWJqQnhBbUdYUmhRMFNkLXZDME5sRjBnRWdwV1BqY3N0M1VlZEpkWEU5dDBDRDhsQThBM0lsNzhoV2YycEZEc0pKNk1EbEd1M0EyUWFPSHN0NENhZmJ0V1o2NkdiMVFMZWJKUF84QUdOb1pCSjhB?oc=5",
+   "t": 1792800236000,
+   "id": 5,
+   "link": "https://www.nbcmiami.com/video/nbc-6-news/man-found-dead-in-nw-miami-dade-field/3876979/",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MAN FOUND DEAD IN NORTHWEST MIAMI-DADE FIELD",
+     "DEATH INVESTIGATION UNDERWAY IN NORTHWEST MIAMI-DADE FIELD",
+     "MYSTERY IN NORTHWEST MIAMI-DADE AS BODY DISCOVERED"
+    ],
+    "article": "An active investigation is underway right now in northwest Miami-Dade after a man was found dead in an open field. Local authorities responded to the scene and immediately began looking into the situation to determine what transpired. The discovery of the deceased man has centered attention on the northwest Miami-Dade location as the inquiry continues. Officials are working through the initial stages of their review, and the circumstances surrounding the scene remain under active investigation as detectives gather information.",
+    "imagePrompt": "An editorial vertical 3:4 photograph of an open, overgrown grassy field in northwest Miami-Dade under overcast skies. In the upper two-thirds of the frame, yellow caution tape stretches across wild tall grass with blurred emergency vehicle lights visible in the distant background. The bottom third is composed of simple, dark, shadowed dirt and damp grass blades. Realistic documentary photojournalism style, atmospheric, muted tones, no text, no logos.",
+    "circlePrompt": "A realistic 1:1 square close-up photo of tall, windblown wild grass in an open field, centered in the frame. The background shows soft-focused emergency vehicle light reflections against the ground at dusk. Detailed texture of blades of grass and soil, moody and solemn editorial lighting, no people, no faces, no text, no logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Construction workers injured in fall at Perigon Miami Beach project site",
+   "source": "The Real Deal",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPX3lsYUZKb0dmSUViazE4TmFHYl9CQXVsMjNrbWxjTE9SRHVZU3I1RlNqRVZ6UFo0ZGUwdTY5YmtnSnMzY2g2a3BNUzdMN1FES1JpTVhmbXVIbWpUdGNsbEtzakdzb0FWQ0ZtbVBreGozcUhVVHVNRWhSN3RhLWtkdjNqenNpSzQtUURaeUFILWdIRmluZlExdVVSeFlIdw?oc=5",
+   "t": 1792796400000,
    "id": 6,
+   "link": "https://therealdeal.com/miami/2026/10/23/construction-workers-fall-from-perigon-miami-beach-site/",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "CONSTRUCTION WORKERS INJURED IN FALL AT PERIGON MIAMI BEACH",
+     "WORKERS INJURED AT MIAMI BEACH PERIGON SITE",
+     "WHAT HAPPENED AT THE PERIGON MIAMI BEACH SITE"
+    ],
+    "article": "Construction workers suffered injuries following a fall at the Perigon project site in Miami Beach. The incident occurred on the grounds of the active Miami Beach building development where the workers fell on the job. Specifics regarding the circumstances of the fall and the conditions of the construction workers at the Miami Beach location have not been detailed.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait aspect ratio depicting an active coastal high-rise building construction site in Miami Beach. The upper two-thirds of the frame shows reinforced concrete pillars, scaffolding, and a yellow construction crane set against a clear ocean sky. The bottom third is composed of simple, darker shadowed ground and safety perimeter barriers. Crisp natural lighting, realistic construction environment, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on heavy-duty construction safety gear on a steel girder at a building site. A bright yellow safety helmet and industrial harness sit centered on the metallic beam with blurred scaffolding in the background. Bright daylight, crisp focus, no people faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Tax relief vs. government service cuts: Miami-Dade leaders clash over controversial Amendment 3",
+   "source": "WLRN",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQdGdwZi12cjFsYVdhbDVESU9LblQxV2NKY0RYaEdpb1ZhRWRwTVNJV1NwbVpPLU9adzBYQ1hNQVZSWDNYaElpcWVQcm1HWmlyUzBpN3hUSkVGdGxoQ3poWjUzaGJpcGFsVnpMSDJma1RxS2pGcmRhQ1htdXo5WEFqOFM1ZDFjWDlQajhQZ0xSOGo3RGlnQzI3dE9ZM0xucGtzUXgwZ2wxa2hlbDdjckhhVy1rWFpVcnJENFB0bHBTZmhGSk1iaTBYa2FhMmVPMDF0aVVxTFBuX1B3ZzktdjNjZlZKWmkwQQ?oc=5",
+   "t": 1792795740000,
+   "id": 7,
+   "link": "https://www.wlrn.org/the-south-florida-roundup/2026-10-23/tax-relief-vs-government-service-cuts-miami-dade-leaders-clash-over-controversial-amendment-3",
+   "thin": false,
+   "desc": "The proposed amendment, which requires 60% voter approval to pass, has split Miami-Dade's top government leaders. County Mayor Daniella Levine Cava strongly opposes the measure, while County Commissioner Roberto…",
+   "draft": {
+    "headlines": [
+     "AMENDMENT 3 PROPOSES MASSIVE HOMESTEAD EXEMPTION HIKE THIS NOVEMBER",
+     "MIAMI-DADE LEADERS SPLIT OVER TAX CUTS",
+     "COULD AMENDMENT 3 DRAIN HUNDREDS OF MILLIONS FROM MIAMI-DADE?"
+    ],
+    "article": "Miami-Dade leaders are divided over Amendment 3 ahead of the November vote. The measure would raise Florida's homestead exemption from $50,000 to $250,000 by 2028, needing 60% voter approval to pass. County Mayor Daniella Levine Cava opposes the proposal. She warns Miami-Dade could lose $378 million in year one and nearly $700 million in year two, threatening funding for transit, libraries, parks, and fire stations. District 11 Commissioner Roberto J. Gonzalez backs the amendment, arguing it trims bloated government and restores affordability by returning money to residents. Meanwhile, Miami-Dade Sheriff Rosie Cordero-Stutz contends tax relief and public safety can coexist.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation showing an empty modern municipal government council chamber with an imposing wooden speaker rostrum under direct lighting. The upper two-thirds feature the formal rostrum and sleek civic architectural backdrop, while the bottom third remains simple, shadowed, and dark. Neutral cinematic lighting, strictly no people, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered view of a voting booth counter and a ballot drop box slot on a clean wooden table. Centered framing with soft, natural indoor lighting highlighting the textures of metal and polished wood. No human faces, no hands, no text, no letters, no numbers, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Miami vs Pitt live updates, start time, predictions, TV schedule",
+   "source": "The Palm Beach Post",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOeTZpX1lNVVNiWUJtZnJlVzV6YU13ZW1xUVpVNGxQQVhHQjgtNXp2Sm0zOERRa2l6RDdicUdQS1NGYWh0Y1BHS0tlRlZiSU9mR2ZvclNMSmZTNzA4elNMQ3Nkdl8ydEZmbUZVVDhnc1IwVTFRUU9XRXdCTkdQcUt2T2RrUjFjc254b2xWU0NFZnlXVWFra3FfSmJCMGV4R054ckhvc0xFTmYzZ1NVWEduNkROUElIbnVneVRFdGVPZTJVUnJDcm9VY1JlUFRwNzJIejE4aHZVOXh3YjA?oc=5",
+   "t": 1792846860000,
+   "id": 8,
+   "link": "https://www.palmbeachpost.com/story/sports/college/hurricanes/2026/10/24/miami-fl-pitt-score-college-football-game-updates--live/92353100007/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "NO. 1 MIAMI HOSTS PITTSBURGH IN FIRST DAYLIGHT GAME",
+     "HURRICANES DEFEND PERFECT RECORD AGAINST PITT",
+     "RANKED FIRST IN 24 YEARS, MIAMI TAKES THE FIELD"
+    ],
+    "article": "The undefeated Miami Hurricanes return home today as college football's top-ranked squad to face Pittsburgh in their first daytime contest of 2026. Holding the No. 1 ranking for the first time in 24 years, Miami sits at 6-0 overall and 4-0 in the ACC after an intense 43-35 double-overtime victory against Florida State. Quarterback Darian Mensah leads the offense alongside Malachi Toney and freshman standout Javian Mallory, who now paces the team in rushing following a 108-yard, two-touchdown performance. The Hurricanes face a major test against a 5-2 Pitt team that boasts the country's best rushing defense, with Miami's defense right behind them.",
+    "imagePrompt": "Editorial sports portrait in 3:4 vertical orientation. A focused college football player in an orange and green uniform stands on an open grass field during bright daylight, holding a football. The upper two-thirds displays the athlete's upper torso and helmet, while the lower third features clean, shadowed green turf. No text, letters, logos, or watermarks.",
+    "circlePrompt": "Editorial square 1:1 close-up photograph of a textured leather football resting on vibrant stadium turf under direct midday sunlight. The football is centered directly in the middle of the frame. No people, no faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "At 0-2, Miami Heat must really introduce themselves now: ‘We all have to be better’",
+   "source": "The New York Times",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPMHdtTGlGQm1TQXIwOXoySDlFNENMNnZ4WW9Hc0E3ZndaUTE5cE9XMHBiUDNUei1TWV95c1k5NF9TMDhaMFk3VHhYeE5PVDd2cHZFN1NrSnhRNTI1Z1YyZ3F6cFNPNmpqSVVqVy1odEhvNmdQTlVlVFBlLWQ4VEhkb29rQ1Nja0k3eVRjUl9TVnVUcklOVXZ1Qm5UTENqXy1jTVQ4emZn?oc=5",
+   "t": 1792842119000,
+   "id": 9,
    "thin": true,
    "draft": {
     "headlines": [
-     "STATE FUNDS MIAMI-DADE TRAIN PROJECT BUT MAYOR NOT SOLD",
-     "MIAMI-DADE TRAIN SECURES STATE FUNDS DESPITE MAYORAL SKEPTICISM",
-     "STATE BACKS MIAMI-DADE TRAIN BUT WILL THE MAYOR AGREE"
+     "MIAMI HEAT FALL TO 0-2 TO START THE SEASON",
+     "HEAT HIT 0-2: WE ALL HAVE TO BE BETTER",
+     "CAN OUR MIAMI HEAT BOUNCE BACK FROM 0-2?"
     ],
-    "article": "A proposed train project in Miami-Dade has secured funding from the state. However, the local mayor is not sold on the initiative. Even with state dollars designated for the transit effort, questions remain over whether the plan will move forward locally. Securing financial backing from the state marks a significant development for Miami-Dade transit planning. Still, without complete support from the mayor, the direction of this major train undertaking remains in question for county residents watching the project unfold.",
-    "imagePrompt": "A 3:4 vertical editorial portrait photograph showing elevated modern railway tracks extending across an urban Miami landscape under a bright daytime sky. The elevated transit infrastructure occupies the upper two-thirds of the frame, showing sleek concrete pillars and steel rail lines. The bottom third is composed of simple, darker pavement and deep shadows on the street below. No people, no text, no letters, no logos, and no watermarks.",
-    "circlePrompt": "A square 1:1 detailed photograph centered directly on heavy steel train tracks and concrete railroad ties in sunlight. The polished rails gleam slightly under clear daylight, with clean gravel ballast surrounding the ties. Crisp depth of field, strictly centered composition, with no people, no faces, no text, no letters, no logos, and no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "How a local nonprofit is boosting reading scores of Miami-Dade students",
-   "source": "WLRN",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOVExfNGdEQkxxaVpFcE5jb1FHRVUzMVU0M3NQWG9JMjJPWDkxcGdLbE9DbHBjbXdJczZfb3JTRjFyc01JLTh0enVDQXgzWFNfblh0Qmhfb01GU1o0WUxmdFd6b3FCMEtMTTM5ZHVuNzdYNG5oVU5sb2lnUFMtTmJpZw?oc=5",
-   "t": 1792749600000,
-   "id": 7,
-   "link": "https://www.wlrn.org/education/2026-10-23/reading-school-miami-lucy-project",
-   "thin": false,
-   "desc": "The Lucy Project focuses on high-need schools. The share of 3rd graders who are \"proficient or above\" at the five schools with the new hubs is less than 55% at each school, according to state data from last school year.",
-   "draft": {
-    "headlines": [
-     "NONPROFIT EXPANDS TO NINE MIAMI SCHOOLS AFTER READING SURGE",
-     "MIAMI STUDENTS ARE BEATING THE ODDS IN READING",
-     "HOW MIAMI GARDENS KINDERGARTENERS HIT AN 88 PERCENT LITERACY RATE"
-    ],
-    "article": "A major literacy initiative is rapidly growing across Miami-Dade County classrooms. The Lucy Project, led by founder Sandra Bermudez, is expanding into five additional elementary campuses this year after driving dramatic academic gains at Norwood Elementary in Miami Gardens. At Norwood, kindergarten reading proficiency surged from 52 percent to 88 percent in two years.\n\nBacked by a $500,000 donation from the Partnership for Miami, the program now reaches nine campuses, including Riverside, Broadmoor, Melrose, James H. Bright, and Laura C. Sanders elementary schools, plus Liberty Academy for pre-K.\n\nCosting approximately $1,500 per kindergartner, the organization uses evidence-based phonics instruction to assist local schools where third-grade proficiency rates sit under 55 percent.",
-    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical orientation capturing an elementary classroom learning moment. In the upper two-thirds, a teacher sits at a round wooden activity table guiding a small group of diverse young kindergarten students as they point at colorful lesson materials. Soft Florida sunlight streams through high windows. The bottom third of the frame shows the shadowed, simple classroom floor and muted chair legs, keeping it darker and minimal. High realism, authentic documentary style, no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 macro photograph showing a stack of colorful children's reading materials and a wooden pencil lying neatly centered on a natural wood school desk. Gentle natural light highlights the paper texture and clean composition. No people, no faces, clean surface, and strictly no visible text, letters, words, numbers, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Miami's 2001 throwbacks lead best Week 8 uniforms in college football",
-   "source": "ABC7 Chicago",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSElJX3Fta1FrdVowRDFqNjNqN1lGWUc4dElFNG1HT0FIdTBtSEszQm9jejgtaWpKeFVMTFM1RGhNVEEwYko3VkY0SmQwN0ZJU2FJRkVqSnZHWDNLMmhWcGhZenpUY2h5eWtZS0dMZnBmcHo1WnBrXzAwdjltdndkbTFJYlZPOXFLbk9RTmY1RTRZUURXM0syN0Ewd1BZT0Y0dXgwa2p3WQ?oc=5",
-   "t": 1792761284000,
-   "id": 8,
-   "link": "https://abc7chicago.com/post/miamis-2001-throwbacks-lead-best-week-8-uniforms-college-football/19972283/",
-   "thin": false,
-   "desc": "The Hurricanes are the No. 1 team in the country for the first time in over two decades, and they're honoring the early-2000s glory days with their Week 8 threads.",
-   "draft": {
-    "headlines": [
-     "MIAMI HURRICANES UNVEIL 2001 CHAMPIONSHIP THROWBACK UNIFORMS FOR WEEK EIGHT",
-     "NO. 1 CANES BRING BACK 2001 THREADS",
-     "CHANNELING 2001 GLORY AS MIAMI RETURNS TO NUMBER ONE"
-    ],
-    "article": "The Miami Hurricanes are celebrating their return to the top of college football with a tribute to South Florida gridiron history. Ranked No. 1 in the nation for the first time in over twenty years, the Canes are wearing throwback uniforms for Week 8 to honor the 2001 national championship squad.\n\nThat historic 2001 roster featured future professional stars Ed Reed and Clinton Portis, finishing an undefeated 12-0 run with a 37-14 championship victory over Nebraska.\n\nThe tribute look showcases orange jerseys with green sleeve accents, matched with white helmets and white pants. A distinct five-stripe green, white, and orange pattern runs down the sides of the jersey and pants.",
-    "imagePrompt": "A dramatic editorial 3:4 vertical portrait of an athletic football player dressed in a vibrant orange jersey and white pants, standing under bright outdoor stadium lights. The player is captured from the waist up in the upper two-thirds of the frame, holding a football against his hip, while the bottom third dissolves into dark, simple turf shadows. Crisp sports photography lighting, atmospheric depth, with absolutely no text, letters, logos, or watermarks.",
-    "circlePrompt": "A centered square 1:1 macro photograph focusing on the detailed stitching and fabric of a football uniform, highlighting a distinct five-stripe pattern of green, white, and orange running down the seam where an orange jersey meets white pants. Rich textured athletic mesh, sharp focus, dramatic stadium side lighting, centered composition, with no people, faces, numbers, text, or logos."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Top Quotes: Refreshed Dolphins ready for divisional battle",
-   "source": "Miami Dolphins",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV0R6Um9QSktYZVhncXdabVcwTU14SDJYemFrREMwY1E5ZGFZbkxHZ3hmOGVlYmx5cDBKS2RLSVBkNjd0UmJKTEZxREw0M2ppNHhkRXc3Q2RYT2NCQjRvZTBJZl9QWjlRcHhHMXdzZ1phZlBDdFlzU0Y4S3kwY2xCbXJQSnVXdnNXd3pwekJfaTUya0R6UkRV?oc=5",
-   "t": 1792760574000,
-   "id": 9,
-   "link": "https://www.miamidolphins.com/news/top-quotes-refreshed-dolphins-ready-for-divisional-battle",
-   "thin": false,
-   "desc": "The first divisional matchup of 2026 pits the Dolphins vs. the Jets in the Meadowlands.",
-   "draft": {
-    "headlines": [
-     "DOLPHINS TRAVEL TO MEADOWLANDS TO FACE JETS AFTER BYE WEEK",
-     "RIVALRY RENEWED IN THE MEADOWLANDS",
-     "MIAMI LOOKS TO EXTEND HISTORIC DIVISION RECORD OVER NEW YORK"
-    ],
-    "article": "The Miami Dolphins travel to the Meadowlands this Sunday to battle the New York Jets in their first AFC East contest of 2026. This marks the 122nd meeting in the long rivalry, with Miami holding a 63-57-1 series advantage. It is the first time since 2013 that Miami had to wait until Week 7 for its opening divisional matchup.\n\nComing off an early bye week, Miami now begins a demanding stretch of 12 straight games to close the campaign. Head Coach Jeff Hafley noted the squad returned locked in with exceptional energy. Quarterback Malik Willis emphasized using the rest to recharge while taking the season one step at a time.",
-    "imagePrompt": "A realistic vertical 3:4 editorial portrait of an athletic professional football head coach standing on an outdoor practice field under bright sunlight, arms crossed thoughtfully, wearing a plain teal athletic polo shirt and dark cap. The coach occupies the upper two-thirds of the frame against a softly blurred training facility backdrop. The bottom third features dark green turf in deep shadow with a simple, uncluttered composition. Natural daylight sports photography, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up shot centered on an American football resting upright on manicured green stadium turf near white painted yard lines. Low-angle perspective with sharp grass blades in the foreground and blurred stadium field lighting in the background. No people's faces, no text, no letters, no logos, no watermarks."
+    "article": "The Miami Heat have opened their campaign with a 0-2 record, facing early pressure to establish who they are going to be on the court.\n\nFollowing the two straight defeats, the team is confronting the reality that higher standards are needed immediately. The collective message from the group is simple: everyone has to be better.\n\nSitting at 0-2, Miami must now introduce its true identity and find answers quickly. The focus shifts toward stepping up across the board and correcting early missteps to get back on track.",
+    "imagePrompt": "A realistic vertical editorial photograph in a 3:4 portrait orientation showing a professional basketball player in a plain red and black athletic jersey standing under bright arena spotlights with back turned, shoulders slumped in contemplative silence. The subject is positioned in the upper two-thirds of the frame against the hazy glow of stadium rafters. The bottom third consists of the dark, reflective hardwood court floor with deep shadows, keeping the lower area simple and dark. No text, letters, numbers, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up shot of an orange basketball resting stationary on a highly polished indoor hardwood sports floor under dramatic arena lighting. The ball is positioned dead center, casting a soft shadow on the glossy wooden planks, with a moody, out-of-focus background. No people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1906: canals begin draining the Everglades",
-   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
+   "title": "1836: Dade County is created",
+   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
    "id": 10,
    "draft": {
     "headlines": [
-     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
-     "1906 MARKS THE START OF EVERGLADES CANAL DRAINING",
-     "HOW WATER REMOVAL FROM THE EVERGLADES BEGAN IN 1906"
+     "DADE COUNTY WAS CREATED ON FEBRUARY 4, 1836",
+     "MIAMI HISTORY: DADE COUNTY FORMED IN 1836",
+     "THE 1836 ORIGINS OF DADE COUNTY AND FORT DALLAS"
     ],
-    "article": "In 1906, major excavation work began as canals were initiated to remove water from the Florida Everglades. This period marked the early groundwork that would reshape the landscape just west of the growing Miami area. The start of these canals in 1906 officially launched the process of draining the vast Everglades wetlands. As digging began that year, the removal of water altered the natural flow throughout the historic Everglades ecosystem.",
-    "imagePrompt": "An archival vintage photograph in 3:4 vertical orientation capturing early canal drainage operations in the Florida Everglades. The upper two-thirds features an early 1900s steam dredge and water cutting through open wetlands under a dusty, sepia-toned sky. The bottom third is dark and simple, showing deep muddy canal water and soft earthen shadows. Muted monochromatic tones, authentic antique film grain, historical documentary style, with no identifiable people, text, letters, or logos.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on an antique iron excavator shovel resting in dark marshland water beside tall sawgrass. Warm natural sunlight highlights the weathered metal texture and water reflections. Centered composition with no human faces, no text, and no logos."
+    "article": "Dade County officially came into existence on February 4, 1836, marking the formal beginning of our local jurisdiction. The new county was named in honor of Major Francis L. Dade and the Miami River.\n\nThat same year, Fort Dallas was established along the riverbanks. The fort immediately took on a strategic defense role, operating as an active military base throughout the Second Seminole War.\n\nFrom the historic grounds of Fort Dallas to the designation along the Miami River, the foundational events of 1836 established the local community and defined the early territory of Dade County.",
+    "imagePrompt": "A vintage archival-style vertical 3:4 photograph depicting a 19th-century military outpost along a subtropical riverbank, evocative of 1836 Fort Dallas. The upper two-thirds showcase rough-hewn pine logs and early coral-stone barricades set among native palm fronds and wide river waters under a pale, overcast sky. The bottom third transitions into simple, dark marsh grass and deep water reflections. Aged daguerreotype aesthetic, muted sepia tones, historically textured, no people, no text, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centering on weathered coral-rock masonry and rough timbers of an 1830s fort wall, highlighting aged stone texture and hand-carved wood grain under soft tropical daylight, historical craftsmanship focus, no faces, no text."
    }
   }
  ]
