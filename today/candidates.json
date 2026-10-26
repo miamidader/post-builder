@@ -1,218 +1,220 @@
 {
- "date": "Sunday, October 25",
- "pick": "mvnv29bl",
+ "date": "Monday, October 26",
+ "pick": "mvpe6ox1",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Congressman, former Boca mayor and libertarian vie for U.S. House seat",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5FNVVPWEl0VXlHU1Fmc2V6MVlKQjg4UkJQcUo3NWRxMVJ6TzFSU3AtaENYTkVHbVd6R2owWDJ5dFB5VUE0UEhLcUxLV1dJa29panRIS3ZTRVZ6WkZySmNoVXlXM0U?oc=5",
-   "t": 1792923900000,
+   "title": "Where to trick-or-treat in Miami on Halloween 2026",
+   "source": "Miami New Times",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWVlGSHIwUWRpVkxCS1QwVUdoSmdaTnpnN0d4RlZmSVA0SzUwOEVROVRIdHFnalNmdEhOVjhiMUhqYlQ1ZXMyZjR5b3BYaGlhRGRvb1ZYaHFFTjE1eHo1Si1vai1vOWo1MXZ4R0h0VkVvWW9WTHd5NVZqU3kwT3lGdlVXRXBRb08wN0pmUy1uRnRmeHAwemI2MTFvRU9WZTBOZ3J5ZUNn?oc=5",
+   "t": 1793026800000,
    "id": 1,
-   "link": "https://www.miamiherald.com/news/article317769671.html",
+   "link": "https://www.miaminewtimes.com/arts-culture/where-to-trick-or-treat-in-miami-on-halloween-2026-40594139/",
    "thin": false,
-   "desc": "",
+   "desc": "Here's where you can load up on candy in Coconut Grove, Miami Beach, Hialeah and beyond.",
    "draft": {
     "headlines": [
-     "THREE CANDIDATES COMPETE FOR SOUTH FLORIDA CONGRESSIONAL SEAT",
-     "BATTLE BREWS FOR DISTRICT 25",
-     "MIAMI DADE CONGRESSIONAL RACE COULD DECIDE HOUSE CONTROL"
+     "FREE HALLOWEEN TRICK OR TREATING EVENTS ACROSS MIAMI NEIGHBORHOODS",
+     "MIAMI HALLOWEEN CANDY STOPS YOU CAN VISIT THIS WEEKEND",
+     "BEST SPOTS FOR FREE CANDY ACROSS MIAMI THIS HALLOWEEN"
     ],
-    "article": "Voters across a redrawn coastal stretch reaching into parts of Miami-Dade will choose their next federal representative in Florida's 25th congressional district. Democratic U.S. Representative Jared Moskowitz, Republican former Boca Raton Mayor Scott Singer, and Libertarian Peter Jassenoff are competing for the seat. The competitive race will help determine which political party controls the U.S. House of Representatives. Moskowitz, who previously served as director of the Florida Division of Emergency Management, is prioritizing flood readiness alongside housing and healthcare costs for seniors and condo communities. Singer, an attorney who voted to bring a Brightline train station to Boca Raton while mayor, is focusing on coastal infrastructure investments and lower taxes.",
-    "imagePrompt": "Editorial photo in a 3:4 vertical portrait showing a sunny South Florida government building exterior with tall palm trees and modern architectural columns. The architectural entrance and palm fronds fill the upper two-thirds of the frame, bathed in bright Florida daylight. The bottom third features a simple, darker foreground of clean paving stones in soft shadow. Realistic cinematic lighting, clean composition, absolutely no text, no letters, no logos, and no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo centered on a blank paper ballot being dropped into a secure ballot drop box slot. Focused detail on the hand holding the ballot and the metallic slot, with soft natural light highlighting the textures. No people's faces visible, no text, no letters, no numbers, no logos, and no watermarks."
+    "article": "Miami families have multiple free community celebrations to gather Halloween candy this weekend. The festivities start Friday, October 30, from 6 to 9:30 p.m. at Shenandoah Park with a trunk-or-treat trail and carnival snacks. On Saturday, October 31, afternoon events include Coral Gables trick-or-treating along Miracle Mile starting at 2 p.m. with a dog costume contest, plus South Miami Safe Streets on Sunset Drive from 4 to 7 p.m. featuring allergy-friendly candy stations. Evening options kick off at 6 p.m. with trunk-or-treat games at Milander Park in Hialeah and Fuller Street festivities in Coconut Grove. Lincoln Road in Miami Beach also hosts costume strolls from 5 p.m. into the night.",
+    "imagePrompt": "A realistic editorial medium shot in vertical 3:4 format of a young child dressed in a colorful superhero costume holding an orange pumpkin bucket overflowing with wrapped sweets during twilight in an outdoor palm-lined neighborhood. The costumed child is centered in the upper two-thirds of the frame, with ambient evening light and subtle festive string lights glowing in the soft-focus background. The lower third consists of simple, darker pavement in shadow. Realistic photography, natural textures, no text, no logos, no watermarks.",
+    "circlePrompt": "A detailed square 1:1 close-up photograph centered on a classic orange jack-o-lantern treat bucket filled to the brim with wrapped colorful candies, resting on an outdoor stone bench. The festive bucket sits perfectly centered with a softly blurred park greenery background. Crisp details on the treats and bucket, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Woman hospitalized after house fire in Miami",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOOXZPQ00wdE1BOGV0M1VreW5UdVdMV0FvcGpvWVdib01ObTkzeF9xTXptVnlWQXl3M1FtWnBjS1BMNnRSSEhDWXhzOWpoaXQzc1VmV0tqVWo3VHRYOGpOMXM2V1hSbVZWV3g3c1BLTlhoWUhsVmd0VjR4YTZLQ050RTZFYmhtYzlqSkgwN1ZCcUJYRmpvS1E?oc=5",
-   "t": 1792923037000,
+   "title": "Wind and flood advisories, warning issued as king tides continue to flood streets across South Florida",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5SN1ZoU3VNTFhFeW85bjhlejVLSE1rZy1jY3dUZVNTaXRGSHpwMmhJMFVPRjFac2NDWnBSZmZITFhNVUFwX1pjOEtjN2trYzNabzdBYXU1UUhZa2pUa0RvbjY4WldpN0RfUl9hSHk4MDNDNy1VVnJSQU1vcw?oc=5",
+   "t": 1793024462000,
    "id": 2,
-   "link": "https://www.local10.com/news/local/2026/10/24/woman-hospitalized-after-house-fire-in-miami/",
+   "link": "https://wsvn.com/news/local/miami-dade/strong-winds-push-seawater-over/",
    "thin": false,
-   "desc": "",
+   "desc": "MIAMI BEACH, FLA. (WSVN) - King tides brought more flooding to South Florida following a soggy weekend across the region.Monday morning, 7News cameras captured flooding Read More",
    "draft": {
     "headlines": [
-     "WOMAN HOSPITALIZED AND THREE DISPLACED AFTER SATURDAY MIAMI HOUSE FIRE",
-     "MIAMI HOUSE FIRE SENDS WOMAN TO HOSPITAL",
-     "MIAMI FIREFIGHTERS STOP FAST-MOVING HOUSE BLAZE ON NORTHWEST 58TH STREET"
+     "KING TIDES FLOOD MIAMI BEACH AND REGIONAL COASTAL ROADS",
+     "HIGH TIDES AND STRONG WINDS SWAMP SHORES",
+     "HOW MIAMI AREA RESIDENTS ARE NAVIGATING KING TIDE FLOODING"
     ],
-    "article": "A Saturday house fire near North Miami Avenue and Northwest 58th Street sent one woman to the hospital and left three people without a home. Miami fire-rescue teams arrived earlier in the day to find heavy smoke and flames pouring from the residential structure. Firefighters acted quickly to knock down the blaze before it could spread to neighboring properties. Paramedics transported the injured woman to an area hospital. Three residents were displaced by the fire. Local investigators are now working to determine exactly what caused the blaze.",
-    "imagePrompt": "A 3:4 vertical editorial news photograph of a residential Miami street during the aftermath of a daytime house fire. In the upper two-thirds, emergency fire rescue vehicles are parked along the curb with faint smoke lingering around the exterior of a damaged home under a South Florida sky. The bottom third features dark, wet asphalt glistening with water from fire hoses, creating a simple, dark foreground. Realistic photojournalism style, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a close-up detail of a coiled yellow fire hose and brass nozzle resting on wet asphalt near scorched debris after a house fire. Subject centered, realistic textures of wet pavement and equipment, no people, no faces, no text, no logos, no watermarks."
+    "article": "King tides pushed seawater across Miami Beach and surrounding coastal neighborhoods on Monday morning, leaving standing water along Collins Avenue near 52nd Street. Coastal flood warnings covered Miami-Dade and Broward counties alongside an 11 a.m. wind advisory and gale warnings over South Florida waters. Over the weekend, rising tides flooded streets near Northeast 79th Street and Tenth Avenue in Miami, as well as Bill Baggs Cape Florida State Park in Key Biscayne. Powerful gusts paired with a full moon forced waves over barriers along the Hollywood Beach Broadwalk, where local shops stacked sandbags. A local artist displayed sculptures directly on flooded Miami Beach sidewalks to draw attention to rising sea levels.",
+    "imagePrompt": "A 3:4 vertical editorial photograph capturing high king tide flooding along Collins Avenue in Miami Beach. In the upper two-thirds, palm trees sway under an overcast, windy coastal sky, with floodwaters partially submerging the curb, roadway, and sidewalk near beachside buildings. The bottom third features deep, dark, reflective standing seawater filling the lower foreground, creating a simple and shadowy base. Natural daylight, stormy atmosphere, realistic news photography style, no text, no watermarks, no logos.",
+    "circlePrompt": "A square 1:1 realistic close-up photo centered on a row of rough burlap sandbags placed against a coastal storefront entrance, with shallow seawater rippling against their base on a wet sidewalk. Centered composition, detailed textures of coarse fabric and water, overcast natural daylight, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Woman arrested after man set on fire in northwest Miami-Dade",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVHZPeWlhMThPaFFfSDJwTWpCR3lzWmpuaXpiR29CTmp5U3V6YWw2dEZrNFN1QUNYd3c5QS13NndsdmRDbDJ1elBBRzVsdGNKbndwejhUVmhvQTZ3cTIybVU1R3FFZjdjeXZ3MU55QndzQTV4X05abmNVTWFJdmQyQThRZG0xaFhCbFpmX0M4UTJabm5YbXk5VmJRRlhDUQ?oc=5",
-   "t": 1792902840000,
+   "title": "Miamees On Fire: The State of the Miami-Dade Office Market",
+   "source": "Miami’s Community News",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRWIzSlNYRDEzcUdxQk84MUU2M2lkV1A0b2NsM29NeFA5U3lOejcycklWY1pqVGtjaFhIRk5abTZDamJqMlZlZnc1SUswZmo1SW4ycXdqeEMxNk5DcktXYVFYNFVIR3ZzbDJmMXNEem9CYkF0WTNsZXdCeDk3N1J6ZERnc052aU5qT3JjcHJteXgwWHY3dU03bXNTTWVxNkhJ?oc=5",
+   "t": 1793024247000,
    "id": 3,
-   "link": "https://www.cbsnews.com/miami/video/woman-arrested-after-man-set-on-fire-in-northwest-miami-dade/",
-   "thin": true,
-   "desc": "",
+   "link": "https://communitynewspapers.com/videos-2/miamees-on-fire-the-state-of-the-miami-dade-office-market/",
+   "thin": false,
+   "desc": "Hosts Peter Zalewski and Oscar Musibay break down Miami-Dade's office market — from Brickell's record rents to the downtown core, Coral Gables, Edgewater and the rise of medical space.",
    "draft": {
     "headlines": [
-     "WOMAN ARRESTED AFTER MAN SET ON FIRE IN NORTHWEST MIAMI-DADE",
-     "NORTHWEST MIAMI-DADE ARREST AFTER MAN BURNED",
-     "INVESTIGATION UNDERWAY AFTER MAN BURNED AT MIAMI-DADE COMPLEX"
+     "MIAMI-DADE OFFICE MARKET FACES HIGH RENTS AND SLOWING DEALS",
+     "BRICKELL OFFICE RENTS REACH RECORD HIGHS",
+     "ARE MIAMI-DADE OFFICE BUILDINGS FINALLY BACK FIVE YEARS LATER?"
     ],
-    "article": "A woman is under arrest in northwest Miami-Dade after a man was set on fire at a local residential complex. The injured man suffered severe burns from the encounter. First responders rushed him directly to a regional trauma center for emergency medical treatment. Deputies remain on the scene in the northwest section of the county conducting an investigation into what triggered the event. Law enforcement officials continue investigating the circumstances leading up to the incident as the community awaits further details.",
-    "imagePrompt": "Editorial photo, vertical 3:4 portrait orientation. In the upper two-thirds, county sheriff patrol vehicles with flashing red and blue emergency lights are parked outside a two-story residential housing development during late dusk. The bottom third is composed of dark, wet pavement softly reflecting the emergency beacon colors. Realistic documentary photojournalism style, cinematic lighting, sharp focus, no people's faces, no text, no words, no logos, no watermarks.",
-    "circlePrompt": "Square 1:1 close-up photo showing bright yellow security perimeter tape tied to an apartment complex railing, with soft blurred flashing blue and red emergency vehicle lights in the distant background. Neutral photojournalistic lighting, centered subject, no people, no readable text or letters, no logos, no watermarks."
+    "article": "Five years after the pandemic altered workspaces, analysts Peter Zalewski and Oscar Musibay examined whether Miami-Dade office buildings have truly recovered. Their assessment reviews vacancy numbers alongside shifting business demands across local neighborhoods. Brickell continues to see record-high rents, setting a sharp contrast with the downtown core. Meanwhile, interest rates and the election cycle have slowed leasing activity throughout the county. Activity remains split across Class A hubs like Coral Gables, Coconut Grove, and Aventura. At the same time, specialized leasing is expanding, with medical and med spa spaces gaining ground across submarkets like Edgewater, the Design District, and Little Haiti.",
+    "imagePrompt": "An editorial vertical 3:4 photograph showing modern corporate skyscrapers towering over the Brickell financial district in Miami during late afternoon. Gleaming glass facades and office balconies dominate the upper two-thirds of the frame against a pale blue sky. The lower third features a darker street-level perspective with deep building shadows and asphalt, providing a clean, uncluttered base. Realistic lighting, sharp architectural details, no people visible, no text, no watermarks.",
+    "circlePrompt": "A square 1:1 detailed photograph focusing on modern architectural elements of an upscale Miami commercial office facade. Centered composition showing geometric glass window panels, reflective surfaces, and dark aluminum mullions in bright daylight. Clean architectural lines, professional aesthetic, no people, no faces, no signage, no text, no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Police investigate shooting near FAMU stadium during homecoming",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOVmNodEE5bWZwVWFTeUw2YVdkcmE4UFpUdG9nV1JnZDlIc3laVUI3VEFwNF9NYkRGOFF2NWZBTEhYOUtZby0yZzVLcDNpVkhtenZyRkkzMlUwbGgwZGN2Rnc3OTZ1X0tBN2RvUkhuejJyZ1ZnQnp5VFMwY3F1cTNpNUQ1UGJKYUdLQWJxTVN2VXNzWU9TUUtYUW93cXdqdHlDd2c?oc=5",
-   "t": 1792902720000,
+   "title": "Publix is buying up Miami-Dade shopping centers. Here’s what to know",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdW9SMWhHVWFSWkF2eklTTnc2WEU1TVNmS1RxX1JhZWg5UVoybWoyZ0pNbXRDZnR4alpvdk4ySWJWNXowRFIzdXlLMXUteElQVE8xUm5tNTJobk12cm1DbTM4SGdmaV94WUJKSjVSWXR2SUh5X05NV3FfNWRNclF2Z2pTLTBsVTJ00gGIAUFVX3lxTE9HUFRRRHgtUmtJdzA4NmdRZnhhVHBqT0h0OUFUeHdmSWdTTFA0WXZ0T3FoSHZER1FhaF80Z3pCbW5xLWFLckxBUmJRRnE4VExieXY3bE9rYXh1LTRlSktDUWRtcDNiYXhZX1ZILVFJWHMxcTZZbnJ5QWtVdjVzdXEtTEFqeUFFN3I?oc=5",
+   "t": 1793023497000,
    "id": 4,
-   "link": "https://www.cbsnews.com/miami/video/police-investigate-shooting-near-famu-stadium-during-homecoming/",
-   "thin": true,
-   "desc": "",
+   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317753374.html",
+   "thin": false,
+   "desc": "The supermarket giant bought shopping plazas near MIA and in southwest Miami-Dade.",
    "draft": {
     "headlines": [
-     "POLICE INVESTIGATE SHOOTING NEAR FAMU STADIUM DURING HOMECOMING",
-     "SHOOTING INVESTIGATION UNDERWAY NEAR FAMU HOMECOMING",
-     "WHAT POLICE ARE SAYING ABOUT FAMU STADIUM SHOOTING"
+     "PUBLIX SPENDS 107 MILLION DOLLARS ON TWO MIAMI-DADE PLAZAS",
+     "PUBLIX BUYS ITS MIAMI-DADE SHOPPING PLAZAS",
+     "SUPERMARKET GIANT BECOMES THE LANDLORD ACROSS MIAMI-DADE CENTERS"
     ],
-    "article": "Tallahassee police are currently investigating a shooting that occurred near Florida A&M University's football stadium during homecoming weekend. The incident happened near the stadium grounds as homecoming festivities were underway in the state capital. At this time, law enforcement authorities have not confirmed how many people were injured during the shooting. Additionally, officials have not released information regarding the severity or extent of any injuries sustained. Tallahassee police continue to actively investigate the incident near the football stadium as they work to uncover what happened.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait aspect ratio capturing law enforcement response at night near a large collegiate football stadium. In the upper two-thirds of the frame, the silhouette of a stadium exterior stands against the dark night sky, illuminated by the distant glow of red and blue police vehicle lights along the perimeter road. The bottom third consists of a dark, simple asphalt street surface with faint color reflections. Authentic news photo style, moody atmosphere, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a close-up detail of crime scene tape tied securely around an outdoor metal stadium stanchion at twilight. The focus is sharp on the plastic tape knot and metallic post texture, with blurred red and blue police light glows in the soft background. No people's faces, no text, no letters, no logos, no watermarks."
+    "article": "Lakeland-based Publix is making major real estate moves across Miami-Dade by taking ownership of the shopping centers where it operates. During October, the grocery giant invested $107 million to purchase two retail centers in the county. The newly acquired commercial plazas are located near Miami International Airport and in southwest Miami-Dade. With these purchases, the supermarket giant is shifting its position from a retail tenant into a commercial landlord. Publix now owns the shopping plazas where its own supermarkets anchor the retail mix.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of an expansive suburban South Florida strip mall plaza under bright sunlight with palm trees. The storefronts, sidewalks, and parking lot occupy the upper two-thirds of the frame. The bottom third is composed of simple, darker asphalt pavement in clear shadow. No text, letters, signage, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo showing a centered close-up architectural view of contemporary stucco retail plaza pillars and glass storefront windows under bright South Florida sunlight. No people, no faces, no text, letters, signage, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Mail Carrier in Hialeah Accused of Stealing iPhones and Ring from Packages",
-   "source": "CubaHeadlines",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5EenY3NFVJeGw2OEtrSjFIdEVtMzBHX1dEMFpFc2dqbnlNNVVhLWdKSklWVmY3V0dmMWpzWTR3TG1CWUlNTFlzM3FVUTgxTkZ6SkZmNWZ5dmc?oc=5",
-   "t": 1792886582000,
+   "title": "Man who admitted being high on mushrooms before killing Miami Beach tourist set to be sentenced",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSHFWVV96TmFDV2NXWEUya0dseEVINmhHWDdIcVdEdEMyOWVrZmliaW10eEo4YnhZUkpVaEJGR2xfVjN5NXlMNGtEM2dyREpaX1hQY0ZYdUpQYjRlLTA3RFplc21TNk5MQ2JSZjVRdDlsU0lpWlg3MFpwTnVZdUQxRHNld2xVLUFyc011cWU3djhlLTFwZnRLVUhqbTRjTUNLMTJrYUlXQlBSVm92WjZ3NVN2eGItZkRRcFhWYkhrbU9FTU5jaTRvOHNDQ3o?oc=5",
+   "t": 1793023320000,
    "id": 5,
-   "link": "https://www.cubaheadlines.com/articles/343745",
-   "thin": false,
-   "desc": "A 43-year-old United States Postal Service (USPS) employee from northwest Miami-Dade County was taken into custody on Friday in Hialeah. The arrest fo...",
+   "link": "https://www.cbsnews.com/miami/video/man-who-admitted-being-high-on-mushrooms-before-killing-miami-beach-tourist-set-to-be-sentenced/",
+   "thin": true,
+   "desc": "It’s sentencing day for a man who admitted being high on mushrooms when he shot and killed a father who was visiting Miami Beach with his family in 2021.",
    "draft": {
     "headlines": [
-     "HIALEAH POSTAL WORKER ARRESTED FOR STEALING IPHONES AND RING",
-     "HIALEAH MAIL CARRIER BUSTED FOR PACKAGE THEFT",
-     "COULD YOUR MISSING HIALEAH PACKAGES BE TIED TO POSTAL THEFT"
+     "MAN TO BE SENTENCED FOR FATAL 2021 MIAMI BEACH SHOOTING",
+     "SENTENCING DAY IN DEADLY MIAMI BEACH TOURIST SHOOTING",
+     "JUSTICE AWAITED FOR 2021 MIAMI BEACH FAMILY TRAGEDY"
     ],
-    "article": "A 43-year-old postal carrier from northwest Miami-Dade County was arrested on Friday in Hialeah after video evidence showed him removing three iPhones and a valuable ring from packages.\n\nAuthorities have not released the identity of the worker, who remains innocent until proven guilty. The arrest strikes a sensitive chord across Hialeah, where many Cuban American families save for months to buy electronics and mail them to relatives in Cuba.\n\nPackage theft by delivery staff remains a persistent concern across Miami-Dade. In August, two courier workers in Doral were arrested for stealing more than $100,000 in electronic parcels.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait depicting a postal worker holding a cardboard parcel on a sunlit residential street lined with palm trees in South Florida. The carrier is positioned in the upper two-thirds of the frame, captured in clear natural daylight. The bottom third features dark, clean asphalt in soft shadow. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo centered on a partially torn cardboard delivery box resting on an industrial sorting surface, revealing the edge of a sleek smartphone box and a small jewelry box inside. Shallow depth of field with neutral ambient lighting. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "Sentencing is scheduled today for the man who shot and killed a visiting father in Miami Beach back in 2021. The fatal shooting occurred while the victim was visiting our coastal community alongside his family.\n\nThe defendant previously admitted that he was under the influence of mushrooms at the time of the deadly attack.\n\nNow, years after the violent encounter shook Miami Beach, the judicial process reaches its final stage as the man appears before the court to learn his punishment for the 2021 killing.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation showing an empty modern courtroom. In the upper two-thirds of the frame, soft light enters through blinds illuminating an empty defense table and a solemn wooden witness stand. The bottom third consists of deep dark shadows across the polished floorboards. Atmospheric, dramatic, high quality, no people, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on a polished wooden judge's gavel resting on a matching sound block upon an oak bench. Dramatic side lighting highlights the grain of the wood, with a blurred courtroom background. No faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Eastern Florida State Shuts Out Miami Dade to Advance to FCSAA D1 Soccer Final",
-   "source": "Space Coast Daily",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQTS1nUjNzUmZ6eWtJTlJ4QWFjTkNTYk9kQm5XdmxoVjRJcFdSdE9aOTZ2UG0tVW5XMHdHT1AzOUx5YV9pdWdES2kyU3pPR3REQ3dVdGEyZ0k1NDN1MW1tVGQxc0tuVEZ6U0o1QlBhakNCZ3drc0V4RzFKeUlmc01uaFhFandkcGFNX0xZLTd2R3RqOHY1WXpuOTAwME9yNHFtNTBBcGtrekNpYW9uR1RCS3VOdVhmZw?oc=5",
-   "t": 1792882157000,
+   "title": "Mass shooting at FAMU homecoming latest in long Florida history",
+   "source": "Tallahassee Democrat",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU081TDNTQ2Y4Ung2eDBwMXJaT1RuM2NjcDJ6UERzNHFmQ2ZNTVYxaGU1Q2JlYXB3Yk52cE5jTUFUbVJKbHVaMDJaaG5RNTNXLUFFLTlDQU1SZjVIQTk4VEhIV3lzWXhXSnk2MGJQN2s4N3NPdDVLVWZ0OTF6WHQ0QktiWnBObFlSZ0lGYmo1cXFxb3cySktQQUpjaVgtNVB3dUtpQTlJamVtbkxCQUF0Y0RoZ3k?oc=5",
+   "t": 1793023074000,
    "id": 6,
-   "link": "https://spacecoastdaily.com/2026/10/eastern-florida-state-shuts-out-miami-dade-to-advance-to-fcsaa-d1-soccer-final/",
-   "thin": true,
-   "desc": "Eastern Florida State men’s soccer team advanced to the semifinals of the Florida College System Activities Association Championship.",
-   "draft": {
-    "headlines": [
-     "MIAMI DADE FALLS TO EASTERN FLORIDA STATE IN SHUTOUT",
-     "MIAMI DADE SHUT OUT IN FCSAA SOCCER TOURNAMENT",
-     "MIAMI DADE CHAMPIONSHIP RUN ENDS AGAINST EASTERN FLORIDA STATE"
-    ],
-    "article": "Miami Dade men's soccer has been eliminated after suffering a shutout loss against Eastern Florida State.\n\nEastern Florida State secured the decisive clean sheet against the Miami Dade squad during the Florida College System Activities Association Championship.\n\nThe victory propels Eastern Florida State forward in the FCSAA Division 1 postseason bracket and into the championship final.\n\nWith Eastern Florida State advancing through the tournament, Miami Dade's championship pursuit officially comes to an end following the scoreless matchup on the soccer pitch.",
-    "imagePrompt": "A 3:4 vertical editorial action photograph of a men's collegiate soccer match under bright stadium lights. In the upper two-thirds of the frame, an athletic soccer player leaps to contest a ball in the air against a rival opponent on the pitch. The bottom third of the frame features the dark, shadowed green grass turf with minimal distraction. Authentic sports photography, cinematic lighting, sharp motion capture, with no text, letters, logos, or watermarks.",
-    "circlePrompt": "A centered 1:1 square close-up photograph of a soccer ball resting on a bright white chalk line across lush green stadium turf. The background features the blurred glow of distant sports field lighting with dramatic evening bokeh. Realistic grass texture and ball detailing, perfectly centered composition, with no people, faces, text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Flying Private to Art Basel Miami Beach 2026: The Insider’s Arrival Guide",
-   "source": "Haute Living",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYVJQSVpJcm9PYnVxNFZYaEhyZ3BEanh3Tjkwc3J2M1dBeW5rM29IUHVKb3VqbGhMaWlUcEpHQ0dtcm1HV29BclZ0N0hHLS1JNC0zVDdRa0ZDQ3VLa3JFbi0xcWtUdTRPeEpYMGljTXBiUUtBWXJQZ2lVRGZvUEhiMzVSYmhXV0g2?oc=5",
-   "t": 1792880439000,
-   "id": 7,
-   "thin": true,
-   "draft": {
-    "headlines": [
-     "PRIVATE FLIGHT ARRIVAL DETAILS HIGHLIGHT ART BASEL MIAMI BEACH 2026",
-     "FLYING PRIVATE TO ART BASEL MIAMI BEACH 2026",
-     "INSIDER ARRIVAL PLANS FOCUS ON ART BASEL MIAMI BEACH"
-    ],
-    "article": "Art Basel Miami Beach 2026 is already drawing attention to travel arrangements into our area. Insider resources are spotlighting private flight itineraries for visitors traveling to the renowned Miami Beach gathering. Arriving by private jet remains a premier focus for travelers planning early for the major 2026 event. As Miami Beach prepares for the arrival of art enthusiasts for Art Basel 2026, exclusive aviation travel plans outline the journey into the local area. Early transit guides highlight private aviation as the chosen method for arriving at the Miami Beach showcase.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photograph showing a luxury private jet resting on a sunlit tarmac with South Florida palm trees visible in the far distance under a bright sky. The sleek aircraft dominates the upper two-thirds of the frame, capturing crisp daylight on polished white and metallic surfaces. The bottom third consists of clean, dark runway asphalt in shadow, creating a simple, dark ground. Rich cinematic lighting, documentary news aesthetic, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic 1:1 square photograph featuring a centered close-up shot of a modern private jet wingtip and turbine exterior on an airfield. Polished chrome and composite materials gleam under warm tropical daylight with a soft blue sky in the background. No people, no faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "AP Top 25 Poll Prediction as Five Top-Ranked Teams Fall",
-   "source": "Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZHVSZ0wtZGRtTjBzUnNmT1RHUnRRVno4OXBqTV9URDlLbURPNWx1Z09rU3lsY1Y5bE93RlFXUWpNWFp0QlBLU21CcDh6T1FNRUp2V2syTjJ3UGdtQW1hemNJVGxmMjFvM3FKOTBKS2NYTUlIMlltTlBoNlBMRjRESlo0cW5IWmtUS2h2OXFrRkVWRF84MFBuaHhmMA?oc=5",
-   "t": 1792931508000,
-   "id": 8,
-   "link": "https://www.si.com/college/oregon/football/ap-top-25-poll-prediction-five-top-ranked-teams-fall",
+   "link": "https://www.tallahassee.com/story/news/2026/10/26/tallahassee-florida-shooting-mass-shootings-history/92440305007/",
    "thin": false,
-   "desc": "The chaos of week 7 was historic for college football, and the ensuing week was always going to struggle to match the amount of upsets that took place. However,",
-   "draft": {
-    "headlines": [
-     "NO. 1 MIAMI STAYS UNBEATEN AS FIVE RANKED TEAMS FALL",
-     "MIAMI REMAINS ALONE AT THE TOP",
-     "CHAOS ERUPTS ACROSS COLLEGE FOOTBALL BUT MIAMI STANDS STRONG"
-    ],
-    "article": "On Saturday, Oct. 24, five ranked college football teams collapsed against unranked opponents, but No. 1 Miami holds firmly to the top spot.\n\nUpset Saturday shook the national standings as No. 2 BYU and No. 8 Texas Tech both suffered their first defeats of the year. BYU fell in double overtime to UCF, while Texas Tech lost 37-24 on the road against Cincinnati.\n\nThese stunning upsets cleared the field, leaving Miami as one of just three undefeated teams remaining across the Power Four conferences, alongside No. 9 UCLA and No. 10 Utah. Miami remains in position to preserve its status as the nation's premier program.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait showing an American football resting on the lush green grass of a stadium sideline under bright evening floodlights. The football and turf occupy the upper two-thirds of the frame, while the bottom third transitions into simple, dark turf in deep shadow. The background shows the soft, atmospheric glow of stadium lights at night. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 macro photo showing a close-up detail of bright white chalk boundary lines across textured green turf on a football field. The chalk powder and grass blades are centered in crisp focus with a shallow depth of field. No people, faces, text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "New York RB vs Inter Miami: Major League Soccer stats & head-to-head",
-   "source": "BBC",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBFQy1KSlJrVklhaTBKa0k4VDVOVnlydzdpNzNZeXpNVnViTndkQ2luR2RMLVhLSG9wWUxaR3RnUm8xS09iUkpvQlpRTEhLSWIzdkNlNXhPTkdJYnNqZ2N4TXFyZw?oc=5",
-   "t": 1792931449000,
-   "id": 9,
-   "link": "https://www.bbc.com/sport/football/live/cqwyrw0xlgpxt",
-   "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "INTER MIAMI FACES NEW YORK RB IN MAJOR LEAGUE SOCCER",
-     "INTER MIAMI TAKES ON NEW YORK RB",
-     "MIAMI SUPPORTERS TRACK MAJOR LEAGUE SOCCER CLASH WITH NEW YORK"
+     "TEEN CHARGED AFTER 12 HURT IN FAMU HOMECOMING SHOOTING",
+     "FLORIDA REELS AFTER MASS SHOOTING OUTSIDE FOOTBALL STADIUM",
+     "STATEWIDE VIOLENCE CRISIS GROWS WITH LATEST FLORIDA MASS SHOOTING"
     ],
-    "article": "Inter Miami is going up against New York RB in Major League Soccer action. Local fans can track the contest through live text commentary, real-time score updates, and detailed match stats. The matchup highlights the head-to-head record between the two Major League Soccer sides. Supporters following Inter Miami have access to live commentary feeds and continuous score updates throughout the game. Complete match stats and head-to-head breakdowns provide ongoing information for followers watching how Inter Miami performs against New York RB in this league meeting.",
-    "imagePrompt": "A realistic editorial vertical 3:4 portrait of a professional soccer match scene under stadium lights at night. A soccer player in a plain pink jersey is captured in dynamic action kicking a soccer ball in the upper two-thirds of the frame. The bottom third is composed of the dark, softly blurred green grass pitch, keeping the lower area simple and clean. Dramatic stadium lighting casts realistic highlights. No text, letters, team crests, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph of a professional soccer ball resting on the manicured green grass of a soccer field. The ball is sharply focused and centered in the frame. Deep green turf textures and a blurred white boundary chalk line are visible under bright arena lights. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "South Floridians are watching closely as another mass tragedy impacts the state. Gunfire erupted outside Bragg Memorial Stadium following the Florida A&M Homecoming game in Tallahassee on October 24.\n\nTallahassee police reported that 12 people were injured, including six children. The youngest victim was 11 years old. A shooting victim's grandmother was also hurt while fleeing the chaos.\n\nOfficers arrested a 15-year-old boy on October 25, charging him with 11 counts of attempted homicide and possession of a firearm by a delinquent.\n\nThis incident marks the 21st mass shooting in Florida this year, reviving painful memories across South Florida of previous state tragedies, including the 2018 massacre at Parkland's Marjory Stoneman Douglas High School.",
+    "imagePrompt": "A realistic editorial portrait photo in 3:4 vertical orientation capturing an exterior street scene outside a collegiate stadium at night. In the upper two-thirds, red and blue emergency vehicle lights cast intense reflections across a cordoned-off perimeter near stadium gates, with silhouettes of parked law enforcement vehicles. The bottom third is composed of dark, quiet asphalt with long shadows, creating a simple and dark base. Somber night atmosphere, rain-slicked pavement reflecting distant light beams, no text, no watermarks, no logos, no visible faces.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on a bright yellow plastic evidence tent marker resting on dark cracked pavement, illuminated by the low glow of street lamps. Next to the marker lies an abandoned empty plastic cup. The background is softly blurred, focusing entirely on the forensic detail. No people, no faces, no text, no numbers, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami-Dade Mayor Daniella Levine Cava speaks on Amendment 3, MDSO decision to pull security detail",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc3lPOXBxRkxYd3hUV3UtdWpvdm9UMnRoMnlvcDA0ZHVzWUt2ME0yQk5jN3E5NThvMzl5bGNlZUpPN3dqZTkxazlfQWJfaHVtcDRkOVdlM21CQkd4Zk5ucjFmTjQySHdKOTY1OXVKbDdpTm54NFBMOUhGbFJoNEEwcWpXcjUwVTdubzQwcWNxel9NZGtsZWZvdnpBekVicFNNbW1RNTg0NzlCT0Zia3FENmJ4NDFPY1VEbWJscHpPVVBqV1JaZ2tTZHlkcFo0Vmc?oc=5",
+   "t": 1793022480000,
+   "id": 7,
+   "link": "https://www.cbsnews.com/miami/video/miami-dade-mayor-daniella-levine-cava-speaks-on-amendment-3-mdso-decision-to-pull-security-detail/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MAYOR LEVINE CAVA ADDRESSES AMENDMENT 3 AND REMOVED SECURITY DETAIL",
+     "MIAMI-DADE MAYOR SPEAKS OUT ON ELECTIONS AND SECURITY",
+     "WHAT SHERIFF DECISIONS MEAN FOR MIAMI-DADE COUNTY LEADERS"
+    ],
+    "article": "With the midterm elections just over a week away, millions of South Florida voters have already cast their ballots. Miami-Dade Mayor Daniella Levine Cava is speaking on key issues impacting the local community.\n\nMayor Levine Cava addressed the potential impacts that Amendment 3 could bring to the area if voters pass the measure. In addition, she spoke about the recent decision made by Miami-Dade Sheriff Rosie Cordero-Stutz to pull security detail assignments for the county mayor and county commissioners.\n\nAs election season continues across South Florida, these shifts in leadership and ballot measures remain in the spotlight for local residents.",
+    "imagePrompt": "A realistic editorial portrait in 3:4 vertical aspect ratio of a female municipal official resembling Mayor Daniella Levine Cava speaking during an interview in a government hall. The subject is positioned in the upper two-thirds of the frame, showing a professional and serious expression. The bottom third of the frame is composed of a simple, darker out-of-focus wooden podium and shadowed floor. Natural indoor lighting with soft depth of field. No text, no letters, no logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of a dark voting box with a crisp paper ballot being inserted into the slot under soft interior lighting. The ballot slot is perfectly centered in the frame. No people's faces, no text, no letters, no logos, and no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "5 up, 5 down from Miami Hurricanes’ 52-23 win over Pitt Panthers",
+   "source": "State of The U",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYlRNdlpQRnRPU0hrS1ByYUNBX182bUYtcDNrQWxNekRUTVYwQjR1Tms4ejg5Vl81ZnRXMDY0SlBVcjUtNjU5X091MGxfclRyV0JGT3Z6ZDEyTTE2MmJ4anU3TmtnUktDZVdhZk5ZUG5mdks1TzdlOUJsajVKUHN0ejNrdEtkd0kyVjhORnVtSFJvaHdYaXN2R3JHUi1oZkJQekZxWHY5ekV4Y21pR1FvcDVWNVpfV0FCckkyZElyTQ?oc=5",
+   "t": 1793026822000,
+   "id": 8,
+   "link": "https://www.stateoftheu.com/miami-hurricanes-football/89375/5-up-5-down-from-miami-hurricanes-52-23-win-over-pitt-panthers",
+   "thin": false,
+   "desc": "Your best source for quality Miami-Florida Hurricanes news, rumors, analysis, stats and scores from the fan perspective.",
+   "draft": {
+    "headlines": [
+     "MIAMI HURRICANES BLOW OUT PITT PANTHERS 52-23 AT HARD ROCK",
+     "CANES DOMINATE PITT IN 52-23 BLOWOUT",
+     "RECORD SETTING WIN HONORS MIAMI LEGENDS AT HARD ROCK STADIUM"
+    ],
+    "article": "The Miami Hurricanes dominated the Pitt Panthers in a 52-23 victory at Hard Rock Stadium on the day the school honored the 2001 national championship squad. Miami donned 2001 throwback uniforms and built a commanding 52-14 advantage early in the fourth quarter.\n\nQuarterback Darian Mensah led the offensive surge, throwing for 387 yards and four touchdowns on 31 of 37 passing without an interception. Wide receiver Malachi Toney set a new school record by hauling in 16 receptions, producing 194 yards and three scores.\n\nDefensively, Marquise Lightfoot registered four quarterback pressures, while JJ Dunnigan forced a fumble that Justin Scott recovered to secure the home triumph.",
+    "imagePrompt": "A realistic editorial sports photo in 3:4 vertical portrait orientation of an athletic college football wide receiver celebrating on an outdoor grass field under bright stadium lights. The player, positioned in the upper two-thirds of the composition, is captured mid-motion with arms raised in victory, wearing a white and green football uniform. The bottom third is composed of simple, darker out-of-focus turf grass. Natural sports photography style, clean depth of field, with no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo centered on a pebbled leather American football resting on bright green stadium turf under stadium lights. Deep focus on the white laces and texture of the leather, with the grassy blades cleanly visible and a softly blurred background. No faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Everyone Is Looking at Notre Dame, But No. 1 MIami Has the Ultimate Trap Game at UNC",
+   "source": "Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQjZCcE9yQTAtMHRfSnQ5X3VxT2ZzNmxlbV91VW1wQ0RoUXJMbVdNYncyalU0TVptS1BRdGRRVGNQT0ZVN1BFaTZuV3pXelRfaTlJQ0Iwb25wcFVJM3BpZFg0SHcxSF96MWZYMm1RVXY3a1d1bjEzbEsyaDF5dlZqNlRWMEtrY1FiVWNBWU5rQlVVdTRVc2JtY2Vta1JPdnFENU9XSU1GN1JveU1EVV9UVXc5QnM1QTM1ODE0ZmpKN2VHdw?oc=5",
+   "t": 1793026181000,
+   "id": 9,
+   "link": "https://www.si.com/college/miami/football/everyone-is-looking-at-notre-dame-but-no-1-miami-has-the-ultimate-trap-game-at-unc",
+   "thin": false,
+   "desc": "Bill Belichick's first year with the North Carolina Tar Heels didn't go as planned. Distractions everywhere, bad football, and one of the greatest minds in foot",
+   "draft": {
+    "headlines": [
+     "NO. 1 MIAMI TRAVELS TO UNC ON HALLOWEEN NIGHT",
+     "UNDEFEATED CANES FACE DANGEROUS UNC ROAD TEST",
+     "CAN MIAMI PROTECT ITS TOP RANKING IN CHAPEL HILL?"
+    ],
+    "article": "Our top-ranked Miami Hurricanes are heading on the road to Chapel Hill for a Halloween night showdown against the North Carolina Tar Heels. Miami enters the matchup undefeated at 7-0 overall and 5-0 in conference play following a dominant 52-23 victory over Pitt.\n\nHead coach Mario Cristobal emphasized on the Joe Rose Show that the team must stick to its 1-0 mantra and avoid looking ahead to Notre Dame.\n\nBill Belichick leads a disciplined 5-3 UNC squad boasting one of the best defenses in the ACC. With memories of last season's Halloween loss to SMU, the Canes face an opponent built like an NFL team.",
+    "imagePrompt": "A realistic editorial portrait of a focused college football head coach standing on the sideline under stadium lights at night, wearing a dark athletic polo and headset, looking intensely across the field. The upper two-thirds shows his determined expression and the glowing atmosphere of the night game, while the bottom third fades into dark, simple turf shadows. Crisp sports photography, 3:4 aspect ratio, no text, no logos.",
+    "circlePrompt": "A crisp close-up shot of a textured football resting on dew-covered green stadium turf beneath bright nighttime field illumination, centered in a 1:1 square frame. Clean, high-detail macro sports photography, shallow depth of field, no people, no text, no logos."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1836: Dade County is created",
-   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
+   "title": "1825: Cape Florida Lighthouse",
+   "desc": "The Cape Florida Lighthouse was built on Key Biscayne in 1825 to warn passing ships.",
    "id": 10,
    "draft": {
     "headlines": [
-     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
-     "HOW DADE COUNTY BEGAN IN 1836",
-     "THE 1836 ORIGINS OF OUR HISTORIC DADE COUNTY"
+     "CAPE FLORIDA LIGHTHOUSE WAS BUILT ON KEY BISCAYNE IN 1825",
+     "KEY BISCAYNE LIGHTHOUSE DATES BACK TO 1825",
+     "PROTECTING SHIPS OFF KEY BISCAYNE SINCE 1825"
     ],
-    "article": "Our area traces its formal beginnings back to February 4, 1836, the day Dade County was officially established. The county earned its historic identity from Major Francis L. Dade as well as the Miami River flowing through the land.\n\nThe year 1836 also brought key defensive developments to the territory. Construction began on Fort Dallas, which was erected that very year to serve as a military base. During the Second Seminole War, the fort functioned as an active military station, solidifying 1836 as a defining moment in the establishment of Dade County.",
-    "imagePrompt": "A vintage, archival-style editorial photograph depicting an early 19th-century military outpost along a subtropical riverbank in 1836. A simple wooden fortification inspired by Fort Dallas stands among native palms and scrub in the upper two-thirds of the vertical frame under an overcast sky. The bottom third consists of deep, dark shadows and quiet river water reflections. Muted sepia and weathered tones, historical atmosphere, no visible text, letters, logos, or watermarks, no identifiable people.",
-    "circlePrompt": "A realistic square 1:1 photograph focusing on a close-up detail of aged, weathered timber logs and period-accurate iron hardware from an 1830s military stockade wall. The wooden texture and rustic joinery are centered in sharp focus under warm Florida daylight, with soft blurred greenery in the background. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "The Cape Florida Lighthouse was established on Key Biscayne in 1825. Built specifically to warn passing ships, the historic beacon served maritime travelers navigating the coastal waters around the island. Construction was completed on Key Biscayne in 1825 to alert ships to the coastline. From its position on the key, the Cape Florida Lighthouse was dedicated to signaling vessels and warning passing boat traffic.",
+    "imagePrompt": "A vintage archival-style vertical 3:4 portrait of the historic Cape Florida Lighthouse on Key Biscayne. The historic masonry lighthouse tower stands tall in the upper two-thirds of the frame against a softly clouded sky. The bottom third features darker, simple coastal ground and shadowed native shoreline foliage. Aged film grain, muted sepia and monochrome tones, historic early nineteenth-century maritime mood, no people, no text.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centering on the architectural details of the glass lantern room and iron catwalk at the top of a coastal lighthouse. The vintage lantern structure is centered against an open sky, highlighting weathered painted metal railings and glass panels, realistic daylight, no people, no text."
    }
   }
  ]
