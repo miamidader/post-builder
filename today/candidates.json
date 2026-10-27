@@ -1,203 +1,201 @@
 {
- "date": "Monday, October 26",
- "pick": "mvpe6ox1",
+ "date": "Tuesday, October 27",
+ "pick": "mvqql1xe",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Where to trick-or-treat in Miami on Halloween 2026",
-   "source": "Miami New Times",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQWVlGSHIwUWRpVkxCS1QwVUdoSmdaTnpnN0d4RlZmSVA0SzUwOEVROVRIdHFnalNmdEhOVjhiMUhqYlQ1ZXMyZjR5b3BYaGlhRGRvb1ZYaHFFTjE1eHo1Si1vai1vOWo1MXZ4R0h0VkVvWW9WTHd5NVZqU3kwT3lGdlVXRXBRb08wN0pmUy1uRnRmeHAwemI2MTFvRU9WZTBOZ3J5ZUNn?oc=5",
-   "t": 1793026800000,
+   "title": "Florida Vintage: Miami-Dade becomes first Florida region to enter 10-digit phone number era",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNdG1GWndWTER3X2RWYVEybFRaYXFaMHlqWnJPVmY1UXY0d0lBZFlyczFXTG1HYy03bE55Q1JRWV85aVdtRHl1MEhyUHlYbkhZb08zN0dXMjVfRmpJMC1SSHZxSWZTU1NHWFJSaVFFaFVnaDliNWx0Ri1UMTVsNHBHeVVNRW1FQjdDMkZIVW9NNUxERmxxQ1hMdjFPMDJoRkliTUFETWV6aXNtVUJtRGNrRUJ2YW9nNEhaaWk3T1dqZUsweXRjb0IyZ1BBTlZBanRL?oc=5",
+   "t": 1793106420000,
    "id": 1,
-   "link": "https://www.miaminewtimes.com/arts-culture/where-to-trick-or-treat-in-miami-on-halloween-2026-40594139/",
-   "thin": false,
-   "desc": "Here's where you can load up on candy in Coconut Grove, Miami Beach, Hialeah and beyond.",
-   "draft": {
-    "headlines": [
-     "FREE HALLOWEEN TRICK OR TREATING EVENTS ACROSS MIAMI NEIGHBORHOODS",
-     "MIAMI HALLOWEEN CANDY STOPS YOU CAN VISIT THIS WEEKEND",
-     "BEST SPOTS FOR FREE CANDY ACROSS MIAMI THIS HALLOWEEN"
-    ],
-    "article": "Miami families have multiple free community celebrations to gather Halloween candy this weekend. The festivities start Friday, October 30, from 6 to 9:30 p.m. at Shenandoah Park with a trunk-or-treat trail and carnival snacks. On Saturday, October 31, afternoon events include Coral Gables trick-or-treating along Miracle Mile starting at 2 p.m. with a dog costume contest, plus South Miami Safe Streets on Sunset Drive from 4 to 7 p.m. featuring allergy-friendly candy stations. Evening options kick off at 6 p.m. with trunk-or-treat games at Milander Park in Hialeah and Fuller Street festivities in Coconut Grove. Lincoln Road in Miami Beach also hosts costume strolls from 5 p.m. into the night.",
-    "imagePrompt": "A realistic editorial medium shot in vertical 3:4 format of a young child dressed in a colorful superhero costume holding an orange pumpkin bucket overflowing with wrapped sweets during twilight in an outdoor palm-lined neighborhood. The costumed child is centered in the upper two-thirds of the frame, with ambient evening light and subtle festive string lights glowing in the soft-focus background. The lower third consists of simple, darker pavement in shadow. Realistic photography, natural textures, no text, no logos, no watermarks.",
-    "circlePrompt": "A detailed square 1:1 close-up photograph centered on a classic orange jack-o-lantern treat bucket filled to the brim with wrapped colorful candies, resting on an outdoor stone bench. The festive bucket sits perfectly centered with a softly blurred park greenery background. Crisp details on the treats and bucket, no people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Wind and flood advisories, warning issued as king tides continue to flood streets across South Florida",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5SN1ZoU3VNTFhFeW85bjhlejVLSE1rZy1jY3dUZVNTaXRGSHpwMmhJMFVPRjFac2NDWnBSZmZITFhNVUFwX1pjOEtjN2trYzNabzdBYXU1UUhZa2pUa0RvbjY4WldpN0RfUl9hSHk4MDNDNy1VVnJSQU1vcw?oc=5",
-   "t": 1793024462000,
-   "id": 2,
-   "link": "https://wsvn.com/news/local/miami-dade/strong-winds-push-seawater-over/",
-   "thin": false,
-   "desc": "MIAMI BEACH, FLA. (WSVN) - King tides brought more flooding to South Florida following a soggy weekend across the region.Monday morning, 7News cameras captured flooding Read More",
-   "draft": {
-    "headlines": [
-     "KING TIDES FLOOD MIAMI BEACH AND REGIONAL COASTAL ROADS",
-     "HIGH TIDES AND STRONG WINDS SWAMP SHORES",
-     "HOW MIAMI AREA RESIDENTS ARE NAVIGATING KING TIDE FLOODING"
-    ],
-    "article": "King tides pushed seawater across Miami Beach and surrounding coastal neighborhoods on Monday morning, leaving standing water along Collins Avenue near 52nd Street. Coastal flood warnings covered Miami-Dade and Broward counties alongside an 11 a.m. wind advisory and gale warnings over South Florida waters. Over the weekend, rising tides flooded streets near Northeast 79th Street and Tenth Avenue in Miami, as well as Bill Baggs Cape Florida State Park in Key Biscayne. Powerful gusts paired with a full moon forced waves over barriers along the Hollywood Beach Broadwalk, where local shops stacked sandbags. A local artist displayed sculptures directly on flooded Miami Beach sidewalks to draw attention to rising sea levels.",
-    "imagePrompt": "A 3:4 vertical editorial photograph capturing high king tide flooding along Collins Avenue in Miami Beach. In the upper two-thirds, palm trees sway under an overcast, windy coastal sky, with floodwaters partially submerging the curb, roadway, and sidewalk near beachside buildings. The bottom third features deep, dark, reflective standing seawater filling the lower foreground, creating a simple and shadowy base. Natural daylight, stormy atmosphere, realistic news photography style, no text, no watermarks, no logos.",
-    "circlePrompt": "A square 1:1 realistic close-up photo centered on a row of rough burlap sandbags placed against a coastal storefront entrance, with shallow seawater rippling against their base on a wet sidewalk. Centered composition, detailed textures of coarse fabric and water, overcast natural daylight, no people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miamees On Fire: The State of the Miami-Dade Office Market",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNRWIzSlNYRDEzcUdxQk84MUU2M2lkV1A0b2NsM29NeFA5U3lOejcycklWY1pqVGtjaFhIRk5abTZDamJqMlZlZnc1SUswZmo1SW4ycXdqeEMxNk5DcktXYVFYNFVIR3ZzbDJmMXNEem9CYkF0WTNsZXdCeDk3N1J6ZERnc052aU5qT3JjcHJteXgwWHY3dU03bXNTTWVxNkhJ?oc=5",
-   "t": 1793024247000,
-   "id": 3,
-   "link": "https://communitynewspapers.com/videos-2/miamees-on-fire-the-state-of-the-miami-dade-office-market/",
-   "thin": false,
-   "desc": "Hosts Peter Zalewski and Oscar Musibay break down Miami-Dade's office market — from Brickell's record rents to the downtown core, Coral Gables, Edgewater and the rise of medical space.",
-   "draft": {
-    "headlines": [
-     "MIAMI-DADE OFFICE MARKET FACES HIGH RENTS AND SLOWING DEALS",
-     "BRICKELL OFFICE RENTS REACH RECORD HIGHS",
-     "ARE MIAMI-DADE OFFICE BUILDINGS FINALLY BACK FIVE YEARS LATER?"
-    ],
-    "article": "Five years after the pandemic altered workspaces, analysts Peter Zalewski and Oscar Musibay examined whether Miami-Dade office buildings have truly recovered. Their assessment reviews vacancy numbers alongside shifting business demands across local neighborhoods. Brickell continues to see record-high rents, setting a sharp contrast with the downtown core. Meanwhile, interest rates and the election cycle have slowed leasing activity throughout the county. Activity remains split across Class A hubs like Coral Gables, Coconut Grove, and Aventura. At the same time, specialized leasing is expanding, with medical and med spa spaces gaining ground across submarkets like Edgewater, the Design District, and Little Haiti.",
-    "imagePrompt": "An editorial vertical 3:4 photograph showing modern corporate skyscrapers towering over the Brickell financial district in Miami during late afternoon. Gleaming glass facades and office balconies dominate the upper two-thirds of the frame against a pale blue sky. The lower third features a darker street-level perspective with deep building shadows and asphalt, providing a clean, uncluttered base. Realistic lighting, sharp architectural details, no people visible, no text, no watermarks.",
-    "circlePrompt": "A square 1:1 detailed photograph focusing on modern architectural elements of an upscale Miami commercial office facade. Centered composition showing geometric glass window panels, reflective surfaces, and dark aluminum mullions in bright daylight. Clean architectural lines, professional aesthetic, no people, no faces, no signage, no text, no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Publix is buying up Miami-Dade shopping centers. Here’s what to know",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdW9SMWhHVWFSWkF2eklTTnc2WEU1TVNmS1RxX1JhZWg5UVoybWoyZ0pNbXRDZnR4alpvdk4ySWJWNXowRFIzdXlLMXUteElQVE8xUm5tNTJobk12cm1DbTM4SGdmaV94WUJKSjVSWXR2SUh5X05NV3FfNWRNclF2Z2pTLTBsVTJ00gGIAUFVX3lxTE9HUFRRRHgtUmtJdzA4NmdRZnhhVHBqT0h0OUFUeHdmSWdTTFA0WXZ0T3FoSHZER1FhaF80Z3pCbW5xLWFLckxBUmJRRnE4VExieXY3bE9rYXh1LTRlSktDUWRtcDNiYXhZX1ZILVFJWHMxcTZZbnJ5QWtVdjVzdXEtTEFqeUFFN3I?oc=5",
-   "t": 1793023497000,
-   "id": 4,
-   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317753374.html",
-   "thin": false,
-   "desc": "The supermarket giant bought shopping plazas near MIA and in southwest Miami-Dade.",
-   "draft": {
-    "headlines": [
-     "PUBLIX SPENDS 107 MILLION DOLLARS ON TWO MIAMI-DADE PLAZAS",
-     "PUBLIX BUYS ITS MIAMI-DADE SHOPPING PLAZAS",
-     "SUPERMARKET GIANT BECOMES THE LANDLORD ACROSS MIAMI-DADE CENTERS"
-    ],
-    "article": "Lakeland-based Publix is making major real estate moves across Miami-Dade by taking ownership of the shopping centers where it operates. During October, the grocery giant invested $107 million to purchase two retail centers in the county. The newly acquired commercial plazas are located near Miami International Airport and in southwest Miami-Dade. With these purchases, the supermarket giant is shifting its position from a retail tenant into a commercial landlord. Publix now owns the shopping plazas where its own supermarkets anchor the retail mix.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of an expansive suburban South Florida strip mall plaza under bright sunlight with palm trees. The storefronts, sidewalks, and parking lot occupy the upper two-thirds of the frame. The bottom third is composed of simple, darker asphalt pavement in clear shadow. No text, letters, signage, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a centered close-up architectural view of contemporary stucco retail plaza pillars and glass storefront windows under bright South Florida sunlight. No people, no faces, no text, letters, signage, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Man who admitted being high on mushrooms before killing Miami Beach tourist set to be sentenced",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPSHFWVV96TmFDV2NXWEUya0dseEVINmhHWDdIcVdEdEMyOWVrZmliaW10eEo4YnhZUkpVaEJGR2xfVjN5NXlMNGtEM2dyREpaX1hQY0ZYdUpQYjRlLTA3RFplc21TNk5MQ2JSZjVRdDlsU0lpWlg3MFpwTnVZdUQxRHNld2xVLUFyc011cWU3djhlLTFwZnRLVUhqbTRjTUNLMTJrYUlXQlBSVm92WjZ3NVN2eGItZkRRcFhWYkhrbU9FTU5jaTRvOHNDQ3o?oc=5",
-   "t": 1793023320000,
-   "id": 5,
-   "link": "https://www.cbsnews.com/miami/video/man-who-admitted-being-high-on-mushrooms-before-killing-miami-beach-tourist-set-to-be-sentenced/",
+   "link": "https://www.local10.com/features/2026/10/27/florida-vintage-miami-dade-becomes-first-florida-region-to-enter-10-digit-phone-number-era/",
    "thin": true,
-   "desc": "It’s sentencing day for a man who admitted being high on mushrooms when he shot and killed a father who was visiting Miami Beach with his family in 2021.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "MAN TO BE SENTENCED FOR FATAL 2021 MIAMI BEACH SHOOTING",
-     "SENTENCING DAY IN DEADLY MIAMI BEACH TOURIST SHOOTING",
-     "JUSTICE AWAITED FOR 2021 MIAMI BEACH FAMILY TRAGEDY"
+     "MIAMI-DADE BECAME FIRST FLORIDA REGION WITH 10-DIGIT DIALING IN 1998",
+     "MIAMI-DADE LED FLORIDA INTO 10-DIGIT CALLING",
+     "FLORIDA STARTED TEN-DIGIT PHONE NUMBERS RIGHT HERE IN MIAMI-DADE"
     ],
-    "article": "Sentencing is scheduled today for the man who shot and killed a visiting father in Miami Beach back in 2021. The fatal shooting occurred while the victim was visiting our coastal community alongside his family.\n\nThe defendant previously admitted that he was under the influence of mushrooms at the time of the deadly attack.\n\nNow, years after the violent encounter shook Miami Beach, the judicial process reaches its final stage as the man appears before the court to learn his punishment for the 2021 killing.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation showing an empty modern courtroom. In the upper two-thirds of the frame, soft light enters through blinds illuminating an empty defense table and a solemn wooden witness stand. The bottom third consists of deep dark shadows across the polished floorboards. Atmospheric, dramatic, high quality, no people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a polished wooden judge's gavel resting on a matching sound block upon an oak bench. Dramatic side lighting highlights the grain of the wood, with a blurred courtroom background. No faces, no text, no letters, no logos, no watermarks."
+    "article": "Miami-Dade holds a unique place in state history as the very first region in Florida to transition into the 10-digit phone number era.\n\nThis telecommunications milestone officially took place in the summer of 1998. Before any other region across Florida adopted the format, Miami-Dade became the earliest area in the state to leave seven-digit local dialing behind.\n\nThe summer of 1998 permanently changed how local residents placed calls, establishing Miami-Dade as the first community in all of Florida to embrace ten digits.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait format of a vintage late-1990s outdoor payphone station on a warm Miami street corner. The upper two-thirds features the metallic payphone receiver hanging on the cradle against a backdrop of sunlit tropical foliage and a clear sky. The bottom third consists of simple, darker concrete pavement casting soft shadows. Photorealistic, documentary aesthetic, with no text, letters, numbers, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo centered on the coiled cord and worn plastic handset of a vintage 1990s landline telephone sitting on a desk. Soft ambient indoor lighting highlights the textured plastic and spiral cord, with a shallow depth of field softly blurring the background. No people, faces, text, numbers, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Mass shooting at FAMU homecoming latest in long Florida history",
-   "source": "Tallahassee Democrat",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU081TDNTQ2Y4Ung2eDBwMXJaT1RuM2NjcDJ6UERzNHFmQ2ZNTVYxaGU1Q2JlYXB3Yk52cE5jTUFUbVJKbHVaMDJaaG5RNTNXLUFFLTlDQU1SZjVIQTk4VEhIV3lzWXhXSnk2MGJQN2s4N3NPdDVLVWZ0OTF6WHQ0QktiWnBObFlSZ0lGYmo1cXFxb3cySktQQUpjaVgtNVB3dUtpQTlJamVtbkxCQUF0Y0RoZ3k?oc=5",
-   "t": 1793023074000,
-   "id": 6,
-   "link": "https://www.tallahassee.com/story/news/2026/10/26/tallahassee-florida-shooting-mass-shootings-history/92440305007/",
+   "title": "Florida election 2026: Where to vote in Miami-Dade",
+   "source": "NBC 6 South Florida",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdmZWOFRjVEZhb2RUbnMwNVFqLThva0pvSnhiX1lmdnBUSTBuQkFCcmZhYUhKWmhVbE4xSHJTTUZLcTBLYURBV0J2UnhOd2hPejM2NTVfa0ZSVnEzdTNwTGI0SjgwZXdjRm9LSUdKMGtvaTVkQ3V0bzhfc0otdWt0a0hNa1B1VlN1czczOE9ETdIBlwFBVV95cUxQdDFldDRaVWc4WU5wMUZySEtQZ0ZHUXpkcUQycHhaTDhLZ0dTQXJacFA2Z3VpcEdxeGZ1VnRrdERlY2EzOVk0VkxKamplX2VCWTJaZlZwOTNyc2Vfa0FhdTZ1eWN1SWhJZGdtQ19GM2J5b1o0a0I4aEZiWEg0bEQySS1PSl9WRGZhOUlaUGVuTmdRZGROMTl3?oc=5",
+   "t": 1793102400000,
+   "id": 2,
+   "link": "https://www.nbcmiami.com/news/local/2026-elections-where-to-ote-in-miami-dade/3877927/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "TEEN CHARGED AFTER 12 HURT IN FAMU HOMECOMING SHOOTING",
-     "FLORIDA REELS AFTER MASS SHOOTING OUTSIDE FOOTBALL STADIUM",
-     "STATEWIDE VIOLENCE CRISIS GROWS WITH LATEST FLORIDA MASS SHOOTING"
+     "MIAMI-DADE POLLS OPEN AT 7 AM ON NOVEMBER 3",
+     "PLAN YOUR VOTE FOR ELECTION DAY",
+     "WHERE MIAMI-DADE RESIDENTS WILL CAST BALLOTS THIS NOVEMBER"
     ],
-    "article": "South Floridians are watching closely as another mass tragedy impacts the state. Gunfire erupted outside Bragg Memorial Stadium following the Florida A&M Homecoming game in Tallahassee on October 24.\n\nTallahassee police reported that 12 people were injured, including six children. The youngest victim was 11 years old. A shooting victim's grandmother was also hurt while fleeing the chaos.\n\nOfficers arrested a 15-year-old boy on October 25, charging him with 11 counts of attempted homicide and possession of a firearm by a delinquent.\n\nThis incident marks the 21st mass shooting in Florida this year, reviving painful memories across South Florida of previous state tragedies, including the 2018 massacre at Parkland's Marjory Stoneman Douglas High School.",
-    "imagePrompt": "A realistic editorial portrait photo in 3:4 vertical orientation capturing an exterior street scene outside a collegiate stadium at night. In the upper two-thirds, red and blue emergency vehicle lights cast intense reflections across a cordoned-off perimeter near stadium gates, with silhouettes of parked law enforcement vehicles. The bottom third is composed of dark, quiet asphalt with long shadows, creating a simple and dark base. Somber night atmosphere, rain-slicked pavement reflecting distant light beams, no text, no watermarks, no logos, no visible faces.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on a bright yellow plastic evidence tent marker resting on dark cracked pavement, illuminated by the low glow of street lamps. Next to the marker lies an abandoned empty plastic cup. The background is softly blurred, focusing entirely on the forensic detail. No people, no faces, no text, no numbers, no logos, no watermarks."
+    "article": "Miami-Dade voters preparing for the 2026 election need to verify their assigned polling places before casting their ballots in person. On Election Day, November 3, voting sites across Miami-Dade County will operate from 7 a.m. until 7 p.m. Anyone standing in line by 7 p.m. will still be permitted to vote. Voters can locate their specific voting precinct by using their registered home address. Along with candidate races, the November 2026 ballot includes Florida amendments. To avoid last-minute confusion at the polls, the Miami-Dade County Elections Department provides a voter information guide covering common election questions.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait of a community building entrance serving as a polling precinct on a sunny South Florida day. The building entrance and exterior walkways framed by palm trees occupy the upper two-thirds of the frame. The bottom third is composed of simple, darker pavement and soft ground shadows. Clean documentary photography style, natural sunlight, no text, no signs, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo featuring a close-up detail of an official ballot box slot inside an indoor voting precinct. The voting station counter and insertion slot are centered in sharp focus under diffused indoor lighting. Clean perspective, no human faces, no text, no numbers, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade Mayor Daniella Levine Cava speaks on Amendment 3, MDSO decision to pull security detail",
+   "title": "South Florida king tides peak Tuesday continuing risk of coastal flooding from Fort Lauderdale to Miami",
    "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc3lPOXBxRkxYd3hUV3UtdWpvdm9UMnRoMnlvcDA0ZHVzWUt2ME0yQk5jN3E5NThvMzl5bGNlZUpPN3dqZTkxazlfQWJfaHVtcDRkOVdlM21CQkd4Zk5ucjFmTjQySHdKOTY1OXVKbDdpTm54NFBMOUhGbFJoNEEwcWpXcjUwVTdubzQwcWNxel9NZGtsZWZvdnpBekVicFNNbW1RNTg0NzlCT0Zia3FENmJ4NDFPY1VEbWJscHpPVVBqV1JaZ2tTZHlkcFo0Vmc?oc=5",
-   "t": 1793022480000,
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQc0E4clFBNkRDVC1BcGhaTFY0MmdVbktGYno1cjFaSmhlOEN1YmNaVGdBTGdSVWtvc3pqcUVkMkJycGRpX2tiUVE0anBiTlh1eGpqRVdOWnl0Yk1WcDVvLWNaUUFsRW9OU28wR1JjRkJsM0lVSVBsRWFyWkNTQTJfRFB4a1lsaVExVjJkdTRGdmEtc0F0TUVjTHU1b3M2OXBWR3hoUjFiU1FYaVkzQ1FXRmJCNGxqWDUzMnJzMDl3RFdmRVRnRkxvYU5neGtKWEU?oc=5",
+   "t": 1793100045000,
+   "id": 3,
+   "link": "https://www.cbsnews.com/miami/news/south-florida-weather-forecast-king-tides-miami-fort-lauderdale-miami-dade-broward-october-27-2026/",
+   "thin": false,
+   "desc": "The CBS News Miami NEXT Weather team is urging residents not to drive, walk or wade through the saltwater flooding.",
+   "draft": {
+    "headlines": [
+     "KING TIDES AND HIGH WINDS BRING COASTAL FLOODING TO MIAMI",
+     "MAJOR COASTAL FLOOD WARNING ISSUED FOR SOUTH FLORIDA",
+     "WHY MIAMI STREETS ARE FLOODING UNDER TUESDAY MORNING TIDES"
+    ],
+    "article": "Miami faces significant coastal flooding Tuesday as king tides peak at 10:07 a.m. Fort Lauderdale will see its high tide at 10:21 a.m. A coastal flood warning remains active across South Florida, alongside a wind advisory featuring northeast winds of 15 to 25 mph and gusts up to 45 mph along the coast.\n\nScattered downpours bring a Level 1 risk for street flooding through Wednesday. Residents are warned not to walk, wade, or drive through standing saltwater, which is corrosive to cars.\n\nDangerous marine conditions include 12 to 15 foot seas, a gale warning through Tuesday night, and life-threatening rip currents that make ocean swimming unsafe. Temperatures will linger in the low 80s.",
+    "imagePrompt": "A realistic vertical editorial photograph showing a flooded Miami coastal street lined with bending palm trees under heavy, gray storm clouds. The wind pushes saltwater over the curbs and sidewalks in the upper two-thirds of the frame. The bottom third is composed of dark, murky floodwaters reflecting the moody sky. High-end documentary style, no people, no text, no watermarks.",
+    "circlePrompt": "A realistic square close-up photograph focused on saltwater high tide flooding creeping up the side of an automobile tire parked next to a concrete street curb. Centered subject, clear water ripples over dark pavement, detailed texture, no people, no faces, no text, no logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami-Dade could lose 12,000 jobs if Amendment 3 passes, report says",
+   "source": "Axios",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeGlycktZeVFNdDhHekFIMlF4aThRdVZZV0VGRDZZRDF6QXVIbkVuNzVZc0UweDB1dnRMZGtybzNtRU0tVk9KRFBXZXk1QnNOY00yTEVmMTVGSHRCTDBUNFZES1d3TDk4Ti1idVhkeEZNMDRuLW5BZE1HdUxSY2dyRjRuQmRzQnIxaFdLbFdkendOMkcwUjc1TjJYTHNPRXg2VEJyUnJNMzFEcVVoRzRtRnJkaVNFRVNp?oc=5",
+   "t": 1793096432000,
+   "id": 4,
+   "thin": true,
+   "draft": {
+    "headlines": [
+     "REPORT WARNS MIAMI-DADE COULD LOSE 12,000 JOBS UNDER AMENDMENT 3",
+     "12,000 MIAMI-DADE JOBS AT RISK WITH AMENDMENT 3",
+     "COULD AMENDMENT 3 COST OUR COMMUNITY 12,000 LOCAL JOBS?"
+    ],
+    "article": "Miami-Dade County could see a substantial impact on local employment depending on the outcome of Amendment 3. According to a new report, our community stands to lose approximately 12,000 jobs if the measure passes. The projection raises major questions for Miami-Dade workers and residents as discussions continue across the county over how the passage of Amendment 3 could reshape the local workforce and economy.",
+    "imagePrompt": "Editorial style 3:4 vertical portrait of a modern office worker standing outside among downtown Miami glass skyscrapers during late afternoon. The worker is positioned in the upper two-thirds of the frame looking toward the horizon, illuminated by soft golden sunlight. The bottom third of the frame consists of simple, darker pavement and deep shadows. Realistic photojournalism, cinematic lighting, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 close-up photograph of a blank paper ballot entering a secure metallic ballot drop box slot, centered directly in the middle of the frame. Dramatic, clean studio lighting accentuating the texture of the metal and paper edges. No people, no faces, no legible text, no letters, no numbers, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Watch Live | WPLG Local 10 | Miami news, weather, traffic, streaming | Local10.com",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMiQ0FVX3lxTFBXX3N6VS1kcUgtTV8tcWxCanBBSHM4YXNCR2pIMnlHMFFzNmNZdS00NmlWc09FV0xjSEI5aGVOYlJFNkU?oc=5",
+   "t": 1793092743000,
+   "id": 5,
+   "link": "https://www.local10.com/live/",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "LIVE NEWS, WEATHER, AND TRAFFIC STREAMING ACROSS SOUTH FLORIDA",
+     "STREAM LIVE SOUTH FLORIDA COVERAGE NOW",
+     "STAY CONNECTED TO MIAMI, BROWARD, AND THE KEYS"
+    ],
+    "article": "Live breaking updates, weather conditions, and traffic monitoring are readily available for South Florida communities. Viewers throughout Miami, Fort Lauderdale, Broward County, and the Florida Keys can track critical information in real time through active video streams and web cams.\n\nThese online broadcasts provide coverage of ongoing weather changes, road congestion, and local breaking situations across the region. With continuous streaming access, residents and commuters from the Keys up through Broward County can stay informed on developments impacting their neighborhoods day and night.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait format capturing an elevated view of a bustling South Florida highway interchange in Miami beneath dynamic weather clouds. The upper two-thirds showcases the expansive network of overpasses with moving commuter vehicles under a vast subtropical sky, while the bottom third consists of clean, dark asphalt road surface with soft shadows. Editorial color grading, high detail, no text, no letters, no logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up view of an outdoor traffic monitoring camera mounted securely on a metallic pole, centered in the frame against a backdrop of deep blue sky and bright white clouds. Crisp focus on the camera lens and hardware, no people, no faces, no text, no letters, no logos, and no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Vicki Lopez seeks voter mandate against challenger Rob Piper in Miami-Dade Commission runoff",
+   "source": "Florida Politics",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQc0JTdHZ2WXFGSEdreS1YUnlpaDlFUVdDSWU1bGVBaDg0VTRLcC0xdVNiX2UzbVd0Tlp0UlJRMEFGTFVvRlhuTWRfcDUwbjFZNkw0NDdNU3BzOEk4Zkp3V0VYM0FHZVQ5eVdhLV9obUJrRDhnZ0NxY21IcmU2TlJ3M2swdzg3TVRSNTNaZk1ybVVmU3NQeFBOT3pfWC1LRHpBbnFRT3hrQUlUX011ZElkSml2OHVHc2NlNWhGMGRfLU1NYjIyRmxBXzE5WEtsekQxMG1j?oc=5",
+   "t": 1793091118000,
+   "id": 6,
+   "link": "https://floridapolitics.com/archives/827171-vicki-lopez-seeks-voter-mandate-against-challenger-rob-piper-in-miami-dade-commission-runoff/",
+   "thin": false,
+   "desc": "A 7-5 vote Commission vote put Lopez on the panel. Keeping her seat now requires approval from the people she represents.",
+   "draft": {
+    "headlines": [
+     "VICKI LOPEZ AND ROB PIPER FACE MIAMI-DADE COMMISSION RUNOFF",
+     "DISTRICT FIVE VOTERS DECIDE COUNTY COMMISSION RUNOFF",
+     "FROM BRICKELL TO SOUTH BEACH, DISTRICT FIVE CHOOSES ITS COMMISSIONER"
+    ],
+    "article": "District 5 voters across Miami and Miami Beach are deciding a runoff election for the Miami-Dade County Commission. Appointed incumbent Vicki Lopez faces challenger Rob Piper, a Marine Corps veteran. District 5 encompasses neighborhoods including Brickell, Downtown, Little Havana, Mid Beach, Shenandoah, and South Beach. Lopez secured 42.3 percent of the vote in the August primary, while Piper earned 29.5 percent. Lopez joined the commission following a 7-5 vote after Eileen Higgins stepped down. Lopez highlights her state legislative work on condo oversight and the Live Local Act. Piper is campaigning against current development concessions, calling for changes to the Live Local Act to protect local planning.",
+    "imagePrompt": "Editorial documentary portrait of a mature female local government official seated indoors during a quiet civic hearing, looking thoughtfully toward the side. The subject is positioned in the upper two-thirds of the vertical 3:4 frame under soft, natural window lighting. The lower third of the composition features a dark, unobtrusive polished wood council desk in soft focus. Photorealistic, clean depth of field, neutral color palette, without any text, logos, or identifying emblems.",
+    "circlePrompt": "Square close-up detail shot of an empty polished wooden podium and microphone inside a municipal commission chamber. A blurred background shows rows of empty civic meeting seats and tall glass windows letting in daylight. Warm wood tones, cinematic lighting, centered composition, completely devoid of people, faces, writing, or badges."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "South Florida is already flooding, and the peak of this king tide is days away",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBXNW56TzA4OU5JSlZXVjJpVTg3QkVNLWhNREJYOFpZN29IdnlDenZvMUw1ZnBTcEJBVVdLb2pnczVnaklQTlRYZVpGc3dtZ251b2lKYWFPT3h0NzR1Z00xdVU0eW41eHBCLXh5TmIydzR0Tk9VTVZwc1Y5WHnSAXxBVV95cUxQaGY5bE5WYXp4aXRPTEVBREhDUUVKSU5wcXhSUmEwREt0Q082NldhTndLZURRNjV2SlVGbXV6d20tM0k2ckkzU1ZZRkJyM1l3RmRXQ3ZPdnMwaFF6MGR1cFBpQnBEbFd6dFRuQm14Y2JsVDFBS1RRUmVVOUVU?oc=5",
+   "t": 1793061354000,
    "id": 7,
-   "link": "https://www.cbsnews.com/miami/video/miami-dade-mayor-daniella-levine-cava-speaks-on-amendment-3-mdso-decision-to-pull-security-detail/",
+   "link": "https://www.miamiherald.com/news/local/environment/article317771390.html",
+   "thin": false,
+   "desc": "Another round of strong king tides, plus high winds, equals flood risk.",
+   "draft": {
+    "headlines": [
+     "KING TIDE FLOODING THREATENS SOUTH FLORIDA THROUGH OCTOBER 31",
+     "SEVERE TIDES AND RAIN BRING MAJOR FLOOD THREAT",
+     "WHY MIAMI COASTAL STREETS WILL FLOOD WORSE BY TUESDAY"
+    ],
+    "article": "South Florida coastal streets and parks face a rising risk of submersion as a powerful cycle of king tides continues through October 31. High water logged local areas on Friday and Saturday, driven by onshore winds that push ocean water directly onto land.\n\nThe National Weather Service office in Miami warns that the peak will hit on Tuesday, bringing the threat of moderate to major flooding.\n\nConditions will worsen with 1 to 2 inches of rain forecast along the coastline over the coming days. Meteorologist Donal Harrigan warned that incoming showers will amplify water levels in areas already dealing with the high tides.",
+    "imagePrompt": "A vertical editorial photo taken at eye level showing seawater overflowing from a coastal South Florida seawall onto a street and adjacent park palm trees during a king tide event. The flooded road and wet coastal greenery dominate the upper two-thirds of the image, while the bottom third consists of deep, dark, reflective water rippling smoothly across the asphalt. Realistic coastal atmosphere, natural daylight, no people, no text, no logos.",
+    "circlePrompt": "A centered close-up shot of ocean water bubbling up and spilling over a concrete street curb and drain on a coastal road during high tide. Gentle ripples spread across the wet pavement under cloudy skies. Realistic documentary photography, square composition, centered subject, no people, no text, no logos."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "The Miami Dolphins Desperately Need Something...But It Is NOT A Savior.",
+   "source": "KREM",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNaFhNT1J2T2NubzRDcEtlWUwtUHBSUEcyeHJ4NnNMMkVQSjdMOW1ScG5hYWI2MEdqSTNhTlBiNE9UeHRpejlNRWhtc0NYb0MxY3RCd0UzV2xaZE1YMllvRWpvenhMS29OQXJyNk9TNzkzSTk3QWl0ZjBGMGhTdnRMT25ob2NmMTdyeHB5Z3ZqaldZZ2F0WGtidmdNRjZmUjZ4TU9nVzlqUzBoeE1vU2hPX2hlMTg0RVl6OFJIdDZWMEJkSUJ6eXN4bTJUdWliOFRwXy15LVRLNEppcDQzZzVwUGp5OEJ4YU9yeUNadF94Wi02ME8wUjROb1Q3cGk5aUVCdVYxRnln?oc=5",
+   "t": 1793108160000,
+   "id": 8,
+   "link": "https://www.krem.com/video/sports/locked-on/lo-miami/dolphins-show/the-miami-dolphins-desperately-need-somethingbut-it-is-not-a-savior/535-43a25fed-f0e7-4180-8fab-6a76eee8053d",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MIAMI DOLPHINS DESPERATELY NEED SOMETHING THAT IS NOT A SAVIOR",
+     "DOLPHINS NEED REAL ANSWERS NOT A SAVIOR",
+     "WHAT DO THE MIAMI DOLPHINS ACTUALLY NEED RIGHT NOW"
+    ],
+    "article": "The Miami Dolphins find themselves in urgent territory where the franchise desperately needs something new to move forward. Across the Miami area, the focus is squarely on what the organization requires, though that missing element is definitively not a savior. The team faces pressing questions about its immediate direction. Rather than counting on a single individual or miraculous rescue to solve every issue, the Dolphins must determine what specific adjustments will actually work. As conversations continue regarding the squad, the reality remains that Miami's path forward depends on addressing real collective needs instead of waiting for salvation.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation showing an empty modern football stadium in South Florida under dramatic overcast skies. The upper two-thirds displays towering stadium architecture, bright floodlights, and vast tiers of stadium seating overlooking pristine green turf. The bottom third is cast in deep, simple shadows across the sideline grass. Atmospheric, dramatic sports lighting, no people, no jerseys, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo focused on a pro football resting alone on dark green field turf under focused stadium lighting. The football is centered with crisp focus on the textured brown leather and clean white laces, surrounded by soft blur. No people, no faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "TUNE IN | FC Cincinnati at Inter Miami CF",
+   "source": "FC Cincinnati",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE02dW9FWGtoYVEySnJvNVJiTnFTbzlmLVZEdUQwemNJcEZqZ2NuazMxSUlzYkktdmhRcjN3NW5qaUctQWJPZGwxMFR0UFVNdWlHX2tHUGF5UXpfOHI1blA3b2s1ZHZVZ1RNMTdXUkd3c2JjTWlUNi1PaVdJdnRVdw?oc=5",
+   "t": 1793108152000,
+   "id": 9,
+   "link": "https://www.fccincinnati.com/news/tune-in-fc-cincinnati-at-inter-miami-cf",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MAYOR LEVINE CAVA ADDRESSES AMENDMENT 3 AND REMOVED SECURITY DETAIL",
-     "MIAMI-DADE MAYOR SPEAKS OUT ON ELECTIONS AND SECURITY",
-     "WHAT SHERIFF DECISIONS MEAN FOR MIAMI-DADE COUNTY LEADERS"
+     "INTER MIAMI CF HOSTS FC CINCINNATI AT NU STADIUM",
+     "SOCCER SHOWDOWN COMING TO SOUTH FLORIDA",
+     "CAN INTER MIAMI DEFEND HOME TURF AGAINST CINCINNATI?"
     ],
-    "article": "With the midterm elections just over a week away, millions of South Florida voters have already cast their ballots. Miami-Dade Mayor Daniella Levine Cava is speaking on key issues impacting the local community.\n\nMayor Levine Cava addressed the potential impacts that Amendment 3 could bring to the area if voters pass the measure. In addition, she spoke about the recent decision made by Miami-Dade Sheriff Rosie Cordero-Stutz to pull security detail assignments for the county mayor and county commissioners.\n\nAs election season continues across South Florida, these shifts in leadership and ballot measures remain in the spotlight for local residents.",
-    "imagePrompt": "A realistic editorial portrait in 3:4 vertical aspect ratio of a female municipal official resembling Mayor Daniella Levine Cava speaking during an interview in a government hall. The subject is positioned in the upper two-thirds of the frame, showing a professional and serious expression. The bottom third of the frame is composed of a simple, darker out-of-focus wooden podium and shadowed floor. Natural indoor lighting with soft depth of field. No text, no letters, no logos, and no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of a dark voting box with a crisp paper ballot being inserted into the slot under soft interior lighting. The ballot slot is perfectly centered in the frame. No people's faces, no text, no letters, no logos, and no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "5 up, 5 down from Miami Hurricanes’ 52-23 win over Pitt Panthers",
-   "source": "State of The U",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOYlRNdlpQRnRPU0hrS1ByYUNBX182bUYtcDNrQWxNekRUTVYwQjR1Tms4ejg5Vl81ZnRXMDY0SlBVcjUtNjU5X091MGxfclRyV0JGT3Z6ZDEyTTE2MmJ4anU3TmtnUktDZVdhZk5ZUG5mdks1TzdlOUJsajVKUHN0ejNrdEtkd0kyVjhORnVtSFJvaHdYaXN2R3JHUi1oZkJQekZxWHY5ekV4Y21pR1FvcDVWNVpfV0FCckkyZElyTQ?oc=5",
-   "t": 1793026822000,
-   "id": 8,
-   "link": "https://www.stateoftheu.com/miami-hurricanes-football/89375/5-up-5-down-from-miami-hurricanes-52-23-win-over-pitt-panthers",
-   "thin": false,
-   "desc": "Your best source for quality Miami-Florida Hurricanes news, rumors, analysis, stats and scores from the fan perspective.",
-   "draft": {
-    "headlines": [
-     "MIAMI HURRICANES BLOW OUT PITT PANTHERS 52-23 AT HARD ROCK",
-     "CANES DOMINATE PITT IN 52-23 BLOWOUT",
-     "RECORD SETTING WIN HONORS MIAMI LEGENDS AT HARD ROCK STADIUM"
-    ],
-    "article": "The Miami Hurricanes dominated the Pitt Panthers in a 52-23 victory at Hard Rock Stadium on the day the school honored the 2001 national championship squad. Miami donned 2001 throwback uniforms and built a commanding 52-14 advantage early in the fourth quarter.\n\nQuarterback Darian Mensah led the offensive surge, throwing for 387 yards and four touchdowns on 31 of 37 passing without an interception. Wide receiver Malachi Toney set a new school record by hauling in 16 receptions, producing 194 yards and three scores.\n\nDefensively, Marquise Lightfoot registered four quarterback pressures, while JJ Dunnigan forced a fumble that Justin Scott recovered to secure the home triumph.",
-    "imagePrompt": "A realistic editorial sports photo in 3:4 vertical portrait orientation of an athletic college football wide receiver celebrating on an outdoor grass field under bright stadium lights. The player, positioned in the upper two-thirds of the composition, is captured mid-motion with arms raised in victory, wearing a white and green football uniform. The bottom third is composed of simple, darker out-of-focus turf grass. Natural sports photography style, clean depth of field, with no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo centered on a pebbled leather American football resting on bright green stadium turf under stadium lights. Deep focus on the white laces and texture of the leather, with the grassy blades cleanly visible and a softly blurred background. No faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Everyone Is Looking at Notre Dame, But No. 1 MIami Has the Ultimate Trap Game at UNC",
-   "source": "Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPQjZCcE9yQTAtMHRfSnQ5X3VxT2ZzNmxlbV91VW1wQ0RoUXJMbVdNYncyalU0TVptS1BRdGRRVGNQT0ZVN1BFaTZuV3pXelRfaTlJQ0Iwb25wcFVJM3BpZFg0SHcxSF96MWZYMm1RVXY3a1d1bjEzbEsyaDF5dlZqNlRWMEtrY1FiVWNBWU5rQlVVdTRVc2JtY2Vta1JPdnFENU9XSU1GN1JveU1EVV9UVXc5QnM1QTM1ODE0ZmpKN2VHdw?oc=5",
-   "t": 1793026181000,
-   "id": 9,
-   "link": "https://www.si.com/college/miami/football/everyone-is-looking-at-notre-dame-but-no-1-miami-has-the-ultimate-trap-game-at-unc",
-   "thin": false,
-   "desc": "Bill Belichick's first year with the North Carolina Tar Heels didn't go as planned. Distractions everywhere, bad football, and one of the greatest minds in foot",
-   "draft": {
-    "headlines": [
-     "NO. 1 MIAMI TRAVELS TO UNC ON HALLOWEEN NIGHT",
-     "UNDEFEATED CANES FACE DANGEROUS UNC ROAD TEST",
-     "CAN MIAMI PROTECT ITS TOP RANKING IN CHAPEL HILL?"
-    ],
-    "article": "Our top-ranked Miami Hurricanes are heading on the road to Chapel Hill for a Halloween night showdown against the North Carolina Tar Heels. Miami enters the matchup undefeated at 7-0 overall and 5-0 in conference play following a dominant 52-23 victory over Pitt.\n\nHead coach Mario Cristobal emphasized on the Joe Rose Show that the team must stick to its 1-0 mantra and avoid looking ahead to Notre Dame.\n\nBill Belichick leads a disciplined 5-3 UNC squad boasting one of the best defenses in the ACC. With memories of last season's Halloween loss to SMU, the Canes face an opponent built like an NFL team.",
-    "imagePrompt": "A realistic editorial portrait of a focused college football head coach standing on the sideline under stadium lights at night, wearing a dark athletic polo and headset, looking intensely across the field. The upper two-thirds shows his determined expression and the glowing atmosphere of the night game, while the bottom third fades into dark, simple turf shadows. Crisp sports photography, 3:4 aspect ratio, no text, no logos.",
-    "circlePrompt": "A crisp close-up shot of a textured football resting on dew-covered green stadium turf beneath bright nighttime field illumination, centered in a 1:1 square frame. Clean, high-detail macro sports photography, shallow depth of field, no people, no text, no logos."
+    "article": "Inter Miami CF prepares to host FC Cincinnati at Nu Stadium in South Florida for a midweek clash on October 28, 2026. Kickoff is set for 7:30 p.m. ET under the stadium lights.\n\nLocal soccer supporters can follow the action live on Apple TV. The streaming platform offers both English and Spanish language coverage. Jake Zivin and Taylor Twellman will call the match in English, while Sammy Sadovnik, Diego Valeri, and Antonella Gonzalez will handle the Spanish broadcast as Cincinnati travels south to compete.",
+    "imagePrompt": "A realistic vertical 3:4 editorial sports photograph capturing soccer players in action on a vibrant green field under bright outdoor stadium floodlights at twilight in South Florida. The athletic action is positioned entirely within the upper two-thirds of the frame, showing players contesting possession. The bottom third of the composition is dominated by deep green, softly shadowed turf and a dark, clean field border. No text, letters, logos, emblems, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 detailed photograph centered on an unbranded soccer ball resting on lush, dew-touched stadium grass right beside a freshly painted white chalk field line. Bright stadium floodlights illuminate the grass blades in sharp focus, with a softly blurred dark stadium background. The composition is clean and centered, featuring no human faces, no jersey text, and no logos."
    }
   },
   {
@@ -209,12 +207,12 @@
    "draft": {
     "headlines": [
      "CAPE FLORIDA LIGHTHOUSE WAS BUILT ON KEY BISCAYNE IN 1825",
-     "KEY BISCAYNE LIGHTHOUSE DATES BACK TO 1825",
-     "PROTECTING SHIPS OFF KEY BISCAYNE SINCE 1825"
+     "KEY BISCAYNE LIGHTHOUSE DATES TO 1825",
+     "DISCOVER THE 1825 LIGHTHOUSE BUILT TO WARN PASSING SHIPS"
     ],
-    "article": "The Cape Florida Lighthouse was established on Key Biscayne in 1825. Built specifically to warn passing ships, the historic beacon served maritime travelers navigating the coastal waters around the island. Construction was completed on Key Biscayne in 1825 to alert ships to the coastline. From its position on the key, the Cape Florida Lighthouse was dedicated to signaling vessels and warning passing boat traffic.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 portrait of the historic Cape Florida Lighthouse on Key Biscayne. The historic masonry lighthouse tower stands tall in the upper two-thirds of the frame against a softly clouded sky. The bottom third features darker, simple coastal ground and shadowed native shoreline foliage. Aged film grain, muted sepia and monochrome tones, historic early nineteenth-century maritime mood, no people, no text.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centering on the architectural details of the glass lantern room and iron catwalk at the top of a coastal lighthouse. The vintage lantern structure is centered against an open sky, highlighting weathered painted metal railings and glass panels, realistic daylight, no people, no text."
+    "article": "The Cape Florida Lighthouse traces its local history back to 1825 on Key Biscayne. Constructed during that year, the coastal beacon was established specifically to warn passing ships navigating the waters off Key Biscayne. Key Biscayne became home to the safety structure in 1825, serving vessels that journeyed past the area. Built with the clear mission to warn ships, the Cape Florida Lighthouse stands tied to its original 1825 construction on the island.",
+    "imagePrompt": "A vintage archival-style vertical 3:4 editorial photograph of the Cape Florida Lighthouse standing on the shore of Key Biscayne under a dramatic historical sky. The historic lighthouse tower dominates the upper two-thirds of the frame, displaying aged masonry and a timeless coastal atmosphere. The bottom third consists of simple, darker shadowed sand dunes and coastal shoreline. No people, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph featuring a centered close-up view of the historic lantern room atop the lighthouse tower, showcasing vintage iron framing and protective glass panels against a muted open sky. No people, no text, no logos, no watermarks."
    }
   }
  ]
