@@ -492,6 +492,9 @@ async function draftAll(items) { // write headlines and the article now (text is
   });
 }
 
+if (MODE === 'pick' && process.env.SKIP_IF_TODAY) { // a backup scheduled run: do nothing if today's list is already there (so it never wipes posts you made)
+  try { if (JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).date === dateLabel) { log('Today\'s list already exists, nothing to do.'); process.exit(0); } } catch (e) { /* no list yet, carry on */ }
+}
 if (MODE === 'pick') {
   let newsC, sportsC;
   if (DRY) {

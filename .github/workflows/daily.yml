@@ -3,6 +3,8 @@ name: Daily posts
 on:
   schedule:
     - cron: '0 13 * * *'
+    - cron: '40 14 * * *' # backups: GitHub sometimes skips or delays a scheduled run, so these only do anything if today's list is still missing
+    - cron: '20 16 * * *'
   workflow_dispatch:
 permissions:
   contents: write
@@ -20,6 +22,7 @@ jobs:
       - run: node scripts/build.mjs pick > build.log 2>&1; code=$?; cat build.log; exit $code
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          SKIP_IF_TODAY: ${{ github.event_name == 'schedule' && '1' || '' }}
       - name: Save results
         run: |
           git config user.name "daily-bot"
