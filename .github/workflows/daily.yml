@@ -6,6 +6,11 @@ on:
     - cron: '40 14 * * *' # backups: GitHub sometimes skips or delays a scheduled run, so these only do anything if today's list is still missing
     - cron: '20 16 * * *'
   workflow_dispatch:
+    inputs:
+      only_if_stale:
+        description: 'Skip if today''s list already exists (the app sets this when it asks for a refresh)'
+        type: boolean
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -22,7 +27,7 @@ jobs:
       - run: node scripts/build.mjs pick > build.log 2>&1; code=$?; cat build.log; exit $code
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          SKIP_IF_TODAY: ${{ github.event_name == 'schedule' && '1' || '' }}
+          SKIP_IF_TODAY: ${{ (github.event_name == 'schedule' || inputs.only_if_stale) && '1' || '' }}
       - name: Save results
         run: |
           git config user.name "daily-bot"

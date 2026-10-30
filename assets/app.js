@@ -224,10 +224,41 @@
   renderPosts(); sel();
   show(location.hash === '#manual' ? 'm' : location.hash === '#posts' || (posts.length && location.hash !== '#stories') ? 'p' : 's');
   $('reload').onclick = () => { location.href = location.pathname + '?v=' + Date.now() + '#stories'; };
+  /* GitHub's scheduler is often hours late, so opening the app on an old list asks GitHub for today's list right away */
+  const todayLabel = () => new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'America/New_York' });
+  const DAILY = 'https://api.github.com/repos/' + D.repo + '/actions/workflows/daily.yml/';
+  const bannerSay = (t, btn) => { $('banner').hidden = false; $('banner').querySelector('span').textContent = t; const b = $('reload'); b.hidden = !btn; if (btn) b.textContent = btn; };
+  let refreshing = false;
+  async function autoRefresh() {
+    if (refreshing) return; refreshing = true;
+    const t = getTok();
+    if (!t) { bannerSay("Today's stories are not here yet. Connect GitHub below and the app will fetch them by itself.", ''); setup.open = true; return; }
+    bannerSay("Getting today's stories. This takes about 2 minutes.", '');
+    try {
+      const runs = await (await fetch(DAILY + 'runs?per_page=5', { headers: GH(t) })).json();
+      const active = (runs.workflow_runs || []).some(x => x.status !== 'completed' && Date.parse(x.created_at) > Date.now() - 15 * 60000);
+      if (!active) {
+        const r = await fetch(DAILY + 'dispatches', { method: 'POST', headers: Object.assign({ 'Content-Type': 'application/json' }, GH(t)), body: JSON.stringify({ ref: 'main', inputs: { only_if_stale: 'true' } }) });
+        if (r.status !== 204) { bannerSay('Could not start the refresh (' + r.status + '). The token may be wrong or expired.', ''); return; }
+      }
+    } catch (e) { bannerSay('Could not reach GitHub. Check your connection.', ''); return; }
+    for (let k = 0; k < 80; k++) {
+      await wait(5000);
+      try {
+        const pj = await fetchPosts();
+        if (pj.date === todayLabel()) { // the list is on GitHub; reload once this page's own copy has caught up
+          const h = await (await fetch(location.pathname + '?v=' + Date.now(), { cache: 'no-store' })).text();
+          if (h.includes(pj.pick)) { location.replace(location.pathname + '?v=' + Date.now() + '#stories'); return; }
+        }
+      } catch (e) { /* try again */ }
+    }
+    bannerSay('Taking longer than expected.', 'Reload');
+  }
   (async () => { // the copy of this page can be a few minutes behind GitHub, so check for newer posts or a new story list
     try {
       const pj = await fetchPosts();
-      if (pj.pick && pj.pick !== D.pick) { $('banner').hidden = false; return; }
+      if (pj.date && pj.date !== todayLabel()) { autoRefresh(); return; }
+      if (pj.pick && pj.pick !== D.pick) { bannerSay('There is a newer story list.', 'Reload'); return; }
       if (pj.posts.length > posts.length) { posts = pj.posts; renderPosts(); markMade(); }
     } catch (e) { /* offline or not found: keep what is on the page */ }
   })();
