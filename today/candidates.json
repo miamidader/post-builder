@@ -1,218 +1,220 @@
 {
- "date": "Thursday, October 29",
- "pick": "mvtwbuwx",
+ "date": "Friday, October 30",
+ "pick": "mvv823yd",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade men accused in moped chop shop case",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNMmdmU1pJM1hsVVhfTVVRRlRRNXIxQmZNZ0daMXM2UlF4TWVSRU5mUVNMajRMUHdQeEdaUUlTVEVLSDJwa25nclo4YVUtczFqZXU0dklKR2lwV1dFeVdWZjAyRzRKam1xRU96MzVMbWxBN08ydTk0RkZMUGZGZFE1WmxZX3ktbnNhaWNvOWxvbXFiRk1sODhKSA?oc=5",
-   "t": 1793297003000,
+   "title": "What Americans living abroad think of midterm elections",
+   "source": "WBUR",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5ieGpKT25GTnNZSFFZQ00zOWd3ZW95bUt3TTlYM3podUxHbFFpdUhFbDF5OHBKLTBTLWpuQTBMWWoxeVpkY21HUldBYjk4SldKM1Z0V3lZT0hnNEJMTmdOTnA5VEhDTmJmOE11MlBVYnEzdk1RZXlB?oc=5",
+   "t": 1793376916000,
    "id": 1,
-   "link": "https://www.local10.com/news/local/2026/10/29/miami-dade-men-accused-in-moped-chop-shop-case/",
-   "thin": false,
+   "link": "https://www.wbur.org/hereandnow/2026/10/30/americans-abroad-midterms",
+   "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "TWO MIAMI MEN ARRESTED IN MOPED CHOP SHOP BUST",
-     "TRAFFIC STOP UNCOVERS STOLEN MOPED OPERATION",
-     "MISSING EYE PROTECTION LEADS DEPUTIES TO STOLEN MOPEDS"
+     "THREE AMERICANS ABROAD SHARE VIEWS ON MIDTERM ELECTIONS",
+     "MIDTERM ELECTIONS SEEN FROM THE OUTSIDE",
+     "HOW DO CITIZENS ABROAD VIEW THE UPCOMING MIDTERMS?"
     ],
-    "article": "Deputies arrested Sean Patrick O'Hara, 52, and Daniel Felix Perez, 44, on Thursday in northwest Miami-Dade following a traffic stop in the Pinewood area. Both men face felony vehicle theft and chop shop charges. An officer initially stopped O'Hara at Northwest 95th Street and Seventh Avenue for riding a moped without eye protection. The vehicle had a damaged ignition and turned out to be stolen from Miami on October 20. O'Hara directed deputies to Perez's residence at Colonial Acres Mobile Home Park on Northwest 10th Avenue, where authorities discovered a second stolen pink moped. Perez and O'Hara each blamed the other for the crimes. Both men were booked into Turner Guilford Knight Correctional Center.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of an outdoor street scene in a Miami neighborhood during daylight. In the upper two-thirds of the frame, a police cruiser with flashing blue emergency lights sits parked along the asphalt curb next to an impounded small scooter. The bottom third features dark, clean asphalt roadway with subtle shadows. Natural daylight, gritty urban atmosphere, photojournalistic style. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showcasing a close-up detail of a moped handlebar ignition console. The centered subject highlights exposed and tampered wires hanging from the empty key slot under outdoor daylight. Gritty documentary photography style, shallow depth of field with the background softly blurred. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "For South Florida residents keeping an eye on national politics, an international perspective is set to broadcast on October 30, 2026. The program features three Americans living abroad who weigh in on the U.S. midterm elections.\n\nThe three participants reflect on what it feels like to observe their native country from beyond its borders during an election season. Their accounts explore the unique experience of following American campaigns while residing overseas.\n\nThe segment is scheduled to air on October 30, 2026. Recorded audio will be accessible for listeners following the initial broadcast.",
+    "imagePrompt": "An editorial portrait of a person standing thoughtfully by an urban apartment window overlooking a distant skyline abroad. The subject occupies the upper two-thirds of the vertical frame in soft morning light, looking out contemplatively. The lower third consists of simple, dark shadowed interior space. Realistic photojournalism aesthetic, natural color palette, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A centered, square close-up shot of an unsealed blank voting document sleeve and an ink pen resting on a dark rustic wooden table under a soft lamp. Detailed texture, shallow depth of field, no people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "County announces $3.9 million 'Grand Theft Auto VI' marketing blitz",
-   "source": "The Business Journals",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSXNibGI5Zk9QSVRSRXdhZmY0VmY5TU0yb2dlRFpOTFBIakpvN2s4czBFLUhNbU1QbEwzWFlkcUlFYU8wUmpzWTVKWHRydGxldUVLRnBZTmhKSFV3d2plUTg1OFhESEs2My0wcUduSkU4UDlDOTNqUWsyaVBMcXF2UXBjcnFZTDJJdW01N0xUS3NwX3JSS0w1TU03d1dkRHhHX0w0b3JZMUJLRXE2S29SZg?oc=5",
-   "t": 1793293980000,
+   "title": "Surveillance video captures screams, apparent gunfire at Hialeah apartment complex",
+   "source": "NBC 6 South Florida",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOaUZMYU13V1dvcDQ2VFdWZ0NXTlN2UWJrQllKUVJ6bjVhT3EzbDRJMkhVdEVQVVVlUlpabjlGdFNvOGVZT2xfU2l2QVdTcG1XM0d1RVA2bmZFR3luOTluZTdmQWxVS2FSTExJejVrUU9DaXlEMDdNLTU0Tk1LNzRNSlJVZzduOTdyNl9GU0RfZWo1SnpPU0VzMlRHMWI0dXN1MU5YTDJlUklTQ05aS3VpU3FLVUpNa1RUaDI2NERyNkRWUDJU0gHMAUFVX3lxTFBPeUk4dTM0T1BaR2NLeXNBc0ZHMHZMUkNyVWlqdXpfdUk2Rng1d19aSmVheGJQamN5bWw4Z3lPMU5tOGRmQlhlVnY4X1Bqa2hzRmlnYXRZUUQwc2l5bVlwckFWci1tdjlLTHJZN1dQckhyUEtSb3ZQb2ZkMUhWcVVTSUVmdzdub1ZqMENicnJia3F1TERjU3Uzb2gyaDkwSWtaT1hLODI1T0N6YkJHeDJnWVJwbTBubUlxZGFxM0dKSS1GX0w5MDZzbHpDeg?oc=5",
+   "t": 1793375978000,
    "id": 2,
-   "thin": true,
-   "draft": {
-    "headlines": [
-     "COUNTY ANNOUNCES $3.9 MILLION GRAND THEFT AUTO VI MARKETING BLITZ",
-     "MASSIVE $3.9 MILLION GRAND THEFT AUTO VI BLITZ ANNOUNCED",
-     "COUNTY INVESTS $3.9 MILLION IN GRAND THEFT AUTO VI CAMPAIGN"
-    ],
-    "article": "The county has officially announced a major marketing blitz focused on Grand Theft Auto VI. Under the newly revealed plans, an investment totaling 3.9 million dollars will fund the extensive promotional effort. This substantial multi-million dollar commitment positions the upcoming video game title at the center of a wide-reaching promotional push. With 3.9 million dollars officially directed toward the rollout, the county is moving forward with an aggressive campaign designed to draw significant public focus and engagement across the region.",
-    "imagePrompt": "A 3:4 vertical editorial style photograph of a modern downtown municipal plaza under a glowing golden hour sky. The upper two-thirds showcases sleek civic architecture with towering tropical palm trees framing the scene. The bottom third consists of a simple, dark, shadowed stone pavement with soft ambient reflections. Realistic documentary lighting, sharp textures, high resolution, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph of a sleek modern video game controller resting on an outdoor polished stone pedestal. The object is centered in clear focus with a softly blurred background of sunlit tropical foliage. Crisp natural daylight, detailed texture, no people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami Dade College Resumes Management and Operation of Tower Theater Miami on Nov. 1",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOQnNHdGtXbVY4UEZSTnhuR3RIOWlvQU16ckpjcGJ0X2ZMaXhScTlJNlNmYlU2LXFzZWZ5dGJjaWROeEhQM3QyN0dIODVrMkdwcm9FVEtKdUswTUl1OUQtSkNQeW1sUEhmc2RzX256dkEtT3g2Rk9penlLRENKaGtRN1BUTk9vTzZuRVZRWjNoRlBnMUR1T21jdkFwcUxzbnFtQW1yRGdNVjRRem1JN0hSZVhSTHo4M1EtcGJhU3lGd3RjeE02Vk9HdzdscUtYQ054UVc3Z2NYajI?oc=5",
-   "t": 1793293187000,
-   "id": 3,
-   "link": "https://communitynewspapers.com/community-press-releases/miami-dade-college-resumes-management-and-operation-of-tower-theater-miami-on-nov-1/",
+   "link": "https://www.nbcmiami.com/news/local/surveillance-video-captures-screams-apparent-gunfire-at-hialeah-apartment-complex/3880635/",
    "thin": false,
-   "desc": "",
+   "desc": "Cameras captured how a patient on a stretcher was loaded into a helicopter before it took off. NBC6 crews also saw crime scene tape on the second floor of the building, as officers walked around and focused on a corner…",
    "draft": {
     "headlines": [
-     "MIAMI DADE COLLEGE RESUMES TOWER THEATER MANAGEMENT ON NOV 1",
-     "TOWER THEATER RETURNS TO MIAMI DADE COLLEGE",
-     "LITTLE HAVANA ICON PREPARES FOR HISTORIC CENTENNIAL REVIVAL"
+     "POSSIBLE DOUBLE SHOOTING UNDER INVESTIGATION AT HIALEAH APARTMENT COMPLEX",
+     "GUNFIRE AND SCREAMS ROCK HIALEAH NEIGHBORHOOD",
+     "WHAT HAPPENED INSIDE A NORMALLY QUIET HIALEAH APARTMENT?"
     ],
-    "article": "Miami Dade College is officially taking back management and operations of Little Havana's historic Tower Theater on Nov. 1. The college, which previously ran the Calle Ocho institution for over two decades, will oversee programming, rentals, and day-to-day operations through the Miami Film Festival.\n\nThe venue is temporarily closed for extensive improvements ahead of an anticipated early 2027 reopening. Upgrades include refreshed lounge areas, expanded concessions, a newly staffed box office, and a sound-transparent Cine LEDMAX screen, making it only the second cinema in the United States to feature the technology.\n\nA centennial block party will celebrate the theater's 100th anniversary on Dec. 10, 2026.",
-    "imagePrompt": "A realistic vertical editorial photograph of the art deco facade of a historic neighborhood cinema in Little Havana, Miami. The colorful architectural roofline and iconic art deco spire occupy the upper two-thirds of the frame against a sunny blue sky. The bottom third features the shadowed, clean street level and pavement, kept simple and darker. High-end architectural photography, warm natural sunlight, rich textures, with no text, letters, words, logos, or watermarks.",
-    "circlePrompt": "A realistic square close-up photograph centered on vintage art deco architectural plaster moldings and decorative geometric facade details of a historic 1920s cinema building. Warm tropical daylight rakes across the textured surface, highlighting architectural relief patterns. Tightly framed, perfectly centered, no people, no faces, and completely free of text, letters, or logos."
+    "article": "Hialeah police and fire rescue crews responded to an apartment complex near West 22nd Court and 61st Street following a possible double shooting. Surveillance footage from the area recorded screams alongside what sounded like gunfire.\n\nFirst responders airlifted at least one patient on a stretcher via helicopter. On the second floor, investigators focused on a corner unit cordoned off with crime scene tape. An unnamed resident stated that her husband was shot and is currently recovering in a local hospital.\n\nNeighbors reported seeing a late-night gathering turn into pushing and heated arguments before two injured men emerged. Authorities have not yet disclosed the full number of injuries or whether any suspects are in custody.",
+    "imagePrompt": "Editorial documentary photo in a 3:4 vertical orientation showing an exterior view of a two-story apartment complex in Hialeah, Florida. The upper two-thirds features an outdoor second-floor balcony walkway with yellow police tape strung across the railing near an open corner unit door under bright, hazy daylight. The lower third of the frame consists of the dark, shaded pavement of an empty parking area. Authentic news photography style, somber tone, no people, no text, no logos, no watermarks.",
+    "circlePrompt": "Square 1:1 realistic close-up shot centered on yellow caution tape tied tightly around a painted exterior metal stair railing of an apartment complex. The background shows a soft, out-of-focus stucco wall in daylight. Crisp focus on the texture of the plastic ribbon and weathered railing, documentary style, no faces, no readable text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Man, woman involved in northeast Miami-Dade murder-suicide identified by investigators",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOWmF4WU9DMDc1OGVPeUdtRmFCQmIxQ0FxSE5mTFBzOU9mcUFsN0dFMHpNVDJHc0YzcDFkTzZvWERKbW51WElDQVBDVXpNS1o0Q2d6eTFXcEJWVUp6MXNPaEtuaGRhMnV0YUpzSEkzOGszOTFZQWFybzF3Tzcwc1ZOUGZrMW0tY3AtZExxZVZUTHJ1R0ZXbEY1YmhqVTR6QVhtdE02aTFiRmFZVUxXcGZickNDY3pFNnhPN19GcFpLWQ?oc=5",
-   "t": 1793292060000,
-   "id": 4,
-   "link": "https://www.cbsnews.com/miami/video/man-woman-involved-in-northeast-miami-dade-murder-suicide-identified-by-investigators/",
-   "thin": true,
-   "desc": "An investigation continues in northeast Miami-Dade after a murder-suicide took place on Wednesday night. CBS News Miami's Morgan Rynor has more on the investigation and spoke with neighbors.",
-   "draft": {
-    "headlines": [
-     "INVESTIGATORS IDENTIFY TWO PEOPLE IN NORTHEAST MIAMI-DADE MURDER-SUICIDE",
-     "NORTHEAST MIAMI-DADE MURDER-SUICIDE PROBE CONTINUES",
-     "WHAT WE KNOW ABOUT THE NORTHEAST MIAMI-DADE INVESTIGATION"
-    ],
-    "article": "A fatal Wednesday night incident in northeast Miami-Dade remains under active investigation following a murder-suicide. Investigators have officially identified the man and the woman involved in the case. Authorities are continuing their work at the scene to understand the circumstances surrounding the tragedy. As part of the ongoing inquiry, officials have reached out to local community members and spoken with neighbors in the area to gather information. The investigation remains active across northeast Miami-Dade as authorities continue to process their findings.",
-    "imagePrompt": "Editorial photo of a quiet suburban street in northeast Miami at night, illuminated by the distant glow of flashing police lights reflecting across asphalt and tropical foliage. The upper two-thirds shows the silhouette of palm trees and residential front yards under a dark night sky, with scene tape softly visible. The bottom third is composed of deep, dark pavement in shadow. Realistic photojournalism, atmospheric lighting, vertical 3:4 framing, no text, no logos, no visible faces.",
-    "circlePrompt": "A close-up centered detail shot of an emergency vehicle light bar glowing in the dark on a quiet neighborhood street at night. Soft bokeh of dark tropical trees and distant pavement in the background. Photorealistic, moody night scene, centered composition, square 1:1 aspect ratio, no people, no faces, no text, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "11-year-old girl charged in Miami Beach school fight makes court appearance",
+   "title": "Police: Mother arrested after woman rescues boy walking alone on Hialeah street",
    "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQQTd3OU5GOU5NaTJ4b0plTHp2U3o5NS1lNkVQZEVxXy1xVDZ5UUc2NzhWVHhjZTdxQ3g1OHZMX0ZjSWlBX0tvcVJTcEx0MnVjMzlrSlRZV0pxVFpxZkVWcUlBNkN4Q05EbHBHODZBTW81OVNxa3ZjdWkxa1luLW5kLUdyWkxKc096X2JoQ183Z3lya19pMVJVa0FlSk92T3B3SkExRzJmZzVvQ09GTWo2VlBicHJOMExaN0VRbXZGQQ?oc=5",
-   "t": 1793291247000,
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQdEVjY1hKOFpVZU9od1lJazNPU3dyc1FTd25YVnNGSUZONktkVWVGdzFVNkoxZGJseVY5RFpkc09kVUFEb2RpWElId0gwZUxCcjhQclZyVXpLYURFU0Rody0wRzJ2bW0xR0ItN2ZRZjIzOUp6RlNvWkNvc1JKbEhvU282NG9HN3hWR1FCNnJlVFROZk1DQzBrX0lncGxCQzVWeXctN2toazc2VC1NeDFIRUphc2RjT05JUlE?oc=5",
+   "t": 1793374872000,
+   "id": 3,
+   "link": "https://www.local10.com/news/local/2026/10/30/mother-arrested-after-woman-rescues-boy-walking-alone-on-hialeah-street/",
+   "thin": false,
+   "desc": "A woman told police officers she was driving when she saw a boy walking alone on the street, so she stopped to help him on Thursday in Hialeah, according to police.",
+   "draft": {
+    "headlines": [
+     "MOTHER ARRESTED AFTER DRIVER RESCUES BAREFOOT BOY IN HIALEAH",
+     "HIALEAH MOM ARRESTED AFTER CHILD WANDERS INTO TRAFFIC",
+     "GOOD SAMARITAN DRIVER SAVES WANDERING BOY ON HIALEAH STREET"
+    ],
+    "article": "A driver stepped in Thursday to rescue a barefoot 7-year-old boy found walking along West 20th Lane in Hialeah as traffic swerved around him. Officers located the child's home near 58th Street, discovering an open front door. Inside, a sergeant had to perform sternum rubs to awaken the mother, Maria Jose Cortez Espinoza, who was surrounded by five open Sutter Home wine bottles. Hialeah police arrested Cortez Espinoza for child neglect without great bodily harm. She was booked into the Turner Guilford Knight Correctional Center near Doral on a $2,500 bond with an immigration hold.",
+    "imagePrompt": "A realistic editorial documentary photo in a 3:4 vertical orientation capturing a residential street in Hialeah, Florida. In the upper two-thirds of the frame, a police cruiser sits parked along the curb outside a modest single-story suburban house with palm trees under clear afternoon light. The bottom third is composed of deep, dark asphalt road surface in shadow, creating a simple base. Natural journalistic lighting, authentic South Florida street atmosphere, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on several green glass bottles resting on a wooden bedside table inside a dimly lit room. The cluster of bottles is in sharp focus in the middle of the frame, with soft natural light catching the curves of the glass against a blurred, dark domestic interior. No people, no faces, no labels, no text, no letters, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "2 Broward men face charges after Hollywood detective investigates Miami-Dade teen’s rape and Wizz connection",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOX3ZFd3hYdHNiMG8yUHc3dGpvWkhRM0JWaXUzSE5tMTZpSUwwY0ZfUThkbHhqdkdTZ19PV0tIUGZVd2JNdHdKWDVzTTJENUtqWjllRkVTNVJRMFlTZTVFbDFlaXBWREk1R2ZrbmgwZXNrdlpRTGtrZTRONkhVZDc3QlQxbTN1RU5kR3NrTFBZREhVd2ZSR1lQU2JpOXAyd2NTVklaa1owckdqTXZ6dDFPb3Y5TWwwMi1BLWx3bFI2RTdCTkZyRjJXUTRR?oc=5",
+   "t": 1793372390000,
+   "id": 4,
+   "link": "https://www.local10.com/news/local/2026/10/30/2-broward-men-face-charges-over-miami-dade-teens-alleged-rape-after-wizz-connection/",
+   "thin": false,
+   "desc": "Two men faced charges on Friday in Broward County over the rape of a teenage girl who lives in Miami-Dade County, records show.",
+   "draft": {
+    "headlines": [
+     "TWO MEN ARRESTED FOR RAPING MIAMI-DADE TEEN IN HOLLYWOOD",
+     "TWO BROWARD MEN JAILED IN TEEN SEXUAL ASSAULT",
+     "MIAMI GARDENS TEEN ATTACKED AFTER MEETING MAN FROM APP"
+    ],
+    "article": "Two Broward County men are in custody following the sexual assault of a 17-year-old Miami-Dade girl who agreed to meet someone from a social app in Miami Gardens.\n\nMiami Gardens police met the teenager on January 17 at Jackson Memorial Hospital's Roxcy Bolton Rape Treatment Center. Investigators learned she met 22-year-old Samauri Moton at Buccaneer Park on January 16 at 9:30 p.m. Moton brought her to Hollywood Beach at 3601 North Ocean Drive, accompanied by 25-year-old Jevaun Noel.\n\nAuthorities reported Noel assaulted the girl inside a parked vehicle while Moton waited outside. State DNA records matched Noel to the assault, leading to arrests by Hollywood police and Broward deputies.",
+    "imagePrompt": "Editorial photo of a police vehicle parked along a quiet coastal street at night, with flashing blue and red lights casting vibrant reflections across wet asphalt and nearby palm fronds. Atmospheric 3:4 vertical portrait framing, with the main cruiser occupying the upper two-thirds and the lower third kept simple and dark with shadowed pavement. Realistic, gritty, no text, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 centered close-up photograph of a smartphone resting on a vehicle's dark center console at night, casting a faint soft glow in an empty parked car interior. Moody low-light atmosphere, shallow depth of field, no readable text, no letters, no brand markings, no people, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami-Dade sheriff’s gamble: Cut taxes but give me more money | Opinion",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51MmtFT3BqWmRXYVRDMWNHT2FoVXI4bk45TXQ2X1hCT1lFRnBsT3RYVm1EWnJUM3BJQ3VXYUN6eEs1NFEzaFlVVWs4ZWxTY1piMnA1NW5QcThKUVFFWURZMUFuSExPc3hfcEZXZENES1VvZjZUVVE40gF3QVVfeXFMTkstdzNUdHNNVlJKTEFzYXJZaWppd0M4YkViaXd3NUNfYmhHOWJrYXRzMEl1aDFFOUtENUpOZ29WVWhaUW43UzNROXUtemZhYloyM2J6NDllS0w4MnFkU2txUnJ3bVBUMzR6bnI1S2pWSlVZVS1PWEU?oc=5",
+   "t": 1793371557000,
    "id": 5,
-   "link": "https://www.local10.com/news/local/2026/10/29/11-year-old-girl-charged-in-miami-beach-school-fight-makes-court-appearance/",
+   "link": "https://www.miamiherald.com/opinion/editorials/article317819366.html",
    "thin": false,
-   "desc": "The fallout continues following a fight that broke out in Miami Beach Nautilus Middle School last month, all of it caught on camera.",
+   "desc": "It cannot have escaped the sheriff that Miami-Dade is facing cutbacks this year, such as reductions in late-night bus routes. | Opinion",
    "draft": {
     "headlines": [
-     "MIAMI BEACH MIDDLE SCHOOL FIGHT LEADS TO FELONY BATTERY CHARGE",
-     "11-YEAR-OLD GIRL FACES JUDGE AFTER RECORDED SCHOOL ATTACK",
-     "WHAT HAPPENED BEFORE THE CAMERA ROLLED AT NAUTILUS MIDDLE?"
+     "MIAMI-DADE SHERIFF ASKS STATE FOR 42 MILLION DOLLARS MORE",
+     "COUNTY BUDGET BATTLE ERUPTS OVER MILLIONS",
+     "WHY SHERIFF ROSIE WANTS MORE CASH AMID CUTS"
     ],
-    "article": "An 11-year-old girl faced a judge on Thursday after a recorded fight last month at Miami Beach Nautilus Middle School. The student is charged with felony battery following footage showing her repeatedly punching, kicking, and pulling the hair of another 11-year-old girl until an administrator intervened. Her next court appearance is set for Dec. 21.\n\nThe mother of the accused student, Alba Castillo, stated her daughter is innocent and reacted only after enduring ongoing bullying and harassment. She has since enrolled her child in another school.\n\nThe victim's mother, Michelle Santos, left the court in tears, demanding justice. Santos stated her daughter suffered a concussion, bruises, and scalp cuts in what she described as a premeditated attack.",
-    "imagePrompt": "Editorial documentary style photo of a modern Miami-Dade courthouse hallway. A mother and her young daughter walk side by side away from the camera toward light-filled floor-to-ceiling windows, captured from behind with faces hidden. The upper two-thirds shows the quiet, solemn interior of the justice building, while the lower third consists of dark, polished reflective terrazzo flooring. Serious, subdued atmosphere, vertical 3:4 portrait orientation, no text or logos.",
-    "circlePrompt": "Close-up shot of a school hallway tiled floor with abandoned school supplies, a dropped spiral notebook, and a scattered backpack corner, centered in frame. Bright fluorescent overhead lighting casting soft shadows on the floor. Realistic editorial photograph, 1:1 square aspect ratio, no people, no faces, no text or logos."
+    "article": "Miami-Dade Sheriff Rosie Cordero-Stutz is seeking an additional $42 million from county funds after commissioners approved a record $1.2 billion department budget. To secure the funding for staffing, recruiting, and new stations, Cordero-Stutz asked Governor Ron DeSantis and the state Cabinet to intervene. The demand comes as Miami-Dade deals with service reductions, including cuts to late-night bus routes. The sheriff is also backing Amendment 3, a measure to cut property taxes that could cost the county $1.5 billion across 2028 and 2029. Amid budget tensions with Mayor Daniella Levine Cava, the sheriff announced plans to eliminate $4.1 million commissioner and mayoral security details starting November 9.",
+    "imagePrompt": "Editorial vertical portrait of a female county sheriff in uniform standing poised inside a brightly lit Miami government commission chamber. The subject occupies the upper two-thirds of the frame under realistic press conference lighting. The bottom third is dark and simple. Authentic photojournalism style, natural depth of field, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "Centered square close-up of a sleek black governmental SUV parked on an asphalt driveway outside a modern civic center at twilight. Crisp vehicle details and subtle lighting reflections, centered framing, no people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Man who shot, killed Miami Beach tourist as he protected family sentenced to 50 years in prison",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxORFhmT3dwT1lJWklFcE0xak9RTHd2V1puQWt2MmxfblJ5bFpXRk5wZ1hMZWhVTThxNWtrdGdtRzVCSm50bGJEZ0l3MldRN2FCZ0w0TTlYQWYtQVRJbm5va1h3X1FDbVVuTjV0aTFoUnJJMXVBb25ZUkhfZjZ0RS1qdE5LVnZLaFVNb0t6M2tUb1VpSWdmNEVmcXRaSlFKMVduMTRXT0w1dHQ4dzQ?oc=5",
-   "t": 1793291217000,
+   "title": "Yelp says Knaus Berry Farm in SW Miami-Dade has Florida’s best cinnamon rolls",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPemo2eFhMNTA5Zm1zZS13c012YXRYeHR6eUFGcEl0NjYxY0lPTTU0M001UFM4UGtmdUNaMHlYcGw0SDZLMjRURktrNnYzUHVVZW1KZkl6UEZLa2dmZnRWQVpiRjdIc2dvWkdxV19kQkZqQkswM2FMQnRacGNiMG9Kb2Fn?oc=5",
+   "t": 1793365786000,
    "id": 6,
-   "link": "https://www.cbsnews.com/miami/news/man-killed-tourist-miami-beach-tamarius-davis-dustin-wakefield-sentence/",
+   "link": "https://wsvn.com/news/local/miami-dade/knaus-berry-farm-best-cinnamon-rolls/",
    "thin": false,
-   "desc": "Tamarius Davis pleaded guilty to second-degree murder for the August 2021 shooting death of 21-year-old Dustin Wakefield.",
+   "desc": "SOUTHWEST MIAMI-DADE, FLA. (WSVN) - After 70 years of serving up its famous sticky buns, Knaus Berry Farm earned national recognition. It ranked number one Read More",
    "draft": {
     "headlines": [
-     "GEORGIA MAN GETS 50 YEARS FOR SOUTH BEACH TOURIST MURDER",
-     "FIFTY YEARS IN PRISON FOR DEADLY SOUTH BEACH SHOOTING",
-     "JUSTICE FOR VISITING FAMILY TARGETED IN 2021 MIAMI BEACH ATTACK"
+     "KNAUS BERRY FARM NAMED BEST CINNAMON ROLLS IN FLORIDA",
+     "MIAMI-DADE STAPLE WINS STATE TOP CINNAMON ROLL TITLE",
+     "70 YEARS LATER, THIS LOCAL FARM TOPS FLORIDA RANKINGS"
     ],
-    "article": "A Georgia man received a 50-year Florida state prison sentence for an August 2021 shooting in South Beach that killed a visiting father.\n\nTamarius Davis pleaded guilty to second-degree murder for the death of 21-year-old Dustin Wakefield from Colorado. Authorities stated Davis took psychedelic mushrooms, obtained a gun, and opened fire on random individuals in South Beach. Davis then approached Wakefield, who was visiting with his wife, one-year-old son, and other relatives.\n\nProsecutors said Davis pointed his firearm at the infant before shooting Wakefield five times, later laughing and dancing.\n\nDavis faces a mandatory 25-year minimum term, followed by 20 years of probation.",
-    "imagePrompt": "An editorial photo of a Miami courthouse exterior framed in a 3:4 vertical portrait orientation. The grand stone facade, columns, and dramatic tropical sky fill the upper two-thirds of the frame. The bottom third is composed of simple, dark stone steps and shadowed pavement. Realistic photojournalistic lighting with twilight shadows, high detail, no text, no letters, no logos, and no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up of a dark polished wooden judicial gavel resting directly on a matching sounding block, centered in the frame. Deep wood grain textures with cinematic side lighting, a soft blurred dark interior background, no faces, no text, no letters, no logos, and no watermarks."
+    "article": "Southwest Miami-Dade favorite Knaus Berry Farm officially serves the finest cinnamon rolls in the state. Yelp ranked the local destination number one in Florida on its list recognizing the top cinnamon rolls in every state across the nation.\n\nThe farm secured this national recognition after 70 years of serving its famous sticky buns to generations of visitors.\n\nSweet tooth enthusiasts also have more to look forward to this winter. In addition to the renowned bakery treats, strawberry picking is scheduled to make its seasonal return to the farm sometime in December.",
+    "imagePrompt": "A realistic editorial photo of warm, golden brown cinnamon sticky buns covered in a glossy caramel glaze, arranged on a rustic metal baking tray. The appetizing pastries fill the upper two-thirds of the vertical frame under soft natural bakery lighting. The bottom third features a simple, dark, shadowed wooden rustic tabletop. Vertical 3:4 portrait orientation. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic macro photo of ripe, bright red strawberries resting among vibrant green leaves in a sunny farm field, centered in a square 1:1 composition. Natural Florida daylight, detailed earthy farm soil background, no people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Early voting ends this weekend in South Florida. See dates, locations",
-   "source": "USA Today",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQVnZOWHRaS0hyQThVaXZWUmdsaWUxai1YaHYycnhUVnA1MXI3TFVISkZfSmgtdnJrY29LTjZuOWd6TzJyRWtYbk9JMGYwN0pwd3NrdEJtRXFkN1NUd3RGbC1jUlc0eFlNRHc0akNtYldaei03eDNQOWx3d1R3UnNwdlQ2d1RYUGFlUklYZjhrZ3ppXzUzRkZqSnpLUEdvVEp4aldUZU0zLWgzVHdBYVVFaHRaNHQ3SERWMjhzSGU0ZHNaSzRr?oc=5",
-   "t": 1793290560000,
+   "title": "Explore Miami's Hidden Gems Beyond South Beach",
+   "source": "New Orleans Magazine",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1wRzNYM0VUUHFyZWNsSUVVbFNicWVQSUpObVNzRU9fX3V5d1NLTzFMR01PckN2S2U1WS03QUZLUkx0SWIyMnlWc0ZtMXJxRFY3dzBUSVhsUmRZSVhQaVB4VndmWmxUS3ZJZDV1WXJKZTRSVldi?oc=5",
+   "t": 1793365219000,
    "id": 7,
-   "link": "https://www.usatoday.com/story/news/state/florida/2026/10/29/florida-early-voting-miami-dade-broward-election-day/92493338007/",
+   "link": "https://www.myneworleans.com/discovering-miami-beyond-south-beach/",
    "thin": false,
-   "desc": "",
+   "desc": "Discover Miami's vibrant art scene with installations, events, and festivals that showcase the city's rich cultural landscape.",
    "draft": {
     "headlines": [
-     "EARLY VOTING IN MIAMI-DADE AND BROWARD ENDS NOV. 1",
-     "SOUTH FLORIDA EARLY VOTING WRAPS UP THIS WEEKEND",
-     "MIAMI-DADE POLLS REMAIN OPEN DAILY UNTIL NOV. 1"
+     "MIAMI ART WEEK AND NEW VENUES OPEN ACROSS OUR CITY",
+     "FRESH ATTRACTIONS AND DINING DEBUT IN MIAMI",
+     "EXPLORE NEW CULTURAL HOTSPOTS ACROSS GREATER MIAMI NEIGHBORHOODS"
     ],
-    "article": "Miami-Dade County residents have through Nov. 1 to cast an early ballot before Florida's general election on Tuesday, Nov. 3. Early voting locations across Miami-Dade and Broward run daily from 7 a.m. to 7 p.m. Voters heading to designated county polling places or ballot drop-off sites must present a valid photo identification containing a signature. The Florida Division of Elections outlines accepted forms of identification. Both Miami-Dade and Broward counties provide online tools and website listings to help local voters locate neighborhood early voting stations and ballot intake centers ahead of the weekend finish.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation showing an adult voter casting a ballot inside a bright South Florida polling precinct. The voter is standing at a voting privacy booth positioned in the upper two-thirds of the frame. The bottom third of the image is simple and darker, composed of the voting floor. Natural daylight and indoor fluorescent lighting, documentary news style, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 detail photograph showing a person's hands sliding a sealed paper ballot into an official ballot collection box. The intake slot is centered in the frame with sharp focus on the slot and shallow depth of field in the background. No people's faces, no text, no letters, no logos, no watermarks."
+    "article": "Greater Miami and Miami Beach are welcoming fresh cultural spots, dining, and transit options ahead of Miami Art Week, running November 30 through December 6. New local highlights include the 8,000-square-foot Gibson Garage Miami, which opened in September with over 500 guitars and a live performance stage. In South Beach, the historic Royal Palm reopened following extensive renovations, while Lincoln Road added Sulta Rosa cafe, founded by dancers Daniella Karagach and Pasha Pashkov. Getting around remains accessible with complimentary Miami Beach and City of Miami trolleys alongside the weekday Biscayne Bay water taxi. Residents and visitors can also enjoy free jazz at The Betsy or watch domino matches at Maximo Gomez Park in Little Havana.",
+    "imagePrompt": "A realistic vertical editorial photograph in a 3:4 aspect ratio showcasing a sunlit pastel Art Deco facade on Miami Beach surrounded by lush palm fronds. The vibrant architectural details and sunny Florida sky occupy the upper two-thirds of the frame. The bottom third transitions into deep, simple shadows across the street pavement, providing a clean and dark contrast. Natural bright daylight, authentic urban Miami atmosphere, devoid of any text, letters, brand emblems, or watermarks.",
+    "circlePrompt": "A square 1:1 realistic close-up photo centered on a weathered outdoor green domino table. Several black and white domino tiles are arranged during a game, alongside a small white porcelain cup filled with dark Cuban coffee. Only hands resting on the table are visible, with no human faces in view. Soft natural lighting, highly detailed textures, with no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Inter Miami CF’s 2027 MLS Sprint Season Schedule Unveiled",
-   "source": "Inter Miami CF",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQc0pDYk5uUFU4Q29CMGFDZE51UGphNUdTcFNrRFlMRDkwX3h4SXU3U0VGVndUTEpLWEhzeTRVdHUxUlhJWU9SM1dwYk1qMGZDQm5sOUhfeGw5bGlZYXhFMUpTbldrVE9PY3NTX2xXUGIxclNBeWY5WXZLU3M1eWVQZngxalU2Zy1paHJteGhpMDBrTFF6eHc?oc=5",
-   "t": 1793296849000,
+   "title": "Heat unveil updated Dwyane Wade statue after original's face was panned",
+   "source": "ESPN",
+   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOSGRsSDVDRlI4eXlJcVlvaS00YjZxLVM1MnUyZDRfeHI5NHNXSElLV3dINHNZWGsyeFFXYnl6QzNPekpaVVFqY2x6bGRfMm5ROU9zdkZsZHVpdFhNRTBpaWpOa0FUTzZyU0pXWnlDNkgyM0xFQ25ob0NIYkRoRGlmak54TTJmRHd1LUVidnNhUVZQTnlOSmRGV0lBakk3TGNmU3d3b1hUaHI2R1VU?oc=5",
+   "t": 1793378572000,
    "id": 8,
-   "link": "https://www.intermiamicf.com/news/inter-miami-cf-s-2027-mls-sprint-season-schedule-unveiled",
-   "thin": false,
+   "link": "https://www.espn.com/nba/story/_/id/50328871/heat-unveil-updated-dwyane-wade-statue-original-face-was-panned",
+   "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "INTER MIAMI CF REVEALS 2027 SPRINT SEASON SCHEDULE",
-     "SOCCER RETURNS TO NU STADIUM THIS FEBRUARY",
-     "FOURTEEN MATCHES STAND BETWEEN INTER MIAMI AND A STAR"
+     "HEAT UNVEIL UPDATED DWYANE WADE STATUE",
+     "DWYANE WADE STATUE GETS A FRESH UPDATE",
+     "MIAMI HEAT REVEAL REVISED DWYANE WADE MONUMENT"
     ],
-    "article": "Inter Miami CF will open its 2027 MLS Sprint Season at Nu Stadium on Saturday, Feb. 19, taking on FC Cincinnati on home turf. The schedule features 14 regular season games, split evenly between seven home matches in South Florida and seven away fixtures, all against Eastern Conference rivals.\n\nFans heading to Nu Stadium will see home clashes against Nashville SC, Red Bull New York, D.C. United, Charlotte FC, Philadelphia Union, and CF Montréal. The club will also host dedicated nights honoring teachers, military personnel, first responders, women's empowerment, and youth fútbol.\n\nThe top eight teams qualify for a single-elimination postseason concluding on Memorial Day Weekend, crowning an MLS Cup champion with berths into the CONCACAF Champions Cup and Leagues Cup.",
-    "imagePrompt": "A 3:4 vertical editorial photograph of a modern open-air soccer stadium bathed in bright evening floodlights against a twilight South Florida sky. The upper two-thirds highlights the glowing green field and tiers of empty stadium seats, while the bottom third shows the dark, muted sideline turf in soft shadow. High realism, atmospheric evening lighting, no people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A centered 1:1 square macro photograph of an official soccer ball resting on pristine green grass under bright stadium lighting. The ball is sharply focused in the middle of the frame with individual blades of cut turf visible around its base, against a smooth, blurred green background. No people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "The Miami Heat have officially unveiled an updated statue of team icon Dwyane Wade, presenting a fresh appearance for the monument.\n\nThe update comes after the original presentation met with significant scrutiny. When the initial sculpture was revealed, the likeness of the original statue's face was widely panned.\n\nFollowing that reaction, adjustments were made to the sculpture, leading to the newly modified artwork. Heat fans can now view the revised Dwyane Wade statue, which introduces an updated facial look meant to replace the heavily critiqued original design.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing a full bronze sports statue of a basketball player poised dramatically on a polished pedestal. The detailed bronze sculpture occupies the upper two-thirds of the vertical frame under natural daylight. The bottom third consists of a simple, dark stone base and sleek ground pavers in soft shadow. The background displays an out-of-focus modern architectural plaza under a bright sky. No visible text, jersey letters, team logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph showcasing the sculpted bronze hand and forearm of an athletic monument, highlighting the metallic patina and fine chiseling details. The sculpted bronze element is centered in the composition against a dark, smooth, blurred background. No human faces, no jersey numbers, no text, and no logos."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "No. 1 Hurricanes getting early dividends from top freshman class",
-   "source": "Sun Sentinel",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBoSU1OdHNlb1lLUkRiUjR3RWdweTk3eVNYZmJvOTJCRnRUVGY1R2tMbTlhcWhaM3VRdFZNZUQwRy1xMFVTYklQclhianFfcV9QNmNtSGdFalhpZHFtSUxpWUh4UGx4MVpIRHc?oc=5",
-   "t": 1793296088000,
+   "title": "New England Patriots @ Miami Dolphins: Live game updates, stats, play-by-play",
+   "source": "Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNVDhPYTRMV2ptUzBDXzhadmZNRUVPZlZRSWF2b20xT095R21NTUpvVU13YjVFaVZWWXFBeUxZcGdxOTI4V0Mxa3BPaE5rTzRDWFloeGc0cEROU1RzR2xZdE1XT0RQVzBEVlRoYlVTN3BhTjg5UmlhNmNkYndkQVEzSFlQaw?oc=5",
+   "t": 1793376845000,
    "id": 9,
-   "link": "https://www.sun-sentinel.com/2026/10/29/um-freshman-class/",
-   "thin": false,
-   "desc": "The Hurricanes had a top-10 recruiting class last season, and Miami is getting crucial production from several freshmen.",
+   "link": "https://sports.yahoo.com/nfl/new-england-patriots-miami-dolphins-20261101015/",
+   "thin": true,
+   "desc": "Sports News, Scores, Fantasy Games",
    "draft": {
     "headlines": [
-     "NO. 1 MIAMI HURRICANES FRESHMEN LOG OVER 2,000 SNAPS",
-     "MIAMI FRESHMEN ARE SPARKING THE HURRICANES",
-     "LOCAL TALENT POWERS MIAMI TO TOP OF COLLEGE FOOTBALL"
+     "MIAMI DOLPHINS FACE NEW ENGLAND PATRIOTS IN LIVE MATCHUP",
+     "DOLPHINS BATTLE PATRIOTS TODAY",
+     "MIAMI TAKES ON NEW ENGLAND AS GAME ACTION UNFOLDS"
     ],
-    "article": "The No. 1 Miami Hurricanes are relying heavily on first-year players seven games into the season. Head coach Mario Cristobal has utilized 27 freshmen across offense and defense, accumulating 2,118 total snaps. That mark ranks second across the entire Power 4.\n\nOffensively, running back Javian Mallory from West Boca Raton High leads Miami with 444 rushing yards and seven touchdowns, averaging 7.5 yards per carry. Massive 6-foot-8 lineman Ben Congdon has also started three straight games at left guard.\n\nDefensively, back JJ Dunnigan has emerged as a key contributor. Dunnigan sits second on the team with 28 tackles, adding a sack, a forced fumble, a fumble recovery, and an interception returned for a touchdown.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of a collegiate football player in an orange and green football uniform running with the ball on a sunny grass field. The player is captured mid-stride in the upper two-thirds of the frame, showing dynamic movement and athletic intensity. The bottom third features dark green turf receding into deep shadow. Clean sports broadcast lighting, shallow depth of field with a blurred stadium backdrop. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of a textured leather football resting on pristine natural grass at the goal line of a football field. The laces of the football are clearly defined, catching warm outdoor stadium lights. The ball is centered in the frame with sharp focus on the pebbled leather and turf blades, surrounded by soft bokeh. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "The Miami Dolphins are taking on the New England Patriots, bringing football action directly to local fans. Sports followers across the Miami area are closely tracking live game updates, incoming scores, and every drive unfolding on the field.\n\nFor Dolphins supporters monitoring fantasy games, real-time stats and play-by-play tracking offer an immediate look into team performance throughout the contest. Whether analyzing team numbers or following individual plays, South Florida fans have full coverage available as Miami clashes against New England.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing an outdoor professional American football game under bright sunny skies. In the upper two-thirds of the frame, two football players in generic aqua and navy athletic uniforms contend for a catch on a vibrant green turf field. The bottom third of the image shows dark, shadowed turf in soft focus. No text, letters, numbers, team logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on an official brown pebbled leather American football resting on bright green stadium grass. Shallow depth of field with the background softly blurred, highlighting the texture and laces of the ball. No people, faces, text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1825: Cape Florida Lighthouse",
-   "desc": "The Cape Florida Lighthouse was built on Key Biscayne in 1825 to warn passing ships.",
+   "title": "1891: Julia Tuttle buys 640 acres on the Miami River",
+   "desc": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.",
    "id": 10,
    "draft": {
     "headlines": [
-     "CAPE FLORIDA LIGHTHOUSE WAS BUILT ON KEY BISCAYNE IN 1825",
-     "WARNING SHIPS SINCE 1825 AT CAPE FLORIDA LIGHTHOUSE",
-     "KEY BISCAYNE SAW THE HISTORIC CAPE FLORIDA LIGHTHOUSE IN 1825"
+     "JULIA TUTTLE BOUGHT 640 ACRES ON MIAMI RIVER IN 1891",
+     "JULIA TUTTLE ARRIVES IN SOUTH FLORIDA",
+     "THE 1891 MIAMI RIVER LAND PURCHASE BY JULIA TUTTLE"
     ],
-    "article": "The Cape Florida Lighthouse marks a foundational chapter in local maritime history on Key Biscayne, with origins dating back to 1825. Established directly on Key Biscayne during that year, the historic beacon was constructed specifically to warn passing ships traversing the surrounding waters. Safe navigation was the primary objective for the coastal installation. From the time of its completion in 1825, the Cape Florida Lighthouse served its vital role on Key Biscayne, providing essential alerts to warn ships moving along the nearby coast.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 editorial photograph of the historic Cape Florida Lighthouse on the coast of Key Biscayne. The historic whitewashed lighthouse stands prominently in the upper two-thirds against an atmospheric coastal sky and ocean horizon. The bottom third is simple and darker, filled with shadowed coastal vegetation and sandy terrain. Muted antique tones, soft film grain, no text, no watermarks, no identifiable people.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a detailed close-up view of the historic iron lantern room and glass beacon at the top of the Cape Florida Lighthouse. The aged architectural details are centered against a daytime maritime sky. Authentic textures, crisp focus, no text, no logos, no people."
+    "article": "In 1891, Julia Tuttle officially made her move to South Florida. During that same year, Tuttle purchased a property of 640 acres situated directly along the north bank of the Miami River. Tuttle chose to settle right here along the northern waterfront of our local river. Her 1891 investment placed Tuttle in possession of the 640-acre expanse across the north bank, marking her arrival and permanent stake in the South Florida region.",
+    "imagePrompt": "A vintage archival-style 3:4 vertical editorial photograph capturing an expansive, untouched subtropical riverbank in late nineteenth-century Florida. The upper two-thirds shows untamed native palms, foliage, and the open shoreline along calm river water under a soft, overcast sky. The bottom third is composed of deep, darker river reflections and shadowy water. Sepia and aged monochrome tones. No identifiable people. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph featuring an antique nineteenth-century brass surveyor compass resting on a weathered wooden surface beside aged parchment. The antique instrument is centered in the frame with warm, natural side lighting and soft depth of field. No human faces, no readable text, no letters, no logos, and no watermarks."
    }
   }
  ]
