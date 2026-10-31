@@ -220,6 +220,23 @@
   };
   fetchManual().then(items => { manual = items; renderManual(); }).catch(() => {});
 
+  /* ---------- pull down to reload (home screen apps on iPhone do not have this built in) ---------- */
+  {
+    const st = document.createElement('style'); st.textContent = '#ptr{position:fixed;top:calc(8px + env(safe-area-inset-top,0px));left:50%;transform:translate(-50%,-70px);background:var(--edge);color:var(--card);font:600 12px Poppins,system-ui,sans-serif;padding:6px 14px;border-radius:99px;z-index:20;pointer-events:none;opacity:0;white-space:nowrap}';
+    document.head.appendChild(st);
+    const ind = document.createElement('div'); ind.id = 'ptr'; ind.textContent = 'Pull to refresh'; document.body.appendChild(ind);
+    let x0 = null, y0 = null, dy = 0;
+    const reset = () => { x0 = y0 = null; dy = 0; ind.style.transition = 'all .2s'; ind.style.opacity = 0; ind.style.transform = 'translate(-50%,-70px)'; };
+    addEventListener('touchstart', e => { ind.style.transition = 'none'; if (window.scrollY <= 0 && e.touches.length === 1 && !e.target.closest('textarea,input')) { x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; } else { x0 = y0 = null; } dy = 0; }, { passive: true });
+    addEventListener('touchmove', e => {
+      if (y0 === null) return;
+      dy = e.touches[0].clientY - y0; const dx = Math.abs(e.touches[0].clientX - x0);
+      if (dy <= 0 || dx > dy) { reset(); return; } // sideways swipes (the posts) and upward scrolls are left alone
+      const p = Math.min(dy / 110, 1); ind.style.opacity = p; ind.style.transform = 'translate(-50%,' + (-70 + 70 * p) + 'px)'; ind.textContent = p >= 1 ? 'Release to refresh' : 'Pull to refresh';
+    }, { passive: true });
+    addEventListener('touchend', () => { if (y0 !== null && dy > 110) { ind.textContent = 'Refreshing...'; location.replace(location.pathname + '?v=' + Date.now() + (location.hash || '')); } else reset(); }, { passive: true });
+  }
+
   /* ---------- start ---------- */
   renderPosts(); sel();
   show(location.hash === '#manual' ? 'm' : location.hash === '#posts' || (posts.length && location.hash !== '#stories') ? 'p' : 's');
