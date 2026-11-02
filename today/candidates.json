@@ -1,220 +1,218 @@
 {
- "date": "Sunday, November 1",
- "pick": "mvxxafmx",
+ "date": "Monday, November 2",
+ "pick": "mvzt8lxd",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Voters rush to polls across South Florida as candidates encourage voter turnout",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOaGJzaDlvcWlSSmZucU95LU5Ub05pbnJ5OFBoMUJqdmZudEFBUjBFMEtkUWRWclp1LUdTbG43cWpCM3lFaGJYTHBXWnlMLWowTXByZkg0Y0J6OENfNG9ROVlGZmlaMDk1aG9QNlB3TnBONzFfOWRIR0ZPOE52R3hLWQ?oc=5",
-   "t": 1793542932000,
+   "title": "Severe thunderstorm warning issued for parts of Miami-Dade as strong winds move across South Florida",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVWR3VWYwNENTdEZqYVdQcFgyd1BwZWI0TndackdkQmdfMmM2QVhNbng1SkFSWnVmSF9VbTkyTE1mZzJrbTlsSFhjQnUwSkZveVEzbkZxcDVnaFdBc2xWdldyTlBCUDB1MHRzUnFGRkZSb29sdENseUJMVm9hR0hqSzJQMGR6X3dVSm9Ta21sOFdoUzcyTi0wLVo2MDlUSlhoSDJ1MzZ2Um45SUV0NW5SV3puRGJFcFZmdzFRZ1FsMXdFa051Rk0wUWc0YThXb3YtWVF5Q3hfTlZXU3A5?oc=5",
+   "t": 1793654364000,
    "id": 1,
-   "link": "https://wsvn.com/news/local/miami-dade/south-florida-midterm-voter-turnout/",
-   "thin": false,
-   "desc": "MIAMI GARDENS, FLA. (WSVN) - As the final days of early voting are upon South Florida, candidates on the ballot encouraged voter turnout while voters Read More",
+   "thin": true,
    "draft": {
     "headlines": [
-     "EARLY VOTING ENDS SUNDAY ACROSS MIAMI-DADE AND BROWARD COUNTIES",
-     "SOUTH FLORIDA VOTERS PACK THE POLLS BEFORE SUNDAY DEADLINE",
-     "MIAMI VOTERS DECIDE THE FUTURE OF VIRGINIA KEY WATERFRONT"
+     "SEVERE THUNDERSTORM WARNING ISSUED FOR PARTS OF MIAMI-DADE",
+     "STRONG WINDS HIT MIAMI-DADE UNDER STORM WARNING",
+     "MIAMI-DADE BRACES AS STRONG WINDS AND STORMS SWEEP IN"
     ],
-    "article": "South Florida residents are heading to the polls in high numbers as early voting wraps up across Miami-Dade and Broward counties this Sunday at 7 p.m. Voters can cast ballots at any early voting site before Sunday's cutoff, after which voters must go to their assigned precinct on Election Day.\n\nPolling sites like the North Dade Regional Library in Miami Gardens and the Coral Gables branch library have drawn steady crowds, while community members rallied at Charles Hadley Park in Liberty City.\n\nAlongside major political races, City of Miami voters are weighing Referendum 3, a proposal to lease nearly 28 acres of Virginia Key public waterfront for 45 years of redevelopment.",
-    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo showing a line of diverse voters standing outside a South Florida community building beneath lush palm trees on a bright afternoon. The line of people occupies the upper two-thirds of the frame under warm natural sunlight, while the bottom third is composed of deep, clean shadow across the walkway. Documentary photojournalism aesthetic, with no text, letters, signs, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 detail photo centered on a blank paper ballot entering a modern voting intake scanner slot. The machine and paper are sharply focused in the center of the frame under indoor institutional lighting, with soft neutral blur in the surrounding background. No people's faces, no legible text, words, logos, or watermarks."
+    "article": "A severe thunderstorm warning has been officially issued for parts of Miami-Dade. The alert takes effect as strong winds move across South Florida, bringing rough conditions to the region. Communities in the affected sections of Miami-Dade are dealing with the impact of these severe thunderstorms and gusty winds traveling through the area. With strong winds actively pushing across South Florida, parts of Miami-Dade remain under the thunderstorm warning as the weather system tracks across the county.",
+    "imagePrompt": "A dramatic 3:4 vertical editorial photograph capturing turbulent dark storm clouds moving over coastal South Florida with wind-blown palm trees leaning sharply in the upper two-thirds of the frame. The bottom third features a simple, dark roadway wet with rain. Photorealistic, moody natural lighting, no text, no watermarks, no logos.",
+    "circlePrompt": "A realistic 1:1 square photograph showing a centered close-up shot of storm-battered green palm leaves thrashing in heavy wind against a dim gray storm sky. Focused texture on the wet foliage, high detail, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Developers Secure $220 Million Predevelopment Loan For Oceanfront Condominium Project In Key Biscayne",
-   "source": "Florida YIMBY",
-   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPLWhWX3ZIT0lCOHQyTGlMaVZvc3F4VHV5NF8zdVFuZ1hYaDRUT1dXUHlMQ0E2eDBuWUs0bldCRHlpMlJ1SHZyN0RpUTNOU1EyVko4T1ZNb0dXaDFIVmk1Z2Nzc21KaFhYeGI5M0ZBdWM1OUdXaEhRR2YyMnc1anJTNjVzdGw5dzNjWEJnWG00Yk5xUFQtY1U4bks1NlRMQTRpTmhiRUxrYUhfRm4tcHJRUlVmRVpSRzF5cGN1Sm9EeXdyWjhtbGk3NEtBVmdXYkRDdFNFcA?oc=5",
-   "t": 1793538022000,
+   "title": "Miami Beach to Honor Veterans with High-Tech Letter Campaign",
+   "source": "Miami’s Community News",
+   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRkdoY29DSl9jR3FENlNDN3ljdU5OSGlaU2dnMVQ0cnBDZ1pNeklJNm9LY2pTUWc0YmRJYUd0MHRnR0RySGRRWVJ3a0V1aVlLXzR5U2NwME9PeUxpT3NzYlhRVlE2SUVZTWNZMDdMcmdHTGdzMEt5cU9aOFQ5dEJKLUJ5Mm8tUDBKNlc2WmZDeERNVFAzNmllN19WTXJ3enhlVThFUDU2WG83TktINHhj?oc=5",
+   "t": 1793650042000,
    "id": 2,
-   "link": "https://floridayimby.com/2026/11/developers-secure-220-million-predevelopment-loan-for-oceanfront-condominium-project-in-key-biscayne.html",
+   "link": "https://communitynewspapers.com/miami-beach-news/miami-beach-to-honor-veterans-with-high-tech-letter-campaign/",
    "thin": false,
-   "desc": "Florida YIMBY says \"Yes In My Backyard\" to positive new development in Florida.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "DEVELOPERS SECURE $220 MILLION LOAN FOR KEY BISCAYNE CONDOS",
-     "MASSIVE $220M FINANCING HITS KEY BISCAYNE WATERFRONT",
-     "FORMER SILVER SANDS RESORT SET FOR LUXURY REDEVELOPMENT"
+     "MIAMI BEACH HONORS VETERANS WITH BETSY ORB PROJECTIONS",
+     "OCEAN DRIVE LANDMARK LIGHTS UP FOR VETERANS",
+     "ICONIC SOUTH BEACH ORB PROJECTING LETTERS TO HEROES"
     ],
-    "article": "Terra and Fortune International Group secured a $220 million predevelopment loan to construct an oceanfront boutique condominium project on Key Biscayne. The planned development sits on a 4.25-acre parcel at 301 Ocean Drive, previously home to the Silver Sands Beach Resort. The developers purchased the oceanfront site in 2025 for $205 million, marking the largest land transaction in the island history. Blackstone Real Estate Debt Strategies provided the financing, arranged through Walker and Dunlop. Designed by Touzet Studio and ODP, the project will feature tropical-modern architecture, native landscaping, and green stormwater systems like rain gardens and bioswales. Preconstruction sales will launch before the end of 2026.",
-    "imagePrompt": "Editorial vertical 3:4 photograph capturing the Atlantic coastline of Key Biscayne under clear tropical daylight. The upper two-thirds displays a vast coastal parcel fringed with palm trees and soft sand meeting the calm ocean waves. The bottom third features deep turquoise ocean water in subtle shadow, keeping the composition simple and darker toward the base. Authentic architectural photography style, natural lighting, no text, no logos, no watermarks.",
-    "circlePrompt": "Close-up square 1:1 architectural photograph focusing on tropical-modern exterior design elements, showing rich natural wood slats, light-colored textured stone, and lush green subtropical foliage centered in the frame. Soft natural sunlight highlights the textures. No people, no faces, no text, no logos, no watermarks."
+    "article": "The City of Miami Beach and VFW Post 3559 are lighting up South Beach ahead of Veterans Day. From Nov. 7 through Nov. 10, electronic letters and video tributes will illuminate The Betsy Orb, the spherical skybridge connecting The Betsy Hotel at 1440 Ocean Drive to the former Carlton Hotel.\n\nEvents begin Saturday, Nov. 7, at 5:30 p.m. with a live bugler outside The Betsy playing \"Retreat,\" broadcast simultaneously at Lincoln Road and Pennsylvania Avenue, plus 73rd Street and Ocean Terrace in North Beach.\n\nThe Betsy will also host documentary screenings alongside a special presentation. U.S. Southern Command Col. Wesley Hales will award replacement medals to Miami Beach Vietnam War veteran USAF Sgt. James E. Anderson.",
+    "imagePrompt": "An editorial night photograph in a 3:4 vertical orientation capturing the iconic Betsy Orb spherical architectural skybridge suspended in an alleyway between historic buildings on Ocean Drive in South Beach Miami. Soft light beams cast gentle illuminations across the curved white sphere. The glowing sphere occupies the upper two-thirds of the vertical frame, framed by subtle Art Deco rooflines against a deep twilight sky. The lower third of the frame features a dark, simple alleyway with clean pavement catching faint ambient reflections. High realism, architectural photography, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 detailed photograph centered on a polished brass bugle resting horizontally on a dark outdoor pedestal during sunset. Soft golden hour light glints off the reflective metal instrument. In the softly blurred background, the subtle pastel colors of South Beach Art Deco architecture and palm leaves create a gentle bokeh. Clean centered composition, crisp metallic textures, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Rick Ross No Longer Faces Felony Charge in Miami Beach Domestic Violence Case",
-   "source": "DancehallMag",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPRjh1UWpCQkVBcGd4LTFBRUJFQURFWTUwdGNkcG1FVjB4XzNEN3RZcGg1UkhyNUFTNHhJZnkyYS12cThveWpIem1DTzRnbVZrR09kT1c3T1JRVVMtd2xFSUJyZTlWOW1HVWZCU2x5MGNhZlVMNEhVOHNLaUg0MHRlbXltVWNMM1ZOY0dUbk1oRTRtTjZNaGlWSGlMd0F5Nk8tVzdvX0pvVlNNaVdnNVNzaDFkOHZqZ2RwMXM2ajJ3ZDM4SFVNUHc?oc=5",
-   "t": 1793537902000,
+   "title": "Cruising for a cause",
+   "source": "The Miami Laker",
+   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS2JDNVd2a1FDbnBuUlVhRHJ1WTE2REU2ZkxOM05rckxUTW94b0MycmE4WExZNGo3amFsenF5ZFdYYTlLR0RKTmZQS3duVHdvbWplZVVoVGY2a3hFNVpfdUs2alBVN2podnlNQThhc0JpTDFBSjlhRWlmNDNnT1RuSWFfYkV4YTRrQklN?oc=5",
+   "t": 1793648341000,
    "id": 3,
-   "link": "https://www.dancehallmag.com/2026/11/01/news/rick-ross-no-longer-faces-felony-charge-in-miami-beach-domestic-violence-case.html",
+   "link": "https://miamilaker.com/News-Article/ArtMID/391/ArticleID/26950/Cruising-for-a-cause",
    "thin": false,
-   "desc": "",
+   "desc": "For Miami-Dade Sheriff’s Office Miami Lakes District Dep. Robin Amador, the fight to end childhood cancer is personal. Amador’s cousin who died of leukemia as well as the son of a fellow deputy who also died of…",
    "draft": {
     "headlines": [
-     "PROSECUTORS DROP FELONY STRANGULATION CHARGE AGAINST RICK ROSS",
-     "RICK ROSS CLEARED OF FELONY CHARGE IN MIAMI",
-     "STAR ISLAND INCIDENT LEADS TO MISDEMEANOR CHARGE FOR RICK ROSS"
+     "FIRST RESPONDERS PARADE FOR CHILDREN'S CANCER PATIENTS ACROSS SOUTH FLORIDA",
+     "CRUISING TO BRING HOPE TO YOUNG CANCER PATIENTS",
+     "MIAMI OFFICERS CONVOY TO DELIGHT LOCAL HOSPITALIZED CHILDREN"
     ],
-    "article": "Miami prosecutors have dismissed a felony strangulation charge against rapper Rick Ross following an alleged August 28 incident at his Star Island home. Court filings reveal prosecutors cited insufficient evidence, shifting the case to Miami-Dade County Court under a single first-degree misdemeanor charge of domestic violence battery.\n\nThe Maybach Music Group founder, whose legal name is William Leonard Roberts II, turned himself in to Miami Beach police on October 1 after a woman reported that an argument over an Instagram post turned physical.\n\nDefense attorney Bradley Horenstein noted photographic evidence showed no signs of neck injury. Ross denies the accusations and calls them fabricated as legal proceedings continue.",
-    "imagePrompt": "A realistic editorial portrait of a defense attorney standing outside a Miami courthouse under bright Florida daylight. The subject is positioned in the upper two-thirds wearing a sharp dark suit, with stone architectural pillars softly out of focus in the background. The lower third consists of clean, dark pavement with subtle shadows. Editorial documentary photography style, natural lighting, crisp details, no text, no watermarks.",
-    "circlePrompt": "A realistic square close-up photo centering on the grand ornate iron gates of a luxury estate on Star Island in Miami Beach, framed symmetrically with tropical palm foliage and calm blue water softly visible behind the bars. Midday sunshine, sharp architectural textures, centered composition, no people, no faces, no text, no watermarks."
+    "article": "South Florida law enforcement officers rolled out on September 5 for the ninth annual Mystic Force Foundation first responder parade. The vehicle procession began at Nicklaus Children's Hospital in South Miami and traveled north to Joe DiMaggio Children's Hospital in Hollywood to lift the spirits of pediatric cancer patients. Miami-Dade Sheriff's Office Miami Lakes District Deputy Robin Amador took part in the event, motivated by the loss of his cousin and a colleague's child to cancer. Participating agencies showcased cruisers, vintage vehicles, and special cars featuring decals, alongside responders dressed as characters such as Batman and Spider-Man. Young patients and their families enjoyed the multi-agency spectacle from sidewalks and hospital windows.",
+    "imagePrompt": "Vertical 3:4 editorial documentary photo showing a row of emergency and patrol vehicles parked in a convoy outside a South Florida hospital on a sunny day. A law enforcement officer in uniform stands proudly near the front vehicle. The vehicles, palm trees, and modern hospital exterior occupy the upper two-thirds of the frame, while the bottom third consists of clean, dark asphalt roadway in subtle shadow. Realistic, daytime photojournalism style.",
+    "circlePrompt": "Square 1:1 close-up shot centered on the emergency light bar and hood of a vintage law enforcement patrol car, parked outdoors under bright sunlight with colorful parade streamers reflecting on the polished hood surface. Symmetrical composition, crisp focus on the lights and metal trim, background softly blurred, no people or text visible."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Naples and Sarasota real estate isn't the next Palm Beach or Miami - Sarasota Herald-Tribune",
-   "source": "Sarasota Herald-Tribune",
-   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOeTAxczR0d0kyTl9Ha0xybWFwR1JOd3QyYVNXMFh1aEhPdXhQV0FJNnpSaFZXd3VtRVVycjRzM3NvX3BoN3BRVnJkVlNhb19CcmFIZjZQV3RlTHpfelNEdnJ4aTdDdGRSdk94VmNTckVZaTdLdmtiTjRXWS01Qmc4TG11QkRnend5THVOYnVlVHlIcVZDVklYZ01GRjlNRENQcGtkbzNYZ1hlY1pZWUFJd0lmLU5hMm1zalVaY1JYTURCU3p1TXBSM1Nn?oc=5",
-   "t": 1793534520000,
+   "title": "After 16 years as a U.S. citizen, Miami Beach man prepares to vote for the first time in the midterms",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPblVBY2pUbWtCOTlteTZ3eFpIenY2VnJGbVhza1FnbkU4ZXpRUDFlM0FyOWZuRVpVUVdHRTR4WGVkZ2lnTWwxeGFzamxoR2wybVNGUVo1MGJIRXA0WVRXbVpGdS02WFptMjBTSTMxamxsSHRQSGxteUlFVjEwOGQyVjQtQU5oaDJobUNYX1ZkQy1LZkMxb2c?oc=5",
+   "t": 1793647902000,
    "id": 4,
-   "link": "https://www.heraldtribune.com/story/business/real-estate/2026/11/01/naples-and-sarasota-redefine-florida-luxury-homes/92465220007/",
+   "link": "https://www.cbsnews.com/miami/news/miami-beach-man-first-time-voter-2026-midterm-elections/",
    "thin": false,
-   "desc": "",
+   "desc": "Nicolas Mantovani, 48, is preparing to cast his first ballot in the 2026 midterms after years of believing his vote wouldn't make a difference.",
    "draft": {
     "headlines": [
-     "GULF COAST LUXURY SALES SURPASS HISTORIC FLORIDA PRICE RECORDS",
-     "FLORIDA LUXURY BUYERS SPEND BIG OUTSIDE MIAMI",
-     "CAN GULF COAST MANSIONS COMPETE WITH MIAMI REAL ESTATE BENCHMARKS?"
+     "MIAMI BEACH RESIDENT TO CAST FIRST BALLOT AFTER 16 YEARS",
+     "FIRST-TIME VOTER AT 48 IN MIAMI BEACH",
+     "WHY A MIAMI BEACH CITIZEN WAITED 16 YEARS TO VOTE"
     ],
-    "article": "While South Florida has long set the price ceiling for statewide luxury real estate, high-end western markets are posting historic sales numbers of their own. In Naples, a 15-acre Gulf-front assemblage broke all Florida records with a $225 million transaction, followed by an $86 million sale on Gordon Drive and a recent $70 million closing. Sarasota is also expanding, marked by a $26 million Siesta Key closing in September and a $30.3 million sale last July. Southwest Florida MLS records recorded 73 single-family sales over $10 million in the 12 months ending in August, fueled by wealthy buyers relocating from destinations like Palm Beach and Aspen.",
-    "imagePrompt": "An editorial vertical 3:4 photograph of an ultra-luxurious modern coastal estate situated along a pristine Florida shoreline during golden hour. The upper two-thirds captures grand architectural lines, expansive glass windows, and mature palm trees glowing under the soft sunset sky. The bottom third is composed of deep, darker textured stone pavers and shadowed lawn, maintaining a simple and moody base. Architectural realism, sharp focus, no text, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up shot centering on the geometric edge of a luxury marble infinity pool overlooking calm turquoise ocean water. Fine water ripples reflect the evening light across the polished stone surface. Minimalist architectural detail, elegant and serene composition, centered subject, no people, no text, no watermarks."
+    "article": "Miami Beach resident Nicolas Mantovani is preparing to cast his first ballot in the November 3, 2026 midterm elections. At 48 years old, Mantovani has been a naturalized United States citizen since 2010 but has never taken part in an election.\n\nMantovani arrived from Argentina during childhood and lived under a student visa and permanent residency before gaining citizenship. For sixteen years, hesitation about the electoral process and doubts regarding whether an individual vote mattered kept him away from the polls.\n\nNow actively researching candidates, he wants to shape his local community and encourage younger generations to make their voices heard.",
+    "imagePrompt": "Editorial portrait of a 48-year-old Hispanic man standing outdoors on a Miami Beach sidewalk during late afternoon golden hour. The man has a thoughtful expression, positioned in the upper two-thirds of the frame. The background shows soft-focus tropical greenery and quiet residential architecture. The bottom third of the image is simple and cast in darker natural shadows. Realistic photojournalism style, natural light, no text, no watermarks, no logos, 3:4 aspect ratio.",
+    "circlePrompt": "A realistic close-up square photograph centered on a pair of adult hands holding a blank paper ballot folder on a wooden table, illuminated by warm sunlight from an adjacent window. Shallow depth of field, strictly no human faces, no visible text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "#84 University of Miami (FL)",
-   "source": "Forbes",
-   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfVGh2VEplMU14My1UNzNTWnpfUUk3MVpVU3lmdGFNMGo2bzZHVzVzcW55MG9VYl8zeGlEaW5DUk8tazdRRFk2d3dGMHRRLWpRNVdkempsMTQteDBRbzVOSmVR?oc=5",
-   "t": 1793534212000,
+   "title": "South Beach food festival tickets are now on sale. Here’s how to get them",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zeDFDSnBQeWZ4NEROVHFYMHB0SUUweF9Jck5yQXJueTBqcGJwNDVQNFQ2Zm80czM1ZUhvOWFmMHdGUnl5SjYtbjZsdWxnR1pWSVhBTVVNOVdxdHA4R2FZcG9XblkyX1JwbTRkNzRraVVMSllINVB3a2NWd9IBe0FVX3lxTFBYdktLZEI0dzdSb2wySllkbHgtbnkxLVVza3VlNy1VNktiN2ZLSWowaUg4TzhUWEgzekZSRVRMZ3Vhd2ZkTjFhd1R2TEk3RWhsdVZxdUt0eVFET1hZeURhdVk1UU1WWE53ZzItNFN6WTl3S2FqaDVFSTFZMA?oc=5",
+   "t": 1793647660000,
    "id": 5,
-   "link": "https://www.forbes.com/colleges/university-of-miami/",
+   "link": "https://www.miamiherald.com/miami-com/restaurants/article317884616.html",
+   "thin": false,
+   "desc": "Time to get tickets for Miami’s favorite feeding frenzy.",
+   "draft": {
+    "headlines": [
+     "SOUTH BEACH WINE AND FOOD FESTIVAL TICKETS GO ON SALE",
+     "MIAMI FOOD FESTIVAL TICKETS ARE OFFICIALLY LIVE",
+     "OUR BIGGEST CULINARY CELEBRATION RETURNS ACROSS SOUTH FLORIDA"
+    ],
+    "article": "Tickets are officially on sale for the 26th annual South Beach Wine and Food Festival, running from Feb. 25-28. The celebration spans from a farm in Homestead to northern Fort Lauderdale, featuring more than 500 chefs, tastemakers, and culinary personalities. Miami events are shifting and expanding across the area. Tacos and Tequila returns to Miami Beach, while the Kimpton Surfcomber Hotel will host Chicken Coupe. Staples like Burger Bash, Marcus Samuelsson's Overtown EatUp, and the Grand Tasting Village also return. Food lovers can also book interactive sessions, including pizza making with Miami Slice, Cuban cocktail crafting with Julio Cabrera of Cafe La Trova, and babka baking with Bakey.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing an outdoor beachfront food festival in Miami Beach. In the upper two-thirds, white tasting tents, outdoor cooking grills with gentle rising smoke, and coastal palm trees fill the vibrant daytime scene. The bottom third consists of a darker, clean, simple sandy boardwalk foreground in soft shadow. Rich natural sunlight, realistic documentary photography, no people looking directly at the camera, no text, no logos.",
+    "circlePrompt": "A realistic 1:1 square close-up shot focused on a beautifully braided, freshly baked chocolate babka loaf sliced open on a rustic dark wooden cutting board next to a cocktail glass. Centered subject, shallow depth of field, warm natural side lighting highlighting the rich chocolate swirls. No people, no faces, no text, no logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Election Day is Tuesday: Miami-Dade moved 13 polling places; Jolly, Donalds make final pitches",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObVE0RUJ0M0N4eXdFOEhtSUF0RkxybElXTnYzQ0xDMlpuOGFOd3hyTEZZQzFwQmJLTWZxemFkUk9QSTJ5Q1g5d3BNZDBzVlY3bko4emk1YjZvMDBsRGQ3MC1fdEJrbkdITm5PQldPNm5wYnJYYkhQaW0teFJEVHVlemluSE5tamZuZmlRNTRsRWxDNVp6NjJ0TXJfRUNFZzdYanRfTlJnRUVBcVhEQTRkeWdtdzk?oc=5",
+   "t": 1793642949000,
+   "id": 6,
+   "link": "https://www.cbsnews.com/miami/news/election-day-tuesday-miami-dade-polling-places-moved-jolly-donalds-nixon-moody/",
+   "thin": false,
+   "desc": "Voters must use their assigned precincts on Tuesday; polls are open from 7 a.m. to 7 p.m., and the governor and Senate candidates are making final campaign stops.",
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE MOVES 13 POLLING LOCATIONS AHEAD OF TUESDAY ELECTION",
+     "ELECTION DAY ARRIVES: CHECK YOUR ASSIGNED MIAMI PRECINCT",
+     "DID YOUR MIAMI-DADE VOTING PRECINCT MOVE BEFORE TUESDAY?"
+    ],
+    "article": "Election Day arrives Tuesday across South Florida, with polling locations welcoming voters from 7 a.m. to 7 p.m. Voters must cast ballots at their designated precinct, unlike during the early voting window.\n\nIn Miami-Dade County, 13 polling sites have temporarily moved, which impacts 19 precincts. Residents can check their voting address through their county Supervisor of Elections website prior to traveling. Hundreds of thousands of South Florida residents have already voted.\n\nHigh-profile contests top the ticket, including the gubernatorial race between Democrat David Jolly and Republican Byron Donalds. In the U.S. Senate contest, appointed incumbent Ashley Moody is defending the seat against Democratic challenger Angie Nixon.",
+    "imagePrompt": "A realistic vertical editorial photograph showing an American voting precinct interior in South Florida under morning sunlight. In the upper two-thirds of the frame, several voting privacy carrels stand positioned across a bright community hall. The bottom third of the composition consists of simple, shadowed dark flooring. Cinematic natural lighting, sharp documentary style, no people's faces, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square close-up photograph of an empty voting station desk with a privacy divider shield centered in the frame. The tabletop surface is clean and illuminated by gentle indoor overhead light. Symmetrical composition, crisp focus, no people, no faces, no text, no letters, no words, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami-Dade County is experiencing a population decline",
+   "source": "The Miami Hurricane",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaFhFZzJRT1NpeEp2MHM4azlpbWVLRHdRYXRJWkt1UTFmZ1ZBUjB2SDY1Z19xTFNpb3lONE9QemlBeGJYczhTOEtFVWhZUjJfVlVvQkNzbWV5LVR1dHFoZzA4WHRJRXVtck5JQzZvX250U1o2eFpGVG5Bb0ZfcnBHSUd1QlRBeHhkOU8zTXNhZ1kzR2lpU1dTQlktams?oc=5",
+   "t": 1793640045000,
+   "id": 7,
+   "link": "https://themiamihurricane.com/2026/11/02/miami-dade-county-is-experiencing-a-population-decline/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE RANKS THIRD NATIONWIDE FOR POPULATION LOSS",
+     "THOUSANDS OF LOCALS ARE PACKING UP AND LEAVING",
+     "WHY ARE SO MANY RESIDENTS LEAVING PARADISE BEHIND"
+    ],
+    "article": "Miami-Dade County lost 10,115 residents between July 2024 and July 2025, recording the third-largest population drop among all counties nationwide. The local population slipped from 2.81 million to 2.80 million people. Domestic departures fueled the shift. Over 72,000 more residents relocated to other parts of the country than moved into the county, marking the highest domestic migration loss in Florida. While about 54,200 international newcomers arrived, that pace dropped from more than 78,000 during the prior year. Living expenses remain a primary strain across the region. Sixty percent of middle-income renters pay over 30 percent of their income toward housing, while purchasing a typical home now demands almost double the median household income.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation capturing high-density residential apartment towers in Miami under a hazy afternoon sky. The upper two-thirds focuses on the modern balconies, exterior windows, and tall palm trees framing the buildings. The bottom third is composed of an empty, shadowed street pavement with dark tones. Natural cinematic daylight, documentary style photography, no people in foreground, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo showing a close-up centered view of several stacked cardboard moving boxes sitting on a clean tile floor beside an open balcony doorway, warm sunlight casting subtle shadows, no people, no faces, no text, no labels, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "New England vs Inter Miami: Major League Soccer stats & head-to-head",
+   "source": "BBC",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xb09FcGRVUmZJcnB3cXhHaFhtTkJYZWF4OVNabGlxSVJqQ3RBTGFHX0FHdW9wYWVoQzRwZ1dKaWQ0RnpiZ2VyeTBXWmFjaXFyRGoxN3VnNDR0VldhSU5jZDBlbw?oc=5",
+   "t": 1793654566000,
+   "id": 8,
+   "link": "https://www.bbc.com/sport/football/live/cry4x109exgnt",
    "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "UNIVERSITY OF MIAMI RANKS AT NUMBER 84 ON FORBES LIST",
-     "UNIVERSITY OF MIAMI EARNS SPOT NUMBER 84",
-     "SEE WHERE UNIVERSITY OF MIAMI STANDS ON FORBES RANKING"
+     "INTER MIAMI FACES NEW ENGLAND IN MAJOR LEAGUE SOCCER",
+     "INTER MIAMI TAKES ON NEW ENGLAND",
+     "CAN INTER MIAMI TOP NEW ENGLAND IN MLS ACTION?"
     ],
-    "article": "The University of Miami has earned a spot on the national rankings published by Forbes. In the list released by Forbes, the University of Miami in Florida secured the number 84 spot. For our local area, the University of Miami represents Florida on this competitive stage. Forbes officially placed the University of Miami at number 84, highlighting the Florida university on its evaluation. Local residents, students, and community members can take note as the University of Miami holds the number 84 position.",
-    "imagePrompt": "An eye-level vertical 3:4 editorial photo of modern collegiate architecture on a sunny South Florida university campus, featuring majestic palm trees and contemporary glass and stone academic buildings occupying the upper two-thirds of the frame under bright blue skies, with the lower third composed of a simple, darker shaded brick walkway. Realistic photography style, vivid natural daylight, no people, no text, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up shot capturing tropical campus landscaping, focusing on the textured trunk of a royal palm tree centered against smooth modern architectural stone and vibrant green foliage, illuminated by warm natural sunlight. Clean composition, realistic editorial detail, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Flood Watch in Effect Sunday into Monday",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1GOHdYelJEUWtWbVhVdEFOWk5nMi00QUNmZ1NYZTNTd25KM3VtTWdiMjNRSFNDbGdZQWRHdzJWTzk4Qi1zUkJEdXRyelFzZThQYlEwNEctZkpBRTVfU20yRU1sY2lKNVVTWWVjRV9sVDl0QkFJR21PZXpJSQ?oc=5",
-   "t": 1793531131000,
-   "id": 6,
-   "link": "https://wsvn.com/weather-blog/flood-watch-in-effect-sunday-into-monday/",
-   "thin": false,
-   "desc": "(WSVN) - After a day of “haunted humidity” and some “spooky showers” that passed on by on Halloween yesterday, this Sunday will feature wetter conditions...",
-   "draft": {
-    "headlines": [
-     "FLOOD WATCH ISSUED FOR MIAMI-DADE AND BROWARD THROUGH MONDAY",
-     "HEAVY RAIN AND FLOOD RISKS HIT SOUTH FLORIDA",
-     "COULD UP TO SEVEN INCHES OF RAIN FLOOD MIAMI"
-    ],
-    "article": "The National Weather Service has placed all of Miami-Dade and Broward under a Flood Watch starting Sunday at 10 a.m. through Monday at 3 p.m.\n\nLocal neighborhoods face widespread rain and thunderstorms as a weather disturbance lingers near Florida. Rainfall totals could reach between 3 and 5 inches across the region, with isolated pockets seeing 5 to 7 inches.\n\nBreezy conditions will keep rip current risks elevated along local beaches, alongside a High Surf Advisory in Broward. Daily moderate King Tide flooding is expected to ease to minor stages by Tuesday, with drier conditions and mid to upper 80s arriving Wednesday.",
-    "imagePrompt": "A dramatic vertical editorial photograph of a rain-soaked South Florida street during a heavy tropical downpour. In the upper two-thirds of the frame, dark storm clouds hang over palm trees swaying in gusty winds, with rain sheets falling over coastal buildings and blurred vehicle headlights reflecting on wet asphalt. The bottom third is composed of deep, dark pavement and shimmering water reflections. Realistic news photography, 3:4 aspect ratio, no text, no watermarks.",
-    "circlePrompt": "A realistic square close-up photograph focused on rising storm runoff swirling around a street storm drain and curb on a flooded roadway. Rain droplets disturb the puddle surface, which reflects a gray overcast sky, with a wet palm leaf lying near the water's edge. Centered composition, 1:1 aspect ratio, no people, no text, no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami Dade College-School of Health Sciences: Bachelor of Science in Dental Hygiene Program to Meet Workforce Needs",
-   "source": "Florida Hospital News and Healthcare Report",
-   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNamg1azFKaFdfa3pISmd1bDk0czBCMXd5NVZ0ZHBob3hQb1RVb19ZWXNfbUFMRDBLck02V1RsZmJLLW5WQWs0d2F3Z0RadVQyaFh6LXB2dlZsRWZDTFlCM0JpNGQtWHB5RXZOdnRpVlF3WVliUEx5WjU5RjVxcUR5NEhlQXpEV3U4d1JWOG5jdkY5RW0tZUIzTVN1QVdwNnlSM0NkU3BHV1N6aVd6X2NHRU9XeklyWDdSMWpZdFRyaWluQzhGaW9LU3lqTXVhZTlqa3NrNEw3VzIzSUJFbkU0QUlhLWI0QUQyVl9TUF9Bek5GRWxPVFE?oc=5",
-   "t": 1793509780000,
-   "id": 7,
-   "link": "https://southfloridahospitalnews.com/2026/11/01/miami-dade-college-school-of-health-sciences-bachelor-of-science-in-dental-hygiene-program-to-meet-workforce-needs/",
-   "thin": false,
-   "desc": "Dr. Ron Winston, Dean of the School of Health Sciences Miami Dade College (MDC), through its renowned School of Health Sciences, has launched a new Florida Department of Education-approved Bachelor […]",
-   "draft": {
-    "headlines": [
-     "MDC LAUNCHING NEW DENTAL HYGIENE BACHELOR DEGREE IN FALL 2026",
-     "MIAMI DADE COLLEGE EXPANDS DENTAL DEGREE PATHWAYS",
-     "MDC BECOMES SOUTH FLORIDA'S ONLY PUBLIC DENTAL HYGIENE BACHELOR PROVIDER"
-    ],
-    "article": "Miami Dade College will launch a new Bachelor of Science in Dental Hygiene in Fall 2026, expanding training opportunities right here in our community. The Florida Department of Education approved the 120-credit-hour degree-completion track, making MDC the only public higher education institution in South Florida to provide a full dental hygiene academic pathway.\n\nDesigned for working professionals holding an associate degree and an active license, the curriculum covers public health dentistry, clinical research, leadership, and healthcare administration.\n\nWorkforce estimates show rising demand for dental professionals in Miami-Dade County through 2032. The new offering helps local hygienists advance their careers affordably while supporting regional oral healthcare needs.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait framing a professional dental hygienist wearing modern clinical scrubs and safety eyewear in a bright health sciences laboratory setting. The clinician stands in the upper two-thirds of the frame, holding a dental examination tool with focused professionalism. The background shows soft-focused clinic equipment. The bottom third of the frame remains simple, clean, and darker in tone. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a clean, centered close-up of sterile stainless steel dental hygiene instruments, including a mouth mirror and dental scaler, resting neatly on a medical tray in an instructional clinic. Clean lighting reflects off the metallic tools. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "Inter Miami takes the pitch against New England as Major League Soccer action continues. Soccer supporters across the Miami area are keeping close tabs on the squad as they prepare to battle New England in league competition. Fans can follow every moment of the matchup through live text commentary, continuous score updates, and comprehensive match stats. The head-to-head history and in-game numbers will tell the story as Inter Miami looks to make an impact against New England in this Major League Soccer showdown. Stay tuned to the latest stats and live scores as the contest unfolds.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait aspect ratio capturing a professional soccer player from behind, wearing a blank pink athletic jersey, walking out onto a pristine, brightly lit soccer pitch at dusk. The player is framed in the upper two-thirds of the image, while the bottom third features simple, darker shadows across the trimmed green turf. Subtle stadium lighting glows in the soft-focus background. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic 1:1 square photo showing a centered, detailed close-up of a professional soccer ball resting on the manicured grass of a field near a painted white boundary line, with soft natural turf textures and shallow depth of field. No people's faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Why Giannis keeps raving about Larsson, as shot starts falling. And Heat notes",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ZdDM4OURlZkNySW1nSG5SWTBGNGdSa00yY2pmSk1UTUw2eUk0RHBTa2piUWg3bXBrV3VkR0RxeEtQZDYybVlmMlBUZGR4M1V6dzR3ZUtVRDlFTXhSOGNXRkdsR2dlWW81MUdBelRQQnQ2SURwYVctREswUdIBe0FVX3lxTE1POWVORHA4ZUxVZGJfZkZYY1RwMTluYzU3ejNiTF80OGJaZDJFVmpLZkVVU2xsdnE0Mmp3SjVkNDM2b0E3WUdtQnlQalljczFNNUNuOEpLaE4tVGFuMmNQeURlaGs5OXFsU1N2U3l4bU9PdkliTzlXUWtPOA?oc=5",
-   "t": 1793540451000,
-   "id": 8,
-   "link": "https://www.miamiherald.com/sports/nba/miami-heat/article317865433.html",
-   "thin": false,
-   "desc": "A look at Heat guard Pele Larsson, whose offensive game has been sharp the past two games. And Heat notes.",
-   "draft": {
-    "headlines": [
-     "PELLE LARSSON SHINES AS HEAT BEAT ATLANTA AND INDIANA",
-     "HEAT GUARD PELLE LARSSON SURGES ON OFFENSE",
-     "WHY HEAT STARS AND COACHES ARE PRAISING SURGING PELLE LARSSON"
-    ],
-    "article": "Pelle Larsson is making a major offensive impact for our Miami Heat following two consecutive victories against Atlanta and Indiana. The versatile wing scored 17 and 18 points across the two games, shooting 11 of 17 from the field while dishing out 11 assists.\n\nDuring Friday's 145-125 win over Indiana, Larsson shot a perfect 5 for 5 from the floor. Heat coach Erik Spoelstra and center Bam Adebayo both commended his poise and efficiency with the ball in hand. Larsson, who signed a four-year, $60 million contract extension in September, is also holding opponents to 34.7 percent shooting on defense.\n\nMiami now starts a five-game road trip Monday against the Lakers at 10 p.m.",
-    "imagePrompt": "Realistic editorial portrait of an athletic basketball guard in a white jersey looking determined during an arena game, dramatic indoor stadium lighting illuminating his upper body, positioned in the upper two-thirds of the frame, lower third consists of simple dark out-of-focus arena court flooring, authentic sports photography, 3:4 vertical aspect ratio, no text, no logos, no watermarks",
-    "circlePrompt": "Realistic close-up square shot of a regulation indoor basketball resting on a polished wooden court floor under stadium lights, centered subject showing detailed pebbled leather texture, shallow depth of field with smooth blurred background, no faces, no people, no text, no logos, no watermarks"
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Bears Recap, Dolphins Preview | Patriots This Week",
-   "source": "Patriots.com",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNc0JGdnhqSXZxWVZ0SFN0ZzJxQ2RhbEdlamVacXVtb2pNZUFubmx0c3VIY3VWa3d6czFMcWxtMl92V19rSDJXaTB2YVhPbmtGSDZVckw4UF94dW9UR0JDQnNvTmp3QTllMzdDek50TUZHV1NnVVdVZjlZWDlzU1I5ckFySzE?oc=5",
-   "t": 1793540063000,
+   "title": "Lakers get massive Luka Doncic injury news before Miami Heat game",
+   "source": "BasketNews.com",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON1Fxd2tDM2pVc2pTb0dHSUtIcllJVGpwYzYxaG1MOWVIVkQ1NXV6UTFsLUpYZUlSZExnQkJmT2Q3RklCbU81RnBraDlmTjFWdXpVZ2xmRkdQN3I0YzluZVMwMUZIbjItbzMyN2lCb28zYUJBdDZmb3g0Rk84Z21uLUN0MjlvSVZrZW01SzdleUpjUmJIbnVUblhJSmJ5OWd4bnV4MEFKNzA?oc=5",
+   "t": 1793654314000,
    "id": 9,
-   "link": "https://www.patriots.com/video/bears-recap-dolphins-preview-patriots-this-week",
+   "link": "https://basketnews.com/news-258698-lakers-get-massive-luka-doncic-injury-news-before-miami-heat-game.html",
    "thin": false,
-   "desc": "",
+   "desc": "Slovenian star Luka Doncic is set to play on the second night of a back-to-back when the Los Angeles Lakers host the Miami Heat on Monday.",
    "draft": {
     "headlines": [
-     "DOLPHINS PREPARE FOR WEEK 8 MATCHUP AGAINST NEW ENGLAND PATRIOTS",
-     "PATRIOTS HEADED TO MIAMI AFTER THURSDAY NIGHT LOSS",
-     "CAN MIAMI CAPITALIZE ON NEW ENGLAND AFTER THEIR THURSDAY DEFEAT"
+     "LUKA DONCIC CLEARED TO PLAY AGAINST MIAMI HEAT ON MONDAY",
+     "HEAT FACE RED-HOT LUKA DONCIC ON MONDAY",
+     "CAN MIAMI SLOW DOWN THE NBA LEADING SCORER TONIGHT?"
     ],
-    "article": "The Miami Dolphins are in focus as New England prepares for an upcoming Week 8 showdown. Commentators Bob Socci, Scott Zolak, and Brian Hoyer turned their attention toward Miami following a Thursday night loss suffered by New England against the Chicago Bears.\n\nMiami takes on an opponent looking to rebound from that Thursday defeat. Looking further ahead on the calendar, the two franchises are also scheduled for a rematch during a Week 18 matchup.\n\nWith preparations underway for Week 8, attention remains fixed on how the upcoming battle against New England will unfold.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing an empty professional outdoor football stadium under bright evening floodlights. In the upper two-thirds, the manicured green grass field and distant empty grandstand seating are bathed in cool stadium lighting. The bottom third features a simple, smooth, and much darker gradient of stadium shadow. No text, no logos, no team branding, and no watermarks.",
-    "circlePrompt": "A realistic 1:1 square macro photograph focusing tightly on the textured brown pebbled leather and white stitched laces of an American football. The football rests centered on vibrant green blades of stadium turf with a softly blurred background. No human faces, no numbers, no words, no logos, and no watermarks."
+    "article": "The Miami Heat face a tough test on Monday night as Slovenian superstar Luka Doncic has been cleared to play for the Los Angeles Lakers. Doncic is active for the second leg of a back-to-back following a massive 45-point, 15-rebound, and six-assist performance in Sunday's 131-125 victory against the Toronto Raptors.\n\nDoncic leads the NBA in scoring, averaging 37.7 points, 8.2 rebounds, and 7.3 assists through six games this season. He has scored at least 37 points across four straight outings. Miami will also contend with Ziaire Williams, who is returning from a foot issue, while Los Angeles keeps Adou Thiero sidelined as the 5-2 Lakers host the Heat.",
+    "imagePrompt": "A realistic vertical 3:4 editorial portrait photo of a professional basketball player during a game, seen from the torso up, focused and determined on the court under bright arena lights. The upper two-thirds features the athlete in action against a blurred arena background. The lower third is composed of the dark court baseline with simple, shadowy tones. No text, letters, numbers, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 detailed photograph focused on a professional basketball resting on a polished hardwood arena floor, positioned directly under an overhead arena light. Sharp wood grain textures and reflective floor finish are highlighted with the ball perfectly centered. No people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1891: Julia Tuttle buys 640 acres on the Miami River",
-   "desc": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.",
+   "title": "1836: Dade County is created",
+   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
    "id": 10,
    "draft": {
     "headlines": [
-     "JULIA TUTTLE BUYS 640 ACRES ON MIAMI RIVER IN 1891",
-     "1891: 640 ACRES PURCHASED ON THE MIAMI RIVER",
-     "HOW JULIA TUTTLE SECURED 640 MIAMI RIVER ACRES IN 1891"
+     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
+     "OUR LOCAL ORIGINS IN 1836",
+     "HOW OUR COMMUNITY GOT ITS START DURING HISTORIC 1836"
     ],
-    "article": "Local history traces back to 1891, the year Julia Tuttle made her move to South Florida. Upon arriving that year, Tuttle completed a major land purchase, buying 640 acres of property situated directly on the north bank of the Miami River.\n\nJulia Tuttle established her presence right along the river with this 640-acre acquisition. Tuttle secured the entire parcel along the north bank during that milestone year of 1891.\n\nHer relocation to South Florida and the purchase along the northern riverbank remain an essential part of our local area's early story.",
-    "imagePrompt": "A vintage archival-style vertical photograph capturing the wild, untouched north bank of the Miami River in the late nineteenth century. In the upper two-thirds, native subtropical vegetation, pine trees, and palmettos grow densely along the river shoreline under an overcast, sepia-toned historical sky. The bottom third features deep, shadowed river water reflecting soft light, keeping the lower composition simple and dark. Archival photo texture, historical patina, no people, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square macro photograph centered on a weathered 1890s surveyor instrument resting on Florida limestone rock near coastal brush and river soil. The vintage brass instrument is sharply in focus at the dead center, with a softly blurred background of river greenery and earth. Rich antique brass tones and rough stone textures, no faces, no people, no text, no logos, no watermarks."
+    "article": "Dade County officially came into existence on February 4, 1836, marking a pivotal moment in our local history. The newly formed territory was named in honor of Major Francis L. Dade and the Miami River. That exact year brought further historic developments to our area. Fort Dallas was constructed in 1836, establishing a prominent post near the water. The site operated as an active military base during the Second Seminole War, shaping the early defense and territorial presence across the region during that foundational era.",
+    "imagePrompt": "Vintage archival editorial photograph depicting an early 19th-century military outpost along a subtropical riverbank in 1836. A rustic wooden stockade fort structure stands in the upper two-thirds of the vertical 3:4 frame under a hazy, humid sky. The bottom third features dark, calm river water and shadowed marsh grasses. Historical sepia and muted earthy tones, aged tintype appearance, no identifiable people, no text, no watermarks.",
+    "circlePrompt": "A realistic close-up square 1:1 photograph centered on a weathered 1830s military cannon and antique timber fort wall. The rough-hewn pine logs and aged iron artillery show authentic texture and patina under natural daylight. Centered composition, no faces, no text, no logos, no watermarks."
    }
   }
  ]
