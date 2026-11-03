@@ -1,201 +1,203 @@
 {
- "date": "Monday, November 2",
- "pick": "mvzt8lxd",
+ "date": "Tuesday, November 3",
+ "pick": "mw1419jd",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Severe thunderstorm warning issued for parts of Miami-Dade as strong winds move across South Florida",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxNVWR3VWYwNENTdEZqYVdQcFgyd1BwZWI0TndackdkQmdfMmM2QVhNbng1SkFSWnVmSF9VbTkyTE1mZzJrbTlsSFhjQnUwSkZveVEzbkZxcDVnaFdBc2xWdldyTlBCUDB1MHRzUnFGRkZSb29sdENseUJMVm9hR0hqSzJQMGR6X3dVSm9Ta21sOFdoUzcyTi0wLVo2MDlUSlhoSDJ1MzZ2Um45SUV0NW5SV3puRGJFcFZmdzFRZ1FsMXdFa051Rk0wUWc0YThXb3YtWVF5Q3hfTlZXU3A5?oc=5",
-   "t": 1793654364000,
+   "title": "Snarky Puppy’s GroundUp Music Festival returns to Miami Beach",
+   "source": "Miami New Times",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSnViWEpxa2ZpMUZuQlpEdWpoanc3Zkx6OE9hS29taHRudWpnMVNxOGswYmhoSmpfSld2ZFZzYnBQclpWaUtwbkNBbldvc0hjSUpjcC1saFJHRnd5dTBhelRuVWthYkx2VzFlX2lIbXkzM0MxTGF3d0x6b0s5N1NQUTlMU3BQZDVJaEpzbFM2ZDBseGJwRDZwbWxKd0QyQktYZWgxbzgzUjV6QQ?oc=5",
+   "t": 1793735565000,
    "id": 1,
-   "thin": true,
+   "link": "https://www.miaminewtimes.com/music/snarky-puppys-groundup-music-festival-returns-to-miami-beach-40595630/",
+   "thin": false,
+   "desc": "The event will happen on March 12-14 with a lineup featuring Domi & JD Beck, Lionel Loueke, Gretchen Parlato, and more.",
    "draft": {
     "headlines": [
-     "SEVERE THUNDERSTORM WARNING ISSUED FOR PARTS OF MIAMI-DADE",
-     "STRONG WINDS HIT MIAMI-DADE UNDER STORM WARNING",
-     "MIAMI-DADE BRACES AS STRONG WINDS AND STORMS SWEEP IN"
+     "GROUNDUP MUSIC FESTIVAL RETURNS TO MIAMI BEACH IN MARCH",
+     "SNARKY PUPPY BRINGS GROUNDUP FESTIVAL BACK TO NORTH BEACH",
+     "MIAMI BEACH BANDSHELL HOSTS STAR-STUDDED GROUNDUP MUSIC FESTIVAL"
     ],
-    "article": "A severe thunderstorm warning has been officially issued for parts of Miami-Dade. The alert takes effect as strong winds move across South Florida, bringing rough conditions to the region. Communities in the affected sections of Miami-Dade are dealing with the impact of these severe thunderstorms and gusty winds traveling through the area. With strong winds actively pushing across South Florida, parts of Miami-Dade remain under the thunderstorm warning as the weather system tracks across the county.",
-    "imagePrompt": "A dramatic 3:4 vertical editorial photograph capturing turbulent dark storm clouds moving over coastal South Florida with wind-blown palm trees leaning sharply in the upper two-thirds of the frame. The bottom third features a simple, dark roadway wet with rain. Photorealistic, moody natural lighting, no text, no watermarks, no logos.",
-    "circlePrompt": "A realistic 1:1 square photograph showing a centered close-up shot of storm-battered green palm leaves thrashing in heavy wind against a dim gray storm sky. Focused texture on the wet foliage, high detail, no people, no faces, no text, no logos, no watermarks."
+    "article": "The GroundUp Music Festival is heading back to the Miami Beach Bandshell at 7275 Collins Avenue from Friday, March 12 through Sunday, March 14. An annual South Florida staple since 2017, the festival features jazz fusion collective Snarky Puppy headlining each night. This year lineup showcases Domi and JD Beck, Lionel Loueke, Gretchen Parlato, Charlie Hunter, Ella Feingold, Victoria Canal, Lau Noah, and New Orleans funk band The Rumble. Beyond concerts and nightly Family Dinner sets, attendees can participate in daily masterclasses and panels with musicians. Following the 11 p.m. North Beach curfew, festival jams move to an unannounced venue. Single-day admission starts at $118, with weekend passes starting at $211.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photograph capturing an open-air concert stage at an outdoor amphitheater in Miami Beach at dusk. The upper two-thirds features warm stage lighting illuminating jazz instruments, keyboard setups, and microphones beneath tropical palm tree fronds against a dusk sky. The bottom third remains simple, shadowed, and dark, showcasing a silhouette of the venue floor. Realistic atmospheric lighting, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on an electric jazz guitar resting on a stand next to a drum kit on an outdoor wooden stage. Warm afternoon sunlight glints across the instrument finish and metal hardware, with a softly blurred outdoor tropical venue in the background. Centered composition, no human faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami Beach to Honor Veterans with High-Tech Letter Campaign",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNRkdoY29DSl9jR3FENlNDN3ljdU5OSGlaU2dnMVQ0cnBDZ1pNeklJNm9LY2pTUWc0YmRJYUd0MHRnR0RySGRRWVJ3a0V1aVlLXzR5U2NwME9PeUxpT3NzYlhRVlE2SUVZTWNZMDdMcmdHTGdzMEt5cU9aOFQ5dEJKLUJ5Mm8tUDBKNlc2WmZDeERNVFAzNmllN19WTXJ3enhlVThFUDU2WG83TktINHhj?oc=5",
-   "t": 1793650042000,
+   "title": "Miami police cruiser reported stolen near Little Haiti",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWHYzSVZsZkxsTWk0cG9CdUZzR3oxZkEtbV9BQ1pRNEVPZE5TajBIZGgyN1RhSFBrRnVhejljNHJQYWhSMkFKa21TM2VldUFCZnpybnBVLV85aXlwNWZWc25GeGVGSkZlNHpHckRMREZGR0h5SHZweWJXS2ZIQVZMT2RwX0xiQl9feTMxYjNDTXlIT2FQakZSSTZzNHBoWDJGaFh3?oc=5",
+   "t": 1793735251000,
    "id": 2,
-   "link": "https://communitynewspapers.com/miami-beach-news/miami-beach-to-honor-veterans-with-high-tech-letter-campaign/",
+   "link": "https://www.local10.com/news/local/2026/11/03/miami-police-cruiser-reported-stolen-near-little-haiti/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI BEACH HONORS VETERANS WITH BETSY ORB PROJECTIONS",
-     "OCEAN DRIVE LANDMARK LIGHTS UP FOR VETERANS",
-     "ICONIC SOUTH BEACH ORB PROJECTING LETTERS TO HEROES"
+     "MARKED MIAMI POLICE CRUISER REPORTED STOLEN NEAR LITTLE HAITI",
+     "MIAMI POLICE CRUISER REPORTED STOLEN TUESDAY AFTERNOON",
+     "PATROL CAR STOLEN IN BROAD DAYLIGHT NEAR LITTLE HAITI"
     ],
-    "article": "The City of Miami Beach and VFW Post 3559 are lighting up South Beach ahead of Veterans Day. From Nov. 7 through Nov. 10, electronic letters and video tributes will illuminate The Betsy Orb, the spherical skybridge connecting The Betsy Hotel at 1440 Ocean Drive to the former Carlton Hotel.\n\nEvents begin Saturday, Nov. 7, at 5:30 p.m. with a live bugler outside The Betsy playing \"Retreat,\" broadcast simultaneously at Lincoln Road and Pennsylvania Avenue, plus 73rd Street and Ocean Terrace in North Beach.\n\nThe Betsy will also host documentary screenings alongside a special presentation. U.S. Southern Command Col. Wesley Hales will award replacement medals to Miami Beach Vietnam War veteran USAF Sgt. James E. Anderson.",
-    "imagePrompt": "An editorial night photograph in a 3:4 vertical orientation capturing the iconic Betsy Orb spherical architectural skybridge suspended in an alleyway between historic buildings on Ocean Drive in South Beach Miami. Soft light beams cast gentle illuminations across the curved white sphere. The glowing sphere occupies the upper two-thirds of the vertical frame, framed by subtle Art Deco rooflines against a deep twilight sky. The lower third of the frame features a dark, simple alleyway with clean pavement catching faint ambient reflections. High realism, architectural photography, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 detailed photograph centered on a polished brass bugle resting horizontally on a dark outdoor pedestal during sunset. Soft golden hour light glints off the reflective metal instrument. In the softly blurred background, the subtle pastel colors of South Beach Art Deco architecture and palm leaves create a gentle bokeh. Clean centered composition, crisp metallic textures, no people, no faces, no text, no logos, no watermarks."
+    "article": "A marked Miami Police Department patrol cruiser was reported stolen Tuesday afternoon near the Little Haiti area. According to police, the vehicle disappeared at approximately 1:45 p.m. near the intersection of Northeast Second Avenue and 52nd Street. The exact circumstances behind the vehicle theft remain under official investigation by authorities. Miami police are asking for the public's assistance with the case. Anyone who has information about the incident or the current whereabouts of the patrol vehicle is urged to call the Miami Police Department at 305-603-6640.",
+    "imagePrompt": "A realistic 3:4 vertical editorial photo capturing a Miami urban street corner on a bright sunny afternoon. In the upper two-thirds of the frame, palm trees, colorful storefronts, and an empty asphalt intersection near Little Haiti are visible under clear tropical skies. The bottom third features a simple, darker, shadowed street surface. Clean composition, journalistic documentary style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of an emergency vehicle rooftop light bar, centered in the frame. The transparent polycarbonate casing reflects the warm Miami daylight with softly blurred urban street foliage in the background. No people, no faces, no text, no numbers, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Cruising for a cause",
-   "source": "The Miami Laker",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOS2JDNVd2a1FDbnBuUlVhRHJ1WTE2REU2ZkxOM05rckxUTW94b0MycmE4WExZNGo3amFsenF5ZFdYYTlLR0RKTmZQS3duVHdvbWplZVVoVGY2a3hFNVpfdUs2alBVN2podnlNQThhc0JpTDFBSjlhRWlmNDNnT1RuSWFfYkV4YTRrQklN?oc=5",
-   "t": 1793648341000,
+   "title": "Miami Beach Wants to Help Stores and Restaurants Avoid Food Waste and Lend a Helping Hand",
+   "source": "Miami’s Community News",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMnlmeEdlYTRvX0FnODJVYmhJM1NpRGlXcWdyR1Z0dHAwel9KYkFycG5rYjk0TDdTVU5jZjNLd0lwRkhNVkd4dUloUzJaMW9BZlE5aHVZTDdyV29nOG5DdzJHN2Q3dFBvRlM0czFrX3FQaWhEcEVxcW0yZlpXTHlRMlhuSERYZzV0ZDItbWFsM2JYd2lUU3ZxS1hoVC1LYlNvQlZscWlqVl9iU29nTDlwU0lweHBSdGoyS2QxanVrQTdvYkVEWnBYMG1FZTVjNHBrMF95Y3ZB?oc=5",
+   "t": 1793733908000,
    "id": 3,
-   "link": "https://miamilaker.com/News-Article/ArtMID/391/ArticleID/26950/Cruising-for-a-cause",
+   "link": "https://communitynewspapers.com/miami-beach-news/miami-beach-wants-to-help-stores-and-restaurants-avoid-food-waste-and-lend-a-helping-hand/",
    "thin": false,
-   "desc": "For Miami-Dade Sheriff’s Office Miami Lakes District Dep. Robin Amador, the fight to end childhood cancer is personal. Amador’s cousin who died of leukemia as well as the son of a fellow deputy who also died of…",
+   "desc": "Getting your Trinity Audio player ready... With its world-class restaurant scene, Miami Beach wants to help city food retailers and restauranteurs clear their kitchens of surplus food while reducing food insecurity in…",
    "draft": {
     "headlines": [
-     "FIRST RESPONDERS PARADE FOR CHILDREN'S CANCER PATIENTS ACROSS SOUTH FLORIDA",
-     "CRUISING TO BRING HOPE TO YOUNG CANCER PATIENTS",
-     "MIAMI OFFICERS CONVOY TO DELIGHT LOCAL HOSPITALIZED CHILDREN"
+     "MIAMI BEACH LAUNCHES 120-DAY FOOD WASTE PILOT PROGRAM",
+     "STOPPING RESTAURANT FOOD WASTE IN MIAMI BEACH",
+     "HOW MIAMI BEACH RESTAURANTS ARE TACKLING LOCAL HUNGER"
     ],
-    "article": "South Florida law enforcement officers rolled out on September 5 for the ninth annual Mystic Force Foundation first responder parade. The vehicle procession began at Nicklaus Children's Hospital in South Miami and traveled north to Joe DiMaggio Children's Hospital in Hollywood to lift the spirits of pediatric cancer patients. Miami-Dade Sheriff's Office Miami Lakes District Deputy Robin Amador took part in the event, motivated by the loss of his cousin and a colleague's child to cancer. Participating agencies showcased cruisers, vintage vehicles, and special cars featuring decals, alongside responders dressed as characters such as Batman and Spider-Man. Young patients and their families enjoyed the multi-agency spectacle from sidewalks and hospital windows.",
-    "imagePrompt": "Vertical 3:4 editorial documentary photo showing a row of emergency and patrol vehicles parked in a convoy outside a South Florida hospital on a sunny day. A law enforcement officer in uniform stands proudly near the front vehicle. The vehicles, palm trees, and modern hospital exterior occupy the upper two-thirds of the frame, while the bottom third consists of clean, dark asphalt roadway in subtle shadow. Realistic, daytime photojournalism style.",
-    "circlePrompt": "Square 1:1 close-up shot centered on the emergency light bar and hood of a vintage law enforcement patrol car, parked outdoors under bright sunlight with colorful parade streamers reflecting on the polished hood surface. Symmetrical composition, crisp focus on the lights and metal trim, background softly blurred, no people or text visible."
+    "article": "Miami Beach is rolling out a new 120-day voluntary pilot program designed to help local restaurants and food retailers redirect surplus food to community members in need. Sponsored by Commissioner Laura Dominguez and supported by Mayor Steven Meiner, the educational initiative links city kitchens with food recovery groups at no cost or liability to donors. Participating spots receive contact details for four partner organizations: Food Rescue US, Farm Share, Nourish Miami, and Feeding South Florida. Along with feeding local families facing food insecurity, the program aims to lower landfill methane emissions and cut pollution across the city. Businesses will also complete a brief survey detailing their experiences to shape future city food waste policies.",
+    "imagePrompt": "Editorial style photo in a 3:4 vertical orientation showing a Miami Beach restaurant chef packing fresh surplus culinary ingredients and produce into clean cardboard donation crates in a sunlit commercial kitchen. The chef and action take place in the upper two-thirds of the frame. The bottom third of the frame features simple, clean, darker stainless steel prep counter space with soft shadows. Realistic lighting, natural colors, high detail, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic close-up square 1:1 photograph centered on colorful fresh produce and neatly packed containers resting inside a wooden donation crate on a kitchen surface. Crisp lighting highlights the textures of the fresh vegetables. No people or faces visible, no text, no letters, no logos, and no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "After 16 years as a U.S. citizen, Miami Beach man prepares to vote for the first time in the midterms",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPblVBY2pUbWtCOTlteTZ3eFpIenY2VnJGbVhza1FnbkU4ZXpRUDFlM0FyOWZuRVpVUVdHRTR4WGVkZ2lnTWwxeGFzamxoR2wybVNGUVo1MGJIRXA0WVRXbVpGdS02WFptMjBTSTMxamxsSHRQSGxteUlFVjEwOGQyVjQtQU5oaDJobUNYX1ZkQy1LZkMxb2c?oc=5",
-   "t": 1793647902000,
+   "title": "Outnumbered on paper, Miami-Dade Democrats continue to lead in ballots cast",
+   "source": "Florida Politics",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPckNuRzZWWDFXOTlaX3FhNnJFb0dvcTdueEdYYUczTmpNc1ItQkVGT043TW1tTkxqb1FZSjh0NnhlczhjUURfNHB3QXNLejNHZzIxblRQdXBaa3ZkcWk3NUtsYmprRmZsQTNneXdqa3VNbXBpWmpiSFpqbEpwMTRkQ2l0OXcyZl9SNzJEZXFvRGh3TUI1Q1c1ZjBLLTIyaUVzOEstY3VYanphYjAwRTBESFBxb05kazJia3FB?oc=5",
+   "t": 1793733070000,
    "id": 4,
-   "link": "https://www.cbsnews.com/miami/news/miami-beach-man-first-time-voter-2026-midterm-elections/",
+   "link": "https://floridapolitics.com/archives/829010-outnumbered-on-paper-miami-dade-democrats-continue-to-lead-in-ballots-cast/",
    "thin": false,
-   "desc": "Nicolas Mantovani, 48, is preparing to cast his first ballot in the 2026 midterms after years of believing his vote wouldn't make a difference.",
+   "desc": "More than half of Miami-Dade voters have cast ballots, and Democrats are out in front.",
    "draft": {
     "headlines": [
-     "MIAMI BEACH RESIDENT TO CAST FIRST BALLOT AFTER 16 YEARS",
-     "FIRST-TIME VOTER AT 48 IN MIAMI BEACH",
-     "WHY A MIAMI BEACH CITIZEN WAITED 16 YEARS TO VOTE"
+     "MIAMI-DADE DEMOCRATS LEAD EARLY VOTES DESPITE REPUBLICAN REGISTRATION EDGE",
+     "BLUE SURGE IN MIAMI-DADE TURNOUT",
+     "CAN MIAMI-DADE SHIFT BLUE AGAIN THIS ELECTION?"
     ],
-    "article": "Miami Beach resident Nicolas Mantovani is preparing to cast his first ballot in the November 3, 2026 midterm elections. At 48 years old, Mantovani has been a naturalized United States citizen since 2010 but has never taken part in an election.\n\nMantovani arrived from Argentina during childhood and lived under a student visa and permanent residency before gaining citizenship. For sixteen years, hesitation about the electoral process and doubts regarding whether an individual vote mattered kept him away from the polls.\n\nNow actively researching candidates, he wants to shape his local community and encourage younger generations to make their voices heard.",
-    "imagePrompt": "Editorial portrait of a 48-year-old Hispanic man standing outdoors on a Miami Beach sidewalk during late afternoon golden hour. The man has a thoughtful expression, positioned in the upper two-thirds of the frame. The background shows soft-focus tropical greenery and quiet residential architecture. The bottom third of the image is simple and cast in darker natural shadows. Realistic photojournalism style, natural light, no text, no watermarks, no logos, 3:4 aspect ratio.",
-    "circlePrompt": "A realistic close-up square photograph centered on a pair of adult hands holding a blank paper ballot folder on a wooden table, illuminated by warm sunlight from an adjacent window. Shallow depth of field, strictly no human faces, no visible text, no letters, no logos, no watermarks."
+    "article": "Miami-Dade County voters are turning out in force, with Democrats taking an early midday lead in ballots cast.\n\nAccording to Supervisor of Elections Alina Garcia’s Office, over half of registered voters had participated by early Tuesday afternoon. By 1:20 p.m., 50.8% of the electorate had cast ballots. Democrats held 36.4% of those votes, followed by Republicans at 35.2% and third- or no-party voters at 28.4%.\n\nThe numbers show Democrats out front despite Republicans holding a 45,556-voter registration advantage as of October 1. County polling sites stay open until 7 p.m., and anyone waiting in line at closing time can still vote.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing voters lined up outside a sunny polling precinct in Miami with palm trees in the background. In the upper two-thirds, diverse voters stand calmly under the bright Florida sky outside the facility. The lower third features clean, dark shadowed asphalt pavement, creating a simple base. Natural daylight, authentic photojournalistic style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of hands feeding a blank-looking paper ballot into an electronic tabulation machine intake slot. The insertion slot is centered in the frame with a shallow depth of field. Soft indoor municipal lighting, no faces visible, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "South Beach food festival tickets are now on sale. Here’s how to get them",
+   "title": "Guards accused of beating inmate at a state prison in Miami-Dade are sentenced",
    "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5zeDFDSnBQeWZ4NEROVHFYMHB0SUUweF9Jck5yQXJueTBqcGJwNDVQNFQ2Zm80czM1ZUhvOWFmMHdGUnl5SjYtbjZsdWxnR1pWSVhBTVVNOVdxdHA4R2FZcG9XblkyX1JwbTRkNzRraVVMSllINVB3a2NWd9IBe0FVX3lxTFBYdktLZEI0dzdSb2wySllkbHgtbnkxLVVza3VlNy1VNktiN2ZLSWowaUg4TzhUWEgzekZSRVRMZ3Vhd2ZkTjFhd1R2TEk3RWhsdVZxdUt0eVFET1hZeURhdVk1UU1WWE53ZzItNFN6WTl3S2FqaDVFSTFZMA?oc=5",
-   "t": 1793647660000,
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcG5RVEZhaGlKdGF0ZWpreXBVVVZobm5LMVdEcEFjZlltNm1fb1c1T3g4NXRQSEE0UGNzQW1OcnRDRVlxVkRqX1JyVFJQM3Qyb0lsQ18ycVhjcUlYUlJzUEgwdDRpazhGSlZyd0w1RTJVSUx1aTY3a0hZWG1NUWJEblNJS2d3MDl00gGIAUFVX3lxTE1JSjRFODViLTh4akZnR1h4VEl2Yi1kQ0JKajBKaGlMSDdXWVViMjl5Ul9FYWxTUXlfMUlXNk9URHhFN2ttQjZSZnRhQWFVdlIwT3pQYmtWVmZpQlRJUjRYZU50MklUTEpDcGREMmtYYWQ0NWY4d1N3ZTN3LS1tdjNkODFidThXXzI?oc=5",
+   "t": 1793732735000,
    "id": 5,
-   "link": "https://www.miamiherald.com/miami-com/restaurants/article317884616.html",
+   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317440163.html",
    "thin": false,
-   "desc": "Time to get tickets for Miami’s favorite feeding frenzy.",
+   "desc": "The case involved a lieutenant and six officers.",
    "draft": {
     "headlines": [
-     "SOUTH BEACH WINE AND FOOD FESTIVAL TICKETS GO ON SALE",
-     "MIAMI FOOD FESTIVAL TICKETS ARE OFFICIALLY LIVE",
-     "OUR BIGGEST CULINARY CELEBRATION RETURNS ACROSS SOUTH FLORIDA"
+     "SEVEN GUARDS SENTENCED IN SOUTH MIAMI-DADE PRISON BEATING CASE",
+     "MIAMI PRISON GUARDS AVOID JAIL TIME AFTER INMATE ATTACK",
+     "SEE HOW A SOUTH MIAMI-DADE PRISON BEATING CASE ENDED"
     ],
-    "article": "Tickets are officially on sale for the 26th annual South Beach Wine and Food Festival, running from Feb. 25-28. The celebration spans from a farm in Homestead to northern Fort Lauderdale, featuring more than 500 chefs, tastemakers, and culinary personalities. Miami events are shifting and expanding across the area. Tacos and Tequila returns to Miami Beach, while the Kimpton Surfcomber Hotel will host Chicken Coupe. Staples like Burger Bash, Marcus Samuelsson's Overtown EatUp, and the Grand Tasting Village also return. Food lovers can also book interactive sessions, including pizza making with Miami Slice, Cuban cocktail crafting with Julio Cabrera of Cafe La Trova, and babka baking with Bakey.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing an outdoor beachfront food festival in Miami Beach. In the upper two-thirds, white tasting tents, outdoor cooking grills with gentle rising smoke, and coastal palm trees fill the vibrant daytime scene. The bottom third consists of a darker, clean, simple sandy boardwalk foreground in soft shadow. Rich natural sunlight, realistic documentary photography, no people looking directly at the camera, no text, no logos.",
-    "circlePrompt": "A realistic 1:1 square close-up shot focused on a beautifully braided, freshly baked chocolate babka loaf sliced open on a rustic dark wooden cutting board next to a cocktail glass. Centered subject, shallow depth of field, warm natural side lighting highlighting the rich chocolate swirls. No people, no faces, no text, no logos."
+    "article": "Seven corrections staffers from Dade Correctional Institution, located south of Florida City in South Miami-Dade, have resolved criminal cases tied to the April 5, 2025 beating of an inmate.\n\nAround 9:30 p.m., 31-year-old inmate Christopher Castro was escorted to an area away from security cameras and placed in a holding cell. While handcuffed, Castro was kicked and punched in the face, head, and back by officers, leaving blood on the cell surfaces.\n\nLieutenant Shentrica Jones Clark, 41, received six months of house arrest and six months of probation for evidence tampering. Six other officers, ages 25 to 36, must surrender their certifications and complete 50 hours of community service under plea deals with prosecutors.",
+    "imagePrompt": "An editorial vertical 3:4 portrait of a Florida corrections officer in a dark uniform standing outside an institutional perimeter under twilight skies. The subject occupies the upper two-thirds of the frame with a serious demeanor, while the bottom third remains simple and dark with shadowed asphalt. Realistic documentary photojournalism style, atmospheric evening light, no text, no emblems, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on heavy steel handcuffs resting on a cold concrete bench inside a dimly lit holding cell. Sharp focus on the metallic links and cuffs, muted concrete textures in the background, cool fluorescent lighting, no people, no faces, no text, no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Election Day is Tuesday: Miami-Dade moved 13 polling places; Jolly, Donalds make final pitches",
+   "title": "Man hospitalized after reported shooting in northwest Miami-Dade, deputies say",
    "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxObVE0RUJ0M0N4eXdFOEhtSUF0RkxybElXTnYzQ0xDMlpuOGFOd3hyTEZZQzFwQmJLTWZxemFkUk9QSTJ5Q1g5d3BNZDBzVlY3bko4emk1YjZvMDBsRGQ3MC1fdEJrbkdITm5PQldPNm5wYnJYYkhQaW0teFJEVHVlemluSE5tamZuZmlRNTRsRWxDNVp6NjJ0TXJfRUNFZzdYanRfTlJnRUVBcVhEQTRkeWdtdzk?oc=5",
-   "t": 1793642949000,
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUUVnTVh0V01RV01qM2EzVk55NWwtaWh1Z3hqQ185alZmYllyenZQdkRfWW5KaVhjUzljXzhXa3J3SEJ3ckFjWHBqUEJ4QWJYR0wya1dKUEJrLXVScnlvOXlkTDg0NzlYOEE0bzRkZ0hVMDBCa0JXNUZ3eFJTTWRlSzR4QzZXYUxl?oc=5",
+   "t": 1793730300000,
    "id": 6,
-   "link": "https://www.cbsnews.com/miami/news/election-day-tuesday-miami-dade-polling-places-moved-jolly-donalds-nixon-moody/",
+   "link": "https://www.cbsnews.com/miami/news/northwest-miami-dade-shooting-november-2-2026/",
    "thin": false,
-   "desc": "Voters must use their assigned precincts on Tuesday; polls are open from 7 a.m. to 7 p.m., and the governor and Senate candidates are making final campaign stops.",
+   "desc": "The sheriff's office says the man was taken to a hospital in stable condition and has not released a cause or said whether anyone has been arrested.",
    "draft": {
     "headlines": [
-     "MIAMI-DADE MOVES 13 POLLING LOCATIONS AHEAD OF TUESDAY ELECTION",
-     "ELECTION DAY ARRIVES: CHECK YOUR ASSIGNED MIAMI PRECINCT",
-     "DID YOUR MIAMI-DADE VOTING PRECINCT MOVE BEFORE TUESDAY?"
+     "MAN HOSPITALIZED AFTER TUESDAY MORNING SHOOTING IN NORTHWEST MIAMI-DADE",
+     "INVESTIGATION UNDERWAY AFTER MAN SHOT IN NORTHWEST MIAMI-DADE",
+     "WHAT SPARKED TUESDAY MORNING SHOOTING IN NORTHWEST MIAMI-DADE?"
     ],
-    "article": "Election Day arrives Tuesday across South Florida, with polling locations welcoming voters from 7 a.m. to 7 p.m. Voters must cast ballots at their designated precinct, unlike during the early voting window.\n\nIn Miami-Dade County, 13 polling sites have temporarily moved, which impacts 19 precincts. Residents can check their voting address through their county Supervisor of Elections website prior to traveling. Hundreds of thousands of South Florida residents have already voted.\n\nHigh-profile contests top the ticket, including the gubernatorial race between Democrat David Jolly and Republican Byron Donalds. In the U.S. Senate contest, appointed incumbent Ashley Moody is defending the seat against Democratic challenger Angie Nixon.",
-    "imagePrompt": "A realistic vertical editorial photograph showing an American voting precinct interior in South Florida under morning sunlight. In the upper two-thirds of the frame, several voting privacy carrels stand positioned across a bright community hall. The bottom third of the composition consists of simple, shadowed dark flooring. Cinematic natural lighting, sharp documentary style, no people's faces, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square close-up photograph of an empty voting station desk with a privacy divider shield centered in the frame. The tabletop surface is clean and illuminated by gentle indoor overhead light. Symmetrical composition, crisp focus, no people, no faces, no text, no letters, no words, no logos, no watermarks."
+    "article": "A Tuesday morning shooting in northwest Miami-Dade left an adult man hospitalized with gunshot wounds to his lower extremities. Miami-Dade Sheriff's Office deputies were dispatched to the intersection of Northwest 119th Street and 24th Avenue after receiving reports of a shooting. Upon arrival, emergency personnel located the injured victim. Miami-Dade Fire Rescue treated and transported the man to a local hospital, where he was listed in stable condition. Detectives from the sheriff's General Investigations unit have taken over the scene. Authorities have not yet determined the cause of the gunfire, and no arrests have been announced.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing a Miami neighborhood street corner on a bright morning with emergency vehicles parked along the curb. In the upper two-thirds, an ambulance and a patrol vehicle with flashing blue and red lights are parked near tropical street trees and residential fences. The bottom third consists of clean, dark asphalt roadway in shadow, providing negative space. Authentic daylight lighting, photojournalistic style, no visible text, no letters, no logos, no watermarks, no identifiable faces.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on bright yellow evidence markers resting on asphalt pavement under bright morning sunlight, with a softly blurred background of a suburban Miami street. No people, no faces, no text, no numbers, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade County is experiencing a population decline",
-   "source": "The Miami Hurricane",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQaFhFZzJRT1NpeEp2MHM4azlpbWVLRHdRYXRJWkt1UTFmZ1ZBUjB2SDY1Z19xTFNpb3lONE9QemlBeGJYczhTOEtFVWhZUjJfVlVvQkNzbWV5LVR1dHFoZzA4WHRJRXVtck5JQzZvX250U1o2eFpGVG5Bb0ZfcnBHSUd1QlRBeHhkOU8zTXNhZ1kzR2lpU1dTQlktams?oc=5",
-   "t": 1793640045000,
+   "title": "Boy shot after verbal dispute in southwest Miami-Dade, deputies say",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRHViSzFRNVU2eGhUOVVhbVU0OFNqNzdhQVJZZGxGdFYzUVZ5d1RvZEU1N2xqVGcwazM1NTItRkg4d0R4Z2NDSksyRmdub0xNU3VBZVFrLWktaFk1WXNvOVhBcHRUSGpYZTh5QTNTVW1MdnhUTkVmT1g3QmZRaHJjUEhXREtLakpHeW9vbUdjdm9jODh6NE9GLUd6QXQ?oc=5",
+   "t": 1793726698000,
    "id": 7,
-   "link": "https://themiamihurricane.com/2026/11/02/miami-dade-county-is-experiencing-a-population-decline/",
+   "link": "https://www.cbsnews.com/miami/news/boy-shot-southwest-miami-dade-verbal-dispute-november-3-2026/",
    "thin": false,
-   "desc": "",
+   "desc": "The sheriff's office says the boy was in a verbal dispute with several unknown people when one of them shot him, and it hasn't said whether anyone has been detained.",
    "draft": {
     "headlines": [
-     "MIAMI-DADE RANKS THIRD NATIONWIDE FOR POPULATION LOSS",
-     "THOUSANDS OF LOCALS ARE PACKING UP AND LEAVING",
-     "WHY ARE SO MANY RESIDENTS LEAVING PARADISE BEHIND"
+     "BOY HOSPITALIZED AFTER SHOOTING IN SOUTHWEST MIAMI-DADE",
+     "ARGUMENT LEADS TO JUVENILE SHOT IN SOUTH MIAMI-DADE",
+     "SEARCH CONTINUES FOR SUSPECTS WHO SHOT JUVENILE IN SOUTHWEST MIAMI-DADE"
     ],
-    "article": "Miami-Dade County lost 10,115 residents between July 2024 and July 2025, recording the third-largest population drop among all counties nationwide. The local population slipped from 2.81 million to 2.80 million people. Domestic departures fueled the shift. Over 72,000 more residents relocated to other parts of the country than moved into the county, marking the highest domestic migration loss in Florida. While about 54,200 international newcomers arrived, that pace dropped from more than 78,000 during the prior year. Living expenses remain a primary strain across the region. Sixty percent of middle-income renters pay over 30 percent of their income toward housing, while purchasing a typical home now demands almost double the median household income.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation capturing high-density residential apartment towers in Miami under a hazy afternoon sky. The upper two-thirds focuses on the modern balconies, exterior windows, and tall palm trees framing the buildings. The bottom third is composed of an empty, shadowed street pavement with dark tones. Natural cinematic daylight, documentary style photography, no people in foreground, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up centered view of several stacked cardboard moving boxes sitting on a clean tile floor beside an open balcony doorway, warm sunlight casting subtle shadows, no people, no faces, no text, no labels, no logos, no watermarks."
+    "article": "A young boy is recovering in a local hospital after he was shot in southwest Miami-Dade on Monday night. Miami-Dade Sheriff's Office deputies were dispatched to the intersection of Southwest 196th Street and 110th Court shortly after 9 p.m. Upon arrival, officials discovered the juvenile with an apparent gunshot wound to his lower extremities. Miami-Dade Fire Rescue transported him to the hospital, where he is listed in stable condition. Investigators determined the victim had engaged in a verbal confrontation with several unidentified individuals before one of them acquired a firearm and fired at him. Detectives with the General Investigations unit are actively investigating the shooting. Authorities have not confirmed any arrests.",
+    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical orientation showing emergency response vehicles with flashing blue and red lights parked along a residential street at night in a suburban neighborhood. The emergency vehicles and scene tape occupy the upper two-thirds of the frame. The bottom third features dark asphalt with soft reflections from the lights. Authentic nighttime atmosphere, cinematic lighting, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up shot of a bright yellow evidence marker placed on dark street asphalt at night, illuminated by distant vehicle lights. The marker is centered in the frame against the textured road. No people's faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "New England vs Inter Miami: Major League Soccer stats & head-to-head",
-   "source": "BBC",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0xb09FcGRVUmZJcnB3cXhHaFhtTkJYZWF4OVNabGlxSVJqQ3RBTGFHX0FHdW9wYWVoQzRwZ1dKaWQ0RnpiZ2VyeTBXWmFjaXFyRGoxN3VnNDR0VldhSU5jZDBlbw?oc=5",
-   "t": 1793654566000,
+   "title": "Giannis confident Heat can turn things around, but knows ‘we got a lot of things to figure out’",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9yN3lKeVdaMnJULUlQV0hpVnhYYzJ3UEwwTlM4ZnhTYXJnb01mWUlnN3dvODVQbGNDSngza0Q5blExYk9CQ0FnQXo1UDNuMGNMa2F6bjMzRW9rcTk5ejBrcVZRVVFyVEg2YUZYSUVqREs2TXBlZi1zUjFMd9IBe0FVX3lxTE54dTF0OVpHWWlfdnVLMGJWRVlhcnlFSTZSb1RzSl9uYWx6VGl1TTVSVkFWSVlPYkoxNXVUcjFSUHpseGphUkpFc3drSnhNZEs5REhKVTBZdV95bXFrcmRYaFR3QzNXWEJLdGdIS3hRazlVRkFkTlVqRnFQRQ?oc=5",
+   "t": 1793734152000,
    "id": 8,
-   "link": "https://www.bbc.com/sport/football/live/cry4x109exgnt",
-   "thin": true,
-   "desc": "",
+   "link": "https://www.miamiherald.com/sports/nba/miami-heat/article317893039.html",
+   "thin": false,
+   "desc": "This is not the start Giannis Antetokounmpo expected when he was traded to the Heat.",
    "draft": {
     "headlines": [
-     "INTER MIAMI FACES NEW ENGLAND IN MAJOR LEAGUE SOCCER",
-     "INTER MIAMI TAKES ON NEW ENGLAND",
-     "CAN INTER MIAMI TOP NEW ENGLAND IN MLS ACTION?"
+     "GIANNIS AND HEAT SIT AT 2-5 AFTER LAKERS LOSS",
+     "HEAT STRUGGLE EARLY DESPITE GIANNIS DOMINANCE",
+     "CAN MIAMI HEAT CULTURE TURN THIS TOUGH START AROUND?"
     ],
-    "article": "Inter Miami takes the pitch against New England as Major League Soccer action continues. Soccer supporters across the Miami area are keeping close tabs on the squad as they prepare to battle New England in league competition. Fans can follow every moment of the matchup through live text commentary, continuous score updates, and comprehensive match stats. The head-to-head history and in-game numbers will tell the story as Inter Miami looks to make an impact against New England in this Major League Soccer showdown. Stay tuned to the latest stats and live scores as the contest unfolds.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait aspect ratio capturing a professional soccer player from behind, wearing a blank pink athletic jersey, walking out onto a pristine, brightly lit soccer pitch at dusk. The player is framed in the upper two-thirds of the image, while the bottom third features simple, darker shadows across the trimmed green turf. Subtle stadium lighting glows in the soft-focus background. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic 1:1 square photo showing a centered, detailed close-up of a professional soccer ball resting on the manicured grass of a field near a painted white boundary line, with soft natural turf textures and shallow depth of field. No people's faces, no text, letters, logos, or watermarks."
+    "article": "The Miami Heat sit at a 2-5 record after opening their five-game West Coast road trip with a 138-117 loss to the Lakers in Los Angeles on Monday night.\n\nMiami revamped its roster over the offseason, trading away Tyler Herro, Kel'el Ware, Jaime Jaquez Jr., Kasparas Jakucionis, and draft picks to acquire superstar Giannis Antetokounmpo. Even with the tough team start, Antetokounmpo is averaging 28.4 points, 12.3 rebounds, and 5.7 assists.\n\nNew additions Bobby Portis Jr., Tim Hardaway Jr., and Klay Thompson are also working to gel under head coach Erik Spoelstra. While Antetokounmpo remains confident in Heat culture, the team faces the Los Angeles Clippers next on Wednesday at Intuit Dome.",
+    "imagePrompt": "Editorial 3:4 vertical portrait of a tall, athletic professional basketball player sitting on a team bench inside an arena, looking contemplative with elbows resting on his knees. The subject fills the upper two-thirds of the frame under bright indoor stadium lighting, while the bottom third fades into dark, simple court-level shadows. Realistic sports documentary photography, no text, no logos, no watermarks.",
+    "circlePrompt": "Square 1:1 macro shot centered on a basketball resting motionless on a gleaming arena hardwood court, showcasing the textured leather seams and reflections of overhead arena lights on the polished floorboards. Shallow depth of field, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Lakers get massive Luka Doncic injury news before Miami Heat game",
+   "title": "Lakers star reveals surprisingly simple way to beat Giannis, Heat",
    "source": "BasketNews.com",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxON1Fxd2tDM2pVc2pTb0dHSUtIcllJVGpwYzYxaG1MOWVIVkQ1NXV6UTFsLUpYZUlSZExnQkJmT2Q3RklCbU81RnBraDlmTjFWdXpVZ2xmRkdQN3I0YzluZVMwMUZIbjItbzMyN2lCb28zYUJBdDZmb3g0Rk84Z21uLUN0MjlvSVZrZW01SzdleUpjUmJIbnVUblhJSmJ5OWd4bnV4MEFKNzA?oc=5",
-   "t": 1793654314000,
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMDREVVVZdDg2azUxT2NfSG5lTWNhS19sSThqWV9fWXcyR0dXTVhMOGJQQnM3eVZNczVJbmFYOE5KNFYtNy1yd2dBWjRVU28zdGZ3M0l4cXhNSEFrQzdxWmxfNGlkRkZPRmFOWmxvd0JKVmdzMUR0OXBJRHRvN3VxcHl4V2FlVmpxTTYwT2FKRXpsVmdhN3BkY29VVzZIajRhTXVqRVJ0NHA?oc=5",
+   "t": 1793731682000,
    "id": 9,
-   "link": "https://basketnews.com/news-258698-lakers-get-massive-luka-doncic-injury-news-before-miami-heat-game.html",
+   "link": "https://basketnews.com/news-258762-austin-reaves-reveals-simple-game-plan-to-beat-giannis-miami-heat.html",
    "thin": false,
-   "desc": "Slovenian star Luka Doncic is set to play on the second night of a back-to-back when the Los Angeles Lakers host the Miami Heat on Monday.",
+   "desc": "Austin Reaves revealed that the Los Angeles Lakers entered their matchup against the Miami Heat with a clear defensive priority: to build a wall around Giannis Antetokounmpo and Bam Adebayo and force them into jump…",
    "draft": {
     "headlines": [
-     "LUKA DONCIC CLEARED TO PLAY AGAINST MIAMI HEAT ON MONDAY",
-     "HEAT FACE RED-HOT LUKA DONCIC ON MONDAY",
-     "CAN MIAMI SLOW DOWN THE NBA LEADING SCORER TONIGHT?"
+     "LAKERS TOP MIAMI HEAT 138-117 ON MONDAY NIGHT",
+     "HEAT FALL AS LAKERS WALL OFF GIANNIS",
+     "HOW LOS ANGELES SLOWED DOWN MIAMI'S NEW SUPERSTAR TANDEM"
     ],
-    "article": "The Miami Heat face a tough test on Monday night as Slovenian superstar Luka Doncic has been cleared to play for the Los Angeles Lakers. Doncic is active for the second leg of a back-to-back following a massive 45-point, 15-rebound, and six-assist performance in Sunday's 131-125 victory against the Toronto Raptors.\n\nDoncic leads the NBA in scoring, averaging 37.7 points, 8.2 rebounds, and 7.3 assists through six games this season. He has scored at least 37 points across four straight outings. Miami will also contend with Ziaire Williams, who is returning from a foot issue, while Los Angeles keeps Adou Thiero sidelined as the 5-2 Lakers host the Heat.",
-    "imagePrompt": "A realistic vertical 3:4 editorial portrait photo of a professional basketball player during a game, seen from the torso up, focused and determined on the court under bright arena lights. The upper two-thirds features the athlete in action against a blurred arena background. The lower third is composed of the dark court baseline with simple, shadowy tones. No text, letters, numbers, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 detailed photograph focused on a professional basketball resting on a polished hardwood arena floor, positioned directly under an overhead arena light. Sharp wood grain textures and reflective floor finish are highlighted with the ball perfectly centered. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "The Miami Heat dropped to a 2-5 record on Monday after suffering a 138-117 defeat against the Los Angeles Lakers, ending Miami's two-game winning streak.\n\nLos Angeles used a focused defensive scheme to slow down Giannis Antetokounmpo and Bam Adebayo. Lakers guard Austin Reaves explained that their plan was to form a physical wall with multiple defenders, pack the paint, and push Miami's frontcourt into taking jump shots.\n\nAntetokounmpo scored 20 first-half points on the way to 30 points, 12 rebounds, and seven assists, but the extra defensive pressure caused seven turnovers. Luka Doncic led Los Angeles with 42 points and 13 assists, while Reaves added 27 points.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation of an athletic professional basketball player driving strongly toward the rim inside a professional arena. The player is captured mid-drive in the upper two-thirds of the frame under bright overhead spotlights, surrounded by defenders contesting the lane. The bottom third of the image consists of the dark, reflective hardwood court floor. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up view of an official leather basketball resting centered on the glossy wooden floorboards of a basketball court inside an indoor arena. Focused lighting highlights the texture of the basketball and the clean floor reflections. No people's faces, no text, letters, logos, or watermarks."
    }
   },
   {
@@ -207,12 +209,12 @@
    "draft": {
     "headlines": [
      "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
-     "OUR LOCAL ORIGINS IN 1836",
-     "HOW OUR COMMUNITY GOT ITS START DURING HISTORIC 1836"
+     "THE HISTORIC 1836 CREATION OF DADE COUNTY",
+     "HOW THE MIAMI RIVER HELPED NAME DADE COUNTY IN 1836"
     ],
-    "article": "Dade County officially came into existence on February 4, 1836, marking a pivotal moment in our local history. The newly formed territory was named in honor of Major Francis L. Dade and the Miami River. That exact year brought further historic developments to our area. Fort Dallas was constructed in 1836, establishing a prominent post near the water. The site operated as an active military base during the Second Seminole War, shaping the early defense and territorial presence across the region during that foundational era.",
-    "imagePrompt": "Vintage archival editorial photograph depicting an early 19th-century military outpost along a subtropical riverbank in 1836. A rustic wooden stockade fort structure stands in the upper two-thirds of the vertical 3:4 frame under a hazy, humid sky. The bottom third features dark, calm river water and shadowed marsh grasses. Historical sepia and muted earthy tones, aged tintype appearance, no identifiable people, no text, no watermarks.",
-    "circlePrompt": "A realistic close-up square 1:1 photograph centered on a weathered 1830s military cannon and antique timber fort wall. The rough-hewn pine logs and aged iron artillery show authentic texture and patina under natural daylight. Centered composition, no faces, no text, no logos, no watermarks."
+    "article": "Dade County officially began on February 4, 1836. The county was named after Major Francis L. Dade and the Miami River, marking the formal start of our local geographic history.\n\nDuring that same year of 1836, Fort Dallas was built in the area. The newly constructed outpost served as a military base during the Second Seminole War.\n\nThe year 1836 defined early regional history through the creation of Dade County, its naming after Major Francis L. Dade and the Miami River, and the strategic presence of the Fort Dallas military installation.",
+    "imagePrompt": "Archival vintage editorial photograph, 3:4 vertical portrait orientation. In the upper two-thirds, an evocative 19th-century wooden frontier military outpost stands along a wild, sub-tropical riverbank beneath an overcast, hazy sky. The bottom third consists of simple, dark ground and deep water shadows with minimal detail. Aged historical daguerreotype aesthetic with subtle sepia tones, authentic period patina, no people, no text, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 detailed photograph focusing on aged, weathered timber logs and rough limestone masonry of a 19th-century frontier garrison wall, centered in the frame. Sharp textures of aged wood grain and historic mortar under natural sunlight, no people, no faces, no text, no watermarks."
    }
   }
  ]
