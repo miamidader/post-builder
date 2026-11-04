@@ -1,220 +1,218 @@
 {
- "date": "Tuesday, November 3",
- "pick": "mw1419jd",
+ "date": "Wednesday, November 4",
+ "pick": "mw2k5ngx",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Snarky Puppy’s GroundUp Music Festival returns to Miami Beach",
-   "source": "Miami New Times",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSnViWEpxa2ZpMUZuQlpEdWpoanc3Zkx6OE9hS29taHRudWpnMVNxOGswYmhoSmpfSld2ZFZzYnBQclpWaUtwbkNBbldvc0hjSUpjcC1saFJHRnd5dTBhelRuVWthYkx2VzFlX2lIbXkzM0MxTGF3d0x6b0s5N1NQUTlMU3BQZDVJaEpzbFM2ZDBseGJwRDZwbWxKd0QyQktYZWgxbzgzUjV6QQ?oc=5",
-   "t": 1793735565000,
+   "title": "From Aventura to Virginia Gardens: Here are Miami-Dade’s municipal election results",
+   "source": "Florida Politics",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZllha01PWjBCZ2xVVUoyeDc4ODdYb1FlUExhZzZibm9BZExmTS1tTGZzUjI4RzdVZHJhVzZNb3BwRUV1MURVM1BrQmVkeUNvUXRjOW03V0J3Z0paalRVVzhFc1A4V0lteGRISFAwNlRvTEJhSmZZLUNZWGEzaVc0TnAtVFhFRVA4SFlCdnpPMnlJMnJ4VEt4OFF6TWNOUUVCVkNlU3FMYm9vNFV3MTJkM3JuaHJvVFprMDlJQ0k1RUlUSEYt?oc=5",
+   "t": 1793820384000,
    "id": 1,
-   "link": "https://www.miaminewtimes.com/music/snarky-puppys-groundup-music-festival-returns-to-miami-beach-40595630/",
+   "link": "https://floridapolitics.com/archives/829621-from-aventura-to-virginia-gardens-here-are-miami-dades-municipal-election-results/",
    "thin": false,
-   "desc": "The event will happen on March 12-14 with a lineup featuring Domi & JD Beck, Lionel Loueke, Gretchen Parlato, and more.",
+   "desc": "It was a rough night for incumbents.",
    "draft": {
     "headlines": [
-     "GROUNDUP MUSIC FESTIVAL RETURNS TO MIAMI BEACH IN MARCH",
-     "SNARKY PUPPY BRINGS GROUNDUP FESTIVAL BACK TO NORTH BEACH",
-     "MIAMI BEACH BANDSHELL HOSTS STAR-STUDDED GROUNDUP MUSIC FESTIVAL"
+     "MIAMI-DADE VOTERS DECIDE KEY MUNICIPAL RACES ACROSS 22 CITIES",
+     "INCUMBENTS OUSTED ACROSS MIAMI-DADE IN TUESDAY ELECTIONS",
+     "SEE HOW YOUR MIAMI-DADE HOMETOWN VOTED ON TUESDAY"
     ],
-    "article": "The GroundUp Music Festival is heading back to the Miami Beach Bandshell at 7275 Collins Avenue from Friday, March 12 through Sunday, March 14. An annual South Florida staple since 2017, the festival features jazz fusion collective Snarky Puppy headlining each night. This year lineup showcases Domi and JD Beck, Lionel Loueke, Gretchen Parlato, Charlie Hunter, Ella Feingold, Victoria Canal, Lau Noah, and New Orleans funk band The Rumble. Beyond concerts and nightly Family Dinner sets, attendees can participate in daily masterclasses and panels with musicians. Following the 11 p.m. North Beach curfew, festival jams move to an unannounced venue. Single-day admission starts at $118, with weekend passes starting at $211.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photograph capturing an open-air concert stage at an outdoor amphitheater in Miami Beach at dusk. The upper two-thirds features warm stage lighting illuminating jazz instruments, keyboard setups, and microphones beneath tropical palm tree fronds against a dusk sky. The bottom third remains simple, shadowed, and dark, showcasing a silhouette of the venue floor. Realistic atmospheric lighting, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on an electric jazz guitar resting on a stand next to a drum kit on an outdoor wooden stage. Warm afternoon sunlight glints across the instrument finish and metal hardware, with a softly blurred outdoor tropical venue in the background. Centered composition, no human faces, no text, no logos, no watermarks."
+    "article": "Voters across 22 Miami-Dade County municipalities decided local leadership and dozens of ballot measures on Tuesday.\n\nIncumbents faced steep challenges. El Portal Mayor Omarr Nickerson lost his race, and Coral Gables Commissioner Melissa Castro fell short by 121 votes. Key Biscayne and Medley incumbents also lost, while a razor-thin 16-vote margin in Doral triggered an automatic recount for Council Member Maureen Porras.\n\nOther leaders held ground. Aventura Mayor Howard Weinberg secured reelection with 79 percent, and Coral Gables Mayor Vince Lago earned his final term with 57 percent. Countywide, voters passed 37 of 48 referendums. Runoffs will stretch from November 17 into December.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing the exterior portico of a classic South Florida municipal city hall building under bright afternoon sunlight, framed by lush tropical palm trees in the upper two-thirds. The bottom third features dark pavement and deep architectural shadows, completely free of any text, signs, logos, or watermarks.",
+    "circlePrompt": "A realistic 1:1 square close-up photo centered on an official voting booth table with an empty ballot sleeve resting near a ballot collection receptacle, captured with soft depth of field and no people's faces, text, words, or watermarks visible."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami police cruiser reported stolen near Little Haiti",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNWHYzSVZsZkxsTWk0cG9CdUZzR3oxZkEtbV9BQ1pRNEVPZE5TajBIZGgyN1RhSFBrRnVhejljNHJQYWhSMkFKa21TM2VldUFCZnpybnBVLV85aXlwNWZWc25GeGVGSkZlNHpHckRMREZGR0h5SHZweWJXS2ZIQVZMT2RwX0xiQl9feTMxYjNDTXlIT2FQakZSSTZzNHBoWDJGaFh3?oc=5",
-   "t": 1793735251000,
+   "title": "Man charged in theft of Miami Police cruiser found in North Miami",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5XencyalRTYl9IZFQyYTVhc3kwUWJVR29Eck5SOFF0OVVQSTFYZ3NYT0tWQkJfSXJMMHgwR0QtTF9qOUV4RGRnYmxJd0ViRzZOXzl0NW5wUjNQVEFIMXZwOFlSYkFTbE9kS2NQd3owMGdDVkxMV0pPbHNyc0NiUQ?oc=5",
+   "t": 1793819662000,
    "id": 2,
-   "link": "https://www.local10.com/news/local/2026/11/03/miami-police-cruiser-reported-stolen-near-little-haiti/",
+   "link": "https://wsvn.com/news/local/miami-dade/rodne-joseph-faces-felony-charges/",
+   "thin": false,
+   "desc": "MIAMI (WSVN) - A South Florida man faced a judge following his arrest in connection to the theft of a police cruiser.Rodne Joseph appeared before Read More",
+   "draft": {
+    "headlines": [
+     "MAN ARRESTED AFTER MIAMI POLICE CRUISER STOLEN AND RECOVERED",
+     "STOLEN MIAMI POLICE CRUISER FOUND IN NORTH MIAMI",
+     "HOW A STOLEN CITY POLICE CAR ENDED IN NORTH MIAMI"
+    ],
+    "article": "A 36-year-old man is facing felony charges after an officer discovered a City of Miami Police vehicle was taken on Tuesday afternoon. The officer realized the cruiser was missing from where it was parked near Northeast Second Avenue and 52nd Street. Law enforcement later located the vehicle and found Rodne Joseph near Northeast 137th Street and Fifth Avenue in North Miami. On Wednesday morning, Joseph appeared in court before Miami-Dade Circuit Court Judge Mindy S. Glazer. Joseph faces multiple felony charges, including grand theft of a vehicle and burglary of an unoccupied conveyance.",
+    "imagePrompt": "Editorial 3:4 vertical photograph showing a modern law enforcement cruiser parked along an urban Miami street corner during late afternoon. The vehicle sits prominently in the upper two-thirds of the frame with soft emergency light reflections bouncing off the surrounding asphalt. The bottom third of the image is composed of dark, shadowed street pavement. Atmospheric lighting, realistic documentary photography style, no visible text, letters, decals, or logos.",
+    "circlePrompt": "Close-up realistic square 1:1 photograph focusing on an empty law enforcement vehicle door handle and lock mechanism on a patrol car body panel under bright daylight. The focus is centered directly on the metallic latch and vehicle contour. Crisp textures, cinematic documentary lighting, no faces, no readable words, numbers, or logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Shuttered Miami Beach condo hotel files liquidation plan",
+   "source": "The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbk9VUzZid2Q5S3Iza0hxR1p4OG9aSVdDNXdCa0FyUDFGaXJVZ2lGRW9NU0hBZy0zLXY3MnhnbVpLS1lzbk1zSmd1SFE3bHY1WnpMT3l6S3FCN01mZ3hTU3J5NVJXX2c5UV9EUlVCRWJKU1dSZkUySVBzc2k2U2NCcThrSTFwZWh4ME55b3BJc2dZWC1iWkZTa2dSaFF4ejUyOVR1elU5M1pnOU0?oc=5",
+   "t": 1793818260000,
+   "id": 3,
+   "thin": true,
+   "draft": {
+    "headlines": [
+     "SHUTTERED MIAMI BEACH CONDO HOTEL FILES LIQUIDATION PLAN",
+     "CLOSED MIAMI BEACH CONDO HOTEL BEGINS LIQUIDATION PROCESS",
+     "WHAT COMES NEXT FOR SHUTTERED MIAMI BEACH CONDO HOTEL"
+    ],
+    "article": "A shuttered Miami Beach condo hotel has formally filed a liquidation plan, signaling a definitive move toward closing out its affairs.\n\nThe property, which previously operated as a hybrid residential and hotel site in Miami Beach, remains closed. The newly filed liquidation plan establishes a pathway to settle matters surrounding the shuttered venue.\n\nDevelopments involving prime Miami Beach hospitality real estate carry significant interest across our coastal community. As proceedings move forward, the liquidation process will dictate the final disposition for this inactive condo hotel property.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of a shuttered luxury condo hotel building in Miami Beach. The weathered architectural facade, vacant balconies, and shuttered windows dominate the upper two-thirds under a pale ocean sky. The bottom third is composed of a simple, dark empty street curb and quiet sidewalk pavement. No people, no text, no letters, no logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on the locked modern glass double doors of a closed coastal hotel, reflecting distant palm trees on the dark reflective glass surface. No people, no faces, no text, no letters, no logos, and no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami Beach rejects deal to extend luxury offices’ lease on city land until 2132",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMm1QcU5jRW9haEc0QnhOR3AteXZDcktXYXhqeDNPRk1mWVU5eGs4RncxOThLRjU0MTBNSzNnZlRwREFYNzVQbFVpaGlyUjVIOUR6YjctU1AwM0RiVDFvOVd0bEVRNGdMOUhldjhUNXFaNGh5OExQbGIxTEs4THVxb0FrVDZrQTRJX2JIdjhiTE9CMGMyQkIySdIBmAFBVV95cUxNTk1WbHVCaXk3NHRweGRKUURPbG90LUhxODBORzVJN2pJXzNEeTZtT013NEV5dmNPWXhlbUMtT2tzZEtVUzBrc0RaMFhzQ3Z4eGtZSk92allkZl9CQUpMWUZwSlUyUlM0MUd1clUxcVpFSVdJbGRZVnNBX2NpdHVvRjZval9WT09DeTNiOXBaNUkyTGUyR0hIQQ?oc=5",
+   "t": 1793817660000,
+   "id": 4,
+   "link": "https://www.miamiherald.com/news/local/community/miami-dade/miami-beach/article317922305.html",
+   "thin": false,
+   "desc": "Nearly 63% of voters cast ballots Tuesday against the proposal, which would have allowed an ultra-luxury office building a lease extension.",
+   "draft": {
+    "headlines": [
+     "MIAMI BEACH VOTERS REJECT 2132 LEASE EXTENSION FOR LUXURY OFFICES",
+     "SOUTH BEACH RESIDENTS BLOCK MASSIVE OFFICE EXPANSION PLAN",
+     "LOCALS PROTECT SOUTH BEACH LAND FROM CENTURY LONG LEASE DEAL"
+    ],
+    "article": "Miami Beach voters decided against a proposal on Tuesday that would have extended a city land lease until 2132 for an ultra-luxury office building at 1691 Michigan Avenue. Nearly 63 percent of voters rejected the referendum involving developer RK Rivani LLC, located just off Lincoln Road. The decision halts 47,000 square feet of planned new development, which included a 50 million dollar upgrade with a restaurant, extra offices, and rooftop padel courts. Onsite parking will remain at 700 spaces instead of shrinking to 475. The property, home to Playboy headquarters, will keep its current lease running through 2052, with options through 2092.",
+    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical portrait orientation showing the exterior of a sleek, multi-story commercial building near Lincoln Road in South Beach under bright midday Florida sunlight. The modern architecture fills the upper two-thirds of the frame with glass panels and clean white structural elements against a clear blue sky. The bottom third is composed of a simple, darker shaded sidewalk and roadway curb. No people, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a centered close-up architectural detail of exterior building materials, featuring modern tinted glass windows, stone paneling, and the edge of a sleek balcony railing in coastal South Florida sunlight. No people, no faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Breaking news: 2 injured in copter crash off Key Biscayne, fire-rescue says",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY0ZPN0IwVnhqQjJyT0tRQklIZDNsT1l3bmpFdDdmVmhLVlg4UnJEWjk0NmZpS2RhcnpUdWhmZHZuRUJtMkF3TmwwaVp4WmpIazRPa1I5WE0tMW5KRFdEMTdid3Jlb3ktUGpHaHpVQXkxMV9jaFFoZ2twYW1IdE44cWhxMlFQSzdu0gGIAUFVX3lxTE9KeFNvUDFZTWV4SkpJUnJ1YUFFWUlMZHZhTEJzLXhrNDRnamljZ0I5X09ZUTVXc01IU3Y1WjY3dFFXa3dUT3RMZVMxdGZnMUlGR2RqNVo0MjhmWVZfUjZhaGlfWGpMZEJIZUFQa2Qxem10RWVDRGZYSlRuNUd5TEppSHBDSUU1Zzc?oc=5",
+   "t": 1793815038000,
+   "id": 5,
+   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317924976.html",
+   "thin": false,
+   "desc": "The aircraft went down near Bill Baggs State Park, the Miami-Dade Fire Rescue said.",
+   "draft": {
+    "headlines": [
+     "ONE DEAD, TWO INJURED IN KEY BISCAYNE HELICOPTER CRASH",
+     "FATAL COPTER CRASH OFF BILL BAGGS STATE PARK",
+     "NTSB INVESTIGATING FATAL HELICOPTER CRASH OFF OUR COAST"
+    ],
+    "article": "A helicopter crash off Key Biscayne left one person dead and two others seriously injured Wednesday around 11:30 a.m. The aircraft went down in the waters near Bill Baggs State Park. Miami-Dade Fire Rescue crews rushed to the scene and airlifted the two injured survivors directly to Ryder Trauma Center at Jackson Memorial Hospital. The Coast Guard confirmed that one individual died in the incident. Federal officials from the National Transportation Safety Board have launched an investigation into the crash. Authorities identified the downed aircraft as a Robinson R44 II helicopter registered to Global Aerials Inc.",
+    "imagePrompt": "A dramatic realistic editorial photograph of an active maritime emergency response off the coastline of Key Biscayne in a 3:4 vertical portrait. In the upper two-thirds, a rescue helicopter and emergency vessels navigate open turquoise coastal waters near a barrier island shoreline under midday light. The bottom third is filled with simple, darker ocean water with deep wave textures. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a focused view of turbulent coastal waters churned by rotor wash and boat wakes near a tropical shoreline, centered in the frame. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Two injured, third person believed dead after helicopter crash near Key Biscayne",
+   "source": "WPEC",
+   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQOGo1U2VxanV6cnZ5V0otb3pfY3EwVEJtRU1LZXoycEtGN05wOTRJN3RCNURyUUM5V0hOMF9oVGh0RE1LWHlSRGVIX3RENU9WVDFYWnFnU0tHajZSam00cmJKVnZ4a2RaQ0VWN3J0SWJWTUdPTjNEcDZuTTlac2YzR0I1ZFNuUjRxbXZzNUVEdVRZdGpwU1hwSGxaNHBsZDNpeExTY0FwQmFHZmpjRXRucGkwVUo1WkI4WHhNSVhJLUp0dUFRZzE3WmxVUnlDeXBacWdqTVlyN29LUV95NUZOOFJxdGZ0MzFjNUZHVE9kOUdIdGRWb2ZrWjNhb2pEdVRJSVAyRUM2anN5SlU?oc=5",
+   "t": 1793813405000,
+   "id": 6,
+   "link": "https://cbs12.com/news/crime/two-injured-third-person-believed-dead-after-helicopter-crash-near-key-biscayne-crandon-boulevard-deadly-crash-miami-dade-sheriffs-office-florida-news",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MARKED MIAMI POLICE CRUISER REPORTED STOLEN NEAR LITTLE HAITI",
-     "MIAMI POLICE CRUISER REPORTED STOLEN TUESDAY AFTERNOON",
-     "PATROL CAR STOLEN IN BROAD DAYLIGHT NEAR LITTLE HAITI"
+     "ONE DEAD, TWO INJURED IN KEY BISCAYNE HELICOPTER CRASH",
+     "FATAL HELICOPTER CRASH OFF NIXON BEACH",
+     "CHOPPER GOES DOWN IN WATERS OFF CRANDON BOULEVARD"
     ],
-    "article": "A marked Miami Police Department patrol cruiser was reported stolen Tuesday afternoon near the Little Haiti area. According to police, the vehicle disappeared at approximately 1:45 p.m. near the intersection of Northeast Second Avenue and 52nd Street. The exact circumstances behind the vehicle theft remain under official investigation by authorities. Miami police are asking for the public's assistance with the case. Anyone who has information about the incident or the current whereabouts of the patrol vehicle is urged to call the Miami Police Department at 305-603-6640.",
-    "imagePrompt": "A realistic 3:4 vertical editorial photo capturing a Miami urban street corner on a bright sunny afternoon. In the upper two-thirds of the frame, palm trees, colorful storefronts, and an empty asphalt intersection near Little Haiti are visible under clear tropical skies. The bottom third features a simple, darker, shadowed street surface. Clean composition, journalistic documentary style, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of an emergency vehicle rooftop light bar, centered in the frame. The transparent polycarbonate casing reflects the warm Miami daylight with softly blurred urban street foliage in the background. No people, no faces, no text, no numbers, no logos, no watermarks."
+    "article": "A small helicopter crashed into the water southwest of Key Biscayne near Nixon Beach around 11:30 a.m. One person is believed dead and two others were injured in the incident. Emergency crews responded to the water off the 1200 block of Crandon Boulevard, where Miami-Dade Fire Rescue deployed a boat alongside the aircraft and its yellow floats. Paramedics planned to transport the two surviving passengers to an area hospital, though their medical conditions remain unknown. The Miami-Dade Sheriff's Office has assumed control of the ongoing investigation. Authorities have not yet determined what caused the crash.",
+    "imagePrompt": "Editorial documentary photo from a high vantage point showing an emergency rescue boat navigating turquoise ocean waters near Key Biscayne. The upper two-thirds features the rescue vessel in choppy blue-green water under bright coastal daylight, while the lower third is composed of deep, shadowed ocean water. Realistic photojournalism style, no text, no logos.",
+    "circlePrompt": "Centered close-up shot of bright yellow helicopter emergency floatation pontoons resting on the surface of shimmering coastal water, ripples catching the bright mid-day sunlight, realistic photojournalism style, no people, no faces, no text, no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami Beach Wants to Help Stores and Restaurants Avoid Food Waste and Lend a Helping Hand",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQMnlmeEdlYTRvX0FnODJVYmhJM1NpRGlXcWdyR1Z0dHAwel9KYkFycG5rYjk0TDdTVU5jZjNLd0lwRkhNVkd4dUloUzJaMW9BZlE5aHVZTDdyV29nOG5DdzJHN2Q3dFBvRlM0czFrX3FQaWhEcEVxcW0yZlpXTHlRMlhuSERYZzV0ZDItbWFsM2JYd2lUU3ZxS1hoVC1LYlNvQlZscWlqVl9iU29nTDlwU0lweHBSdGoyS2QxanVrQTdvYkVEWnBYMG1FZTVjNHBrMF95Y3ZB?oc=5",
-   "t": 1793733908000,
-   "id": 3,
-   "link": "https://communitynewspapers.com/miami-beach-news/miami-beach-wants-to-help-stores-and-restaurants-avoid-food-waste-and-lend-a-helping-hand/",
-   "thin": false,
-   "desc": "Getting your Trinity Audio player ready... With its world-class restaurant scene, Miami Beach wants to help city food retailers and restauranteurs clear their kitchens of surplus food while reducing food insecurity in…",
-   "draft": {
-    "headlines": [
-     "MIAMI BEACH LAUNCHES 120-DAY FOOD WASTE PILOT PROGRAM",
-     "STOPPING RESTAURANT FOOD WASTE IN MIAMI BEACH",
-     "HOW MIAMI BEACH RESTAURANTS ARE TACKLING LOCAL HUNGER"
-    ],
-    "article": "Miami Beach is rolling out a new 120-day voluntary pilot program designed to help local restaurants and food retailers redirect surplus food to community members in need. Sponsored by Commissioner Laura Dominguez and supported by Mayor Steven Meiner, the educational initiative links city kitchens with food recovery groups at no cost or liability to donors. Participating spots receive contact details for four partner organizations: Food Rescue US, Farm Share, Nourish Miami, and Feeding South Florida. Along with feeding local families facing food insecurity, the program aims to lower landfill methane emissions and cut pollution across the city. Businesses will also complete a brief survey detailing their experiences to shape future city food waste policies.",
-    "imagePrompt": "Editorial style photo in a 3:4 vertical orientation showing a Miami Beach restaurant chef packing fresh surplus culinary ingredients and produce into clean cardboard donation crates in a sunlit commercial kitchen. The chef and action take place in the upper two-thirds of the frame. The bottom third of the frame features simple, clean, darker stainless steel prep counter space with soft shadows. Realistic lighting, natural colors, high detail, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic close-up square 1:1 photograph centered on colorful fresh produce and neatly packed containers resting inside a wooden donation crate on a kitchen surface. Crisp lighting highlights the textures of the fresh vegetables. No people or faces visible, no text, no letters, no logos, and no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Outnumbered on paper, Miami-Dade Democrats continue to lead in ballots cast",
-   "source": "Florida Politics",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPckNuRzZWWDFXOTlaX3FhNnJFb0dvcTdueEdYYUczTmpNc1ItQkVGT043TW1tTkxqb1FZSjh0NnhlczhjUURfNHB3QXNLejNHZzIxblRQdXBaa3ZkcWk3NUtsYmprRmZsQTNneXdqa3VNbXBpWmpiSFpqbEpwMTRkQ2l0OXcyZl9SNzJEZXFvRGh3TUI1Q1c1ZjBLLTIyaUVzOEstY3VYanphYjAwRTBESFBxb05kazJia3FB?oc=5",
-   "t": 1793733070000,
-   "id": 4,
-   "link": "https://floridapolitics.com/archives/829010-outnumbered-on-paper-miami-dade-democrats-continue-to-lead-in-ballots-cast/",
-   "thin": false,
-   "desc": "More than half of Miami-Dade voters have cast ballots, and Democrats are out in front.",
-   "draft": {
-    "headlines": [
-     "MIAMI-DADE DEMOCRATS LEAD EARLY VOTES DESPITE REPUBLICAN REGISTRATION EDGE",
-     "BLUE SURGE IN MIAMI-DADE TURNOUT",
-     "CAN MIAMI-DADE SHIFT BLUE AGAIN THIS ELECTION?"
-    ],
-    "article": "Miami-Dade County voters are turning out in force, with Democrats taking an early midday lead in ballots cast.\n\nAccording to Supervisor of Elections Alina Garcia’s Office, over half of registered voters had participated by early Tuesday afternoon. By 1:20 p.m., 50.8% of the electorate had cast ballots. Democrats held 36.4% of those votes, followed by Republicans at 35.2% and third- or no-party voters at 28.4%.\n\nThe numbers show Democrats out front despite Republicans holding a 45,556-voter registration advantage as of October 1. County polling sites stay open until 7 p.m., and anyone waiting in line at closing time can still vote.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing voters lined up outside a sunny polling precinct in Miami with palm trees in the background. In the upper two-thirds, diverse voters stand calmly under the bright Florida sky outside the facility. The lower third features clean, dark shadowed asphalt pavement, creating a simple base. Natural daylight, authentic photojournalistic style, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of hands feeding a blank-looking paper ballot into an electronic tabulation machine intake slot. The insertion slot is centered in the frame with a shallow depth of field. Soft indoor municipal lighting, no faces visible, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Guards accused of beating inmate at a state prison in Miami-Dade are sentenced",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcG5RVEZhaGlKdGF0ZWpreXBVVVZobm5LMVdEcEFjZlltNm1fb1c1T3g4NXRQSEE0UGNzQW1OcnRDRVlxVkRqX1JyVFJQM3Qyb0lsQ18ycVhjcUlYUlJzUEgwdDRpazhGSlZyd0w1RTJVSUx1aTY3a0hZWG1NUWJEblNJS2d3MDl00gGIAUFVX3lxTE1JSjRFODViLTh4akZnR1h4VEl2Yi1kQ0JKajBKaGlMSDdXWVViMjl5Ul9FYWxTUXlfMUlXNk9URHhFN2ttQjZSZnRhQWFVdlIwT3pQYmtWVmZpQlRJUjRYZU50MklUTEpDcGREMmtYYWQ0NWY4d1N3ZTN3LS1tdjNkODFidThXXzI?oc=5",
-   "t": 1793732735000,
-   "id": 5,
-   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317440163.html",
-   "thin": false,
-   "desc": "The case involved a lieutenant and six officers.",
-   "draft": {
-    "headlines": [
-     "SEVEN GUARDS SENTENCED IN SOUTH MIAMI-DADE PRISON BEATING CASE",
-     "MIAMI PRISON GUARDS AVOID JAIL TIME AFTER INMATE ATTACK",
-     "SEE HOW A SOUTH MIAMI-DADE PRISON BEATING CASE ENDED"
-    ],
-    "article": "Seven corrections staffers from Dade Correctional Institution, located south of Florida City in South Miami-Dade, have resolved criminal cases tied to the April 5, 2025 beating of an inmate.\n\nAround 9:30 p.m., 31-year-old inmate Christopher Castro was escorted to an area away from security cameras and placed in a holding cell. While handcuffed, Castro was kicked and punched in the face, head, and back by officers, leaving blood on the cell surfaces.\n\nLieutenant Shentrica Jones Clark, 41, received six months of house arrest and six months of probation for evidence tampering. Six other officers, ages 25 to 36, must surrender their certifications and complete 50 hours of community service under plea deals with prosecutors.",
-    "imagePrompt": "An editorial vertical 3:4 portrait of a Florida corrections officer in a dark uniform standing outside an institutional perimeter under twilight skies. The subject occupies the upper two-thirds of the frame with a serious demeanor, while the bottom third remains simple and dark with shadowed asphalt. Realistic documentary photojournalism style, atmospheric evening light, no text, no emblems, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centered on heavy steel handcuffs resting on a cold concrete bench inside a dimly lit holding cell. Sharp focus on the metallic links and cuffs, muted concrete textures in the background, cool fluorescent lighting, no people, no faces, no text, no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Man hospitalized after reported shooting in northwest Miami-Dade, deputies say",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUUVnTVh0V01RV01qM2EzVk55NWwtaWh1Z3hqQ185alZmYllyenZQdkRfWW5KaVhjUzljXzhXa3J3SEJ3ckFjWHBqUEJ4QWJYR0wya1dKUEJrLXVScnlvOXlkTDg0NzlYOEE0bzRkZ0hVMDBCa0JXNUZ3eFJTTWRlSzR4QzZXYUxl?oc=5",
-   "t": 1793730300000,
-   "id": 6,
-   "link": "https://www.cbsnews.com/miami/news/northwest-miami-dade-shooting-november-2-2026/",
-   "thin": false,
-   "desc": "The sheriff's office says the man was taken to a hospital in stable condition and has not released a cause or said whether anyone has been arrested.",
-   "draft": {
-    "headlines": [
-     "MAN HOSPITALIZED AFTER TUESDAY MORNING SHOOTING IN NORTHWEST MIAMI-DADE",
-     "INVESTIGATION UNDERWAY AFTER MAN SHOT IN NORTHWEST MIAMI-DADE",
-     "WHAT SPARKED TUESDAY MORNING SHOOTING IN NORTHWEST MIAMI-DADE?"
-    ],
-    "article": "A Tuesday morning shooting in northwest Miami-Dade left an adult man hospitalized with gunshot wounds to his lower extremities. Miami-Dade Sheriff's Office deputies were dispatched to the intersection of Northwest 119th Street and 24th Avenue after receiving reports of a shooting. Upon arrival, emergency personnel located the injured victim. Miami-Dade Fire Rescue treated and transported the man to a local hospital, where he was listed in stable condition. Detectives from the sheriff's General Investigations unit have taken over the scene. Authorities have not yet determined the cause of the gunfire, and no arrests have been announced.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing a Miami neighborhood street corner on a bright morning with emergency vehicles parked along the curb. In the upper two-thirds, an ambulance and a patrol vehicle with flashing blue and red lights are parked near tropical street trees and residential fences. The bottom third consists of clean, dark asphalt roadway in shadow, providing negative space. Authentic daylight lighting, photojournalistic style, no visible text, no letters, no logos, no watermarks, no identifiable faces.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on bright yellow evidence markers resting on asphalt pavement under bright morning sunlight, with a softly blurred background of a suburban Miami street. No people, no faces, no text, no numbers, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Boy shot after verbal dispute in southwest Miami-Dade, deputies say",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRHViSzFRNVU2eGhUOVVhbVU0OFNqNzdhQVJZZGxGdFYzUVZ5d1RvZEU1N2xqVGcwazM1NTItRkg4d0R4Z2NDSksyRmdub0xNU3VBZVFrLWktaFk1WXNvOVhBcHRUSGpYZTh5QTNTVW1MdnhUTkVmT1g3QmZRaHJjUEhXREtLakpHeW9vbUdjdm9jODh6NE9GLUd6QXQ?oc=5",
-   "t": 1793726698000,
+   "title": "Hialeah Girls Varsity Soccer @ American",
+   "source": "MaxPreps",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWUJaX3gxM2VQQThRSjZYbldBWWdfZWVNUmpYb2JyWWtBMzNFY3ZwZE9ZaGN1R2VqSWhGNlBLY295eFI3ZXo3cWVMQ283Z3Viak5STUJvTHpoNFhCT1Rud3FVRG85Y0dydUlqN25jWlFCczBiWDNfdDF2cG1kTEppSXZ1S01vXzdVQmdrOEV0bHYwYnJSZ2lsVWpPelZrbXJ0QUZtUGpqODRhZ2RkU2VGYVc0ZHB6RkJOMkJVbm1LT25qRDQ1YW40anh3QUI2cmJvTGJlT0VNUQ?oc=5",
+   "t": 1793813176000,
    "id": 7,
-   "link": "https://www.cbsnews.com/miami/news/boy-shot-southwest-miami-dade-verbal-dispute-november-3-2026/",
-   "thin": false,
-   "desc": "The sheriff's office says the boy was in a verbal dispute with several unknown people when one of them shot him, and it hasn't said whether anyone has been detained.",
+   "link": "https://www.maxpreps.com/fl/soccer/girls/match/american-hialeah-vs-hialeah-thoroughbreads/12-10-2026/?c=9b949843-911d-40ef-86e1-64badfe8f664",
+   "thin": true,
+   "desc": "",
    "draft": {
     "headlines": [
-     "BOY HOSPITALIZED AFTER SHOOTING IN SOUTHWEST MIAMI-DADE",
-     "ARGUMENT LEADS TO JUVENILE SHOT IN SOUTH MIAMI-DADE",
-     "SEARCH CONTINUES FOR SUSPECTS WHO SHOT JUVENILE IN SOUTHWEST MIAMI-DADE"
+     "HIALEAH GIRLS VARSITY SOCCER PLAYS AT AMERICAN ON DECEMBER 10",
+     "CONFERENCE MATCH SET FOR HIALEAH GIRLS SOCCER AT AMERICAN",
+     "LOCAL TEAMS CLASH AS HIALEAH GIRLS SOCCER VISITS AMERICAN"
     ],
-    "article": "A young boy is recovering in a local hospital after he was shot in southwest Miami-Dade on Monday night. Miami-Dade Sheriff's Office deputies were dispatched to the intersection of Southwest 196th Street and 110th Court shortly after 9 p.m. Upon arrival, officials discovered the juvenile with an apparent gunshot wound to his lower extremities. Miami-Dade Fire Rescue transported him to the hospital, where he is listed in stable condition. Investigators determined the victim had engaged in a verbal confrontation with several unidentified individuals before one of them acquired a firearm and fired at him. Detectives with the General Investigations unit are actively investigating the shooting. Authorities have not confirmed any arrests.",
-    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical orientation showing emergency response vehicles with flashing blue and red lights parked along a residential street at night in a suburban neighborhood. The emergency vehicles and scene tape occupy the upper two-thirds of the frame. The bottom third features dark asphalt with soft reflections from the lights. Authentic nighttime atmosphere, cinematic lighting, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a close-up shot of a bright yellow evidence marker placed on dark street asphalt at night, illuminated by distant vehicle lights. The marker is centered in the frame against the textured road. No people's faces, no text, no letters, no logos, no watermarks."
+    "article": "High school sports continue in South Florida as the Hialeah girls varsity soccer team prepares for an away conference match against American in Hialeah, Florida.\n\nThe contest is officially scheduled for Thursday, December 10. The opening whistle will sound at 1 p.m., setting up an afternoon conference battle between the two local schools.\n\nWith the match hosted at American, the visiting Hialeah squad will challenge their league rival on the pitch, offering area sports followers another high school athletic showdown to track this week.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing high school girls soccer action under bright South Florida afternoon sunlight. Two female players in athletic uniforms contest for the ball on a vibrant green grass field, positioned dynamically in the upper two-thirds of the frame. The background features blurred palm trees and bleachers under a clear daytime sky. The bottom third consists of simple, deeply shadowed dark green turf. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo centered on a soccer ball resting on manicured green grass beside a white chalk field line on a sunny afternoon. The shallow depth of field softly blurs the background showing an empty soccer goal net and turf. Clean composition, centered subject, no people's faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Giannis confident Heat can turn things around, but knows ‘we got a lot of things to figure out’",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9yN3lKeVdaMnJULUlQV0hpVnhYYzJ3UEwwTlM4ZnhTYXJnb01mWUlnN3dvODVQbGNDSngza0Q5blExYk9CQ0FnQXo1UDNuMGNMa2F6bjMzRW9rcTk5ejBrcVZRVVFyVEg2YUZYSUVqREs2TXBlZi1zUjFMd9IBe0FVX3lxTE54dTF0OVpHWWlfdnVLMGJWRVlhcnlFSTZSb1RzSl9uYWx6VGl1TTVSVkFWSVlPYkoxNXVUcjFSUHpseGphUkpFc3drSnhNZEs5REhKVTBZdV95bXFrcmRYaFR3QzNXWEJLdGdIS3hRazlVRkFkTlVqRnFQRQ?oc=5",
-   "t": 1793734152000,
+   "title": "Hurricanes star Malachi Toney reportedly injured before Notre Dame game",
+   "source": "Sun Sentinel",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBVQUM0VWd2RDRxa0JWd2pFbVRZSTZNRzJXWDJUV29kTzZsay1na096UElERWszclpCRkIzVlZJc1pmS0VjX2RlVTZScnd1YlUxbHhIdTd6ZWdWTnNfeFNuNXBZSklsWGc?oc=5",
+   "t": 1793820866000,
    "id": 8,
-   "link": "https://www.miamiherald.com/sports/nba/miami-heat/article317893039.html",
+   "link": "https://www.sun-sentinel.com/2026/11/04/um-toney-injury/",
    "thin": false,
-   "desc": "This is not the start Giannis Antetokounmpo expected when he was traded to the Heat.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "GIANNIS AND HEAT SIT AT 2-5 AFTER LAKERS LOSS",
-     "HEAT STRUGGLE EARLY DESPITE GIANNIS DOMINANCE",
-     "CAN MIAMI HEAT CULTURE TURN THIS TOUGH START AROUND?"
+     "MALACHI TONEY SUFFERS ANKLE INJURY AHEAD OF NOTRE DAME",
+     "CANES STAR MALACHI TONEY HURT IN PRACTICE",
+     "CAN MIAMI'S TOP RECEIVER PLAY THROUGH ANKLE INJURY?"
     ],
-    "article": "The Miami Heat sit at a 2-5 record after opening their five-game West Coast road trip with a 138-117 loss to the Lakers in Los Angeles on Monday night.\n\nMiami revamped its roster over the offseason, trading away Tyler Herro, Kel'el Ware, Jaime Jaquez Jr., Kasparas Jakucionis, and draft picks to acquire superstar Giannis Antetokounmpo. Even with the tough team start, Antetokounmpo is averaging 28.4 points, 12.3 rebounds, and 5.7 assists.\n\nNew additions Bobby Portis Jr., Tim Hardaway Jr., and Klay Thompson are also working to gel under head coach Erik Spoelstra. While Antetokounmpo remains confident in Heat culture, the team faces the Los Angeles Clippers next on Wednesday at Intuit Dome.",
-    "imagePrompt": "Editorial 3:4 vertical portrait of a tall, athletic professional basketball player sitting on a team bench inside an arena, looking contemplative with elbows resting on his knees. The subject fills the upper two-thirds of the frame under bright indoor stadium lighting, while the bottom third fades into dark, simple court-level shadows. Realistic sports documentary photography, no text, no logos, no watermarks.",
-    "circlePrompt": "Square 1:1 macro shot centered on a basketball resting motionless on a gleaming arena hardwood court, showcasing the textured leather seams and reflections of overhead arena lights on the polished floorboards. Shallow depth of field, no people, no faces, no text, no logos, no watermarks."
+    "article": "Miami Hurricanes wide receiver Malachi Toney suffered an ankle injury during Wednesday practice, clouding his status for Saturday's road game against Notre Dame. The sophomore rolled his ankle and is undergoing testing, though he plans to try to play through it. Toney serves as Miami's premier offensive weapon. He has never missed a game for the Hurricanes, racking up 73 receptions, 1,027 yards, and 13 touchdowns this season while earning the nation's top receiving grade of 95 from Pro Football Focus. If Toney sits out, Miami could slide Daylyn Upshaw or Vance Spafford into the slot, with Vandrevius Jacobs or Somourian Wingo stepping up on the outside.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait of an athletic college football wide receiver wearing an orange and green football uniform and helmet, resting on a bench and looking focused under bright evening stadium lights. The player is framed in the upper two-thirds of the image, while the bottom third is simple and darker with shadowed turf. Realistic sports photojournalism style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 detailed close-up shot of a football cleat tightly bound with white athletic trainer tape, resting centered on green stadium turf under direct stadium lights. Clean centered composition, shallow depth of field, no people's faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Lakers star reveals surprisingly simple way to beat Giannis, Heat",
-   "source": "BasketNews.com",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPMDREVVVZdDg2azUxT2NfSG5lTWNhS19sSThqWV9fWXcyR0dXTVhMOGJQQnM3eVZNczVJbmFYOE5KNFYtNy1yd2dBWjRVU28zdGZ3M0l4cXhNSEFrQzdxWmxfNGlkRkZPRmFOWmxvd0JKVmdzMUR0OXBJRHRvN3VxcHl4V2FlVmpxTTYwT2FKRXpsVmdhN3BkY29VVzZIajRhTXVqRVJ0NHA?oc=5",
-   "t": 1793731682000,
+   "title": "Miami WR Malachi Toney reportedly dealing with ankle injury, uncertain to play against Notre Dame",
+   "source": "Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPU25aZlFYck1heThRcVNyZllHQnpJQkk4c0wtMnN4VUZIb0xORkNQX0ZWODI3RVE3UC1uamZrTV9PS1IxMmYxU1NmTnlnU0U5OTh5cVFheW5TOHNnTjNRek8tLWFNc0RocGhTQ1VWc1VIRHRKZXV1TWJ6V1oxZ255UE41UG5vR3RVWjJWdHdVbFJiZlhlQmhXZmQ4aDM1RjlkdkwzS0JVeTlIclkzb0lWVUhrZy1kV25uSlBEdE5hc0tVRTI1UE9LMWw3azU0UDEtakdScm4xU1gwTjJKdmwzRG54V3pQZDQ5WUpFUURKdDQzWFpvM1VQajR5bHM2M2J6U3dKYU9n?oc=5",
+   "t": 1793820862000,
    "id": 9,
-   "link": "https://basketnews.com/news-258762-austin-reaves-reveals-simple-game-plan-to-beat-giannis-miami-heat.html",
-   "thin": false,
-   "desc": "Austin Reaves revealed that the Los Angeles Lakers entered their matchup against the Miami Heat with a clear defensive priority: to build a wall around Giannis Antetokounmpo and Bam Adebayo and force them into jump…",
+   "link": "https://sports.yahoo.com/college-football/breaking-news/article/miami-wr-malachi-toney-reportedly-dealing-with-ankle-injury-uncertain-to-play-against-notre-dame-193422539.html",
+   "thin": true,
+   "desc": "Toney has 73 catches for 1,027 receiving yards and 13 TDs.",
    "draft": {
     "headlines": [
-     "LAKERS TOP MIAMI HEAT 138-117 ON MONDAY NIGHT",
-     "HEAT FALL AS LAKERS WALL OFF GIANNIS",
-     "HOW LOS ANGELES SLOWED DOWN MIAMI'S NEW SUPERSTAR TANDEM"
+     "MIAMI RECEIVER MALACHI TONEY UNCERTAIN DUE TO ANKLE INJURY",
+     "MALACHI TONEY REPORTEDLY INJURED BEFORE NOTRE DAME",
+     "WILL MIAMI BE WITHOUT 13-TOUCHDOWN STAR MALACHI TONEY"
     ],
-    "article": "The Miami Heat dropped to a 2-5 record on Monday after suffering a 138-117 defeat against the Los Angeles Lakers, ending Miami's two-game winning streak.\n\nLos Angeles used a focused defensive scheme to slow down Giannis Antetokounmpo and Bam Adebayo. Lakers guard Austin Reaves explained that their plan was to form a physical wall with multiple defenders, pack the paint, and push Miami's frontcourt into taking jump shots.\n\nAntetokounmpo scored 20 first-half points on the way to 30 points, 12 rebounds, and seven assists, but the extra defensive pressure caused seven turnovers. Luka Doncic led Los Angeles with 42 points and 13 assists, while Reaves added 27 points.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation of an athletic professional basketball player driving strongly toward the rim inside a professional arena. The player is captured mid-drive in the upper two-thirds of the frame under bright overhead spotlights, surrounded by defenders contesting the lane. The bottom third of the image consists of the dark, reflective hardwood court floor. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a close-up view of an official leather basketball resting centered on the glossy wooden floorboards of a basketball court inside an indoor arena. Focused lighting highlights the texture of the basketball and the clean floor reflections. No people's faces, no text, letters, logos, or watermarks."
+    "article": "Miami wide receiver Malachi Toney is reportedly dealing with an ankle injury, putting his status in question for the upcoming clash against Notre Dame. The dynamic pass catcher has delivered massive offensive numbers for Miami, hauling in 73 catches for 1,027 receiving yards and 13 touchdowns. His dominant play has powered the offense throughout the schedule. With Notre Dame next, Toney is currently uncertain to take the field. The program and local fans face an anxious wait to see if the star receiver can play through the ankle issue or if his injury will keep him sidelined.",
+    "imagePrompt": "A 3:4 vertical editorial photo of a college football wide receiver wearing an orange and white jersey without text, standing thoughtfully on a stadium sideline under bright lights. The athlete occupies the upper two-thirds of the frame, looking down with a focused expression. The bottom third features dark, clean artificial turf fading into subtle shadow. Authentic sports photography style, crisp detail, realistic lighting, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 close-up photo focused on a football player's heavily taped ankle and cleat resting on bright green stadium turf. Centered composition highlighting the white athletic tape wrap, fine grass textures, and cleat details under focused stadium lighting. No human faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1836: Dade County is created",
-   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
+   "title": "1906: canals begin draining the Everglades",
+   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
    "id": 10,
    "draft": {
     "headlines": [
-     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
-     "THE HISTORIC 1836 CREATION OF DADE COUNTY",
-     "HOW THE MIAMI RIVER HELPED NAME DADE COUNTY IN 1836"
+     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
+     "EVERGLADES WATER REMOVAL STARTED IN 1906",
+     "THE EFFORT TO DRAIN THE EVERGLADES BEGAN IN 1906"
     ],
-    "article": "Dade County officially began on February 4, 1836. The county was named after Major Francis L. Dade and the Miami River, marking the formal start of our local geographic history.\n\nDuring that same year of 1836, Fort Dallas was built in the area. The newly constructed outpost served as a military base during the Second Seminole War.\n\nThe year 1836 defined early regional history through the creation of Dade County, its naming after Major Francis L. Dade and the Miami River, and the strategic presence of the Fort Dallas military installation.",
-    "imagePrompt": "Archival vintage editorial photograph, 3:4 vertical portrait orientation. In the upper two-thirds, an evocative 19th-century wooden frontier military outpost stands along a wild, sub-tropical riverbank beneath an overcast, hazy sky. The bottom third consists of simple, dark ground and deep water shadows with minimal detail. Aged historical daguerreotype aesthetic with subtle sepia tones, authentic period patina, no people, no text, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 detailed photograph focusing on aged, weathered timber logs and rough limestone masonry of a 19th-century frontier garrison wall, centered in the frame. Sharp textures of aged wood grain and historic mortar under natural sunlight, no people, no faces, no text, no watermarks."
+    "article": "The history of our surrounding South Florida landscape changed course in 1906. During that year, canals were begun to remove water from the Florida Everglades. The groundbreaking effort started the process of actively draining the Everglades wetlands through newly constructed waterways. The deliberate removal of water via these canals in 1906 stands as an early defining development for the region, initiating a massive shift in how water flowed across the Florida Everglades.",
+    "imagePrompt": "A vintage archival-style vertical 3:4 portrait photograph showing early canal excavation in the Florida Everglades. Period-accurate earthmoving machinery and a wide trench cut through wild wetlands and sawgrass under an open sky, occupying the upper two-thirds of the scene. The bottom third features darker, simple muddy banks and quiet water. Sepia-toned documentary style with subtle film grain, historic atmosphere, no identifiable people, no text, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered view of historic turn-of-the-century iron dredging equipment and heavy cable resting on wet Everglades peat beside freshly cut canal water. Detailed rusted metal and wetland mud textures, centered composition, soft overcast lighting, no people, no text, no logos."
    }
   }
  ]
