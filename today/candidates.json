@@ -1,218 +1,220 @@
 {
- "date": "Wednesday, November 4",
- "pick": "mw2k5ngx",
+ "date": "Thursday, November 5",
+ "pick": "mw377aiu",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "From Aventura to Virginia Gardens: Here are Miami-Dade’s municipal election results",
-   "source": "Florida Politics",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZllha01PWjBCZ2xVVUoyeDc4ODdYb1FlUExhZzZibm9BZExmTS1tTGZzUjI4RzdVZHJhVzZNb3BwRUV1MURVM1BrQmVkeUNvUXRjOW03V0J3Z0paalRVVzhFc1A4V0lteGRISFAwNlRvTEJhSmZZLUNZWGEzaVc0TnAtVFhFRVA4SFlCdnpPMnlJMnJ4VEt4OFF6TWNOUUVCVkNlU3FMYm9vNFV3MTJkM3JuaHJvVFprMDlJQ0k1RUlUSEYt?oc=5",
-   "t": 1793820384000,
+   "title": "Miami Beach Buildings Sinking at Different Rates, Due to Construction, Study Finds",
+   "source": "Claims Journal",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5vUEw3cVV4RF9zZkFOVDFQUTA3eWZMUVQzNFJlUVNMYVU3bXJGYURtZUZmZG5rMXF1eGUwUzVXLWo1d0dGTUplU25ZWUR3RnM5dDFpQ2g0Q3lFOF95aUxzU1U5U2xjRHgwVmptLTJtS281UFE?oc=5",
+   "t": 1793858459000,
    "id": 1,
-   "link": "https://floridapolitics.com/archives/829621-from-aventura-to-virginia-gardens-here-are-miami-dades-municipal-election-results/",
+   "link": "https://www.claimsjournal.com/news/national/2026/11/05/341050.htm",
    "thin": false,
-   "desc": "It was a rough night for incumbents.",
+   "desc": "Much of the Miami Beach skyline, on ground that's just a few feet above sea level, is sinking. But some of the iconic skyscrapers there are sinking at",
    "draft": {
     "headlines": [
-     "MIAMI-DADE VOTERS DECIDE KEY MUNICIPAL RACES ACROSS 22 CITIES",
-     "INCUMBENTS OUSTED ACROSS MIAMI-DADE IN TUESDAY ELECTIONS",
-     "SEE HOW YOUR MIAMI-DADE HOMETOWN VOTED ON TUESDAY"
+     "NEW STUDY FINDS MIAMI BEACH TOWERS SINKING FROM ONGOING CONSTRUCTION",
+     "MIAMI BEACH SKYSCRAPERS ARE SINKING",
+     "WHY ARE COASTAL TOWERS IN SUNNY ISLES SLOWLY SINKING"
     ],
-    "article": "Voters across 22 Miami-Dade County municipalities decided local leadership and dozens of ballot measures on Tuesday.\n\nIncumbents faced steep challenges. El Portal Mayor Omarr Nickerson lost his race, and Coral Gables Commissioner Melissa Castro fell short by 121 votes. Key Biscayne and Medley incumbents also lost, while a razor-thin 16-vote margin in Doral triggered an automatic recount for Council Member Maureen Porras.\n\nOther leaders held ground. Aventura Mayor Howard Weinberg secured reelection with 79 percent, and Coral Gables Mayor Vince Lago earned his final term with 57 percent. Countywide, voters passed 37 of 48 referendums. Runoffs will stretch from November 17 into December.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing the exterior portico of a classic South Florida municipal city hall building under bright afternoon sunlight, framed by lush tropical palm trees in the upper two-thirds. The bottom third features dark pavement and deep architectural shadows, completely free of any text, signs, logos, or watermarks.",
-    "circlePrompt": "A realistic 1:1 square close-up photo centered on an official voting booth table with an empty ballot sleeve resting near a ballot collection receptacle, captured with soft depth of field and no people's faces, text, words, or watermarks visible."
+    "article": "Continuous high-rise development across our barrier island is causing local towers to sink at varying speeds. A study by University of Miami professors Farzaneh Aziz Zanjani and Falk Amelung tracked 35 area buildings using satellite radar. While some waterfront properties sank roughly two centimeters between 2016 and 2023, towers in Surfside and Sunny Isles Beach dropped over eight centimeters. Impacted properties include the 60-story Porsche Design Tower, Trump Tower III, and the 87 Park tower. Researchers attribute the sinking to heavy loads and construction vibrations shifting the limestone and sand layers beneath our coastline, warning the movement is not expected to stop.",
+    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of towering modern glass skyscrapers lining the oceanfront barrier island in South Florida under a hazy sky. The towering high-rise condominiums dominate the upper two-thirds of the frame, showing their sleek architectural facades against the bright Atlantic horizon. The bottom third features dark asphalt street and shadowed ground-level coastal pavement, keeping the base simple and uncluttered. Crisp morning sunlight, architectural photography style, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 editorial photograph showing a centered, detailed close-up of a cracked concrete foundation footing meeting porous natural limestone bedrock and sand. Harsh coastal daylight casts precise shadows into the fine fissures of the concrete structure. The focus is sharp on the structural joint where building foundation meets coastal earth, captured at ground level with no people, no faces, no text, and no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Man charged in theft of Miami Police cruiser found in North Miami",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5XencyalRTYl9IZFQyYTVhc3kwUWJVR29Eck5SOFF0OVVQSTFYZ3NYT0tWQkJfSXJMMHgwR0QtTF9qOUV4RGRnYmxJd0ViRzZOXzl0NW5wUjNQVEFIMXZwOFlSYkFTbE9kS2NQd3owMGdDVkxMV0pPbHNyc0NiUQ?oc=5",
-   "t": 1793819662000,
+   "title": "1 dead after helicopter crashes in water near Miami during photography flight: Authorities",
+   "source": "ABC7 Bay Area",
+   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZEN4UENieUZUdGRWWFNSd1daZ2x1NWVUSl9LMWFfVThmUDhFeGVrbDVRQ2h1UERIZTQ1NTlLWXFRUHlZWmdPekR0a0JiZEdpcUJPSXlYOW1MUmJuajVUQUUzNW15Q284ekEtamJFRDNfcWFzVFR2cFg1MTdYUjBQLWtpWWgxTDlXZ3kzR25pRQ?oc=5",
+   "t": 1793851663000,
    "id": 2,
-   "link": "https://wsvn.com/news/local/miami-dade/rodne-joseph-faces-felony-charges/",
+   "link": "https://abc7news.com/story/helicopter-reported-down-waters-miami-authorities/20015434/",
    "thin": false,
-   "desc": "MIAMI (WSVN) - A South Florida man faced a judge following his arrest in connection to the theft of a police cruiser.Rodne Joseph appeared before Read More",
+   "desc": "Miami Dade Fire-Rescue said it is at the scene in Biscayne Bay.",
    "draft": {
     "headlines": [
-     "MAN ARRESTED AFTER MIAMI POLICE CRUISER STOLEN AND RECOVERED",
-     "STOLEN MIAMI POLICE CRUISER FOUND IN NORTH MIAMI",
-     "HOW A STOLEN CITY POLICE CAR ENDED IN NORTH MIAMI"
+     "ONE DEAD AND TWO INJURED IN BISCAYNE BAY HELICOPTER CRASH",
+     "FATAL HELICOPTER CRASH IN BISCAYNE BAY",
+     "TRAGEDY ON BISCAYNE BAY DURING MIDDAY BOAT PHOTO FLIGHT"
     ],
-    "article": "A 36-year-old man is facing felony charges after an officer discovered a City of Miami Police vehicle was taken on Tuesday afternoon. The officer realized the cruiser was missing from where it was parked near Northeast Second Avenue and 52nd Street. Law enforcement later located the vehicle and found Rodne Joseph near Northeast 137th Street and Fifth Avenue in North Miami. On Wednesday morning, Joseph appeared in court before Miami-Dade Circuit Court Judge Mindy S. Glazer. Joseph faces multiple felony charges, including grand theft of a vehicle and burglary of an unoccupied conveyance.",
-    "imagePrompt": "Editorial 3:4 vertical photograph showing a modern law enforcement cruiser parked along an urban Miami street corner during late afternoon. The vehicle sits prominently in the upper two-thirds of the frame with soft emergency light reflections bouncing off the surrounding asphalt. The bottom third of the image is composed of dark, shadowed street pavement. Atmospheric lighting, realistic documentary photography style, no visible text, letters, decals, or logos.",
-    "circlePrompt": "Close-up realistic square 1:1 photograph focusing on an empty law enforcement vehicle door handle and lock mechanism on a patrol car body panel under bright daylight. The focus is centered directly on the metallic latch and vehicle contour. Crisp textures, cinematic documentary lighting, no faces, no readable words, numbers, or logos."
+    "article": "Tragedy struck Biscayne Bay on Wednesday morning when a chartered photography helicopter crashed into the water east of Miami Executive Airport. Miami-Dade Fire Rescue, the U.S. Coast Guard, and Customs and Border Protection Air and Marine Operations rushed to the area following a mayday call around 11:15 a.m. Three people were aboard the Robinson R44, which was filming boats before going down. Rescuers discovered a good Samaritan attempting life-saving measures on one man, who died at the scene. Two other men were pulled from the water and taken to a hospital in critical but stable condition. Authorities report the cause of the crash remains under investigation.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation showing emergency response and rescue vessels operating on the open water of Biscayne Bay near Miami under bright daylight. The main subject, including rescue boats with flashing emergency beacons on the water, occupies the upper two-thirds of the frame. The bottom third features deep, darker rippling ocean water with soft reflections. Photographed in a clean, journalistic style with natural color grading, containing no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic 1:1 square photo centered on an orange emergency marine rescue ring buoy floating on rippling bay water. The sun reflects brightly off the surrounding blue-green water surface, creating detailed textures and highlights around the centered rescue equipment. The scene contains no human faces, text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Shuttered Miami Beach condo hotel files liquidation plan",
-   "source": "The Business Journals",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbk9VUzZid2Q5S3Iza0hxR1p4OG9aSVdDNXdCa0FyUDFGaXJVZ2lGRW9NU0hBZy0zLXY3MnhnbVpLS1lzbk1zSmd1SFE3bHY1WnpMT3l6S3FCN01mZ3hTU3J5NVJXX2c5UV9EUlVCRWJKU1dSZkUySVBzc2k2U2NCcThrSTFwZWh4ME55b3BJc2dZWC1iWkZTa2dSaFF4ejUyOVR1elU5M1pnOU0?oc=5",
-   "t": 1793818260000,
+   "title": "Miami Beach officials propose adding a horseback patrol unit by 2028",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OM0NJQXlyZ3RKM1ZEZU1ILVRHTlNBNDhqcXlMSmthbll5dElvU2g3eUUybFpGY0xBal9wejFOOTBNSTQxSE8yeUNGd0JXakZiNEdZanFsNURkeFpkZTdSOVMzWnJOdldmZnZwQUVvYWFzUEdzRGhlODJZdGVsQ28?oc=5",
+   "t": 1793850572000,
    "id": 3,
-   "thin": true,
+   "link": "https://wsvn.com/news/local/miami-dade/mayor-meiner-proposes-mounted-cops/",
+   "thin": false,
+   "desc": "",
    "draft": {
     "headlines": [
-     "SHUTTERED MIAMI BEACH CONDO HOTEL FILES LIQUIDATION PLAN",
-     "CLOSED MIAMI BEACH CONDO HOTEL BEGINS LIQUIDATION PROCESS",
-     "WHAT COMES NEXT FOR SHUTTERED MIAMI BEACH CONDO HOTEL"
+     "MIAMI BEACH CONSIDERS HORSEBACK POLICE PATROLS BY 2028",
+     "MOUNTED POLICE PATROLS COULD RETURN TO MIAMI BEACH",
+     "WILL HORSES PATROL OCEAN DRIVE AGAIN AFTER DECADES AWAY?"
     ],
-    "article": "A shuttered Miami Beach condo hotel has formally filed a liquidation plan, signaling a definitive move toward closing out its affairs.\n\nThe property, which previously operated as a hybrid residential and hotel site in Miami Beach, remains closed. The newly filed liquidation plan establishes a pathway to settle matters surrounding the shuttered venue.\n\nDevelopments involving prime Miami Beach hospitality real estate carry significant interest across our coastal community. As proceedings move forward, the liquidation process will dictate the final disposition for this inactive condo hotel property.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of a shuttered luxury condo hotel building in Miami Beach. The weathered architectural facade, vacant balconies, and shuttered windows dominate the upper two-thirds under a pale ocean sky. The bottom third is composed of a simple, dark empty street curb and quiet sidewalk pavement. No people, no text, no letters, no logos, and no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on the locked modern glass double doors of a closed coastal hotel, reflecting distant palm trees on the dark reflective glass surface. No people, no faces, no text, no letters, no logos, and no watermarks."
+    "article": "Miami Beach Mayor Steven Meiner and the city police chief are proposing the return of a mounted police unit by 2028 to boost crowd control on busy strips like Ocean Drive. The initial $500,000 cost would rely on private donations, keeping the first year free for taxpayers. Similar units currently patrol Coral Gables, the City of Miami, and Miami-Dade County. Commissioner David Suarez opposes the plan, calling it an expensive vanity project. Suarez raised issues regarding street cleanliness and horse welfare in South Florida heat and humidity. Horses previously patrolled Miami Beach during the 1930s and again through the 1980s and early 1990s.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photo of a mounted police officer riding a strong brown horse along a sunlit coastal avenue in Miami Beach. The horse and rider occupy the upper two-thirds of the frame, framed against blurred palm trees and sunny pastel Art Deco buildings. The bottom third features dark, clean asphalt in deep shadow. Shot with natural daylight, crisp focus on the horse and saddle, no text, no watermarks, no logos.",
+    "circlePrompt": "A realistic square 1:1 macro photo focusing closely on a polished leather police saddle and stirrup on a horse, perfectly centered. The background is softly out of focus, showing warm tropical sunlight reflecting off coastal pavement. No people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami Beach rejects deal to extend luxury offices’ lease on city land until 2132",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMm1QcU5jRW9haEc0QnhOR3AteXZDcktXYXhqeDNPRk1mWVU5eGs4RncxOThLRjU0MTBNSzNnZlRwREFYNzVQbFVpaGlyUjVIOUR6YjctU1AwM0RiVDFvOVd0bEVRNGdMOUhldjhUNXFaNGh5OExQbGIxTEs4THVxb0FrVDZrQTRJX2JIdjhiTE9CMGMyQkIySdIBmAFBVV95cUxNTk1WbHVCaXk3NHRweGRKUURPbG90LUhxODBORzVJN2pJXzNEeTZtT013NEV5dmNPWXhlbUMtT2tzZEtVUzBrc0RaMFhzQ3Z4eGtZSk92allkZl9CQUpMWUZwSlUyUlM0MUd1clUxcVpFSVdJbGRZVnNBX2NpdHVvRjZval9WT09DeTNiOXBaNUkyTGUyR0hIQQ?oc=5",
-   "t": 1793817660000,
+   "title": "Miami-Dade County: Who Makes Sure the County Delivers?",
+   "source": "Miami’s Community News",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWHo1NDEtUDVNd0ZvM3pBekFNT0dadXJjTVpTZ3prRmlZSVd5VjhMN21LZE5UbFdPZ3dGcVJFOVNZR3dKbHhFNnJGRllLN2JwajY4NU5MNWdQdU5OMkRZellCS1lPVE1vVHZaRU9pdTVLZVdQUDNMc0drWFRIMWFNOG5NcnlUNm0xVzlhck8yN0M4bzNqdFhUcU5iYUdNOTRRdHJNZENpNEc?oc=5",
+   "t": 1793848049000,
    "id": 4,
-   "link": "https://www.miamiherald.com/news/local/community/miami-dade/miami-beach/article317922305.html",
+   "link": "https://communitynewspapers.com/pinecrest-tribune/miami-dade-county-who-makes-sure-the-county-delivers-2/",
    "thin": false,
-   "desc": "Nearly 63% of voters cast ballots Tuesday against the proposal, which would have allowed an ultra-luxury office building a lease extension.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI BEACH VOTERS REJECT 2132 LEASE EXTENSION FOR LUXURY OFFICES",
-     "SOUTH BEACH RESIDENTS BLOCK MASSIVE OFFICE EXPANSION PLAN",
-     "LOCALS PROTECT SOUTH BEACH LAND FROM CENTURY LONG LEASE DEAL"
+     "MIAMI-DADE APPROVES 14.3 BILLION DOLLAR BUDGET FOR 2026-27",
+     "SPENDING TAX DOLLARS IS NOT THE SAME AS DELIVERING",
+     "CAN MIAMI-DADE BECOME THE BEST RUN COUNTY IN AMERICA"
     ],
-    "article": "Miami Beach voters decided against a proposal on Tuesday that would have extended a city land lease until 2132 for an ultra-luxury office building at 1691 Michigan Avenue. Nearly 63 percent of voters rejected the referendum involving developer RK Rivani LLC, located just off Lincoln Road. The decision halts 47,000 square feet of planned new development, which included a 50 million dollar upgrade with a restaurant, extra offices, and rooftop padel courts. Onsite parking will remain at 700 spaces instead of shrinking to 475. The property, home to Playboy headquarters, will keep its current lease running through 2052, with options through 2092.",
-    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical portrait orientation showing the exterior of a sleek, multi-story commercial building near Lincoln Road in South Beach under bright midday Florida sunlight. The modern architecture fills the upper two-thirds of the frame with glass panels and clean white structural elements against a clear blue sky. The bottom third is composed of a simple, darker shaded sidewalk and roadway curb. No people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a centered close-up architectural detail of exterior building materials, featuring modern tinted glass windows, stone paneling, and the edge of a sleek balcony railing in coastal South Florida sunlight. No people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "Miami-Dade County has locked in an approved budget of about $14.3 billion for the 2026-27 fiscal year. Now, local taxpayers want to see proof of what those public dollars actually buy.\n\nCounty operations are directed by the mayor, while thirteen county commissioners hold responsibility for approving budgets and policy oversight. But accountability cannot stop after votes pass. Calls are growing for a public scoreboard tracking department performance, including road project costs, construction delays, contract delivery, and customer service response times.\n\nSpending taxpayer funds is not the same as completing the work. To rank among the best-run counties in America, leaders must measure performance and report honest results.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of the Miami-Dade County municipal government center building in downtown Miami under bright afternoon sunlight. The upper two-thirds captures the tall modern architecture framed by lush tropical palm trees against a clear blue sky, while the bottom third is composed of simple, darker pavement and garden shadows. Professional civic journalism style, realistic textures, no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo of an urban street construction site, featuring orange traffic barrels and heavy asphalt pavers centered along a freshly paved roadway under bright Florida sunlight. Sharp focus on the roadwork equipment and pavement texture, no people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Breaking news: 2 injured in copter crash off Key Biscayne, fire-rescue says",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOY0ZPN0IwVnhqQjJyT0tRQklIZDNsT1l3bmpFdDdmVmhLVlg4UnJEWjk0NmZpS2RhcnpUdWhmZHZuRUJtMkF3TmwwaVp4WmpIazRPa1I5WE0tMW5KRFdEMTdid3Jlb3ktUGpHaHpVQXkxMV9jaFFoZ2twYW1IdE44cWhxMlFQSzdu0gGIAUFVX3lxTE9KeFNvUDFZTWV4SkpJUnJ1YUFFWUlMZHZhTEJzLXhrNDRnamljZ0I5X09ZUTVXc01IU3Y1WjY3dFFXa3dUT3RMZVMxdGZnMUlGR2RqNVo0MjhmWVZfUjZhaGlfWGpMZEJIZUFQa2Qxem10RWVDRGZYSlRuNUd5TEppSHBDSUU1Zzc?oc=5",
-   "t": 1793815038000,
+   "title": "Miami-Dade sheriff talks about helicopter crash",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRno4SWVKVzFfMVl4cDdKTTNEQ3JhMWJCZGxpZDF0R0YtNlpIS2NadXloamh4bEtrazdVLVVrWUEtWnNFNTBQZmZBSFY5MV8taE9odTdDeTV1dWoxZm5MSUhHVFFvVEhxNTJTV1ItODZIMExndzNwbkc2RERPM0NtVW9DWEVQSjZUUV8xeUdyUmdUeGpxYlYxUUdB?oc=5",
+   "t": 1793838735000,
    "id": 5,
-   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article317924976.html",
-   "thin": false,
-   "desc": "The aircraft went down near Bill Baggs State Park, the Miami-Dade Fire Rescue said.",
+   "link": "https://www.local10.com/video/news/2026/11/04/miami-dade-sheriff-talks-about-helicopter-crash/",
+   "thin": true,
+   "desc": "",
    "draft": {
     "headlines": [
-     "ONE DEAD, TWO INJURED IN KEY BISCAYNE HELICOPTER CRASH",
-     "FATAL COPTER CRASH OFF BILL BAGGS STATE PARK",
-     "NTSB INVESTIGATING FATAL HELICOPTER CRASH OFF OUR COAST"
+     "MIAMI-DADE SHERIFF ADDRESSES RECENT HELICOPTER CRASH",
+     "SHERIFF SPEAKS ON COPTER CRASH",
+     "WHAT THE MIAMI-DADE SHERIFF SAYS ABOUT A CRASH"
     ],
-    "article": "A helicopter crash off Key Biscayne left one person dead and two others seriously injured Wednesday around 11:30 a.m. The aircraft went down in the waters near Bill Baggs State Park. Miami-Dade Fire Rescue crews rushed to the scene and airlifted the two injured survivors directly to Ryder Trauma Center at Jackson Memorial Hospital. The Coast Guard confirmed that one individual died in the incident. Federal officials from the National Transportation Safety Board have launched an investigation into the crash. Authorities identified the downed aircraft as a Robinson R44 II helicopter registered to Global Aerials Inc.",
-    "imagePrompt": "A dramatic realistic editorial photograph of an active maritime emergency response off the coastline of Key Biscayne in a 3:4 vertical portrait. In the upper two-thirds, a rescue helicopter and emergency vessels navigate open turquoise coastal waters near a barrier island shoreline under midday light. The bottom third is filled with simple, darker ocean water with deep wave textures. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a focused view of turbulent coastal waters churned by rotor wash and boat wakes near a tropical shoreline, centered in the frame. No people's faces, no text, letters, logos, or watermarks."
+    "article": "The Miami-Dade sheriff has spoken out regarding a helicopter crash, addressing the community about the incident.\n\nLocal leadership in Miami-Dade focused on the situation involving the downed helicopter during recent remarks. With the sheriff speaking directly about the crash, county authorities have made the incident an official point of focus.\n\nAs the Miami-Dade sheriff addresses the helicopter crash, residents across the region are awaiting further verified information from local officials regarding what happened.",
+    "imagePrompt": "A realistic editorial news portrait in 3:4 vertical aspect ratio showing a sheriff in uniform speaking at an outdoor press briefing. The upper two-thirds shows the law enforcement official standing with a serious expression under natural outdoor daylight, while the bottom third is composed of simple, dark blurred tones and podium shadows. Realistic photojournalism, high detail, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered view of a helicopter rotor hub and tail assembly resting outdoors. Crisp mechanical focus on the aircraft metal and rivets with a soft blurred background. No human faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Two injured, third person believed dead after helicopter crash near Key Biscayne",
-   "source": "WPEC",
-   "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxQOGo1U2VxanV6cnZ5V0otb3pfY3EwVEJtRU1LZXoycEtGN05wOTRJN3RCNURyUUM5V0hOMF9oVGh0RE1LWHlSRGVIX3RENU9WVDFYWnFnU0tHajZSam00cmJKVnZ4a2RaQ0VWN3J0SWJWTUdPTjNEcDZuTTlac2YzR0I1ZFNuUjRxbXZzNUVEdVRZdGpwU1hwSGxaNHBsZDNpeExTY0FwQmFHZmpjRXRucGkwVUo1WkI4WHhNSVhJLUp0dUFRZzE3WmxVUnlDeXBacWdqTVlyN29LUV95NUZOOFJxdGZ0MzFjNUZHVE9kOUdIdGRWb2ZrWjNhb2pEdVRJSVAyRUM2anN5SlU?oc=5",
-   "t": 1793813405000,
+   "title": "How to Navigate Art Basel Miami Like a Pro—Without Missing a Beat or Getting Overwhelmed",
+   "source": "www.veranda.com",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1IUlJiaTQ3N19UVkh3N3RsRXN2ZHJtckRoMlFickZOR0lfYXNvZVN5R1FDQ1E1WjZ1R25tUnJORDM1OU04WVduaUF3c2RTT1RFWlRpX2hrcTAzRDFFQmFMcEw5a20zQXN6aWx1V0I0M1VncHVoMUJR?oc=5",
+   "t": 1793834429000,
    "id": 6,
-   "link": "https://cbs12.com/news/crime/two-injured-third-person-believed-dead-after-helicopter-crash-near-key-biscayne-crandon-boulevard-deadly-crash-miami-dade-sheriffs-office-florida-news",
+   "link": "https://www.veranda.com/travel/a74326108/art-basel-miami-what-to-do/",
    "thin": false,
-   "desc": "",
+   "desc": "Consider this your cheat sheet to navigating the country’s premier art fair in impeccable style.",
    "draft": {
     "headlines": [
-     "ONE DEAD, TWO INJURED IN KEY BISCAYNE HELICOPTER CRASH",
-     "FATAL HELICOPTER CRASH OFF NIXON BEACH",
-     "CHOPPER GOES DOWN IN WATERS OFF CRANDON BOULEVARD"
+     "ART BASEL MIAMI BEACH RETURNS DECEMBER 4 THROUGH 6",
+     "ART BASEL CELEBRATES ITS 23RD EDITION IN MIAMI BEACH",
+     "MIAMI ART WEEK MARQUEE FAIR TAKES OVER THE BEACH AGAIN"
     ],
-    "article": "A small helicopter crashed into the water southwest of Key Biscayne near Nixon Beach around 11:30 a.m. One person is believed dead and two others were injured in the incident. Emergency crews responded to the water off the 1200 block of Crandon Boulevard, where Miami-Dade Fire Rescue deployed a boat alongside the aircraft and its yellow floats. Paramedics planned to transport the two surviving passengers to an area hospital, though their medical conditions remain unknown. The Miami-Dade Sheriff's Office has assumed control of the ongoing investigation. Authorities have not yet determined what caused the crash.",
-    "imagePrompt": "Editorial documentary photo from a high vantage point showing an emergency rescue boat navigating turquoise ocean waters near Key Biscayne. The upper two-thirds features the rescue vessel in choppy blue-green water under bright coastal daylight, while the lower third is composed of deep, shadowed ocean water. Realistic photojournalism style, no text, no logos.",
-    "circlePrompt": "Centered close-up shot of bright yellow helicopter emergency floatation pontoons resting on the surface of shimmering coastal water, ripples catching the bright mid-day sunlight, realistic photojournalism style, no people, no faces, no text, no logos."
+    "article": "Art Basel Miami Beach returns December 4 through 6 for its 23rd edition, anchoring Miami Art Week across South Florida. Renowned artists, collectors, and gallerists from around the globe are gathering to showcase prized modern and contemporary works, continuing a local tradition that first launched here in 2002.\n\nAttendees have several entry options for this year's fair. Standard single-day passes grant access to the main floor, while premium passes offer early admission plus entry to local cultural sites including the Lowe Art Museum and Fairchild Tropical Botanic Garden.\n\nVisitors can also purchase combination tickets to attend Design Miami, which marks its 21st anniversary showcasing collectible furniture and jewelry right across the street.",
+    "imagePrompt": "Realistic editorial photograph in 3:4 vertical orientation of a spacious, illuminated contemporary art exhibition hall in Miami Beach. Stylish art patrons observe large, vibrant modern art installations and pristine white display walls filling the upper two-thirds of the frame under clean architectural lighting. The polished gallery floor creates a darker, muted, and minimalist foreground across the bottom third. No text, letters, logos, or watermarks.",
+    "circlePrompt": "Realistic square 1:1 photograph showing a centered close-up view of an avant-garde collectible furniture installation and polished designer lighting piece at a design pavilion. Intricate textures, gleaming materials, and clean ambient gallery lighting highlight the craftsmanship. No people, no faces, and no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Hialeah Girls Varsity Soccer @ American",
-   "source": "MaxPreps",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPWUJaX3gxM2VQQThRSjZYbldBWWdfZWVNUmpYb2JyWWtBMzNFY3ZwZE9ZaGN1R2VqSWhGNlBLY295eFI3ZXo3cWVMQ283Z3Viak5STUJvTHpoNFhCT1Rud3FVRG85Y0dydUlqN25jWlFCczBiWDNfdDF2cG1kTEppSXZ1S01vXzdVQmdrOEV0bHYwYnJSZ2lsVWpPelZrbXJ0QUZtUGpqODRhZ2RkU2VGYVc0ZHB6RkJOMkJVbm1LT25qRDQ1YW40anh3QUI2cmJvTGJlT0VNUQ?oc=5",
-   "t": 1793813176000,
+   "title": "Relentless rain causes flooding in Hialeah",
+   "source": "NBC 6 South Florida",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRkotNFZha2ZQeWpIbFRhNlFydWRTSW9abTgwWHUzakVLaklrWVBMMkE3TGdsa3J3VXVtNHJjall0SWxLV251ZTEyY253aFpwSjNsQnFBOU16Y2xLS2FjWllRUTZVX0FOQnB0cHJxYWNNUnZZZHNNZTVLbXNmMEF5WmdEenpjY2pVUmJ0aWc2ZGZyMlVfVWc0YtIBoAFBVV95cUxNZDh0S0Q1cGlWZUliSHhGZTBRZUwwZHAzcEZHM0VsZHRzUUlHcVQxQTVjaWZmLTVVMmtDd1BMRUJUeVZzSEZDYzJpbWJFN0xGSVNaQldwR1dJSmg5RzNkOE9hcHpNMEJvZXlRSXRiTktzT2pueG5sa00yNzh5bU9sRUtvanFmcW1JS2pVVEk2clE0ZVU3cTluTjdUbC00TE96?oc=5",
+   "t": 1793832957000,
    "id": 7,
-   "link": "https://www.maxpreps.com/fl/soccer/girls/match/american-hialeah-vs-hialeah-thoroughbreads/12-10-2026/?c=9b949843-911d-40ef-86e1-64badfe8f664",
+   "link": "https://www.nbcmiami.com/video/nbc-6-news/relentless-rain-causes-flooding-in-hialeah/3883949/",
    "thin": true,
-   "desc": "",
+   "desc": "NBC6’s Victoria De Cardenas is live from Hialeah, which was hit with flooding after heavy rain.",
    "draft": {
     "headlines": [
-     "HIALEAH GIRLS VARSITY SOCCER PLAYS AT AMERICAN ON DECEMBER 10",
-     "CONFERENCE MATCH SET FOR HIALEAH GIRLS SOCCER AT AMERICAN",
-     "LOCAL TEAMS CLASH AS HIALEAH GIRLS SOCCER VISITS AMERICAN"
+     "RELENTLESS RAINFALL CAUSES FLOODING IN HIALEAH",
+     "HEAVY DOWNPOURS SUBMERGE HIALEAH",
+     "HOW RELENTLESS RAIN FLOODED HIALEAH"
     ],
-    "article": "High school sports continue in South Florida as the Hialeah girls varsity soccer team prepares for an away conference match against American in Hialeah, Florida.\n\nThe contest is officially scheduled for Thursday, December 10. The opening whistle will sound at 1 p.m., setting up an afternoon conference battle between the two local schools.\n\nWith the match hosted at American, the visiting Hialeah squad will challenge their league rival on the pitch, offering area sports followers another high school athletic showdown to track this week.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing high school girls soccer action under bright South Florida afternoon sunlight. Two female players in athletic uniforms contest for the ball on a vibrant green grass field, positioned dynamically in the upper two-thirds of the frame. The background features blurred palm trees and bleachers under a clear daytime sky. The bottom third consists of simple, deeply shadowed dark green turf. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 macro photo centered on a soccer ball resting on manicured green grass beside a white chalk field line on a sunny afternoon. The shallow depth of field softly blurs the background showing an empty soccer goal net and turf. Clean composition, centered subject, no people's faces, no text, letters, logos, or watermarks."
+    "article": "Relentless rain has struck Hialeah, leaving the area dealing with sudden flooding. Heavy rainfall moved through the city, creating inundated conditions across local spots. Victoria De Cardenas reported live on the ground in Hialeah as water gathered across the area following the severe downpours. The community faced rapid water accumulation after persistent, unrelenting precipitation soaked the city.",
+    "imagePrompt": "A realistic editorial photograph in a vertical 3:4 orientation capturing a street in Hialeah affected by floodwaters following heavy storm rain. In the upper two-thirds of the image, gloomy overcast skies hang over rain-soaked South Florida neighborhood architecture and wet palm trees. The bottom third consists of simple, darker standing floodwater with subtle ripples reflecting the dim daylight. Authentic documentary style, moody stormy weather, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on a close-up view of dark floodwater swirling near a submerged street curb and asphalt during a rainstorm. Rain ripples disturb the water surface in sharp focus. Natural overcast daylight, authentic South Florida storm atmosphere, no people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Hurricanes star Malachi Toney reportedly injured before Notre Dame game",
-   "source": "Sun Sentinel",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBVQUM0VWd2RDRxa0JWd2pFbVRZSTZNRzJXWDJUV29kTzZsay1na096UElERWszclpCRkIzVlZJc1pmS0VjX2RlVTZScnd1YlUxbHhIdTd6ZWdWTnNfeFNuNXBZSklsWGc?oc=5",
-   "t": 1793820866000,
+   "title": "Miami Heat vs. LA Clippers: Game Highlights",
+   "source": "ESPN",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9FMnlqYmg4bjhQMFlsTmFHdjlpMUVKckVfUjdmVmpET0Q1SmVRMlUzX2dQSUp5V0ZNY3IwOXNKQnVmTWUzQWZqc1B4bG1TN1dTcllLdVNIVDNEellYTHpWSXFHRVNUQnRmWnJ0TWR3?oc=5",
+   "t": 1793860536000,
    "id": 8,
-   "link": "https://www.sun-sentinel.com/2026/11/04/um-toney-injury/",
+   "link": "https://www.espn.com/video/clip/_/id/50385864/game-highlights",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MIAMI HEAT TAKE ON LA CLIPPERS IN RECENT MATCHUP",
+     "HEAT VERSUS CLIPPERS GAME HIGHLIGHTS",
+     "HOW MIAMI SQUARED OFF AGAINST THE LA CLIPPERS"
+    ],
+    "article": "The Miami Heat recently took the court against the LA Clippers, bringing cross-country basketball action to local supporters across South Florida.\n\nHighlights from the contest feature the key plays and competitive moments between Miami and the Los Angeles team. Heat fans watching the action can view the top sequences from the showdown to see how the matchup played out between the two franchises.\n\nThe matchup between the Miami Heat and the LA Clippers marks another game on the schedule for the local team as the season continues.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation capturing a dramatic basketball action shot inside an arena. An athletic basketball player in a vibrant uniform drives toward the rim above the defender in the upper two-thirds of the composition under bright stadium floodlights. The bottom third features the dark, glossy reflections of the polished court floor. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic 1:1 square macro photograph centered on a classic pebble-grain leather basketball resting on the glossy surface of a hardwood basketball court beneath dramatic indoor stadium lighting. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Heat gets much-needed overtime road win over Clippers on game-winner from Klay Thompson. Takeaways",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5WN3NGNnI0REtabDZQa1pkS2JwMTkxbVN1RjVIZjB4dGhCekltUklzWldNUHhMcWNHX1B6ZERRVjN4ekVNOVlsX1lzc3BCVjdubXhDNnh0SGM5VFBkYUpxS1ZZSERLREoyNENxMy1wUzF2ZkZPRjlHRGR1b9IBe0FVX3lxTE1XLWNfSlA1el8weVVhTkEzLU1EN2F5bVBEUnRsdlF6MlRZMHlJNWhNYnIzQU5qVFRUU1FNSnhoeDlFUk5IVjA0amlhR3VlblNVamJRV29Dcm9WNnowSW9zVXpsVmJaS3BOTnJhZ3QzbWk1NFhtam8wdmdEdw?oc=5",
+   "t": 1793860184000,
+   "id": 9,
+   "link": "https://www.miamiherald.com/sports/nba/miami-heat/article317934724.html",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MALACHI TONEY SUFFERS ANKLE INJURY AHEAD OF NOTRE DAME",
-     "CANES STAR MALACHI TONEY HURT IN PRACTICE",
-     "CAN MIAMI'S TOP RECEIVER PLAY THROUGH ANKLE INJURY?"
+     "MIAMI HEAT EDGES CLIPPERS 117-116 IN OVERTIME THRILLER",
+     "KLAY THOMPSON HITS CLUTCH GAME WINNER",
+     "OUR HEAT BOUNCES BACK WITH DRAMATIC WEST COAST TRIUMPH"
     ],
-    "article": "Miami Hurricanes wide receiver Malachi Toney suffered an ankle injury during Wednesday practice, clouding his status for Saturday's road game against Notre Dame. The sophomore rolled his ankle and is undergoing testing, though he plans to try to play through it. Toney serves as Miami's premier offensive weapon. He has never missed a game for the Hurricanes, racking up 73 receptions, 1,027 yards, and 13 touchdowns this season while earning the nation's top receiving grade of 95 from Pro Football Focus. If Toney sits out, Miami could slide Daylyn Upshaw or Vance Spafford into the slot, with Vandrevius Jacobs or Somourian Wingo stepping up on the outside.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait of an athletic college football wide receiver wearing an orange and green football uniform and helmet, resting on a bench and looking focused under bright evening stadium lights. The player is framed in the upper two-thirds of the image, while the bottom third is simple and darker with shadowed turf. Realistic sports photojournalism style, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 detailed close-up shot of a football cleat tightly bound with white athletic trainer tape, resting centered on green stadium turf under direct stadium lights. Clean centered composition, shallow depth of field, no people's faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Miami WR Malachi Toney reportedly dealing with ankle injury, uncertain to play against Notre Dame",
-   "source": "Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxPU25aZlFYck1heThRcVNyZllHQnpJQkk4c0wtMnN4VUZIb0xORkNQX0ZWODI3RVE3UC1uamZrTV9PS1IxMmYxU1NmTnlnU0U5OTh5cVFheW5TOHNnTjNRek8tLWFNc0RocGhTQ1VWc1VIRHRKZXV1TWJ6V1oxZ255UE41UG5vR3RVWjJWdHdVbFJiZlhlQmhXZmQ4aDM1RjlkdkwzS0JVeTlIclkzb0lWVUhrZy1kV25uSlBEdE5hc0tVRTI1UE9LMWw3azU0UDEtakdScm4xU1gwTjJKdmwzRG54V3pQZDQ5WUpFUURKdDQzWFpvM1VQajR5bHM2M2J6U3dKYU9n?oc=5",
-   "t": 1793820862000,
-   "id": 9,
-   "link": "https://sports.yahoo.com/college-football/breaking-news/article/miami-wr-malachi-toney-reportedly-dealing-with-ankle-injury-uncertain-to-play-against-notre-dame-193422539.html",
-   "thin": true,
-   "desc": "Toney has 73 catches for 1,027 receiving yards and 13 TDs.",
-   "draft": {
-    "headlines": [
-     "MIAMI RECEIVER MALACHI TONEY UNCERTAIN DUE TO ANKLE INJURY",
-     "MALACHI TONEY REPORTEDLY INJURED BEFORE NOTRE DAME",
-     "WILL MIAMI BE WITHOUT 13-TOUCHDOWN STAR MALACHI TONEY"
-    ],
-    "article": "Miami wide receiver Malachi Toney is reportedly dealing with an ankle injury, putting his status in question for the upcoming clash against Notre Dame. The dynamic pass catcher has delivered massive offensive numbers for Miami, hauling in 73 catches for 1,027 receiving yards and 13 touchdowns. His dominant play has powered the offense throughout the schedule. With Notre Dame next, Toney is currently uncertain to take the field. The program and local fans face an anxious wait to see if the star receiver can play through the ankle issue or if his injury will keep him sidelined.",
-    "imagePrompt": "A 3:4 vertical editorial photo of a college football wide receiver wearing an orange and white jersey without text, standing thoughtfully on a stadium sideline under bright lights. The athlete occupies the upper two-thirds of the frame, looking down with a focused expression. The bottom third features dark, clean artificial turf fading into subtle shadow. Authentic sports photography style, crisp detail, realistic lighting, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up photo focused on a football player's heavily taped ankle and cleat resting on bright green stadium turf. Centered composition highlighting the white athletic tape wrap, fine grass textures, and cleat details under focused stadium lighting. No human faces, no text, no letters, no logos, no watermarks."
+    "article": "The Miami Heat secured a thrilling 117-116 overtime road victory against the Los Angeles Clippers on Wednesday night at Intuit Dome.\n\nWith one second remaining in overtime, Klay Thompson sank a dramatic corner three-pointer off an inbounds play to erase a two-point deficit and seal the win. Heat teammates immediately rushed the floor from the bench in celebration as Los Angeles failed on a final desperation heave.\n\nThe gritty road triumph brings Miami to 1-1 on its six-game West Coast swing and 3-5 on the season. Miami returns to action Thursday night against the Golden State Warriors in San Francisco.",
+    "imagePrompt": "Editorial sports portrait of a professional basketball player releasing a corner three-point shot under bright arena stadium lights, dramatic arena atmosphere, captured from court level in a 3:4 vertical orientation with the player positioned in the upper two-thirds against subtle blurred stadium rafters, while the hardwood floor in the lower third remains shadowy, dark, and clean. Crisp action photography, sharp focus, vibrant sports lighting, no text, no logos, no watermarks.",
+    "circlePrompt": "A detailed close-up shot of a leather basketball swishing downward through a crisp white net hanging from an orange rim, perfectly centered in a 1:1 square composition, isolated against the soft bokeh glow of indoor arena lights. Dramatic side lighting highlighting the texture of the ball and netting, clean and focused, no human faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1906: canals begin draining the Everglades",
-   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
+   "title": "1891: Julia Tuttle buys 640 acres on the Miami River",
+   "desc": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.",
    "id": 10,
    "draft": {
     "headlines": [
-     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
-     "EVERGLADES WATER REMOVAL STARTED IN 1906",
-     "THE EFFORT TO DRAIN THE EVERGLADES BEGAN IN 1906"
+     "JULIA TUTTLE BUYS 640 ACRES ON MIAMI RIVER IN 1891",
+     "TUTTLE ACQUIRES 640 MIAMI RIVER ACRES",
+     "THE 1891 MIAMI RIVER PURCHASE THAT CHANGED SOUTH FLORIDA"
     ],
-    "article": "The history of our surrounding South Florida landscape changed course in 1906. During that year, canals were begun to remove water from the Florida Everglades. The groundbreaking effort started the process of actively draining the Everglades wetlands through newly constructed waterways. The deliberate removal of water via these canals in 1906 stands as an early defining development for the region, initiating a massive shift in how water flowed across the Florida Everglades.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 portrait photograph showing early canal excavation in the Florida Everglades. Period-accurate earthmoving machinery and a wide trench cut through wild wetlands and sawgrass under an open sky, occupying the upper two-thirds of the scene. The bottom third features darker, simple muddy banks and quiet water. Sepia-toned documentary style with subtle film grain, historic atmosphere, no identifiable people, no text, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered view of historic turn-of-the-century iron dredging equipment and heavy cable resting on wet Everglades peat beside freshly cut canal water. Detailed rusted metal and wetland mud textures, centered composition, soft overcast lighting, no people, no text, no logos."
+    "article": "In 1891, Julia Tuttle officially moved to South Florida and secured a notable piece of local waterfront property.\n\nFollowing her arrival, Tuttle bought a total of 640 acres situated directly on the north bank of the Miami River.\n\nThe major transaction in 1891 placed a massive 640-acre parcel along the South Florida riverfront under Tuttle's ownership.\n\nTuttle's 1891 relocation and her substantial land purchase on the north bank of the Miami River stand as a defining milestone in our local history.",
+    "imagePrompt": "A vintage archival-style vertical photograph in 3:4 aspect ratio depicting the undeveloped north bank of the Miami River in the late 19th century. The upper two-thirds of the image features wild subtropical foliage, pine flatwoods, and native riverfront greenery under hazy sunlight. The bottom third consists of simple, dark river water with deep shadows and gentle ripples. Antique sepia photograph texture with soft vignette and fine grain. No identifiable people. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on an aged 19th-century stone property boundary marker resting in sandy soil near river reeds. Detailed texture of weathered limestone and native South Florida ground cover under direct natural daylight. No faces, no text, no letters, no logos, and no watermarks."
    }
   }
  ]
