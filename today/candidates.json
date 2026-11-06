@@ -1,203 +1,203 @@
 {
- "date": "Thursday, November 5",
- "pick": "mw377aiu",
+ "date": "Friday, November 6",
+ "pick": "mw5e4mnq",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami Beach Buildings Sinking at Different Rates, Due to Construction, Study Finds",
-   "source": "Claims Journal",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5vUEw3cVV4RF9zZkFOVDFQUTA3eWZMUVQzNFJlUVNMYVU3bXJGYURtZUZmZG5rMXF1eGUwUzVXLWo1d0dGTUplU25ZWUR3RnM5dDFpQ2g0Q3lFOF95aUxzU1U5U2xjRHgwVmptLTJtS281UFE?oc=5",
-   "t": 1793858459000,
-   "id": 1,
-   "link": "https://www.claimsjournal.com/news/national/2026/11/05/341050.htm",
-   "thin": false,
-   "desc": "Much of the Miami Beach skyline, on ground that's just a few feet above sea level, is sinking. But some of the iconic skyscrapers there are sinking at",
-   "draft": {
-    "headlines": [
-     "NEW STUDY FINDS MIAMI BEACH TOWERS SINKING FROM ONGOING CONSTRUCTION",
-     "MIAMI BEACH SKYSCRAPERS ARE SINKING",
-     "WHY ARE COASTAL TOWERS IN SUNNY ISLES SLOWLY SINKING"
-    ],
-    "article": "Continuous high-rise development across our barrier island is causing local towers to sink at varying speeds. A study by University of Miami professors Farzaneh Aziz Zanjani and Falk Amelung tracked 35 area buildings using satellite radar. While some waterfront properties sank roughly two centimeters between 2016 and 2023, towers in Surfside and Sunny Isles Beach dropped over eight centimeters. Impacted properties include the 60-story Porsche Design Tower, Trump Tower III, and the 87 Park tower. Researchers attribute the sinking to heavy loads and construction vibrations shifting the limestone and sand layers beneath our coastline, warning the movement is not expected to stop.",
-    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of towering modern glass skyscrapers lining the oceanfront barrier island in South Florida under a hazy sky. The towering high-rise condominiums dominate the upper two-thirds of the frame, showing their sleek architectural facades against the bright Atlantic horizon. The bottom third features dark asphalt street and shadowed ground-level coastal pavement, keeping the base simple and uncluttered. Crisp morning sunlight, architectural photography style, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 editorial photograph showing a centered, detailed close-up of a cracked concrete foundation footing meeting porous natural limestone bedrock and sand. Harsh coastal daylight casts precise shadows into the fine fissures of the concrete structure. The focus is sharp on the structural joint where building foundation meets coastal earth, captured at ground level with no people, no faces, no text, and no logos."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "1 dead after helicopter crashes in water near Miami during photography flight: Authorities",
-   "source": "ABC7 Bay Area",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNZEN4UENieUZUdGRWWFNSd1daZ2x1NWVUSl9LMWFfVThmUDhFeGVrbDVRQ2h1UERIZTQ1NTlLWXFRUHlZWmdPekR0a0JiZEdpcUJPSXlYOW1MUmJuajVUQUUzNW15Q284ekEtamJFRDNfcWFzVFR2cFg1MTdYUjBQLWtpWWgxTDlXZ3kzR25pRQ?oc=5",
-   "t": 1793851663000,
-   "id": 2,
-   "link": "https://abc7news.com/story/helicopter-reported-down-waters-miami-authorities/20015434/",
-   "thin": false,
-   "desc": "Miami Dade Fire-Rescue said it is at the scene in Biscayne Bay.",
-   "draft": {
-    "headlines": [
-     "ONE DEAD AND TWO INJURED IN BISCAYNE BAY HELICOPTER CRASH",
-     "FATAL HELICOPTER CRASH IN BISCAYNE BAY",
-     "TRAGEDY ON BISCAYNE BAY DURING MIDDAY BOAT PHOTO FLIGHT"
-    ],
-    "article": "Tragedy struck Biscayne Bay on Wednesday morning when a chartered photography helicopter crashed into the water east of Miami Executive Airport. Miami-Dade Fire Rescue, the U.S. Coast Guard, and Customs and Border Protection Air and Marine Operations rushed to the area following a mayday call around 11:15 a.m. Three people were aboard the Robinson R44, which was filming boats before going down. Rescuers discovered a good Samaritan attempting life-saving measures on one man, who died at the scene. Two other men were pulled from the water and taken to a hospital in critical but stable condition. Authorities report the cause of the crash remains under investigation.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation showing emergency response and rescue vessels operating on the open water of Biscayne Bay near Miami under bright daylight. The main subject, including rescue boats with flashing emergency beacons on the water, occupies the upper two-thirds of the frame. The bottom third features deep, darker rippling ocean water with soft reflections. Photographed in a clean, journalistic style with natural color grading, containing no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic 1:1 square photo centered on an orange emergency marine rescue ring buoy floating on rippling bay water. The sun reflects brightly off the surrounding blue-green water surface, creating detailed textures and highlights around the centered rescue equipment. The scene contains no human faces, text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami Beach officials propose adding a horseback patrol unit by 2028",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9OM0NJQXlyZ3RKM1ZEZU1ILVRHTlNBNDhqcXlMSmthbll5dElvU2g3eUUybFpGY0xBal9wejFOOTBNSTQxSE8yeUNGd0JXakZiNEdZanFsNURkeFpkZTdSOVMzWnJOdldmZnZwQUVvYWFzUEdzRGhlODJZdGVsQ28?oc=5",
-   "t": 1793850572000,
-   "id": 3,
-   "link": "https://wsvn.com/news/local/miami-dade/mayor-meiner-proposes-mounted-cops/",
-   "thin": false,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "MIAMI BEACH CONSIDERS HORSEBACK POLICE PATROLS BY 2028",
-     "MOUNTED POLICE PATROLS COULD RETURN TO MIAMI BEACH",
-     "WILL HORSES PATROL OCEAN DRIVE AGAIN AFTER DECADES AWAY?"
-    ],
-    "article": "Miami Beach Mayor Steven Meiner and the city police chief are proposing the return of a mounted police unit by 2028 to boost crowd control on busy strips like Ocean Drive. The initial $500,000 cost would rely on private donations, keeping the first year free for taxpayers. Similar units currently patrol Coral Gables, the City of Miami, and Miami-Dade County. Commissioner David Suarez opposes the plan, calling it an expensive vanity project. Suarez raised issues regarding street cleanliness and horse welfare in South Florida heat and humidity. Horses previously patrolled Miami Beach during the 1930s and again through the 1980s and early 1990s.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photo of a mounted police officer riding a strong brown horse along a sunlit coastal avenue in Miami Beach. The horse and rider occupy the upper two-thirds of the frame, framed against blurred palm trees and sunny pastel Art Deco buildings. The bottom third features dark, clean asphalt in deep shadow. Shot with natural daylight, crisp focus on the horse and saddle, no text, no watermarks, no logos.",
-    "circlePrompt": "A realistic square 1:1 macro photo focusing closely on a polished leather police saddle and stirrup on a horse, perfectly centered. The background is softly out of focus, showing warm tropical sunlight reflecting off coastal pavement. No people, no faces, no text, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami-Dade County: Who Makes Sure the County Delivers?",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWHo1NDEtUDVNd0ZvM3pBekFNT0dadXJjTVpTZ3prRmlZSVd5VjhMN21LZE5UbFdPZ3dGcVJFOVNZR3dKbHhFNnJGRllLN2JwajY4NU5MNWdQdU5OMkRZellCS1lPVE1vVHZaRU9pdTVLZVdQUDNMc0drWFRIMWFNOG5NcnlUNm0xVzlhck8yN0M4bzNqdFhUcU5iYUdNOTRRdHJNZENpNEc?oc=5",
-   "t": 1793848049000,
-   "id": 4,
-   "link": "https://communitynewspapers.com/pinecrest-tribune/miami-dade-county-who-makes-sure-the-county-delivers-2/",
-   "thin": false,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "MIAMI-DADE APPROVES 14.3 BILLION DOLLAR BUDGET FOR 2026-27",
-     "SPENDING TAX DOLLARS IS NOT THE SAME AS DELIVERING",
-     "CAN MIAMI-DADE BECOME THE BEST RUN COUNTY IN AMERICA"
-    ],
-    "article": "Miami-Dade County has locked in an approved budget of about $14.3 billion for the 2026-27 fiscal year. Now, local taxpayers want to see proof of what those public dollars actually buy.\n\nCounty operations are directed by the mayor, while thirteen county commissioners hold responsibility for approving budgets and policy oversight. But accountability cannot stop after votes pass. Calls are growing for a public scoreboard tracking department performance, including road project costs, construction delays, contract delivery, and customer service response times.\n\nSpending taxpayer funds is not the same as completing the work. To rank among the best-run counties in America, leaders must measure performance and report honest results.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation of the Miami-Dade County municipal government center building in downtown Miami under bright afternoon sunlight. The upper two-thirds captures the tall modern architecture framed by lush tropical palm trees against a clear blue sky, while the bottom third is composed of simple, darker pavement and garden shadows. Professional civic journalism style, realistic textures, no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo of an urban street construction site, featuring orange traffic barrels and heavy asphalt pavers centered along a freshly paved roadway under bright Florida sunlight. Sharp focus on the roadwork equipment and pavement texture, no people, no faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami-Dade sheriff talks about helicopter crash",
+   "title": "Miami-Dade deputies accuse 4 of $100K Bath & Body Works cargo theft, candle resale scheme",
    "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRno4SWVKVzFfMVl4cDdKTTNEQ3JhMWJCZGxpZDF0R0YtNlpIS2NadXloamh4bEtrazdVLVVrWUEtWnNFNTBQZmZBSFY5MV8taE9odTdDeTV1dWoxZm5MSUhHVFFvVEhxNTJTV1ItODZIMExndzNwbkc2RERPM0NtVW9DWEVQSjZUUV8xeUdyUmdUeGpxYlYxUUdB?oc=5",
-   "t": 1793838735000,
-   "id": 5,
-   "link": "https://www.local10.com/video/news/2026/11/04/miami-dade-sheriff-talks-about-helicopter-crash/",
-   "thin": true,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "MIAMI-DADE SHERIFF ADDRESSES RECENT HELICOPTER CRASH",
-     "SHERIFF SPEAKS ON COPTER CRASH",
-     "WHAT THE MIAMI-DADE SHERIFF SAYS ABOUT A CRASH"
-    ],
-    "article": "The Miami-Dade sheriff has spoken out regarding a helicopter crash, addressing the community about the incident.\n\nLocal leadership in Miami-Dade focused on the situation involving the downed helicopter during recent remarks. With the sheriff speaking directly about the crash, county authorities have made the incident an official point of focus.\n\nAs the Miami-Dade sheriff addresses the helicopter crash, residents across the region are awaiting further verified information from local officials regarding what happened.",
-    "imagePrompt": "A realistic editorial news portrait in 3:4 vertical aspect ratio showing a sheriff in uniform speaking at an outdoor press briefing. The upper two-thirds shows the law enforcement official standing with a serious expression under natural outdoor daylight, while the bottom third is composed of simple, dark blurred tones and podium shadows. Realistic photojournalism, high detail, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a close-up centered view of a helicopter rotor hub and tail assembly resting outdoors. Crisp mechanical focus on the aircraft metal and rivets with a soft blurred background. No human faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "How to Navigate Art Basel Miami Like a Pro—Without Missing a Beat or Getting Overwhelmed",
-   "source": "www.veranda.com",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1IUlJiaTQ3N19UVkh3N3RsRXN2ZHJtckRoMlFickZOR0lfYXNvZVN5R1FDQ1E1WjZ1R25tUnJORDM1OU04WVduaUF3c2RTT1RFWlRpX2hrcTAzRDFFQmFMcEw5a20zQXN6aWx1V0I0M1VncHVoMUJR?oc=5",
-   "t": 1793834429000,
-   "id": 6,
-   "link": "https://www.veranda.com/travel/a74326108/art-basel-miami-what-to-do/",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0pYWlNvemdyMGdJTkhBYVVOSHYzMElsVXlUeVNnTFhhUW5TdlpVNW9XRl9IT0VScEZ0MnN3QWljdy0wNWU5V05oUXZDLUs3ZlM4SVhhRTFYVmNvRVMxdzU2bVRxY1RCTUw1c1QxRGptV1dnOWpMcnBoaTN0Z2t1YTlmeG05RGs1T2pfZ3M5SzhiblFwRW5jeHZUZzJhSmhtMi1RcHVfNlBNNENacVJVVUQ4UUNpWm1NaWZpdGhOS3lUYXY5QlR3UGVvMVg?oc=5",
+   "t": 1793994263000,
+   "id": 1,
+   "link": "https://www.local10.com/news/local/2026/11/06/miami-dade-deputies-accuse-4-of-100k-bath-body-works-cargo-theft-candle-resale-scheme/",
    "thin": false,
-   "desc": "Consider this your cheat sheet to navigating the country’s premier art fair in impeccable style.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "ART BASEL MIAMI BEACH RETURNS DECEMBER 4 THROUGH 6",
-     "ART BASEL CELEBRATES ITS 23RD EDITION IN MIAMI BEACH",
-     "MIAMI ART WEEK MARQUEE FAIR TAKES OVER THE BEACH AGAIN"
+     "FOUR ARRESTED IN 100K MIAMI DADE CANDLE THEFT SCHEME",
+     "MASSIVE MIAMI SCENTED CANDLE RING BUSTED",
+     "HOW AN AUDIT UNRAVELED A 100K MIAMI CANDLE HEIST"
     ],
-    "article": "Art Basel Miami Beach returns December 4 through 6 for its 23rd edition, anchoring Miami Art Week across South Florida. Renowned artists, collectors, and gallerists from around the globe are gathering to showcase prized modern and contemporary works, continuing a local tradition that first launched here in 2002.\n\nAttendees have several entry options for this year's fair. Standard single-day passes grant access to the main floor, while premium passes offer early admission plus entry to local cultural sites including the Lowe Art Museum and Fairchild Tropical Botanic Garden.\n\nVisitors can also purchase combination tickets to attend Design Miami, which marks its 21st anniversary showcasing collectible furniture and jewelry right across the street.",
-    "imagePrompt": "Realistic editorial photograph in 3:4 vertical orientation of a spacious, illuminated contemporary art exhibition hall in Miami Beach. Stylish art patrons observe large, vibrant modern art installations and pristine white display walls filling the upper two-thirds of the frame under clean architectural lighting. The polished gallery floor creates a darker, muted, and minimalist foreground across the bottom third. No text, letters, logos, or watermarks.",
-    "circlePrompt": "Realistic square 1:1 photograph showing a centered close-up view of an avant-garde collectible furniture installation and polished designer lighting piece at a design pavilion. Intricate textures, gleaming materials, and clean ambient gallery lighting highlight the craftsmanship. No people, no faces, and no text, letters, logos, or watermarks."
+    "article": "Four South Florida residents were arrested Thursday after an internal audit uncovered more than $100,000 in stolen Bath and Body Works merchandise from the London Square shopping center near Miami Executive Airport.\n\nDeputies say delivery driver Michel Sanchez-Escanelle, 44, of Hialeah, diverted cartons during trips from a Medley warehouse, passing boxes to Lecsi Linet Figueroa-Martinez, 24. Stolen goods were stored at the northwest Miami-Dade home of Yosdany Martinez-Bravo, 49.\n\nPembroke Pines resident Marlie Rodriguez-Benavides, 35, admitted to buying the 25-dollar retail candles for 8 dollars each to resell for 10 dollars. Investigators seized 17 cartons and about 140,000 dollars in cash. All four suspects face felony charges.",
+    "imagePrompt": "Editorial documentary style vertical 3:4 photograph capturing unmarked police vehicles with flashing emergency lights parked outside a suburban Miami home driveway at dusk. In the upper two-thirds of the frame, law enforcement investigators inspect stacked cardboard shipping boxes near the open rear cargo area of a dark SUV. The lower third of the composition remains simple and darker with shadowed asphalt pavement. Cinematic natural evening lighting, photorealistic news photography, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photograph centered on several sealed cardboard delivery cartons stacked neatly together next to a pair of plain glass jar candles on a concrete floor. Sharp focus on the center boxes, natural daylight, shallow depth of field, no people, no faces, no labels, no text, no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Relentless rain causes flooding in Hialeah",
-   "source": "NBC 6 South Florida",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRkotNFZha2ZQeWpIbFRhNlFydWRTSW9abTgwWHUzakVLaklrWVBMMkE3TGdsa3J3VXVtNHJjall0SWxLV251ZTEyY253aFpwSjNsQnFBOU16Y2xLS2FjWllRUTZVX0FOQnB0cHJxYWNNUnZZZHNNZTVLbXNmMEF5WmdEenpjY2pVUmJ0aWc2ZGZyMlVfVWc0YtIBoAFBVV95cUxNZDh0S0Q1cGlWZUliSHhGZTBRZUwwZHAzcEZHM0VsZHRzUUlHcVQxQTVjaWZmLTVVMmtDd1BMRUJUeVZzSEZDYzJpbWJFN0xGSVNaQldwR1dJSmg5RzNkOE9hcHpNMEJvZXlRSXRiTktzT2pueG5sa00yNzh5bU9sRUtvanFmcW1JS2pVVEk2clE0ZVU3cTluTjdUbC00TE96?oc=5",
-   "t": 1793832957000,
-   "id": 7,
-   "link": "https://www.nbcmiami.com/video/nbc-6-news/relentless-rain-causes-flooding-in-hialeah/3883949/",
-   "thin": true,
-   "desc": "NBC6’s Victoria De Cardenas is live from Hialeah, which was hit with flooding after heavy rain.",
-   "draft": {
-    "headlines": [
-     "RELENTLESS RAINFALL CAUSES FLOODING IN HIALEAH",
-     "HEAVY DOWNPOURS SUBMERGE HIALEAH",
-     "HOW RELENTLESS RAIN FLOODED HIALEAH"
-    ],
-    "article": "Relentless rain has struck Hialeah, leaving the area dealing with sudden flooding. Heavy rainfall moved through the city, creating inundated conditions across local spots. Victoria De Cardenas reported live on the ground in Hialeah as water gathered across the area following the severe downpours. The community faced rapid water accumulation after persistent, unrelenting precipitation soaked the city.",
-    "imagePrompt": "A realistic editorial photograph in a vertical 3:4 orientation capturing a street in Hialeah affected by floodwaters following heavy storm rain. In the upper two-thirds of the image, gloomy overcast skies hang over rain-soaked South Florida neighborhood architecture and wet palm trees. The bottom third consists of simple, darker standing floodwater with subtle ripples reflecting the dim daylight. Authentic documentary style, moody stormy weather, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centered on a close-up view of dark floodwater swirling near a submerged street curb and asphalt during a rainstorm. Rain ripples disturb the water surface in sharp focus. Natural overcast daylight, authentic South Florida storm atmosphere, no people, no faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Miami Heat vs. LA Clippers: Game Highlights",
-   "source": "ESPN",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9FMnlqYmg4bjhQMFlsTmFHdjlpMUVKckVfUjdmVmpET0Q1SmVRMlUzX2dQSUp5V0ZNY3IwOXNKQnVmTWUzQWZqc1B4bG1TN1dTcllLdVNIVDNEellYTHpWSXFHRVNUQnRmWnJ0TWR3?oc=5",
-   "t": 1793860536000,
-   "id": 8,
-   "link": "https://www.espn.com/video/clip/_/id/50385864/game-highlights",
-   "thin": true,
+   "title": "Art Basel Miami Beach’s $4,500 “Premium Discovery” Pass Won’t Get You into the First Preview Day",
+   "source": "Artforum",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR1VySks5bmd4NUJiUVM0U2N0a29MbzJodC0zWkwwdy13bUNrSXlTcWUtSFpLU01XaWVXSEJPT25pb21XZllIQl9ERHEzTGxOU1VqYmNaLS1yM3U5c2VKMVB0ejFuY2JDM3dmSExyQVhjRV9odXQ3SjI4MWx6ekV5ZF82Z09iZXA1Q1BPV1VnRi1CaHVtMmZnSS1sdElBZzJa?oc=5",
+   "t": 1793993606000,
+   "id": 2,
+   "link": "https://www.artforum.com/news/art-basel-miami-beach-unveils-4500-premium-discovery-pass-1234763204/",
+   "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI HEAT TAKE ON LA CLIPPERS IN RECENT MATCHUP",
-     "HEAT VERSUS CLIPPERS GAME HIGHLIGHTS",
-     "HOW MIAMI SQUARED OFF AGAINST THE LA CLIPPERS"
+     "ART BASEL MIAMI BEACH UNVEILS $4,500 PASS WITH PREVIEW RESTRICTIONS",
+     "A $4,500 ART BASEL PASS MISSES DAY ONE PREVIEWS",
+     "WHAT A $4,500 ART BASEL MIAMI BEACH PASS ACTUALLY GETS YOU"
     ],
-    "article": "The Miami Heat recently took the court against the LA Clippers, bringing cross-country basketball action to local supporters across South Florida.\n\nHighlights from the contest feature the key plays and competitive moments between Miami and the Los Angeles team. Heat fans watching the action can view the top sequences from the showdown to see how the matchup played out between the two franchises.\n\nThe matchup between the Miami Heat and the LA Clippers marks another game on the schedule for the local team as the season continues.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical portrait orientation capturing a dramatic basketball action shot inside an arena. An athletic basketball player in a vibrant uniform drives toward the rim above the defender in the upper two-thirds of the composition under bright stadium floodlights. The bottom third features the dark, glossy reflections of the polished court floor. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic 1:1 square macro photograph centered on a classic pebble-grain leather basketball resting on the glossy surface of a hardwood basketball court beneath dramatic indoor stadium lighting. No people's faces, no text, letters, logos, or watermarks."
+    "article": "Art Basel Miami Beach is rolling out high-end passes for this year's fair, but even the top tier will not get collectors into the first preview. The new Premium Discovery pass costs $3,600 for one day and $4,500 for two days. Previews run December 2 and 3 before the Miami Beach show opens to the public December 4 through 6. Passholders completely miss the December 2 inaugural preview, gaining entry only to a three-hour vernissage from 4 p.m. to 7 p.m. on December 3. Perks still include early public-day entry, concierge access, collectors' lounge admission, and a tour with director Bridget Finn. Other options include the $2,600 Premium Connection, a $1,250 Premium pass, or standard $92 tickets.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing an art collector standing in a brightly lit modern art gallery during a high-end exhibition. The upper two-thirds displays sleek white walls, dramatic contemporary installations, and warm overhead spotlighting. The bottom third features dark, polished, reflective concrete flooring creating a simple, shadowed foreground. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on a luxury VIP lanyard badge resting beside an elegant gift box on a white marble table inside an exclusive gallery lounge. Soft interior lighting, no people's faces, no text, letters, logos, or watermarks."
    }
   },
   {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Heat gets much-needed overtime road win over Clippers on game-winner from Klay Thompson. Takeaways",
+   "kind": "news",
+   "label": "News",
+   "title": "Miami-Dade district could close 5 more schools. Here's the list",
+   "source": "USA Today",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY1pjOVNQWXI0SjJSbEZmQUhJMVpIM0lwYmV1aDBZXzhRZ0hWazFsOFpuRkZ4cEJLeFZYVHhrM3B2V2JVZkg3b0lESUg2NV9FbVNId3BTYk5YbkwzLTh4eHV0UDY5TXdrNm4wTGFvY05ucEFoMDVoblhyWC1HYmdTb0FxaVVSbTZwOXA2NFFYamM2a1RZbWx6cF9Za3lOUTJseXBlQl8tcGRXMlBLMkpUa2V3ZjFPcG1OSWVGdG5pdVFxeFEyX0xxa1Y2Wjk?oc=5",
+   "t": 1793993040000,
+   "id": 3,
+   "link": "https://www.usatoday.com/story/news/state/florida/miami/2026/11/06/miami-dade-county-five-more-possible-school-closures/92639298007/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE SCHOOL DISTRICT TARGETS SIX SCHOOLS FOR CLOSURE PROCESS",
+     "MORE MIAMI-DADE SCHOOL CLOSURES COULD BE COMING",
+     "WHAT ENROLLMENT DROPS MEAN FOR OUR MIAMI-DADE SCHOOLS"
+    ],
+    "article": "Miami-Dade County Public Schools has restarted a review that could close several local campuses. According to Superintendent Rafael Villalobos, the Attendance Boundary Committee classified six schools as targeted, with five facing consolidation and one slated for conversion next school year. Another 28 area schools are listed as advised for probable boundary changes.\n\nThe move follows significant enrollment drops across Miami-Dade. On August 13, opening day enrollment for traditional public schools dropped to 215,078, down from 230,172 the previous year. District media relations director Elmo Lugo noted that district-operated schools landed 5,333 students below projections. Villalobos previously paused reviews in September to reassess selections before resuming work this fall.",
+    "imagePrompt": "A realistic editorial photo of an empty public school hallway in South Florida with polished linoleum floors and closed classroom doors, bathed in natural sunlight filtering through high corridor windows. The architectural perspective of the school building fills the upper two-thirds of the vertical frame, receding down into a simple, darker shadow-filled foreground in the lower third. Documentary style, moody ambiance, completely devoid of people, with no text, letters, signs, or watermarks visible anywhere.",
+    "circlePrompt": "A realistic square close-up photograph centered on a classic yellow school bus side panel and vintage round tail light, parked under bright sunny skies with soft tropical foliage blurred in the background. The detailed metal surface and mechanical elements are sharply focused and centered, completely free of people, numbers, lettering, words, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Plea deal rejected for assistant principal accused of killing Miami-Dade teacher",
    "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5WN3NGNnI0REtabDZQa1pkS2JwMTkxbVN1RjVIZjB4dGhCekltUklzWldNUHhMcWNHX1B6ZERRVjN4ekVNOVlsX1lzc3BCVjdubXhDNnh0SGM5VFBkYUpxS1ZZSERLREoyNENxMy1wUzF2ZkZPRjlHRGR1b9IBe0FVX3lxTE1XLWNfSlA1el8weVVhTkEzLU1EN2F5bVBEUnRsdlF6MlRZMHlJNWhNYnIzQU5qVFRUU1FNSnhoeDlFUk5IVjA0amlhR3VlblNVamJRV29Dcm9WNnowSW9zVXpsVmJaS3BOTnJhZ3QzbWk1NFhtam8wdmdEdw?oc=5",
-   "t": 1793860184000,
-   "id": 9,
-   "link": "https://www.miamiherald.com/sports/nba/miami-heat/article317934724.html",
+   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1xekx2NlIwdm56eTFISEdGcEVmeUVsd0ZaZ3VqbVBDU2JqMElqWEdCZG5yM3E5VEZfMHBocFFGNGtyRXhmRGptY3JIcktlQVJFQk9pVVI0eWhnVFA1T01ISHNoUm5FaWxlWTRXTVZXVExCOXJ00gF0QVVfeXFMT205Q0hySm53bFRNczZCamNsdl9HWmxEQXZPNzE5bzk1WS1wZHV1RTlqTHlfdDZmSkQwVG1zclN0UDRHazV2cl8xOHR1Vlc0Skk1NzNqajB6Z3FXNDFKOF9qV3Y4QWlJdHBCMXJEOGJ6OW0zdlQ?oc=5",
+   "t": 1793992620000,
+   "id": 4,
+   "link": "https://www.miamiherald.com/news/local/crime/article317946597.html",
    "thin": false,
+   "desc": "A judge rejected the plea agreement Ernest Roberts was accepting for the killing of Kameela Russell, a beloved teacher at Norland High.",
+   "draft": {
+    "headlines": [
+     "JUDGE REJECTS PLEA DEAL IN NORLAND TEACHER MURDER CASE",
+     "NO PLEA DEAL FOR MIAMI ASSISTANT PRINCIPAL",
+     "NORLAND HIGH MURDER CASE HEADS TO TRIAL AFTER REJECTION"
+    ],
+    "article": "A Miami-Dade judge rejected a plea deal on Friday for former Norland High assistant principal Ernest Joseph Roberts, sending the 47-year-old to trial for the 2019 killing of North Miami-Dade teacher Kameela Russell.\n\nRussell, 41, vanished in May 2019 after failing to pick up her daughter in Miami Gardens, and her body was later discovered in a canal. Roberts had agreed to plead guilty to second-degree murder in exchange for 30 years in prison followed by five years of probation, reduced from a first-degree murder indictment.\n\nCircuit Judge Alberto Milian denied the agreement following emotional statements from Russell's family. Milian then recused himself, sending the case to a new judge for trial.",
+    "imagePrompt": "Editorial documentary style photo in 3:4 vertical portrait orientation of a solemn Miami-Dade courtroom interior. In the upper two-thirds, a dignified wooden judge's bench and an empty jury box are framed under dramatic natural courtroom window lighting. The lower third features dark, polished wooden railings fading into deep shadows. Realistic architectural and legal atmosphere, no people, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "Square 1:1 close-up photograph centered on a classic dark wood judge's gavel resting on a matching wooden sound block atop a polished courtroom table, shallow depth of field with a softly blurred background, no people, no faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami Beach Dealer Faces Another Lawsuit from Artist Alleging Non-Payment as Gallery Dissolves",
+   "source": "ARTnews.com",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONmVfUlZ1RVRSVnE2UnZtM3BmbDN2SzhaRTBXTWUwUnQ3UVpWUDRDdzdVd1RUR2hLVF9QbUJSdTN5UUdUeGtQU1BQMWdOckttUkRBMUQ0R1AzRkRmemhaQUxjX1FnLVJMN2Z0SGZZdkFPUWZJcVBiSVdHT0ZJX3l5VWM0Wm1lb1BQTmd4WldFeU14bVZMWFlwUUpWcnE0SDR4?oc=5",
+   "t": 1793989980000,
+   "id": 5,
+   "link": "https://www.artnews.com/art-news/news/gabriel-kilongo-lawsuit-yirui-jia-jupiter-gallery-1234804928/",
+   "thin": false,
+   "desc": "Gabriel Kilongo, the dealer behind Jupiter, is facing a fourth lawsuit as his gallery dissolves.",
+   "draft": {
+    "headlines": [
+     "MIAMI BEACH ART DEALER FACES FOURTH LAWSUIT OVER UNPAID SALES",
+     "JUPITER GALLERY DEALER SUED AGAIN AS SPACE DISSOLVES",
+     "MIAMI BEACH ART SCENE SHOCKED AS JUPITER DEALER SUED AGAIN"
+    ],
+    "article": "Miami Beach art dealer Gabriel Kilongo is facing legal trouble as his local gallery, Jupiter, dissolves. Kilongo was hit with a fourth lawsuit in September, filed by painter Yirui Jia in the Supreme Court of the State of New York. Jia, who presented a solo exhibition at Jupiter in Miami Beach in 2025, represents the third artist claiming Kilongo withheld proceeds from art sales. According to the legal filing, Kilongo allegedly paid Jia just $2,000 out of $42,000 owed for the sales of five of her paintings.",
+    "imagePrompt": "Editorial photograph of an empty, upscale contemporary art gallery interior in Miami Beach during dusk. High white walls display faint hanging wire marks where art was recently taken down. Polished concrete floors reflect dim ambient light. The upper two-thirds focus on the quiet, stark gallery architecture with clean lines and modern track lighting. The bottom third features dark, simple shadows cast across the foreground. Vertical 3:4 portrait orientation, realistic documentary style, no people, no text, no logos.",
+    "circlePrompt": "Detailed macro close-up photograph of thick, colorful textured oil and acrylic paint strokes on a stretched canvas surface. Impasto brushwork with vibrant pigments catches clean overhead illumination. The textured painted canvas is centered in a square 1:1 composition. No text, no letters, no human faces, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Man, dog found dead at Lauderhill apartment after apparent fire, police say",
+   "source": "NBC 6 South Florida",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORnlnY3d6ekRaeVlwSXRaQ0w2QXRfbldrTVk4R1M2ZlVfUm5DaTFqRHFHWWktTVlxUWFXNlA5SWVSanRCN3QwMWdnQVZaRnJnUDRDbTlXbk80YXJObXM4UzM3T0RmQmNqSlJHY0twdlpiOU10NUF3eDB5ZXZhclkwU2ZWVHFJWC1Delhmc0tDakNmeTB6SjR5TTZnSG95Y2M2Y0ZhaG40UEs3d3IySFdMSU56X3FhOFh6TTFBdXJxRGdsQdIBygFBVV95cUxPa0UtQ0NGbGJlRW45NU1ibTRNZ1p4a3JmbzFXZjlSM29NMFZGZWxEZmZwZUVybGJSNU9RSVhKa3JhUVhFVU1mZXQ0UVlJcl9JRVpqM3FNd0RJdmQ3WmJkcHlBbHE3RlNnQ2JBaFZqTlBTZmU3TGttZWlXOEFhVlpSZXhtdllTM0xNTUI1MGtOTzJEc0l2WndWY2VqUXBhcjZtSDlldURVV1FLdjhBVE03Ri1RNHU3eGFzQ0ExYlVRTFBxRW1yUVBxTllR?oc=5",
+   "t": 1793989487000,
+   "id": 6,
+   "link": "https://www.nbcmiami.com/video/nbc-6-news/man-dog-found-dead-at-lauderhill-apartment-after-apparent-fire-police-say/3884825/",
+   "thin": true,
+   "desc": "The victim’s girlfriend said she was in Jacksonville for a funeral, and that when he stopped answering, she said she knew something was wrong.",
+   "draft": {
+    "headlines": [
+     "MAN AND DOG FOUND DEAD AFTER LAUDERHILL APARTMENT FIRE",
+     "FATAL LAUDERHILL APARTMENT FIRE CLAIMS MAN AND PET",
+     "UNANSWERED CALLS LEAD TO HEARTBREAKING LAUDERHILL FIRE DISCOVERY"
+    ],
+    "article": "A man and a dog were found dead inside a Lauderhill apartment following an apparent fire, according to local police. The tragedy came to light while the victim's girlfriend was visiting Jacksonville to attend a funeral. When the man stopped answering her attempts to contact him, she stated that she immediately knew something was wrong. Responding police officers later located the deceased resident and the dog at the Lauderhill scene. Authorities are looking into the apparent blaze that claimed both lives in the South Florida community.",
+    "imagePrompt": "A vertical 3:4 editorial photojournalism shot of an apartment building exterior in South Florida on an overcast day. In the upper two-thirds of the frame, emergency tape stretches across a walkway in front of residential apartment doors with faint charring around a window frame. The bottom third is composed of deep, simple shadows across damp asphalt. Somber atmosphere, realistic news photography, no people, no text, no logos.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on an apartment entrance door with visible soot and scorch marks along the frame and latch. Crisp documentary style, dramatic overcast lighting highlighting charred textures, no people, no text, no logos."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "FL-27 candidate Eliott Rodriguez to file federal lawsuit against Miami-Dade elections chief",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUVFSTnhycTRON2tJQUtqOHc5bkR1Q04xZC1vREozV0laaGlDa3Y3MWQxSTQwRHotekpJai01aFVXMUM0c3JEUzFxZWlaTDBoMUZBcjFrdjVnUWpLTGNNeWs4b1F5TGViOERzWF9zRWUxMjM5RnBfX0E4WFNxY0tyMmozM1k3VnoxUHlSa0tOWjFkWWVrVmszY0xnS19pM0MzVUdaTjRjVEtsc19iTEVmbGJ0NVpsQ1FUbDY0X2phaXZqemdzMGJF?oc=5",
+   "t": 1793986440000,
+   "id": 7,
+   "link": "https://www.cbsnews.com/miami/video/fl-27-candidate-eliott-rodriguez-to-file-federal-lawsuit-against-miami-dade-elections-chief/",
+   "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI HEAT EDGES CLIPPERS 117-116 IN OVERTIME THRILLER",
-     "KLAY THOMPSON HITS CLUTCH GAME WINNER",
-     "OUR HEAT BOUNCES BACK WITH DRAMATIC WEST COAST TRIUMPH"
+     "ELIOTT RODRIGUEZ TO FILE LAWSUIT AGAINST MIAMI-DADE ELECTIONS CHIEF",
+     "CONGRESSIONAL CANDIDATE SUING MIAMI-DADE ELECTIONS",
+     "WHY A LOCAL CONGRESSIONAL CANDIDATE IS SUING MIAMI-DADE"
     ],
-    "article": "The Miami Heat secured a thrilling 117-116 overtime road victory against the Los Angeles Clippers on Wednesday night at Intuit Dome.\n\nWith one second remaining in overtime, Klay Thompson sank a dramatic corner three-pointer off an inbounds play to erase a two-point deficit and seal the win. Heat teammates immediately rushed the floor from the bench in celebration as Los Angeles failed on a final desperation heave.\n\nThe gritty road triumph brings Miami to 1-1 on its six-game West Coast swing and 3-5 on the season. Miami returns to action Thursday night against the Golden State Warriors in San Francisco.",
-    "imagePrompt": "Editorial sports portrait of a professional basketball player releasing a corner three-point shot under bright arena stadium lights, dramatic arena atmosphere, captured from court level in a 3:4 vertical orientation with the player positioned in the upper two-thirds against subtle blurred stadium rafters, while the hardwood floor in the lower third remains shadowy, dark, and clean. Crisp action photography, sharp focus, vibrant sports lighting, no text, no logos, no watermarks.",
-    "circlePrompt": "A detailed close-up shot of a leather basketball swishing downward through a crisp white net hanging from an orange rim, perfectly centered in a 1:1 square composition, isolated against the soft bokeh glow of indoor arena lights. Dramatic side lighting highlighting the texture of the ball and netting, clean and focused, no human faces, no text, no logos, no watermarks."
+    "article": "Eliott Rodriguez is stepping into a federal legal battle right here in Miami-Dade County. The Democratic candidate seeking election in Florida's 27th Congressional District is set to file a federal lawsuit against the Miami-Dade supervisor of elections. The upcoming legal action directly challenges the local county elections chief. This major move brings federal courtroom scrutiny straight to Miami-Dade election leadership as the contest for Florida's 27th Congressional District moves forward.",
+    "imagePrompt": "A realistic vertical 3:4 editorial portrait of a Hispanic male political candidate wearing a dark business suit, positioned outside an administrative government building under bright South Florida daylight. The subject fills the upper two-thirds of the frame with a serious expression, while the bottom third remains simple, shadowed, and dark. Crisp focus, authentic documentary style, no text, no letters, no watermarks, no logos.",
+    "circlePrompt": "A realistic square 1:1 close-up photo centered on an official wooden gavel resting on top of a leather-bound folder on a polished dark wood desk in an office setting. Warm professional interior lighting, shallow depth of field, no people, no faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Bills Add Another CB Option, Signing Forgotten Ex-Dolphins' Three-Year Starter",
+   "source": "Sports Illustrated",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVpYV3NhOTB6WGhHeENlcnlHWGJZV082c1BwaDV6TExCT193Nk1ZU003ZlRMY0dYdGZJUFJKRlNOUXFhM0tQdUpqdHVJUE13RDgxampQaXFtSEExMThHbFpBLUtvQkRHUE90UWM1Yjd0enpZRFd3ZlI1X2pRQzRXV01QY0w2bXBkVXlQWXRsVm5nRUZ4YlNWMEEyaVF6VllWbC1qcHdCZGNGdUNQb2tFYnRIdEhPU01ReEMzMi1Rdko?oc=5",
+   "t": 1793992620000,
+   "id": 8,
+   "link": "https://www.si.com/nfl/bills/onsi/transactions-bills-add-another-cb-option-signing-forgotten-ex-dolphins-three-year-starter",
+   "thin": false,
+   "desc": "The Buffalo Bills signed a former Miami Dolphins' cornerback who brings 38 career starts to Orchard Park and shares a connection with Christian Benford.",
+   "draft": {
+    "headlines": [
+     "FORMER DOLPHINS CORNERBACK KADER KOHOU SIGNS WITH BUFFALO BILLS",
+     "EX-DOLPHINS STARTER HEADS TO DIVISION RIVAL",
+     "FORMER SOUTH FLORIDA STANDOUT CORNERBACK JOINS FAMILIAR DIVISION ENEMY"
+    ],
+    "article": "Former Miami Dolphins starting cornerback Kader Kohou has signed a practice squad contract with the Buffalo Bills. Kohou recently became available after his release from the Kansas City Chiefs practice squad following a November 1 game against Denver.\n\nKohou first arrived in South Florida in 2022 as an undrafted rookie out of East Texas A&M before earning a major role in the secondary. Over three seasons with Miami, the 5-foot-10 defensive back started 38 of 47 games, recording 25 pass breakups and three interceptions. His first career start was a memorable 21-19 victory over Buffalo at Hard Rock Stadium in September 2022.\n\nAfter spending 2025 on injured reserve, Kohou now joins Miami's AFC East rival.",
+    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of an athletic professional cornerback standing on a football sideline during an overcast afternoon. The player is dressed in neutral athletic practice gear, helmet held at his side, looking ahead with a focused expression. The subject occupies the upper two-thirds of the frame, with the bottom third falling into simple, darker stadium turf and shadow. Realistic stadium lighting, sharp focus, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph of a football cleat planted firmly on the green stadium turf alongside an authentic game football. The subject is centered with a shallow depth of field blurring the background field lines. Clean sports photography, no people, no faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Inter Miami CF vs. Charlotte FC - Live Score - November 07, 2026",
+   "source": "FOX Sports",
+   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT0JQWlNkTHF0alpFRFpGRzJzVnR2YUc1M1NpM3JzdXByQ1pIZ2F5clEtQmhOZE82bU82R2hDUDRTQUpITXJXOElReEk4c1gxTWVUM0E5d205SDJkaE9lbmFrUS15SWcxSER1NG9vel9WZWctbTZnRjY2MkRlVDdFT01iczIzU29UQ3lFd184bVl2RnlNbXJRMnBUMjBmb0NONEE?oc=5",
+   "t": 1793985196000,
+   "id": 9,
+   "link": "https://www.foxsports.com/soccer/mls-inter-miami-cf-vs-charlotte-fc-nov-07-2026-game-boxscore-647465",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "INTER MIAMI CF FACES CHARLOTTE FC ON NOVEMBER 7 2026",
+     "INTER MIAMI CF TAKES ON CHARLOTTE FC",
+     "MIAMI SUPPORTERS WATCH AS INTER MIAMI PLAYS CHARLOTTE FC"
+    ],
+    "article": "Local sports focus centers on Inter Miami CF as the club is set to face Charlotte FC on November 07, 2026. Supporters across the Miami area can follow live scores and regular updates throughout the scheduled match. With Inter Miami CF taking on Charlotte FC, followers of the local squad are keeping a close watch on every score shift and real-time development on November 07, 2026. Stay tuned for ongoing live score information as Inter Miami CF plays Charlotte FC.",
+    "imagePrompt": "A vertical 3:4 realistic editorial photograph capturing professional soccer action under stadium floodlights. In the upper two-thirds of the frame, two soccer athletes in plain unbranded athletic uniforms contest for a soccer ball mid-air against a dramatic twilight sky. The bottom third features dark, clean, out-of-focus stadium grass. No text, no letters, no team crests, no logos, and no watermarks.",
+    "circlePrompt": "A square 1:1 realistic photograph focusing on a classic soccer ball resting directly in the center of a manicured grass pitch under bright evening field lights. The view is a close-up centered detail emphasizing the texture of the turf and ball. No people, no faces, no text, no brand markings, and no watermarks."
    }
   },
   {
@@ -208,13 +208,13 @@
    "id": 10,
    "draft": {
     "headlines": [
-     "JULIA TUTTLE BUYS 640 ACRES ON MIAMI RIVER IN 1891",
-     "TUTTLE ACQUIRES 640 MIAMI RIVER ACRES",
-     "THE 1891 MIAMI RIVER PURCHASE THAT CHANGED SOUTH FLORIDA"
+     "JULIA TUTTLE PURCHASED 640 ACRES ON MIAMI RIVER IN 1891",
+     "640 ACRES BOUGHT ON THE MIAMI RIVER IN 1891",
+     "SOUTH FLORIDA HISTORY: JULIA TUTTLE BUYS 640 ACRES IN 1891"
     ],
-    "article": "In 1891, Julia Tuttle officially moved to South Florida and secured a notable piece of local waterfront property.\n\nFollowing her arrival, Tuttle bought a total of 640 acres situated directly on the north bank of the Miami River.\n\nThe major transaction in 1891 placed a massive 640-acre parcel along the South Florida riverfront under Tuttle's ownership.\n\nTuttle's 1891 relocation and her substantial land purchase on the north bank of the Miami River stand as a defining milestone in our local history.",
-    "imagePrompt": "A vintage archival-style vertical photograph in 3:4 aspect ratio depicting the undeveloped north bank of the Miami River in the late 19th century. The upper two-thirds of the image features wild subtropical foliage, pine flatwoods, and native riverfront greenery under hazy sunlight. The bottom third consists of simple, dark river water with deep shadows and gentle ripples. Antique sepia photograph texture with soft vignette and fine grain. No identifiable people. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centered on an aged 19th-century stone property boundary marker resting in sandy soil near river reeds. Detailed texture of weathered limestone and native South Florida ground cover under direct natural daylight. No faces, no text, no letters, no logos, and no watermarks."
+    "article": "In 1891, Julia Tuttle made her move to South Florida. During that same year, she completed a major local land purchase along the water.\n\nTuttle acquired 640 acres situated directly on the north bank of the Miami River.\n\nHer arrival in South Florida in 1891 coincided with securing this expansive riverfront property. The entire 640-acre tract purchased by Tuttle stretched along the north bank of the Miami River, establishing her presence right by the river.",
+    "imagePrompt": "An archival-style vintage 1890s editorial photograph showing an undeveloped subtropical riverbank along a wide river, viewed looking toward the north shore. Dense native palm trees, pines, and wild brush fill the landscape under an overcast, sepia-toned sky in the upper two-thirds of the vertical frame. The bottom third features dark, calm river water with subtle ripples, keeping the lower area simple and dark. Authentic period film grain, muted sepia and monochrome tones, no text, no logos, no recognizable people.",
+    "circlePrompt": "A realistic square photograph focused on a rustic late nineteenth-century surveyor compass and brass measuring chain resting on weathered wood near riverbank greenery. The vintage brass instruments are centered in sharp focus with soft, natural daylight. In the background, out-of-focus river water and subtropical foliage create a natural setting. No people, no faces, no text, no watermarks."
    }
   }
  ]
