@@ -1,181 +1,181 @@
 {
- "date": "Friday, November 6",
- "pick": "mw5e4mnq",
+ "date": "Saturday, November 7",
+ "pick": "mw6pgy28",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade deputies accuse 4 of $100K Bath & Body Works cargo theft, candle resale scheme",
+   "title": "Man hospitalized after being shot in northwest Miami-Dade",
    "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQT0pYWlNvemdyMGdJTkhBYVVOSHYzMElsVXlUeVNnTFhhUW5TdlpVNW9XRl9IT0VScEZ0MnN3QWljdy0wNWU5V05oUXZDLUs3ZlM4SVhhRTFYVmNvRVMxdzU2bVRxY1RCTUw1c1QxRGptV1dnOWpMcnBoaTN0Z2t1YTlmeG05RGs1T2pfZ3M5SzhiblFwRW5jeHZUZzJhSmhtMi1RcHVfNlBNNENacVJVVUQ4UUNpWm1NaWZpdGhOS3lUYXY5QlR3UGVvMVg?oc=5",
-   "t": 1793994263000,
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUlZwTDQ2eVotMVAzdlNsS0hyaHBhZFZYcFhudnhRSUxwVnFyX3Y1c1hYdnFRTUtlNnh2N09BcVctdU9uZ205dUhwZnd1azdUOE02T0I4eVRma00wTHJOU21rMmVXdm9sbDAtRE9ReVY0NDVtZGR0UkJ1emp6T2V4ODl4T2d2WE5VaWw5bThja2RQRFNneUViLVFfZndaUXZVeDRDaENVSQ?oc=5",
+   "t": 1794072905000,
    "id": 1,
-   "link": "https://www.local10.com/news/local/2026/11/06/miami-dade-deputies-accuse-4-of-100k-bath-body-works-cargo-theft-candle-resale-scheme/",
+   "link": "https://www.local10.com/news/local/2026/11/07/man-hospitalized-after-being-shot-in-northwest-miami-dade/",
    "thin": false,
-   "desc": "",
+   "desc": "Deputies with the Miami-Dade Sheriff’s Office are investigating a shooting that they say left a man hospitalized on Friday night.",
    "draft": {
     "headlines": [
-     "FOUR ARRESTED IN 100K MIAMI DADE CANDLE THEFT SCHEME",
-     "MASSIVE MIAMI SCENTED CANDLE RING BUSTED",
-     "HOW AN AUDIT UNRAVELED A 100K MIAMI CANDLE HEIST"
+     "MAN HOSPITALIZED AFTER LATE NIGHT SHOOTING IN GLADEVIEW",
+     "GLADEVIEW SHOOTING SENDS MAN TO HOSPITAL",
+     "NORTHWEST MIAMI-DADE INVESTIGATION UNDERWAY AFTER GUNFIRE IN GLADEVIEW"
     ],
-    "article": "Four South Florida residents were arrested Thursday after an internal audit uncovered more than $100,000 in stolen Bath and Body Works merchandise from the London Square shopping center near Miami Executive Airport.\n\nDeputies say delivery driver Michel Sanchez-Escanelle, 44, of Hialeah, diverted cartons during trips from a Medley warehouse, passing boxes to Lecsi Linet Figueroa-Martinez, 24. Stolen goods were stored at the northwest Miami-Dade home of Yosdany Martinez-Bravo, 49.\n\nPembroke Pines resident Marlie Rodriguez-Benavides, 35, admitted to buying the 25-dollar retail candles for 8 dollars each to resell for 10 dollars. Investigators seized 17 cartons and about 140,000 dollars in cash. All four suspects face felony charges.",
-    "imagePrompt": "Editorial documentary style vertical 3:4 photograph capturing unmarked police vehicles with flashing emergency lights parked outside a suburban Miami home driveway at dusk. In the upper two-thirds of the frame, law enforcement investigators inspect stacked cardboard shipping boxes near the open rear cargo area of a dark SUV. The lower third of the composition remains simple and darker with shadowed asphalt pavement. Cinematic natural evening lighting, photorealistic news photography, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 macro photograph centered on several sealed cardboard delivery cartons stacked neatly together next to a pair of plain glass jar candles on a concrete floor. Sharp focus on the center boxes, natural daylight, shallow depth of field, no people, no faces, no labels, no text, no logos."
+    "article": "A late-night shooting in northwest Miami-Dade left one man hospitalized on Friday. Miami-Dade Sheriff's Office deputies responded to the scene around 11:15 p.m. near the intersection of Northwest 24th Avenue and 63rd Street in the Gladeview neighborhood. Responding deputies located a man suffering from an apparent gunshot wound to his upper extremities. Miami-Dade Fire Rescue medics arrived and transported him to a nearby hospital in stable condition. Authorities have not released details about a possible suspect or the circumstances surrounding the violence. Anyone with information is urged to reach out to Miami-Dade Crime Stoppers at 305-471-8477.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing a quiet street intersection in a residential neighborhood at night, illuminated by the glow of distant red and blue emergency flashers reflecting on the pavement. The upper two-thirds shows yellow crime scene barrier tape stretched across the roadway with emergency patrol cruisers blurred in the background. The bottom third is composed of dark, clean asphalt in deep shadow. Moody night atmosphere, photojournalistic style, high detail, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo featuring a close-up detail of yellow barricade tape knotted securely around a wooden utility pole at night, softly lit by faint emergency vehicle strobes. The texture of the weathered wood and plastic tape is centered with a shallow depth of field blurring the background. No people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Art Basel Miami Beach’s $4,500 “Premium Discovery” Pass Won’t Get You into the First Preview Day",
-   "source": "Artforum",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQR1VySks5bmd4NUJiUVM0U2N0a29MbzJodC0zWkwwdy13bUNrSXlTcWUtSFpLU01XaWVXSEJPT25pb21XZllIQl9ERHEzTGxOU1VqYmNaLS1yM3U5c2VKMVB0ejFuY2JDM3dmSExyQVhjRV9odXQ3SjI4MWx6ekV5ZF82Z09iZXA1Q1BPV1VnRi1CaHVtMmZnSS1sdElBZzJa?oc=5",
-   "t": 1793993606000,
-   "id": 2,
-   "link": "https://www.artforum.com/news/art-basel-miami-beach-unveils-4500-premium-discovery-pass-1234763204/",
-   "thin": false,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "ART BASEL MIAMI BEACH UNVEILS $4,500 PASS WITH PREVIEW RESTRICTIONS",
-     "A $4,500 ART BASEL PASS MISSES DAY ONE PREVIEWS",
-     "WHAT A $4,500 ART BASEL MIAMI BEACH PASS ACTUALLY GETS YOU"
-    ],
-    "article": "Art Basel Miami Beach is rolling out high-end passes for this year's fair, but even the top tier will not get collectors into the first preview. The new Premium Discovery pass costs $3,600 for one day and $4,500 for two days. Previews run December 2 and 3 before the Miami Beach show opens to the public December 4 through 6. Passholders completely miss the December 2 inaugural preview, gaining entry only to a three-hour vernissage from 4 p.m. to 7 p.m. on December 3. Perks still include early public-day entry, concierge access, collectors' lounge admission, and a tour with director Bridget Finn. Other options include the $2,600 Premium Connection, a $1,250 Premium pass, or standard $92 tickets.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing an art collector standing in a brightly lit modern art gallery during a high-end exhibition. The upper two-thirds displays sleek white walls, dramatic contemporary installations, and warm overhead spotlighting. The bottom third features dark, polished, reflective concrete flooring creating a simple, shadowed foreground. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a luxury VIP lanyard badge resting beside an elegant gift box on a white marble table inside an exclusive gallery lounge. Soft interior lighting, no people's faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami-Dade district could close 5 more schools. Here's the list",
-   "source": "USA Today",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNY1pjOVNQWXI0SjJSbEZmQUhJMVpIM0lwYmV1aDBZXzhRZ0hWazFsOFpuRkZ4cEJLeFZYVHhrM3B2V2JVZkg3b0lESUg2NV9FbVNId3BTYk5YbkwzLTh4eHV0UDY5TXdrNm4wTGFvY05ucEFoMDVoblhyWC1HYmdTb0FxaVVSbTZwOXA2NFFYamM2a1RZbWx6cF9Za3lOUTJseXBlQl8tcGRXMlBLMkpUa2V3ZjFPcG1OSWVGdG5pdVFxeFEyX0xxa1Y2Wjk?oc=5",
-   "t": 1793993040000,
-   "id": 3,
-   "link": "https://www.usatoday.com/story/news/state/florida/miami/2026/11/06/miami-dade-county-five-more-possible-school-closures/92639298007/",
-   "thin": false,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "MIAMI-DADE SCHOOL DISTRICT TARGETS SIX SCHOOLS FOR CLOSURE PROCESS",
-     "MORE MIAMI-DADE SCHOOL CLOSURES COULD BE COMING",
-     "WHAT ENROLLMENT DROPS MEAN FOR OUR MIAMI-DADE SCHOOLS"
-    ],
-    "article": "Miami-Dade County Public Schools has restarted a review that could close several local campuses. According to Superintendent Rafael Villalobos, the Attendance Boundary Committee classified six schools as targeted, with five facing consolidation and one slated for conversion next school year. Another 28 area schools are listed as advised for probable boundary changes.\n\nThe move follows significant enrollment drops across Miami-Dade. On August 13, opening day enrollment for traditional public schools dropped to 215,078, down from 230,172 the previous year. District media relations director Elmo Lugo noted that district-operated schools landed 5,333 students below projections. Villalobos previously paused reviews in September to reassess selections before resuming work this fall.",
-    "imagePrompt": "A realistic editorial photo of an empty public school hallway in South Florida with polished linoleum floors and closed classroom doors, bathed in natural sunlight filtering through high corridor windows. The architectural perspective of the school building fills the upper two-thirds of the vertical frame, receding down into a simple, darker shadow-filled foreground in the lower third. Documentary style, moody ambiance, completely devoid of people, with no text, letters, signs, or watermarks visible anywhere.",
-    "circlePrompt": "A realistic square close-up photograph centered on a classic yellow school bus side panel and vintage round tail light, parked under bright sunny skies with soft tropical foliage blurred in the background. The detailed metal surface and mechanical elements are sharply focused and centered, completely free of people, numbers, lettering, words, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Plea deal rejected for assistant principal accused of killing Miami-Dade teacher",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1xekx2NlIwdm56eTFISEdGcEVmeUVsd0ZaZ3VqbVBDU2JqMElqWEdCZG5yM3E5VEZfMHBocFFGNGtyRXhmRGptY3JIcktlQVJFQk9pVVI0eWhnVFA1T01ISHNoUm5FaWxlWTRXTVZXVExCOXJ00gF0QVVfeXFMT205Q0hySm53bFRNczZCamNsdl9HWmxEQXZPNzE5bzk1WS1wZHV1RTlqTHlfdDZmSkQwVG1zclN0UDRHazV2cl8xOHR1Vlc0Skk1NzNqajB6Z3FXNDFKOF9qV3Y4QWlJdHBCMXJEOGJ6OW0zdlQ?oc=5",
-   "t": 1793992620000,
-   "id": 4,
-   "link": "https://www.miamiherald.com/news/local/crime/article317946597.html",
-   "thin": false,
-   "desc": "A judge rejected the plea agreement Ernest Roberts was accepting for the killing of Kameela Russell, a beloved teacher at Norland High.",
-   "draft": {
-    "headlines": [
-     "JUDGE REJECTS PLEA DEAL IN NORLAND TEACHER MURDER CASE",
-     "NO PLEA DEAL FOR MIAMI ASSISTANT PRINCIPAL",
-     "NORLAND HIGH MURDER CASE HEADS TO TRIAL AFTER REJECTION"
-    ],
-    "article": "A Miami-Dade judge rejected a plea deal on Friday for former Norland High assistant principal Ernest Joseph Roberts, sending the 47-year-old to trial for the 2019 killing of North Miami-Dade teacher Kameela Russell.\n\nRussell, 41, vanished in May 2019 after failing to pick up her daughter in Miami Gardens, and her body was later discovered in a canal. Roberts had agreed to plead guilty to second-degree murder in exchange for 30 years in prison followed by five years of probation, reduced from a first-degree murder indictment.\n\nCircuit Judge Alberto Milian denied the agreement following emotional statements from Russell's family. Milian then recused himself, sending the case to a new judge for trial.",
-    "imagePrompt": "Editorial documentary style photo in 3:4 vertical portrait orientation of a solemn Miami-Dade courtroom interior. In the upper two-thirds, a dignified wooden judge's bench and an empty jury box are framed under dramatic natural courtroom window lighting. The lower third features dark, polished wooden railings fading into deep shadows. Realistic architectural and legal atmosphere, no people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "Square 1:1 close-up photograph centered on a classic dark wood judge's gavel resting on a matching wooden sound block atop a polished courtroom table, shallow depth of field with a softly blurred background, no people, no faces, no text, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami Beach Dealer Faces Another Lawsuit from Artist Alleging Non-Payment as Gallery Dissolves",
-   "source": "ARTnews.com",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxONmVfUlZ1RVRSVnE2UnZtM3BmbDN2SzhaRTBXTWUwUnQ3UVpWUDRDdzdVd1RUR2hLVF9QbUJSdTN5UUdUeGtQU1BQMWdOckttUkRBMUQ0R1AzRkRmemhaQUxjX1FnLVJMN2Z0SGZZdkFPUWZJcVBiSVdHT0ZJX3l5VWM0Wm1lb1BQTmd4WldFeU14bVZMWFlwUUpWcnE0SDR4?oc=5",
-   "t": 1793989980000,
-   "id": 5,
-   "link": "https://www.artnews.com/art-news/news/gabriel-kilongo-lawsuit-yirui-jia-jupiter-gallery-1234804928/",
-   "thin": false,
-   "desc": "Gabriel Kilongo, the dealer behind Jupiter, is facing a fourth lawsuit as his gallery dissolves.",
-   "draft": {
-    "headlines": [
-     "MIAMI BEACH ART DEALER FACES FOURTH LAWSUIT OVER UNPAID SALES",
-     "JUPITER GALLERY DEALER SUED AGAIN AS SPACE DISSOLVES",
-     "MIAMI BEACH ART SCENE SHOCKED AS JUPITER DEALER SUED AGAIN"
-    ],
-    "article": "Miami Beach art dealer Gabriel Kilongo is facing legal trouble as his local gallery, Jupiter, dissolves. Kilongo was hit with a fourth lawsuit in September, filed by painter Yirui Jia in the Supreme Court of the State of New York. Jia, who presented a solo exhibition at Jupiter in Miami Beach in 2025, represents the third artist claiming Kilongo withheld proceeds from art sales. According to the legal filing, Kilongo allegedly paid Jia just $2,000 out of $42,000 owed for the sales of five of her paintings.",
-    "imagePrompt": "Editorial photograph of an empty, upscale contemporary art gallery interior in Miami Beach during dusk. High white walls display faint hanging wire marks where art was recently taken down. Polished concrete floors reflect dim ambient light. The upper two-thirds focus on the quiet, stark gallery architecture with clean lines and modern track lighting. The bottom third features dark, simple shadows cast across the foreground. Vertical 3:4 portrait orientation, realistic documentary style, no people, no text, no logos.",
-    "circlePrompt": "Detailed macro close-up photograph of thick, colorful textured oil and acrylic paint strokes on a stretched canvas surface. Impasto brushwork with vibrant pigments catches clean overhead illumination. The textured painted canvas is centered in a square 1:1 composition. No text, no letters, no human faces, no watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Man, dog found dead at Lauderhill apartment after apparent fire, police say",
+   "title": "Man hospitalized after overnight shooting in Gladeview, deputies say",
    "source": "NBC 6 South Florida",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxORnlnY3d6ekRaeVlwSXRaQ0w2QXRfbldrTVk4R1M2ZlVfUm5DaTFqRHFHWWktTVlxUWFXNlA5SWVSanRCN3QwMWdnQVZaRnJnUDRDbTlXbk80YXJObXM4UzM3T0RmQmNqSlJHY0twdlpiOU10NUF3eDB5ZXZhclkwU2ZWVHFJWC1Delhmc0tDakNmeTB6SjR5TTZnSG95Y2M2Y0ZhaG40UEs3d3IySFdMSU56X3FhOFh6TTFBdXJxRGdsQdIBygFBVV95cUxPa0UtQ0NGbGJlRW45NU1ibTRNZ1p4a3JmbzFXZjlSM29NMFZGZWxEZmZwZUVybGJSNU9RSVhKa3JhUVhFVU1mZXQ0UVlJcl9JRVpqM3FNd0RJdmQ3WmJkcHlBbHE3RlNnQ2JBaFZqTlBTZmU3TGttZWlXOEFhVlpSZXhtdllTM0xNTUI1MGtOTzJEc0l2WndWY2VqUXBhcjZtSDlldURVV1FLdjhBVE03Ri1RNHU3eGFzQ0ExYlVRTFBxRW1yUVBxTllR?oc=5",
-   "t": 1793989487000,
-   "id": 6,
-   "link": "https://www.nbcmiami.com/video/nbc-6-news/man-dog-found-dead-at-lauderhill-apartment-after-apparent-fire-police-say/3884825/",
-   "thin": true,
-   "desc": "The victim’s girlfriend said she was in Jacksonville for a funeral, and that when he stopped answering, she said she knew something was wrong.",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVDIwQ0l1SEdkODN3Y3ZJQVNyU3FHWWdNc2FmcEM5N0kxMTFSdlp5NzAxcWNkZ2pGUGZ3aS04RW9yM2wzcGJOZWJiaTYzRDU3TVFKOU5vNGF2cHZXUzBCOHdmUE5DeS00cmNsOWhha281ZTdnR3ltUW9Fek03RUFaYmlzSGhXWTctM2ctQUlmN1NDNjdyblhpcmZUMnRwSmNBVkFfLUF0UTRaeUY5NXdrcDFn0gG6AUFVX3lxTFA0VVlBeXlsV2R2TWx5Nlg0S0RRcXp3eXRUMnlmMnM0MnhReVI2Skg5aFlpbzFFOHhqZ3dGZThPRWdNV1BfSFVJLW9lUGhtUGd4SklIMW9EV2Z6S05tUHNxd3JsMl9aSjJGTW5XaUMzZkVsQVBTSnRhTlZEbE5EdTBLYlVTUXB0alhmNHNMSWlXN25rZ3NWYVRXYTNpSXlQdHVhMmRsRFpYb3o3c2FtZ1J2TDRzZTdMLVJEdw?oc=5",
+   "t": 1794065969000,
+   "id": 2,
+   "link": "https://www.nbcmiami.com/news/local/man-hospitalized-after-overnight-shooting-in-gladeview-deputies-say/3885113/",
+   "thin": false,
+   "desc": "",
    "draft": {
     "headlines": [
-     "MAN AND DOG FOUND DEAD AFTER LAUDERHILL APARTMENT FIRE",
-     "FATAL LAUDERHILL APARTMENT FIRE CLAIMS MAN AND PET",
-     "UNANSWERED CALLS LEAD TO HEARTBREAKING LAUDERHILL FIRE DISCOVERY"
+     "MAN HOSPITALIZED IN STABLE CONDITION AFTER GLAVEVIEW SHOOTING FRIDAY",
+     "OVERNIGHT SHOOTING IN GLADEVIEW SENDS MAN TO HOSPITAL",
+     "DEPUTIES INVESTIGATE LATE NIGHT GUNFIRE AT GLADEVIEW INTERSECTION"
     ],
-    "article": "A man and a dog were found dead inside a Lauderhill apartment following an apparent fire, according to local police. The tragedy came to light while the victim's girlfriend was visiting Jacksonville to attend a funeral. When the man stopped answering her attempts to contact him, she stated that she immediately knew something was wrong. Responding police officers later located the deceased resident and the dog at the Lauderhill scene. Authorities are looking into the apparent blaze that claimed both lives in the South Florida community.",
-    "imagePrompt": "A vertical 3:4 editorial photojournalism shot of an apartment building exterior in South Florida on an overcast day. In the upper two-thirds of the frame, emergency tape stretches across a walkway in front of residential apartment doors with faint charring around a window frame. The bottom third is composed of deep, simple shadows across damp asphalt. Somber atmosphere, realistic news photography, no people, no text, no logos.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on an apartment entrance door with visible soot and scorch marks along the frame and latch. Crisp documentary style, dramatic overcast lighting highlighting charred textures, no people, no text, no logos."
+    "article": "Miami-Dade Sheriff's Office deputies responded to reports of gunfire in the Gladeview area late Friday night. Deputies arrived at the scene near the intersection of Northwest 24th Avenue and 63rd at approximately 11:15 p.m. following emergency calls reporting that someone had been shot. When deputies arrived in the neighborhood, they discovered an injured man suffering from an apparent gunshot wound. First responders transported the victim directly to a local hospital for medical treatment. Authorities confirmed that the man remained in stable condition following the overnight incident.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait aspect ratio depicting a nighttime Miami street intersection in Gladeview. In the upper two-thirds of the frame, flashing blue and red emergency vehicle lights cast reflections across residential buildings and parked patrol vehicles. The bottom third of the composition is simple, featuring dark asphalt bathed in deep shadow. Authentic photojournalism style, moody night atmosphere, with no visible text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 editorial photo showing a close-up detail on a Miami street corner at night. Centered in the frame is yellow barrier tape secured to a metal post under an amber streetlamp, with reflections on the damp pavement and soft distant emergency lights blurred in the background. No people's faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "FL-27 candidate Eliott Rodriguez to file federal lawsuit against Miami-Dade elections chief",
+   "title": "Remembering a Miami-Dade deputy's service a year after he was killed on duty",
    "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOUVFSTnhycTRON2tJQUtqOHc5bkR1Q04xZC1vREozV0laaGlDa3Y3MWQxSTQwRHotekpJai01aFVXMUM0c3JEUzFxZWlaTDBoMUZBcjFrdjVnUWpLTGNNeWs4b1F5TGViOERzWF9zRWUxMjM5RnBfX0E4WFNxY0tyMmozM1k3VnoxUHlSa0tOWjFkWWVrVmszY0xnS19pM0MzVUdaTjRjVEtsc19iTEVmbGJ0NVpsQ1FUbDY0X2phaXZqemdzMGJF?oc=5",
-   "t": 1793986440000,
-   "id": 7,
-   "link": "https://www.cbsnews.com/miami/video/fl-27-candidate-eliott-rodriguez-to-file-federal-lawsuit-against-miami-dade-elections-chief/",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcDBVZWdPX2w0RjRCS2xBaHlQWTR5c1o1eUxfZl9fMjU0VzVqLThvSUE4U0thaTZ6Mnk5ZllvYW9Tek9NdjNFVDlZTXlDci05TThEUktkX3d5eXJTak92end1TDZsckJUZWt5TFV3Q200NFpiSHlhWmFoZ1IxbXZZMEY0Ql9JVHctQmdKblJXVTJldkZDQUxIMThnRDZ2aDZnd1ctNHBiQ1F3N3NzY0NZWVdn?oc=5",
+   "t": 1794060480000,
+   "id": 3,
+   "link": "https://www.cbsnews.com/miami/video/remembering-a-miami-dade-deputys-service-a-year-after-he-was-killed-on-duty/",
    "thin": true,
+   "desc": "Camilla Fernandez shares how MDSO is honoring the life and service of Deputy Devin Jaramillo.",
+   "draft": {
+    "headlines": [
+     "MIAMI-DADE HONORS DEPUTY DEVIN JARAMILLO ONE YEAR AFTER DEATH",
+     "REMEMBERING DEPUTY DEVIN JARAMILLO ONE YEAR LATER",
+     "HOW MIAMI-DADE IS REMEMBERING FALLEN DEPUTY DEVIN JARAMILLO"
+    ],
+    "article": "The Miami-Dade community is pausing to reflect and honor Deputy Devin Jaramillo one year after he was killed while serving on duty. Law enforcement across the area is paying tribute to his dedication and sacrifice. Camilla Fernandez shared details on how the Miami-Dade Sheriff's Office is remembering Deputy Jaramillo, marking one full year since his line-of-duty death. MDSO continues honoring his life and his service to the local community as fellow deputies and residents keep his memory alive.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait of a solemn law enforcement memorial scene in Miami-Dade. In the upper two-thirds of the frame, a lone officer in uniform stands with bowed head during a daytime outdoor ceremony. The bottom third is composed of simple, dark ground and deep shadows. Reverent atmosphere, soft natural lighting, with no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on a folded memorial flag resting beside an officer dress cap on a dark polished surface. Gentle directional lighting creates soft highlights and dignified shadows. No people, no faces, and no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Miami Beach shoreline wins “Best of the Best” award",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZm1rd2IwSFhZWkE2d3otaWhfMkFtaklqQmN0U0F3dWppVElfbHd1WkVnbTBiZ21JRUtmWVN6UGtOZDJoWXBNOXNsalRiZURSdHJKdVBoYUs5VTF1TDZtUVJoOW9xVDZYa1hqZm1XRHZwVGxMOHVPaHNHZWxRN0x0Q0FVNDJUU2hINXh6dzZDdW5KdkE?oc=5",
+   "t": 1794056519000,
+   "id": 4,
+   "link": "https://wsvn.com/news/local/miami-dade/miami-beach-shoreline-wins-best-of-the-best-award/",
+   "thin": false,
+   "desc": "MIAMI BEACH, FLA. (WSVN) - Miami Beach’s beaches received top honors for its beaches with a special award.The city’s seven-mile shoreline took first place in Read More",
+   "draft": {
+    "headlines": [
+     "MIAMI BEACH WINS NATIONAL BEST OF THE BEST SHORELINE AWARD",
+     "MIAMI BEACH NAMED BEST SHORELINE IN THE NATION",
+     "OUR SEVEN MILE SHORELINE OFFICIALLY BEATS OUT THE ENTIRE COUNTRY"
+    ],
+    "article": "Miami Beach has received top honors for its beaches, with the city's seven-mile shoreline taking first place in the national Best of the Best award. Presented by the American Shore and Beach Preservation Association, the special honor was awarded after Miami Beach beat out shoreline finalists from across the country.\n\nThe recognized seven-mile shoreline serves a critical protective purpose for the community. The entire coastal stretch acts as a natural shield, functioning to block big ocean waves and stop dangerous floods from impacting the beach.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photograph capturing an expansive view of the Miami Beach shoreline on a bright day. The upper two-thirds shows turquoise ocean surf rolling onto the wide sand beach and protective coastal dunes under an open sky. The bottom third features darker, damp sand with smooth ocean foam textures, keeping it simple and slightly shadowed. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on ocean waves washing onto the edge of a protective sandy beach embankment with sea oats. Focus is sharp on the water's edge and sand barrier with soft natural lighting. No people's faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Hilton Miami Beach Brings New Life to Historic Art Deco Buildings in 2027",
+   "source": "Luxury Travel Magazine",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQejRYQllQbkxhbjZuRzVyWWFYanJJTTdtSU05eWFvd2d6M0xjUnR3WEp1NEgxZE9yZUtQSXZGYmpFQlVGbDNYMFM0ZWZOMXpxbmZRa1M0SWVZaGg5MnBIOGhNbkFjVEw0bC1KWnJHeFBVTUNqV0VoNXlpTTc1WGc0RS1XR1ZDWDJIamhRZUhyYjFmTGZ4UHNjVDZ2TG91dmZoMlFtb3NtTzVWZDlXdTJ1YmJoZm04QlE?oc=5",
+   "t": 1794055779000,
+   "id": 5,
+   "link": "https://www.luxurytravelmagazine.com/news-articles/hilton-miami-beach-brings-new-life-to-historic-art-deco-buildings",
+   "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "ELIOTT RODRIGUEZ TO FILE LAWSUIT AGAINST MIAMI-DADE ELECTIONS CHIEF",
-     "CONGRESSIONAL CANDIDATE SUING MIAMI-DADE ELECTIONS",
-     "WHY A LOCAL CONGRESSIONAL CANDIDATE IS SUING MIAMI-DADE"
+     "HILTON MIAMI BEACH MERGES FIVE HISTORIC BUILDINGS FOR 2027 OPENING",
+     "HISTORIC ART DECO BLOCK IN MIAMI BEACH REOPENING IN 2027",
+     "SEE HOW FIVE HISTORIC MIAMI BEACH BUILDINGS ARE UNITING"
     ],
-    "article": "Eliott Rodriguez is stepping into a federal legal battle right here in Miami-Dade County. The Democratic candidate seeking election in Florida's 27th Congressional District is set to file a federal lawsuit against the Miami-Dade supervisor of elections. The upcoming legal action directly challenges the local county elections chief. This major move brings federal courtroom scrutiny straight to Miami-Dade election leadership as the contest for Florida's 27th Congressional District moves forward.",
-    "imagePrompt": "A realistic vertical 3:4 editorial portrait of a Hispanic male political candidate wearing a dark business suit, positioned outside an administrative government building under bright South Florida daylight. The subject fills the upper two-thirds of the frame with a serious expression, while the bottom third remains simple, shadowed, and dark. Crisp focus, authentic documentary style, no text, no letters, no watermarks, no logos.",
-    "circlePrompt": "A realistic square 1:1 close-up photo centered on an official wooden gavel resting on top of a leather-bound folder on a polished dark wood desk in an office setting. Warm professional interior lighting, shallow depth of field, no people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "Hilton Miami Beach is scheduled to open in early 2027 at 2000 Park Avenue in the Museum Historic District. The 289-room hotel will restore and unite five historic properties across nearly an entire city block following years of vacancy and a 2012 fire. Dating from 1938 to 1953, the restored structures highlight Streamline Moderne and Miami Modern designs. Notable buildings include Henry Hohauser's 1939 Collins Park Hotel, L. Murray Dixon's 1938 Adams Hotel, and Albert Anis's 1940 Tyler Hotel. Situated near Lincoln Road and Ocean Drive, the property will offer three swimming pools, multiple dining concepts, and tropical gathering venues.",
+    "imagePrompt": "A vertical 3:4 editorial architectural photograph of a restored historic Miami Beach Art Deco hotel exterior under clear daylight. The upper two-thirds features Streamline Moderne curved glass corners, stepped towers, smooth pastel stucco, and geometric architectural details surrounded by tropical palm fronds. The bottom third is composed of a simple, dark asphalt street casting deep shadows across the foreground. Crisp architectural lighting, realistic natural textures, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 close-up detail photograph of classic Miami Beach architectural elements, focusing on an ornate Art Deco bas-relief stone carving and curved ribbon window panel. Warm sunlight highlights the geometric chevron patterns and soft pastel pink and green painted concrete. Centered composition with smooth tropical shadows, realistic textures, no human faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "1 hospitalized, MDSO block off Miami neighborhood after incident",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB6S2lfMGZkN0JjS3lQV3pybVkyWm9LWGZfaTdlZE9SN0ZVSWpWclpsRUQ1bWZib09udzdhbVNFV2lCYXZtcWp2WUxZdGZSOFgxalFtTWpYSjc4Y2hFXzZVSk8wc1BlZWp5WHNGUVNId0puN1U?oc=5",
+   "t": 1794053571000,
+   "id": 6,
+   "link": "https://wsvn.com/news/local/miami-dade/person-hospitalized-miami/",
+   "thin": false,
+   "desc": "MIAMI (WSVN) - A man was hospitalized after an incident in Miami, according to Miami-Dade Sheriff’s Office deputies.The incident took place on Northwest 63rd Street Read More",
+   "draft": {
+    "headlines": [
+     "MAN HOSPITALIZED AFTER SATURDAY MORNING SHOOTING IN MIAMI",
+     "INVESTIGATION UNDERWAY AFTER NORTHWEST MIAMI SHOOTING",
+     "WHAT HAPPENED ON NORTHWEST 63RD STREET SATURDAY MORNING?"
+    ],
+    "article": "A man is in stable condition at an area hospital following a shooting Saturday morning in Miami. Miami-Dade Sheriff's Office deputies responded to the intersection of Northwest 63rd Street and 24th Avenue. Upon arrival, deputies located a man with an apparent gunshot wound to his upper extremities. Miami-Dade Fire Rescue personnel quickly transported the injured victim to a local hospital for medical care. Deputies blocked off the surrounding neighborhood with crime scene tape as their investigation into the morning incident got underway.",
+    "imagePrompt": "Realistic editorial photograph in a 3:4 vertical portrait aspect ratio of a Miami residential intersection on an overcast morning. In the upper two-thirds, emergency vehicles with flashing blue and red lights are parked along a neighborhood street framed by tropical palm trees. The bottom third consists of dark, shadowy pavement with simple, uncluttered asphalt. Natural photojournalistic lighting, high detail, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "Realistic square 1:1 photograph showing a close-up detail of yellow barricade tape stretched taut across a pole at a street corner. In the soft-focus background, the distant glow of police cruiser lights is visible under daylight. Subject is centered, crisp detail, authentic news photography style, no people faces, no text, no letters, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Three Haitian Americans elected to school boards make history in South Florida",
+   "source": "The Haitian Times",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXlhVFpQUUktTVZLb2E3YnVFd1otUGh1N1l5ZnQyZzM3OVBoaXcxUkZjdlVSNmhIRHlPUFowRUp6NVAtVFdORU1vOExXZzdkQVZlTGpCQTdzZDRnVTJ1VmJJdXJMMzVnRUlTR0Z5OGhxVjFMRGFGc1Zsanp1enFPMV9nWHlRTGU5TXBZcW5rZHZDZTVDOEFMWHlTREo?oc=5",
+   "t": 1794049080000,
+   "id": 7,
+   "link": "https://haitiantimes.com/2026/11/07/haitian-american-women-south-florida-school-board-wins-2026/",
+   "thin": false,
+   "desc": "Three Haitian American women secured seats on school boards across South Florida this election cycle, while Marly Métayer came close to winning the Coral Springs commission seat held by her slain daughter.",
+   "draft": {
+    "headlines": [
+     "THREE HAITIAN AMERICANS ELECTED TO SOUTH FLORIDA SCHOOL BOARDS",
+     "HISTORIC SCHOOL BOARD VICTORIES ACROSS SOUTH FLORIDA",
+     "SOUTH FLORIDA SEES FIRST HAITIAN AMERICANS ON SCHOOL BOARDS"
+    ],
+    "article": "South Florida made history this election cycle as three Haitian American women secured public school board seats in Miami-Dade, Broward, and Palm Beach counties. Cynthia Alcéus Dominique, Christina Romélus, and Linda Cothière are the first elected officials of Haitian descent to serve on these regional school boards. The milestone establishes unprecedented representation across the region's public education system. Dieudonne Joisil, a public school educator in Fort Lauderdale for nearly 40 years, recognized the breakthrough of having Haitian American leaders on all three major local boards. Meanwhile, in Coral Springs, candidate Marly Métayer fell short on November 3 of securing the city commission seat previously held by her slain daughter, former Vice Mayor Nancy Métayer.",
+    "imagePrompt": "A realistic editorial portrait in 3:4 vertical orientation showing a poised Haitian American woman in professional business attire standing inside a brightly lit municipal board chamber. The subject is positioned in the upper two-thirds of the frame with a confident and dignified expression. The lower third of the image is simple and cast in darker tones with deep wooden textures from the council dais. Editorial photojournalism style, natural lighting, authentic depth of field, with no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on a polished wooden gavel resting beside a blank leather binder on an executive council table. The lighting is soft and professional, highlighting the rich wood grain and clean surface. Close-up still life detail shot, documentary style, perfectly centered composition, with no human faces, text, words, logos, or watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Bills Add Another CB Option, Signing Forgotten Ex-Dolphins' Three-Year Starter",
-   "source": "Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcVpYV3NhOTB6WGhHeENlcnlHWGJZV082c1BwaDV6TExCT193Nk1ZU003ZlRMY0dYdGZJUFJKRlNOUXFhM0tQdUpqdHVJUE13RDgxampQaXFtSEExMThHbFpBLUtvQkRHUE90UWM1Yjd0enpZRFd3ZlI1X2pRQzRXV01QY0w2bXBkVXlQWXRsVm5nRUZ4YlNWMEEyaVF6VllWbC1qcHdCZGNGdUNQb2tFYnRIdEhPU01ReEMzMi1Rdko?oc=5",
-   "t": 1793992620000,
+   "title": "Lions at Dolphins: How to watch, listen and follow",
+   "source": "Detroit Lions",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWEFvQTlRUVVtTkNhalcyVlRfTEszY25jM2dpaTRXdTR4N3lEUWprSXFZN2tKa0o1U0pZdzhEV3Z6NEhiZ1ViYjZGWW10ZEJPMC1mUW11dk5IaFFucjRHLXk1WTA5Um1hM0pJYjBzcmVBbEpuNVJyOW9WZVpjVk5BU0RXWDlUNmFvcFYxZE5RbTU?oc=5",
+   "t": 1794067338000,
    "id": 8,
-   "link": "https://www.si.com/nfl/bills/onsi/transactions-bills-add-another-cb-option-signing-forgotten-ex-dolphins-three-year-starter",
+   "link": "https://www.detroitlions.com/news/lions-at-dolphins-how-to-watch-listen-and-follow-2026",
    "thin": false,
-   "desc": "The Buffalo Bills signed a former Miami Dolphins' cornerback who brings 38 career starts to Orchard Park and shares a connection with Christian Benford.",
+   "desc": "The Detroit Lions take on the Miami Dolphins on the road in Week 9 on Sunday, Nov. 8 at 1 p.m. EDT. Here is everything you need to keep up with the action.",
    "draft": {
     "headlines": [
-     "FORMER DOLPHINS CORNERBACK KADER KOHOU SIGNS WITH BUFFALO BILLS",
-     "EX-DOLPHINS STARTER HEADS TO DIVISION RIVAL",
-     "FORMER SOUTH FLORIDA STANDOUT CORNERBACK JOINS FAMILIAR DIVISION ENEMY"
+     "DOLPHINS HOST DETROIT LIONS THIS SUNDAY AT 1 PM",
+     "MIAMI FIGHTS TO BOUNCE BACK AGAINST LIONS",
+     "CAN THE HUNGRY DOLPHINS SNAP DETROIT'S WIN STREAK AT HOME?"
     ],
-    "article": "Former Miami Dolphins starting cornerback Kader Kohou has signed a practice squad contract with the Buffalo Bills. Kohou recently became available after his release from the Kansas City Chiefs practice squad following a November 1 game against Denver.\n\nKohou first arrived in South Florida in 2022 as an undrafted rookie out of East Texas A&M before earning a major role in the secondary. Over three seasons with Miami, the 5-foot-10 defensive back started 38 of 47 games, recording 25 pass breakups and three interceptions. His first career start was a memorable 21-19 victory over Buffalo at Hard Rock Stadium in September 2022.\n\nAfter spending 2025 on injured reserve, Kohou now joins Miami's AFC East rival.",
-    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of an athletic professional cornerback standing on a football sideline during an overcast afternoon. The player is dressed in neutral athletic practice gear, helmet held at his side, looking ahead with a focused expression. The subject occupies the upper two-thirds of the frame, with the bottom third falling into simple, darker stadium turf and shadow. Realistic stadium lighting, sharp focus, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph of a football cleat planted firmly on the green stadium turf alongside an authentic game football. The subject is centered with a shallow depth of field blurring the background field lines. Clean sports photography, no people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "The Miami Dolphins are back home in South Florida this Sunday, Nov. 8, hosting the Detroit Lions at 1 p.m. EDT for a Week 9 clash. Local television coverage will air on CBS.\n\nMiami enters the contest with a 1-6 record following a tight 24-19 loss to the New England Patriots in Week 8. Despite the recent setbacks, Lions head coach Dan Campbell called Miami a hungry team that plays good football, pointing out that their last four contests have all finished as one-score games.\n\nDetroit arrives riding a three-game winning streak after topping Minnesota 19-15.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing an outdoor professional football stadium in South Florida under bright sunny skies. The lush green gridiron with crisp white yard markers dominates the upper two-thirds of the frame, bathed in warm afternoon light with stadium seating rising in the background. The bottom third features darker, shadowed sideline turf providing a simple and clean base. No people, no faces, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up shot focused on a textured leather American football sitting centered on lush green field turf. Crisp blades of grass surround the ball under natural outdoor stadium sunlight. Completely centered, sharp focus, with no people, no faces, no logos, no text, and no watermarks."
    }
   },
   {
@@ -184,20 +184,20 @@
    "title": "Inter Miami CF vs. Charlotte FC - Live Score - November 07, 2026",
    "source": "FOX Sports",
    "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT0JQWlNkTHF0alpFRFpGRzJzVnR2YUc1M1NpM3JzdXByQ1pIZ2F5clEtQmhOZE82bU82R2hDUDRTQUpITXJXOElReEk4c1gxTWVUM0E5d205SDJkaE9lbmFrUS15SWcxSER1NG9vel9WZWctbTZnRjY2MkRlVDdFT01iczIzU29UQ3lFd184bVl2RnlNbXJRMnBUMjBmb0NONEE?oc=5",
-   "t": 1793985196000,
+   "t": 1794066201000,
    "id": 9,
    "link": "https://www.foxsports.com/soccer/mls-inter-miami-cf-vs-charlotte-fc-nov-07-2026-game-boxscore-647465",
    "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "INTER MIAMI CF FACES CHARLOTTE FC ON NOVEMBER 7 2026",
+     "INTER MIAMI CF FACES CHARLOTTE FC ON NOVEMBER 7, 2026",
      "INTER MIAMI CF TAKES ON CHARLOTTE FC",
-     "MIAMI SUPPORTERS WATCH AS INTER MIAMI PLAYS CHARLOTTE FC"
+     "MIAMI SOCCER FANS TRACK INTER MIAMI AGAINST CHARLOTTE FC"
     ],
-    "article": "Local sports focus centers on Inter Miami CF as the club is set to face Charlotte FC on November 07, 2026. Supporters across the Miami area can follow live scores and regular updates throughout the scheduled match. With Inter Miami CF taking on Charlotte FC, followers of the local squad are keeping a close watch on every score shift and real-time development on November 07, 2026. Stay tuned for ongoing live score information as Inter Miami CF plays Charlotte FC.",
-    "imagePrompt": "A vertical 3:4 realistic editorial photograph capturing professional soccer action under stadium floodlights. In the upper two-thirds of the frame, two soccer athletes in plain unbranded athletic uniforms contest for a soccer ball mid-air against a dramatic twilight sky. The bottom third features dark, clean, out-of-focus stadium grass. No text, no letters, no team crests, no logos, and no watermarks.",
-    "circlePrompt": "A square 1:1 realistic photograph focusing on a classic soccer ball resting directly in the center of a manicured grass pitch under bright evening field lights. The view is a close-up centered detail emphasizing the texture of the turf and ball. No people, no faces, no text, no brand markings, and no watermarks."
+    "article": "Inter Miami CF is scheduled to face Charlotte FC on November 07, 2026. Supporters across the Miami area are keeping close tabs on live score reports and ongoing match updates as both teams meet. The matchup brings focus to Inter Miami CF as the club squares off with Charlotte FC. Fans can track every live score change and fixture update during the event on November 07, 2026, as Inter Miami CF competes in this contest against Charlotte FC.",
+    "imagePrompt": "A realistic editorial vertical 3:4 portrait of an intense soccer match scene under bright stadium floodlights. In the upper two-thirds of the frame, two professional soccer athletes in generic pink and blue uniforms contest a ball in motion against a blurred arena background. The bottom third features dark, shadowed green turf providing negative space. Dramatic sports photography aesthetic, no text, no letters, no team crests, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on a classic soccer ball positioned on freshly cut green stadium grass under evening lights. Crisp macro focus on the ball texture and grass blades, with a soft out-of-focus stadium ambience in the background. Balanced centered composition, no human faces, no text, no numbers, no logos, no watermarks."
    }
   },
   {
@@ -208,13 +208,13 @@
    "id": 10,
    "draft": {
     "headlines": [
-     "JULIA TUTTLE PURCHASED 640 ACRES ON MIAMI RIVER IN 1891",
-     "640 ACRES BOUGHT ON THE MIAMI RIVER IN 1891",
-     "SOUTH FLORIDA HISTORY: JULIA TUTTLE BUYS 640 ACRES IN 1891"
+     "IN 1891 JULIA TUTTLE BOUGHT 640 ACRES ON MIAMI RIVER",
+     "JULIA TUTTLE MOVES TO SOUTH FLORIDA AND BUYS LAND",
+     "HOW 640 ACRES ON THE MIAMI RIVER CHANGED IN 1891"
     ],
-    "article": "In 1891, Julia Tuttle made her move to South Florida. During that same year, she completed a major local land purchase along the water.\n\nTuttle acquired 640 acres situated directly on the north bank of the Miami River.\n\nHer arrival in South Florida in 1891 coincided with securing this expansive riverfront property. The entire 640-acre tract purchased by Tuttle stretched along the north bank of the Miami River, establishing her presence right by the river.",
-    "imagePrompt": "An archival-style vintage 1890s editorial photograph showing an undeveloped subtropical riverbank along a wide river, viewed looking toward the north shore. Dense native palm trees, pines, and wild brush fill the landscape under an overcast, sepia-toned sky in the upper two-thirds of the vertical frame. The bottom third features dark, calm river water with subtle ripples, keeping the lower area simple and dark. Authentic period film grain, muted sepia and monochrome tones, no text, no logos, no recognizable people.",
-    "circlePrompt": "A realistic square photograph focused on a rustic late nineteenth-century surveyor compass and brass measuring chain resting on weathered wood near riverbank greenery. The vintage brass instruments are centered in sharp focus with soft, natural daylight. In the background, out-of-focus river water and subtropical foliage create a natural setting. No people, no faces, no text, no watermarks."
+    "article": "In 1891, Julia Tuttle made a historic move to South Florida and acquired 640 acres of land right along the Miami River. Her major purchase placed an expansive property on the river's north bank directly under her ownership.\n\nHer arrival in South Florida that year was defined by this massive acquisition. By investing in 640 acres situated on the north bank of the Miami River, Tuttle established a significant presence in the local area during 1891.",
+    "imagePrompt": "A vintage, archival-style editorial photograph in a 3:4 vertical portrait ratio showing the natural, unsettled landscape along the north bank of the Miami River in the late nineteenth century. In the upper two-thirds, dense subtropical flora, palm fronds, and tranquil river water are captured in muted sepia tones with historical grain and soft atmospheric daylight. The bottom third is composed of deep, simple, dark shadows along the shoreline. No identifiable people, no text, no letters, no logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing an authentic 1890s brass surveyor compass and rolled parchment resting on a weathered timber table, centered in the frame with warm, diffused sunlight and a shallow depth of field. No human faces, no legible text, no letters, no logos, and no watermarks."
    }
   }
  ]
