@@ -1,220 +1,220 @@
 {
- "date": "Saturday, November 7",
- "pick": "mw6pgy28",
+ "date": "Sunday, November 8",
+ "pick": "mw85i05u",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Man hospitalized after being shot in northwest Miami-Dade",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPUlZwTDQ2eVotMVAzdlNsS0hyaHBhZFZYcFhudnhRSUxwVnFyX3Y1c1hYdnFRTUtlNnh2N09BcVctdU9uZ205dUhwZnd1azdUOE02T0I4eVRma00wTHJOU21rMmVXdm9sbDAtRE9ReVY0NDVtZGR0UkJ1emp6T2V4ODl4T2d2WE5VaWw5bThja2RQRFNneUViLVFfZndaUXZVeDRDaENVSQ?oc=5",
-   "t": 1794072905000,
+   "title": "Utensils not properly cleaned and sanitized at an inspected Miami-Dade bakery",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9COVhNcHJJTkkwMFBKSDlLSndBNmVCaE1odmRxWnhUX1hxcFpwa2FTSl9MNEZvYVpWN0xKdGVuQ3ltNkhIeUZVY2NjOW1weUszMTR6NDBvTWlmM3RDVkV2ajlpd3lZb3ZEeVN1Unp5TTPSAXBBVV95cUxNOTM1X1VueFM4OVc5THN3VzJxVno4RjFpdExvSHJlVDhfWnp5bU5POXI2WjhpMjlRSkpPY0pJaDFVU0JMX2RkTURURnRwOGN2X3lPQXRFeHBfamlVbmlmM0dVYnB0RTdSanMxeWRjUTJJ?oc=5",
+   "t": 1794158153000,
    "id": 1,
-   "link": "https://www.local10.com/news/local/2026/11/07/man-hospitalized-after-being-shot-in-northwest-miami-dade/",
+   "link": "https://www.miamiherald.com/news/business/article317983572.html",
    "thin": false,
-   "desc": "Deputies with the Miami-Dade Sheriff’s Office are investigating a shooting that they say left a man hospitalized on Friday night.",
+   "desc": "There were other cleanliness problems.",
    "draft": {
     "headlines": [
-     "MAN HOSPITALIZED AFTER LATE NIGHT SHOOTING IN GLADEVIEW",
-     "GLADEVIEW SHOOTING SENDS MAN TO HOSPITAL",
-     "NORTHWEST MIAMI-DADE INVESTIGATION UNDERWAY AFTER GUNFIRE IN GLADEVIEW"
+     "MIAMI LAKES BAKERY FAILS STATE INSPECTION OVER SANITATION VIOLATIONS",
+     "DIRTY UTENSILS TRIGGER FAILED INSPECTION AT MIAMI LAKES BAKERY",
+     "WHAT STATE INSPECTORS UNCOVERED INSIDE A POPULAR MIAMI LAKES BAKERY"
     ],
-    "article": "A late-night shooting in northwest Miami-Dade left one man hospitalized on Friday. Miami-Dade Sheriff's Office deputies responded to the scene around 11:15 p.m. near the intersection of Northwest 24th Avenue and 63rd Street in the Gladeview neighborhood. Responding deputies located a man suffering from an apparent gunshot wound to his upper extremities. Miami-Dade Fire Rescue medics arrived and transported him to a nearby hospital in stable condition. Authorities have not released details about a possible suspect or the circumstances surrounding the violence. Anyone with information is urged to reach out to Miami-Dade Crime Stoppers at 305-471-8477.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing a quiet street intersection in a residential neighborhood at night, illuminated by the glow of distant red and blue emergency flashers reflecting on the pavement. The upper two-thirds shows yellow crime scene barrier tape stretched across the roadway with emergency patrol cruisers blurred in the background. The bottom third is composed of dark, clean asphalt in deep shadow. Moody night atmosphere, photojournalistic style, high detail, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo featuring a close-up detail of yellow barricade tape knotted securely around a wooden utility pole at night, softly lit by faint emergency vehicle strobes. The texture of the weathered wood and plastic tape is centered with a shallow depth of field blurring the background. No people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "A Miami Lakes bakery failed a state inspection on Thursday after officials uncovered multiple sanitation and food safety issues. Florida Department of Agriculture and Consumer Services inspector Caridad Delgado cited Los Balkanes Bakery, located at 16241 NW 57th Ave., for dirty equipment and improper food handling.\n\nDelgado documented food debris encrusted on knives, kitchen utensils air-drying without being sanitized, and tongs used for chicharrón and pastelitos unwashed for over four hours.\n\nState officials also issued stop sales on cheese pastries and pan de bono kept between 85 and 87 degrees inside a non-temperature display. House-made yellow corn dough wrapped in a plastic shopping bag also received a stop sale.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing a stainless steel bakery kitchen prep area. The upper two-thirds of the frame features industrial metal counters, a commercial prep station with knives, and cooking equipment under soft commercial kitchen lighting. The bottom third fades into simple, darker kitchen shadow. Realistic, atmospheric documentary style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic 1:1 square close-up photo centered on stainless steel serving tongs resting inside a glass commercial food warmer next to golden baked goods. Shallow depth of field, warm interior lighting, sharply focused on the metal utensils, with no people's faces, no text, no letters, and no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Man hospitalized after overnight shooting in Gladeview, deputies say",
+   "title": "Investigation underway after girl dies in Homestead, deputies say",
    "source": "NBC 6 South Florida",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVDIwQ0l1SEdkODN3Y3ZJQVNyU3FHWWdNc2FmcEM5N0kxMTFSdlp5NzAxcWNkZ2pGUGZ3aS04RW9yM2wzcGJOZWJiaTYzRDU3TVFKOU5vNGF2cHZXUzBCOHdmUE5DeS00cmNsOWhha281ZTdnR3ltUW9Fek03RUFaYmlzSGhXWTctM2ctQUlmN1NDNjdyblhpcmZUMnRwSmNBVkFfLUF0UTRaeUY5NXdrcDFn0gG6AUFVX3lxTFA0VVlBeXlsV2R2TWx5Nlg0S0RRcXp3eXRUMnlmMnM0MnhReVI2Skg5aFlpbzFFOHhqZ3dGZThPRWdNV1BfSFVJLW9lUGhtUGd4SklIMW9EV2Z6S05tUHNxd3JsMl9aSjJGTW5XaUMzZkVsQVBTSnRhTlZEbE5EdTBLYlVTUXB0alhmNHNMSWlXN25rZ3NWYVRXYTNpSXlQdHVhMmRsRFpYb3o3c2FtZ1J2TDRzZTdMLVJEdw?oc=5",
-   "t": 1794065969000,
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORnVPQ1h1NEFoQktRUXAwY19LUzZWczNrRVlITVJaRnpjeDZ5SnJqVU1ZekQ4ejZCdW9kdmkzbXF0Qk8tVDhXLVhTdDM3Z3dxZy1TRUVfSV8zdHR6Z0FlRm9uSUtVR04zNy1lNHg1Vl9WYzU2Q1hpakRMaEhqZU5SV3RiTm1Pa19CSzdwdTZTZFZiSzlwRXBBWXBDNUM1cnBtWmhDRnVodFpMeDhtaXfSAbYBQVVfeXFMT283WTd1cGtJWDJiVWxLbGgxbDFVVnY1anBlX3pVakw4eE50MDY4bFc0M3FVT2hONENzS3IzX01lX29GWlg0TVZkdlNlb2QzQ0ppTERxN2N2d3N4MGdMVEkzeDdTZ2JEc2RaQjBlMERtbG9tWEF5ME9wbjJEVmtCX0ZyeU9xSWZfUzByck05bUtNenpqWDRXUlpIaU5zWEI5bHY3LUp0NzUxc29XOFNRTnRqUGN6ZVE?oc=5",
+   "t": 1794152687000,
    "id": 2,
-   "link": "https://www.nbcmiami.com/news/local/man-hospitalized-after-overnight-shooting-in-gladeview-deputies-say/3885113/",
+   "link": "https://www.nbcmiami.com/news/local/investigation-underway-after-girl-dies-in-homestead-deputies-say/3885303/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MAN HOSPITALIZED IN STABLE CONDITION AFTER GLAVEVIEW SHOOTING FRIDAY",
-     "OVERNIGHT SHOOTING IN GLADEVIEW SENDS MAN TO HOSPITAL",
-     "DEPUTIES INVESTIGATE LATE NIGHT GUNFIRE AT GLADEVIEW INTERSECTION"
+     "INVESTIGATION LAUNCHED AFTER GIRL DIES IN HOMESTEAD SATURDAY",
+     "TRAGEDY IN HOMESTEAD: INVESTIGATION UNDERWAY",
+     "MIAMI-DADE DEPUTIES PROBE UNEXPLAINED DEATH OF GIRL IN HOMESTEAD"
     ],
-    "article": "Miami-Dade Sheriff's Office deputies responded to reports of gunfire in the Gladeview area late Friday night. Deputies arrived at the scene near the intersection of Northwest 24th Avenue and 63rd at approximately 11:15 p.m. following emergency calls reporting that someone had been shot. When deputies arrived in the neighborhood, they discovered an injured man suffering from an apparent gunshot wound. First responders transported the victim directly to a local hospital for medical treatment. Authorities confirmed that the man remained in stable condition following the overnight incident.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait aspect ratio depicting a nighttime Miami street intersection in Gladeview. In the upper two-thirds of the frame, flashing blue and red emergency vehicle lights cast reflections across residential buildings and parked patrol vehicles. The bottom third of the composition is simple, featuring dark asphalt bathed in deep shadow. Authentic photojournalism style, moody night atmosphere, with no visible text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 editorial photo showing a close-up detail on a Miami street corner at night. Centered in the frame is yellow barrier tape secured to a metal post under an amber streetlamp, with reflections on the damp pavement and soft distant emergency lights blurred in the background. No people's faces, no text, letters, logos, or watermarks."
+    "article": "An investigation is underway in South Florida following the death of a girl in Homestead on Saturday afternoon.\n\nHomestead Police officers arrived in the area of Suncrest Avenue and Northwest Ninth Court at approximately 3:30 p.m. responding to a medical call. Upon arrival, first responders found a girl who required urgent medical attention.\n\nDespite the performance of lifesaving measures, the girl was pronounced dead, according to the Miami-Dade Sheriff's Office.\n\nDeputies have not released the girl's age or her cause of death as the investigation into the circumstances remains active.",
+    "imagePrompt": "A 3:4 vertical editorial documentary photograph of a quiet South Florida residential street during the late afternoon, with blurred flashing police cruiser lights reflecting off palm trees and suburban homes in the upper two-thirds of the frame. The bottom third consists of dark, clean asphalt in shadow with subtle reflections of red and blue emergency lights. Somber atmosphere, realistic news photography, no people's faces, no text, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 close-up photojournalistic shot centered on a first responder medical kit resting on a residential curb beside a patch of grass, softly illuminated by ambient daylight and distant emergency vehicle light glow. Shallow depth of field, solemn atmosphere, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Remembering a Miami-Dade deputy's service a year after he was killed on duty",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcDBVZWdPX2w0RjRCS2xBaHlQWTR5c1o1eUxfZl9fMjU0VzVqLThvSUE4U0thaTZ6Mnk5ZllvYW9Tek9NdjNFVDlZTXlDci05TThEUktkX3d5eXJTak92end1TDZsckJUZWt5TFV3Q200NFpiSHlhWmFoZ1IxbXZZMEY0Ql9JVHctQmdKblJXVTJldkZDQUxIMThnRDZ2aDZnd1ctNHBiQ1F3N3NzY0NZWVdn?oc=5",
-   "t": 1794060480000,
+   "title": "Hilton Miami Beach Unites 5 Art Deco Buildings: Plan for 2027?",
+   "source": "deeparrival.com",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9BeXB4djY3ZzNra0d4Rm4yYXBtR2pKaUdQQkQ2bllha1BEOVQ4MTNUaTFWUDRDZkd5d3FmWkhDQnh4bTN1NmVxc1VtTlYyblJJWEJGcHRnRElLZjFacTBOazhJWWtnM25LR3ZCMTRhYmhmUng1WlNn?oc=5",
+   "t": 1794151347000,
    "id": 3,
-   "link": "https://www.cbsnews.com/miami/video/remembering-a-miami-dade-deputys-service-a-year-after-he-was-killed-on-duty/",
-   "thin": true,
-   "desc": "Camilla Fernandez shares how MDSO is honoring the life and service of Deputy Devin Jaramillo.",
+   "link": "https://deeparrival.com/news/hilton-miami-beach-early-2027-art-deco/",
+   "thin": false,
+   "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI-DADE HONORS DEPUTY DEVIN JARAMILLO ONE YEAR AFTER DEATH",
-     "REMEMBERING DEPUTY DEVIN JARAMILLO ONE YEAR LATER",
-     "HOW MIAMI-DADE IS REMEMBERING FALLEN DEPUTY DEVIN JARAMILLO"
+     "HILTON TO OPEN 289-ROOM MIAMI BEACH HOTEL IN 2027",
+     "FIVE HISTORIC MIAMI BEACH BUILDINGS BECOMING ONE HILTON",
+     "HISTORIC MIAMI BEACH BLOCK REVIVED INTO NEW LUXURY RESORT"
     ],
-    "article": "The Miami-Dade community is pausing to reflect and honor Deputy Devin Jaramillo one year after he was killed while serving on duty. Law enforcement across the area is paying tribute to his dedication and sacrifice. Camilla Fernandez shared details on how the Miami-Dade Sheriff's Office is remembering Deputy Jaramillo, marking one full year since his line-of-duty death. MDSO continues honoring his life and his service to the local community as fellow deputies and residents keep his memory alive.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait of a solemn law enforcement memorial scene in Miami-Dade. In the upper two-thirds of the frame, a lone officer in uniform stands with bowed head during a daytime outdoor ceremony. The bottom third is composed of simple, dark ground and deep shadows. Reverent atmosphere, soft natural lighting, with no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a folded memorial flag resting beside an officer dress cap on a dark polished surface. Gentle directional lighting creates soft highlights and dignified shadows. No people, no faces, and no text, letters, logos, or watermarks."
+    "article": "A major piece of local architectural history is getting a massive revitalization. The new Hilton Miami Beach is scheduled to open in early 2027 at 2000 Park Avenue in the Museum Historic District.\n\nThe 289-room destination connects and restores five historic structures dating from 1938 to 1953 that stood vacant for years after surviving a 2012 fire. The block-spanning project highlights Streamline Moderne and Miami Modern styles, anchored by Henry Hohauser's 1939 Collins Park Hotel.\n\nLocated near the Miami Beach Convention Center, the property will feature three pools, including two on rooftops, a signature coastal restaurant, and a rooftop bar.",
+    "imagePrompt": "Editorial architectural photograph in a 3:4 vertical orientation capturing a restored historic Miami Beach Art Deco hotel exterior under bright Florida sunlight. The upper two-thirds displays classic Streamline Moderne architecture with curved pastel facade elements, nautical trim, and tropical palm fronds. The bottom third features a simple, dimly shaded street and clean sidewalk. Realistic travel photography, no text, no logos.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph highlighting classic Art Deco architectural details on a Miami Beach building facade. The image is centered on geometric chevron carvings and rounded pastel trim on smooth stone, illuminated by warm natural daylight. Clean architectural detail shot with no people, no faces, no words, and no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami Beach shoreline wins “Best of the Best” award",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZm1rd2IwSFhZWkE2d3otaWhfMkFtaklqQmN0U0F3dWppVElfbHd1WkVnbTBiZ21JRUtmWVN6UGtOZDJoWXBNOXNsalRiZURSdHJKdVBoYUs5VTF1TDZtUVJoOW9xVDZYa1hqZm1XRHZwVGxMOHVPaHNHZWxRN0x0Q0FVNDJUU2hINXh6dzZDdW5KdkE?oc=5",
-   "t": 1794056519000,
+   "title": "Girl's death reported in Homestead, officials say",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrUi1PcGZTYmczM3dnZjRoZkpSTkxmZHdBVXhNNXNtV19ZZHJTTHZ0d3p0X3IzN1NRb3g5c3dvUzhhVC04MzlBQmpZRE1xM1VDcG1NVVo5ajNRZWJSd24yU3hsZGdIWXF6RUltZ09kc1lLSmxmeFE?oc=5",
+   "t": 1794150382000,
    "id": 4,
-   "link": "https://wsvn.com/news/local/miami-dade/miami-beach-shoreline-wins-best-of-the-best-award/",
+   "link": "https://www.cbsnews.com/miami/news/homestead-child-death-11-8-2026/",
    "thin": false,
-   "desc": "MIAMI BEACH, FLA. (WSVN) - Miami Beach’s beaches received top honors for its beaches with a special award.The city’s seven-mile shoreline took first place in Read More",
+   "desc": "The Miami-Dade Sheriff's Office is investigating.",
    "draft": {
     "headlines": [
-     "MIAMI BEACH WINS NATIONAL BEST OF THE BEST SHORELINE AWARD",
-     "MIAMI BEACH NAMED BEST SHORELINE IN THE NATION",
-     "OUR SEVEN MILE SHORELINE OFFICIALLY BEATS OUT THE ENTIRE COUNTRY"
+     "HOMESTEAD CHILD DEATH UNDER INVESTIGATION BY MIAMI-DADE HOMICIDE BUREAU",
+     "TRAGIC CHILD DEATH REPORTED IN HOMESTEAD SATURDAY AFTERNOON",
+     "MIAMI-DADE DETECTIVES INVESTIGATE TRAGIC DEATH OF HOMESTEAD GIRL"
     ],
-    "article": "Miami Beach has received top honors for its beaches, with the city's seven-mile shoreline taking first place in the national Best of the Best award. Presented by the American Shore and Beach Preservation Association, the special honor was awarded after Miami Beach beat out shoreline finalists from across the country.\n\nThe recognized seven-mile shoreline serves a critical protective purpose for the community. The entire coastal stretch acts as a natural shield, functioning to block big ocean waves and stop dangerous floods from impacting the beach.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photograph capturing an expansive view of the Miami Beach shoreline on a bright day. The upper two-thirds shows turquoise ocean surf rolling onto the wide sand beach and protective coastal dunes under an open sky. The bottom third features darker, damp sand with smooth ocean foam textures, keeping it simple and slightly shadowed. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on ocean waves washing onto the edge of a protective sandy beach embankment with sea oats. Focus is sharp on the water's edge and sand barrier with soft natural lighting. No people's faces, no text, letters, logos, or watermarks."
+    "article": "Miami-Dade authorities are investigating the tragic death of a young girl in Homestead on Saturday afternoon. Emergency personnel from the Homestead Police Department and Miami-Dade Fire Rescue rushed to the neighborhood near Suncrest Avenue and Northwest 9th Court around 3:30 p.m. following reports of a medical emergency. First responders located a child requiring urgent medical attention. Despite crews performing lifesaving efforts, the girl was pronounced dead directly at the scene. Detectives with the Miami-Dade Sheriff's Office homicide bureau have taken charge of the active investigation into the incident.",
+    "imagePrompt": "A realistic vertical 3:4 editorial documentary photo of a quiet South Florida suburban neighborhood street in Homestead under an overcast late afternoon sky. In the upper two-thirds of the frame, distant parked emergency vehicles with glowing red and blue lights are visible near residential houses and tropical palm trees. The lower third of the frame is composed of a simple, dark asphalt roadway in shadow. The mood is somber and quiet. No visible faces, no text, no letters, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo focusing on a strand of bright yellow police barrier tape tied securely around a weathered wooden utility pole on a suburban street corner. The knot is centered in crisp focus, while the background features soft, out-of-focus tropical greenery and suburban pavement under diffuse daylight. No people, no faces, no readable text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Hilton Miami Beach Brings New Life to Historic Art Deco Buildings in 2027",
-   "source": "Luxury Travel Magazine",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQejRYQllQbkxhbjZuRzVyWWFYanJJTTdtSU05eWFvd2d6M0xjUnR3WEp1NEgxZE9yZUtQSXZGYmpFQlVGbDNYMFM0ZWZOMXpxbmZRa1M0SWVZaGg5MnBIOGhNbkFjVEw0bC1KWnJHeFBVTUNqV0VoNXlpTTc1WGc0RS1XR1ZDWDJIamhRZUhyYjFmTGZ4UHNjVDZ2TG91dmZoMlFtb3NtTzVWZDlXdTJ1YmJoZm04QlE?oc=5",
-   "t": 1794055779000,
+   "title": "Miami luxury hotels have found their newest VIP — the pampered family dog",
+   "source": "Tampa Bay Times",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUnhFV0xvQ3BJRGg2N1FaNnI3RGZBNUZKYmlTSGEwZFp1NHcwbzQ1SmRqWjRHVjg4MTNGNVVIb3pqamhEYU5JUzdwRjRMd1ZYYldFRjl1S2lNNHM0eXRiOHFJUTJvQ3E1X2NaWEZYcVVHMHJCaGgwTnJRQjg0bWhJLTl5R1YtV1A1eFZKcVRMa18?oc=5",
+   "t": 1794148467000,
    "id": 5,
-   "link": "https://www.luxurytravelmagazine.com/news-articles/hilton-miami-beach-brings-new-life-to-historic-art-deco-buildings",
+   "link": "https://www.tampabay.com/news/florida/2026/11/08/luxury-hotels-dog-friendly-miami-pets/",
    "thin": false,
-   "desc": "",
+   "desc": "Industry experts say for luxury hotels, the movement has evolved beyond simply being “pet friendly.”",
    "draft": {
     "headlines": [
-     "HILTON MIAMI BEACH MERGES FIVE HISTORIC BUILDINGS FOR 2027 OPENING",
-     "HISTORIC ART DECO BLOCK IN MIAMI BEACH REOPENING IN 2027",
-     "SEE HOW FIVE HISTORIC MIAMI BEACH BUILDINGS ARE UNITING"
+     "MIAMI LUXURY HOTELS EXPAND EXCLUSIVE SERVICES FOR PAMPERED DOGS",
+     "FIVE STAR TREATMENT FOR MIAMI PETS",
+     "WHY MIAMI IS BECOMING THE WORLD CAPITAL FOR CANINE LUXURY"
     ],
-    "article": "Hilton Miami Beach is scheduled to open in early 2027 at 2000 Park Avenue in the Museum Historic District. The 289-room hotel will restore and unite five historic properties across nearly an entire city block following years of vacancy and a 2012 fire. Dating from 1938 to 1953, the restored structures highlight Streamline Moderne and Miami Modern designs. Notable buildings include Henry Hohauser's 1939 Collins Park Hotel, L. Murray Dixon's 1938 Adams Hotel, and Albert Anis's 1940 Tyler Hotel. Situated near Lincoln Road and Ocean Drive, the property will offer three swimming pools, multiple dining concepts, and tropical gathering venues.",
-    "imagePrompt": "A vertical 3:4 editorial architectural photograph of a restored historic Miami Beach Art Deco hotel exterior under clear daylight. The upper two-thirds features Streamline Moderne curved glass corners, stepped towers, smooth pastel stucco, and geometric architectural details surrounded by tropical palm fronds. The bottom third is composed of a simple, dark asphalt street casting deep shadows across the foreground. Crisp architectural lighting, realistic natural textures, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up detail photograph of classic Miami Beach architectural elements, focusing on an ornate Art Deco bas-relief stone carving and curved ribbon window panel. Warm sunlight highlights the geometric chevron patterns and soft pastel pink and green painted concrete. Centered composition with smooth tropical shadows, realistic textures, no human faces, no text, no letters, no logos, no watermarks."
+    "article": "Miami luxury hotels are rolling out high-end amenities for visiting dogs, with pet owners paying between $80 and $300 per stay. In downtown Miami, the five-star InterContinental hotel earned the 2026 Hotel of the Year title from Roch Dog after meeting over 70 evaluation criteria. The downtown property recently launched Rocco, an artificial intelligence canine concierge that guides guests to local parks and waterfront paths. Arriving pets receive Miami-based Yum Pup treats, custom bandanas, and plush beds, with forthcoming room service options including steak bowls and organic chicken. On August 26, the venue hosts an End of Summer Paaawty featuring pup cups and sprinklers. Other area properties offering upscale pet programs include The Betsy in Miami Beach, Loews in Coral Gables and South Beach, and W locations across Miami.",
+    "imagePrompt": "A realistic vertical 3:4 editorial portrait of a well-groomed dog wearing a stylish bandana sitting proudly on a polished marble floor inside a sunlit luxury hotel lobby in Miami. The dog occupies the upper two-thirds of the frame with soft tropical greenery and elegant architecture blurred in the background. The bottom third consists of a simple, darker reflective floor in gentle shadow. Natural daylight, high-end hospitality setting, no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo of an upscale canine dining service arranged on a designer pet mat. A polished ceramic dog bowl holding sliced steak sits next to gourmet dog treats on a hotel room floor. Centered composition, warm ambient indoor lighting, shallow depth of field, no people or faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "1 hospitalized, MDSO block off Miami neighborhood after incident",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFB6S2lfMGZkN0JjS3lQV3pybVkyWm9LWGZfaTdlZE9SN0ZVSWpWclpsRUQ1bWZib09udzdhbVNFV2lCYXZtcWp2WUxZdGZSOFgxalFtTWpYSjc4Y2hFXzZVSk8wc1BlZWp5WHNGUVNId0puN1U?oc=5",
-   "t": 1794053571000,
+   "title": "Ruven’s Roll Brings Tortillas, Burritos and Smash Burgers to North Miami Beach, FL",
+   "source": "YeahThatsKosher",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNenJlTldLcnRrcGVlVUttelVpTkt0UElwQTRKR1VpdTRNR2xVeERGZWJnS3ByN1VqLXhBWTlPMnBqSUZ3eXZFSVoxZjdoQVpORW9ISEplR0Vfd244WWZiRjlDdmFXaV9XdHV2bEZDZW8zNS1mY21CTU5wYWZzWU5pQ29EZDdGdWF5bVVMaE1nRzJZQzFEYkdUZm5lcVhuNTNzSWk5dXJaNnhISk94LUxielItUUFEbDA?oc=5",
+   "t": 1794146788000,
    "id": 6,
-   "link": "https://wsvn.com/news/local/miami-dade/person-hospitalized-miami/",
-   "thin": false,
-   "desc": "MIAMI (WSVN) - A man was hospitalized after an incident in Miami, according to Miami-Dade Sheriff’s Office deputies.The incident took place on Northwest 63rd Street Read More",
+   "link": "https://yeahthatskosher.com/2026/11/ruvens-roll-brings-tortillas-burritos-and-smash-burgers-to-north-miami-beach-fl/",
+   "thin": true,
+   "desc": "Ruven's Roll serves glatt kosher meat packed into dough on Biscayne Boulevard in North Miami Beach, FL. It is certified by ORB.",
    "draft": {
     "headlines": [
-     "MAN HOSPITALIZED AFTER SATURDAY MORNING SHOOTING IN MIAMI",
-     "INVESTIGATION UNDERWAY AFTER NORTHWEST MIAMI SHOOTING",
-     "WHAT HAPPENED ON NORTHWEST 63RD STREET SATURDAY MORNING?"
+     "RUVEN'S ROLL OPENS WITH KOSHER BURRITOS ON BISCAYNE BOULEVARD",
+     "NEW GLATT KOSHER SPOT ARRIVES IN NORTH MIAMI BEACH",
+     "A NEW BISCAYNE BOULEVARD DESTINATION SERVES SMASH BURGERS AND TORTILLAS"
     ],
-    "article": "A man is in stable condition at an area hospital following a shooting Saturday morning in Miami. Miami-Dade Sheriff's Office deputies responded to the intersection of Northwest 63rd Street and 24th Avenue. Upon arrival, deputies located a man with an apparent gunshot wound to his upper extremities. Miami-Dade Fire Rescue personnel quickly transported the injured victim to a local hospital for medical care. Deputies blocked off the surrounding neighborhood with crime scene tape as their investigation into the morning incident got underway.",
-    "imagePrompt": "Realistic editorial photograph in a 3:4 vertical portrait aspect ratio of a Miami residential intersection on an overcast morning. In the upper two-thirds, emergency vehicles with flashing blue and red lights are parked along a neighborhood street framed by tropical palm trees. The bottom third consists of dark, shadowy pavement with simple, uncluttered asphalt. Natural photojournalistic lighting, high detail, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "Realistic square 1:1 photograph showing a close-up detail of yellow barricade tape stretched taut across a pole at a street corner. In the soft-focus background, the distant glow of police cruiser lights is visible under daylight. Subject is centered, crisp detail, authentic news photography style, no people faces, no text, no letters, no logos, no watermarks."
+    "article": "Ruven's Roll has officially opened along Biscayne Boulevard in North Miami Beach, expanding dining options for the neighborhood. The new establishment specializes in glatt kosher meat packed into dough for diners across the area.  The North Miami Beach kitchen serves a variety of handheld favorites, including tortillas, burritos, and smash burgers directly on Biscayne Boulevard.  All food prepared at Ruven's Roll is certified by ORB, giving North Miami Beach another dedicated glatt kosher meat destination right along one of the city's main roadways.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing a freshly prepared smash burger and a warm wrapped burrito resting on a rustic wooden table under warm restaurant lighting. The food is arranged in the upper two-thirds of the frame, highlighting the crispy grilled meat and golden dough. The bottom third of the image is simple and cast in soft, dark shadow. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic close-up square 1:1 photograph centered on a freshly griddled tortilla filled with seasoned meat, showing crisp browned edges and savory steam rising from the dough. Warm, focused ambient lighting accentuates the texture, with the background softly blurred. No people's faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Three Haitian Americans elected to school boards make history in South Florida",
-   "source": "The Haitian Times",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNNXlhVFpQUUktTVZLb2E3YnVFd1otUGh1N1l5ZnQyZzM3OVBoaXcxUkZjdlVSNmhIRHlPUFowRUp6NVAtVFdORU1vOExXZzdkQVZlTGpCQTdzZDRnVTJ1VmJJdXJMMzVnRUlTR0Z5OGhxVjFMRGFGc1Zsanp1enFPMV9nWHlRTGU5TXBZcW5rZHZDZTVDOEFMWHlTREo?oc=5",
-   "t": 1794049080000,
+   "title": "Boat driver found not guilty in Florida crash that killed daughter's teenage friend - ABC News",
+   "source": "ABC News - Breaking News, Latest News and Videos",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNclJNRmRqMERzdU41TV93RV9rWVV5bFNYV1JYeEg0amVaTF9GOGZ1V0R3RzN4OU5LbEFOV1FFUXhpLXJDVmowSF9DYTlIRlJuRjZBd3o3TVd4UDA3aFFjaEx6bjJFYU5nYlVNTTdjU0NGdzZrQUhWd2lBazI2d2RPU19NWEhFb1FyQWc3RDgteHVlUXhJMlU5ZlUtMVbSAaIBQVVfeXFMUGY4djZEcDJCdEN0SWNjTmltdG1qUHZDMzFmSVB0TXFTTG9OMm00MDQxbTktWlliYlJkNWZJTmFMZmlFLXdmdkJiOGpvcVlJaGxCSmFsS1U4N0lPOGVudU1CQmJNdmJfTXVrV0FiT3pMNk1VUU5mY1NxMHNRSzhHTnA4RUlSUU92LXJfLXVmZXFhZlc0R2hHeC1FY2MxZHRyQUdB?oc=5",
+   "t": 1794133046000,
    "id": 7,
-   "link": "https://haitiantimes.com/2026/11/07/haitian-american-women-south-florida-school-board-wins-2026/",
+   "link": "https://abcnews.com/US/boat-driver-found-not-guilty-florida-crash-killed-teen/story?id=134103381",
    "thin": false,
-   "desc": "Three Haitian American women secured seats on school boards across South Florida this election cycle, while Marly Métayer came close to winning the Coral Springs commission seat held by her slain daughter.",
+   "desc": "George Pino, a prominent South Florida real estate broker, was charged with manslaughter and vessel homicide in connection with the 2022 Labor Day weekend boat crash.",
    "draft": {
     "headlines": [
-     "THREE HAITIAN AMERICANS ELECTED TO SOUTH FLORIDA SCHOOL BOARDS",
-     "HISTORIC SCHOOL BOARD VICTORIES ACROSS SOUTH FLORIDA",
-     "SOUTH FLORIDA SEES FIRST HAITIAN AMERICANS ON SCHOOL BOARDS"
+     "GEORGE PINO FOUND NOT GUILTY IN DEADLY MIAMI-DADE BOAT CRASH",
+     "NOT GUILTY VERDICT IN FATAL 2022 BOAT CRASH",
+     "MIAMI JURY CLEARS GEORGE PINO IN TRAGIC CHANNEL CRASH"
     ],
-    "article": "South Florida made history this election cycle as three Haitian American women secured public school board seats in Miami-Dade, Broward, and Palm Beach counties. Cynthia Alcéus Dominique, Christina Romélus, and Linda Cothière are the first elected officials of Haitian descent to serve on these regional school boards. The milestone establishes unprecedented representation across the region's public education system. Dieudonne Joisil, a public school educator in Fort Lauderdale for nearly 40 years, recognized the breakthrough of having Haitian American leaders on all three major local boards. Meanwhile, in Coral Springs, candidate Marly Métayer fell short on November 3 of securing the city commission seat previously held by her slain daughter, former Vice Mayor Nancy Métayer.",
-    "imagePrompt": "A realistic editorial portrait in 3:4 vertical orientation showing a poised Haitian American woman in professional business attire standing inside a brightly lit municipal board chamber. The subject is positioned in the upper two-thirds of the frame with a confident and dignified expression. The lower third of the image is simple and cast in darker tones with deep wooden textures from the council dais. Editorial photojournalism style, natural lighting, authentic depth of field, with no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centered on a polished wooden gavel resting beside a blank leather binder on an executive council table. The lighting is soft and professional, highlighting the rich wood grain and clean surface. Close-up still life detail shot, documentary style, perfectly centered composition, with no human faces, text, words, logos, or watermarks."
+    "article": "A Miami-Dade County jury has found South Florida real estate broker George Pino not guilty of vessel homicide and manslaughter. Jurors deliberated for under two hours on Monday evening before delivering the verdict in the emotional trial.\n\nThe charges stemmed from a September 4, 2022, Labor Day weekend crash in Miami-Dade's Cutter Bank channel. Pino, 55, was driving his 29-foot Robalo boat during his daughter's birthday celebration when the vessel struck a boat marker.\n\nSeventeen-year-old Lucy Fernandez died from her injuries. Katy Puig suffered catastrophic injuries requiring constant care, and every other passenger was injured. State Attorney Katherine Fernandez Rundle stated her office accepted the verdict while acknowledging the tragedy's lasting toll on the community.",
+    "imagePrompt": "Editorial photo in a 3:4 vertical orientation capturing the exterior steps and stately stone columns of a Miami-Dade County courthouse during a somber, overcast late afternoon. The courthouse architecture and entrance occupy the upper two-thirds of the frame, while the bottom third is composed of simple, dark stone walkway in deep shadow. Realistic photojournalistic style, natural muted lighting, no people, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph centered on a weathered wooden navigation channel marker post emerging from calm bay waters. Gentle ripples surround the marker under soft daylight with a blurred coastal horizon in the background. No people, no faces, no text, no numbers, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Lions at Dolphins: How to watch, listen and follow",
-   "source": "Detroit Lions",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPWEFvQTlRUVVtTkNhalcyVlRfTEszY25jM2dpaTRXdTR4N3lEUWprSXFZN2tKa0o1U0pZdzhEV3Z6NEhiZ1ViYjZGWW10ZEJPMC1mUW11dk5IaFFucjRHLXk1WTA5Um1hM0pJYjBzcmVBbEpuNVJyOW9WZVpjVk5BU0RXWDlUNmFvcFYxZE5RbTU?oc=5",
-   "t": 1794067338000,
+   "title": "𝚆𝙰𝚃𝙲𝙷 Detroit Lions vs. Miami Dolphins 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ!NFL™",
+   "source": "Jackson County Pilot",
+   "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxPNDdWZFdRV0JBbHh1MVNwMTJ3T0VBM2tkQnNNZjRITDJhQWNVNzd1NEp0N0luc0MwbzdhV053djdXZFdsN00ySnd3SDZRRXVtd3diRG4xUkJGVU5BNTd1ZWhDTF9lM0o0OUZXMkZ6X0x1T2REbzFiRF9iVDJCalpseXl3WFl2Mm1EcFhaNkJXOEx4Zkh1TjNJdk9ZSXJkbU8yYTRNMEdTMXVpXzlzMlh3Mk40UXpYLTZRb1JDZGRsUkVsbmZNdHVkY3Y5OExWT2VLNGd4SzZtaHVHRThpdFZTX0NaX2I0aElBUzhwS3dSUGxFVExJNWdqb3dmTXFjMzNBYXZzZ0JYbXR1NE1MOHBtSU5IT2FEOWljX3RnLWVmdkprcFhJT2dsYmFIaVNXam03WW5NbW5qci1vUDRPUmxqYmJpRWZPTUJJelB5UHQzcFV5STZrM2NzSkZCYk5kZw?oc=5",
+   "t": 1794161317000,
    "id": 8,
-   "link": "https://www.detroitlions.com/news/lions-at-dolphins-how-to-watch-listen-and-follow-2026",
+   "link": "https://www.jacksoncountypilot.com/articles/%F0%9D%9A%86%F0%9D%99%B0%F0%9D%9A%83%F0%9D%99%B2%F0%9D%99%B7-detroit-lions-vs-miami-dolphins-%F0%9D%90%8B%F0%9D%90%88%F0%9D%90%95%F0%9D%90%84-%EF%BD%93%EF%BD%94%EF%BD%92%EF%BD%85%EF%BD%81%EF%BD%8D/",
    "thin": false,
-   "desc": "The Detroit Lions take on the Miami Dolphins on the road in Week 9 on Sunday, Nov. 8 at 1 p.m. EDT. Here is everything you need to keep up with the action.",
-   "draft": {
-    "headlines": [
-     "DOLPHINS HOST DETROIT LIONS THIS SUNDAY AT 1 PM",
-     "MIAMI FIGHTS TO BOUNCE BACK AGAINST LIONS",
-     "CAN THE HUNGRY DOLPHINS SNAP DETROIT'S WIN STREAK AT HOME?"
-    ],
-    "article": "The Miami Dolphins are back home in South Florida this Sunday, Nov. 8, hosting the Detroit Lions at 1 p.m. EDT for a Week 9 clash. Local television coverage will air on CBS.\n\nMiami enters the contest with a 1-6 record following a tight 24-19 loss to the New England Patriots in Week 8. Despite the recent setbacks, Lions head coach Dan Campbell called Miami a hungry team that plays good football, pointing out that their last four contests have all finished as one-score games.\n\nDetroit arrives riding a three-game winning streak after topping Minnesota 19-15.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing an outdoor professional football stadium in South Florida under bright sunny skies. The lush green gridiron with crisp white yard markers dominates the upper two-thirds of the frame, bathed in warm afternoon light with stadium seating rising in the background. The bottom third features darker, shadowed sideline turf providing a simple and clean base. No people, no faces, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up shot focused on a textured leather American football sitting centered on lush green field turf. Crisp blades of grass surround the ball under natural outdoor stadium sunlight. Completely centered, sharp focus, with no people, no faces, no logos, no text, and no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "Inter Miami CF vs. Charlotte FC - Live Score - November 07, 2026",
-   "source": "FOX Sports",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOT0JQWlNkTHF0alpFRFpGRzJzVnR2YUc1M1NpM3JzdXByQ1pIZ2F5clEtQmhOZE82bU82R2hDUDRTQUpITXJXOElReEk4c1gxTWVUM0E5d205SDJkaE9lbmFrUS15SWcxSER1NG9vel9WZWctbTZnRjY2MkRlVDdFT01iczIzU29UQ3lFd184bVl2RnlNbXJRMnBUMjBmb0NONEE?oc=5",
-   "t": 1794066201000,
-   "id": 9,
-   "link": "https://www.foxsports.com/soccer/mls-inter-miami-cf-vs-charlotte-fc-nov-07-2026-game-boxscore-647465",
-   "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "INTER MIAMI CF FACES CHARLOTTE FC ON NOVEMBER 7, 2026",
-     "INTER MIAMI CF TAKES ON CHARLOTTE FC",
-     "MIAMI SOCCER FANS TRACK INTER MIAMI AGAINST CHARLOTTE FC"
+     "DOLPHINS HOST LIONS AT HARD ROCK STADIUM ON NOVEMBER 8",
+     "DOLPHINS BATTLE LIONS IN MIAMI GARDENS",
+     "HARD ROCK STADIUM SET TO HOST VISITING DETROIT LIONS"
     ],
-    "article": "Inter Miami CF is scheduled to face Charlotte FC on November 07, 2026. Supporters across the Miami area are keeping close tabs on live score reports and ongoing match updates as both teams meet. The matchup brings focus to Inter Miami CF as the club squares off with Charlotte FC. Fans can track every live score change and fixture update during the event on November 07, 2026, as Inter Miami CF competes in this contest against Charlotte FC.",
-    "imagePrompt": "A realistic editorial vertical 3:4 portrait of an intense soccer match scene under bright stadium floodlights. In the upper two-thirds of the frame, two professional soccer athletes in generic pink and blue uniforms contest a ball in motion against a blurred arena background. The bottom third features dark, shadowed green turf providing negative space. Dramatic sports photography aesthetic, no text, no letters, no team crests, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centered on a classic soccer ball positioned on freshly cut green stadium grass under evening lights. Crisp macro focus on the ball texture and grass blades, with a soft out-of-focus stadium ambience in the background. Balanced centered composition, no human faces, no text, no numbers, no logos, no watermarks."
+    "article": "The Miami Dolphins are preparing to defend their home turf against the Detroit Lions at Hard Rock Stadium in Miami Gardens. The NFL regular season showdown is scheduled for Sunday, November 8, 2026, with kickoff set for 1:00 p.m. Eastern Time. Detroit travels down to South Florida holding the stronger season record between the two franchises. Both teams are fighting to improve their standing as the regular season enters a critical stretch. Local football fans can expect a clash of contrasting playing styles and offensive talent as the Dolphins look to protect their home field against the visiting Lions.",
+    "imagePrompt": "A realistic editorial photograph capturing the open-air bowl of a massive South Florida football stadium on a bright afternoon. The turquoise and white stadium seats and the vibrant green field dominate the upper two-thirds of the vertical frame under the clear blue sky. The lower third features the dark, shadowed edge of the lower concourse railing, creating a clean and simple dark base. Authentic sports photojournalism style, natural daylight, sharp focus, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square close-up photograph centered on a regulation pebble-grained leather American football resting on bright green stadium turf. Crisp blades of grass and subtle chalk line dust surround the ball under direct natural sunlight. Shallow depth of field with the background softly blurred, perfectly centered composition, no human faces, no text, no brand markings, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "How To Watch Miami Heat At Sacramento Kings; Lineups, Injury Report, Betting Lines",
+   "source": "Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazBUYTdHTXg1cmJGQmI2Sk51MFVNRi00bjk5TnpOTFhCUXB3dkd4dDUtR1RKLTRvRVZ2b1YzY2daRklJWUpRX0VKb0tzcFFMQTVIcVI4VmkxZlJRcF90cERsNF9VcWdFUTdMUGVpcjl5QTFGSmczNzJiMVRBcUJUR2ZkZ0I5MGRzSkE?oc=5",
+   "t": 1794157239000,
+   "id": 9,
+   "link": "https://sports.yahoo.com/articles/watch-miami-heat-sacramento-kings-170039570.html",
+   "thin": true,
+   "desc": "Giannis Antetokounmpo and the Miami Heat look to salvage their road trip against a struggling Sacramento Kings squad as Miami’s new-look frontcourt searches for chemistry in this cross-conference clash.",
+   "draft": {
+    "headlines": [
+     "MIAMI HEAT FACE STRUGGLING SACRAMENTO KINGS ON THE ROAD",
+     "GIANNIS AND HEAT SEEK CRUCIAL ROAD TRIP REBOUND",
+     "CAN MIAMI SALVAGE THIS ROAD TRIP AGAINST SACRAMENTO?"
+    ],
+    "article": "The Miami Heat are heading into a cross-conference matchup against the Sacramento Kings with hopes of getting back on track. Giannis Antetokounmpo and the Heat squad are focused on salvaging their current road trip as they face a struggling Sacramento team. A major focus for Miami remains inside the paint. Miami's new-look frontcourt is actively searching for chemistry on the court during this road test. Heat fans will be watching to see if the frontcourt can build the connection needed to salvage the trip against Sacramento.",
+    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation capturing an intense basketball game moment on an indoor court. A tall, muscular forward in a red and black athletic uniform rises toward the basket under bright arena lights. The main athletic action fills the upper two-thirds of the frame, while the bottom third is dominated by a dark, moody, out-of-focus polished hardwood floor. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo centered on a textured professional leather basketball sitting on an indoor hardwood court line. Crisp arena spotlights cast a sharp reflection onto the varnished floorboards. Clean, balanced composition with no people, faces, text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1891: Julia Tuttle buys 640 acres on the Miami River",
-   "desc": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.",
+   "title": "1836: Dade County is created",
+   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
    "id": 10,
    "draft": {
     "headlines": [
-     "IN 1891 JULIA TUTTLE BOUGHT 640 ACRES ON MIAMI RIVER",
-     "JULIA TUTTLE MOVES TO SOUTH FLORIDA AND BUYS LAND",
-     "HOW 640 ACRES ON THE MIAMI RIVER CHANGED IN 1891"
+     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
+     "DADE COUNTY WAS ESTABLISHED IN 1836",
+     "HONORING OUR 1836 FOUNDING ALONG THE MIAMI RIVER"
     ],
-    "article": "In 1891, Julia Tuttle made a historic move to South Florida and acquired 640 acres of land right along the Miami River. Her major purchase placed an expansive property on the river's north bank directly under her ownership.\n\nHer arrival in South Florida that year was defined by this massive acquisition. By investing in 640 acres situated on the north bank of the Miami River, Tuttle established a significant presence in the local area during 1891.",
-    "imagePrompt": "A vintage, archival-style editorial photograph in a 3:4 vertical portrait ratio showing the natural, unsettled landscape along the north bank of the Miami River in the late nineteenth century. In the upper two-thirds, dense subtropical flora, palm fronds, and tranquil river water are captured in muted sepia tones with historical grain and soft atmospheric daylight. The bottom third is composed of deep, simple, dark shadows along the shoreline. No identifiable people, no text, no letters, no logos, and no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing an authentic 1890s brass surveyor compass and rolled parchment resting on a weathered timber table, centered in the frame with warm, diffused sunlight and a shallow depth of field. No human faces, no legible text, no letters, no logos, and no watermarks."
+    "article": "Our area traces its formal beginnings back to February 4, 1836, the date Dade County was officially created. The county received its name after Major Francis L. Dade as well as the Miami River.\n\nThe year 1836 was also defined by significant military operations. Fort Dallas was constructed in that same year and served as a military base during the Second Seminole War.\n\nTogether, the establishment of the county and the military presence at Fort Dallas shaped our earliest chapter in 1836.",
+    "imagePrompt": "A vintage archival-style vertical 3:4 portrait depicting an early nineteenth-century wooden military outpost inspired by Fort Dallas on the edge of the subtropical Miami River in 1836. Weathered timber log structures and native palmetto vegetation occupy the upper two-thirds of the frame beneath an overcast Florida sky. The bottom third features dark, calm river water and shadowed marshland to create a simple, deep foreground. Aged daguerreotype aesthetic, historical sepia grain, muted natural earth tones, no identifiable people, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic close-up square 1:1 photograph focusing on an antique 1830s brass military compass resting on rough-hewn pine timber beside a folded leather dispatch pouch. The historical frontier equipment is centered in the frame with crisp focus highlighting the aged metal patina and worn leather texture, surrounded by a softly blurred natural outdoor background. Warm natural sunlight, rich historic detailing, no people, no faces, no text, no watermarks."
    }
   }
  ]
