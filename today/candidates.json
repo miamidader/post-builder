@@ -1,220 +1,220 @@
 {
- "date": "Sunday, November 8",
- "pick": "mw85i05u",
+ "date": "Monday, November 9",
+ "pick": "mw9uwoom",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Utensils not properly cleaned and sanitized at an inspected Miami-Dade bakery",
-   "source": "Miami Herald",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9COVhNcHJJTkkwMFBKSDlLSndBNmVCaE1odmRxWnhUX1hxcFpwa2FTSl9MNEZvYVpWN0xKdGVuQ3ltNkhIeUZVY2NjOW1weUszMTR6NDBvTWlmM3RDVkV2ajlpd3lZb3ZEeVN1Unp5TTPSAXBBVV95cUxNOTM1X1VueFM4OVc5THN3VzJxVno4RjFpdExvSHJlVDhfWnp5bU5POXI2WjhpMjlRSkpPY0pJaDFVU0JMX2RkTURURnRwOGN2X3lPQXRFeHBfamlVbmlmM0dVYnB0RTdSanMxeWRjUTJJ?oc=5",
-   "t": 1794158153000,
+   "title": "Miami-Dade Tax Collector now accepts Bitcoin for property tax payments",
+   "source": "News4JAX",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNLW0xNzhlWDVWdk1PaVRPR1lIb2N2VENGMVNxQWlpSkh3T1ZhVWpQTkRySWMySTMyOVJIb01zb2RoR3NNUFZESWdZRGJnQXg0cHVDZG5Kc2NDUzNCWHZVblFwVVRCVk42ZWowQ1lWaFBtQWo0OG1HSUFuWnM0RTkxY2VqSWNPanUzV25DcDh4Vld1M3BDb3hkVkE0aGFiX2FDcVVlY0dMd0pvOXZZNVI5QTctSEdyd0pIWHc?oc=5",
+   "t": 1794264312000,
    "id": 1,
-   "link": "https://www.miamiherald.com/news/business/article317983572.html",
+   "link": "https://www.news4jax.com/news/local/2026/11/09/miami-dade-tax-collector-now-accepts-bitcoin-for-property-tax-payments/",
    "thin": false,
-   "desc": "There were other cleanliness problems.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI LAKES BAKERY FAILS STATE INSPECTION OVER SANITATION VIOLATIONS",
-     "DIRTY UTENSILS TRIGGER FAILED INSPECTION AT MIAMI LAKES BAKERY",
-     "WHAT STATE INSPECTORS UNCOVERED INSIDE A POPULAR MIAMI LAKES BAKERY"
+     "MIAMI-DADE COUNTY NOW ACCEPTS BITCOIN FOR PROPERTY TAXES",
+     "PAY MIAMI-DADE PROPERTY TAXES WITH BITCOIN",
+     "MIAMI-DADE LEADS NATION BY ACCEPTING BITCOIN FOR TAXES"
     ],
-    "article": "A Miami Lakes bakery failed a state inspection on Thursday after officials uncovered multiple sanitation and food safety issues. Florida Department of Agriculture and Consumer Services inspector Caridad Delgado cited Los Balkanes Bakery, located at 16241 NW 57th Ave., for dirty equipment and improper food handling.\n\nDelgado documented food debris encrusted on knives, kitchen utensils air-drying without being sanitized, and tongs used for chicharrón and pastelitos unwashed for over four hours.\n\nState officials also issued stop sales on cheese pastries and pan de bono kept between 85 and 87 degrees inside a non-temperature display. House-made yellow corn dough wrapped in a plastic shopping bag also received a stop sale.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing a stainless steel bakery kitchen prep area. The upper two-thirds of the frame features industrial metal counters, a commercial prep station with knives, and cooking equipment under soft commercial kitchen lighting. The bottom third fades into simple, darker kitchen shadow. Realistic, atmospheric documentary style, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic 1:1 square close-up photo centered on stainless steel serving tongs resting inside a glass commercial food warmer next to golden baked goods. Shallow depth of field, warm interior lighting, sharply focused on the metal utensils, with no people's faces, no text, no letters, and no logos."
+    "article": "Miami-Dade property owners can now settle their property tax bills using Bitcoin. Miami-Dade County Tax Collector Dariel Fernandez shared the announcement on Monday, confirming that the digital currency is officially being accepted.\n\nResidents can use the cryptocurrency option for their property tax payments through online portals or directly in person at the tax collector office.\n\nThe new rollout places Miami-Dade County among the first public government entities across the United States to take Bitcoin for tax payments, expanding how local taxpayers can clear their official county bills.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing a brightly lit modern municipal tax collector office interior. In the upper two-thirds, a professional government service counter sits with a client standing before a teller, subtle palm tree reflections visible through large glass windows in the soft background. The lower third features an uncluttered, dark polished stone floor with simple shadows. Natural bright Florida daylight, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo focusing on an electronic point-of-sale terminal positioned on a clean wooden office counter. Centered composition showing the sleek modern payment hardware with subtle ambient office lighting, hands blurred in the soft background. No human faces visible, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Investigation underway after girl dies in Homestead, deputies say",
-   "source": "NBC 6 South Florida",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxORnVPQ1h1NEFoQktRUXAwY19LUzZWczNrRVlITVJaRnpjeDZ5SnJqVU1ZekQ4ejZCdW9kdmkzbXF0Qk8tVDhXLVhTdDM3Z3dxZy1TRUVfSV8zdHR6Z0FlRm9uSUtVR04zNy1lNHg1Vl9WYzU2Q1hpakRMaEhqZU5SV3RiTm1Pa19CSzdwdTZTZFZiSzlwRXBBWXBDNUM1cnBtWmhDRnVodFpMeDhtaXfSAbYBQVVfeXFMT283WTd1cGtJWDJiVWxLbGgxbDFVVnY1anBlX3pVakw4eE50MDY4bFc0M3FVT2hONENzS3IzX01lX29GWlg0TVZkdlNlb2QzQ0ppTERxN2N2d3N4MGdMVEkzeDdTZ2JEc2RaQjBlMERtbG9tWEF5ME9wbjJEVmtCX0ZyeU9xSWZfUzByck05bUtNenpqWDRXUlpIaU5zWEI5bHY3LUp0NzUxc29XOFNRTnRqUGN6ZVE?oc=5",
-   "t": 1794152687000,
+   "title": "Recount begins in Florida congressional race amid conflict-of-interest claim",
+   "source": "The Washington Post",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNZEtrNnowNnF0all3UVA3Y2c1YWRzb2U0LXk5T0RhU2hRUkp2XzFXb09tMHgwWFU4SC1mTHZQUHU0VUlya28xX2g5VUFCdkU3OHhSMFhzR3lad3p5cTh3cHZfend3enRtVlhkaHpRbHdYWTJPb3JEUTVndUpXYy03STF0QlFmeXdqcVNrYlI0WUlTTERjRDFpWkdMWUtqS2RMV2xka0VnV3ZGZnBneVZtNHYwekJPMncwelc0QWpVcm5TX0U?oc=5",
+   "t": 1794263884000,
    "id": 2,
-   "link": "https://www.nbcmiami.com/news/local/investigation-underway-after-girl-dies-in-homestead-deputies-say/3885303/",
+   "link": "https://www.washingtonpost.com/politics/2026/11/09/recount-begins-florida-congressional-race-amid-conflict-of-interest-claim/",
    "thin": false,
-   "desc": "",
+   "desc": "A judge kept Miami-Dade’s elections chief on the recount board despite a lawsuit calling her Rep. María Elvira Salazar’s “political ally” and friend.",
    "draft": {
     "headlines": [
-     "INVESTIGATION LAUNCHED AFTER GIRL DIES IN HOMESTEAD SATURDAY",
-     "TRAGEDY IN HOMESTEAD: INVESTIGATION UNDERWAY",
-     "MIAMI-DADE DEPUTIES PROBE UNEXPLAINED DEATH OF GIRL IN HOMESTEAD"
+     "RECOUNT UNDERWAY IN MIAMI DISTRICT 27 CONGRESSIONAL RACE",
+     "JUDGE KEEPS MIAMI-DADE ELECTIONS CHIEF ON RECOUNT BOARD",
+     "MIAMI AND CORAL GABLES RACE FACES HEATED RECOUNT BATTLE"
     ],
-    "article": "An investigation is underway in South Florida following the death of a girl in Homestead on Saturday afternoon.\n\nHomestead Police officers arrived in the area of Suncrest Avenue and Northwest Ninth Court at approximately 3:30 p.m. responding to a medical call. Upon arrival, first responders found a girl who required urgent medical attention.\n\nDespite the performance of lifesaving measures, the girl was pronounced dead, according to the Miami-Dade Sheriff's Office.\n\nDeputies have not released the girl's age or her cause of death as the investigation into the circumstances remains active.",
-    "imagePrompt": "A 3:4 vertical editorial documentary photograph of a quiet South Florida residential street during the late afternoon, with blurred flashing police cruiser lights reflecting off palm trees and suburban homes in the upper two-thirds of the frame. The bottom third consists of dark, clean asphalt in shadow with subtle reflections of red and blue emergency lights. Somber atmosphere, realistic news photography, no people's faces, no text, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 close-up photojournalistic shot centered on a first responder medical kit resting on a residential curb beside a patch of grass, softly illuminated by ambient daylight and distant emergency vehicle light glow. Shallow depth of field, solemn atmosphere, no people, no faces, no text, no logos, no watermarks."
+    "article": "A recount is officially underway across Florida's 27th Congressional District, covering parts of Miami and Coral Gables, after a razor-thin election contest between Republican Representative María Elvira Salazar and Democrat Eliott Rodriguez.\n\nMiami-Dade's elections chief remains on the oversight board for the recount after a judge rejected a lawsuit challenging her participation. The court filing had alleged a conflict of interest, describing the elections administrator as a personal friend and political ally of Salazar.\n\nSalazar publicly declared victory on Tuesday in the heavily Hispanic South Florida district. However, the Associated Press has not officially called the race as recount procedures continue.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical aspect ratio depicting an official election tabulation room in Miami. In the upper two-thirds, poll workers in professional clothing sit around long tables carefully handling stacks of paper ballots under clean indoor lighting. The bottom third features a simple, darker surface of an empty table in soft focus. Serious documentary photography, realistic atmosphere, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo showing a close-up detail of a heavy-duty transparent ballot box with a secure numbered seal on a polished wooden table. The subject is perfectly centered. Shallow depth of field with a clean, softly blurred background. No people or faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Hilton Miami Beach Unites 5 Art Deco Buildings: Plan for 2027?",
-   "source": "deeparrival.com",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9BeXB4djY3ZzNra0d4Rm4yYXBtR2pKaUdQQkQ2bllha1BEOVQ4MTNUaTFWUDRDZkd5d3FmWkhDQnh4bTN1NmVxc1VtTlYyblJJWEJGcHRnRElLZjFacTBOazhJWWtnM25LR3ZCMTRhYmhmUng1WlNn?oc=5",
-   "t": 1794151347000,
+   "title": "Bodycam video shows moment Hialeah Police finds child chained to fence",
+   "source": "WSVN",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tUlB6VXpOTWt3NUdSc0xOSVp6RUJJazJBd3FFalM0YWZ0OE5ZSkVLZ3pwSE1JSzVIX0pwLTZxSXpZajhwZWM1eGJ6UDJTUjRsWHNsOTlPb0NfRnVQajRlSFBOcXhnN3ZtblhIeUtHSVFURmxBRGp0TjNJSkI?oc=5",
+   "t": 1794260657000,
    "id": 3,
-   "link": "https://deeparrival.com/news/hilton-miami-beach-early-2027-art-deco/",
+   "link": "https://wsvn.com/news/local/miami-dade/special-needs-girl-found-chained/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "HILTON TO OPEN 289-ROOM MIAMI BEACH HOTEL IN 2027",
-     "FIVE HISTORIC MIAMI BEACH BUILDINGS BECOMING ONE HILTON",
-     "HISTORIC MIAMI BEACH BLOCK REVIVED INTO NEW LUXURY RESORT"
+     "HIALEAH MOTHER CHARGED AFTER CHILD FOUND CHAINED TO FENCE",
+     "BODYCAM REVEALS HIALEAH CHILD CHAINED OUTSIDE",
+     "WHAT HIALEAH POLICE DISCOVERED CHAINED OUTSIDE A RESIDENCE"
     ],
-    "article": "A major piece of local architectural history is getting a massive revitalization. The new Hilton Miami Beach is scheduled to open in early 2027 at 2000 Park Avenue in the Museum Historic District.\n\nThe 289-room destination connects and restores five historic structures dating from 1938 to 1953 that stood vacant for years after surviving a 2012 fire. The block-spanning project highlights Streamline Moderne and Miami Modern styles, anchored by Henry Hohauser's 1939 Collins Park Hotel.\n\nLocated near the Miami Beach Convention Center, the property will feature three pools, including two on rooftops, a signature coastal restaurant, and a rooftop bar.",
-    "imagePrompt": "Editorial architectural photograph in a 3:4 vertical orientation capturing a restored historic Miami Beach Art Deco hotel exterior under bright Florida sunlight. The upper two-thirds displays classic Streamline Moderne architecture with curved pastel facade elements, nautical trim, and tropical palm fronds. The bottom third features a simple, dimly shaded street and clean sidewalk. Realistic travel photography, no text, no logos.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph highlighting classic Art Deco architectural details on a Miami Beach building facade. The image is centered on geometric chevron carvings and rounded pastel trim on smooth stone, illuminated by warm natural daylight. Clean architectural detail shot with no people, no faces, no words, and no logos."
+    "article": "Hialeah Police released body camera footage showing officers discovering a 13-year-old special needs girl secured to a fence with a metal chain. The incident occurred on July 11 near 355 West 63rd Street and Fourth Avenue in Hialeah. Authorities stated that 34-year-old Yashira Maldonado wrapped the chain around her daughter's waist after being fired from her job. Maldonado then placed her phone on silent, went home, and watched television in bed. The child was left alongside a backpack and shoes. The victim's great-grandmother found her and dialed 911 after failing to untie the chain. Maldonado faces felony child abuse and neglect charges and has bonded out of jail.",
+    "imagePrompt": "A realistic vertical 3:4 editorial documentary photo showing a suburban Hialeah residential exterior under bright Florida daylight. In the upper two-thirds, a metal fence stands outside a modest single-story house with green tropical bushes in the background. The lower third features simple, darker pavement casting long shadows. Authentic daylight photojournalism style, no people visible, no text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 documentary close-up photograph focused directly on a heavy metal chain wrapped securely around a metal fence pole. The texture of the metallic links is centered and sharply detailed, with a soft-focus background of concrete ground and a nearby backpack. Natural outdoor sunlight, no people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Girl's death reported in Homestead, officials say",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBrUi1PcGZTYmczM3dnZjRoZkpSTkxmZHdBVXhNNXNtV19ZZHJTTHZ0d3p0X3IzN1NRb3g5c3dvUzhhVC04MzlBQmpZRE1xM1VDcG1NVVo5ajNRZWJSd24yU3hsZGdIWXF6RUltZ09kc1lLSmxmeFE?oc=5",
-   "t": 1794150382000,
+   "title": "Monarch Athletic Club Expands to RIVANI Miami Beach",
+   "source": "Fitt Insider",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRGZYYkU5S3E5MndPMlJkTU1admdJWTdmaVNhUnZXTVFTcS1zdG01TXQyRl84b0ZwcVBqekR0ZEludHljN1Z1ek1WMjJlSEpSMEctTE1FLTRsRGFLR1pySjY0YXJVSVhCMTNIQ1NIWnlSaFFDX29ITUlqWmVRejA1Q0I2dFQwQV9hLVZNUFQzMk02aU9h?oc=5",
+   "t": 1794260578000,
    "id": 4,
-   "link": "https://www.cbsnews.com/miami/news/homestead-child-death-11-8-2026/",
+   "link": "https://insider.fitt.co/press-release/monarch-athletic-club-expands-to-rivani-miami-beach/",
    "thin": false,
-   "desc": "The Miami-Dade Sheriff's Office is investigating.",
+   "desc": "The Luxury Wellness Club Known for Its Signature Approach to Preventive Medicine and Longevity to Open at Class X by RIVANI",
    "draft": {
     "headlines": [
-     "HOMESTEAD CHILD DEATH UNDER INVESTIGATION BY MIAMI-DADE HOMICIDE BUREAU",
-     "TRAGIC CHILD DEATH REPORTED IN HOMESTEAD SATURDAY AFTERNOON",
-     "MIAMI-DADE DETECTIVES INVESTIGATE TRAGIC DEATH OF HOMESTEAD GIRL"
+     "MONARCH ATHLETIC CLUB OPENING AT CLASS X IN MIAMI BEACH",
+     "LUXURY WELLNESS CLUB EXPANDS TO MIAMI BEACH",
+     "MIAMI BEACH SECURES HIGH PROFILE WELLNESS CLUB AT CLASS X"
     ],
-    "article": "Miami-Dade authorities are investigating the tragic death of a young girl in Homestead on Saturday afternoon. Emergency personnel from the Homestead Police Department and Miami-Dade Fire Rescue rushed to the neighborhood near Suncrest Avenue and Northwest 9th Court around 3:30 p.m. following reports of a medical emergency. First responders located a child requiring urgent medical attention. Despite crews performing lifesaving efforts, the girl was pronounced dead directly at the scene. Detectives with the Miami-Dade Sheriff's Office homicide bureau have taken charge of the active investigation into the incident.",
-    "imagePrompt": "A realistic vertical 3:4 editorial documentary photo of a quiet South Florida suburban neighborhood street in Homestead under an overcast late afternoon sky. In the upper two-thirds of the frame, distant parked emergency vehicles with glowing red and blue lights are visible near residential houses and tropical palm trees. The lower third of the frame is composed of a simple, dark asphalt roadway in shadow. The mood is somber and quiet. No visible faces, no text, no letters, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 macro photo focusing on a strand of bright yellow police barrier tape tied securely around a weathered wooden utility pole on a suburban street corner. The knot is centered in crisp focus, while the background features soft, out-of-focus tropical greenery and suburban pavement under diffuse daylight. No people, no faces, no readable text, no logos, no watermarks."
+    "article": "Miami Beach is welcoming Monarch Athletic Club for its East Coast debut at Class X by RIVANI. Located steps from Lincoln Road inside Robert Rivani's $125 million ultra-luxury office redevelopment, the Los Angeles wellness brand will occupy an 8,000-square-foot facility. Co-founded by Dr. Ryan M. Greene, the club unites concierge medicine, personal training, physical therapy, and nutrition under a single membership. Each routine begins with medical evaluations and diagnostic bloodwork to create custom exercise and nutrition plans. The location also features recovery amenities such as saunas, cold plunges, contrast therapy, compression, and IV treatments. Monarch joins other Class X tenants including Daymond John, Playboy Enterprises, and Jills Zeder Group.",
+    "imagePrompt": "Editorial vertical 3:4 portrait photo of a sunlit, ultra-luxury modern wellness interior in Miami Beach. In the upper two-thirds, sleek high-end training equipment and minimalist architectural columns stand near floor-to-ceiling windows with soft tropical light. The bottom third features dark, clean polished stone flooring with simple deep shadows. High-end architectural photography, realistic textures, no people, no text, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 centered close-up photograph of a luxury contrast therapy recovery suite, showing a minimalist stainless steel cold plunge tub with crystal-clear water next to rich cedar wood paneling. Elegant ambient spa lighting, detailed reflections on wet surfaces, strictly no human figures, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami luxury hotels have found their newest VIP — the pampered family dog",
-   "source": "Tampa Bay Times",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQUnhFV0xvQ3BJRGg2N1FaNnI3RGZBNUZKYmlTSGEwZFp1NHcwbzQ1SmRqWjRHVjg4MTNGNVVIb3pqamhEYU5JUzdwRjRMd1ZYYldFRjl1S2lNNHM0eXRiOHFJUTJvQ3E1X2NaWEZYcVVHMHJCaGgwTnJRQjg0bWhJLTl5R1YtV1A1eFZKcVRMa18?oc=5",
-   "t": 1794148467000,
+   "title": "Miami-Dade Fire Rescue seeks $2.9M after helicopter incidents, corrosion repairs",
+   "source": "Florida Politics",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQX0l3ZFl0S2wtUlhWc2pOeFNDbkxraGhuc213X2JCQlFURUdtRUFLWFQyNnpyUGxZUEtCTUZRU2ZwaUVzQnlxVVpmQ0FaeTZQMWo1ZlYxUDBIVFVtSXVvcGRfSEgwcXF1MlN4blAxOGtVbVhqVXB6QjZSb1FYMXFnYmZkUzV6RTdfdGdsU2VlUjliWHFCRl9fMC00UDI3MW5SazFMZkpfRndXTVI5a1hINmZDaDlQbzJzYmVPRlQwOWo?oc=5",
+   "t": 1794260313000,
    "id": 5,
-   "link": "https://www.tampabay.com/news/florida/2026/11/08/luxury-hotels-dog-friendly-miami-pets/",
+   "link": "https://floridapolitics.com/archives/831780-miami-dade-fire-rescue-seeks-2-9m-after-helicopter-incidents-corrosion-repairs/",
    "thin": false,
-   "desc": "Industry experts say for luxury hotels, the movement has evolved beyond simply being “pet friendly.”",
+   "desc": "Salt air and humidity are wearing down helicopters the county bought just six years ago.",
    "draft": {
     "headlines": [
-     "MIAMI LUXURY HOTELS EXPAND EXCLUSIVE SERVICES FOR PAMPERED DOGS",
-     "FIVE STAR TREATMENT FOR MIAMI PETS",
-     "WHY MIAMI IS BECOMING THE WORLD CAPITAL FOR CANINE LUXURY"
+     "MIAMI-DADE FIRE RESCUE REQUESTS $2.9 MILLION FOR HELICOPTER REPAIRS",
+     "SALTWATER DAMAGE SQUEEZES MIAMI-DADE RESCUE HELICOPTER BUDGET",
+     "WHY MIAMI RESCUE HELICOPTERS NEED MILLIONS IN SALTWATER REPAIRS"
     ],
-    "article": "Miami luxury hotels are rolling out high-end amenities for visiting dogs, with pet owners paying between $80 and $300 per stay. In downtown Miami, the five-star InterContinental hotel earned the 2026 Hotel of the Year title from Roch Dog after meeting over 70 evaluation criteria. The downtown property recently launched Rocco, an artificial intelligence canine concierge that guides guests to local parks and waterfront paths. Arriving pets receive Miami-based Yum Pup treats, custom bandanas, and plush beds, with forthcoming room service options including steak bowls and organic chicken. On August 26, the venue hosts an End of Summer Paaawty featuring pup cups and sprinklers. Other area properties offering upscale pet programs include The Betsy in Miami Beach, Loews in Coral Gables and South Beach, and W locations across Miami.",
-    "imagePrompt": "A realistic vertical 3:4 editorial portrait of a well-groomed dog wearing a stylish bandana sitting proudly on a polished marble floor inside a sunlit luxury hotel lobby in Miami. The dog occupies the upper two-thirds of the frame with soft tropical greenery and elegant architecture blurred in the background. The bottom third consists of a simple, darker reflective floor in gentle shadow. Natural daylight, high-end hospitality setting, no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo of an upscale canine dining service arranged on a designer pet mat. A polished ceramic dog bowl holding sliced steak sits next to gourmet dog treats on a hotel room floor. Centered composition, warm ambient indoor lighting, shallow depth of field, no people or faces, no text, letters, logos, or watermarks."
+    "article": "Miami-Dade Fire Rescue is seeking county approval to spend an extra $2.9 million to maintain its Air Rescue fleet. Excessive corrosion driven by local humidity and saltwater intrusion has accelerated wear on the helicopters, which were bought in November 2019. Assistant Fire Chief Rick Rojas explained that Miami's coastal climate creates unique repair challenges for the department's four Leonardo AW139 helicopters. Unplanned radio work and aircraft incidents have depleted the bureau's original $6.66 million budget faster than expected. The county's Safety and Health Committee unanimously approved the resolution, which raises the repair allocation to $9.56 million. A full commission vote is scheduled for January 20.",
+    "imagePrompt": "A realistic editorial photograph in a vertical 3:4 aspect ratio showing a modern emergency medical helicopter parked on a helipad against an overcast, humid coastal sky. The aircraft occupies the upper two-thirds of the composition, highlighting its metallic body and rotor blades. The bottom third consists of dark, wet asphalt tarmac with soft shadows. Editorial lighting, realistic textures, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph featuring a detailed close-up of a helicopter mechanical rotor joint and metal rivets, showing subtle signs of weathering from coastal air. The mechanical assembly is centered in the frame with sharp focus and a shallow depth of field softly blurring the background. No people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Ruven’s Roll Brings Tortillas, Burritos and Smash Burgers to North Miami Beach, FL",
-   "source": "YeahThatsKosher",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNenJlTldLcnRrcGVlVUttelVpTkt0UElwQTRKR1VpdTRNR2xVeERGZWJnS3ByN1VqLXhBWTlPMnBqSUZ3eXZFSVoxZjdoQVpORW9ISEplR0Vfd244WWZiRjlDdmFXaV9XdHV2bEZDZW8zNS1mY21CTU5wYWZzWU5pQ29EZDdGdWF5bVVMaE1nRzJZQzFEYkdUZm5lcVhuNTNzSWk5dXJaNnhISk94LUxielItUUFEbDA?oc=5",
-   "t": 1794146788000,
+   "title": "A mother accused of abusing her two children, including biting one of their ears while at a supermarket in Hialeah, was arrested on Thursday, authorities said.",
+   "source": "Facebook",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPcXhmWXd5NWNOY0N5dnhSYndoWW1oN1gxMG5xU2FqdzdKQ1hLZ3MxckVla2FhRHF6NVlNbHlrSU1uYVkyTVo2LVpDMzBBeU5hSWRmZjFDZTRKRE1HaTd1bV96OFppLWpyVVVlODRYaEJkQlU2UW5BTUR4SE9FeHpqOHo4NHZQaWxQQzRwODB3ZzNpMlhvVF9zTUpNVzF2TVREUl8xSGktUkxPM2FTQmtoUk5wVEtCbi1Rc3JPRlVQenRNeGJadTVqZS1tb3ZJRHdrLWlTdXVnd0RDWUprSktJ?oc=5",
+   "t": 1794259150000,
    "id": 6,
-   "link": "https://yeahthatskosher.com/2026/11/ruvens-roll-brings-tortillas-burritos-and-smash-burgers-to-north-miami-beach-fl/",
+   "link": "https://www.facebook.com/NBC6SouthFlorida/posts/a-mother-accused-of-abusing-her-two-children-including-biting-one-of-their-ears-/1667650128062640/",
    "thin": true,
-   "desc": "Ruven's Roll serves glatt kosher meat packed into dough on Biscayne Boulevard in North Miami Beach, FL. It is certified by ORB.",
+   "desc": "",
    "draft": {
     "headlines": [
-     "RUVEN'S ROLL OPENS WITH KOSHER BURRITOS ON BISCAYNE BOULEVARD",
-     "NEW GLATT KOSHER SPOT ARRIVES IN NORTH MIAMI BEACH",
-     "A NEW BISCAYNE BOULEVARD DESTINATION SERVES SMASH BURGERS AND TORTILLAS"
+     "MOTHER ARRESTED THURSDAY AFTER CHILD BITTEN AT HIALEAH SUPERMARKET",
+     "HIALEAH SUPERMARKET CHILD ABUSE ACCUSATIONS LEAD TO ARREST",
+     "WHAT HAPPENED AT A HIALEAH SUPERMARKET LED TO ARREST"
     ],
-    "article": "Ruven's Roll has officially opened along Biscayne Boulevard in North Miami Beach, expanding dining options for the neighborhood. The new establishment specializes in glatt kosher meat packed into dough for diners across the area.  The North Miami Beach kitchen serves a variety of handheld favorites, including tortillas, burritos, and smash burgers directly on Biscayne Boulevard.  All food prepared at Ruven's Roll is certified by ORB, giving North Miami Beach another dedicated glatt kosher meat destination right along one of the city's main roadways.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing a freshly prepared smash burger and a warm wrapped burrito resting on a rustic wooden table under warm restaurant lighting. The food is arranged in the upper two-thirds of the frame, highlighting the crispy grilled meat and golden dough. The bottom third of the image is simple and cast in soft, dark shadow. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic close-up square 1:1 photograph centered on a freshly griddled tortilla filled with seasoned meat, showing crisp browned edges and savory steam rising from the dough. Warm, focused ambient lighting accentuates the texture, with the background softly blurred. No people's faces, no text, letters, logos, or watermarks."
+    "article": "A mother is under arrest after authorities in Hialeah took her into custody on Thursday for allegedly abusing her two children. The accusations stem from an incident that took place at a Hialeah supermarket. According to statements from authorities, the woman abused both of her children at the location. Officials specified that the reported mistreatment included the mother biting the ear of one of her children while inside the store. Authorities confirmed that the mother was placed under arrest on Thursday as a result of the supermarket child abuse allegations involving her two children.",
+    "imagePrompt": "A realistic editorial photo of a police cruiser parked outside a typical South Florida supermarket in Hialeah during the day, with blurred emergency lights reflecting softly on the asphalt. The vehicle and storefront are positioned in the upper two-thirds of the vertical frame, while the bottom third consists of clean, dark, out-of-focus pavement with subtle asphalt texture. Natural daylight, cinematic documentary style, 3:4 vertical orientation, no text, no logos, no watermarks, no visible readable signage.",
+    "circlePrompt": "A realistic editorial square photo showing an empty, generic metal shopping cart resting on a tiled floor near a supermarket checkout. The cart is perfectly centered in the frame with warm, soft retail lighting casting gentle shadows. Shallow depth of field, documentary style, no human faces, no readable text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Boat driver found not guilty in Florida crash that killed daughter's teenage friend - ABC News",
-   "source": "ABC News - Breaking News, Latest News and Videos",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNclJNRmRqMERzdU41TV93RV9rWVV5bFNYV1JYeEg0amVaTF9GOGZ1V0R3RzN4OU5LbEFOV1FFUXhpLXJDVmowSF9DYTlIRlJuRjZBd3o3TVd4UDA3aFFjaEx6bjJFYU5nYlVNTTdjU0NGdzZrQUhWd2lBazI2d2RPU19NWEhFb1FyQWc3RDgteHVlUXhJMlU5ZlUtMVbSAaIBQVVfeXFMUGY4djZEcDJCdEN0SWNjTmltdG1qUHZDMzFmSVB0TXFTTG9OMm00MDQxbTktWlliYlJkNWZJTmFMZmlFLXdmdkJiOGpvcVlJaGxCSmFsS1U4N0lPOGVudU1CQmJNdmJfTXVrV0FiT3pMNk1VUU5mY1NxMHNRSzhHTnA4RUlSUU92LXJfLXVmZXFhZlc0R2hHeC1FY2MxZHRyQUdB?oc=5",
-   "t": 1794133046000,
+   "title": "Miami-Dade deputies: 70-year-old felon on probation stabs woman in head at motel",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQSlRxNUl6YkNOM1BuRS11enVOdy1RR1VkZlA4MG9VSU9BUjlPTGoxX2VTM0dCdU43ZFZuX3ZreDFtZ2kwMnBjSGVkWDVwOUkzTUlJRjhTVFhtUHZqazhseVlzekhLeU1BSXh5UVNzMGRJamJMYWREcTgzR2NHVkNvTGdkdnVYSmZWYm8wRHZ6XzhTcTRCQUdFMlRZQXpibEotMmZLeHphaVZIdEc3aEVjZndpNUVNMjBjekl1STBmMF9rdnVq?oc=5",
+   "t": 1794255908000,
    "id": 7,
-   "link": "https://abcnews.com/US/boat-driver-found-not-guilty-florida-crash-killed-teen/story?id=134103381",
-   "thin": false,
-   "desc": "George Pino, a prominent South Florida real estate broker, was charged with manslaughter and vessel homicide in connection with the 2022 Labor Day weekend boat crash.",
-   "draft": {
-    "headlines": [
-     "GEORGE PINO FOUND NOT GUILTY IN DEADLY MIAMI-DADE BOAT CRASH",
-     "NOT GUILTY VERDICT IN FATAL 2022 BOAT CRASH",
-     "MIAMI JURY CLEARS GEORGE PINO IN TRAGIC CHANNEL CRASH"
-    ],
-    "article": "A Miami-Dade County jury has found South Florida real estate broker George Pino not guilty of vessel homicide and manslaughter. Jurors deliberated for under two hours on Monday evening before delivering the verdict in the emotional trial.\n\nThe charges stemmed from a September 4, 2022, Labor Day weekend crash in Miami-Dade's Cutter Bank channel. Pino, 55, was driving his 29-foot Robalo boat during his daughter's birthday celebration when the vessel struck a boat marker.\n\nSeventeen-year-old Lucy Fernandez died from her injuries. Katy Puig suffered catastrophic injuries requiring constant care, and every other passenger was injured. State Attorney Katherine Fernandez Rundle stated her office accepted the verdict while acknowledging the tragedy's lasting toll on the community.",
-    "imagePrompt": "Editorial photo in a 3:4 vertical orientation capturing the exterior steps and stately stone columns of a Miami-Dade County courthouse during a somber, overcast late afternoon. The courthouse architecture and entrance occupy the upper two-thirds of the frame, while the bottom third is composed of simple, dark stone walkway in deep shadow. Realistic photojournalistic style, natural muted lighting, no people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph centered on a weathered wooden navigation channel marker post emerging from calm bay waters. Gentle ripples surround the marker under soft daylight with a blurred coastal horizon in the background. No people, no faces, no text, no numbers, no letters, no logos, no watermarks."
-   }
-  },
-  {
-   "kind": "sports",
-   "label": "Sports",
-   "title": "𝚆𝙰𝚃𝙲𝙷 Detroit Lions vs. Miami Dolphins 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍ Ｆｒｅｅ ＯＮ Ｔｖ Ｃｈａｎｎｅｌ!NFL™",
-   "source": "Jackson County Pilot",
-   "url": "https://news.google.com/rss/articles/CBMi3gJBVV95cUxPNDdWZFdRV0JBbHh1MVNwMTJ3T0VBM2tkQnNNZjRITDJhQWNVNzd1NEp0N0luc0MwbzdhV053djdXZFdsN00ySnd3SDZRRXVtd3diRG4xUkJGVU5BNTd1ZWhDTF9lM0o0OUZXMkZ6X0x1T2REbzFiRF9iVDJCalpseXl3WFl2Mm1EcFhaNkJXOEx4Zkh1TjNJdk9ZSXJkbU8yYTRNMEdTMXVpXzlzMlh3Mk40UXpYLTZRb1JDZGRsUkVsbmZNdHVkY3Y5OExWT2VLNGd4SzZtaHVHRThpdFZTX0NaX2I0aElBUzhwS3dSUGxFVExJNWdqb3dmTXFjMzNBYXZzZ0JYbXR1NE1MOHBtSU5IT2FEOWljX3RnLWVmdkprcFhJT2dsYmFIaVNXam03WW5NbW5qci1vUDRPUmxqYmJpRWZPTUJJelB5UHQzcFV5STZrM2NzSkZCYk5kZw?oc=5",
-   "t": 1794161317000,
-   "id": 8,
-   "link": "https://www.jacksoncountypilot.com/articles/%F0%9D%9A%86%F0%9D%99%B0%F0%9D%9A%83%F0%9D%99%B2%F0%9D%99%B7-detroit-lions-vs-miami-dolphins-%F0%9D%90%8B%F0%9D%90%88%F0%9D%90%95%F0%9D%90%84-%EF%BD%93%EF%BD%94%EF%BD%92%EF%BD%85%EF%BD%81%EF%BD%8D/",
+   "link": "https://www.local10.com/news/local/2026/11/09/miami-dade-deputies-70-year-old-felon-on-probation-stabs-woman-in-head-at-motel/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "DOLPHINS HOST LIONS AT HARD ROCK STADIUM ON NOVEMBER 8",
-     "DOLPHINS BATTLE LIONS IN MIAMI GARDENS",
-     "HARD ROCK STADIUM SET TO HOST VISITING DETROIT LIONS"
+     "70-YEAR-OLD FELON ARRESTED FOR LEISURE CITY MOTEL STABBING",
+     "PROBATION VIOLATOR JAILED AFTER MOTEL ATTACK",
+     "CONVICTED FELON ON PROBATION BACK IN MIAMI-DADE JAIL"
     ],
-    "article": "The Miami Dolphins are preparing to defend their home turf against the Detroit Lions at Hard Rock Stadium in Miami Gardens. The NFL regular season showdown is scheduled for Sunday, November 8, 2026, with kickoff set for 1:00 p.m. Eastern Time. Detroit travels down to South Florida holding the stronger season record between the two franchises. Both teams are fighting to improve their standing as the regular season enters a critical stretch. Local football fans can expect a clash of contrasting playing styles and offensive talent as the Dolphins look to protect their home field against the visiting Lions.",
-    "imagePrompt": "A realistic editorial photograph capturing the open-air bowl of a massive South Florida football stadium on a bright afternoon. The turquoise and white stadium seats and the vibrant green field dominate the upper two-thirds of the vertical frame under the clear blue sky. The lower third features the dark, shadowed edge of the lower concourse railing, creating a clean and simple dark base. Authentic sports photojournalism style, natural daylight, sharp focus, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square close-up photograph centered on a regulation pebble-grained leather American football resting on bright green stadium turf. Crisp blades of grass and subtle chalk line dust surround the ball under direct natural sunlight. Shallow depth of field with the background softly blurred, perfectly centered composition, no human faces, no text, no brand markings, no logos, no watermarks."
+    "article": "Miami-Dade Sheriff's Office deputies arrested 70-year-old Vernon Tillman on Sunday morning following a stabbing at the Yes Motel in Leisure City. Deputies arrived around 7 a.m. at the property, located at 28475 South Dixie Highway. Investigators reported Tillman attacked a woman with a small knife after she finished showering, inflicting head wounds that required staples. Tillman was booked into the Turner Guilford Knight Correctional Center before 9:30 a.m. on Sunday, where he remains held without bond. State records show Tillman was on probation until January 2029 for prior armed robbery and armed carjacking convictions. He now faces an aggravated battery charge before Miami-Dade Circuit Judge Ramiro Areces.",
+    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of an older South Florida roadside motel along a highway in the early morning. Marked police patrol cars with flashing emergency lights sit parked outside the exterior walkways. The motel building, palms, and emergency lights occupy the upper two-thirds, while the bottom third consists of dark, simple asphalt in deep shadow. Cinematic photojournalism, authentic dawn lighting, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic 1:1 square photo showing a centered close-up of a weathered motel exterior walkway and room doorway cordoned off with crime scene tape. Early morning light casts sharp shadows across the concrete floor and painted exterior wall. Documentary style, centered subject, no people, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "How To Watch Miami Heat At Sacramento Kings; Lineups, Injury Report, Betting Lines",
+   "title": "Miami Heat @ Utah Jazz: Live game updates, stats, play-by-play",
    "source": "Yahoo Sports",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOazBUYTdHTXg1cmJGQmI2Sk51MFVNRi00bjk5TnpOTFhCUXB3dkd4dDUtR1RKLTRvRVZ2b1YzY2daRklJWUpRX0VKb0tzcFFMQTVIcVI4VmkxZlJRcF90cERsNF9VcWdFUTdMUGVpcjl5QTFGSmczNzJiMVRBcUJUR2ZkZ0I5MGRzSkE?oc=5",
-   "t": 1794157239000,
-   "id": 9,
-   "link": "https://sports.yahoo.com/articles/watch-miami-heat-sacramento-kings-170039570.html",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1IYk1TUzBPdVZRbkNQbWU1cnBuSTRSR19meXY3Sm4xZno3bndpVUhyM1RWT2lwN3FDSnBvLXBXcE5PUDY3NktqNENkN0lEZjJ4a3RnamVuWU4yd0xualh3d2x1aHlWV1RpeUthaU5R?oc=5",
+   "t": 1794258486000,
+   "id": 8,
+   "link": "https://sports.yahoo.com/nba/miami-heat-utah-jazz-2026111026/",
    "thin": true,
-   "desc": "Giannis Antetokounmpo and the Miami Heat look to salvage their road trip against a struggling Sacramento Kings squad as Miami’s new-look frontcourt searches for chemistry in this cross-conference clash.",
+   "desc": "Sports News, Scores, Fantasy Games",
    "draft": {
     "headlines": [
-     "MIAMI HEAT FACE STRUGGLING SACRAMENTO KINGS ON THE ROAD",
-     "GIANNIS AND HEAT SEEK CRUCIAL ROAD TRIP REBOUND",
-     "CAN MIAMI SALVAGE THIS ROAD TRIP AGAINST SACRAMENTO?"
+     "MIAMI HEAT TRAVEL TO FACE THE UTAH JAZZ",
+     "HEAT BATTLE JAZZ ON THE ROAD",
+     "CAN MIAMI SECURE A BIG WIN IN UTAH"
     ],
-    "article": "The Miami Heat are heading into a cross-conference matchup against the Sacramento Kings with hopes of getting back on track. Giannis Antetokounmpo and the Heat squad are focused on salvaging their current road trip as they face a struggling Sacramento team. A major focus for Miami remains inside the paint. Miami's new-look frontcourt is actively searching for chemistry on the court during this road test. Heat fans will be watching to see if the frontcourt can build the connection needed to salvage the trip against Sacramento.",
-    "imagePrompt": "A realistic editorial photo in 3:4 vertical orientation capturing an intense basketball game moment on an indoor court. A tall, muscular forward in a red and black athletic uniform rises toward the basket under bright arena lights. The main athletic action fills the upper two-thirds of the frame, while the bottom third is dominated by a dark, moody, out-of-focus polished hardwood floor. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 macro photo centered on a textured professional leather basketball sitting on an indoor hardwood court line. Crisp arena spotlights cast a sharp reflection onto the varnished floorboards. Clean, balanced composition with no people, faces, text, letters, logos, or watermarks."
+    "article": "The Miami Heat are on the road to take on the Utah Jazz in an exciting basketball showdown. Local fans across South Florida are closely tracking the matchup as live play-by-play developments, team statistics, and official scoring updates unfold directly from the court. Whether following every possession for fantasy sports leagues or cheering on the squad from home, Miami supporters have access to full game coverage as the action progresses. Stay tuned for the latest numbers and shifts in momentum throughout the entire contest.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait showing an intense professional basketball moment. An athletic player in a red and black jersey leaps toward a basketball rim under bright arena spotlights, filling the upper two-thirds of the image. The bottom third features the darker, reflective polished wooden court floor fading into smooth stadium shadows. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo focusing on an official pebbled leather basketball resting alone on a polished indoor hardwood court floor, centered in the frame. The background is softly blurred with warm arena lighting bokeh. No people, no faces, no text, letters, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "sports",
+   "label": "Sports",
+   "title": "Miami Hurricanes Football | Weekly Press Conference | 3:00 PM | 11.9.26",
+   "source": "Miami Hurricanes",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOS1JOMmRxWTNKNjRRVFJGT0tva1ZqeGUwZXIyVTd5YUNKWGs3RmROTFJMQ2doT21jN0oxY1lkZkhIZUNCclhCZkVIVHNfajVvRUJzOWtmcTZ3cjdSdEZxSy1WV2lqdDQtTUF6ekRTanl5S1ZyVUU0MTlVYURPSWlQWWN4VXRSeDNVSWRPbE5wNk5PcGplTl95bExtRkJIdm5uN3J6Mm9ray0?oc=5",
+   "t": 1794256719000,
+   "id": 9,
+   "link": "https://miamihurricanes.com/news/2026/11/9/miami-hurricanes-football-weekly-press-conference-300-pm-11926",
+   "thin": true,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "MIAMI HURRICANES FOOTBALL WEEKLY PRESS CONFERENCE SET FOR 3 PM",
+     "MIAMI HURRICANES FOOTBALL HOLDS WEEKLY PRESS CONFERENCE",
+     "MIAMI FOOTBALL COMMUNITY AWAITS 3 PM WEEKLY PRESS CONFERENCE"
+    ],
+    "article": "The Miami Hurricanes football program has scheduled its weekly press conference for November 9, 2026. The media event is set to begin at 3:00 PM.\n\nLocal attention turns to the Miami Hurricanes football team for this scheduled weekly briefing on 11.9.26. The afternoon session represents the program's dedicated weekly media availability.\n\nThe 3:00 PM weekly press conference marks the latest scheduled team update for Miami Hurricanes football on November 9, 2026.",
+    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical portrait orientation capturing a press conference room setup. In the upper two-thirds, a wooden media podium stands under bright press lighting with several microphones arranged on stands. The bottom third of the frame consists of a clean, simple, darker foreground table surface in soft shadow. Authentic journalistic atmosphere with shallow depth of field, no people, no text, no letters, no logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on a collection of broadcast microphones with black foam windscreens arranged on a sleek table. The focus is sharp on the metallic hardware and microphone details, with a softly blurred press room background. No people, no faces, no text, no letters, no logos, and no watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1836: Dade County is created",
-   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
+   "title": "1906: canals begin draining the Everglades",
+   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
    "id": 10,
    "draft": {
     "headlines": [
-     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
-     "DADE COUNTY WAS ESTABLISHED IN 1836",
-     "HONORING OUR 1836 FOUNDING ALONG THE MIAMI RIVER"
+     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
+     "1906: EVERGLADES WATER REMOVAL CANALS BEGAN",
+     "WHEN CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906"
     ],
-    "article": "Our area traces its formal beginnings back to February 4, 1836, the date Dade County was officially created. The county received its name after Major Francis L. Dade as well as the Miami River.\n\nThe year 1836 was also defined by significant military operations. Fort Dallas was constructed in that same year and served as a military base during the Second Seminole War.\n\nTogether, the establishment of the county and the military presence at Fort Dallas shaped our earliest chapter in 1836.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 portrait depicting an early nineteenth-century wooden military outpost inspired by Fort Dallas on the edge of the subtropical Miami River in 1836. Weathered timber log structures and native palmetto vegetation occupy the upper two-thirds of the frame beneath an overcast Florida sky. The bottom third features dark, calm river water and shadowed marshland to create a simple, deep foreground. Aged daguerreotype aesthetic, historical sepia grain, muted natural earth tones, no identifiable people, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic close-up square 1:1 photograph focusing on an antique 1830s brass military compass resting on rough-hewn pine timber beside a folded leather dispatch pouch. The historical frontier equipment is centered in the frame with crisp focus highlighting the aged metal patina and worn leather texture, surrounded by a softly blurred natural outdoor background. Warm natural sunlight, rich historic detailing, no people, no faces, no text, no watermarks."
+    "article": "In 1906, a transformative chapter began right in our South Florida backyard when canals were begun to remove water from the Florida Everglades. This landmark effort in 1906 marked the exact period when canals began draining the Everglades, redirecting water away from the vast wetland environment. The construction of these water removal channels in 1906 permanently initiated the drainage of the Florida Everglades, setting off decades of change for the local landscape and waterways that surround the Miami area today.",
+    "imagePrompt": "A vintage archival-style vertical photograph in a 3:4 aspect ratio depicting a newly cut drainage canal in the Florida Everglades from 1906. The upper two-thirds of the frame captures early canal excavation work cutting through expansive sawgrass marsh under a hazy sky, featuring historical vintage dredger machinery in the distance. The bottom third is simple and darker, dominated by deep murky water reflections and shadowed peat banks. Aged sepia tones, authentic historical photographic grain, no modern elements, no identifiable people, no text, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing a centered close-up of heavy, weathered early 1900s iron excavation machinery and dredge chains resting against the muddy bank of a Florida Everglades canal. Centered composition, rich textures of rusted metal, dark wetland mud, and shallow water in the background. No people, no faces, no text, and no watermarks."
    }
   }
  ]
