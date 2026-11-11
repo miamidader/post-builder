@@ -1,218 +1,218 @@
 {
- "date": "Tuesday, November 10",
- "pick": "mwb4nm1s",
+ "date": "Wednesday, November 11",
+ "pick": "mwcjnmqy",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Tokyo-style pizzeria to open in Miami Beach",
-   "source": "The Business Journals",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSGVkS0VrcFQ0Mmt1ZV9hT0ZTa3FMcGxCVnJtaUFhNlFrc3lLRVYyV3kyOWQtcnhqc3lKd1FyX0tPWl9vQTdpdy1UenZaWEZKQnVTWGdUM3ZibU1UX2ctdmNzOTJqdDBuMXp3TGNtVXQ0RlhPLUJnN0ZwdGUxSEFYQUJTYU90MWhWY1hQRlZGSWhHRTVpX0h3UlYtM3JRdGNCSmxnZk9nOGY?oc=5",
-   "t": 1794339000000,
+   "title": "What could Amendment 3 mean for Miami-Dade County?",
+   "source": "USA Today",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOMGE4Qnktem1xQUw5aU14dl9jNEQ5WXE5enFuU012WEdRTXE2RUV4Q3FFSnNjY0NPWWVZX1JoOVVLQS0wQ1FRbkxOc2xuX0JLRUtua1RISTZselQ2amtjMDdVRHlRVm5hOWtiVF9PdWJ1cGNUOUZ3UXI4VUFoWHFYN0w1ZjdlVjVkV3M0SUdldXpaSjlMLWVqd19sSTJ4Wlp5ZFNtVDVDVDduRlFpWWc?oc=5",
+   "t": 1794423960000,
    "id": 1,
+   "link": "https://www.usatoday.com/story/news/state/florida/miami/2026/11/11/miami-dade-county-amendment-3/92722157007/",
+   "thin": false,
+   "desc": "",
+   "draft": {
+    "headlines": [
+     "AMENDMENT 3 PASSES BRINGING MAJOR TAX CUTS TO MIAMI-DADE",
+     "COUNTY FACES OVER $300 MILLION REVENUE LOSS",
+     "WHAT AMENDMENT 3 MEANS FOR LOCAL MIAMI-DADE SERVICES"
+    ],
+    "article": "Miami-Dade County anticipates losing hundreds of millions in tax revenue following the passage of Florida Amendment 3 on Nov. 3 with 61.98 percent voter approval. Taking effect Jan. 1, 2027, the measure elevates the non-school homestead exemption to $150,000 in 2027 and $250,000 in 2028. Local officials project the county will collect roughly $385.8 million less starting in October 2027, with reductions reaching $696.7 million by October 2028. Property taxes currently fund essential county operations, such as 73 fire rescue stations, meals for home-bound seniors, two animal shelters, 50 libraries, over 300 parks, and transit services including Metrorail and Metromover.",
+    "imagePrompt": "Editorial realistic vertical 3:4 portrait photo of an elevated public transit railway track running through Miami under daylight, positioned in the upper two-thirds of the frame, with the bottom third showing a simple, darker asphalt road in deep shadow, free of text, logos, or watermarks.",
+    "circlePrompt": "Realistic square 1:1 photo showing a close-up detail of a quiet public park bench surrounded by lush green palm foliage, centered in the frame, with soft natural lighting, without any people, faces, text, logos, or watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "Traffic alert: 8 injured in turnpike crash in West Miami-Dade, fire-rescue says",
+   "source": "Miami Herald",
+   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPR3ZvQjBpbV9lQnB0ZVQwdmo1TEdGNVJ5aDZSb2pab0lkWU1malB0MFBpNnZfSlgwQmRDczlobVEtNzk3UGV1RVFxU25TWUkzNTB3V04zeDhWUFg2ZUU4MU9vY0V4TlJsUzRDcC1QZFRzZGtZcXBEcXBkcFprVXBxQ3cwWVQybVhn0gGIAUFVX3lxTE5UX2d2R05nWk5EU3JiLVNONFRNd0N1bWlGRFB6WENQUV82ak1kQlM1ZUg2Wjd6aXBkSzRBUkp3U09DMmhpOG1qbW16dzA5Q2pCYjRsRXhkcXpGTVJhcW9RaC1mWGt1dU5RSU5NNWFyUkNudVZtOW5vWUs5T1ZhdjJsNHR4Wjd5NDg?oc=5",
+   "t": 1794423819000,
+   "id": 2,
+   "link": "https://www.miamiherald.com/news/local/community/miami-dade/article318034737.html",
+   "thin": false,
+   "desc": "A stretch of northbound lanes have been shut down for hours.",
+   "draft": {
+    "headlines": [
+     "EIGHT INJURED IN MULTI-VEHICLE TURNPIKE CRASH IN WEST MIAMI-DADE",
+     "MASS CASUALTY CRASH SHUTS DOWN FLORIDA TURNPIKE LANES",
+     "MAJOR TURNPIKE BACKUP AFTER SEVERE WEST MIAMI-DADE WRECK"
+    ],
+    "article": "Miami-Dade Fire Rescue responded to a multi-vehicle crash on Florida's Turnpike in West Miami-Dade late Wednesday morning. The collision occurred around 11:20 a.m. along the northbound lanes near Exit 25 at Southwest Eighth Street. Paramedics classified the scene as a mass casualty incident and transported eight patients to HCA Florida Kendall Hospital. Emergency dispatch traffic indicated that at least two of the injured individuals were in critical condition. The crash resulted in significant roadway closures for West Miami-Dade drivers. According to the Florida Department of Transportation, northbound lanes between Exits 23 and 25 remained completely shut down through 2 p.m.",
+    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing emergency vehicles with flashing lights parked across multiple highway lanes on a sunny Florida expressway. The upper two-thirds features rescue units and emergency personnel working near the median, while the bottom third consists of clean, dark asphalt roadway in slight shadow. No visible faces, no text, no logos, no watermarks.",
+    "circlePrompt": "A square 1:1 realistic photograph centered on a bright orange traffic cone resting on highway asphalt with the blurred, soft glow of emergency vehicle lights in the background. No people, no faces, no text, no logos, no watermarks."
+   }
+  },
+  {
+   "kind": "news",
+   "label": "News",
+   "title": "How Miami-Dade residents can use bitcoin to pay their property taxes",
+   "source": "Yahoo Finance",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNZVRObkNMbGdzV2V6aHQ1UDhvQ3NiV2tWSEt1bWFuM0xocGhYbEoyMHY1NDNMSW1NSk1CSHN1dmQ3YVZHS2M3ZUFFTGQxR2YtTUMwd2NsZldGNFpwNkd5UDh5LVhVQzBBbG1Pb1lPVEtTSDd4cmpsY0pTRlE4MHRIckwzUVhEUQ?oc=5",
+   "t": 1794421800000,
+   "id": 3,
    "thin": true,
    "draft": {
     "headlines": [
-     "TOKYO-STYLE PIZZERIA SET TO OPEN IN MIAMI BEACH",
-     "TOKYO-STYLE PIZZA IS COMING TO MIAMI BEACH",
-     "MIAMI BEACH GETS READY FOR A TOKYO-STYLE PIZZERIA"
+     "MIAMI-DADE RESIDENTS CAN USE BITCOIN FOR PROPERTY TAXES",
+     "PAYING MIAMI-DADE PROPERTY TAXES WITH BITCOIN",
+     "HOW MIAMI-DADE RESIDENTS CAN PAY TAXES WITH BITCOIN"
     ],
-    "article": "A Tokyo-style pizzeria is preparing to open in Miami Beach. The upcoming debut brings Tokyo-style pizza directly to diners across the coastal community. Local food enthusiasts can anticipate a distinct approach to pizza arriving in the city. The planned opening adds an international concept to the existing dining landscape in Miami Beach. Additional updates will emerge as the Tokyo-style pizzeria nears its official opening in Miami Beach.",
-    "imagePrompt": "A realistic editorial vertical 3:4 photo of a freshly baked artisan pizza being pulled from a roaring wood-fired oven on a metal peel. The upper two-thirds of the image capture the glowing oven, golden crust, and warm kitchen atmosphere. The bottom third consists of a simple, dark, shadowed counter surface. Natural professional lighting, crisp focus, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photo centered on a slice of blistered, wood-fired artisan pizza resting on a dark slate plate, showcasing the airy, charred crust texture and melted toppings. Overhead view, moody ambient lighting, no people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "Miami-Dade residents can now utilize bitcoin to settle their property taxes. For taxpayers across Miami-Dade County, the digital currency serves as an option to handle their local property tax payments. This method allows residents with property tax obligations in the county to fulfill what they owe using bitcoin. Local property owners can review the process to apply cryptocurrency directly toward their Miami-Dade property tax balances.",
+    "imagePrompt": "A realistic editorial vertical photo shot in Miami, Florida. The upper two-thirds shows a sunlit modern interior office overlooking tropical palm trees, featuring an adult taxpayer at a wooden desk holding a physical commemorative metallic cryptocurrency token next to financial documents. The bottom third consists of a simple, dark, and shadowed tabletop. Warm natural light, 3:4 vertical composition, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photo featuring a golden cryptocurrency coin resting centered on a dark slate surface beside an elegant pen. Soft natural lighting highlights the metallic edges and clean texture. Centered subject, no people, no human faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade County Now Accepts Bitcoin for Property Taxes",
-   "source": "Cryptonews.net",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYMjRjNGl3RUktb18yQk5GRkZnNjgyVzBSSUtmTld3WWRURjRBX1JOQ3BQR3ZVNGlXOTdUdm8zSjczTUhRdzQ3VmQ0RTVVeXhFcVJtVmw5aXE?oc=5",
-   "t": 1794338429000,
-   "id": 2,
-   "link": "https://cryptonews.net/news/bitcoin/33731567/",
-   "thin": false,
-   "desc": "",
-   "draft": {
-    "headlines": [
-     "MIAMI-DADE NOW ACCEPTS BITCOIN FOR PROPERTY TAX PAYMENTS",
-     "PAY YOUR MIAMI-DADE TAXES WITH BITCOIN",
-     "MIAMI-DADE MAKES HISTORY BY WELCOMING BITCOIN PROPERTY TAX PAYMENTS"
-    ],
-    "article": "Miami-Dade property owners can now pay their property taxes using bitcoin. Tax Collector Dariel Fernandez announced Monday that taxpayers can use cryptocurrency online around the clock or in person across 13 county offices and T-Connect mobile units. A third-party vendor instantly converts every bitcoin transaction into U.S. dollars before the funds reach the county. Because of this conversion, Miami-Dade does not hold, invest in, or manage digital currency, while still receiving full dollar payments. The new option arrives during Florida's property tax collection season. Owners who submit payments by Nov. 30 receive a 4% early-payment discount under the county's Save the Max campaign before discounts decrease in December.",
-    "imagePrompt": "Editorial vertical 3:4 portrait photo of a modern government tax collector service counter in Miami, with natural South Florida sunlight streaming through large windows onto sleek transaction desks. In the upper two-thirds, a resident interacts with a county clerk across the payment counter next to a digital payment terminal. The bottom third consists of the simple, darker shadow across the polished lobby floor, uncluttered and deep in tone. Realistic photojournalism style, natural colors, with no visible text, letters, logos, or watermarks.",
-    "circlePrompt": "Square 1:1 macro photo focusing on a person's hands holding a smartphone while tapping it to complete a digital transaction over a modern countertop payment terminal. Centered composition with a clean, soft-focus background of an office interior, captured in sharp realistic detail, with no people's faces, visible text, letters, brand logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Miami Carol City Senior High student accused of bringing loaded gun to school had posted photo with weapon on Instagram chat, police say",
+   "title": "In Miami Beach, some honored veterans with parade; others took a plunge",
    "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOTzNPbjFUQ1YyRnNDd1JvTzE0dzdNZE1jajg0bDRyVHpBZDFPMHZwLXpNUnUyVGRGeUZ6aFdLV3RmNFdDdUdlWF8tVEJTX3ZQRlhkd0lfeTNucWtjQ2czR0VWQ2tkdS1aVGVtS3Vxc0xEOW01TVJVdHVwMG9wUXlhY0lnUFoxMUI3b2tadDJ2OHo4YmJPd25oTkxYZ1BZcmR6dEZoWmlqZS1wc1dWYTVqVFNrTVhoOFlmSFdVdFhMdTczNlIzT1ZrLVpHNWFsMzFIdVZDWWlRcUlPYWphOHFzMGZZYXhKS0VvYlBxaEwtbFhZeS00SnNqT1N4cjladXJqYzhzakxuSkJndFpVUWcw?oc=5",
-   "t": 1794336102000,
-   "id": 3,
-   "link": "https://www.local10.com/news/local/2026/11/10/miami-carol-city-senior-high-student-accused-of-bringing-loaded-gun-to-school-had-posted-photo-with-weapon-on-instagram-chat-police-say/",
-   "thin": false,
-   "desc": "An 18-year-old student at Miami Carol City Senior High School, who was arrested last week for allegedly bringing a gun to school, said he did so for protection, an investigation report obtained Tuesday by Local 10 News…",
-   "draft": {
-    "headlines": [
-     "MIAMI CAROL CITY HIGH STUDENT ARRESTED WITH LOADED HANDGUN",
-     "STUDENT BRINGS LOADED GLOCK TO MIAMI GARDENS CAMPUS",
-     "INSTAGRAM PHOTO LEADS POLICE TO LOADED GUN AT SCHOOL"
-    ],
-    "article": "Miami-Dade Schools Police arrested 18-year-old student Torrez Ramon Thomas on Wednesday, Nov. 4, after he brought a loaded handgun to Miami Carol City Senior High School in Miami Gardens.\n\nAuthorities responded after the school principal received a tip about a social media post showing Thomas holding a firearm in a senior class Instagram group chat.\n\nOfficers searched the campus and located a turquoise-blue Sprayground backpack inside a classroom storage room. The bag held a black Glock 19 loaded with 15 rounds of ammunition, along with Thomas' Florida identification card.\n\nThomas later admitted to possessing the weapon, telling investigators he brought it for protection regarding a potential student fight.",
-    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical portrait orientation showing a South Florida high school exterior in Miami Gardens under daylight. The upper two-thirds captures the campus entrance walkway, palm trees, and parked school police patrol vehicles with flashing emergency lights. The bottom third consists of dark, clean asphalt in deep shadow. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 detail photograph centered on a turquoise-blue patterned backpack resting on a plain wooden storage shelf inside a quiet classroom closet. No people's faces, no text, letters, logos, or watermarks."
-   }
-  },
-  {
-   "kind": "news",
-   "label": "News",
-   "title": "Mother seen on video hitting and biting sons at Hialeah supermarket charged with child abuse",
-   "source": "WSVN",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQdmp0bEJINTNfRmdnVVBPdnRVbFV3MU12R0tvejNBdHBMcWFLV01HWFFYSlZSR1RKZEdnMVRiZHBiWk91d3dMTTZET0M1dXJ1TnhOeVVNMTBTLWZ4LWRyYnRyVGFKWDFPVEthcklMU0k1MHR1VE1VZ2FHbHlZS2Y4Wg?oc=5",
-   "t": 1794334462000,
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPNldzRGdPQmFCdVRXOWdKdmdXQkc1RmwwM096QVNKZmdXMmdWdVdET1FNbTRtVXhYamtxVkdrbXlsLUhyQl9nWG5qdmp2c0hRY1ItVzRkSGN2Y0FYYkRBNExkR3dGV25uNjM4OTZmQ3lsWG5YV1JKcWM4bC1BV0xtOEJYZGFIMjlUTUVqSXFRaFRrTmh6cjVlWkE2ZXU2cEw5Yl9BX0xFOWE0WC1ZUXJ3Z05HZnVDa3M?oc=5",
+   "t": 1794417536000,
    "id": 4,
-   "link": "https://wsvn.com/news/local/miami-dade/hialeah-mother-child-abuse-arrested/",
+   "link": "https://www.local10.com/news/local/2026/11/11/in-miami-beach-some-honored-veterans-with-parade-others-took-a-plunge/",
    "thin": false,
-   "desc": "Madelien Nurrieta-Martinez was arrested and charged with two felony counts of child abuse after surveillance footage showed her violently attacking her two sons at a Hialeah supermarket.",
+   "desc": "Miami Beach was buzzing with excitement amid celebration of the 18th annual Veterans Day Parade, a holiday paired with reflection.",
    "draft": {
     "headlines": [
-     "MOTHER ARRESTED FOR CHILD ABUSE AT HIALEAH SUPERMARKET",
-     "HIALEAH MOM JAILED AFTER SUPERMARKET ATTACK",
-     "SURVEILLANCE VIDEO LEADS TO HIALEAH MOTHER ARREST ON PALM AVENUE"
+     "MIAMI BEACH MARKS 18TH ANNUAL VETERANS DAY PARADE AND SWIM",
+     "VETERANS TAKE THE PLUNGE IN BISCAYNE BAY",
+     "HOW MIAMI BEACH CELEBRATED VETERANS FROM BAY TO STREETS"
     ],
-    "article": "Hialeah police arrested 43-year-old Madelien Nurrieta-Martinez after security cameras recorded her attacking her two young sons Wednesday night at a Palm Avenue supermarket. According to authorities, surveillance footage captured the mother pulling one child by both ears, grabbing the other boy by his hair, and biting his right ear. The violence continued outside the building, where she repeatedly struck both children. The market owner discovered the incident while checking camera footage the following day and contacted law enforcement. On Sunday afternoon, Nurrieta-Martinez appeared before Miami-Dade Circuit Court Judge Alicia Garcia Provolos, facing two felony counts of child abuse. Her bond was set at $5,000 with orders to stay away from the boys.",
-    "imagePrompt": "A realistic vertical 3:4 editorial photo capturing the exterior of a modest neighborhood supermarket in Hialeah at dusk. Blue and red emergency vehicle reflections illuminate the glass entrance doors and stucco wall in the upper two-thirds of the frame. The bottom third features a simple, dark asphalt parking lot pavement in shadow. No people visible, cinematic street lighting, documentary style, no text, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 detail photo centered on a black dome security surveillance camera mounted on an outdoor concrete building overhang, with muted tropical evening light in the background. Close-up view, shallow depth of field, no people, no faces, no text, no logos, no watermarks."
+    "article": "Miami Beach celebrated Veterans Day on Wednesday with its 18th annual parade alongside a sunrise swim across Biscayne Bay. Members of the Miami Beach Veterans of Foreign Wars post, established in 1936, kicked off the morning by swimming to Monument Island. Marine Corps veteran Alex Kruger-Dobrota and Navy SEALs took part in the open-water swim alongside five-time Guinness World Record holder Merle Liivand. The gathering honored the city's rich military past, recalling when over 200 local hotels served as barracks for 500,000 soldiers during World War II. Celebrations continued throughout the city with flag giveaways and handwritten letters from local children honoring service members.",
+    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical orientation capturing swimmers at sunrise in the calm waters of Biscayne Bay near Miami Beach, looking toward Monument Island in the distance. Golden morning sunlight illuminates the swimmers across the bay in the upper two-thirds of the frame, while the bottom third consists of darker, rippling deep turquoise water with simple reflections. Authentic documentary style, clear sky, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 editorial photograph showing a close-up detail of a small handheld American flag planted neatly in shoreline sand along Biscayne Bay at sunrise, with gentle morning waves lapping nearby in soft focus. The flag is centered with detailed fabric texture, no people, no faces, no text, and no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Recount in Florida's 27th Congressional District race expected to wrap up Tuesday",
+   "title": "Northbound lanes of Florida's Turnpike closed in southwest Miami-Dade after crash, FHP says",
    "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQTy1Cam9kUEJpM0x3SU5GWHppYm9zaV9OemYxcHRTN3RyQUR6ZU12RDJCR2ttOUJVT0R4QVF6MTR1TlIyRU4zVi00M1RPWG9DZmRFZTdOZlhCbkI3YmpTZWVxNURKRXIwWlBJd2ZqTzFuU2xOOTRYYTFnQkliVDlOaFFXRUtDa094cXduM2RFZl82NWhGUEpTQmdkRzBmYlJtU1gydEtKMng2MkQ2QkFXMDlfWXlIVnc?oc=5",
-   "t": 1794334425000,
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNemJ2OGhMS3JfUjZySHdrazFoVlI5MlBsX1pjRkc2UnVOMGVQU3RrckFQaXFwam1zTlpzRkZseGExSUNfZ1lSb25NSUhBRDdwWnI3OGMySUxwWFQ2OHZLcUNaWEExZ0tCUW1HWDZLYlhoV1F5aFB5LXFibmRBd2dJaDJ6TXFsMWxxQ1VHY09zY19DVG5RakhRLXZ3?oc=5",
+   "t": 1794416226000,
    "id": 5,
-   "link": "https://www.cbsnews.com/miami/news/district-27-machine-recount-begins-judge-denies-garcia-recusal-salazar-rodriguez/",
+   "link": "https://www.cbsnews.com/miami/news/floridas-turnpike-crash-tamiami-trail-southwest-miami-dade/",
    "thin": false,
-   "desc": "The race between incumbent Republican Maria Elvira Salazar and Democrat Eliott Rodriguez ended within the half-percentage-point margin that triggers an automatic machine recount under Florida law.",
+   "desc": "The crash, the FHP said, involved a black SUV and a white work van.",
    "draft": {
     "headlines": [
-     "RECOUNT UNDERWAY IN MIAMI-DADE FOR DISTRICT 27 CONGRESSIONAL SEAT",
-     "1,100 VOTES DECIDE DISTRICT 27 RACE",
-     "CAN A DORAL RECOUNT FLIP FLORIDA DISTRICT 27?"
+     "EIGHT HOSPITALIZED AFTER TURNPIKE CRASH NEAR TAMIAMI TRAIL",
+     "MAJOR DELAYS AFTER CRASH SHUTS DOWN TURNPIKE",
+     "SOUTHWEST MIAMI-DADE DRIVERS FACE SEVERE TURNPIKE BACKUPS"
     ],
-    "article": "Election staff at the Miami-Dade Elections Headquarters in Doral are tallying nearly 250,000 ballots in the contested race for Florida's 27th Congressional District. Miami-Dade County Supervisor of Elections Alina Garcia expects the machine recount to conclude Tuesday afternoon. Incumbent Republican Maria Elvira Salazar holds a narrow 1,100-vote lead over Democratic challenger Eliott Rodriguez. Under state law, an automatic recount occurs when the margin is within a half-percentage point. Workers processed ballots continuously overnight, completing Election Day and mail-in votes before advancing to early ballots. The count went forward after federal judge David S. Leibowitz rejected an emergency request from Rodriguez's campaign to remove Garcia from the canvassing board.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait taken inside an election facility. In the upper two-thirds, an election worker dressed in professional attire stands beside a digital tabulation machine, reviewing paper ballots beneath bright fluorescent warehouse lighting. The bottom third of the frame is simple, composed of a dark, shadowed floor. Editorial documentary style, sharp focus on the worker's hands and the machine, authentic depth of field, with no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a close-up detail of a high-speed ballot scanning machine, showing rows of smooth mechanical feed rollers and the crisp edges of stacked official cardstock ballots. Neutral industrial lighting, shallow depth of field, realistic metallic textures, no people's faces, and completely free of text, letters, logos, or watermarks."
+    "article": "A collision on the northbound Florida's Turnpike in southwest Miami-Dade left at least eight people injured on Wednesday morning. The Florida Highway Patrol reported that the crash occurred shortly before 11:30 a.m. near Southwest 8th Street, also known as Tamiami Trail. The crash involved a black SUV and a white work van. Emergency crews transported eight vehicle occupants to a hospital, though authorities have not released details regarding the severity of their injuries. The wreck forced the closure of all northbound lanes. Although officials have begun reopening some lanes, drivers in southwest Miami-Dade continue to experience major traffic delays through the corridor.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing an emergency scene on a Florida highway during a bright sunny morning. In the upper two-thirds, highway barriers line the road near stopped emergency vehicles, a white work van, and a black SUV with traffic backing up in the distance under a clear subtropical sky. The bottom third consists of simple, darker highway asphalt in the foreground. No readable text, no logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on an orange traffic safety drum and a flashing emergency beacon resting on highway pavement near a concrete barrier, with out-of-focus highway lanes visible in the background. Centered composition, no people's faces, no text, no logos, and no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami Beach compound asks a record $185.5M — after listing for $150M in 2024",
-   "source": "New York Post",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPRDJSNDlxdTRKZUhlRTJnT3JSbXlwckNpaktyaGhzTUhlZHVLSFBscFgzZlgxZmVEenBmZUZ3b1hEYmRyRVgyWU1DWFZLN2VHZ19Rc3hGVGpJTlUzRHA4ajhITWF2OE1EejNidnIzcHo3ZE5TOFIwMW5PWGljTExsR1REMmxYaUtiZFVVTg?oc=5",
-   "t": 1794331440000,
+   "title": "3 face attempted murder charge after 13 shots fired into occupied Miami-Dade home, deputies say",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQQWE2cUhFeGJDc2JONFhIMURuOXljOUVjbjVNdjIzLVVoSkNNdFlmc1dPb05wazVPWW9FZ1dKY1I3aDJINVBCVTJjMzIxTTBER2JjckhaOGlHVW0zNlBHb3hKZ1MxWXMwYnU2V0ZwZzRfQnNsdVBqdjI0RVpBR1FXeTJ0bC1pREU4amw5LXFVRVUxS1JSSTg3WEc5VkVqcUd0QVZta3FlenZWbmtqWVVZcURhVzNYdzNEU3JCd3g3c1RzZGpZbkQtb0V4QnRoTjFOYTB6YWhWUlg?oc=5",
+   "t": 1794416218000,
    "id": 6,
-   "link": "https://nypost.com/2026/11/10/real-estate/miami-beach-compound-asks-a-record-185-5m/",
+   "link": "https://www.local10.com/news/local/2026/11/11/3-face-attempted-murder-charge-after-13-shots-fired-into-occupied-miami-dade-home-deputies-say/",
    "thin": false,
-   "desc": "The three-property waterfront compound comes with plans for a 30,000-square-foot mansion featuring a car museum and resort-style wellness facilities. Meta: The three-property waterfront compound co…",
+   "desc": "Three 21-year-olds have been arrested in connection with a drive-by shooting that sent over a dozen gunshots into an occupied home in Miami-Dade County last week, according to an arrest report and jail records obtained…",
    "draft": {
     "headlines": [
-     "PALM ISLAND WATERFRONT COMPOUND ASKS RECORD 185.5 MILLION DOLLARS",
-     "MASSIVE 185.5 MILLION DOLLAR LISTING HITS MIAMI BEACH",
-     "COULD PALM ISLAND TOP DADE COUNTY REAL ESTATE RECORDS"
+     "THREE 21-YEAR-OLDS ARRESTED IN WEST PERRINE DRIVE-BY SHOOTING",
+     "13 SHOTS FIRED: TRIO JAILED FOR ATTEMPTED MURDER",
+     "WEST PERRINE NEIGHBORHOOD SHOCKED AFTER HOME HIT BY GUNFIRE"
     ],
-    "article": "A prime waterfront assemblage on Palm Island is now asking a record $185.5 million. Located at 190, 198, and 210 Palm Avenue, the more than two-acre site spans roughly 300 feet along Biscayne Bay with sweeping views of the Miami skyline. Owner Jorge Luis Garcia previously offered the three existing Mediterranean-style mansions for $150 million. The new listing includes plans by Miami-based Choeff Levy Fischman Architecture and Design to replace the residences with a 30,000-square-foot tropical estate. The proposed build includes ten bedrooms, a car museum with turntables, and a 1,950-square-foot infinity pool. A sale at full price would break Miami-Dade County's residential sales record set on Indian Creek Island.",
-    "imagePrompt": "Vertical 3:4 realistic editorial photograph of a sprawling luxury waterfront estate on Palm Island in Miami Beach, featuring modern tropical architecture, lush palm trees, and clear bay water filling the upper two-thirds of the frame, while the tranquil, deep blue water forms a simple, darker lower third under bright natural afternoon light, no text, no logos, no watermarks.",
-    "circlePrompt": "Square 1:1 realistic detailed photo of an expansive outdoor infinity swimming pool on a high-end Miami waterfront terrace at dusk, perfectly still turquoise water reflecting ambient deck lighting and tropical palms, centered composition, no people, no text, no logos, no watermarks."
+    "article": "Three 21-year-olds face four counts each of premeditated attempted murder with a deadly weapon following a drive-by shooting in West Perrine last Wednesday. Authorities say the incident occurred near the 10500 block of Southwest 170th Terrace when Tanyiah Javeana Jones of Opa-locka, James Lorenzo Williams, and Jamarea Letrice Harris arrived at an occupied residence together.\n\nInvestigators state Williams stepped out of the vehicle and fired 13 rounds into a front bedroom window while people were inside. No injuries were reported. A marked deputy vehicle tried to stop the car as Williams drove away, sparking a chase that ended when the vehicle crashed on a nearby highway.\n\nWilliams remains at the Metrowest Detention Center without bond on multiple charges, while Jones and Harris are held at the Turner Guilford Knight Correctional Center.",
+    "imagePrompt": "A 3:4 vertical editorial photograph capturing a police cruiser with red and blue emergency lights flashing at night on a suburban Miami street corner, illuminated by streetlights, with the main subject of the patrol car positioned in the upper two-thirds and the bottom third showing dark, wet asphalt, realistic and atmospheric, no text, no logos, no watermarks",
+    "circlePrompt": "A 1:1 square realistic editorial photograph showing a close-up view of a shattered residential glass window pane cracked by impact marks, with the broken glass pattern centered against a soft-focus interior background, realistic lighting, no people, no text, no logos, no watermarks"
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Judge denies Eliott Rodriguez’s suit to block Miami-Dade elections chief from CD 27 recount",
-   "source": "The Miami Times",
-   "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxONzU5eGhjN01IbUFTeHZKczNCRVROd2k2LWlFdGxKYldCV1p6WUhraVcwZXJFamhzYm1nSnVWNDNORk9UX0VCZ0pTcndOcjVLYlZQUnNCd2xDdTR0bGZaSXVLMExrc2RRS1NHck5IN3BKQjA2dWR3b3Q0dWQzVEZVNE84bUlSMkx0UHN2QmJqVW91Ym9Yc0pBVGcwdzNacVFNTW5HZjdGMVdvZV9yUkw1U0dnT3lyYndfSENzM0tQeEl5QUhRX0hMa3lzVWVTa1F6aXBFMkV5ekV3MWw3OEczRU5VNHoxamltRlZ1OWpZZ3hXRVFib2pJXzdIQ3E3Z1pZQk0xWEN1MTdUaVA2LUHSAY4CQVVfeXFMTjc1OXhoYzdNSG1BU3h2SnMzQkVUTndpNi1pRXRsSmJXQldaellIa2lXMGVyRWpoc2JtZ0p1VjQzTkZPVF9FQmdKU3J3TnI1S2JWUFJzQndsQ3U0dGxmWkl1SzBMa3NkUUtTR3JOSDdwSkIwNnVkd290NHVkM1RGVTRPOG1JUjJMdFBzdkJialVvdWJvWHNKQVRnMHczWnFRTU1uR2Y3RjFXb2VfclJMNVNHZ095cmJ3X0hDczNLUHhJeUFIUV9ITGt5c1VlU2tRemlwRTJFeXpFdzFsNzhHM0VOVTR6MWppbUZWdTlqWWd4V0VRYm9qSV83SENxN2daWUJNMVhDdTE3VGlQNi1B?oc=5",
-   "t": 1794329832000,
+   "title": "Miami-Dade poised to set speed limits, require permits for sidewalk delivery robots",
+   "source": "Florida Politics",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQcVZGMl9iZURkRFctVzhVSVdvYkltMXN2M2hVcjQ5MW4zS1dMVm1RSHRZaENEb2ZfVDR6Nm80STJsaEMzX09pdWd3aVUwR3ZuUXJLTjdlQ0tNR1E1V1cxd0pjOGJVbWg4WXUwWXFSNmotd1YyekJvZzNsLUZmcndfMHRhQUlyLXl2eFN1OVVzTkQzenNyeVBISWxZQ2NCak5rT0Q2NjBQRV8xazFsMUFZdUFSdnhZcG9Mb1NoRWdXazhIbVdQNHc?oc=5",
+   "t": 1794414939000,
    "id": 7,
-   "link": "https://www.miamitimesonline.com/news/local/judge-denies-eliott-rodriguez-s-suit-to-block-miami-dade-elections-chief-from-cd-27/article_da249530-f5dc-4b7f-82fe-057850a3cb01.amp.html",
+   "link": "https://floridapolitics.com/archives/832186-miami-dade-poised-to-set-speed-limits-require-permits-for-sidewalk-delivery-robots/",
    "thin": false,
-   "desc": "Miami-Dade County Supervisor of Elections Alina Garcia will continue overseeing a recount in Florida’s 27th Congressional District unabated after a Judge ruled against a complaint candidate Eliott Rodriguez filed to",
+   "desc": "A county analysis said new staff would be needed to oversee the program and warned that permit fees and fines could fall short of covering its costs.",
    "draft": {
     "headlines": [
-     "JUDGE RULES ALINA GARCIA WILL OVERSEE MIAMI-DADE RECOUNT",
-     "MIAMI-DADE ELECTIONS CHIEF WINS COURT BATTLE",
-     "WHY A FEDERAL JUDGE REFUSED TO STOP THIS RECOUNT"
+     "MIAMI-DADE COMMISSIONERS TO VOTE ON SIDEWALK DELIVERY ROBOT LIMITS",
+     "SPEED LIMITS COMING FOR MIAMI DELIVERY ROBOTS",
+     "ARE DELIVERY ROBOTS TAKING OVER YOUR MIAMI SIDEWALKS"
     ],
-    "article": "Miami-Dade County Supervisor of Elections Alina Garcia will continue directing the machine recount for Florida's 27th Congressional District after a federal judge dismissed a challenge against her. U.S. District Judge David Leibowitz rejected a motion from Democratic candidate Eliott Rodriguez, who sought to disqualify Garcia over alleged bias toward incumbent Republican Representative María Elvira Salazar. The local race is separated by only 1,090 votes, or 0.44 percentage points. Rodriguez cited Garcia's post-election remarks, social media posts, and her son-in-law's legal representation of Salazar. Leibowitz deemed Garcia's victory comments improper, but ruled they did not warrant her removal from the ongoing recount.",
-    "imagePrompt": "A vertical 3:4 realistic editorial photograph depicting a government elections facility. In the upper two-thirds of the frame, a focused female election official dressed in a dark blazer stands near official tabulating tables, looking forward with a serious, composed expression, under soft fluorescent lighting. The bottom third of the image is simple and cast in darker, subtle shadows across the smooth floor. Crisp documentary style, high detail, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A square 1:1 realistic editorial photograph focusing on a close-up, centered view of thick stacks of paper ballots resting neatly inside a clear plastic ballot transfer bin on a sleek office desk. Neutral ambient room lighting highlights the paper texture and clean edges. Shallow depth of field, centered subject, no people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "Miami-Dade County commissioners will cast a final vote Nov. 17 on new regulations for sidewalk delivery robots. The proposal from Commissioner Micky Steinberg introduces operating permits and caps the devices at 8 mph on most sidewalks. Speed limits would drop to 6 mph in heavy pedestrian zones and reach 10 mph in crosswalks. The automated machines already operate in Wynwood, Brickell, downtown Miami, Coral Gables, and Miami Beach. Under the plan, devices cannot block transit stops or curb ramps and must limit idle time to 30 minutes. Violations carry fines up to $500. A county analysis by Deputy Mayor Roy Coley notes creating enforcement roles will cost $251,773 annually.",
+    "imagePrompt": "A realistic editorial portrait photograph of an autonomous sidewalk delivery rover traveling along an urban Miami walkway bordered by palm trees. The futuristic robotic delivery vehicle is positioned in the upper two-thirds of the vertical frame under bright coastal sunlight. The bottom third is composed of simple, dark concrete pavement with clean natural shadows. Realistic street documentary style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 macro photograph centered on the heavy-duty all-terrain wheel and lower chassis of an autonomous delivery robot parked beside a concrete curb. Detailed textures of the tire tread and brushed metal hardware under natural sunlight, perfectly centered composition, no human faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Inter Miami CF Hosts 2026 Edition of Annual Media Appreciation Day and Copa de Medios",
-   "source": "Inter Miami CF",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWkZna19FZnRpLXpqN3ZpSXlKMnpLNzVYSldUNkcxbUxtMUFOcHhBbV92UjBFMjFRal84ZHBYX3h0RE5iNVdXbTlmWXM1YmhxSUUwcHpkWlJMRERGT1Z3TEZMbjBGMWNOWkpDMUVBbTNMMFRSU0xteTZvMUpNUHBzVngyRTRfTGtvWEpnZ1lOSURJcUd6STVMQklMTmt0SVNRZFBaajg2SkZnQU1tZzBfT3ZxWEd4U29SQS1v?oc=5",
-   "t": 1794341151000,
+   "title": "CBS News Miami gets behind the scenes look at Inter Miami's new stadium",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdG9YZkVTaFBWX3oxNHJVaDNNeHNRUmRRNGsycTdHVjZLdXRaZzNwdjdTLXVCTWpSbVRtalRLWmpFank1ZVV3RklzMVRNeldXajJTY2NpVVBtcDRIbDJyQTZMQ0o3eElpNDY1ZkdlbkYxbkFacy1KWDBjeHctWS1xZ2dtV0EyYlpISjhUUnlfX05qU28tYl9aUWhNdlkzVDJmSEdSM2FHY1F6cE0?oc=5",
+   "t": 1794425220000,
    "id": 8,
-   "link": "https://www.intermiamicf.com/news/inter-miami-cf-hosts-2026-edition-of-annual-media-appreciation-day-and-copa-de-medios",
-   "thin": false,
+   "link": "https://www.cbsnews.com/miami/video/cbs-news-miami-gets-behind-the-scenes-look-at-inter-miamis-new-stadium/",
+   "thin": true,
    "desc": "",
    "draft": {
     "headlines": [
-     "INTER MIAMI HOSTS ANNUAL MEDIA APPRECIATION DAY AT NU STADIUM",
-     "NU STADIUM HOSTS MEDIA SOCCER TOURNAMENT",
-     "MIAMI JOURNALISTS COMPETE ON INTER MIAMIS NEW HOME PITCH"
+     "INTER MIAMI FANS PLAY IN COPA DE MEDIOS",
+     "INSIDE THE NEW STADIUM",
+     "FANS GET EXCLUSIVE ACCESS WHERE PROS PLAY"
     ],
-    "article": "On Sunday, Inter Miami CF opened Nu Stadium to local and international journalists for the 2026 Media Appreciation Day and Copa de Medios tournament. It marked the first time the signature event took place inside the club's new Miami home.\n\nBefore tournament play kicked off on the pitch, the club paid tribute to Miami Herald sports reporter Michelle Kaufman for her thirty-year career. Four media squads then competed, with Team Presagio defeating Team Euforia in the final.\n\nAbout 60 children participated in the inaugural Copita de Medios clinic led by academy coaches. Guests also toured the player tunnel, the Leo Messi Stand, and viewed club trophies including the 2025 MLS Cup.",
-    "imagePrompt": "A wide editorial eye-level vertical 3:4 shot inside a brand new modern soccer stadium in Miami under bright daylight. In the upper two-thirds, lush green grass stretches toward contemporary grand spectator stands and the player tunnel entrance. The lower third features clean, dark shadowed turf. Realistic sports photography style capturing a pristine pitch, with no people, text, letters, logos, or watermarks.",
-    "circlePrompt": "A detailed, centered square 1:1 close-up of a gleaming silver soccer trophy resting on a sleek dark display table inside a modern stadium lounge. Soft ambient indoor lighting highlights the reflective metallic surface of the cup, with a softly blurred background. No people, no faces, and no visible text, letters, or logos."
+    "article": "Local soccer supporters recently experienced the professional stage firsthand. A select group of Inter Miami fans had the opportunity to take the field and play in the Copa de Medios.\n\nThe gathering offered participants a special behind the scenes look at Inter Miami's new stadium, taking them directly into the venue where the pros compete on matchdays.\n\nMeteorologist Scott Withers documented the stadium experience, giving an inside perspective as fans explored the grounds and enjoyed a rare chance to play on the same turf as the club's top stars.",
+    "imagePrompt": "A realistic editorial vertical 3:4 portrait photo of a pristine modern soccer stadium under bright South Florida daylight. The manicured green pitch and rows of stadium seating occupy the upper two-thirds of the frame. The bottom third consists of simple, darker shadowed field turf. Professional sports photography, vibrant natural daylight, clear focus, no people, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo of a professional soccer ball resting precisely on the lush green grass near a crisp white chalk line inside a stadium. The ball is perfectly centered with a softly blurred stadium tunnel and seating visible in the background. High detail on the grass blades and ball texture, no faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Heat players expect All-Star Weekend to reach another level when held in Miami in 2028",
-   "source": "Sun Sentinel",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ19ka3dmdTNSdTZ0OEtmc3BHeWhtZU0xcDhxQ3NUR0c2NlYxU0lhOF9fSklwNVBqLVltUmVvQVN2QzRPVFpyS2EtODdid3B0SkdLRWhrOXFfcTVrazlzd1pBcW5TMy1lb2pvZEpndHVyYjhKWUdDdW9WekFVMWFSTGwtc1BqWDZOX0lieEo5UU5Rekc3VGVyRU9rdWdCcWp6dXFVamhJZFp1VDFCeXBlNHVfTmx1VmRlX3VtcGNUWTJUNURxaGc?oc=5",
-   "t": 1794339611000,
+   "title": "5 Things I Think I Think About the Miami Dolphins After Week 9",
+   "source": "The Phinsider",
+   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNbVJUd0Y2OHloZXVOeEI4cWZ4ZDgzazk2VnZ1WHRFWHpJUlZ2cGRjcmxtaU5UUjlrSjlJSk9NM3ZRWTFKZnR0S1NXeVRuM0xXRkRxanl0NU93cmlwT0VwX0ZtTnBPS3lzamxJcU1ybnNfTHFOSzNLQ3FFRUhOOGFVYXdkZm94T0dnaHI0Y1RaNV9QOE0yUjI5dlk5eHlkMlVVV2F0YUdJMzRJaHh0WVNJWHBZM3IwRWpmdGFYXzE4SQ?oc=5",
+   "t": 1794421800000,
    "id": 9,
-   "link": "https://www.sun-sentinel.com/2026/11/10/heat-players-expect-all-star-weekend-to-reach-another-level-when-held-in-miami-in-2028/",
+   "link": "https://www.thephinsider.com/miami-dolphins-analysis/124649/5-things-i-think-i-think-about-the-miami-dolphins-after-week-9",
    "thin": false,
-   "desc": "Davion Mitchell smiled when asked about Miami hosting the 2028 NBA All-Star Game, because the Heat guard knows something about All-Star Weekend no matter the venue.",
+   "desc": "The defense is showing signs of a promising future. The rest of the team? Not so much.",
    "draft": {
     "headlines": [
-     "MIAMI TO HOST 2028 NBA ALL-STAR WEEKEND AT KASEYA CENTER",
-     "NBA ALL-STAR WEEKEND RETURNS TO MIAMI IN 2028",
-     "OUR CITY WELCOMES NBA ALL-STAR GAME BACK AFTER DECADES"
+     "DOLPHINS FALL TO 1-7 AFTER SCORING NINE POINTS AGAINST DETROIT",
+     "MIAMI DEFENSE SHINES BUT OFFENSE STALLS",
+     "CAN MIAMI BUILD AROUND A DEFENSE DOMINATING TOP OFFENSES?"
     ],
-    "article": "Miami is set to host the 2028 NBA All-Star Weekend from February 18 to February 20 at Kaseya Center. This marks only the second time our city will host the annual showcase and the first time since 1990. NBA Commissioner Adam Silver is scheduled to visit South Florida next month for the formal league announcement. Festivities will span several South Florida venues, including the All-Star Celebrity Game on Friday night, the Rising Stars Challenge, and Saturday's dunk and 3-point contests. Miami Heat players are already anticipating the massive event. Team captain Bam Adebayo praised the city's loud culture and warm weather, while guard Davion Mitchell noted that basketball fans will flock to South Florida for an energetic weekend.",
-    "imagePrompt": "A realistic editorial vertical 3:4 photograph capturing an outdoor basketball court in downtown Miami near Biscayne Bay during twilight. The upper two-thirds shows a basketball player silhouetted against glowing stadium floodlights and silhouettes of palm trees while shooting toward an outdoor hoop. The bottom third consists of simple, dark court pavement in deep shadow. Cinematic atmospheric lighting, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a centered close-up of a textured leather basketball resting on the court pavement under warm golden hour sunlight. The ball is sharply in focus, displaying realistic grain and seams, with the colorful court lines softly blurred around it. No people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "The Miami Dolphins fell to 1-7 in Week 9 following a 19-9 loss to Detroit, despite an exceptional effort from the hometown defense.\n\nMiami held the top-ranked Detroit offense to 270 total yards and one offensive touchdown. The unit sacked Jared Goff three times, forced an interception, and limited Jahmyr Gibbs to 74 rushing yards. Goff finished with a 17.7 QBR under relentless pressure.\n\nHowever, the Dolphins offense struggled, finishing 0-for-3 in the red zone and managing only nine points. A 51-yard completion to Kevin Coleman Jr. was wiped out by a holding penalty, leaving a fake punt pass from Bradley Pinion as one of the few sparks.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation capturing professional football players on the field during an afternoon game. A defensive player in an athletic stance stands focused near the line of scrimmage, positioned in the upper two-thirds of the frame under bright outdoor stadium lighting. The bottom third features dark, clean stadium grass in soft shadow. No text, numbers, letters, team logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph of an official pebbled leather football resting upright on bright green stadium grass. The textured surface of the ball and white stitching are crisply focused in the center of the frame under direct afternoon sunlight, with gently blurred turf in the background. No people, faces, text, numbers, letters, logos, or watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1891: Julia Tuttle buys 640 acres on the Miami River",
-   "desc": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.",
+   "title": "1906: canals begin draining the Everglades",
+   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
    "id": 10,
    "draft": {
     "headlines": [
-     "JULIA TUTTLE BOUGHT 640 ACRES ON MIAMI RIVER IN 1891",
-     "1891: TUTTLE BUYS 640 MIAMI RIVER ACRES",
-     "OUR HISTORY: TUTTLE'S 1891 MOVE TO THE MIAMI RIVER"
+     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
+     "1906: CANALS BEGIN DRAINING THE EVERGLADES",
+     "A LOOK BACK AT THE 1906 EVERGLADES DRAINAGE CANALS"
     ],
-    "article": "In 1891, Julia Tuttle relocated to South Florida. Upon her arrival that year, Tuttle purchased 640 acres of land positioned directly on the north bank of the Miami River. The 1891 transaction placed 640 acres along the northern side of our local river into Tuttle's hands following her move to the area. Her relocation to South Florida and the acquisition of the Miami River acreage remain a recorded part of 1891 local history.",
-    "imagePrompt": "A vintage archival-style vertical 3:4 editorial view capturing the untouched landscape of the north bank of the Miami River in 1891. Dense subtropical vegetation, native palms, and calm river waters dominate the upper two-thirds of the composition under a soft, sepia-toned sky. The bottom third is kept simple and darker, filled with river shadows and dark soil. Early photographic aesthetic with subtle grain. No identifiable people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic 1:1 square photograph showing a centered close-up view of an antique brass surveyor compass resting on a weathered wooden surface next to aged rolled parchment, representing 1891 Florida riverfront land surveying. Clean square framing with soft directional lighting and shallow depth of field. No people, no faces, no legible text, no letters, no logos, no watermarks."
+    "article": "In 1906, major work began to alter the Florida Everglades. Canals were begun that year to remove water directly from the Florida Everglades. The effort marked the start of using canal systems to actively drain the Everglades landscape. Starting in 1906, the focus centered on water removal across the Florida Everglades through these newly initiated canal operations.",
+    "imagePrompt": "A vintage, archival-style vertical 3:4 editorial photograph from 1906 depicting early canal excavation in the Florida Everglades. Historical dredging equipment operates in wetlands and marsh water in the upper two-thirds of the frame, with monochrome sepia tones, authentic historical film grain, and soft natural sunlight. The bottom third features simple, darker muddy water and cut earth. No identifiable people, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 archival photograph showing a centered close-up view of dark water moving through an early excavated canal trench in the Florida Everglades, bordered by tall sawgrass and cut embankment soil, early twentieth-century historical photography style, no people, no text, no logos, no watermarks."
    }
   }
  ]
