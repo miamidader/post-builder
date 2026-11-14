@@ -1,216 +1,218 @@
 {
- "date": "Friday, November 13",
- "pick": "mwff84zr",
+ "date": "Saturday, November 14",
+ "pick": "mwgr30p4",
  "items": [
   {
    "kind": "news",
    "label": "News",
-   "title": "Hinshaw Advises Client Safe Harbor Capital Partners in $44 Million Financing for the Tides Hotel in Miami Beach",
-   "source": "Hinshaw & Culbertson LLP",
-   "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPSFAxNS0tdzdjOGEyTmhrRktGUkdjVUVSWnpMS0lXbFAzS1hFa25ySFZfaHBNdEhJSGJVc1NnTTd1cTFid1BJMXBFb0dJSTRFaXRYVjU3LVoxcy1raERZVWVKUnRFdjM5cWh0aFRuUm1fY2E5OVU5YUc1Q2NBRUdybktaS2F4RURobklXSkk2YTRlQzVDRUVGS2Q0cTdkSEpfT0xRa1BsVFdqR1Rfd21naWxCUHFIMllWd0NXSmlpWDJfMUlOdWs4TS1jbWMwaXpCM1J4V3NDY0trQlQyOUQ2N1psalY3VmF6V2RvNUZMRzI1elZjN2R2ZUJIdUpGQQ?oc=5",
-   "t": 1794600904000,
+   "title": "Suspended Miami Gardens cop won’t face charges in domestic violence case; attorney plans lawsuit",
+   "source": "WPLG Local 10",
+   "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQcERDai1sdzlDVWNtajFiMjZUSmxsZ1cxMDdEb0pzOE55S3VmLXRMSzIycHVwZnB5Rkpkc0wyQmFtMXNQSU91cmJoWkltVV9KblNTb0ZYR3BWaFo5UkNOVnQ0OWhQOWlOaXZyUG5DWG1pS0JTWkN2LXNWUFhFekN0RVZEV0Y5OW1IbWR3NW1KblA1ZDVhWldEM2k4ek5lNEY5Skl2eVVfOEY1NFRnZ29sU3FFcm5hMjBEUnJ6V1BWUjAtSnJNR08zTkp1VmNydFQxQkxXS3Rzd1g?oc=5",
+   "t": 1794680145000,
    "id": 1,
-   "link": "https://www.hinshawlaw.com/en/insights/press-release/hinshaw-advises-client-safe-harbor-capital-partners-in-dollar44-million-financing-for-the-tides-hotel-in-miami-beach",
+   "link": "https://www.local10.com/news/local/2026/11/14/suspended-miami-gardens-cop-wont-face-charges-in-domestic-violence-case-attorney-plans-lawsuit/",
    "thin": false,
-   "desc": "",
+   "desc": "A suspended Miami Gardens police officer whose domestic violence-related charges were dropped is now planning to sue the Opa-locka Police Department, his attorney said Friday.",
    "draft": {
     "headlines": [
-     "MIAMI BEACH TIDES HOTEL SECURES $44 MILLION IN FINANCING",
-     "$44 MILLION DEAL BOOSTS HISTORIC OCEAN DRIVE HOTEL",
-     "BIG PLANS AHEAD FOR ICONIC ART DECO DISTRICT HOTEL"
+     "CHARGES DROPPED AGAINST SUSPENDED MIAMI GARDENS POLICE OFFICER",
+     "NO CHARGES FOR COP SUING OPA-LOCKA POLICE",
+     "SUSPENDED MIAMI GARDENS OFFICER CLEARED AND PLANS TO SUE"
     ],
-    "article": "Miami Beach's historic Art Deco district is seeing major momentum as the iconic Tides Hotel property lands $44 million in fresh financing. Safe Harbor Capital Partners secured the funding through New York-based Maxim Capital Group to move forward with plans across several key parcels. The transaction covers the historic 10-story Tides Ocean Hotel at 1220 Ocean Drive, which features 45 guest rooms and hospitality amenities. The deal also encompasses neighboring Collins Avenue properties at 1155, 1201, 1221, and 1225 Collins Avenue. Together, the Tides Village site holds three buildings with 95 rooms, restaurant and retail space, a rooftop pool, and a 148-space parking garage.",
-    "imagePrompt": "A realistic editorial vertical 3:4 photograph of the historic ten-story Art Deco hotel building on Ocean Drive in Miami Beach. The upper two-thirds captures the grand architectural facade, pastel geometric lines, and coastal palm fronds against a vivid Florida sky. The bottom third features a simple, dark, shadowed roadway and curb with subdued tones. Natural daytime sunlight highlights the vintage architectural relief. No people, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photograph showing a centered, detailed close-up of an elegant turquoise rooftop swimming pool on Collins Avenue in Miami Beach. The still, sunlit water reflects architectural lines, surrounded by clean stone deck tiles and empty lounge chairs. No people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "Suspended Miami Gardens police officer Kolei Kulani McKinney Sr. will not face prosecution following his July arrest by Opa-locka police. The Miami-Dade State Attorney's Office filed a no action decision in the domestic violence case against the 41-year-old officer. McKinney, a 20-year Navy veteran, had been suspended without pay for five months.\n\nHis attorney, Stephan Lopez, announced plans to file a lawsuit against the arresting officer and the Opa-locka Police Department, arguing that police lacked probable cause. Lopez is also calling on Miami Gardens to reinstate McKinney with back pay.\n\nThe arrest stemmed from alleged July 17 events near Northwest 22nd Avenue and State Road 9.",
+    "imagePrompt": "An editorial vertical 3:4 portrait of a 41-year-old African American man dressed in a sharp dark suit standing outside a Miami courthouse in bright daylight. The subject is positioned in the upper two-thirds with a relieved and determined expression. The bottom third features simple, darker shadowed concrete surfaces. Photorealistic, soft natural lighting, shallow depth of field, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photograph centered on a classic black leather briefcase resting on a stone bench in front of blurred South Florida palm trees. Sunlight casts crisp shadows across the polished leather surface. Clean focus, centered subject, no people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "PUBLIC NOTICE: NOTICE OF MEETING DISTRICT BOARD OF TRUSTEES MIAMI DADE COLLEGE AND NOTICE OF RULEMAKING",
-   "source": "MDC News",
-   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPSzFNODc1TXR4UlNocy1kYnB4X3BfMjZTTDhLQ2VraThzR3ZoZExKSFdWdEZCWXBod0RnYjk0enFjTGsxU242SnhDWVlZT0kwSW1iWEU5OVIwSXRRNVE4YmpZQVctdTNLUGJQX2N6Q1hvX1R5QWNEcWlpSVJPcTJyZWFFSzNSLTlob3NDSFFZOGFtcm5vZFRHWlNRRGtFaU5sUXlUNG9GZnJYNXZWcUczUkdwcDNIV2dhT2dURXpXT0xTUktTSUltUjRlM3pOejcyZnY1OGc2ellvbExRQnJR?oc=5",
-   "t": 1794598065000,
+   "title": "Democrat Nicole Locklin files suit against Miami-Dade elections chief, seeks Nov. 3 vote records",
+   "source": "WLRN",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNclRWdlFkcFNEVFA2N3ZDVldUQUhZak52b2FXNEl5X25ZODgzTVE1TWxYRWlxTjVtSldSWWdNa28xRFF6R0M2dmVTVWJDNlVQbVU3MTVWeDhjdTMtTWkwaE10SnhYaExNSlh3M1dJb1AzS1JobEVCRlZSa0RPVXVtU3BYbGNpdzhDNUUtWVFHZUkwak9vbTRBQ1hXYTh2Q1pqaWNTeXlwVlNITTNDSDhacDlLZzQ3LXN2TlM5UjRBSklfYy1CZVNOZ0hOSWMza3h5MDRQNkVscTV3UFExX3ow?oc=5",
+   "t": 1794676800000,
    "id": 2,
-   "link": "https://news.mdc.edu/pressrelease/public-notice-notice-of-meeting-district-board-of-trustees-miami-dade-college-and-notice-of-rulemaking-12152026/",
+   "link": "https://www.wlrn.org/government-politics/2026-11-14/democrat-nicole-locklin-files-suit-against-miami-dade-elections-chief-seeks-nov-3-vote-records",
    "thin": false,
-   "desc": "",
+   "desc": "She is is seeking timestamped results, vote-counting logs, and records of the data Miami-Dade transmitted to state election officials, along with an immediate court hearing and prompt access to existing records subject…",
    "draft": {
     "headlines": [
-     "MIAMI DADE COLLEGE TRUSTEES TO MEET DECEMBER 15",
-     "MDC TRUSTEES MEET DOWNTOWN MIAMI",
-     "WHAT TO EXPECT AT THE NEXT MDC BOARD MEETING"
+     "NICOLE LOCKLIN SUES MIAMI-DADE ELECTIONS CHIEF FOR VOTE RECORDS",
+     "MIAMI-DADE CONGRESSIONAL RACE SPURS LAWSUIT OVER BALLOT RECORDS",
+     "WHY DID MIAMI-DADE ELECTION NIGHT TOTALS SUDDENLY SHIFT?"
     ],
-    "article": "The District Board of Trustees of Miami Dade College will convene for its monthly session on Tuesday, December 15, 2026. Set for an 8:00 a.m. start, the meeting takes place in Room 2106, the James K. Batten Community Room, at the Wolfson Campus on 300 NE 2nd Avenue in Miami. Community members can also follow the proceedings online via livestream. Board members may discuss potential real estate deals along with rulemaking matters during the gathering. The proposed rule was originated by Vice President of Information Technology and Chief Information Officer Robert A. Parrondo. It received approval from College President Madeline Pumariega and Senior Vice President, Chief Operating Officer, and Chief of Staff Maryam Laguna Borrego, Ed.D. Requests for public hearings or amendment copies go through General Counsel Javier A. Ley-Soto within 21 days of notice.",
-    "imagePrompt": "Editorial style 3:4 vertical portrait photograph showing an exterior view of the Miami Dade College Wolfson Campus building in downtown Miami during early morning light. The modern architectural facade and entrance plaza occupy the upper two-thirds of the frame, with lush tropical palm trees framing the structure. The bottom third features clean dark street pavement with soft shadows. No text, letters, logos, or watermarks.",
-    "circlePrompt": "Realistic square 1:1 photograph showing an empty modern executive boardroom table with dark wooden finish and comfortable office chairs neatly arranged, shot from a medium-close angle. The polished surface reflects warm indoor lighting, creating a professional atmosphere. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "Congressional candidate Nicole Locklin filed a civil lawsuit Thursday against Miami-Dade County Supervisor of Elections Alina García, seeking immediate access to records from the November 3 election.\n\nLocklin ran in Florida’s 26th Congressional District, which spans parts of Miami-Dade and Broward counties. Official tallies place incumbent Mario Díaz-Balart ahead by 1,704 votes, barely avoiding Florida's automatic machine recount threshold.\n\nLocklin points to an election night lead of 2,545 votes that disappeared from tallies without clear explanation. While reports cited a corrected manual data entry error, her lawsuit demands raw vote-counting logs and state transmission records to verify how the county numbers were compiled.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation showing the exterior of a modern South Florida civic administrative building under bright coastal daylight. The upper two-thirds of the frame features the grand stone and tinted glass architecture, while the bottom third consists of smooth, dark pavement in deep shadow. Shot in documentary photojournalism style, natural tones, clear textures, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo centered on a metallic ballot collection container slot in a quiet indoor room, featuring brushed steel and clean shadows. Centered composition, sharp focus, documentary style, with no people, no faces, no letters, no text, no numbers, and no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Alex Rizo Kicks Off Senate District 39 Campaign",
-   "source": "Floridian Press",
-   "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaWtnaGhINmRlOTdQWnZPaEkwWnBRVC1pMlBtM2ZSOURGQ2k2TVAzaldnUHVmRlgtNFJhXzZrYkIxODdtLU5tanh1c3dIMlByZzBTcHpucTNuZDk4R3ktOEY3VXoxNW9Ib1oxOHZBaGtyQzkzcl9SS3pOU25HZVpqSm5HMDZnNGNTQ1Rj?oc=5",
-   "t": 1794596773000,
+   "title": "Playboy buys Miami Beach hotel, plans club",
+   "source": "Travel Weekly",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYnYtUmpXYXhMNXdwc0Jzb2c5UjlxbG1NY2dLMjkwVHU2Z293VTVWd0w5QUlsdFBKZmZoc0VhZHFhWFdtVnduQWFRVG5XUjRIVjc1ZWl5R2YyUjlGS1BOQ2FMUm9UWF85V19QX0RvN3dLZzEtOXFvVzJPLU1MSjdxQ0dTbGJJQkNTQ2c?oc=5",
+   "t": 1794665316000,
    "id": 3,
    "thin": true,
    "draft": {
     "headlines": [
-     "ALEX RIZO LAUNCHES CAMPAIGN FOR SENATE DISTRICT 39",
-     "ALEX RIZO ENTERS SENATE DISTRICT 39 RACE",
-     "A NEW BID OPENS FOR SENATE DISTRICT 39"
+     "PLAYBOY BUYS MIAMI BEACH HOTEL WITH PLANS FOR A CLUB",
+     "PLAYBOY IS COMING TO MIAMI BEACH",
+     "A NEW CLUB IS COMING TO MIAMI BEACH VIA PLAYBOY"
     ],
-    "article": "Alex Rizo has officially kicked off his campaign to seek election in Senate District 39. The move establishes a formal run to represent the area in the upper chamber of the state legislature. As the race gets underway, District 39 voters will be following the contest closely. The campaign launch positions Alex Rizo as an active contender for the legislative seat as the upcoming election cycle takes shape across the district.",
-    "imagePrompt": "A realistic editorial portrait in a 3:4 vertical aspect ratio of a middle-aged male political candidate in a tailored navy suit standing poised and confident. The subject occupies the upper two-thirds of the frame, illuminated by warm, soft lighting against a softly blurred indoor venue backdrop. The bottom third of the frame is simple, dark, and shadowed. No text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph centered on a dark wooden podium holding an official metallic gooseneck microphone. The background is composed of smooth, out-of-focus event lighting. No people, no faces, no text, letters, logos, or watermarks."
+    "article": "Playboy has officially acquired a hotel property located right here in Miami Beach. The purchase marks a notable shift for the local hospitality scene along the coast. In addition to taking over the Miami Beach hotel, the company plans to establish a new club at the location. The acquisition brings major brand attention and entertainment plans directly into our area. Additional information regarding the project timeline, venue details, and upcoming club operations at the Miami Beach hotel site will unfold as development moves forward.",
+    "imagePrompt": "A realistic editorial photograph in a 3:4 vertical orientation capturing an upscale art deco hotel facade along a Miami Beach street at dusk. The elegant exterior architecture, balconies, and warm interior lighting occupy the upper two-thirds of the frame against a tropical evening sky. The bottom third features a simple, dimly lit, darker street pavement with soft palm shadows. No text, letters, logos, or watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph showing an architectural close-up detail of a glamorous boutique hotel entry in Miami Beach. The centered view highlights polished brass handrails, lush tropical foliage, and geometric art deco tile patterns under warm evening uplighting. No people, no faces, and no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade mother arrested after 4 children found living in filthy trailer without running water, deputies say",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQaDRtVWN1eHY3eEpxeWRLbHRDLWZoVzZ5TXV0a3lxc3lhOWRzTFdaUEFiLTM2STRtQXNVSXYtblBmVFhnY0p4SmRzRm1qOGVwTk9PTFBKOVR4bFB5OVZ0X3NvSDRadlk4Nmp4Z2JCVUlwYl9YNGxQMzZrbVh0NEhicjBMTVNDRjVtQWZPSXRGeHVaMHRkaWdLSm13cmgtRFU5bXRHTWFpVG9Ic3M1Q2pkaFdjb2FhQUtDTXlFdFZxdXMxbDBxeTVfTV8xZ2c2UVA1XzZ0Wm5OSkY5YURKemdEVnN0TjVEVFhoZmwtNQ?oc=5",
-   "t": 1794596674000,
+   "title": "Flight delays, cancellations continue at MIA and FLL after nationwide FAA ground stop",
+   "source": "CBS News",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPUXR0V2U3Q3RsaEg2aXlQTXYydEJmcUdqeEp0b3dxRTBQa3FfN0FpSThmOXNNdngzTlUtZ3hGdkJzclZ3U1dfc2psMlhTcDJLbEd1RjlYUkpzQkpyYW0zUzhsVHZmQ3VpaVA1UnJnaG9MaF9NZ1k2WmxNRWJyVkZ4bkhPTUN1ODM2VWx3X3I3S0FhT29ubklKc0NSVDJMZmZIUkZsOA?oc=5",
+   "t": 1794664980000,
    "id": 4,
-   "link": "https://www.local10.com/news/local/2026/11/13/miami-dade-mother-arrested-after-4-children-found-living-in-filthy-trailer-without-running-water-deputies-say/",
+   "link": "https://www.cbsnews.com/miami/news/south-florida-airports-flight-delays-cancellations-faa-ground-stop/",
    "thin": false,
    "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI-DADE MOTHER ARRESTED FOR CHILD NEGLECT AT NW 81ST STREET",
-     "FOUR CHILDREN RESCUED FROM SQUALID MIAMI-DADE TRAILER",
-     "DISTURBANCE CALL LEADS DEPUTIES TO ABANDONED CHILDREN IN MIAMI-DADE"
+     "HUNDREDS OF FLIGHTS CANCELED AT MIA AND FLL SATURDAY",
+     "SOUTH FLORIDA AIRPORTS HIT BY MAJOR FLIGHT DELAYS",
+     "WHY TRAVELERS AT MIA AND FLL FACE WEEKEND CHAOS"
     ],
-    "article": "Miami-Dade deputies arrested 25-year-old Leslie Quinones on four felony counts of child neglect early Friday morning in the 900 block of Northwest 81st Street. Deputies responded to a disturbance call around 12:12 a.m. and discovered an open trailer where three children slept unsupervised amid piles of garbage and moldy food. The dwelling had no running water, working air conditioning, or electricity, which had been shut off because rent was two months past due. Quinones eventually returned carrying a fourth child. The Department of Children and Families took custody of all four children, transporting them to Jackson North Medical Center for medical evaluations.",
-    "imagePrompt": "Editorial news photo, 3:4 vertical portrait orientation. An exterior shot at night of a rundown, weathered residential trailer in an urban neighborhood. Main trailer structure and slightly ajar door situated in the upper two-thirds of the frame, illuminated by harsh distant security lighting and faint blue emergency glow. The bottom third consists of a dark, simple gravel driveway falling off into deep shadow. Photorealistic, gritty, authentic documentary style, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "Editorial close-up photograph, square 1:1 format. Centered shot focusing on an old, rusted metal door handle and latch on the weathered exterior wall of a white mobile home. The paint is peeling and scratched, illuminated by soft ambient night light with high textural detail. Realistic documentary style, centered composition, no faces, no people, no text, no letters, no logos, no watermarks."
+    "article": "South Florida travelers faced major flight disruptions on Saturday across Miami International Airport and Fort Lauderdale-Hollywood International Airport. The trouble followed a nationwide Federal Aviation Administration ground stop ordered Friday afternoon due to telecommunications failures in aging air traffic equipment. The Miami-Dade Aviation Department reported 132 cancellations on Saturday at MIA, including 99 arriving flights and 33 departures. Tracking data showed 149 delays at MIA, while FLL logged 142 cancellations and 40 delays during Saturday morning. Friday's ground stop lasted over four hours before being lifted around 8:15 p.m. Federal officials confirmed there was no evidence of a cyberattack, but warned schedules would recover slowly as airlines reposition aircraft.",
+    "imagePrompt": "Editorial documentary photograph, vertical 3:4 portrait orientation. Inside a brightly lit South Florida airport concourse, weary travelers wait near large terminal windows looking out at stationary commercial airplanes on the tarmac. The travelers and terminal seating occupy the upper two-thirds of the frame. The bottom third is composed of the dark, smooth airport floor with subtle reflections, kept simple and clean. Natural atmospheric airport lighting, realistic photojournalism style, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "Square 1:1 format macro photograph focusing on a cluster of stacked luggage and rolling suitcases resting on a polished airport tile floor beside a sunny terminal window. The luggage is perfectly centered in the frame, showing realistic textures of zippers, handles, and fabric, with soft sunlight highlighting the contours and a soft-focus airport gate in the background. No people faces visible, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Exclusive | Widow of Late Campbell’s Chairman Asks $170 Million for Miami Beach Mansion",
-   "source": "WSJ",
-   "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNQ2NvbExuYlNyeFprWU5UUEFkU2l4Z3dPNk9JOVY3SVd6NmtzWEI5Sm1XREtndUlUSjVjeGxtdVBLbFdMN0FTWDRiZm9CM2t0aW5hOWhJckpUdTBGaVdxTU5yT2tBYmlIZFdyTTR5LVpkOWZjemdtVWhqeFFlU1VCV2ZySGljNWg1UTFDNVZoYTJvYzhIcUlWVHhTYw?oc=5",
-   "t": 1794595500000,
+   "title": "Miami vs Duke live updates: Start time, TV schedule, predictions",
+   "source": "Yahoo Sports",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPS1RyU1Y3dXdXZV9TV09xQjB0Vm1pUVR4SGdsV2dZb1FjQndCWkdaOWZ6VFFEZHBwcFd6eGN4OERMT28zMjMtZ3hFd0tuYWg5cHk4djQwVmhhc09Sa2ZkZVQ1cFgxcFhwV1RwN1d6N2gyWVBCNFpsSktpajZ5cExxVg?oc=5",
+   "t": 1794664895000,
    "id": 5,
+   "link": "https://sports.yahoo.com/articles/miami-vs-duke-live-updates-140135505.html",
    "thin": true,
+   "desc": "The Miami Hurricanes play the Duke Blue Devils in a Week 11 college football game. Follow for live score updates, injury news and instant analysis.",
    "draft": {
     "headlines": [
-     "MIAMI BEACH MANSION LISTED FOR $170 MILLION BY CHAIRMAN'S WIDOW",
-     "$170 MILLION MIAMI BEACH MANSION HITS THE MARKET",
-     "CAN THIS MIAMI BEACH MANSION FETCH $170 MILLION?"
+     "MIAMI HURRICANES FACE DUKE BLUE DEVILS IN WEEK 11",
+     "WEEK 11 COLLEGE FOOTBALL: MIAMI TAKES ON DUKE",
+     "MIAMI LOOKS AHEAD TO WEEK 11 DUKE SHOWDOWN"
     ],
-    "article": "A Miami Beach mansion is officially on the market with a staggering asking price of $170 million. The premier residential property is being offered for sale by the widow of the late Campbell’s chairman.\n\nAt $170 million, the listing represents one of the most substantial price tags ever seen in our local Miami Beach neighborhood. The high-value offering is capturing major attention across South Florida as the late corporate leader's widow seeks a massive nine-figure sum for the sprawling estate.",
-    "imagePrompt": "Editorial realistic vertical 3:4 photograph of an opulent Miami Beach luxury mansion exterior under bright Florida sunlight. The grand white architectural residence surrounded by manicured grounds and palm trees fills the upper two-thirds of the frame, while the bottom third consists of a simple, darker manicured lawn in deep shade. Professional luxury real estate photography, no text, no watermarks, no logos.",
-    "circlePrompt": "A realistic square 1:1 close-up photograph of an ornate wrought-iron estate gate and elegant stone entrance pillar outside a luxury Miami Beach property, centered in frame with lush tropical palm foliage in soft focus background, natural golden hour lighting, no people, no faces, no text, no logos, no watermarks."
+    "article": "The Miami Hurricanes are preparing to take the field against the Duke Blue Devils for a Week 11 college football contest. Local fans are tuning in for every detail as the matchup approaches, with keen interest surrounding the upcoming start time, television broadcast schedule, and game predictions. Coverage of the Miami clash includes tracking ongoing injury news leading up to kickoff. As the game unfolds, followers will receive live score updates and instant analysis to break down the action on the gridiron between the Hurricanes and the Blue Devils.",
+    "imagePrompt": "A realistic editorial photo in a 3:4 vertical portrait orientation capturing an outdoor college football stadium under bright field lights. In the upper two-thirds, a football player in green and orange athletic gear stands focused on the sideline turf. The bottom third consists of a simple, dark, and underexposed grassy field surface. Dynamic sports atmosphere, evening lighting, no text, no letters, no team logos, and no watermarks.",
+    "circlePrompt": "A realistic square 1:1 close-up photo of an American football resting centered on the green stadium turf. Crisp focus on the textured brown leather and white stitching, with softly blurred goalposts in the background. Symmetrical composition, no people, no faces, no text, no numbers, and no logos."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Third suspect arrested in kidnapping, murder of Miami-Dade man after Tampa traffic stop",
-   "source": "WPLG Local 10",
-   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNRmc2cnhiS3FLMXBfMlJ5VDRFRmpaeUhfUDVGTl9yWTBxQ1QzeEZPT2lJRzA2b3Z6SGtUa2lnTjFnZUF6VzE1VUdFVDY4eFk4alJacHM2Q29fTmJZZ2hyRFdOX1NkNFdPTVNiTDRTOVBrOEJiay14ZW9DaURNc1NocXFKTFBNalFPdFJ0MHhPSGZuVEtsTnlsY1gzQjM2Q2JhT1lpLWt4ZzEtVklubE5kN0U4MEwxMnV2M2hjSWdUT0U5LXlJeHBNRi1RZUIwdw?oc=5",
-   "t": 1794592444000,
+   "title": "MIAMI BEACH SHOWCASES GROWTH AND INVESTMENT AT 2026 ULI FALL MEETING",
+   "source": "City of Miami Beach (.gov)",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQLWNzQ29SbGNEbFVYXzRGYTB6TE9qV1YyOG5QZHZrcDFtd1kzRk1mYXVNemZHSW5ZTXgyTzlIZ3otVjhJQ1lkb1dCeE1Rb2t3dUJiNHpwNExlMWM3blcxSXhOM2lKR3RqNVozMTNPeWpST0lVaWItT2ZoTTlRREt3T2t0d1JOQUItZVlkN2pwOXBPQzZUZk1YR1loX2NocXc?oc=5",
+   "t": 1794657246000,
    "id": 6,
-   "link": "https://www.local10.com/news/local/2026/11/13/third-suspect-arrested-in-kidnapping-murder-of-miami-dade-man-after-tampa-traffic-stop/",
+   "link": "https://www.miamibeachfl.gov/miami-beach-showcases-growth-and-investment-at-2026-uli-fall-meeting/",
    "thin": false,
-   "desc": "A third suspect has been arrested in connection with the kidnapping and murder of a 22-year-old man who investigators said was abducted last month from a North Miami apartment complex by a group impersonating police…",
+   "desc": "From workforce housing and landmark public-private partnerships to the continued transformation of North Beach, Miami Beach used the ULI Fall Meeting to highlight the initiatives shaping its next chapter.",
    "draft": {
     "headlines": [
-     "THIRD SUSPECT ARRESTED IN FATAL NORTH MIAMI KIDNAPPING CASE",
-     "MAN WANTED IN DEADLY MIAMI KIDNAPPING CAUGHT IN TAMPA",
-     "SUSPECT IN BRUTAL MIAMI FAKE COP KIDNAPPING JAILED"
+     "OVER 5,000 PROFESSIONALS ATTEND ULI FALL MEETING IN MIAMI BEACH",
+     "MIAMI BEACH SHOWCASES FOUR BILLION DOLLARS IN DEVELOPMENT",
+     "SEE HOW NORTH BEACH IS LEADING MIAMI BEACH EXPANSION"
     ],
-    "article": "A third suspect is in custody following the deadly October 4 kidnapping of 22-year-old Eddrick Malik Bethune from North Miami. Sheldon Diaz, 32, was arrested late November 5 in Tampa after Hillsborough County deputies clocked his car going 50 mph in a 35 mph zone. Inside the vehicle, deputies found active Miami-Dade warrants, $10,000 in cash, several cellphones, and a THC resin pen. Investigators say Bethune was ambushed outside the Aliro apartments at 14040 Biscayne Boulevard by armed men impersonating police officers with flashing red and blue lights on a gray Camry. After an apartment shootout and kidnapping, Bethune was shot multiple times and killed in the Redlands.",
-    "imagePrompt": "Editorial photo in a 3:4 vertical orientation capturing a dramatic nighttime law enforcement scene. In the upper two-thirds, flashing red and blue emergency vehicle lights cast intense reflections across a dark apartment complex parking lot with South Florida palm trees silhouetted against the night sky. The lower third is composed of dark, empty asphalt with subtle reflections, keeping the base clean and shadowed. Cinematic lighting, photorealistic, gritty tone, no text, no logos, no watermarks.",
-    "circlePrompt": "Square 1:1 macro photo centered on a pair of metallic police-style handcuffs resting on a dark surface beside a stack of folded paper currency. Crisp side lighting emphasizes the cold steel texture and details of the restraints. Photorealistic, moody atmosphere, shallow depth of field, no people, no faces, no text, no letters, no logos."
+    "article": "More than 5,000 real estate, planning, and investment leaders converged at the Miami Beach Convention Center for the 2026 Urban Land Institute Fall Meeting. Local officials presented the city's expanding portfolio, which currently features over $4 billion in mixed-use, residential, commercial, and hospitality investments. Events included an October 26 tour across North Beach, Surfside, and North Bay Village, culminating at 72 Park. Discussions highlighted North Beach revitalization projects, including the Byron Carlyle Theater redevelopment, Ocean Terrace upgrades, and an upcoming aquatic center. On October 28, panels explored major ventures like the Grand Hyatt Miami Beach Convention Center Hotel and Miami Freedom Park. Attendees also toured The Anamar at Collins Park, reviewing workforce residences housing Miami City Ballet staff.",
+    "imagePrompt": "A realistic editorial photo in vertical 3:4 portrait orientation showing a panoramic high-rise balcony view overlooking the modern skyline and coastal architecture of North Beach, Miami Beach during a bright late afternoon. Elegant architectural details and a sleek glass railing occupy the upper two-thirds of the frame, bathed in warm Florida sunlight. The bottom third of the frame consists of clean, deep shadow on smooth dark balcony flooring. High detail, authentic architectural photography, no text, no letters, no logos, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photo centered on an architectural scale model of a contemporary coastal building with miniature balconies, glass facades, and palm trees, displayed on a polished wooden conference table. Soft ambient indoor lighting, sharp focus on the miniature building details with a softly blurred background. No people's faces, no text, no letters, no logos, no watermarks."
    }
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade District Seeks Microschools to Lease Empty Classroom Space",
-   "source": "The 74",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNdERTYkstRmhQalRhaU9wUVFMUkZxUHhvSC1kbFpwR1UtelFUNG5XMG5pX3hfcEU2V1BWT1F3Snp0ZFdhYlYwaFBVVTRMRUlXSXhtbmRwLXptYjNPU3psQTZObnJXVTFPbTdsUnNJOTdKd3dSV1BSRmdxazBWZjBGZi1USW1EOG9EUURFSGxsanpfWUdGck9OaTU5RF9NVVdwVm1KazhiRzFrY1k?oc=5",
-   "t": 1794591000000,
+   "title": "#84 University of Miami (FL)",
+   "source": "Forbes",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBfVGh2VEplMU14My1UNzNTWnpfUUk3MVpVU3lmdGFNMGo2bzZHVzVzcW55MG9VYl8zeGlEaW5DUk8tazdRRFk2d3dGMHRRLWpRNVdkempsMTQteDBRbzVOSmVR?oc=5",
+   "t": 1794656884000,
    "id": 7,
-   "link": "https://www.the74million.org/article/miami-dade-district-seeks-microschools-to-lease-empty-classroom-space/",
-   "thin": false,
-   "desc": "One researcher said more districts with declining enrollment will likely 'seek out and tolerate new sources of revenue.'",
+   "link": "https://www.forbes.com/colleges/university-of-miami/",
+   "thin": true,
+   "desc": "",
    "draft": {
     "headlines": [
-     "MIAMI-DADE SCHOOLS INVITE MICROSCHOOLS TO LEASE EMPTY CLASSROOMS",
-     "EMPTY MIAMI CLASSROOMS OPEN TO PRIVATE LEASING",
-     "HOW MIAMI-DADE PLANS TO FILL THOUSANDS OF EMPTY DESKS"
+     "UNIVERSITY OF MIAMI RANKS AT NUMBER 84",
+     "UNIVERSITY OF MIAMI TAKES SPOT 84",
+     "SEE WHERE UNIVERSITY OF MIAMI LANDED AT NUMBER 84"
     ],
-    "article": "The Miami-Dade school district is inviting independent microschools to lease vacant classroom space across local public campuses. After losing nearly 16,000 students since last year, officials are seeking new revenue streams while adapting to shifting family education choices.\n\nVerena Cabrera, the district enterprise development officer, stated the plan offers supportive learning environments while making good use of taxpayer property. Operators currently working from homes or storefronts can submit proposals until Dec. 1, with agreements expected by March or April.\n\nMiami-Dade already leases the former Biscayne Gardens Elementary School to a Jewish elementary school tied to the Talmudic College of Florida. Participating microschools will also share common spaces including cafeterias, gyms, and playgrounds.",
-    "imagePrompt": "A realistic editorial photo in a 3:4 vertical orientation of a modern, brightly lit empty public school classroom in South Florida. Rows of tidy student desks and chairs occupy the upper two-thirds of the frame, bathed in warm sunlight streaming through large windows. The bottom third of the composition consists of polished, dark reflective linoleum flooring in deep shadow, keeping the area simple and clean. No people, no text, letters, logos, or watermarks.",
-    "circlePrompt": "A realistic square 1:1 editorial photograph focused on a single empty student desk with an attached chair, perfectly centered in the frame. Warm daylight falls softly across the smooth wooden surface of the desk. The background is a softly blurred, out-of-focus school hallway. No people, no text, letters, logos, or watermarks."
+    "article": "The University of Miami in Florida has secured the number 84 spot on a national ranking list.\n\nThe Florida institution represents our local community on the nationwide roster with its placement at number 84.\n\nLocal residents can take note as the University of Miami continues to hold this official number 84 position.",
+    "imagePrompt": "Realistic editorial photograph in a 3:4 vertical portrait format capturing a sunlit college campus courtyard with modern architecture and towering palm trees under a bright blue sky. The university buildings and greenery occupy the upper two-thirds of the frame, while the bottom third is composed of a simple, darker shaded pavement area. Clean architectural composition, natural lighting, no text, letters, logos, or watermarks.",
+    "circlePrompt": "Realistic square 1:1 photograph showing a close-up detail of smooth stone campus pillars and warm tropical sunlight casting geometric palm shadows. Centered architectural perspective, crisp texture, no people, no faces, no text, letters, logos, or watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Miami Heat Get Major Giannis Antetokounmpo Injury Update Ahead of Cavaliers Game",
-   "source": "Sports Illustrated",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUl9aaUl6M3lvcEVlV2ViamhFVWV3bmJRVU5tUkJUbkxFN0YyN0FSOVluaE4xN2dOenB4cG5mdUY2WW51aTk5aE5YcXFLNGdfNVFaZUNIMk9nbXE4WUgwekhmME9xZlNka0FPYVpIUDdKR1BRUHA5M2Q1UDl6MXFJa0VwR0ZKZjhIbkgxN3JfNnlZVUV3NU96OXRIbk5QUXotbXc1WTJDTTkzVWJMRWNZaEVyRHlIN2xuV01ZTg?oc=5",
-   "t": 1794600272000,
+   "title": "Miami Dolphins offensive line review: Tracking the guards in Week 9",
+   "source": "The Phinsider",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNUi1KSDFIMnJydWZ5eXkyWkNKei02OVlzcW04M09YdEJCVTl5a0J0d0hraGtaRHNEUjNYald1ZXJESTBwOS16YkNlUmE5ampSNXVvY1RWcDVKSDVseHJGYkJzZ2ZRVGFVeC1ES2E4b2RFbUVyZEdydzEyQ21WYlJ2UVl2c1VJeVlKNGxtTXpIZTgyVnhmTW5Fdkg5MzZjZTV5UTRwV2M0Z1pfbHI2UmdGN0pRWkZPdjZhUTEyZEpjQUZaam1J?oc=5",
+   "t": 1794681178000,
    "id": 8,
-   "link": "https://www.si.com/nba/heat/onsi/miami-heat-get-giannis-antetokounmpo-injury-update-ahead-of-cavaliers-game-01m7b6gr9v8v",
+   "link": "https://www.thephinsider.com/miami-dolphins-analysis/124851/miami-dolphins-offensive-line-review-tracking-the-guards-in-week-9",
    "thin": false,
-   "desc": "The Miami Heat host the Cleveland Cavaliers tonight at the Kasaya Center and the Heat received encouraging updates on two key players, but another rotation play",
+   "desc": "A weekly scorecard tracking the development of Dolphin guards Kadyn Proctor and Jonah Savaiinaea.",
    "draft": {
     "headlines": [
-     "GIANNIS AVAILABLE AND THOMPSON PROBABLE TONIGHT AGAINST CAVALIERS",
-     "HEAT STARS CLEARED FOR ACTION TONIGHT",
-     "MIAMI LOOKS TO KEEP WINNING AT HOME TONIGHT"
+     "DOLPHINS OFFENSIVE LINE STRUGGLES IN 19-9 LOSS TO LIONS",
+     "MIAMI GUARDS FACE TOUGH FILM TEST",
+     "CAN MIAMI'S YOUNG GUARDS REBOUND AGAINST THE COLTS?"
     ],
-    "article": "The Miami Heat host the Cleveland Cavaliers tonight at 8 p.m. ET at the Kasaya Center following a victory over the Utah Jazz. Miami received major lineup updates ahead of the home matchup, with Giannis Antetokounmpo cleared to play despite managing a wrist injury over the past three to four games. Klay Thompson has also been upgraded to probable after injuring his ankle against Utah. His outside shooting will help space the floor while Antetokounmpo and Bam Adebayo attack inside. However, Pelle Larsson is doubtful due to an illness. Larsson's likely absence forces Erik Spoelstra to adjust rotations, potentially opening minutes for rookie Ryan Conwell against Cleveland.",
-    "imagePrompt": "A realistic editorial 3:4 vertical portrait of a professional basketball player standing on a polished hardwood arena court under dramatic overhead stadium spotlights. The athlete is positioned in the upper two-thirds of the frame, captured from the chest up, focusing on an intense expression with wrist tape clearly visible. The bottom third fades into a simple, dark, shadowed court floor. Authentic arena atmosphere with soft background blur, natural lighting, no text, no letters, no logos, no watermarks.",
-    "circlePrompt": "A realistic square 1:1 photo centered on a regulation basketball resting on a reflective hardwood arena floor. The lighting emphasizes the texture and seams of the ball directly in the center, with the polished wooden surface and arena shadows blurring softly in the background. No people, no faces, no text, no letters, no logos, no watermarks."
+    "article": "Miami's offensive front faces renewed scrutiny following a frustrating 19-9 loss against the Detroit Lions, where the offense crossed midfield only a handful of times.\n\nMuch of the focus rests on young guards Kadyn Proctor and Jonah Savaiinaea. Proctor, a rookie first-round pick ranked 35th of 75 guards, showed growing pains on missed assignments but also displayed high potential with physical blocks.\n\nMeanwhile, second-year guard Savaiinaea ranks 69th among 75 guards after struggling against Detroit's front. Along with low unit rankings across the board, Miami now looks for adjustments on the line before facing the Colts.",
+    "imagePrompt": "A realistic editorial portrait of a massive professional football offensive lineman standing on a football field in sunny Florida. The player is dressed in an unbranded aqua and white athletic uniform with taped wrists, positioned in the upper two-thirds of the image with a focused expression. The bottom third features dark, simple turf in shadow. Soft natural daylight, realistic athletic textures, vertical 3:4 orientation, no text, no logos, no watermarks.",
+    "circlePrompt": "A realistic square close-up photo centered on a scuffed brown leather football placed directly on a painted white yard line on natural stadium grass. Focused ground-level perspective with crisp turf blades and blurred stadium lights in the distant background. No people, no faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "sports",
    "label": "Sports",
-   "title": "Fins Weekly: Dolphins Travel to the Circle City",
-   "source": "Miami Dolphins",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPLXRKTkVtTXNyeHk1R1RCc1dINWFjR2JpbWNwVzVmZDZDQ1B0b2RKcnRQdlZYRk1jdEtCSzlvQ1dmMHUwVjd6OHlvVDJxWkpncFc3Q1YxeVZlR3h4dVZOdTZRNExMS3RPQzh5VkpvQjBDbXN3cjRneWxXSVJVSGlyUlQxNHRrOVEt?oc=5",
-   "t": 1794598946000,
+   "title": "‘Peanut punch’ could provide Dolphins a path to victory vs. Colts",
+   "source": "Sun Sentinel",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNa1JzOVZwRkpucUg5RUxrSXlBM0Q5YmFtZWhVbm5ZUlJlQnE5U05VdjJjZVc0MElqQUs0SVhSY2ZLWXpuNmlGTkF4cHc2SjFqZXM0cW96S0I2QjRia3FfZkdPSEVQZi1GLU8xWXllX21oWXZNZUFCaURHU0FFN3lGM29hdHViUnpvenhqZFVPUi1BLVZSVWk4VHpLMU0xaXB4N24zdHN3?oc=5",
+   "t": 1794679321000,
    "id": 9,
-   "link": "https://www.miamidolphins.com/news/fins-weekly-dolphins-travel-to-the-circle-city",
+   "link": "https://www.sun-sentinel.com/2026/11/14/peanut-punch-could-provide-dolphins-a-path-to-victory-vs-colts/",
    "thin": false,
-   "desc": "Catch up on the biggest storylines, hear from players and coaches, and explore new photo galleries to get the latest Week 10 team updates.",
+   "desc": "Miami’s defense could use the ‘Peanut punch’ more than usual Sunday vs. the Colts. The defense will likely have to carry a larger-than-usual burden with QB Kyle McCord starting.",
    "draft": {
     "headlines": [
-     "DOLPHINS SHUFFLE ROSTER BEFORE WEEK 10 GAME IN INDIANAPOLIS",
-     "BIG ROSTER CHANGES HIT MIAMI",
-     "MIAMI LINEBACKER SURPRISES MILITARY FAMILIES WITH SUPER BOWL TICKETS"
+     "DOLPHINS DEFENSE LEANS ON PEANUT PUNCH AGAINST COLTS",
+     "MIAMI NEEDS TURNOVERS IN INDIANAPOLIS",
+     "CAN A DEFENSIVE PUNCH SAVE MIAMI THIS SUNDAY"
     ],
-    "article": "The Miami Dolphins are heading into Week 10 with significant roster adjustments as the squad prepares to travel and face the Indianapolis Colts this Sunday. Following their recent game against the Detroit Lions in Miami Gardens on Sunday, November 8, 2026, team officials announced several roster updates.\n\nDefensive lineman Zach Sieler and quarterback Malik Willis have both been placed on the injured reserve list. The team also officially waived cornerback Reese Taylor ahead of the upcoming road trip.\n\nOff the field in Miami Gardens, inside linebacker Jacob Rodriguez brought inspiration to the Baptist Health Training Facility on Saturday, November 7, 2026. Right after practice, Rodriguez surprised visiting members of the Tragedy Assistance Program for Survivors with tickets to Super Bowl LXI.",
-    "imagePrompt": "A 3:4 vertical editorial portrait of an athletic professional football linebacker standing outdoors on a bright South Florida practice field. The player is positioned in the upper two-thirds of the frame wearing an unbranded aqua athletic shirt and shorts, looking forward with a focused, confident expression. The background features the blurred view of modern sports training facilities under a clear sky. The bottom third of the frame consists of darker, simple green field grass in natural shadow. Clean editorial style with no text, letters, logos, or watermarks.",
-    "circlePrompt": "A 1:1 square close-up shot of an authentic pebble-grain leather American football resting on bright green stadium turf. The football is centered with crisp focus on the white laces and textured leather, while the surrounding grass blades fade into a soft, shallow depth of field under daylight. No people, no faces, and no text, letters, logos, or watermarks."
+    "article": "Miami Gardens is watching closely as the Dolphins visit the Indianapolis Colts this Sunday. With a 1-7 record, Miami relies heavily on its defense to set the tone. Second-year quarterback Kyle McCord makes his first career start behind backup center Andrew Meyer, stepping in for injured starters Malik Willis and Aaron Brewer.\n\nCoach Jeff Hafley wants defenders to execute the Peanut punch to force key turnovers. The defense ranks 13th in the league overall, but Miami is tied for last in fumbles caused with just two. Rookie linebacker Jacob Rodriguez already proved the punching technique works against New England, and Miami needs more takeaways to secure a road victory.",
+    "imagePrompt": "Editorial sports portrait of an American football coach demonstrating a tackling hand technique outdoors under direct afternoon sunlight. The coach is positioned in the upper two-thirds with an intense, instructive expression, wearing athletic apparel. The background shows an empty training field with soft focus, while the lower third consists of deep shadowed grass transitioning into a darker, clean tone. Crisp 35mm photography aesthetic, vivid textures, no text, no logos, no watermarks.",
+    "circlePrompt": "Macro detail shot of a textured brown leather football being gripped tightly by athletic gloves, while a second gloved fist strikes the ball flush at center frame. Tiny rubber turf pellets lift into the air from the impact. Centered square composition with dramatic stadium sidelighting, blurred turf background, no human faces, no text, no logos, no watermarks."
    }
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1836: Dade County is created",
-   "desc": "Dade County was created on February 4, 1836, named after Major Francis L. Dade and the Miami River. That same year, Fort Dallas was built and served as a military base during the Second Seminole War.",
+   "title": "1906: canals begin draining the Everglades",
+   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
    "id": 10,
    "draft": {
     "headlines": [
-     "DADE COUNTY WAS OFFICIALLY CREATED ON FEBRUARY 4, 1836",
-     "DADE COUNTY FORMED IN 1836",
-     "HOW OUR COUNTY AND FORT DALLAS BEGAN IN 1836"
+     "CANALS BEGAN DRAINING THE FLORIDA EVERGLADES IN 1906",
+     "EVERGLADES WATER DRAINAGE BEGAN IN 1906",
+     "HOW EVERGLADES CANALS STARTED REMOVING WATER IN 1906"
     ],
-    "article": "Our community marks a significant milestone that dates back to February 4, 1836, the day Dade County was officially created. The newly formed county took its name from Major Francis L. Dade and the Miami River.\n\nThat very same year, Fort Dallas was constructed in the region. The fort functioned as a military base during the conflict of the Second Seminole War.\n\nThe events of 1836 linked the naming of Dade County with Major Francis L. Dade, the Miami River, and the military presence established at Fort Dallas during the Second Seminole War.",
-    "imagePrompt": "A vintage, archival-style editorial photograph in a 3:4 vertical portrait orientation depicting an early nineteenth-century timber military outpost situated near a subtropical riverbank. The rustic wooden fortifications and frontier structures occupy the upper two-thirds against a muted, hazy sky framed by native wild palms. The bottom third is simple and darker, covered in deep shadows, damp riverbank soil, and still water. The composition has an aged photographic patina with rich sepia tones and subtle film grain. No text, no logos, and no identifiable people.",
-    "circlePrompt": "A realistic square 1:1 photo focusing on a centered close-up of rough-hewn pine timber and forged iron hardware from an early nineteenth-century military fort wall. The weathered texture of the antique wood and hand-hammered fittings is highlighted by soft, natural outdoor light. No people, no faces, no text, and no watermarks."
+    "article": "A historic transformation of our regional landscape began in 1906. During that year, canals were officially started to remove water from the Florida Everglades.  The introduction of these canals marked the initial effort to drain water away from the Florida Everglades wetland system. The deliberate canal work begun in 1906 stands as an early turning point for the local Florida Everglades environment.",
+    "imagePrompt": "A vintage 1906 archival-style editorial photograph in vertical 3:4 portrait orientation showing an early canal excavation in the Florida Everglades. An old mechanical dredge cuts through marsh water and sawgrass in the upper two-thirds of the frame. The bottom third features dark, simple wetland water with subtle reflections. Monochromatic sepia tones, historical documentary film texture, no identifiable people, no text, no watermarks.",
+    "circlePrompt": "A realistic square 1:1 photograph focused on a newly cut drainage canal channel cutting through Everglades marshland. Centered view of dark water flowing between raw, excavated earthen banks. Natural lighting, no people, no text, no logos, no watermarks."
    }
   }
  ]
