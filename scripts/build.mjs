@@ -385,7 +385,7 @@ function page(posts, cands, meta) {
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="${c.id}">Circle<i></i></button>
 </div>`;
   }).join('\n');
-  const data = JSON.stringify({ repo: REPO, base: IMG_BASE, date: meta.date, pick: meta.pick, posts }).replace(/</g, '\\u003c');
+  const data = JSON.stringify({ repo: REPO, base: IMG_BASE, date: meta.date, pick: meta.pick, layout: { bot: ST.BOT, fade: ST.FADE, logo: ST.LOGO }, posts }).replace(/</g, '\\u003c');
   return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Today's Posts</title><link rel="apple-touch-icon" href="../assets/icons/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32.png"><meta name="theme-color" content="#EA742E">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -410,6 +410,7 @@ h1{font:700 26px/1.15 Poppins,sans-serif;margin:2px 0 4px}.sub{color:var(--mut);
 .ctog{display:flex;align-items:center;gap:8px;border:1.5px solid var(--edge);background:transparent;color:var(--fg);border-radius:99px;padding:3px 4px 3px 12px;font:600 12px Poppins,system-ui,sans-serif;cursor:pointer}
 .ctog i{width:34px;height:20px;border-radius:99px;background:var(--bd);position:relative;transition:background .15s}.ctog i:after{content:"";position:absolute;top:2px;left:2px;width:16px;height:16px;border-radius:50%;background:#fff;transition:transform .15s}
 .ctog[aria-checked=true] i{background:var(--ac)}.ctog[aria-checked=true] i:after{transform:translateX(14px)}
+[hidden]{display:none!important}.own{margin:10px 0;border:1.5px dashed var(--edge);border-radius:14px;padding:8px 12px}.own summary{font:600 13px Poppins,system-ui,sans-serif;cursor:pointer}.own .row{margin-top:8px}
 .pwrap{position:relative;width:100%;aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:#222}
 .pimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;opacity:0;transition:opacity .12s ease}.pimg.on{opacity:1}
 .seg{display:flex;gap:4px;margin-top:10px;padding:3px;border:1.5px solid var(--edge);border-radius:99px}
@@ -565,7 +566,7 @@ if (MODE === 'pick') {
   w.headlines.forEach((h, k) => fs.writeFileSync(path.join(OUT, `m_${mid}_${k + 1}.png`), headlineCanvas(h).toBuffer('image/png')));
   const mf = path.join(OUT, 'manual.json');
   const items = fs.existsSync(mf) ? JSON.parse(fs.readFileSync(mf, 'utf8')).items || [] : [];
-  items.unshift({ id: mid, topic: topic.slice(0, 300), headlines: w.headlines, article: w.article, imagePrompt: w.imagePrompt, src, t: Date.now() });
+  items.unshift({ id: mid, topic: topic.slice(0, 300), headlines: w.headlines, article: w.article, imagePrompt: w.imagePrompt, circlePrompt: w.circlePrompt, src, t: Date.now() });
   fs.writeFileSync(mf, JSON.stringify({ items: items.slice(0, 8) }));
   log('manual done:', mid, w.headlines[0]);
 } else {
@@ -602,7 +603,7 @@ if (MODE === 'pick') {
       log('circle:', style ? style.side + (style.depth ? ', depth' : ', flat') : 'none');
       const [outs, ncOuts] = await Promise.all([compose(w.headlines, buf, cbuf, style), hasCircle ? compose(w.headlines, buf, null, null) : []]); // with-circle and without-circle versions for the toggle
       log('made', c.id, Math.round((Date.now() - tp) / 1000) + 's:', w.headlines[0]);
-      return { c, w, outs, ncOuts, hasCircle };
+      return { c, w, outs, ncOuts, hasCircle, plain: !buf };
     } catch (e) { log('Skipped one post:', e.message); return null; }
   }
 
@@ -611,10 +612,10 @@ if (MODE === 'pick') {
   let made = 0;
   for (const r of results) {
     if (!r) continue;
-    const n = posts.length + 1, { c, w, outs, ncOuts, hasCircle } = r;
+    const n = posts.length + 1, { c, w, outs, ncOuts, hasCircle, plain } = r;
     outs.forEach((o, k) => { fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_${stamp}.jpg`), o.post); fs.writeFileSync(path.join(OUT, `h${n}_${k + 1}_${stamp}.png`), o.headline); });
     ncOuts.forEach((o, k) => fs.writeFileSync(path.join(OUT, `p${n}_${k + 1}_${stamp}_nc.jpg`), o.post));
-    posts.push({ ...w, n, stamp, cid: c.id, kind: c.kind, label: c.label, url: c.link || c.url, source: c.source, hasCircle, details: isLib(c) ? undefined : !!(c.draft ? !c.thin : c.text && !c.thin) });
+    posts.push({ ...w, n, stamp, cid: c.id, kind: c.kind, label: c.label, url: c.link || c.url, source: c.source, hasCircle, plain, details: isLib(c) ? undefined : !!(c.draft ? !c.thin : c.text && !c.thin) });
     if (isLib(c)) state.used.push(c.title); else state.titles.push(c.title);
     made++;
   }

@@ -9,14 +9,52 @@
   const file = (p, pre, k, nc, ext) => D.base + pre + p.n + '_' + (k + 1) + (p.stamp ? '_' + p.stamp : '') + (nc ? '_nc' : '') + '.' + ext;
   const say = (i, t) => { const e = document.querySelector('[data-s="' + i + '"]'); if (e) e.textContent = t; };
 
+  /* ---------- your own photo: the post is put together right here on the phone, so no paid image AI is needed ---------- */
+  const LAY = D.layout || { bot: 18, fade: 170, logo: 132 }, GEM = 'https://gemini.google.com/app';
+  const ownBox = (pre, p) => `<details class="own"${p.plain ? ' open' : ''}><summary>Use your own photo (free Gemini app)</summary>
+ <div class="row"><button type="button" class="btn ghost" data-act="${pre}gem" data-w="main">Photo prompt + Gemini</button><button type="button" class="btn ghost" data-act="${pre}gem" data-w="circle">Circle prompt + Gemini</button></div>
+ <div class="row"><button type="button" class="btn dark" data-act="${pre}add" data-w="main">Add your photo</button><button type="button" class="btn ghost" data-act="${pre}add" data-w="circle">Add circle photo</button></div>
+ <input type="file" accept="image/*" hidden data-file="main"><input type="file" accept="image/*" hidden data-file="circle"></details>`;
+  const loadImg = src => new Promise((res, rej) => { const im = new Image(); im.crossOrigin = 'anonymous'; im.onload = () => res(im); im.onerror = () => rej(new Error('an image failed to load')); im.src = src; });
+  async function fromFile(f) { try { return await createImageBitmap(f, { imageOrientation: 'from-image' }); } catch (e) { return loadImg(URL.createObjectURL(f)); } }
+  async function composePost(o, hlUrl, circleOn) { // the same look as the server-made posts: photo, optional circle, fade, logo, stacked headline
+    const W = 1080, H = 1440, c = document.createElement('canvas'); c.width = W; c.height = H; const x = c.getContext('2d');
+    if (o.photo) { const s = Math.max(W / o.photo.width, H / o.photo.height), w = o.photo.width * s, h = o.photo.height * s; x.drawImage(o.photo, (W - w) / 2, (H - h) / 2, w, h); }
+    else { const g = x.createLinearGradient(0, 0, W * .4, H); g.addColorStop(0, '#6B7C8A'); g.addColorStop(.5, '#232A31'); g.addColorStop(1, '#0B0D0F'); x.fillStyle = g; x.fillRect(0, 0, W, H); }
+    if (circleOn && o.circle) {
+      const R = 240, ri = R - 18, cy = 64 + R, cx = o.side === 'left' ? 56 + R : W - 56 - R;
+      x.save(); x.shadowColor = 'rgba(0,0,0,.5)'; x.shadowBlur = 38; x.shadowOffsetY = 12; x.beginPath(); x.arc(cx, cy, R, 0, Math.PI * 2); x.fillStyle = '#FFFFFF'; x.fill(); x.restore();
+      x.save(); x.beginPath(); x.arc(cx, cy, ri, 0, Math.PI * 2); x.clip(); const im = o.circle, s = Math.max(2 * ri / im.width, 2 * ri / im.height), w = im.width * s, h = im.height * s; x.drawImage(im, cx - w / 2, cy - h / 2, w, h); x.restore();
+    }
+    const [hl, lg] = await Promise.all([loadImg(hlUrl), loadImg('../assets/logo.png')]);
+    const lw = Math.min(300, LAY.logo * lg.width / lg.height), lh = lw * lg.height / lg.width;
+    const hy = H - hl.height - LAY.bot, fy = Math.max(0, hy - (LAY.fade || lh + 6 + 130)), pH = (hy - fy) / (H - fy);
+    const g2 = x.createLinearGradient(0, fy, 0, H);
+    g2.addColorStop(0, 'rgba(0,0,0,0)'); g2.addColorStop(pH * .25, 'rgba(0,0,0,.1)'); g2.addColorStop(pH * .5, 'rgba(0,0,0,.34)'); g2.addColorStop(pH * .75, 'rgba(0,0,0,.7)'); g2.addColorStop(pH, 'rgba(0,0,0,.97)'); g2.addColorStop(1, 'rgba(0,0,0,1)');
+    x.fillStyle = g2; x.fillRect(0, fy, W, H - fy); x.drawImage(hl, 0, hy); x.drawImage(lg, (W - lw) / 2, hy - lh - 6, lw, lh);
+    return new Promise((res, rej) => c.toBlob(b => b ? res(b) : rej(new Error('could not make the image')), 'image/jpeg', .92));
+  }
+  const own = {};
+  async function renderOwn(key, wrap, hlUrl, circleOn, tip) {
+    const o = own[key]; if (!o) return false;
+    try {
+      const blob = await composePost(o, hlUrl, circleOn); if (o.url) URL.revokeObjectURL(o.url); o.blob = blob; o.url = URL.createObjectURL(blob);
+      wrap.hidden = false; let im = wrap.querySelector('.ownimg'); if (!im) { im = document.createElement('img'); im.className = 'pimg ownimg'; im.alt = 'Your post'; wrap.appendChild(im); }
+      im.src = o.url; wrap.querySelectorAll('.pimg').forEach(e => e.classList.toggle('on', e === im)); return true;
+    } catch (e) { tip('Could not use that photo: ' + (e.message || 'try another one') + '.'); return false; }
+  }
+  function download(blob, name) { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000); }
+  function openGemini(prompt) { try { navigator.clipboard.writeText('Generate an image. ' + prompt).catch(() => {}); } catch (x) { /* ignore */ } window.open(GEM, '_blank'); } // copy first, open right away (phones block a new tab opened after a wait)
+
   /* ---------- posts tab ---------- */
   function card(p, i) {
     const hs = p.headlines;
     const imgs = hs.map((h, k) => `<img class="pimg${k ? '' : ' on'}" data-k="${k}" data-c="1" src="${file(p, 'p', k, 0, 'jpg')}" alt="Post ${i + 1}, headline ${k + 1}"${i || k ? ' loading="lazy"' : ''}>`).join('')
       + (p.hasCircle ? hs.map((h, k) => `<img class="pimg" data-k="${k}" data-c="0" src="${file(p, 'p', k, 1, 'jpg')}" alt="Post ${i + 1}, headline ${k + 1}, no circle" loading="lazy">`).join('') : '');
     return `<section class="slide" id="p${i}" data-i="${i}"><div class="card">
- <div class="cardtop"><div class="lab">${esc(p.label)}</div>${p.hasCircle ? '<button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-act="circle">Circle<i></i></button>' : ''}</div>
+ <div class="cardtop"><div class="lab">${esc(p.label)}</div><button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Round photo" data-act="circle"${p.hasCircle ? '' : ' hidden'}>Circle<i></i></button></div>
  <div class="pwrap">${imgs}</div>
+ ${ownBox('', p)}
  ${hs.length > 1 ? `<div class="seg" role="group" aria-label="Headline options">${hs.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-act="head" data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>` : ''}
  <h2 data-h>${esc(hs[0])}</h2>
  <p class="art">${esc(p.article).replace(/\n+/g, '<br><br>')}</p>
@@ -47,7 +85,9 @@
     mark(Math.min(cur, posts.length - 1));
     (window.requestIdleCallback || setTimeout)(() => root.querySelectorAll('.pimg').forEach(im => { im.loading = 'eager'; }));
   }
+  const ownRender = sl => { const i = +sl.dataset.i; return renderOwn('p' + i, sl.querySelector('.pwrap'), file(posts[i], 'h', +(sl.dataset.v || 0), 0, 'png'), sl.dataset.c !== '0', t => say(i, t)); };
   function refresh(sl) {
+    if (own['p' + sl.dataset.i]) { ownRender(sl); return; }
     const v = +(sl.dataset.v || 0), c = sl.dataset.c || '1';
     sl.querySelectorAll('.pimg').forEach(im => im.classList.toggle('on', +im.dataset.k === v && im.dataset.c === c));
   }
@@ -55,6 +95,8 @@
   $('postsroot').addEventListener('click', async e => {
     const b = e.target.closest('[data-act]'); if (!b) return;
     const sl = b.closest('.slide'), i = +sl.dataset.i, p = posts[i], v = +(sl.dataset.v || 0), act = b.dataset.act;
+    if (act === 'gem') { openGemini((b.dataset.w === 'circle' && p.circlePrompt) || p.imagePrompt); say(i, 'Prompt copied. Paste it into Gemini, save the photo, then tap Add.'); return; }
+    if (act === 'add') { sl.querySelector('[data-file="' + b.dataset.w + '"]').click(); return; }
     if (act === 'head') {
       sl.dataset.v = b.dataset.v;
       b.parentNode.querySelectorAll('button').forEach(x => { const on = x === b; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
@@ -66,12 +108,24 @@
     } else if (act === 'copyh') {
       try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': blobOf(file(p, 'h', v, 0, 'png')) })]); say(i, 'Headline copied. Paste it in Bazaart.'); } catch (x) { say(i, 'Copy was blocked. Use Save image instead.'); }
     } else if (act === 'save') {
+      const o = own['p' + i]; if (o && o.blob) { download(o.blob, 'miamidader-' + p.n + '.jpg'); say(i, 'Saved.'); return; }
       const url = file(p, 'p', v, sl.dataset.c === '0', 'jpg');
       try {
         const a = document.createElement('a'); a.href = URL.createObjectURL(await blobOf(url)); a.download = 'miamidader-' + p.n + '.jpg';
         document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000); say(i, 'Saved.');
       } catch (x) { window.open(url, '_blank'); }
     }
+  });
+
+  $('postsroot').addEventListener('change', async e => {
+    const inp = e.target.closest('[data-file]'); if (!inp || !inp.files[0]) return;
+    const sl = inp.closest('.slide'), i = +sl.dataset.i;
+    try {
+      const img = await fromFile(inp.files[0]), o = own['p' + i] = own['p' + i] || { side: Math.random() < .5 ? 'left' : 'right' };
+      if (inp.dataset.file === 'circle') { o.circle = img; const t = sl.querySelector('.ctog'); t.hidden = false; t.setAttribute('aria-checked', 'true'); sl.dataset.c = '1'; } else o.photo = img;
+      say(i, '');
+    } catch (x) { say(i, 'Could not read that photo.'); }
+    inp.value = ''; ownRender(sl);
   });
 
   /* ---------- tabs ---------- */
@@ -167,11 +221,13 @@
  <div class="cardtop"><div class="lab">Manual</div></div>
  <p class="topic">${esc(m.topic)}</p>
  <div class="seg" role="group" aria-label="Headline options">${m.headlines.map((h, k) => `<button type="button"${k ? '' : ' class="on"'} data-act="mhead" data-v="${k}" aria-pressed="${k ? 'false' : 'true'}">Headline ${k + 1}</button>`).join('')}</div>
+ <div class="pwrap" data-mwrap hidden></div>
  <div class="hprev"><img data-hp src="${D.base}m_${m.id}_1.png" alt="Stacked headline"></div>
  <p class="art">${esc(m.article).replace(/\n+/g, '<br><br>')}</p>
  <div class="row"><button type="button" class="btn" data-act="mcopyart">Copy article</button><button type="button" class="btn ghost" data-act="mcopyh">Copy headline</button></div>
  <div class="row"><button type="button" class="btn ghost" data-act="mpng">Copy headline PNG</button></div>
- <button type="button" class="btn dark" data-act="mgemini">Copy photo prompt and open Gemini</button>
+ ${ownBox('m', { plain: true })}
+ <button type="button" class="btn dark" data-act="msave" hidden>Save image</button>
  ${m.src ? `<p class="src">Source: <a href="${esc(m.src)}" target="_blank" rel="noopener">link</a>. Check the facts before you post.</p>` : '<p class="src">Written only from what you typed. Check the facts before you post.</p>'}
  <p class="tip" data-ms="${i}"></p>
 </div>`;
@@ -183,14 +239,23 @@
     if (act === 'mhead') {
       c.dataset.v = b.dataset.v; b.parentNode.querySelectorAll('button').forEach(x => { const on = x === b; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
       c.querySelector('[data-hp]').src = D.base + 'm_' + m.id + '_' + (+b.dataset.v + 1) + '.png'; tip('');
-    } else if (act === 'mgemini') { // copy first, open right away (phones block a new tab opened after a wait)
-      try { navigator.clipboard.writeText('Generate an image. ' + m.imagePrompt).catch(() => {}); } catch (x) { /* ignore */ }
-      window.open('https://gemini.google.com/app', '_blank'); tip('Prompt copied. Paste it into Gemini.');
+      if (own['m' + i]) mOwn(c);
+    } else if (act === 'mgem') { openGemini((b.dataset.w === 'circle' && m.circlePrompt) || m.imagePrompt); tip('Prompt copied. Paste it into Gemini, save the photo, then tap Add.');
+    } else if (act === 'madd') { c.querySelector('[data-file="' + b.dataset.w + '"]').click();
+    } else if (act === 'msave') { const o = own['m' + i]; if (o && o.blob) { download(o.blob, 'miamidader-manual-' + m.id + '.jpg'); tip('Saved.'); }
     } else if (act === 'mcopyart' || act === 'mcopyh') {
       try { await navigator.clipboard.writeText(act === 'mcopyart' ? m.article : m.headlines[v]); tip('Copied.'); } catch (x) { tip('Copy was blocked.'); }
     } else if (act === 'mpng') {
       try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': blobOf(D.base + 'm_' + m.id + '_' + (v + 1) + '.png') })]); tip('Headline copied. Paste it in Bazaart.'); } catch (x) { tip('Copy was blocked.'); }
     }
+  });
+  const mOwn = async c => { const i = +c.dataset.m, m = manual[i], ok = await renderOwn('m' + i, c.querySelector('[data-mwrap]'), D.base + 'm_' + m.id + '_' + (+(c.dataset.v || 0) + 1) + '.png', true, t => { c.querySelector('[data-ms]').textContent = t; }); if (ok) { c.querySelector('.hprev').hidden = true; c.querySelector('[data-act="msave"]').hidden = false; } };
+  $('mlist').addEventListener('change', async e => {
+    const inp = e.target.closest('[data-file]'); if (!inp || !inp.files[0]) return;
+    const c = inp.closest('.mitem'), i = +c.dataset.m;
+    try { const img = await fromFile(inp.files[0]), o = own['m' + i] = own['m' + i] || { side: Math.random() < .5 ? 'left' : 'right' }; if (inp.dataset.file === 'circle') o.circle = img; else o.photo = img; }
+    catch (x) { c.querySelector('[data-ms]').textContent = 'Could not read that photo.'; }
+    inp.value = ''; mOwn(c);
   });
   async function fetchManual() { const r = await fetch(D.base + 'manual.json?v=' + Date.now(), { cache: 'no-store' }); if (!r.ok) throw new Error('HTTP ' + r.status); return (await r.json()).items || []; }
   const MAPI = 'https://api.github.com/repos/' + D.repo + '/actions/workflows/manual.yml/';
