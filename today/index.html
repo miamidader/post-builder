@@ -41,7 +41,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .srow input:focus-visible+.box{outline:3px solid var(--orange);outline-offset:2px}
 .srow input:disabled+.box{opacity:.4}
 .sbody{min-width:0;display:block}
-.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.score{background:transparent;color:var(--fg);border:1.5px solid var(--edge);padding:0 9px}.swhy{display:block;font-size:12px;color:var(--mut);margin:-2px 0 4px;font-style:italic}.chip.warn{background:var(--orange);color:#101316}
+.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.score{background:transparent;color:var(--fg);border:1.5px solid var(--edge);padding:0 9px}.warnbar{border-color:var(--orange);font-size:13px}.swhy{display:block;font-size:12px;color:var(--mut);margin:-2px 0 4px;font-style:italic}.chip.warn{background:var(--orange);color:#101316}
 .stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
 .sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
 .smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
@@ -63,6 +63,10 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 <div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">Monday, November 16. Pick the stories you want, then tap Generate.</p></div>
 <div class="wrap"><div class="banner" id="banner" hidden><span>There is a newer story list.</span><button type="button" id="reload">Reload</button></div><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (10)</button><button type="button" role="tab" id="tabP">Posts (<span id="pc">0</span>)</button><button type="button" role="tab" id="tabM">Manual</button></div></div>
 <div id="vs"><div class="wrap">
+<div class="story warnbar"><b>AI is off today.</b> Scores and write-ups could not be made, so stories are newest first and articles will be written when you tap Generate. If this says credits or billing, top up at ai.studio/projects.<br><span class="swhy">Gemini gemini-flash-lite-latest HTTP 402: {
+  &quot;error&quot;: {
+    &quot;code&quot;: 402,
+    &quot;message&quot;: &quot;Your prepayment credits are depleted. Please go to AI Studio at https:</span></div>
 
 <div class="story" data-id="1">
  <label class="srow"><input type="checkbox" class="pick" value="1"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">North Miami Beach High School's Andre Hyppolite is a finalist for the 2026 Nat Moore Trophy</span><span class="sdesc">The two-way North Miami Beach senior, who was overlooked early in his career, says winning the award would validate years of work.</span><span class="smeta">CBS News &middot; <span data-ago="1794879811000"></span> &middot; <a href="https://www.cbsnews.com/miami/news/andre-hyppolite-north-miami-beach-high-nat-moore-award-finalist-2026/" target="_blank" rel="noopener">Read</a></span></span></label>
@@ -107,19 +111,19 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 </div>
 
 <div class="story" data-id="8">
- <label class="srow"><input type="checkbox" class="pick" value="8"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="chip warn">Few details</span><span class="stitle">Alex Rizo kicks off SD 39 campaign with more law enforcement endorsements</span><span class="smeta">Florida Politics &middot; <span data-ago="1794868115000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMiugFBVV95cUxPeDVBMlJ3bENlUzRMNjV3THZaeml6Y3laRVpnaW5hdzYtOGNsdEVydnlzNHlod0xsNmd0WFE4UTdGNWFJTlpkSE1oWHV0RnNXVWRiQ0Q0WEM2M2dfNVBYaFNWMUNmZm5sOVZ4Zm5aUVhhMEhTcWFBLVpxWDJnV1FlY0FUZE90WGstUFBkeFo3WWRxa2hIbmYtclU4ZHdJOXV1eFUtU1kyVXdTM3FiYlhyNFhKaXlZX0hOc2c?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
+ <label class="srow"><input type="checkbox" class="pick" value="8"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Alex Rizo kicks off SD 39 campaign with more law enforcement endorsements</span><span class="sdesc">‘I’m running for the Senate to continue delivering results, protecting our conservative values and ensuring our communities have a strong voice in Tallahassee.’</span><span class="smeta">Florida Politics &middot; <span data-ago="1794868115000"></span> &middot; <a href="https://floridapolitics.com/archives/833019-alex-rizo-kicks-off-sd-39-campaign-with-more-law-enforcement-endorsements/" target="_blank" rel="noopener">Read</a></span></span></label>
  
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="8">Circle<i></i></button>
 </div>
 
 <div class="story" data-id="9">
- <label class="srow"><input type="checkbox" class="pick" value="9"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="stitle">Miami-Dade Property Appraiser Tomás Regalado</span><span class="smeta">Miami’s Community News &middot; <span data-ago="1794866905000"></span> &middot; <a href="https://communitynewspapers.com/cnewstv/miami-dade-property-appraiser-tomas-regalado-miamis-community-newspapers-en-espanol-2/" target="_blank" rel="noopener">Read</a></span></span></label>
+ <label class="srow"><input type="checkbox" class="pick" value="9"><span class="box"></span><span class="sbody"><span class="chip">News</span><span class="chip warn">Few details</span><span class="stitle">Brazilian-inspired boutique hotel to debut in historic Miami Beach property (Photos)</span><span class="smeta">The Business Journals &middot; <span data-ago="1794866940000"></span> &middot; <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdzhqUnA1U1hRUnFIWlExcjkzT1Q5RVZYWU5Mb195OHJFUFRuaEppaWEyMk9pdjNBSlgyMHNTd2RhUkp0cloxT0c0N2JnTDJDVVk5NjFmQUs4SmxVOE9XdHpmUUZ4d0xKaEx4S2ZuNldRR3laREpYXzBabDN3Z1VLSDh5S3JyQUxLS25DY2Q5Snc3d0M2Y1pScGxlR1lxbl9LXzM5VWNBQUt1Y2s?oc=5" target="_blank" rel="noopener">Read</a></span></span></label>
  
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="9">Circle<i></i></button>
 </div>
 
 <div class="story" data-id="10">
- <label class="srow"><input type="checkbox" class="pick" value="10"><span class="box"></span><span class="sbody"><span class="chip">History</span><span class="stitle">1906: canals begin draining the Everglades</span><span class="sdesc">In 1906, canals were begun to remove water from the Florida Everglades.</span><span class="smeta">From your fact library</span></span></label>
+ <label class="srow"><input type="checkbox" class="pick" value="10"><span class="box"></span><span class="sbody"><span class="chip">History</span><span class="stitle">1891: Julia Tuttle buys 640 acres on the Miami River</span><span class="sdesc">In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.</span><span class="smeta">From your fact library</span></span></label>
  
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="10">Circle<i></i></button>
 </div>
@@ -141,6 +145,6 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 <button type="button" class="btn" id="mgen">Write it</button><p class="gmsg" id="mmsg"></p>
 <div id="mlist"></div>
 </div></div>
-<script type="application/json" id="data">{"repo":"miamidader/post-builder","base":"https://raw.githubusercontent.com/miamidader/post-builder/main/today/","date":"Monday, November 16","pick":"mwk24gvz","posts":[]}</script>
+<script type="application/json" id="data">{"repo":"miamidader/post-builder","base":"https://raw.githubusercontent.com/miamidader/post-builder/main/today/","date":"Monday, November 16","pick":"mwk26yf5","posts":[]}</script>
 <script src="../assets/app.js?v=93c5ef0f"></script>
 </body></html>

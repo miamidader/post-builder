@@ -1,6 +1,7 @@
 {
  "date": "Monday, November 16",
- "pick": "mwk24gvz",
+ "pick": "mwk26yf5",
+ "warn": "Gemini gemini-flash-lite-latest HTTP 402: {\n  \"error\": {\n    \"code\": 402,\n    \"message\": \"Your prepayment credits are depleted. Please go to AI Studio at https:",
  "items": [
   {
    "kind": "news",
@@ -109,27 +110,27 @@
    "t": 1794868115000,
    "n": 1,
    "id": 8,
-   "thin": true
+   "link": "https://floridapolitics.com/archives/833019-alex-rizo-kicks-off-sd-39-campaign-with-more-law-enforcement-endorsements/",
+   "text": "‘I’m running for the Senate to continue delivering results, protecting our conservative values and ensuring our communities have a strong voice in Tallahassee.’\n\nState Rep. Alex Rizo kicked off his Special Election campaign for Senate District 39 in his hometown of Hialeah with two more endorsements from law enforcement groups.\nHe picked up nods from the National Association of Police Organizations and the Florida Police Benevolent Association , the state’s largest law enforcement union.\nThey join three other public safety groups — Florida Professional Firefighters , the Florida State Fraternal Order of Police and the South Florida Police Benevolent Association — that are also backing Rizo’s effort to succeed fellow Republican and Lt. Gov.-elect Bryan Ávila .\nHe also carries support from U.S. Reps. Mario Díaz-Balart and Carlos Giménez , Gov. Ron DeSantis , Attorney General James Uthmeier , CFO Blaise Ingoglia , Senate President-designate Jim Boyd , state Sen. Jay Trumbull , all five of Miami-Dade County’s constitutional officers and a passel of local leaders and current and former elected officials.\n“I’m incredibly grateful for the confidence and support of so many leaders who share my commitment to this community and the future of Florida,” Rizo said Thursday.\n“This district is my home. It’s where I’ve raised my family, built relationships and had the privilege of serving our neighbors. From our small businesses and hardworking families to the law enforcement officers, firefighters and first responders who keep our communities safe, I know what makes this part of Miami-Dade special. I’m running for the Senate to continue delivering results, protecting our conservative values and ensuring our communities have a strong voice in Tallahassee.”\nRizo, a teacher and school administrator-turned-education consultant, chaired the Miami-Dade Republican Party from 2022 to 2024, when President Donald Trump became the first Republican presidential nominee since 1988 to carry the county .\nRepublicans that year also won every constitutional office race, and no seats in Congress or the Legislature changed hands.\nRizo entered the SD 39 race in early September, one day after fellow Hialeah Republican state Rep. David Borrero announced his bid.\nBoth were first elected to the House in 2020 and won re-election unopposed in June. Rizo represents House District 112, and Borrero represents House District 111. Both districts overlap with SD 39.\nÁvila resigned his SD 39 seat in August to join Gov.-elect Byron Donalds’ ticket as his running mate.\nSD 39 includes all or parts of Doral, Hialeah, Hialeah Gardens, Medley, Miami Lakes, Miami Springs, Sweetwater and Virginia Gardens. Republicans outnumber Democrats there by more than 2-to-1 .",
+   "thin": false,
+   "desc": "‘I’m running for the Senate to continue delivering results, protecting our conservative values and ensuring our communities have a strong voice in Tallahassee.’"
   },
   {
    "kind": "news",
    "label": "News",
-   "title": "Miami-Dade Property Appraiser Tomás Regalado",
-   "source": "Miami’s Community News",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQNmxEMUV3ckExWXVKb0tjSjFkcllILUZKNGJLVk82V3V3OXVyN0hKMlNWa21NemdQSkdOUktoNHQ0dWdORzBfX0lNUEQyQjRTOHFrZHRmcnJJMDFVUm43T0ZQOWJGSzZJa0YzSHdOLWVnN043SDVUcnBLWXNYSWZuakJDMENLOGlIUk1yZG9rWEtNNDN2T1BpY0JGV2lGb0oteVUtRUJUVXQyeHhkU1lYWk1fUmVoaHFaX05ROHp0TFpZcmxX?oc=5",
-   "t": 1794866905000,
+   "title": "Brazilian-inspired boutique hotel to debut in historic Miami Beach property (Photos)",
+   "source": "The Business Journals",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdzhqUnA1U1hRUnFIWlExcjkzT1Q5RVZYWU5Mb195OHJFUFRuaEppaWEyMk9pdjNBSlgyMHNTd2RhUkp0cloxT0c0N2JnTDJDVVk5NjFmQUs4SmxVOE9XdHpmUUZ4d0xKaEx4S2ZuNldRR3laREpYXzBabDN3Z1VLSDh5S3JyQUxLS25DY2Q5Snc3d0M2Y1pScGxlR1lxbl9LXzM5VWNBQUt1Y2s?oc=5",
+   "t": 1794866940000,
    "n": 1,
    "id": 9,
-   "link": "https://communitynewspapers.com/cnewstv/miami-dade-property-appraiser-tomas-regalado-miamis-community-newspapers-en-espanol-2/",
-   "text": "Getting your Trinity Audio player ready... On this episode of Miami’s Community Newspapers en Español, host Álvaro Zabaleta, Chief Communications Officer for Miccosukee Casino & Resort, sits down with Tomás Regalado, Miami-Dade County Property Appraiser. They discuss the role of the Property Appraiser’s Office, property assessments, the local real estate landscape, and important information impacting […]\n\nOn this episode of Miami’s Community Newspapers en Español, host Álvaro Zabaleta, Chief Communications Officer for Miccosukee Casino & Resort, sits down with Tomás Regalado, Miami-Dade County Property Appraiser.\nThey discuss the role of the Property Appraiser’s Office, property assessments, the local real estate landscape, and important information impacting Miami-Dade County residents and property owners.\nTune in for an informative conversation about the issues and updates that matter to our community.\n#MiamisCommunityNewspapers #EnEspañol #TomásRegalado #MiamiDadeCounty #PropertyAppraiser #MiamiNews",
-   "thin": false,
-   "desc": ""
+   "thin": true
   },
   {
    "kind": "history",
    "label": "History",
-   "title": "1906: canals begin draining the Everglades",
-   "desc": "In 1906, canals were begun to remove water from the Florida Everglades.",
+   "title": "1891: Julia Tuttle buys 640 acres on the Miami River",
+   "desc": "In 1891, Julia Tuttle moved to South Florida and bought 640 acres on the north bank of the Miami River.",
    "id": 10
   }
  ]
