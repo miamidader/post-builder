@@ -28,11 +28,19 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           SKIP_IF_TODAY: ${{ (github.event_name == 'schedule' || inputs.only_if_stale) && '1' || '' }}
+      - name: Auto-build the top 3 posts
+        # Autopilot: no picking needed. Only runs when a fresh list has no posts yet. A failure here never blocks the list.
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_IMAGE_MODEL: ${{ vars.GEMINI_IMAGE_MODEL }}
+        run: |
+          IDS=$(node -e "const f=require('fs'),c=JSON.parse(f.readFileSync('today/candidates.json')),p=JSON.parse(f.readFileSync('today/posts.json'));console.log(p.posts.length?'':c.items.filter(x=>x.kind==='news'||x.kind==='sports').slice(0,3).map(x=>x.id).join(','))")
+          if [ -n "$IDS" ]; then PICKS="$IDS" node scripts/build.mjs generate >> build.log 2>&1 || echo "Auto-build failed, the list is still saved."; tail -5 build.log; fi
       - name: Save results
         run: |
           git config user.name "daily-bot"
           git config user.email "daily-bot@users.noreply.github.com"
-          git add -A today
+          git add -A today data/seen.json data/history.json
           git diff --cached --quiet || git commit -m "Daily story picks"
           git reset --hard -q  # drop npm's changes to tracked files (node_modules, lockfile) so the pull can run
           git pull --rebase origin main

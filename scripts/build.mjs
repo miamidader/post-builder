@@ -478,7 +478,7 @@ ${stories}
 }
 
 /* ---------- main ---------- */
-const MODE = ['generate', 'manual', 'page'].includes(process.argv[2]) ? process.argv[2] : 'pick'; // pick = morning list of stories (articles read and drafted, no photos); generate = photos and layout for only the stories you chose
+let MODE = ['generate', 'manual', 'page', 'alert'].includes(process.argv[2]) ? process.argv[2] : 'pick'; // pick = morning list of stories (articles read and drafted, no photos); generate = photos and layout for only the stories you chose
 const seenFile = path.join(ROOT, 'data/seen.json');
 const state = JSON.parse(fs.readFileSync(seenFile, 'utf8'));
 const lib = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/library.json'), 'utf8'));
@@ -514,6 +514,21 @@ async function draftAll(items) { // write headlines and the article now (text is
   });
 }
 
+let alertInfo = null;
+if (MODE === 'alert') { // breaking news: if a fresh story scores very high and has not been alerted yet, write it up like a Manual post and tell the phone
+  const AMIN = +process.env.ALERT_MIN || 85, AHRS = +process.env.ALERT_HOURS || 5, af = path.join(ROOT, 'data/alerted.json');
+  let done = []; try { done = JSON.parse(fs.readFileSync(af, 'utf8')); } catch (e) { /* none yet */ }
+  const newsC = DRY ? [{ title: 'Breaking: sample big Miami-Dade story', source: 'Local 10', url: 'https://example.com/b', t: Date.now() - 600e3 }] : await candidates('news', state.titles);
+  const fresh = newsC.filter(h => h.url && !done.includes(h.url) && Date.now() - h.t < AHRS * 3600e3).slice(0, 12);
+  if (!fresh.length) { log('alert: nothing fresh'); process.exit(0); }
+  const pl = fresh.map((h, i) => ({ kind: 'news', label: 'News', id: i + 1, title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts, n: h.n }));
+  await scoreAll(pl);
+  const top = pl.filter(x => (x.score ?? -1) >= AMIN).sort((a, b) => b.score - a.score)[0];
+  if (!top) { log('alert: best score', Math.max(...pl.map(x => x.score ?? -1)), 'is under', AMIN); process.exit(0); }
+  done.push(top.url); fs.writeFileSync(af, JSON.stringify(done.slice(-300)));
+  process.env.TOPIC = top.title + ' (' + top.source + ')\n' + top.url; process.env.MID = 'a' + Date.now().toString(36);
+  alertInfo = { score: top.score, why: top.why }; MODE = 'manual'; log('alert:', top.score, top.title);
+}
 if (MODE === 'pick' && process.env.SKIP_IF_TODAY) { // a backup scheduled run: do nothing if today's list is already there (so it never wipes posts you made)
   try { if (JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')).date === dateLabel) { log('Today\'s list already exists, nothing to do.'); process.exit(0); } } catch (e) { /* no list yet, carry on */ }
 }
@@ -569,6 +584,7 @@ if (MODE === 'pick') {
   items.unshift({ id: mid, topic: topic.slice(0, 300), headlines: w.headlines, article: w.article, imagePrompt: w.imagePrompt, circlePrompt: w.circlePrompt, src, t: Date.now() });
   fs.writeFileSync(mf, JSON.stringify({ items: items.slice(0, 8) }));
   log('manual done:', mid, w.headlines[0]);
+  if (alertInfo) fs.writeFileSync(path.join(ROOT, 'alert.txt'), w.headlines[0] + '\nScore ' + alertInfo.score + (alertInfo.why ? ': ' + alertInfo.why : '') + '\nTap to open the ready post.');
 } else {
   if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing. Add it in the repo settings under Secrets.'); process.exit(1); }
   const cf = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')), cands = cf.items;

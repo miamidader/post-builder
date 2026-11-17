@@ -44,6 +44,12 @@
     } catch (e) { tip('Could not use that photo: ' + (e.message || 'try another one') + '.'); return false; }
   }
   function download(blob, name) { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 5000); }
+  async function shareImage(blobP, caption, name) { // opens the phone's share sheet with the image; the caption is copied first so it can be pasted in Instagram
+    try { navigator.clipboard.writeText(caption).catch(() => {}); } catch (x) { /* ignore */ }
+    const blob = await blobP, f = new File([blob], name, { type: 'image/jpeg' });
+    if (navigator.canShare && navigator.canShare({ files: [f] })) { await navigator.share({ files: [f] }); return 'shared'; }
+    download(blob, name); return 'saved';
+  }
   function openGemini(prompt) { try { navigator.clipboard.writeText('Generate an image. ' + prompt).catch(() => {}); } catch (x) { /* ignore */ } window.open(GEM, '_blank'); } // copy first, open right away (phones block a new tab opened after a wait)
 
   /* ---------- posts tab ---------- */
@@ -60,7 +66,8 @@
  <p class="art">${esc(p.article).replace(/\n+/g, '<br><br>')}</p>
  <div class="row"><button type="button" class="btn" data-act="copyart">Copy article</button><button type="button" class="btn ghost" data-act="save">Save image</button></div>
  <div class="row"><button type="button" class="btn ghost" data-act="copyh">Copy headline PNG</button><button type="button" class="btn ghost" data-act="copyprompt">Copy photo prompt</button></div>
- <a class="btn dark" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
+ <button type="button" class="btn dark" data-act="share">Share to Instagram</button>
+ <a class="btn ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Open Instagram</a>
  <p class="src">${p.url ? `Source: <a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.source || 'link')}</a>. Check the facts before you post.${p.details === false ? ' Only the headline or a short summary was available, so this has few details. Open the source and add them before posting.' : ''}` : 'From your fact library.'}</p>
  <p class="tip" data-s="${i}"></p>
 </div></section>`;
@@ -96,6 +103,12 @@
     const b = e.target.closest('[data-act]'); if (!b) return;
     const sl = b.closest('.slide'), i = +sl.dataset.i, p = posts[i], v = +(sl.dataset.v || 0), act = b.dataset.act;
     if (act === 'gem') { openGemini((b.dataset.w === 'circle' && p.circlePrompt) || p.imagePrompt); say(i, 'Prompt copied. Paste it into Gemini, save the photo, then tap Add.'); return; }
+    if (act === 'share') {
+      const o = own['p' + i];
+      try { const r = await shareImage(o && o.blob ? o.blob : blobOf(file(p, 'p', v, sl.dataset.c === '0', 'jpg')), p.article, 'miamidader-' + p.n + '.jpg'); say(i, r === 'shared' ? 'Caption copied. Paste it in Instagram.' : 'Image saved and caption copied.'); }
+      catch (x) { if (x.name !== 'AbortError') say(i, 'Could not open sharing. Use Save image instead.'); }
+      return;
+    }
     if (act === 'add') { sl.querySelector('[data-file="' + b.dataset.w + '"]').click(); return; }
     if (act === 'head') {
       sl.dataset.v = b.dataset.v;
@@ -227,7 +240,8 @@
  <div class="row"><button type="button" class="btn" data-act="mcopyart">Copy article</button><button type="button" class="btn ghost" data-act="mcopyh">Copy headline</button></div>
  <div class="row"><button type="button" class="btn ghost" data-act="mpng">Copy headline PNG</button></div>
  ${ownBox('m', { plain: true })}
- <button type="button" class="btn dark" data-act="msave" hidden>Save image</button>
+ <button type="button" class="btn dark" data-act="mshare" hidden>Share to Instagram</button>
+ <button type="button" class="btn ghost" data-act="msave" hidden>Save image</button>
  ${m.src ? `<p class="src">Source: <a href="${esc(m.src)}" target="_blank" rel="noopener">link</a>. Check the facts before you post.</p>` : '<p class="src">Written only from what you typed. Check the facts before you post.</p>'}
  <p class="tip" data-ms="${i}"></p>
 </div>`;
@@ -242,6 +256,7 @@
       if (own['m' + i]) mOwn(c);
     } else if (act === 'mgem') { openGemini((b.dataset.w === 'circle' && m.circlePrompt) || m.imagePrompt); tip('Prompt copied. Paste it into Gemini, save the photo, then tap Add.');
     } else if (act === 'madd') { c.querySelector('[data-file="' + b.dataset.w + '"]').click();
+    } else if (act === 'mshare') { const o = own['m' + i]; if (o && o.blob) { try { const r = await shareImage(o.blob, m.article, 'miamidader-manual-' + m.id + '.jpg'); tip(r === 'shared' ? 'Caption copied. Paste it in Instagram.' : 'Image saved and caption copied.'); } catch (x) { if (x.name !== 'AbortError') tip('Could not open sharing. Use Save image instead.'); } }
     } else if (act === 'msave') { const o = own['m' + i]; if (o && o.blob) { download(o.blob, 'miamidader-manual-' + m.id + '.jpg'); tip('Saved.'); }
     } else if (act === 'mcopyart' || act === 'mcopyh') {
       try { await navigator.clipboard.writeText(act === 'mcopyart' ? m.article : m.headlines[v]); tip('Copied.'); } catch (x) { tip('Copy was blocked.'); }
@@ -249,7 +264,7 @@
       try { await navigator.clipboard.write([new ClipboardItem({ 'image/png': blobOf(D.base + 'm_' + m.id + '_' + (v + 1) + '.png') })]); tip('Headline copied. Paste it in Bazaart.'); } catch (x) { tip('Copy was blocked.'); }
     }
   });
-  const mOwn = async c => { const i = +c.dataset.m, m = manual[i], ok = await renderOwn('m' + i, c.querySelector('[data-mwrap]'), D.base + 'm_' + m.id + '_' + (+(c.dataset.v || 0) + 1) + '.png', true, t => { c.querySelector('[data-ms]').textContent = t; }); if (ok) { c.querySelector('.hprev').hidden = true; c.querySelector('[data-act="msave"]').hidden = false; } };
+  const mOwn = async c => { const i = +c.dataset.m, m = manual[i], ok = await renderOwn('m' + i, c.querySelector('[data-mwrap]'), D.base + 'm_' + m.id + '_' + (+(c.dataset.v || 0) + 1) + '.png', true, t => { c.querySelector('[data-ms]').textContent = t; }); if (ok) { c.querySelector('.hprev').hidden = true; c.querySelector('[data-act="msave"]').hidden = false; c.querySelector('[data-act="mshare"]').hidden = false; } };
   $('mlist').addEventListener('change', async e => {
     const inp = e.target.closest('[data-file]'); if (!inp || !inp.files[0]) return;
     const c = inp.closest('.mitem'), i = +c.dataset.m;

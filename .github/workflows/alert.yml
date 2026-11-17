@@ -1,0 +1,38 @@
+name: Breaking news alert
+# Every half hour while you are awake: if a fresh story scores very high, write it up (headlines + article) and send a free push notification (ntfy). Tap it to open the ready post on the Manual tab.
+on:
+  schedule:
+    - cron: '*/30 11-23,0-3 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: manual
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm install
+      - run: node scripts/build.mjs alert > build.log 2>&1; code=$?; cat build.log; exit $code
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ALERT_MIN: ${{ vars.ALERT_MIN }}
+      - name: Save results
+        run: |
+          git config user.name "daily-bot"
+          git config user.email "daily-bot@users.noreply.github.com"
+          git add -A today data/alerted.json
+          git diff --cached --quiet || git commit -m "Breaking news post"
+          git reset --hard -q  # drop npm's changes to tracked files so the pull can run
+          for i in 1 2 3 4; do git pull --rebase origin main && git push && break; sleep 4; done
+      - name: Phone alert
+        if: hashFiles('alert.txt') != ''
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          [ -n "$NTFY_TOPIC" ] || { echo "No NTFY_TOPIC secret, skipping the phone alert."; exit 0; }
+          curl -fsS -H "Title: Breaking Miami-Dade story" -H "Priority: high" -H "Click: https://miamidader.github.io/post-builder/today/#manual" --data-binary @alert.txt "https://ntfy.sh/$NTFY_TOPIC"
