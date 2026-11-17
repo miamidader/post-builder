@@ -103,7 +103,12 @@ async function candidates(kind, seen) {
   if (kind === 'news') all = all.filter(h => !SPORTS_RE.test(h.title));
   all = all.filter(h => !JUNK_SRC.test(h.source) && !ADDRESS_RE.test(h.title) && !SPAM_RE.test(h.title)); // real estate listings and travel pages are not news
   const out = [];
-  for (const h of all) if (![...seen, ...out.map(o => o.title)].some(t => similar(t, h.title))) out.push(h);
+  for (const h of all) {
+    if (seen.some(t => similar(t, h.title))) continue;
+    const dup = out.find(o => similar(o.title, h.title));
+    if (dup) { dup.n = (dup.n || 1) + 1; continue; } // another outlet covering the same story: a sign it is big
+    out.push({ ...h, n: 1 });
+  }
   return out;
 }
 
@@ -156,6 +161,20 @@ async function pickBest(list, n) {
     const picks = [...new Set(JSON.parse(j.candidates[0].content.parts[0].text).picks)].filter(i => i >= 1 && i <= list.length).slice(0, n).map(i => list[i - 1]);
     return picks.length ? picks : list.slice(0, n);
   } catch (e) { log('pickBest fallback', e.message); return list.slice(0, n); }
+}
+const TASTE = path.join(ROOT, 'data/taste.md');
+async function scoreAll(items) { // rate each story 0 to 100 using your scoring guide (data/taste.md) plus how many outlets cover it
+  const news = items.filter(x => !isLib(x));
+  if (!news.length) return;
+  if (DRY) { news.forEach((x, i) => { x.score = Math.max(5, 92 - i * 6); x.why = 'Sample reason for this score'; }); return; }
+  if (!KEY) { log('No GEMINI_API_KEY, so no scores.'); return; }
+  try {
+    const guide = fs.existsSync(TASTE) ? fs.readFileSync(TASTE, 'utf8') : 'No guide yet. Prefer stories that affect everyday life in Miami-Dade, surprise, or community pride.';
+    const prompt = `You score story ideas for a Miami-Dade Instagram news account. Use the owner's scoring guide below. Give each story a score from 0 to 100 for how likely it is to be shared by local readers, and a reason of at most 10 words. Spread the scores out: the best story should be near the top of the range and weak ones near the bottom.\n\nSCORING GUIDE:\n${guide}\n\nSTORIES (coverage = how many different outlets ran it):\n` + news.map(x => `${x.id}. ${x.title} (${x.source}; coverage ${x.n || 1}; ${x.t ? Math.round((Date.now() - x.t) / 3600000) + ' hours old' : 'age unknown'})`).join('\n');
+    const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { scores: { type: 'ARRAY', items: { type: 'OBJECT', properties: { id: { type: 'INTEGER' }, score: { type: 'INTEGER' }, why: { type: 'STRING' } }, required: ['id', 'score', 'why'] } } }, required: ['scores'] } } });
+    for (const r of JSON.parse(j.candidates[0].content.parts[0].text).scores) { const x = news.find(n => n.id === r.id); if (x) { x.score = Math.max(0, Math.min(100, r.score)); x.why = clean(r.why).slice(0, 90); } }
+    log('scored', news.filter(x => x.score != null).length, 'of', news.length, 'stories');
+  } catch (e) { log('scoring failed, using newest first:', String(e.message).slice(0, 120)); }
 }
 function findImage(o, depth = 0) { // walk any JSON reply and return the first base64 image
   if (!o || depth > 12) return null;
@@ -360,7 +379,7 @@ function page(posts, cands, meta) {
     const made = posts.some(p => p.cid === c.id), d = c.draft;
     return `
 <div class="story${made ? ' made' : ''}" data-id="${c.id}">
- <label class="srow"><input type="checkbox" class="pick" value="${c.id}"${made ? ' disabled' : ''}><span class="box"></span><span class="sbody"><span class="chip">${esc(c.label)}</span>${made ? '<span class="chip done">Made</span>' : ''}${c.url && c.thin ? '<span class="chip warn">Few details</span>' : ''}<span class="stitle">${esc(c.title)}</span>${c.desc ? `<span class="sdesc">${esc(c.desc)}</span>` : ''}<span class="smeta">${c.url ? `${esc(c.source || '')} &middot; <span data-ago="${c.t || 0}"></span> &middot; <a href="${esc(c.link || c.url)}" target="_blank" rel="noopener">Read</a>` : 'From your fact library'}</span></span></label>
+ <label class="srow"><input type="checkbox" class="pick" value="${c.id}"${made ? ' disabled' : ''}><span class="box"></span><span class="sbody"><span class="chip">${esc(c.label)}</span>${c.score != null ? `<span class="chip score">Score ${c.score}</span>` : ''}${made ? '<span class="chip done">Made</span>' : ''}${c.url && c.thin ? '<span class="chip warn">Few details</span>' : ''}<span class="stitle">${esc(c.title)}</span>${c.why ? `<span class="swhy">${esc(c.why)}${c.n > 1 ? ` &middot; ${c.n} outlets` : ''}</span>` : ''}${c.desc ? `<span class="sdesc">${esc(c.desc)}</span>` : ''}<span class="smeta">${c.url ? `${esc(c.source || '')} &middot; <span data-ago="${c.t || 0}"></span> &middot; <a href="${esc(c.link || c.url)}" target="_blank" rel="noopener">Read</a>` : 'From your fact library'}</span></span></label>
  ${d ? `<details class="prev"><summary>Preview the write-up</summary><ol>${d.headlines.map(h => `<li>${esc(h)}</li>`).join('')}</ol><p>${esc(d.article).replace(/\n+/g, '<br><br>')}</p></details>` : ''}
  <button type="button" class="ctog" role="switch" aria-checked="true" aria-label="Circle photo" data-cid="${c.id}">Circle<i></i></button>
 </div>`;
@@ -409,7 +428,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .srow input:focus-visible+.box{outline:3px solid var(--orange);outline-offset:2px}
 .srow input:disabled+.box{opacity:.4}
 .sbody{min-width:0;display:block}
-.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.warn{background:var(--orange);color:#101316}
+.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.score{background:transparent;color:var(--fg);border:1.5px solid var(--edge);padding:0 9px}.swhy{display:block;font-size:12px;color:var(--mut);margin:-2px 0 4px;font-style:italic}.chip.warn{background:var(--orange);color:#101316}
 .stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
 .sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
 .smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
@@ -504,9 +523,13 @@ if (MODE === 'pick') {
     [newsC, sportsC] = await Promise.all([candidates('news', state.titles), candidates('sports', state.titles)]);
   }
   log('candidates', newsC.length, 'news,', sportsC.length, 'sports');
-  const items = [];
-  newsC.slice(0, 7).forEach(h => items.push({ kind: 'news', label: 'News', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
-  sportsC.slice(0, 2).forEach(h => items.push({ kind: 'sports', label: 'Sports', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts }));
+  const pool = [];
+  newsC.slice(0, 20).forEach(h => pool.push({ kind: 'news', label: 'News', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts, n: h.n })); // a wider pool than we show, so the best stories win, not just the newest
+  sportsC.slice(0, 6).forEach(h => pool.push({ kind: 'sports', label: 'Sports', title: h.title, source: h.source, url: h.url, t: h.t, alts: h.alts, n: h.n }));
+  pool.forEach((x, i) => { x.id = i + 1; });
+  await scoreAll(pool);
+  const byScore = (a, b) => (b.score ?? -1) - (a.score ?? -1) || b.t - a.t; // unscored stories fall back to newest first
+  const items = [...pool.filter(x => x.kind === 'news').sort(byScore).slice(0, 7), ...pool.filter(x => x.kind === 'sports').sort(byScore).slice(0, 2)].sort(byScore);
   for (const k of ['facts', 'history']) { // one fact and one history item from your library, a different pair each day
     const left = lib.filter(x => x.k === k && !state.used.includes(x.t));
     if (left.length) { const x = left[Math.floor(Math.random() * left.length)]; items.push({ kind: k, label: k === 'facts' ? 'Fun fact' : 'History', title: x.t, desc: x.d }); }
@@ -596,6 +619,12 @@ if (MODE === 'pick') {
   if (!made) { console.error('No posts were made.'); process.exit(1); }
   fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: cf.date, pick: cf.pick, posts }));
   fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, { date: cf.date, pick: cf.pick }));
+  { // a permanent record of every post made (today/ is cleared each morning), so results can be matched to what we predicted
+    const hf = path.join(ROOT, 'data/history.json'); let hist = []; try { hist = JSON.parse(fs.readFileSync(hf, 'utf8')); } catch (e) { /* first entry */ }
+    const nowIso = new Date().toISOString(), hr = +new Date().toLocaleString('en-US', { hour: 'numeric', hour12: false, timeZone: 'America/New_York' });
+    for (const r of results) { if (!r) continue; const { c, w, hasCircle } = r; hist.push({ made: nowIso, date: cf.date, hourET: hr, kind: c.kind, source: c.source || null, title: c.title, headlines: w.headlines, hasCircle, score: c.score ?? null, why: c.why || null, coverage: c.n || null, thin: !!c.thin, url: c.link || c.url || null }); }
+    if (!DRY) fs.writeFileSync(hf, JSON.stringify(hist, null, 1));
+  }
   state.titles = state.titles.slice(-300); fs.writeFileSync(seenFile, JSON.stringify(state, null, 1));
   log('done:', made, 'new posts,', posts.length, 'total, in', Math.round((Date.now() - t0) / 1000) + 's');
 }
