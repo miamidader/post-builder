@@ -8,7 +8,7 @@ const ROOT = process.cwd();
 const OUT = path.join(ROOT, 'today');
 const KEY = process.env.GEMINI_API_KEY;
 const DRY = process.env.DRY_RUN === '1';
-const TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-flash-latest';
+const TEXT_MODEL = process.env.GEMINI_TEXT_MODEL || 'gemini-flash-lite-latest';
 const IMG_RAW = process.env.GEMINI_IMAGE_MODEL || 'gemini-3.1-flash-lite-image';
 const IMG_MODEL = /^(off|none|no)$/i.test(IMG_RAW) ? '' : IMG_RAW; // set the variable to "off" for free posts with no AI photos
 const NUM = +(process.env.NUM_POSTS || 4);
