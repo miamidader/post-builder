@@ -162,6 +162,7 @@ async function pickBest(list, n) {
     return picks.length ? picks : list.slice(0, n);
   } catch (e) { log('pickBest fallback', e.message); return list.slice(0, n); }
 }
+let GEM_ERR = ''; // the first AI error of the run, shown on the page so a problem is visible instead of silent
 const TASTE = path.join(ROOT, 'data/taste.md');
 async function scoreAll(items) { // rate each story 0 to 100 using your scoring guide (data/taste.md) plus how many outlets cover it
   const news = items.filter(x => !isLib(x));
@@ -174,7 +175,7 @@ async function scoreAll(items) { // rate each story 0 to 100 using your scoring 
     const j = await gem(TEXT_MODEL, { contents: [{ parts: [{ text: prompt }] }], generationConfig: { responseMimeType: 'application/json', responseSchema: { type: 'OBJECT', properties: { scores: { type: 'ARRAY', items: { type: 'OBJECT', properties: { id: { type: 'INTEGER' }, score: { type: 'INTEGER' }, why: { type: 'STRING' } }, required: ['id', 'score', 'why'] } } }, required: ['scores'] } } });
     for (const r of JSON.parse(j.candidates[0].content.parts[0].text).scores) { const x = news.find(n => n.id === r.id); if (x) { x.score = Math.max(0, Math.min(100, r.score)); x.why = clean(r.why).slice(0, 90); } }
     log('scored', news.filter(x => x.score != null).length, 'of', news.length, 'stories');
-  } catch (e) { log('scoring failed, using newest first:', String(e.message).slice(0, 120)); }
+  } catch (e) { GEM_ERR = GEM_ERR || String(e.message).slice(0, 160); log('scoring failed, using newest first:', String(e.message).slice(0, 160)); }
 }
 function findImage(o, depth = 0) { // walk any JSON reply and return the first base64 image
   if (!o || depth > 12) return null;
@@ -428,7 +429,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 .srow input:focus-visible+.box{outline:3px solid var(--orange);outline-offset:2px}
 .srow input:disabled+.box{opacity:.4}
 .sbody{min-width:0;display:block}
-.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.score{background:transparent;color:var(--fg);border:1.5px solid var(--edge);padding:0 9px}.swhy{display:block;font-size:12px;color:var(--mut);margin:-2px 0 4px;font-style:italic}.chip.warn{background:var(--orange);color:#101316}
+.chip{display:inline-block;font:600 11px Poppins;background:var(--edge);color:var(--card);border-radius:99px;padding:2px 10px;margin-right:6px}.chip.done{background:var(--ac);color:#fff}.chip.score{background:transparent;color:var(--fg);border:1.5px solid var(--edge);padding:0 9px}.warnbar{border-color:var(--orange);font-size:13px}.swhy{display:block;font-size:12px;color:var(--mut);margin:-2px 0 4px;font-style:italic}.chip.warn{background:var(--orange);color:#101316}
 .stitle{display:block;font:600 15px/1.3 Poppins;margin:6px 0 4px;overflow-wrap:anywhere}
 .sdesc{display:block;font-size:13px;color:var(--mut);margin-bottom:4px}
 .smeta{display:block;font-size:12px;color:var(--mut)}.smeta a{color:var(--mut)}
@@ -450,6 +451,7 @@ h2{font:700 17px/1.25 Poppins;margin:14px 0 8px}.art{margin:0 0 6px;overflow-wra
 <div class="top"><div class="logo">MIAMI DADE<em>R</em></div><h1>Today's posts</h1><p class="sub">${esc(meta.date)}. Pick the stories you want, then tap Generate.</p></div>
 <div class="wrap"><div class="banner" id="banner" hidden><span>There is a newer story list.</span><button type="button" id="reload">Reload</button></div><div class="tabs" role="tablist"><button type="button" role="tab" id="tabS" class="on">Stories (${cands.length})</button><button type="button" role="tab" id="tabP">Posts (<span id="pc">${posts.length}</span>)</button><button type="button" role="tab" id="tabM">Manual</button></div></div>
 <div id="vs"><div class="wrap">
+${meta.warn ? `<div class="story warnbar"><b>AI is off today.</b> Scores and write-ups could not be made, so stories are newest first and articles will be written when you tap Generate. If this says credits or billing, top up at ai.studio/projects.<br><span class="swhy">${esc(String(meta.warn).slice(0, 160))}</span></div>` : ''}
 ${stories}
 <details class="setup" id="setup"><summary>One-time setup: connect GitHub</summary>
 <p id="tokst"></p>
@@ -507,7 +509,7 @@ async function draftAll(items) { // write headlines and the article now (text is
       c.draft = { headlines: w.headlines, article: w.article, imagePrompt: w.imagePrompt, circlePrompt: w.circlePrompt };
       if (!isLib(c)) delete c.text; // keep the publisher's text out of the repo once it has been used
       log('drafted', c.id, w.headlines[0]);
-    } catch (e) { log('draft failed', c.id, String(e.message).slice(0, 90)); }
+    } catch (e) { GEM_ERR = GEM_ERR || String(e.message).slice(0, 160); log('draft failed', c.id, String(e.message).slice(0, 160)); }
   });
 }
 
@@ -541,13 +543,13 @@ if (MODE === 'pick') {
   if (DRY || KEY) await draftAll(items); else log('No GEMINI_API_KEY, so no drafts. Articles will be written when you tap Generate.');
   const pick = Date.now().toString(36);
   fs.rmSync(OUT, { recursive: true, force: true }); fs.mkdirSync(OUT, { recursive: true });
-  fs.writeFileSync(path.join(OUT, 'candidates.json'), JSON.stringify({ date: dateLabel, pick, items }, null, 1));
+  fs.writeFileSync(path.join(OUT, 'candidates.json'), JSON.stringify({ date: dateLabel, pick, warn: GEM_ERR || undefined, items }, null, 1));
   fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: dateLabel, pick, posts: [] }));
-  fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, { date: dateLabel, pick }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page([], items, { date: dateLabel, pick, warn: GEM_ERR }));
   log('done:', items.length, 'stories to pick from,', items.filter(x => x.draft).length, 'drafted');
 } else if (MODE === 'page') { // rebuild the page from the saved story list and posts, without touching anything else
   const cf = JSON.parse(fs.readFileSync(path.join(OUT, 'candidates.json'), 'utf8')), pj = JSON.parse(fs.readFileSync(path.join(OUT, 'posts.json'), 'utf8'));
-  fs.writeFileSync(path.join(OUT, 'index.html'), page(pj.posts, cf.items, { date: cf.date, pick: cf.pick }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page(pj.posts, cf.items, { date: cf.date, pick: cf.pick, warn: cf.warn }));
   log('page rebuilt:', cf.items.length, 'stories,', pj.posts.length, 'posts');
 } else if (MODE === 'manual') { // your own topic (or article link) -> 3 headlines, an article and a photo prompt, no photo
   if (!DRY && !KEY) { console.error('GEMINI_API_KEY is missing.'); process.exit(1); }
@@ -618,7 +620,7 @@ if (MODE === 'pick') {
   }
   if (!made) { console.error('No posts were made.'); process.exit(1); }
   fs.writeFileSync(path.join(OUT, 'posts.json'), JSON.stringify({ date: cf.date, pick: cf.pick, posts }));
-  fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, { date: cf.date, pick: cf.pick }));
+  fs.writeFileSync(path.join(OUT, 'index.html'), page(posts, cands, { date: cf.date, pick: cf.pick, warn: cf.warn }));
   { // a permanent record of every post made (today/ is cleared each morning), so results can be matched to what we predicted
     const hf = path.join(ROOT, 'data/history.json'); let hist = []; try { hist = JSON.parse(fs.readFileSync(hf, 'utf8')); } catch (e) { /* first entry */ }
     const nowIso = new Date().toISOString(), hr = +new Date().toLocaleString('en-US', { hour: 'numeric', hour12: false, timeZone: 'America/New_York' });
