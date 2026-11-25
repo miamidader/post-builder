@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Valley Feed">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#1F3864">
+<title>Valley of AZ Feed</title>
+<style>
+:root{--bg:#f5f4f0;--card:#fff;--ink:#1a1d24;--muted:#667085;--line:#e4e2db;--accent:#1F3864;--accent-ink:#fff;--pick:#b45309;--bad:#c2410c}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1218;--card:#181c25;--ink:#eceef3;--muted:#98a1b3;--line:#272c38;--accent:#8fb0ff;--accent-ink:#0f1218;--pick:#fbbf24;--bad:#fb923c;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.35 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:0 max(16px,env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) max(16px,env(safe-area-inset-left))}
+.wrap{max-width:720px;margin:0 auto}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:calc(env(safe-area-inset-top) + 10px) 0 8px;border-bottom:1px solid var(--line)}
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+h1{font-size:20px;margin:0;letter-spacing:-.01em}
+.stamp{font-size:12px;color:var(--muted);white-space:nowrap}
+.chips{display:flex;gap:6px;overflow-x:auto;padding:8px 0 2px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 12px;font:inherit;font-size:14px;cursor:pointer}
+.chip b{font-weight:600;color:var(--muted);margin-left:4px}
+.chip[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.chip[aria-pressed="true"] b{color:inherit;opacity:.8}
+.chip.sm{font-size:13px;padding:4px 10px;background:transparent}
+.chip.sm[aria-pressed="true"]{background:var(--accent)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+#ptr{height:0;overflow:hidden;text-align:center;font-size:13px;color:var(--muted);transition:height .15s}
+#ptr span{display:block;padding-top:10px}
+h2{font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin:18px 2px 6px;font-weight:600}
+h2.pick{color:var(--pick)}
+.list{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.item+.item{border-top:1px solid var(--line)}
+.row{display:flex;gap:10px;align-items:flex-start;width:100%;text-align:left;background:none;border:0;color:inherit;font:inherit;padding:11px 12px;cursor:pointer}
+.city{flex:none;width:76px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:var(--accent);padding-top:3px;overflow-wrap:anywhere}
+.main{min-width:0;flex:1}
+.ttl{font-weight:600;font-size:15px;display:block;overflow-wrap:anywhere}
+.sub{font-size:12px;color:var(--muted);margin-top:2px;display:block}
+.star{color:var(--pick);margin-right:4px}
+.detail{padding:0 12px 12px 98px}
+.detail p{margin:0 0 8px;font-size:14px;color:var(--muted)}
+.acts{display:flex;gap:16px;flex-wrap:wrap}
+.act{background:none;border:0;padding:4px 0;color:var(--accent);font:inherit;font-size:14px;cursor:pointer;text-decoration:none}
+.empty{padding:28px 12px;text-align:center;color:var(--muted)}
+details.src{margin-top:22px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:13px}
+details.src summary{cursor:pointer;font-weight:600}
+.s{display:flex;justify-content:space-between;gap:10px;padding:5px 0;border-top:1px solid var(--line)}
+.s:first-of-type{margin-top:8px}
+.bad{color:var(--bad)}
+@media (max-width:420px){.city{width:62px;font-size:10px}.detail{padding-left:84px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div class="top"><h1>Valley of AZ Feed</h1><span class="stamp" id="stamp">loading…</span></div>
+ <div class="chips" id="cats" role="group" aria-label="Topic"></div>
+ <div class="chips" id="cities" role="group" aria-label="City"></div>
+</header>
+<div id="ptr"><span id="ptrtxt">Pull to refresh</span></div>
+<main id="out"><div class="empty">Loading…</div></main>
+</div>
+<script>
+(function(){
+var DATA=null,cat="All",city="All",open=null;
+var CATS=["All","Crime & Safety","Roads & Weather","Government","Community"];
+var $=function(i){return document.getElementById(i)};
+function el(t,c,x){var n=document.createElement(t);if(c)n.className=c;if(x!=null)n.textContent=x;return n}
+function safe(u){return /^https?:\/\//i.test(u)?u:"#"}
+function ago(iso){var s=Math.max(0,(Date.now()-new Date(iso).getTime())/1000);if(s<90)return"just now";if(s<3600)return Math.round(s/60)+" min ago";if(s<86400)return Math.round(s/3600)+" hr ago";return Math.round(s/86400)+" d ago"}
+function label(i){return i.cities&&i.cities.length?i.cities[0]:"Valley"}
+function hours(i){return (Date.now()-new Date(i.published).getTime())/3600000}
+function chip(l,n,on,fn,sm){var b=el("button","chip"+(sm?" sm":""),l);b.type="button";if(n!=null)b.appendChild(el("b","",n));b.setAttribute("aria-pressed",on);b.onclick=fn;return b}
+function copy(s,btn){var o=btn.textContent;function ok(){btn.textContent="Copied";setTimeout(function(){btn.textContent=o},1200)}
+ function fb(){var t=document.createElement("textarea");t.value=s;document.body.appendChild(t);t.select();try{document.execCommand("copy");ok()}catch(e){}document.body.removeChild(t)}
+ if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(s).then(ok,fb)}else fb()}
+function inCity(i){return city==="All"||(i.cities||[]).indexOf(city)>-1}
+function inCat(i){return cat==="All"||i.cat===cat}
+function itemEl(i,pick){
+ var w=el("div","item"),r=el("button","row");r.type="button";r.setAttribute("aria-expanded",open===i.id);
+ r.appendChild(el("span","city",label(i)));
+ var m=el("span","main"),t=el("span","ttl");
+ if(pick)t.appendChild(el("span","star","★"));
+ t.appendChild(document.createTextNode(i.title));m.appendChild(t);
+ m.appendChild(el("span","sub",i.source+" · "+ago(i.published)+" · "+i.cat));r.appendChild(m);
+ r.onclick=function(){open=open===i.id?null:i.id;render()};w.appendChild(r);
+ if(open===i.id){
+  var d=el("div","detail");if(i.summary)d.appendChild(el("p","",i.summary));
+  var a=el("div","acts"),o=el("a","act","Open story ↗");o.href=safe(i.link);o.target="_blank";o.rel="noopener";a.appendChild(o);
+  [["Copy headline",i.title],["Copy link",i.link]].forEach(function(x){var b=el("button","act",x[0]);b.type="button";b.onclick=function(){copy(x[1],b)};a.appendChild(b)});
+  d.appendChild(a);w.appendChild(d)}
+ return w}
+function section(title,items,cls,pick){
+ if(!items.length)return null;
+ var f=document.createDocumentFragment();f.appendChild(el("h2",cls,title));
+ var l=el("div","list");items.forEach(function(i){l.appendChild(itemEl(i,pick))});f.appendChild(l);return f}
+function render(){
+ var items=DATA.items;
+ var cats=$("cats");cats.textContent="";
+ CATS.forEach(function(c){var n=items.filter(function(i){return (c==="All"||i.cat===c)&&inCity(i)}).length;
+  cats.appendChild(chip(c,n,c===cat,function(){cat=c;open=null;render()}))});
+ var counts={};items.forEach(function(i){if(inCat(i))(i.cities||[]).forEach(function(c){counts[c]=(counts[c]||0)+1})});
+ var cs=$("cities");cs.textContent="";
+ cs.appendChild(chip("All cities",null,city==="All",function(){city="All";open=null;render()},true));
+ Object.keys(counts).sort(function(a,b){return counts[b]-counts[a]}).forEach(function(c){
+  cs.appendChild(chip(c,counts[c],city===c,function(){city=c;open=null;render()},true))});
+ var out=$("out");out.textContent="";
+ var f=items.filter(function(i){return inCat(i)&&inCity(i)});
+ if(!f.length){out.appendChild(el("div","empty","Nothing here yet. Try All cities."));}
+ var picks=f.filter(function(i){return i.breaking&&hours(i)<=24}).slice(0,5);
+ var ids={};picks.forEach(function(i){ids[i.id]=1});
+ var rest=f.filter(function(i){return !ids[i.id]});
+ [section("★ Top picks to post",picks,"pick",true),
+  section("Last 24 hours",rest.filter(function(i){return hours(i)<=24}),""),
+  section("Earlier this week",rest.filter(function(i){return hours(i)>24}),"")
+ ].forEach(function(p){if(p)out.appendChild(p)});
+ var det=el("details","src"),ok=DATA.feeds.filter(function(x){return x.ok}).length;
+ det.appendChild(el("summary","","Sources: "+ok+" of "+DATA.feeds.length+" working"));
+ DATA.feeds.forEach(function(x){var r=el("div","s");r.appendChild(el("span","",x.name));r.appendChild(el("span",x.ok?"":"bad",x.ok?x.count+" items":"failed"));det.appendChild(r)});
+ out.appendChild(det);
+ $("stamp").textContent="updated "+ago(DATA.generated)}
+function load(manual){
+ var t=$("ptrtxt");if(manual)t.textContent="Refreshing…";
+ return fetch("data/items.json?t="+Date.now(),{cache:"no-store"}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(d){
+  DATA=d;render();if(manual)t.textContent="Up to date"}).catch(function(){
+  if(!DATA){$("out").textContent="";$("out").appendChild(el("div","empty","No news yet. The first update runs automatically and can take a few minutes after setup."));$("stamp").textContent=""}
+  if(manual)t.textContent="Couldn't refresh"})}
+// pull to refresh
+var y0=null,pull=0,ptr=$("ptr");
+window.addEventListener("touchstart",function(e){y0=window.scrollY<=0?e.touches[0].clientY:null;pull=0},{passive:true});
+window.addEventListener("touchmove",function(e){if(y0==null)return;pull=e.touches[0].clientY-y0;
+ if(pull>0&&window.scrollY<=0){ptr.style.height=Math.min(pull/2,50)+"px";$("ptrtxt").textContent=pull>110?"Release to refresh":"Pull to refresh"}},{passive:true});
+window.addEventListener("touchend",function(){if(y0==null)return;
+ if(pull>110){ptr.style.height="40px";load(true).then(function(){setTimeout(function(){ptr.style.height="0"},800)})}else ptr.style.height="0";y0=null;pull=0});
+document.addEventListener("visibilitychange",function(){if(document.visibilityState==="visible")load()});
+load();
+})();
+</script>
+</body>
+</html>

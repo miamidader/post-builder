@@ -1,0 +1,152 @@
+{
+  "_note": "Edit this file to add or remove sources. 'enabled': false skips a feed. 'status' is only a reminder of what was checked; the Sources panel on the site shows what actually worked on the last run.",
+  "cities": [
+    "Phoenix", "Mesa", "Chandler", "Gilbert", "Scottsdale", "Tempe", "Glendale", "Peoria",
+    "Surprise", "Goodyear", "Avondale", "Buckeye", "Queen Creek", "Fountain Hills",
+    "Paradise Valley", "El Mirage", "Litchfield Park", "Tolleson", "Cave Creek", "Carefree",
+    "Youngtown", "Guadalupe", "Sun City West", "Sun City", "Anthem", "Laveen"
+  ],
+  "breaking_words": [
+    "shooting", "shot", "killed", "dead", "death", "homicide", "murder", "crash", "collision",
+    "fire", "wildfire", "evacuat", "explosion", "standoff", "barricade", "missing", "amber alert",
+    "arrest", "stabbing", "flood", "closure", "closed", "outage", "storm", "drowning", "rescue"
+  ],
+  "feeds": [
+    {
+      "id": "phx-gov",
+      "name": "City of Phoenix Newsroom",
+      "url": "https://www.phoenix.gov/newsroom/feed.xml",
+      "group": "Official",
+      "city": "Phoenix",
+      "enabled": true,
+      "status": "working when checked Nov 24, 2026"
+    },
+    {
+      "id": "reddit-phoenix",
+      "name": "r/phoenix",
+      "url": "https://www.reddit.com/r/phoenix/.rss",
+      "group": "Reddit",
+      "enabled": true,
+      "status": "untested; Reddit sometimes blocks automated requests"
+    },
+    {
+      "id": "reddit-arizona",
+      "name": "r/arizona",
+      "url": "https://www.reddit.com/r/arizona/.rss",
+      "group": "Reddit",
+      "enabled": true,
+      "status": "untested; Reddit sometimes blocks automated requests"
+    },
+    {
+      "id": "gn-phoenix",
+      "name": "Google News: Phoenix",
+      "url": "https://news.google.com/rss/search?q=Phoenix+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search",
+      "city": "Phoenix",
+      "enabled": true,
+      "status": "untested"
+    },
+    {
+      "id": "gn-mesa",
+      "name": "Google News: Mesa",
+      "url": "https://news.google.com/rss/search?q=Mesa+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Mesa", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-chandler",
+      "name": "Google News: Chandler",
+      "url": "https://news.google.com/rss/search?q=Chandler+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Chandler", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-gilbert",
+      "name": "Google News: Gilbert",
+      "url": "https://news.google.com/rss/search?q=Gilbert+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Gilbert", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-scottsdale",
+      "name": "Google News: Scottsdale",
+      "url": "https://news.google.com/rss/search?q=Scottsdale+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Scottsdale", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-tempe",
+      "name": "Google News: Tempe",
+      "url": "https://news.google.com/rss/search?q=Tempe+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Tempe", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-glendale",
+      "name": "Google News: Glendale",
+      "url": "https://news.google.com/rss/search?q=%22Glendale+Arizona%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Glendale", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-peoria",
+      "name": "Google News: Peoria",
+      "url": "https://news.google.com/rss/search?q=%22Peoria+Arizona%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Peoria", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-surprise",
+      "name": "Google News: Surprise",
+      "url": "https://news.google.com/rss/search?q=%22Surprise+Arizona%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Surprise", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-goodyear",
+      "name": "Google News: Goodyear",
+      "url": "https://news.google.com/rss/search?q=%22Goodyear+Arizona%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Goodyear", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-avondale",
+      "name": "Google News: Avondale",
+      "url": "https://news.google.com/rss/search?q=%22Avondale+Arizona%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Avondale", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-buckeye",
+      "name": "Google News: Buckeye",
+      "url": "https://news.google.com/rss/search?q=%22Buckeye+Arizona%22+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Buckeye", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-queen-creek",
+      "name": "Google News: Queen Creek",
+      "url": "https://news.google.com/rss/search?q=%22Queen+Creek%22+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Queen Creek", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-fountain-hills",
+      "name": "Google News: Fountain Hills",
+      "url": "https://news.google.com/rss/search?q=%22Fountain+Hills%22+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Fountain Hills", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-paradise-valley",
+      "name": "Google News: Paradise Valley",
+      "url": "https://news.google.com/rss/search?q=%22Paradise+Valley%22+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Paradise Valley", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-sun-city",
+      "name": "Google News: Sun City",
+      "url": "https://news.google.com/rss/search?q=%22Sun+City%22+OR+%22Sun+City+West%22+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "city": "Sun City", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-west-valley",
+      "name": "Google News: West Valley small towns",
+      "url": "https://news.google.com/rss/search?q=%22El+Mirage%22+OR+Tolleson+OR+%22Litchfield+Park%22+OR+Youngtown+OR+Guadalupe+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "enabled": true, "status": "untested"
+    },
+    {
+      "id": "gn-north-valley",
+      "name": "Google News: Cave Creek, Carefree, Anthem, Laveen",
+      "url": "https://news.google.com/rss/search?q=%22Cave+Creek%22+OR+Carefree+OR+Anthem+OR+Laveen+Arizona+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "group": "News search", "enabled": true, "status": "untested"
+    }
+  ]
+}
